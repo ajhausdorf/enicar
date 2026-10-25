@@ -1,0 +1,955 @@
+# Photos we have permission for but have not placed. Each needs the owner to confirm the model or generation; the evidence says why. When one is answered, place it with scripts/instagram/place.mjs and delete its entry here. `excluded` are left out on purpose; do not re-review them.
+pending:
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DeCPrIps6xG/
+    code: DeCPrIps6xG
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it."
+    evidence:
+      - Silver dial, black subdials, tan strap
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DX1qtstDA3D/
+    code: DX1qtstDA3D
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it."
+    evidence:
+      - Grey and white dial, silver tachymeter ("Jim Clark")
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DPo2Fnejq4-/
+    code: DPo2Fnejq4-
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it."
+    evidence:
+      - White dial
+      - Owner calls it "a late Sherpa Graph" (MkIII or MkIV?).
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DOTov7WkTit/
+    code: DOTov7WkTit
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it."
+    evidence:
+      - Silver dial, on a racing photo
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DAwG-oJy_Ta/
+    code: DAwG-oJy_Ta
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it."
+    evidence:
+      - Silver dial, cream subdials, white strap
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DAbGn2pOnZ_/
+    code: DAbGn2pOnZ_
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it."
+    evidence:
+      - Black dial
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/C--axwuJAWl/
+    code: C--axwuJAWl
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it."
+    evidence:
+      - White dial ("Snow White")
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CyWBh1Nrugk/
+    code: CyWBh1Nrugk
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it."
+    evidence:
+      - White dial
+      - Owner calls it "an early Sherpa Graph" (MkI to MkId?).
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/Cwv4VnePPnI/
+    code: Cwv4VnePPnI
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it."
+    evidence:
+      - Black dial, black Tropic strap
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/C2DSok_vkIO/
+    code: C2DSok_vkIO
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: null
+    kind: generation
+    question: "Two Graphs, one white dial and one black: which generation is each?"
+    evidence:
+      - Two watches in one photo.
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DbTVztDs6HZ/
+    code: DbTVztDs6HZ
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, white subdials, blue and red bezel
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/C7rZcsCxrO1/
+    code: C7rZcsCxrO1
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, BOR bracelet
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CkMznZdLJkV/
+    code: CkMznZdLJkV
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Blue bezel, at a table by the water
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CfjxSmJJpbP/
+    code: CfjxSmJJpbP
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, red pointer ring (#seapearl)
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/Ccaq6h0roNz/
+    code: Ccaq6h0roNz
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, cream subdials
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CbA5BHWpzNv/
+    code: CbA5BHWpzNv
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, Tropic strap (#sherpa300)
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CU0PB0Gpgft/
+    code: CU0PB0Gpgft
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Parchment subdials ("six hands")
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CQRrrXqLTA1/
+    code: CQRrrXqLTA1
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, cream subdials
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/COnu8xCLQbD/
+    code: COnu8xCLQbD
+    photos:
+      - 1
+    model: sherpa-aqua-graph + sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "An Aqua Graph and a Jet Graph together: which generation is each?"
+    evidence:
+      - Two watches in one photo.
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/De10_oRMb3T/
+    code: De10_oRMb3T
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, white subdials ("quesadilla timer")
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DZssDJbMtUv/
+    code: DZssDJbMtUv
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Grey dial, no strap
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/C-QRrgZPR5p/
+    code: C-QRrgZPR5p
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, checkered GMT hand
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CzRuY0JvJum/
+    code: CzRuY0JvJum
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Blue and red bezel (photo 2 has no watch)
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/Cue9E0gRt6U/
+    code: Cue9E0gRt6U
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - On the wrist, window seat
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/Ci5daTCpur0/
+    code: Ci5daTCpur0
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Red and silver bezel
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CgXqjF6PvbG/
+    code: CgXqjF6PvbG
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - With a dog
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CTw_rgKlJSW/
+    code: CTw_rgKlJSW
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, red and black bezel
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CSCg578lwd5/
+    code: CSCg578lwd5
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: "Which generation: MkIa, MkIb, MkII, MkIII or MkIV?"
+    evidence:
+      - Black dial, silver bezel (#sherpa300)
+      - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/C0mWDkMpFJ7/
+    code: C0mWDkMpFJ7
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII or MkIII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Silver sunburst dial, yellow and black inner bezel, red/black checkered GMT hand; owner says "like it's 1967".
+      - Sunburst dial is a MkII tell but the red/black checkered GMT hand is a MkIII tell, so the tells disagree.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/Cs08Gh3rktT/
+    code: Cs08Gh3rktT
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII or MkIII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Silver sunburst dial, yellow and black bezel, checkered GMT hand; on NASA letters.
+      - Sunburst dial is a MkII tell but the red/black checkered GMT hand is a MkIII tell, so the tells disagree.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CZ4-VutPcKZ/
+    code: CZ4-VutPcKZ
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII or MkIII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Silver dial, yellow and black bezel, checkered GMT hand.
+      - Checkered GMT hand is a MkIII tell, but the owner has tagged watches like this MK2.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CYZTJWzFH25/
+    code: CYZTJWzFH25
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII or MkIII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - "Silver sunburst dial, yellow bezel, checkered GMT hand; tagged #ar1146 (used in both MkII and MkIII)."
+      - Sunburst dial is a MkII tell but the red/black checkered GMT hand is a MkIII tell, so the tells disagree.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CRrOIs_rmHM/
+    code: CRrOIs_rmHM
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkIII?
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - "Black dial, yellow and black bezel, orange/black checkered GMT hand; tagged #ar1146."
+      - Checkered GMT hand is a MkIII tell, but the owner has tagged watches like this MK2.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CNN7yoILlEK/
+    code: CNN7yoILlEK
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII or MkIII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - "Silver sunburst dial, yellow bezel, checkered GMT hand; tagged #ar1146."
+      - Sunburst dial is a MkII tell but the red/black checkered GMT hand is a MkIII tell, so the tells disagree.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CLzt8OjL3nb/
+    code: CLzt8OjL3nb
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII or MkIII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Silver/white dial, yellow bezel, checkered GMT hand.
+      - Checkered GMT hand is a MkIII tell, but the owner has tagged watches like this MK2.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CqvlExLJoTM/
+    code: CqvlExLJoTM
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII or MkIII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Silver dial, yellow bezel, checkered GMT hand ("limoncello").
+      - Checkered GMT hand is a MkIII tell, but the owner has tagged watches like this MK2.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CD7WwSunYp3/
+    code: CD7WwSunYp3
+    photos:
+      - 1
+      - 2
+      - 3
+      - 4
+    model: sherpa-jet
+    guess: MkIII?
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Black dial, yellow and black bezel, orange/black checkered GMT hand; four close-ups.
+      - Checkered GMT hand is a MkIII tell, but the owner has tagged watches like this MK2.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/C9bG0A9y5qR/
+    code: C9bG0A9y5qR
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII or MkIII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Champagne dial (listed for both MkII and MkIII), yellow bezel, checkered GMT hand.
+      - Checkered GMT hand is a MkIII tell, but the owner has tagged watches like this MK2.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DNs6_uv4gja/
+    code: DNs6_uv4gja
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII or MkIII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Owner says by 1967 (MkII years) and describes a sunburst dial (MkII) but also the checkered GMT hand (MkIII).
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CaK1SNyvtyS/
+    code: CaK1SNyvtyS
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: null
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - "Black dial, red and black bezel, plain red needle GMT hand: not the Jet MkI crescent, not the slim MkII hand, not checkered."
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CZFgTBxP6-J/
+    code: CZFgTBxP6-J
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: null
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - "Golden sunburst dial, white and black bezel, plain red needle GMT hand; tagged #ar1146."
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/Cnk_FZmukQw/
+    code: Cnk_FZmukQw
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: null
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Light dial, red GMT hand; photo too small to see the hands.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CRWk4YGrRSS/
+    code: CRWk4YGrRSS
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII?
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Owner mentions a sunburst dial (MkII), but the GMT hand isn't clear enough to rule out the checkered MkIII hand.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CfPm1ycPxq3/
+    code: CfPm1ycPxq3
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII?
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - "Owner mentions a sunburst dial (MkII), yellow bezel, #seapearl600; GMT hand not clear."
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CNyVVKoLEfD/
+    code: CNyVVKoLEfD
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: null
+    kind: generation
+    question: "Three Jets together: which generation is each, left to right?"
+    evidence:
+      - "Three watches in one photo; tagged #enicarsherpajetmk2."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CCzQVYlnOZX/
+    code: CCzQVYlnOZX
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: null
+    kind: generation
+    question: "Two Jets, one a 33 (MkI): what is the other?"
+    evidence:
+      - Two watches in one photo.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CW3X_eRJxA9/
+    code: CW3X_eRJxA9
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII (owner's tag) or MkIII (tells)
+    kind: conflict
+    question: "Tagged MK2: keep MK2 despite the checkered hand?"
+    evidence:
+      - "Tagged #enicarsherpajetmk2, but it has the red/black checkered GMT hand, a MkIII tell."
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CUDB1QiloDs/
+    code: CUDB1QiloDs
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII (owner's tag) or MkIII (tells)
+    kind: conflict
+    question: "Tagged MK2: keep MK2 despite the checkered hand?"
+    evidence:
+      - "Tagged #enicarsherpajetmk2, golden sunburst dial (MkII), but the checkered GMT hand is a MkIII tell."
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CKrrp6rrpBX/
+    code: CKrrp6rrpBX
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkII (owner's tag) or MkIII (tells)
+    kind: conflict
+    question: "Tagged MK2: keep MK2 despite the checkered hand and coloured bezel?"
+    evidence:
+      - "Tagged #enicarsherpajetmk2, but the checkered GMT hand and the yellow/black bezel are both MkIII tells."
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DU_SXHUjPZM/
+    code: DU_SXHUjPZM
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: MkIII (owner's caption) or MkIV (tells)
+    kind: conflict
+    question: "Captioned Jet MK3: is that right, given the cushion case?"
+    evidence:
+      - Captioned "Sherpa Jet MK3", but the cushion case and red/blue bezel with yellow boxes are MkIV tells.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DXkB1kQDJ3m/
+    code: DXkB1kQDJ3m
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: null
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Dark dial, at sunset from a plane; hands and GMT hand not clear.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/C4ODP4Urbiu/
+    code: C4ODP4Urbiu
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: MkI or MkII
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Silver dial, black and white bezel. Red-tipped GMT hand is a Super-Jet MkI tell, but the hands look like tuning forks (MkII).
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CrTQZW4L5tl/
+    code: CrTQZW4L5tl
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: MkI (owner's "early") or MkII (tells)
+    kind: conflict
+    question: 'Captioned "early": MkI, or a MkII?'
+    evidence:
+      - Owner calls it "the early Super Jet" (MkI), but the slim yellow-tipped GMT hand is a MkII tell.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/Cr54Kx2rPNU/
+    code: Cr54Kx2rPNU
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: MkI (owner's date) or MkII (enicar.org)
+    kind: conflict
+    question: Is it from 1964? Martijn shows this photo as a MkII.
+    evidence:
+      - Owner says 1964 (MkI dates), but the enicar.org Jet article shows this same photo as a Super-Jet MkII.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DFlfw5MT5IG/
+    code: DFlfw5MT5IG
+    photos:
+      - 1
+      - 2
+    model: sherpa-jet + sherpa-super-jet
+    guess: null
+    kind: generation
+    question: "Two silver-dial Jets on a United Airlines poster: which models and generations?"
+    evidence:
+      - Two watches in each photo; caption mentions both Jet and Super-Jet.
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/DNYduJ_O6sD/
+    code: DNYduJ_O6sD
+    photos:
+      - 1
+      - 2
+    model: sherpa-super-jet
+    guess: MkII (tells) but dated 8/65
+    kind: conflict
+    question: Is the case date 8/65? If so, is it an early MkII?
+    evidence:
+      - Owner describes tuning-fork hands and a paint-tipped GMT hand (MkII tells), but gives a case date of 8/65, before the 1966 start for MkII.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CUTSfDBPtPe/
+    code: CUTSfDBPtPe
+    photos:
+      - 1
+    model: sherpa-super-divette or sherpa-super-dive
+    guess: null
+    kind: model
+    question: 'Two divers ("pair of old sailors"): Super-Divette, Super-Dive, or one of each?'
+    evidence:
+      - "Tagged both #superdivette and #superdive."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CKKHxGYrcPp/
+    code: CKKHxGYrcPp
+    photos:
+      - 1
+    model: sherpa-super-divette or sherpa-super-dive
+    guess: null
+    kind: model
+    question: "Two tool watches, one in a display box: which models?"
+    evidence:
+      - "Tagged #superdivette and #superdive; only one watch clearly visible."
+  - account: two_crowned_prints
+    post: https://www.instagram.com/p/CTaNeq-p6P1/
+    code: CTaNeq-p6P1
+    photos:
+      - 1
+    model: null
+    guess: null
+    kind: model
+    question: "The owner's first Enicar, a dress watch: which model and reference?"
+    evidence:
+      - No model name readable on the dial in the photo.
+  - account: zizi_zap
+    post: https://www.instagram.com/p/CoSmTZsrbQF/
+    code: CoSmTZsrbQF
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: MkI (owner's caption) or MkII (tells)
+    kind: conflict
+    question: 'Captioned "mk1 dial and hands": is that right?'
+    evidence:
+      - Hour hand has a forked (tuning-fork) tip and the GMT hand is slim and yellow-tipped, both MkII tells; looks like the watch enicar.org shows as the owner's MkII.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: zizi_zap
+    post: https://www.instagram.com/p/Cjh6PzNr9Sq/
+    code: Cjh6PzNr9Sq
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: MkI (owner's caption) or MkII (tells)
+    kind: conflict
+    question: Same watch and question as CoSmTZsrbQF?
+    evidence:
+      - "Same as CoSmTZsrbQF: tuning-fork hands and slim yellow-tipped GMT hand (MkII)."
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: zizi_zap
+    post: https://www.instagram.com/p/DHQ6rReMvTX/
+    code: DHQ6rReMvTX
+    photos:
+      - 1
+      - 2
+    model: sherpa-super-jet
+    guess: null
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Black dial, cream and black bezel; hands not clear enough to judge.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: zizi_zap
+    post: https://www.instagram.com/p/CfuELKnL883/
+    code: CfuELKnL883
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: null
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Black dial, cream and black bezel, green strap.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: zizi_zap
+    post: https://www.instagram.com/p/Cckqw4UMTJw/
+    code: Cckqw4UMTJw
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: null
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Silver dial, cream and black bezel, no strap.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: zizi_zap
+    post: https://www.instagram.com/p/CaHezuALSLM/
+    code: CaHezuALSLM
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: null
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - On the wrist, small in frame.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: zizi_zap
+    post: https://www.instagram.com/p/CMJ3ql1r9yY/
+    code: CMJ3ql1r9yY
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: null
+    kind: generation
+    question: Which generation is it?
+    evidence:
+      - Black dial, black and white bezel, green strap.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: zizi_zap
+    post: https://www.instagram.com/p/CMo54AJLmBr/
+    code: CMo54AJLmBr
+    photos:
+      - 1
+    model: null
+    guess: null
+    kind: model
+    question: Does the "Enicar automatic 167-12-08" day-date have a model name?
+    evidence:
+      - Owner gives ref. 167-12-08, cal. AR167; dial reads only "Enicar automatic".
+  - account: zizi_zap
+    post: https://www.instagram.com/p/CLmRqV6r72_/
+    code: CLmRqV6r72_
+    photos:
+      - 1
+      - 2
+    model: null
+    guess: null
+    kind: model
+    question: "Same 167-12-08 model: name?"
+    evidence:
+      - Owner gives ref. 167-12-08 and the AR167; photo 2 shows the movement through the caseback.
+  - account: zizi_zap
+    post: https://www.instagram.com/p/CMHzZQFLyST/
+    code: CMHzZQFLyST
+    photos:
+      - 1
+      - 2
+    model: null
+    guess: null
+    kind: model
+    question: Which watch are these AR167 movement photos from?
+    evidence:
+      - Movement close-ups; could go on the AR167 calibre page once calibre pages take photos.
+  - account: dropandwatch
+    post: https://www.instagram.com/p/DGIVMjUu5-T/
+    code: DGIVMjUu5-T
+    photos:
+      - 1
+      - 2
+      - 3
+      - 4
+    model: sherpa-jet
+    guess: MkI (the listing) or MkII (tells)
+    kind: conflict
+    question: "Listed as a Jet MK1: is this the same watch as the MkII Martijn shows from them?"
+    evidence:
+      - Listed as "Sherpa Jet MK1", but it has a slim yellow-tipped GMT hand and baton hands (MkII tells), no paddle or dauphine hands, no red crescent GMT; same dial and green suede strap as the Jet enicar.org shows as their MkII.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: dropandwatch
+    post: https://www.instagram.com/p/C95Fb0goisg/
+    code: C95Fb0goisg
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: null
+    kind: generation
+    question: "The Sherpa Jet GMT in the July drop: which generation? (Photos 2 to 10 are other brands.)"
+    evidence:
+      - Black dial, white and black bezel; hands not clear enough.
+      - "Martijn's Jet article: MkI paddle or dauphine hands, 33 jewels dial, red crescent GMT (Jet) or red-tipped needle GMT (Super-Jet); MkII tuning-fork hands, slim orange/yellow-tipped GMT hand, sunburst dials; MkIII red/black checkered GMT hand, coloured bezels; MkIV cushion case."
+  - account: dropandwatch
+    post: https://www.instagram.com/p/C_A9EV5ISCe/
+    code: C_A9EV5ISCe
+    photos:
+      - 1
+      - 2
+      - 3
+      - 4
+    model: null
+    guess: null
+    kind: model
+    question: "The black-dial Ultrasonic from their own collection: which model or reference?"
+    evidence:
+      - Dial reads Enicar Ultrasonic; no model or reference given.
+excluded:
+  - account: two_crowned_prints
+    code: DVx9x9hDA8P
+    photos: all
+    reason: Posted by watchmaker @christophe_gosteaux_horloger as a collab; their photos, not covered by James's permission.
+  - account: two_crowned_prints
+    code: C5wBcZavBjz
+    photos: all
+    reason: Caption credits the photo to Rives and Zurini.
+  - account: two_crowned_prints
+    code: DcYu_v3G-6M
+    photos:
+      - 3
+    reason: TV-show meme.
+  - account: two_crowned_prints
+    code: DTVo9BCD3As
+    photos:
+      - 1
+      - 2
+    reason: Collage over a Jim Clark archive photo, and a TV-show meme.
+  - account: two_crowned_prints
+    code: DQzkotSEh3S
+    photos:
+      - 2
+    reason: Photo of a bar; no watch.
+  - account: two_crowned_prints
+    code: C_qJXqmpeoL
+    photos:
+      - 1
+      - 2
+    reason: Book page and book cover are the main subject.
+  - account: two_crowned_prints
+    code: C379xuZpaqb
+    photos:
+      - 1
+    reason: Book cover is the main subject.
+  - account: two_crowned_prints
+    code: CzRuY0JvJum
+    photos:
+      - 2
+    reason: Marathon crowd; no watch.
+  - account: two_crowned_prints
+    code: CwdCWoKr6jl
+    photos:
+      - 2
+    reason: A 1960s Enicar newspaper advert is the main subject.
+  - account: two_crowned_prints
+    code: CvnAqJor8xd
+    photos:
+      - 1
+      - 2
+    reason: "Collector meetup: other people's watches."
+  - account: two_crowned_prints
+    code: CuMyvazRvRe
+    photos:
+      - 3
+    reason: The reader captured photo 1 twice; the real third slide was never downloaded. Re-read the post to get it.
+  - account: zizi_zap
+    code: CNAsGLILkUp
+    photos: all
+    reason: Post about Martijn's book; not read.
+  - account: dropandwatch
+    code: C95Fb0goisg
+    photos:
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+    reason: Other brands.
