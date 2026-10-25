@@ -104,6 +104,36 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+  - variant: null
+    title: Aqua Graph, every generation
+    url: https://enicar101.com/aqua-graph/
+    source: enicar101
+    note: Generation pages with serial ranges, case details and photos.
+  - variant: MkIa
+    title: Aqua Graph MK Ia
+    url: https://enicar101.com/aqua-graph-mki/
+    source: enicar101
+    note: null
+  - variant: MkIb
+    title: Aqua Graph MK Ib
+    url: https://enicar101.com/aqua-graph-mk-ib-2/
+    source: enicar101
+    note: null
+  - variant: MkII
+    title: Aqua Graph MK II
+    url: https://enicar101.com/aqua-graph-mkii/
+    source: enicar101
+    note: null
+  - variant: MkIII
+    title: Aqua Graph MK III
+    url: https://enicar101.com/aqua-graph-mkiii/
+    source: enicar101
+    note: null
+  - variant: MkIV
+    title: Aqua Graph MK IV
+    url: https://enicar101.com/aqua-graph-mk-iv/
+    source: enicar101
+    note: null
 images:
   - file: /images/sherpa-aqua-graph/v-b3skttdhs4i-1.webp
     thumb: /images/sherpa-aqua-graph/v-b3skttdhs4i-1-sm.webp

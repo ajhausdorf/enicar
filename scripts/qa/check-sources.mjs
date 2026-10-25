@@ -91,6 +91,7 @@ export function checkSources() {
     }
     for (const m of d.read_more ?? []) {
       if (!sourceIds.has(m.source)) r.error(where, `read_more "${m.title}" points at unknown source "${m.source}"`);
+      if (m.variant && !variantNames.has(m.variant)) r.error(where, `read_more "${m.title}" names unknown variant "${m.variant}"`);
     }
     if (d.barometer) checkCites([d.barometer.cite], 'barometer');
 

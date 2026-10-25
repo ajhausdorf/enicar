@@ -29,6 +29,11 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+  - variant: null
+    title: Enicar Sherpa Ultradive and OPS serial number research
+    url: https://enicar101.com/2021/12/30/enicar-sherpa-ultradive-and-ops-sn-research/
+    source: enicar101
+    note: "Enicar 101 is building a classification from owners’ serial numbers. If you have one, they want to hear from you."
 images:
   - file: /images/sherpa-ops/tcp-dxdag3jjabu-1.webp
     thumb: /images/sherpa-ops/tcp-dxdag3jjabu-1-sm.webp

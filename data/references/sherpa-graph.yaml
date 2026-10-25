@@ -139,6 +139,51 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+  - variant: null
+    title: Sherpa Graph, every generation
+    url: https://enicar101.com/sherpa-graph-2/
+    source: enicar101
+    note: Generation pages with serial ranges, case details and photos.
+  - variant: MkI
+    title: Sherpa Graph MK Ia
+    url: https://enicar101.com/sherpa-graph-mkia/
+    source: enicar101
+    note: "Enicar 101 calls this generation MK Ia."
+  - variant: MkIb
+    title: Sherpa Graph MK Ib
+    url: https://enicar101.com/sherpa-graph-mkib/
+    source: enicar101
+    note: null
+  - variant: MkIc
+    title: Sherpa Graph MK Ic
+    url: https://enicar101.com/sherpa-graph-ic/
+    source: enicar101
+    note: null
+  - variant: MkId
+    title: Sherpa Graph MK Id
+    url: https://enicar101.com/serhpa-graph-mk-id/
+    source: enicar101
+    note: null
+  - variant: MkII
+    title: Sherpa Graph MK IIa
+    url: https://enicar101.com/sherpa-graph-mkii/
+    source: enicar101
+    note: "Enicar 101 splits our MkII into IIa and IIb."
+  - variant: MkII
+    title: Sherpa Graph MK IIb
+    url: https://enicar101.com/sherpa-graph-mk-iib/
+    source: enicar101
+    note: "Enicar 101 splits our MkII into IIa and IIb."
+  - variant: MkIII
+    title: Sherpa Graph MK III
+    url: https://enicar101.com/sherpa-graph-mkiii/
+    source: enicar101
+    note: null
+  - variant: MkIV
+    title: Sherpa Graph MK IV
+    url: https://enicar101.com/sherpa-graph-iv/
+    source: enicar101
+    note: null
 images:
   - file: /images/sherpa-graph/tcp-dcyu-v3g-6m-1.webp
     thumb: /images/sherpa-graph/tcp-dcyu-v3g-6m-1-sm.webp
