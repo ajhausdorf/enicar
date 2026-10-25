@@ -1,0 +1,62 @@
+name: Gerhard Mitter
+family: chronographs
+kind: chronograph
+summary: "A three-register Valjoux 72 chronograph in a cushion case."
+references: []
+nicknames: ["Gerhard Mitter"]
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: ["Valjoux 72"]
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: ["cushion-case"]
+dial: null
+variants: []
+read_more:
+  - title: "The Enicar Lausanne chronograph"
+    url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    source: enicar-org
+    note: "Mentions the Gerhard Mitter among Enicar's nicknamed chronographs."
+images: []
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Valjoux 72 chronograph, cushion case (Gerhard Mitter)"
+      bands:
+        - { condition: "Very good to mint", low: 3500, high: 5000 }
+        - { condition: "Average to good", low: 2500, high: 3500 }
+        - { condition: "Poor to fair", low: 1500, high: 2500 }
+      note: null
+status: draft
+gaps:
+  - "Factory reference numbers"
+  - "Production years"
+  - "Case size"
+  - "Photographs"
+citations:
+  - id: eo-lausanne
+    source: enicar-org
+    url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    title: "The Enicar Lausanne chronograph"
+    retrieved: 2026-10-25
+    supports: [movement.calibres, nicknames]
+  - id: eo-barometer-7-case
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7 (cushion case)"
+    retrieved: 2026-10-25
+    supports: [features]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25

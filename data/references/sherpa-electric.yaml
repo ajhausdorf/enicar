@@ -1,0 +1,58 @@
+name: Sherpa Electric
+family: sherpa
+kind: other
+summary: "A 36 mm electro-mechanical Sherpa on the Landeron 4750, with a separate battery hatch."
+references:
+  - number: 100/167 BEPNS
+    note: Case reference given on enicar.org.
+    cites: [eo-electric]
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: ["Landeron 4750"]
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 36
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+variants: []
+read_more:
+  - title: "The staying power of the Sherpa Electric"
+    url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    source: enicar-org
+    note: "How Enicar built and tested its electric watch."
+images: []
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Sherpa Electric"
+      bands:
+        - { condition: "Very good to mint", low: 900, high: 1400 }
+        - { condition: "Average to good", low: 700, high: 900 }
+        - { condition: "Poor to fair", low: 400, high: 700 }
+      note: null
+status: draft
+gaps:
+  - "Production years"
+  - "Case material"
+  - "Photographs"
+citations:
+  - id: eo-electric
+    source: enicar-org
+    url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    title: "The staying power of the Sherpa Electric"
+    retrieved: 2026-10-25
+    supports: [movement.calibres, case.diameter_mm]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25

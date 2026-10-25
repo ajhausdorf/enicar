@@ -1,0 +1,71 @@
+name: Healthways 100 Fathoms
+family: healthways
+kind: diver
+summary: "A mid-1950s dive watch signed Enicar Ultrasonic and Healthways 100 Fathoms."
+references: []
+nicknames: ["100 Fathoms"]
+years: { from: 1955, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+variants: []
+read_more:
+  - title: "Birth of the Sherpa: the 1956 Mount Everest and Lhotse expedition"
+    url: https://enicar.org/2018/07/02/birth-of-the-sherpa-the-1956-mount-everest-expedition/
+    source: enicar-org
+    note: "Shows two 1955 Healthways 100 Fathoms."
+images:
+  - file: /images/healthways/c-cpld6q9rth8-1.webp
+    thumb: /images/healthways/c-cpld6q9rth8-1-sm.webp
+    width: 1272
+    height: 1272
+    alt: "Enicar Healthways 100 Fathoms with a worn black dial, triangle markers and Arabic 12, 3, 6 and 9 on a tan strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CPld6Q9rth8/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Healthways 100 Fathoms and Enicar Ultrasonic."
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Sherpa Seapearl 600 (turtle lugs), Healthways"
+      bands:
+        - { condition: "Very good to mint", low: 1300, high: 2300 }
+        - { condition: "Average to good", low: 900, high: 1300 }
+        - { condition: "Poor to fair", low: 700, high: 900 }
+      note: "Published together with the Seapearl 600."
+status: draft
+gaps:
+  - "Factory reference numbers"
+  - "Calibre"
+  - "Case size and material"
+citations:
+  - id: eo-everest
+    source: enicar-org
+    url: https://enicar.org/2018/07/02/birth-of-the-sherpa-the-1956-mount-everest-expedition/
+    title: "Birth of the Sherpa: the 1956 Mount Everest and Lhotse expedition"
+    retrieved: 2026-10-25
+    supports: [years.from]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25

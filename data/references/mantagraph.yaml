@@ -1,0 +1,52 @@
+name: Mantagraph
+family: chronographs
+kind: chronograph
+summary: "A chronograph with a Seiko movement."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+variants: []
+read_more: []
+images: []
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Mantagraph"
+      bands:
+        - { condition: "Very good to mint", low: 1500, high: 2000 }
+        - { condition: "Average to good", low: 900, high: 1500 }
+        - { condition: "Poor to fair", low: 600, high: 900 }
+      note: null
+status: draft
+gaps:
+  - "Which Seiko calibre (enicar.org says only \"a Seiko work\")"
+  - "Production years"
+  - "Case size and material"
+  - "Photographs"
+citations:
+  - id: eo-electric
+    source: enicar-org
+    url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    title: "The staying power of the Sherpa Electric"
+    retrieved: 2026-10-25
+    supports: []
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25

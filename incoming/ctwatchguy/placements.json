@@ -408,5 +408,125 @@
   "by": "caption",
   "note": "Caption names the Ocean Pearl and the Valjoux 72; the dial itself reads only Enicar.",
   "view": "dial"
+ },
+ {
+  "rec": "graphomatic",
+  "src": "CHBJS1Crsjw_01",
+  "variant": null,
+  "alt": "Grapho-Matic with a grey dial, orange chronograph hand and orange-framed registers on a tan strap, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Grapho-Matic.",
+  "view": "dial"
+ },
+ {
+  "rec": "graphomatic",
+  "src": "CKRvLwErAWc_01",
+  "variant": null,
+  "alt": "Grapho-Matic with a grey dial, orange hands and tachymetre scale on a brown strap, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Grapho-Matic.",
+  "view": "dial"
+ },
+ {
+  "rec": "graphomatic",
+  "src": "CEcsvuCnYsN_01",
+  "variant": null,
+  "alt": "Grapho-Matic in a cushion case with a grey dial and orange registers on a steel bracelet, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Grapho-Matic.",
+  "view": "dial"
+ },
+ {
+  "rec": "graphomatic",
+  "src": "CFcuP2AH9wR_01",
+  "variant": null,
+  "alt": "Grapho-Matic with a dark dial and orange hands on a steel bracelet, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Grapho-Matic.",
+  "view": "dial"
+ },
+ {
+  "rec": "f45",
+  "src": "COdhiThLxWd_01",
+  "variant": null,
+  "alt": "F45 chronograph with a navy dial, white registers and a 45-minute counter on a tan rally strap, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads F45; the right-hand counter runs to 45 minutes.",
+  "view": "dial"
+ },
+ {
+  "rec": "f45",
+  "src": "COimml-L0bO_01",
+  "variant": null,
+  "alt": "F45 chronograph with a navy dial and orange chronograph hand, held in the hand",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads F45; the right-hand counter runs to 45 minutes.",
+  "view": "dial"
+ },
+ {
+  "rec": "f45",
+  "src": "CSKOy6sLjhT_01",
+  "variant": null,
+  "alt": "F45 chronograph with a navy dial, white registers and orange chronograph hand on a navy strap, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads F45; the right-hand counter runs to 45 minutes.",
+  "view": "dial"
+ },
+ {
+  "rec": "big-eye",
+  "src": "CBUA1dzHhDp_01",
+  "variant": null,
+  "alt": "Big Eye with a white dial, grey left register and larger right-hand counter on a tan strap, on the wrist",
+  "caption": null,
+  "by": "caption",
+  "note": "Two-register dial with the larger right-hand counter that gives the Big Eye its name (enicar.org). Caption: rare white dial Big Eye.",
+  "view": "dial"
+ },
+ {
+  "rec": "big-eye",
+  "src": "CC3lcM0nkUC_01",
+  "variant": null,
+  "alt": "Big Eye with an albino silver dial and orange chronograph hand on a tan rally strap, on the wrist",
+  "caption": null,
+  "by": "caption",
+  "note": "Two-register dial with the larger right-hand counter that gives the Big Eye its name (enicar.org). Caption: his albino Big Eye.",
+  "view": "dial"
+ },
+ {
+  "rec": "big-eye",
+  "src": "CP_QV71L5Cm_01",
+  "variant": null,
+  "alt": "Big Eye with a white dial and larger right-hand counter on a navy strap, on the wrist",
+  "caption": null,
+  "by": "tells",
+  "note": "Two-register dial with the larger right-hand counter that gives the Big Eye its name (enicar.org).",
+  "view": "dial"
+ },
+ {
+  "rec": "big-eye",
+  "src": "CM2rCq0rQ7n_01",
+  "variant": null,
+  "alt": "Big Eye with a white dial and orange chronograph hand on a tan strap, on the wrist",
+  "caption": null,
+  "by": "tells",
+  "note": "Two-register dial with the larger right-hand counter that gives the Big Eye its name (enicar.org).",
+  "view": "dial"
+ },
+ {
+  "rec": "healthways",
+  "src": "CPld6Q9rth8_01",
+  "variant": null,
+  "alt": "Enicar Healthways 100 Fathoms with a worn black dial, triangle markers and Arabic 12, 3, 6 and 9 on a tan strap, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Healthways 100 Fathoms and Enicar Ultrasonic.",
+  "view": "dial"
  }
 ]

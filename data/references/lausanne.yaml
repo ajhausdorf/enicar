@@ -1,0 +1,57 @@
+name: Lausanne
+family: chronographs
+kind: chronograph
+summary: "A two-register chronograph on the Valjoux 232, ref. 232-01-01, promoted in 1971."
+references:
+  - number: 232-01-01
+    note: null
+    cites: [eo-lausanne]
+nicknames: ["Lausanne"]
+years: { from: 1971, to: null, approximate: true }
+movement:
+  calibres: ["Valjoux 232"]
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+variants: []
+read_more:
+  - title: "The Enicar Lausanne chronograph"
+    url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    source: enicar-org
+    note: "Where the nickname comes from."
+images: []
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Valjoux 23 chronograph: Big Eye, Lausanne"
+      bands:
+        - { condition: "Very good to mint", low: 3000, high: 4000 }
+        - { condition: "Average to good", low: 2000, high: 3000 }
+        - { condition: "Poor to fair", low: null, high: 2000 }
+      note: "Published with the Big Eye."
+status: draft
+gaps:
+  - "Case size and material"
+  - "Photographs"
+citations:
+  - id: eo-lausanne
+    source: enicar-org
+    url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    title: "The Enicar Lausanne chronograph"
+    retrieved: 2026-10-25
+    supports: [movement.calibres, years.from, nicknames]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25

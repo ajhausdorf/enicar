@@ -18,3 +18,9 @@
 - id: supertest
   name: Supertest
   order: 6
+- id: chronographs
+  name: Other chronographs
+  order: 7
+- id: healthways
+  name: Healthways
+  order: 8

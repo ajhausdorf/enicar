@@ -1,0 +1,115 @@
+name: Grapho-Matic
+family: chronographs
+kind: chronograph
+summary: "A chronograph on the Lemania 1341."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: ["Lemania 1341"]
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+variants: []
+read_more: []
+images:
+  - file: /images/graphomatic/c-chbjs1crsjw-1.webp
+    thumb: /images/graphomatic/c-chbjs1crsjw-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Grapho-Matic with a grey dial, orange chronograph hand and orange-framed registers on a tan strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CHBJS1Crsjw/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Grapho-Matic."
+  - file: /images/graphomatic/c-ckrvlwerawc-1.webp
+    thumb: /images/graphomatic/c-ckrvlwerawc-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Grapho-Matic with a grey dial, orange hands and tachymetre scale on a brown strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CKRvLwErAWc/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Grapho-Matic."
+  - file: /images/graphomatic/c-cecsvucnysn-1.webp
+    thumb: /images/graphomatic/c-cecsvucnysn-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Grapho-Matic in a cushion case with a grey dial and orange registers on a steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CEcsvuCnYsN/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Grapho-Matic."
+  - file: /images/graphomatic/c-cfcup2ah9wr-1.webp
+    thumb: /images/graphomatic/c-cfcup2ah9wr-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Grapho-Matic with a dark dial and orange hands on a steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CFcuP2AH9wR/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Grapho-Matic."
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Grapho-Matic"
+      bands:
+        - { condition: "Very good to mint", low: 2000, high: 2500 }
+        - { condition: "Average to good", low: 1000, high: 2000 }
+        - { condition: "Poor to fair", low: 750, high: 1000 }
+      note: "Barometer #3 (2018) captions it as Seiko powered; his Sherpa Electric article names the Lemania 1341, and Barometer #1 a Lemania movement."
+status: draft
+gaps:
+  - "Factory reference numbers"
+  - "Production years"
+  - "Case size and material"
+citations:
+  - id: eo-electric
+    source: enicar-org
+    url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    title: "The staying power of the Sherpa Electric"
+    retrieved: 2026-10-25
+    supports: [movement.calibres]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25
