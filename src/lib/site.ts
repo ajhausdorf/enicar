@@ -42,6 +42,13 @@ export function formatRange(currency: string, b: { low: number | null; high: num
 export function barometerOf(leaf: { ref: any; variant?: any }) {
   return leaf.variant?.barometer ?? leaf.ref.data.barometer ?? null;
 }
+// US dollars per unit, set by hand (mid-market, from XE and Bloomberg on the
+// date below). The "USD" toggle converts with these; update both together.
+export const USD_RATES = {
+  asOf: '2026-10-25',
+  rates: { USD: 1, EUR: 1.1203, CHF: 1.212, GBP: 1.3377, HKD: 0.1275, SEK: 0.1007, JPY: 0.00638 } as Record<string, number>
+};
+export const toUsd = (currency: string, v: number) => v * (USD_RATES.rates[currency] ?? NaN);
 // Listings count as current for this long after they were last checked.
 export const LISTING_FRESH_DAYS = 21;
 

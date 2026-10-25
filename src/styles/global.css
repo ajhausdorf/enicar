@@ -40,9 +40,12 @@ h2 { margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.01em; }
 .nav { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 14px; font-weight: 500; }
 .nav a { text-decoration: none; padding: 10px 0; }
 .nav a[aria-current='page'] { color: var(--accent); }
-.search { margin-left: auto; display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 6px; padding: 0 12px; height: 44px; flex: 0 1 300px; min-width: 200px; background: var(--wash); }
+.cur-toggle { margin-left: auto; height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--ink-2); font: inherit; font-size: 13px; font-weight: 500; cursor: pointer; }
+.cur-toggle:hover { border-color: var(--ink); }
+.cur-toggle[aria-pressed='true'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.search { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 6px; padding: 0 12px; height: 44px; flex: 0 1 300px; min-width: 200px; background: var(--wash); }
 .search input { border: 0; background: transparent; font: inherit; font-size: 14px; flex: 1; min-width: 0; outline: none; color: var(--ink); }
-@media (max-width: 720px) { .search { margin-left: 0; flex: 1 1 100%; } }
+@media (max-width: 720px) { .search { flex: 1 1 100%; } }
 
 /* Buttons and chips */
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border-radius: 6px; background: var(--ink); color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; border: 0; }

@@ -1,0 +1,10 @@
+---
+// A price, or a price range, in its original currency. The currency toggle in
+// the header rewrites it to US dollars in the browser, using the fixed rates
+// in src/lib/site.ts, and back again.
+import { formatPrice, formatRange } from '../lib/site';
+interface Props { currency: string; value?: number; low?: number | null; high?: number; class?: string; title?: string }
+const { currency, value, low = null, high, class: cls, title } = Astro.props;
+const text = value != null ? formatPrice(currency, value) : formatRange(currency, { low, high: high! });
+---
+<span class:list={['money', cls]} data-cur={currency} data-v={value} data-lo={low ?? undefined} data-hi={high} title={title}>{text}</span>
