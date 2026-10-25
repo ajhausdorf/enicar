@@ -41,6 +41,10 @@ why it is a false alarm and stop.
    `data/sources.yaml`, the exact page URL, the date you read it, and the
    fields it supports (`supports: [movement.calibre, years.from]`). History
    paragraphs and variants list the citation ids they rely on in `cites`.
+   A message from a collector or photographer to the owner counts as a
+   source: cite it with the sender's entry in `data/sources.yaml`, their
+   profile as the URL, a title saying it is a message and what it covers,
+   and the date. Summarise it in our words; don't paste private messages.
 2. **Draft vs verified.** New records start `status: draft` with `gaps`
    listing what is missing. Only set `verified` when every populated fact
    field is supported, every paragraph cites, and `gaps` is empty. The check

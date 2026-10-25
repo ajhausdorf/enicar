@@ -111,7 +111,7 @@ variants:
     years:
       from: 1963
       to: 1963
-    tell: "Small logo above the word Enicar (early 601.xxx watches keep the large logo), white or grey tachymetre ring from 300, unpainted paddle hands and a red chronograph hand (straight, or lollipop on later ones)."
+    tell: "Small logo above the word Enicar (early 601.xxx watches keep the large logo), white or grey tachymetre ring from 300, unpainted paddle hands and a red chronograph hand (straight, or lollipop on later ones); on the all-black dial, T Swiss Made is printed at the bottom."
     hands: "Unpainted paddle; straight red chronograph hand, later also lollipop; arrow-shaped, later thin, register hands"
     bezel: "White or grey inner tachymetre ring from 300; some early ones without the word Tachymetre"
     dials:
@@ -131,11 +131,12 @@ variants:
       - eo-chrono-table
       - e101-graph-mkii
       - e101-graph-mk-iib
+      - tcp-msg-graph-dials
   - name: MkIII
     years:
       from: 1963
       to: 1966
-    tell: "Black or grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip."
+    tell: "Black or grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip; on the black dial, a T sits above the 12 on the hour register."
     hands: "Paddle with short orange tips; chronograph hand with a red dot near the tip; thin register hands"
     bezel: "Black or grey inner tachymetre ring from 300"
     dials:
@@ -157,6 +158,7 @@ variants:
     cites:
       - eo-chrono-table
       - e101-graph-mkiii
+      - tcp-msg-graph-dials
   - name: MkIV
     years:
       from: 1967
@@ -692,8 +694,8 @@ images:
     permission: granted
     permission_ref: two-crowned-prints
     caption: null
-    identified_by: caption
-    identified_note: "T Swiss is printed at the bottom of the dial. The photographer told the owner on 2026-10-25 that this marks the MkII; on the MkIII the T sits above the 12 on the hour register."
+    identified_by: tells
+    identified_note: "T Swiss is printed at the bottom of the dial, the MkII tell; the photographer gave this tell in a message to the owner, 2026-10-25."
 barometer: null
 status: draft
 gaps:
@@ -701,7 +703,6 @@ gaps:
   - Case material and lug width
   - Price
   - Citation for the Jim Clark nickname
-  - "Dial tell from a collector, not yet in a public source: the MkII has T Swiss Made at the bottom of the dial, the MkIII a T above the 12 on the hour register."
 citations:
   - id: eo-matrix
     source: enicar-org
@@ -760,6 +761,12 @@ citations:
     source: enicar101
     url: https://enicar101.com/sherpa-graph-mk-iib/
     title: Sherpa Graph MK IIb
+    retrieved: 2026-10-25
+    supports: []
+  - id: tcp-msg-graph-dials
+    source: two-crowned-prints
+    url: https://www.instagram.com/two_crowned_prints/
+    title: Message from James (@two_crowned_prints) to the owner on telling MkII and MkIII black dials apart
     retrieved: 2026-10-25
     supports: []
 last_reviewed: 2026-10-25
