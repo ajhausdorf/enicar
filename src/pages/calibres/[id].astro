@@ -1,7 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { href, calibreUsage, CONTRIBUTE_URL } from '../../lib/site';
+import { calibreUsage, leavesOf, slugify, CONTRIBUTE_URL } from '../../lib/site';
 
 export async function getStaticPaths() {
   const calibres = await getCollection('calibres');
@@ -58,11 +58,11 @@ const specs = [
       <h2>Watches with this calibre</h2>
       {used.length === 0 ? <p class="muted">None recorded yet.</p> : (
         <ul>
-          {used.map((u) => (
-            <li class="card">
-              <a href={href.ref(u.ref.id)}><strong>{u.ref.data.name}</strong></a>
-              {u.variants.length > 0 && <span class="muted small">{u.variants.join(', ')}</span>}
-            </li>
+          {used.flatMap((u) => u.variants.length
+            ? u.variants.map((v) => ({ name: `${u.ref.data.name} ${v}`, path: `/ref/${u.ref.id}/${slugify(v)}/` }))
+            : [{ name: u.ref.data.name, path: leavesOf(u.ref)[0].path }]
+          ).map((l) => (
+            <li class="card"><a href={l.path}><strong>{l.name}</strong></a></li>
           ))}
         </ul>
       )}

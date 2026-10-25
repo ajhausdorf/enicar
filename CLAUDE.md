@@ -76,13 +76,21 @@ why it is a false alarm and stop.
    result before using it, and write alt text from what the photo shows.
    Openly licensed photos: search Wikimedia Commons by API
    (`list=search&srnamespace=6&srsearch=intitle:Enicar`).
-7. **Generations go in `variants`.** When specs differ by generation (size,
+7. **Three levels: family, model, generation.** A family (Sherpa) is a
+   filter. A model (Sherpa Jet) is one record and a sub-filter under its
+   family. Each generation (MkI) in the record's `variants` gets its own page
+   at `/ref/<model>/<generation>/`, and its own catalog card. Models with
+   generations have no page of their own. A model with no generations gets
+   one page at `/ref/<model>/`. Tag photos and photo links with `variant` so
+   they appear on the right generation; untagged ones appear on every
+   generation of the model.
+8. **Generations go in `variants`.** When specs differ by generation (size,
    calibre, bezel), leave the top-level field null and record them per
    variant; the page builds a comparison table from them. Reference numbers
    go in `references`, each with its own citation, and dealer listings are
    `tier: listing` sources: fine for reference numbers, weak for anything
    else.
-8. **Bump `last_reviewed`** on any record you touch.
+9. **Bump `last_reviewed`** on any record you touch.
 
 ## Writing on the site
 

@@ -3,7 +3,7 @@
 // and the search index was built. Run after `npm run build`.
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
-import { loadReferences, loadCalibres, Report, ROOT } from './lib.mjs';
+import { loadReferences, loadCalibres, leavesOf, Report, ROOT } from './lib.mjs';
 
 const DIST = join(ROOT, 'dist');
 
@@ -27,12 +27,17 @@ export function checkSite() {
   if (!existsSync(DIST)) { r.error('dist', 'not built; run npm run build first'); return r; }
 
   const refs = loadReferences();
-  for (const { id, data } of refs) {
-    const page = join(DIST, 'ref', id, 'index.html');
-    if (!existsSync(page)) { r.error(`/ref/${id}/`, 'page missing'); continue; }
+  const leaves = refs.flatMap(leavesOf);
+  for (const leaf of leaves) {
+    const page = join(DIST, leaf.path, 'index.html');
+    if (!existsSync(page)) { r.error(leaf.path, 'page missing'); continue; }
     const html = decode(readFileSync(page, 'utf8'));
-    if (!html.includes(data.name)) r.error(`/ref/${id}/`, `page does not show the record name "${data.name}"`);
-    if (data.status === 'draft' && !html.includes('Draft record.')) r.error(`/ref/${id}/`, 'draft record is missing its draft notice');
+    if (!html.includes(leaf.name)) r.error(leaf.path, `page does not show "${leaf.name}"`);
+    if (leaf.status === 'draft' && !html.includes('Draft record.')) r.error(leaf.path, 'draft record is missing its draft notice');
+  }
+  // Models with generations get no page of their own; the catalog filters to them.
+  for (const { id, data } of refs) {
+    if ((data.variants ?? []).length && existsSync(join(DIST, 'ref', id, 'index.html'))) r.error(`/ref/${id}/`, 'model has generations, so it should not have its own page');
   }
 
   for (const { id, data } of loadCalibres()) {
@@ -43,7 +48,7 @@ export function checkSite() {
 
   const index = existsSync(join(DIST, 'index.html')) ? readFileSync(join(DIST, 'index.html'), 'utf8') : '';
   const cards = (index.match(/class="watch-card"/g) ?? []).length;
-  if (cards !== refs.length) r.error('/', `catalog shows ${cards} cards but there are ${refs.length} records`);
+  if (cards !== leaves.length) r.error('/', `catalog shows ${cards} cards but there are ${leaves.length} watch pages`);
 
   for (const page of ['sources', 'coverage', 'calibres', 'search']) {
     if (!existsSync(join(DIST, page, 'index.html'))) r.error(`/${page}/`, 'page missing');

@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { href, calibreUsage } from '../../lib/site';
+import { calibreUsage, leavesOf, slugify } from '../../lib/site';
 
 const calibres = (await getCollection('calibres')).sort((a, b) => a.data.name.localeCompare(b.data.name, 'en', { numeric: true }));
 const usage = calibreUsage(await getCollection('references'));
@@ -25,7 +25,10 @@ const byId = Object.fromEntries(calibres.map((c) => [c.id, c]));
                 <th scope="row"><a href={`/calibres/${c.id}/`}>{c.data.name}</a>{c.data.status === 'draft' && <span class="badge draft">Draft</span>}</th>
                 <td>{[c.data.winding, ...c.data.functions].filter(Boolean).join(', ') || <span class="muted">Unknown</span>}</td>
                 <td>{c.data.base ? <a href={`/calibres/${c.data.base.id}/`}>{byId[c.data.base.id]?.data.name}</a> : <span class="muted">—</span>}</td>
-                <td>{used.length ? used.map((u, i) => <>{i > 0 && ', '}<a href={href.ref(u.ref.id)}>{u.ref.data.name}</a></>) : <span class="muted">No watches recorded yet</span>}</td>
+                <td>{used.length ? used.flatMap((u) => u.variants.length
+                    ? u.variants.map((v) => ({ name: `${u.ref.data.name} ${v}`, path: `/ref/${u.ref.id}/${slugify(v)}/` }))
+                    : [{ name: u.ref.data.name, path: leavesOf(u.ref)[0].path }]
+                  ).map((l, i) => <>{i > 0 && ', '}<a href={l.path}>{l.name}</a></>) : <span class="muted">No watches recorded yet</span>}</td>
               </tr>
             );
           })}

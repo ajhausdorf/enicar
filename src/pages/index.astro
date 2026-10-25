@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import WatchCard from '../components/WatchCard.astro';
-import { KIND_LABEL, decadeOf } from '../lib/site';
+import { KIND_LABEL, decadeOf, leavesOf } from '../lib/site';
 
 const families = (await getCollection('families')).sort((a, b) => a.data.order - b.data.order);
 const familyName = Object.fromEntries(families.map((f) => [f.id, f.data.name]));
@@ -10,10 +10,17 @@ const refs = (await getCollection('references')).sort((a, b) =>
   (families.findIndex((f) => f.id === a.data.family.id) - families.findIndex((f) => f.id === b.data.family.id)) ||
   a.data.name.localeCompare(b.data.name));
 
-const counts = Object.fromEntries(families.map((f) => [f.id, refs.filter((r) => r.data.family.id === f.id).length]));
-const verified = refs.filter((r) => r.data.status === 'verified').length;
+// One card per generation (or per model, when it has no generations).
+const leaves = refs.flatMap((r) => leavesOf(r));
+const countIn = (pred: (l: (typeof leaves)[number]) => boolean) => leaves.filter(pred).length;
+const tree = families.map((f) => ({
+  f,
+  count: countIn((l) => l.ref.data.family.id === f.id),
+  models: refs.filter((r) => r.data.family.id === f.id).map((r) => ({ r, count: countIn((l) => l.ref.id === r.id) }))
+}));
+const verified = countIn((l) => l.ref.data.status === 'verified');
 const kinds = [...new Set(refs.map((r) => r.data.kind))].sort();
-const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boolean))].sort() as string[];
+const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean))].sort() as string[];
 ---
 <Base section="catalog">
   <section class="hero">
@@ -23,7 +30,7 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
         <p class="lede">Specs, generations, reference numbers and calibres for vintage Enicar watches. Each record lists its sources. Most are still drafts.</p>
       </div>
       <dl class="stats">
-        <div><dt>References</dt><dd class="mono">{refs.length}</dd></div>
+        <div><dt>Watches</dt><dd class="mono">{leaves.length}</dd></div>
         <div><dt>Verified</dt><dd class="mono">{verified}</dd></div>
         <div><dt>Families</dt><dd class="mono">{families.length}</dd></div>
       </dl>
@@ -59,9 +66,16 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
   <div class="wrap layout">
     <aside class="families" aria-label="Families">
       <p class="eyebrow">Families</p>
-      <button type="button" class="fam" data-family="" aria-pressed="true"><span>All</span><span class="mono">{refs.length}</span></button>
-      {families.map((f) => (
-        <button type="button" class="fam" data-family={f.id} aria-pressed="false"><span>{f.data.name}</span><span class="mono">{counts[f.id]}</span></button>
+      <button type="button" class="fam" data-family="" aria-pressed="true"><span>All</span><span class="mono">{leaves.length}</span></button>
+      {tree.map(({ f, count, models }) => (
+        <div class="fam-group">
+          <button type="button" class="fam" data-family={f.id} aria-pressed="false"><span>{f.data.name}</span><span class="mono">{count}</span></button>
+          <div class="models" data-models-of={f.id} hidden>
+            {models.map(({ r, count: n }) => (
+              <button type="button" class="model" data-family={f.id} data-model={r.id} aria-pressed="false"><span>{r.data.name}</span><span class="mono">{n}</span></button>
+            ))}
+          </div>
+        </div>
       ))}
       <div class="panel about">
         <strong>Drafts</strong>
@@ -72,13 +86,13 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
 
     <section class="results" aria-labelledby="results-h">
       <div class="results__head">
-        <h2 id="results-h">All references</h2>
-        <span class="muted" id="shown" aria-live="polite">{refs.length} shown</span>
+        <h2 id="results-h">All watches</h2>
+        <span class="muted" id="shown" aria-live="polite">{leaves.length} shown</span>
       </div>
       <div class="grid" id="grid">
-        {refs.map((r) => <WatchCard entry={r} familyName={familyName[r.data.family.id]} />)}
+        {leaves.map((l) => <WatchCard leaf={l} familyName={familyName[l.ref.data.family.id]} />)}
       </div>
-      <p class="empty" id="empty" hidden>No references match these filters.</p>
+      <p class="empty" id="empty" hidden>No watches match these filters.</p>
     </section>
   </div>
 </Base>
@@ -88,6 +102,8 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
   const cards = [...grid.querySelectorAll<HTMLElement>('.watch-card')];
   const order = new Map(cards.map((c, i) => [c, i]));
   const famButtons = [...document.querySelectorAll<HTMLButtonElement>('.fam')];
+  const modelButtons = [...document.querySelectorAll<HTMLButtonElement>('.model')];
+  const modelLists = [...document.querySelectorAll<HTMLElement>('[data-models-of]')];
   const kind = document.getElementById('f-kind') as HTMLSelectElement;
   const decade = document.getElementById('f-decade') as HTMLSelectElement;
   const photo = document.getElementById('f-photo') as HTMLButtonElement;
@@ -95,12 +111,15 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
   const heading = document.getElementById('results-h')!;
   const shown = document.getElementById('shown')!;
   const empty = document.getElementById('empty')!;
-  let family = new URLSearchParams(location.search).get('family') ?? '';
+  const params = new URLSearchParams(location.search);
+  let family = params.get('family') ?? '';
+  let model = params.get('model') ?? '';
 
   function apply() {
     let n = 0;
     for (const c of cards) {
       const ok = (!family || c.dataset.family === family) &&
+        (!model || c.dataset.model === model) &&
         (!kind.value || c.dataset.kind === kind.value) &&
         (!decade.value || c.dataset.decade === decade.value) &&
         (photo.getAttribute('aria-pressed') !== 'true' || c.dataset.hasPhoto === 'yes');
@@ -112,16 +131,22 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
       sort.value === 'year' ? Number(a.dataset.year) - Number(b.dataset.year) :
       order.get(a)! - order.get(b)!);
     grid.append(...sorted);
-    for (const b of famButtons) b.setAttribute('aria-pressed', String(b.dataset.family === family));
-    const active = famButtons.find((b) => b.dataset.family === family);
-    heading.textContent = family && active ? `${active.firstElementChild!.textContent} family` : 'All references';
+    for (const b of famButtons) b.setAttribute('aria-pressed', String(b.dataset.family === family && !model));
+    for (const b of modelButtons) b.setAttribute('aria-pressed', String(b.dataset.model === model));
+    for (const l of modelLists) l.hidden = l.dataset.modelsOf !== family;
+    const activeFam = famButtons.find((b) => b.dataset.family === family);
+    const activeModel = modelButtons.find((b) => b.dataset.model === model);
+    heading.textContent = activeModel ? activeModel.firstElementChild!.textContent!
+      : family && activeFam ? `${activeFam.firstElementChild!.textContent} family` : 'All watches';
     shown.textContent = `${n} shown`;
     empty.hidden = n > 0;
     const url = new URL(location.href);
     family ? url.searchParams.set('family', family) : url.searchParams.delete('family');
+    model ? url.searchParams.set('model', model) : url.searchParams.delete('model');
     history.replaceState(null, '', url);
   }
-  for (const b of famButtons) b.addEventListener('click', () => { family = b.dataset.family ?? ''; apply(); });
+  for (const b of famButtons) b.addEventListener('click', () => { family = b.dataset.family ?? ''; model = ''; apply(); });
+  for (const b of modelButtons) b.addEventListener('click', () => { family = b.dataset.family ?? ''; model = b.dataset.model ?? ''; apply(); });
   photo.addEventListener('click', () => { photo.setAttribute('aria-pressed', String(photo.getAttribute('aria-pressed') !== 'true')); apply(); });
   for (const el of [kind, decade, sort]) el.addEventListener('change', apply);
   apply();
@@ -146,6 +171,12 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
   .fam { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 44px; padding: 0 10px; border: 0; border-radius: 6px; background: transparent; color: var(--ink); font: inherit; font-size: 14px; text-align: left; cursor: pointer; }
   .fam .mono { font-size: 12px; color: var(--muted); }
   .fam[aria-pressed='true'] { background: var(--plate); color: var(--accent); font-weight: 600; }
+  .fam-group { display: flex; flex-direction: column; gap: 2px; }
+  .models { display: flex; flex-direction: column; gap: 2px; margin: 0 0 6px 12px; padding-left: 8px; border-left: 1px solid var(--line); }
+  .models[hidden] { display: none; }
+  .model { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 40px; padding: 0 10px; border: 0; border-radius: 6px; background: transparent; color: var(--ink-2); font: inherit; font-size: 13px; text-align: left; cursor: pointer; }
+  .model .mono { font-size: 12px; color: var(--muted); }
+  .model[aria-pressed='true'] { background: var(--plate); color: var(--accent); font-weight: 600; }
   .about { margin-top: 20px; padding: 16px; display: flex; flex-direction: column; gap: 8px; font-size: 13px; color: var(--ink-2); }
   .about strong { color: var(--ink); }
   .results { flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
@@ -158,6 +189,9 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
     .families { max-width: none; flex-direction: row; flex-wrap: wrap; }
     .families .eyebrow, .about { flex-basis: 100%; }
     .fam { flex: 0 0 auto; gap: 8px; }
+    .fam-group { display: contents; }
+    .models { flex-basis: 100%; flex-direction: row; flex-wrap: wrap; margin: 0; border-left: 0; padding-left: 0; }
+    .model { flex: 0 0 auto; gap: 8px; }
     .ctl--end { margin-left: 0; }
   }
 </style>

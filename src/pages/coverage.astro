@@ -3,7 +3,7 @@
 // and what each record is still missing.
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { href } from '../lib/site';
+import { href, leavesOf } from '../lib/site';
 
 const families = (await getCollection('families')).sort((a, b) => a.data.order - b.data.order);
 const refs = await getCollection('references');
@@ -41,7 +41,7 @@ const withGaps = refs.filter((r) => r.data.gaps.length > 0).sort((a, b) => b.dat
       <h2>Open gaps</h2>
       <ul>
         {withGaps.map((r) => (
-          <li class="card"><a href={href.ref(r.id)}><strong>{r.data.name}</strong></a><span class="muted">{r.data.gaps.join(' · ')}</span></li>
+          <li class="card"><a href={leavesOf(r).length > 1 ? href.model(r.data.family.id, r.id) : leavesOf(r)[0].path}><strong>{r.data.name}</strong></a><span class="muted">{r.data.gaps.join(' · ')}</span></li>
         ))}
       </ul>
     </section>
