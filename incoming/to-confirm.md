@@ -2,7 +2,7 @@
 
 Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs`. Do not edit by hand.
 
-## @two_crowned_prints (64 photos)
+## @two_crowned_prints (47 photos)
 
 ### Their label and the source disagree
 
@@ -30,120 +30,49 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
 
 ### Which generation?
 
-- **https://www.instagram.com/p/DeCPrIps6xG/** · sherpa-graph
-  Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it.
-  - Silver dial, black subdials, tan strap
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
 - **https://www.instagram.com/p/DX1qtstDA3D/** · sherpa-graph
-  Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it.
-  - Grey and white dial, silver tachymeter ("Jim Clark")
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/DPo2Fnejq4-/** · sherpa-graph
-  Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it.
-  - White dial
-  - Owner calls it "a late Sherpa Graph" (MkIII or MkIV?).
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  This looks like a MkIb to us. Can you confirm, or share the serial?
+  - Grey dial with white registers ("Jim Clark"), large early logo, long-tipped paddle hands, straight red chronograph hand.
+  - The ring between 60 and 300 looks blank, the MkIb tell (the MkIc ring reads Tachymetre); glare makes it hard to be certain.
 - **https://www.instagram.com/p/DOTov7WkTit/** · sherpa-graph
-  Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it.
-  - Silver dial, on a racing photo
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  Is this MkIc or an early MkII? The serial would settle it.
+  - White dial, ring reading Tachymetre, paddle hands, large early logo, chronograph hand black or unpainted.
+  - The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo.
 - **https://www.instagram.com/p/DAwG-oJy_Ta/** · sherpa-graph
-  Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it.
-  - Silver dial, cream subdials, white strap
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  This looks like a MkIb to us. Can you confirm, or share the serial?
+  - Grey dial with cream registers, large early logo, long-tipped paddle hands, straight red chronograph hand.
+  - The ring looks blank where the MkIc would read Tachymetre, which leans MkIb, but glare covers part of it.
 - **https://www.instagram.com/p/DAbGn2pOnZ_/** · sherpa-graph
-  Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it.
-  - Black dial
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  Is this a MkII or a MkIII? The serial would settle it.
+  - Black dial with black registers and paddle hands.
+  - Enicar 101 lists all-black dials for both MkII and MkIII; the MkIII has orange-tipped hands and a red-dot chronograph hand, which aged lume makes hard to judge here.
 - **https://www.instagram.com/p/C--axwuJAWl/** · sherpa-graph
-  Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it.
-  - White dial ("Snow White")
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  Is this MkIc or an early MkII? The serial would settle it.
+  - White dial, ring reading Tachymetre, unpainted paddle hands, large early logo, chronograph hand black or unpainted.
+  - The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo.
 - **https://www.instagram.com/p/CyWBh1Nrugk/** · sherpa-graph
-  Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it.
-  - White dial
-  - Owner calls it "an early Sherpa Graph" (MkI to MkId?).
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  Is this MkIc or an early MkII? The serial would settle it.
+  - White dial, ring reading Tachymetre, unpainted paddle hands, large early logo, black chronograph hand.
+  - Owner calls it an early Sherpa Graph.
+  - The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo.
 - **https://www.instagram.com/p/Cwv4VnePPnI/** · sherpa-graph
-  Which generation: MkI, MkIb, MkIc, MkId, MkII, MkIII or MkIV? A serial number would settle it.
-  - Black dial, black Tropic strap
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  Is this a MkII or a MkIII? The serial would settle it.
+  - Black dial with black registers, long-tipped paddle hands, dark grey ring reading Tachymetre.
+  - A grey ring fits both the MkII and the MkIII on Enicar 101; the MkIII has short orange tips and a red-dot chronograph hand, which are not visible here.
 - **https://www.instagram.com/p/C2DSok_vkIO/** · sherpa-graph
   Two Graphs, one white dial and one black: which generation is each?
-  - Two watches in one photo.
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/DbTVztDs6HZ/** · sherpa-aqua-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, white subdials, blue and red bezel
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/C7rZcsCxrO1/** · sherpa-aqua-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, BOR bracelet
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - Two watches in one photo, a white-dial and a black-dial Sherpa Graph; the photo cannot go on one generation page.
 - **https://www.instagram.com/p/CkMznZdLJkV/** · sherpa-aqua-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Blue bezel, at a table by the water
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/CfjxSmJJpbP/** · sherpa-aqua-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, red pointer ring (#seapearl)
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/Ccaq6h0roNz/** · sherpa-aqua-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, cream subdials
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/CbA5BHWpzNv/** · sherpa-aqua-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, Tropic strap (#sherpa300)
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/CU0PB0Gpgft/** · sherpa-aqua-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Parchment subdials ("six hands")
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/CQRrrXqLTA1/** · sherpa-aqua-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, cream subdials
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  Which generation is this Aqua Graph? The serial would settle it.
+  - Distant photo at a table; the hands and pointer that separate the generations on Enicar 101 cannot be seen.
 - **https://www.instagram.com/p/COnu8xCLQbD/** · sherpa-aqua-graph + sherpa-jet-graph
   An Aqua Graph and a Jet Graph together: which generation is each?
   - Two watches in one photo.
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/De10_oRMb3T/** · sherpa-jet-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, white subdials ("quesadilla timer")
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  - Two watches in one photo, so it cannot go on one generation page as it is.
 - **https://www.instagram.com/p/DZssDJbMtUv/** · sherpa-jet-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Grey dial, no strap
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/C-QRrgZPR5p/** · sherpa-jet-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, checkered GMT hand
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/CzRuY0JvJum/** · sherpa-jet-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Blue and red bezel (photo 2 has no watch)
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/Cue9E0gRt6U/** · sherpa-jet-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - On the wrist, window seat
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/Ci5daTCpur0/** · sherpa-jet-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Red and silver bezel
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/CgXqjF6PvbG/** · sherpa-jet-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - With a dog
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/CTw_rgKlJSW/** · sherpa-jet-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, red and black bezel
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
-- **https://www.instagram.com/p/CSCg578lwd5/** · sherpa-jet-graph
-  Which generation: MkIa, MkIb, MkII, MkIII or MkIV?
-  - Black dial, silver bezel (#sherpa300)
-  - The chronograph table gives each generation by reference and serial range but no visual tells, so a photo can only be placed if the owner names the generation or the serial is known.
+  Which generation is this Jet Graph? The serial would settle it.
+  - Grey sunburst dial with grey registers, straight red chronograph hand, no strap.
+  - None of Enicar 101's generation descriptions mention a grey dial with grey registers; the MkIa came in black or grey.
 - **https://www.instagram.com/p/C0mWDkMpFJ7/** · sherpa-jet · our guess: MkII or MkIII
   Which generation is it?
   - Silver sunburst dial, yellow and black inner bezel, red/black checkered GMT hand; owner says "like it's 1967".
@@ -291,7 +220,7 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   The black-dial Ultrasonic from their own collection: which model or reference?
   - Dial reads Enicar Ultrasonic; no model or reference given.
 
-## @vandervenus (18 photos)
+## @vandervenus (11 photos)
 
 ### Which generation?
 
@@ -299,46 +228,19 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   The black-dial Super-Jet you sold in consignment in 2022: your caption says MkII, but it has a checkered GMT hand. MkII or MkIII? And are these your photos?
   - Caption: 1968 Sherpa Super-Jet MkII, sold in consignment.
   - The GMT hand is the red and black checkered hand, the MkIII tell in your Jet article.
-- **https://www.instagram.com/p/Bq67A_3HuGE/** · sherpa-graph · our guess: MkI
-  Your Sherpa Graph MkI posts (Bq67A_3HuGE, B21Hpi4oJhJ, COQL6MGLznL, CahL-_RL6un): which generation is each: MkI, MkIb, MkIc or MkId? The serial number would settle it.
-  - Captions say MkI; two of them date it 1961.
-  - The production table splits it into MkI (1960), MkIb (1961), MkIc and MkId (1962) by serial range only, so the dial alone does not decide it.
-- **https://www.instagram.com/p/B21Hpi4oJhJ/** · sherpa-graph · our guess: MkI
-  Which MkI sub-generation (see Bq67A_3HuGE)?
-  - Caption: Sherpa Graph MkI, 1961 execution.
-  - Sub-generations differ by serial range only.
-- **https://www.instagram.com/p/COQL6MGLznL/** · sherpa-graph · our guess: MkI
-  Which MkI sub-generation (see Bq67A_3HuGE)?
-  - Caption: Sherpa Graph MkI, 1961.
-  - Sub-generations differ by serial range only.
 - **https://www.instagram.com/p/CahL-_RL6un/** · sherpa-graph · our guess: MkI
-  Which MkI sub-generation (see Bq67A_3HuGE)?
+  Which MkI generation is this: MkI, MkIb, MkIc or MkId? The serial would settle it.
   - Caption: Sherpa Graph MkI, full set sold in 2017.
-  - Sub-generations differ by serial range only.
+  - Photo is too small to read the tachymetre ring that separates MkI, MkIb and MkIc on Enicar 101.
 - **https://www.instagram.com/p/CXGfWwYrdMI/** · sherpa-aqua-graph
   Which generation is this, and do you know its serial number?
   - Caption: 1968 Aqua Graph with red pointer ring.
-  - Aqua Graph generations are defined by serial range only in the production table; in the production table only the MkIV (3/68 to 5/69) covers 1968, though his captions also call 1968 watches MkII and MkIII.
+  - Paddle hands with a triangle pointer fit the MkIa, MkIb or MkII on Enicar 101, and they differ only in details not visible here; only the MkIV covers 1968 in the production table.
 - **https://www.instagram.com/p/Cipa5o0rbG3/** · sherpa-aqua-graph
-  Which generation is this, and do you know its serial number?
+  Your all black Aqua Graph has baton hands, and an orange triangle chronograph hand, which Enicar 101 describes for the MkIV, but it lists no all-black MkIV dial. Which generation is it?
   - Caption: all black dial Aqua Graph from his archive, no year.
-  - Generations differ by serial range only.
-- **https://www.instagram.com/p/DCuYpW7O9cy/** · sherpa-jet-graph
-  Which generation is this, and do you know its serial number?
-  - Caption names the Jet Graph, no generation or year.
-  - Jet Graph generations are defined by serial range only in the production table.
-- **https://www.instagram.com/p/CrQeLYStnUu/** · sherpa-jet-graph
-  Which generation is this, and do you know its serial number?
-  - Caption names the Jet Graph, no generation or year.
-  - Generations differ by serial range only.
-- **https://www.instagram.com/p/BzGkRaeoXAV/** · sherpa-jet-graph
-  Which generation is this, and do you know its serial number?
-  - Caption names the Jet-Graph, no generation or year.
-  - Generations differ by serial range only.
-- **https://www.instagram.com/p/CAsvy8QnL5t/** · sherpa-jet-graph
-  Which generation is this, and do you know its serial number?
-  - Caption names the Jet Graph, no generation or year; the bezel has a red and blue section.
-  - Generations differ by serial range only.
+  - Baton hands and an orange triangle chronograph hand: MkIV tells on Enicar 101.
+  - Enicar 101 gives black with white registers as the most common MkIV dial and mentions no all-black one; the register hands here are thin and white, not orange.
 - **https://www.instagram.com/p/Cb6--RmMvI2/** · sherpa-super-jet · our guess: MkII
   Your caption calls this Super-Jet a MkI, but it looks like a MkII to us. Which is it?
   - Caption: Super-Jet MkI from the early 1960s.

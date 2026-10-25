@@ -39,7 +39,13 @@ variants:
     years:
       from: 1963
       to: 1963
-    tell: Serial range 626.7xx – 627.0xx.
+    tell: "Applied logo, long orange-tipped paddle hands, arrow-shaped register hands and a silver GMT hand with an orange or yellow tip."
+    hands: "Paddle with long orange tips; thin plain chronograph hand; arrow-shaped register hands; silver GMT hand with an orange or yellow tip"
+    bezel: "Outer 24-hour bezel, black on silver from 6 to 18; red ring with a triangle pointer"
+    dials:
+      - "Black or grey"
+      - "Blue"
+      - "White"
     refs:
       - 072/002
     serials:
@@ -48,6 +54,7 @@ variants:
     production: "400"
     cites:
       - eo-chrono-table
+      - e101-jet-graph-mk-i
   - name: MkIb
     years:
       from: 1964
@@ -65,7 +72,11 @@ variants:
     years:
       from: 1966
       to: 1966
-    tell: Serial range 927.3xx.
+    tell: "All black dial with a printed logo, orange-tipped paddle hands, a thin red chronograph hand and a silver GMT hand with an orange tip."
+    hands: "Paddle with orange tips; thin red chronograph hand; white-painted register hands; silver GMT hand with an orange tip"
+    bezel: "Outer 24-hour bezel, black on silver from 6 to 18; red ring with a triangle pointer"
+    dials:
+      - "All black"
     refs:
       - 072-02-02
     serials:
@@ -74,11 +85,17 @@ variants:
     production: null
     cites:
       - eo-chrono-table
+      - e101-jet-graph-mkii
   - name: MkIII
     years:
       from: 1967
       to: 1969
-    tell: Serial range 986.8xx and others.
+    tell: "Baton hands outlined in white, a lollipop chronograph hand with a red dot, black register hands and a red and black checkered GMT hand."
+    hands: "Baton, outlined in white; lollipop chronograph hand with a red dot; black register hands; red and black checkered GMT hand"
+    bezel: "Outer 24-hour bezel, black on silver from 6 to 18; red ring with a house-shaped pointer"
+    dials:
+      - "Black with white registers"
+      - "All black"
     refs:
       - 072-02-02
       - 072-02-02A
@@ -91,11 +108,16 @@ variants:
     production: 500+
     cites:
       - eo-chrono-table
+      - e101-jet-graph-mkiii
   - name: MkIV
     years:
       from: 1969
       to: 1969
-    tell: Serial range 1.317.1xx – 1.322.0xx and others.
+    tell: "Baton hands, an orange or red triangle chronograph hand, an orange or red minute counter hand and a checkered GMT hand."
+    hands: "Baton, outlined in white; orange or red triangle chronograph hand; orange or red minute-counter hand; red and black checkered GMT hand"
+    bezel: "Outer 24-hour bezel, black on silver from 6 to 18; red ring with a house-shaped pointer"
+    dials:
+      - "Black with white registers"
     refs:
       - 072-02-02A
     serials:
@@ -106,6 +128,7 @@ variants:
     production: 2,300+
     cites:
       - eo-chrono-table
+      - e101-jet-graph-mkiv
 read_more:
   - title: Sherpa tool watch matrix
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
@@ -141,7 +164,199 @@ read_more:
     url: https://enicar101.com/jet-graph-mkiv/
     source: enicar101
     note: null
-images: []
+images:
+  - file: /images/sherpa-jet-graph/tcp-de10-ormb3t-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-de10-ormb3t-1-sm.webp
+    width: 1438
+    height: 1440
+    alt: "Jet Graph with a black dial, white registers, red minute-counter hand and checkered GMT hand, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/De10_oRMb3T/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/tcp-c-qrrgzpr5p-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-c-qrrgzpr5p-1-sm.webp
+    width: 1346
+    height: 1600
+    alt: "Jet Graph with a black dial, white registers and red chronograph and counter hands on a white strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/C-QRrgZPR5p/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/tcp-czruy0jvjum-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-czruy0jvjum-1-sm.webp
+    width: 1439
+    height: 1587
+    alt: "Jet Graph with a black dial, white registers and navy and silver 24-hour bezel on a white strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CzRuY0JvJum/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/tcp-ci5datcpur0-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-ci5datcpur0-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Jet Graph with a black dial, white registers and red counter hand on a black strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/Ci5daTCpur0/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/tcp-cgxqjf6pvbg-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-cgxqjf6pvbg-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Jet Graph on a black strap on the wrist, with a dog in the background"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CgXqjF6PvbG/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/tcp-ctw-rgkljsw-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-ctw-rgkljsw-1-sm.webp
+    width: 1440
+    height: 1445
+    alt: "Close view of a Jet Graph with a black dial, white registers and checkered GMT hand on a brown suede strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CTw_rgKlJSW/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/tcp-cscg578lwd5-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-cscg578lwd5-1-sm.webp
+    width: 1298
+    height: 1600
+    alt: "Jet Graph with a black dial, white registers and red counter hands on a brown suede strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CSCg578lwd5/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/v-dcuypw7o9cy-1.webp
+    thumb: /images/sherpa-jet-graph/v-dcuypw7o9cy-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Jet Graph with a black dial, white registers, red counter hand and checkered GMT hand on a red strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/DCuYpW7O9cy/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/v-crqelystnuu-1.webp
+    thumb: /images/sherpa-jet-graph/v-crqelystnuu-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Jet Graph with a black dial, white registers and red counter hands on a red strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CrQeLYStnUu/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/v-bzgkraeoxav-1.webp
+    thumb: /images/sherpa-jet-graph/v-bzgkraeoxav-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Jet Graph with a black dial, white registers, orange chronograph hand and checkered GMT hand"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/BzGkRaeoXAV/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/v-casvy8qnl5t-1.webp
+    thumb: /images/sherpa-jet-graph/v-casvy8qnl5t-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Jet Graph with a black dial and a red and blue section on the 24-hour bezel, in an Enicar box"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CAsvy8QnL5t/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/tcp-cue9e0grt6u-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-cue9e0grt6u-1-sm.webp
+    width: 1440
+    height: 1567
+    alt: "Jet Graph on a beige rally strap, on the wrist in an aircraft cabin"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/Cue9E0gRt6U/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand, red triangle chronograph hand and checkered GMT hand, the MkIV tells on Enicar 101."
 barometer: null
 status: draft
 gaps:
@@ -168,4 +383,28 @@ citations:
     supports:
       - years.from
       - years.to
+  - id: e101-jet-graph-mk-i
+    source: enicar101
+    url: https://enicar101.com/jet-graph-mk-i/
+    title: Jet Graph MK Ia
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-jet-graph-mkii
+    source: enicar101
+    url: https://enicar101.com/jet-graph-mkii/
+    title: Jet Graph MK II
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-jet-graph-mkiii
+    source: enicar101
+    url: https://enicar101.com/jet-graph-mkiii/
+    title: Jet Graph MK III
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-jet-graph-mkiv
+    source: enicar101
+    url: https://enicar101.com/jet-graph-mkiv/
+    title: Jet Graph MK IV
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25

@@ -39,7 +39,12 @@ variants:
     years:
       from: 1960
       to: 1960
-    tell: Serial range 272.5xx – 272.9xx.
+    tell: "White inner tachymetre ring marked Base 1000, large early logo, sword-shaped or paddle hands and a plain unpainted chronograph hand."
+    hands: "Sword-shaped (gladius) or paddle; plain unpainted chronograph hand; leaf-shaped register hands"
+    bezel: "White inner tachymetre ring, Tachymetre Base 1000"
+    dials:
+      - "Grey with white registers"
+      - "Black with white registers"
     refs:
       - 1308 BaNCH
     serials:
@@ -48,11 +53,18 @@ variants:
     production: "500"
     cites:
       - eo-chrono-table
+      - e101-graph-mkia
   - name: MkIb
     years:
       from: 1961
       to: 1961
-    tell: Serial range 409.2xx – 409.6xx.
+    tell: "Silver tachymetre ring without the word Tachymetre, large early logo, long-tipped paddle hands and a straight red chronograph hand."
+    hands: "Paddle with long tips; straight red chronograph hand; arrow-shaped register hands"
+    bezel: "Silver inner tachymetre ring without the word Tachymetre (a few have the Base 1000 ring)"
+    dials:
+      - "Black with white registers (reverse panda)"
+      - "White"
+      - "Grey with white registers (\"Jim Clark\")"
     refs:
       - 1308 BaNCH
     serials:
@@ -61,11 +73,18 @@ variants:
     production: "700"
     cites:
       - eo-chrono-table
+      - e101-graph-mkib
   - name: MkIc
     years:
       from: 1962
       to: 1962
-    tell: Serial range 526.0xx – 528.0xx.
+    tell: "Silver-white tachymetre ring marked Tachymetre from 300, large early logo, long-tipped paddle hands and a straight red chronograph hand."
+    hands: "Paddle with long tips; straight red chronograph hand; arrow-shaped register hands"
+    bezel: "Silver-white inner tachymetre ring, Tachymetre from 300"
+    dials:
+      - "White"
+      - "Black with white registers"
+      - "Grey with white registers (\"Jim Clark\")"
     refs:
       - 1308 BaNCH
     serials:
@@ -74,6 +93,7 @@ variants:
     production: 600+
     cites:
       - eo-chrono-table
+      - e101-graph-ic
   - name: MkId
     years:
       from: 1962
@@ -91,7 +111,14 @@ variants:
     years:
       from: 1963
       to: 1963
-    tell: Serial range 601.5xx – 601.9xx and others.
+    tell: "Small logo above the word Enicar (early 601.xxx watches keep the large logo), white or grey tachymetre ring from 300, unpainted paddle hands and a red chronograph hand (straight, or lollipop on later ones)."
+    hands: "Unpainted paddle; straight red chronograph hand, later also lollipop; arrow-shaped, later thin, register hands"
+    bezel: "White or grey inner tachymetre ring from 300; some early ones without the word Tachymetre"
+    dials:
+      - "Black with silver registers"
+      - "All black"
+      - "White"
+      - "White and silver"
     refs:
       - 072/001
     serials:
@@ -102,11 +129,20 @@ variants:
     production: 1,500
     cites:
       - eo-chrono-table
+      - e101-graph-mkii
+      - e101-graph-mk-iib
   - name: MkIII
     years:
       from: 1963
       to: 1966
-    tell: Serial range 635.9xx and others.
+    tell: "Black or grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip."
+    hands: "Paddle with short orange tips; chronograph hand with a red dot near the tip; thin register hands"
+    bezel: "Black or grey inner tachymetre ring from 300"
+    dials:
+      - "Black with grey registers"
+      - "All black"
+      - "White"
+      - "White with silver registers"
     refs:
       - 072-02-01
     serials:
@@ -120,11 +156,19 @@ variants:
     production: 3,200
     cites:
       - eo-chrono-table
+      - e101-graph-mkiii
   - name: MkIV
     years:
       from: 1967
       to: 1968
-    tell: Serial range 1.030.1xx – 1.030.8xx and others.
+    tell: "Baton hands outlined in white (black on white dials), an orange or red triangle chronograph hand and thick black register hands."
+    hands: "Baton, outlined in white (black on white dials); orange or red triangle chronograph hand; thick black register hands, the minute counter often orange or red"
+    bezel: "Black, grey or white inner tachymetre ring"
+    dials:
+      - "Black with white registers"
+      - "White with grey or silver registers"
+      - "Black with grey registers"
+      - "Blue with white registers"
     refs:
       - 072-02-01
     serials:
@@ -134,6 +178,7 @@ variants:
     production: 2,400
     cites:
       - eo-chrono-table
+      - e101-graph-iv
 read_more:
   - title: Sherpa tool watch matrix
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
@@ -489,6 +534,86 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Caption: Sherpa Graph MkIV from 1968."
+  - file: /images/sherpa-graph/tcp-decprips6xg-1.webp
+    thumb: /images/sherpa-graph/tcp-decprips6xg-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a white dial, silver registers and orange triangle chronograph hand on a tan suede strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/DeCPrIps6xG/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, orange triangle chronograph hand and thick black register hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-graph/tcp-dpo2fnejq4-1.webp
+    thumb: /images/sherpa-graph/tcp-dpo2fnejq4-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a white dial, silver registers and orange triangle chronograph hand on a white strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/DPo2Fnejq4-/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, orange triangle chronograph hand and thick black register hands, the MkIV tells on Enicar 101; the owner calls it a late Sherpa Graph."
+  - file: /images/sherpa-graph/v-bq67a-3huge-1.webp
+    thumb: /images/sherpa-graph/v-bq67a-3huge-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Graph with a black dial, silver registers and white tachymetre ring on a steel bracelet"
+    view: dial
+    variant: "MkIb"
+    source_url: https://www.instagram.com/p/Bq67A_3HuGE/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Silver-white tachymetre ring without the word Tachymetre, large early logo and a straight red chronograph hand: the MkIb tells on Enicar 101. Caption says MkI from 1961, which fits the MkIb (1961) and favours it over an early MkIIa with the same features."
+  - file: /images/sherpa-graph/v-b21hpi4ojhj-1.webp
+    thumb: /images/sherpa-graph/v-b21hpi4ojhj-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a black dial and silver registers on a grey woven strap"
+    view: dial
+    variant: "MkIb"
+    source_url: https://www.instagram.com/p/B21Hpi4oJhJ/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Silver-white tachymetre ring without the word Tachymetre, large early logo and a straight red chronograph hand: the MkIb tells on Enicar 101. Caption says MkI from 1961, which fits the MkIb (1961) and favours it over an early MkIIa with the same features."
+  - file: /images/sherpa-graph/v-coql6mglznl-1.webp
+    thumb: /images/sherpa-graph/v-coql6mglznl-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a black dial, silver registers and white tachymetre ring on a steel bracelet, held in the hand"
+    view: dial
+    variant: "MkIb"
+    source_url: https://www.instagram.com/p/COQL6MGLznL/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Silver-white tachymetre ring without the word Tachymetre, large early logo and a straight red chronograph hand: the MkIb tells on Enicar 101. Caption says MkI from 1961, which fits the MkIb (1961) and favours it over an early MkIIa with the same features."
 barometer: null
 status: draft
 gaps:
@@ -514,4 +639,46 @@ citations:
     supports:
       - years.from
       - years.to
+  - id: e101-graph-mkia
+    source: enicar101
+    url: https://enicar101.com/sherpa-graph-mkia/
+    title: Sherpa Graph MK Ia
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-graph-mkib
+    source: enicar101
+    url: https://enicar101.com/sherpa-graph-mkib/
+    title: Sherpa Graph MK Ib
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-graph-ic
+    source: enicar101
+    url: https://enicar101.com/sherpa-graph-ic/
+    title: Sherpa Graph MK Ic
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-graph-mkii
+    source: enicar101
+    url: https://enicar101.com/sherpa-graph-mkii/
+    title: Sherpa Graph MK IIa
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-graph-mkiii
+    source: enicar101
+    url: https://enicar101.com/sherpa-graph-mkiii/
+    title: Sherpa Graph MK III
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-graph-iv
+    source: enicar101
+    url: https://enicar101.com/sherpa-graph-iv/
+    title: Sherpa Graph MK IV
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-graph-mk-iib
+    source: enicar101
+    url: https://enicar101.com/sherpa-graph-mk-iib/
+    title: Sherpa Graph MK IIb
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25
