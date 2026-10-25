@@ -1,0 +1,11 @@
+# Permissions to publish someone else's photos. Every image with
+# `permission: granted` must name one of these in `permission_ref`.
+# Record who, how they agreed, when, and what it covers. Keep private
+# messages private: summarise, don't paste them here.
+- id: two-crowned-prints
+  who: James (@two_crowned_prints)
+  profile_url: https://www.instagram.com/two_crowned_prints/
+  granted: 2026-10-25
+  via: Instagram message to the owner
+  scope: Any of his photos, with credit. He also offered to shoot specific details on request.
+  credit_as: "@two_crowned_prints"

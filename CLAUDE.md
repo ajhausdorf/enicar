@@ -64,7 +64,12 @@ why it is a false alarm and stop.
    `cc`, `public-domain`). No scraped auction or marketplace photos, and no
    photos from enicar.org or Instagram without the photographer's own
    permission. A photo from an issue is usable only if both permission boxes
-   were ticked. Add images only with the tool, which stores a large and a
+   were ticked. When someone gives permission (a DM, an email), add them to
+   `data/permissions.yaml` (who, when, how, what it covers; summarise, never
+   paste private messages) and set `permission: granted` with
+   `permission_ref` on each of their photos. QA fails a granted photo with no
+   permission record. Set `variant` on a photo when it shows one generation.
+   Add images only with the tool, which stores a large and a
    small webp in `public/images/<id>/` and prints the entry to paste:
    `node scripts/images/add-image.mjs <id> <url-or-file> <name> --credit ...
    --license ... --permission ... --source-url ... --alt ...`. Look at the

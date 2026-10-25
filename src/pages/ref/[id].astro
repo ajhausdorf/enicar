@@ -77,7 +77,7 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
             {hero ? <img id="hero-img" src={hero.file} alt={hero.alt} width={hero.width} height={hero.height}> : <Dial kind={d.kind} size={300} />}
           </div>
           <figcaption id="hero-cap">
-            {hero ? <>Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit} · {hero.license} · <a href={hero.source_url}>original</a></> : (d.photos_elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
+            {hero ? <>{hero.variant && `${hero.variant}. `}Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit} · {hero.license} · <a href={hero.source_url}>original</a></> : (d.photos_elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
           </figcaption>
         </figure>
         {d.images.length > 1 && (
@@ -85,7 +85,7 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
             {d.images.map((t, i) => (
               <li><button type="button" class="thumb" aria-pressed={i === 0 ? 'true' : 'false'} aria-label={`Show photo: ${t.alt}`}
                 data-file={t.file} data-alt={t.alt} data-w={t.width} data-h={t.height}
-                data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.license} data-source={t.source_url}>
+                data-variant={t.variant ?? ''} data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.license} data-source={t.source_url}>
                 <img src={t.thumb} alt="" loading="lazy">
               </button></li>
             ))}
@@ -251,7 +251,7 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
       if (!img || !cap) return;
       const ds = t.dataset;
       img.src = ds.file!; img.alt = ds.alt!; img.width = Number(ds.w); img.height = Number(ds.h);
-      cap.replaceChildren('Photo: ');
+      cap.replaceChildren(ds.variant ? `${ds.variant}. Photo: ` : 'Photo: ');
       const credit = ds.creditUrl ? Object.assign(document.createElement('a'), { href: ds.creditUrl, textContent: ds.credit }) : document.createTextNode(ds.credit!);
       cap.append(credit, ` · ${ds.license} · `, Object.assign(document.createElement('a'), { href: ds.source, textContent: 'original' }));
       for (const o of thumbs) o.setAttribute('aria-pressed', String(o === t));

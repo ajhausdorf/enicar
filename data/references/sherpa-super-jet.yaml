@@ -72,7 +72,35 @@ read_more:
     url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
     source: enicar-org
     note: Martijn van der Ven's full history of the Jet and Super-Jet, with photos of every generation.
-images: []
+images:
+  - file: /images/sherpa-super-jet/mki-two-crowned-prints.webp
+    thumb: /images/sherpa-super-jet/mki-two-crowned-prints-sm.webp
+    width: 990
+    height: 982
+    alt: "Sherpa Super-Jet MkI with a black dial, black and silver 24-hour bezel and red-tipped GMT hand, on a steel bracelet, photographed on period paperwork"
+    view: dial
+    variant: "MkI"
+    source_url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+
+  - file: /images/sherpa-super-jet/mkii-white-two-crowned-prints.webp
+    thumb: /images/sherpa-super-jet/mkii-white-two-crowned-prints-sm.webp
+    width: 1402
+    height: 1418
+    alt: "Sherpa Super-Jet MkII with a silver dial, black and white 24-hour bezel and date at 3, on a tan suede strap"
+    view: dial
+    variant: "MkII"
+    source_url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article
@@ -101,7 +129,7 @@ photos_elsewhere:
 barometer: null
 status: draft
 gaps:
-  - Photographs we can show here (linked below until photographers give permission)
+  - Photos of the other generations (linked below until photographers give permission)
   - Price (barometer figures need enicar.org's permission; sales data not started)
   - Reference numbers per generation
   - Case material

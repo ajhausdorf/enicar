@@ -26,6 +26,10 @@ if (!['own', 'granted', 'cc', 'public-domain'].includes(opts.permission)) {
   console.error('--permission must be own, granted, cc or public-domain');
   process.exit(1);
 }
+if (opts.permission === 'granted' && !opts['permission-ref']) {
+  console.error('--permission granted needs --permission-ref <id from data/permissions.yaml>');
+  process.exit(1);
+}
 if (!/^[a-z0-9-]+$/.test(name)) { console.error('<name> must be lower-case-with-hyphens'); process.exit(1); }
 if (!existsSync(join(ROOT, 'data/references', `${id}.yaml`))) { console.error(`no record data/references/${id}.yaml`); process.exit(1); }
 
@@ -56,4 +60,5 @@ console.log(`  - file: /images/${id}/${name}.webp
     credit: ${q(opts.credit)}
     credit_url: ${opts['credit-url'] ?? 'null'}
     license: ${q(opts.license)}
-    permission: ${opts.permission}`);
+    permission: ${opts.permission}
+    permission_ref: ${opts['permission-ref'] ?? 'null'}`);

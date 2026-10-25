@@ -17,6 +17,19 @@ const families = defineCollection({
   })
 });
 
+// People who have let us publish their photos, and on what terms.
+const permissions = defineCollection({
+  loader: file('data/permissions.yaml'),
+  schema: z.object({
+    who: z.string(),
+    profile_url: z.url(),
+    granted: z.coerce.date(),
+    via: z.string(),
+    scope: z.string(),
+    credit_as: z.string()
+  })
+});
+
 // Publications, forums, archives. One entry per source, referenced by id
 // from the citations on each watch record.
 const sources = defineCollection({
@@ -66,7 +79,9 @@ const image = z.object({
   credit: z.string(),
   credit_url: z.url().nullable().default(null),
   license: z.string(),
-  permission: z.enum(['own', 'granted', 'cc', 'public-domain'])
+  permission: z.enum(['own', 'granted', 'cc', 'public-domain']),
+  // Required when permission is 'granted': the entry in data/permissions.yaml.
+  permission_ref: reference('permissions').nullable().default(null)
 });
 
 // Movements. One file per calibre in data/calibres/; watch records name
@@ -179,4 +194,4 @@ const references = defineCollection({
   })
 });
 
-export const collections = { families, sources, calibres, references };
+export const collections = { families, sources, permissions, calibres, references };

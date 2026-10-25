@@ -10,7 +10,7 @@
 //   - every populated fact field is listed in some citation's `supports`
 //   - every reference number, history paragraph and variant cites something
 //   - no open gaps
-import { loadReferences, loadCalibres, calibreId, loadSources, get, isPopulated, Report, existsSync, join, ROOT } from './lib.mjs';
+import { loadReferences, loadCalibres, calibreId, loadSources, loadPermissions, get, isPopulated, Report, existsSync, join, ROOT } from './lib.mjs';
 
 // Fact fields that must be backed by a citation once a record is verified.
 // List items (references, variants, history) carry their own `cites` instead.
@@ -57,6 +57,7 @@ export function checkSources() {
   const r = new Report('sources and citations');
   const sourceIds = new Set(loadSources().map((s) => s.id));
   const calibreIds = checkCalibres(r, sourceIds);
+  const permissionIds = new Set(loadPermissions().map((p) => p.id));
 
   for (const { id, file, data: d } of loadReferences()) {
     const where = file;
@@ -95,6 +96,7 @@ export function checkSources() {
 
     for (const [i, img] of (d.images ?? []).entries()) {
       if (!img.credit || !img.license || !img.permission) r.error(where, `images[${i}] needs credit, license and permission`);
+      if (img.permission === 'granted' && !permissionIds.has(img.permission_ref)) r.error(where, `images[${i}] says permission granted but permission_ref "${img.permission_ref ?? ''}" is not in data/permissions.yaml`);
       for (const key of ['file', 'thumb']) {
         const f = img[key];
         if (!f) continue;
