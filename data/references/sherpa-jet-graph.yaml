@@ -111,6 +111,36 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+  - variant: null
+    title: Jet Graph, every generation
+    url: https://enicar101.com/jet-graph/
+    source: enicar101
+    note: Generation pages with serial ranges, case details and photos.
+  - variant: MkIa
+    title: Jet Graph MK Ia
+    url: https://enicar101.com/jet-graph-mk-i/
+    source: enicar101
+    note: null
+  - variant: MkIb
+    title: Jet Graph MK Ib
+    url: https://enicar101.com/jet-graph-mk-ib/
+    source: enicar101
+    note: null
+  - variant: MkII
+    title: Jet Graph MK II
+    url: https://enicar101.com/jet-graph-mkii/
+    source: enicar101
+    note: null
+  - variant: MkIII
+    title: Jet Graph MK III
+    url: https://enicar101.com/jet-graph-mkiii/
+    source: enicar101
+    note: null
+  - variant: MkIV
+    title: Jet Graph MK IV
+    url: https://enicar101.com/jet-graph-mkiv/
+    source: enicar101
+    note: null
 images: []
 barometer: null
 status: draft

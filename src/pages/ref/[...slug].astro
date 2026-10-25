@@ -73,6 +73,7 @@ const usedSources = [...new Set(d.citations.map((c) => c.source.id))].map((id) =
 const srcName = (c: any) => sources[c.source.id]?.data.name;
 // Photo links for this generation, plus any that cover every generation.
 const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v?.name);
+const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
 ---
 <Base title={leaf.name} description={`${leaf.name}${v ? `, ${vYears(v.years)}` : ''}. ${d.summary ?? ''}`.trim()} section="catalog" searchable>
   <div class="wrap model">
@@ -165,11 +166,11 @@ const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v
       </div>
     </section>
 
-    {d.read_more.length > 0 && (
+    {readMore.length > 0 && (
       <section class="read-more" aria-labelledby="rm-h">
         <h2 id="rm-h">Read the full story</h2>
         <ul>
-          {d.read_more.map((m) => (
+          {readMore.map((m) => (
             <li class="card">
               <a href={m.url} class="rm-title">{m.title}
                 <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l6-6M5 3h4v4"></path></svg>

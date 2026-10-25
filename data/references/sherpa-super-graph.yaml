@@ -36,6 +36,11 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+  - variant: null
+    title: Super Graph, every generation
+    url: https://enicar101.com/super-graph/
+    source: enicar101
+    note: Generation pages with serial ranges, case details and photos.
 images: []
 barometer: null
 status: draft
