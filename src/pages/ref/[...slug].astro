@@ -5,7 +5,8 @@
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Dial from '../../components/Dial.astro';
-import { formatYears, formatRange, formatPrice, barometerOf, LISTING_FRESH_DAYS, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf } from '../../lib/site';
+import Money from '../../components/Money.astro';
+import { formatYears, barometerOf, USD_RATES, LISTING_FRESH_DAYS, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf } from '../../lib/site';
 
 export async function getStaticPaths() {
   const refs = await getCollection('references');
@@ -157,12 +158,12 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
                 <div class="bar-entry">
                   {e.label && <span class="bar-label">{e.label}</span>}
                   <dl class="bands">
-                    {e.bands.map((b: any) => <div><dt>{b.condition}</dt><dd class="mono">{formatRange(bar.currency, b)}</dd></div>)}
+                    {e.bands.map((b: any) => <div><dt>{b.condition}</dt><dd class="mono"><Money currency={bar.currency} low={b.low} high={b.high} /></dd></div>)}
                   </dl>
                   {e.note && <span class="muted small">{e.note}</span>}
                 </div>
               ))}
-              <span class="muted small">Figures as published, never re-priced by us.</span>
+              <span class="muted small">Figures as published, never re-priced by us.<span data-usd-note hidden> Shown in US dollars at fixed rates set {USD_RATES.asOf}; switch back for the published figures.</span></span>
             </>
           ) : (
             <span class="muted small">No price guide yet.</span>
@@ -199,7 +200,7 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
             <div class="table-wrap"><table class="sales-table">
               <thead><tr><th scope="col">Asking</th><th scope="col">Where</th><th scope="col">Watch</th><th scope="col">Checked</th></tr></thead>
               <tbody>{listed.map((s) => (
-                <tr><td class="mono">{formatPrice(s.data.currency, s.data.price)}</td><td>{s.data.venue}</td>
+                <tr><td class="mono"><Money currency={s.data.currency} value={s.data.price} /></td><td>{s.data.venue}</td>
                   <td><a href={s.data.url} rel="noopener">{s.data.title}</a>{v && !s.data.variant && <span class="muted"> (generation not stated)</span>}{s.data.condition && <span class="muted"> · {s.data.condition}</span>}</td>
                   <td class="mono muted">{day(s.data.checked!)}</td></tr>
               ))}</tbody>
@@ -212,7 +213,7 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
             <div class="table-wrap"><table class="sales-table">
               <thead><tr><th scope="col">Date</th><th scope="col">Price</th><th scope="col">Where</th><th scope="col">Watch</th></tr></thead>
               <tbody>{sold.map((s) => (
-                <tr><td class="mono muted">{day(s.data.date)}</td><td class="mono">{formatPrice(s.data.currency, s.data.price)}</td><td>{s.data.venue}</td>
+                <tr><td class="mono muted">{day(s.data.date)}</td><td class="mono"><Money currency={s.data.currency} value={s.data.price} /></td><td>{s.data.venue}</td>
                   <td><a href={s.data.url} rel="noopener">{s.data.title}</a>{s.data.note && <span class="muted"> · {s.data.note}</span>}</td></tr>
               ))}</tbody>
             </table></div>
@@ -224,7 +225,7 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
             <div class="table-wrap"><table class="sales-table">
               <thead><tr><th scope="col">Date</th><th scope="col">Price</th><th scope="col">Where</th><th scope="col">Watch</th></tr></thead>
               <tbody>{soldModel.map((s) => (
-                <tr><td class="mono muted">{day(s.data.date)}</td><td class="mono">{formatPrice(s.data.currency, s.data.price)}</td><td>{s.data.venue}</td>
+                <tr><td class="mono muted">{day(s.data.date)}</td><td class="mono"><Money currency={s.data.currency} value={s.data.price} /></td><td>{s.data.venue}</td>
                   <td><a href={s.data.url} rel="noopener">{s.data.title}</a>{s.data.note && <span class="muted"> · {s.data.note}</span>}</td></tr>
               ))}</tbody>
             </table></div>
