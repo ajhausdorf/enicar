@@ -7,18 +7,44 @@ interface Props { leaf: any; familyName: string; }
 const { leaf, familyName } = Astro.props;
 const d = leaf.ref.data;
 const years = formatYears(leaf.years);
-const photo = leaf.images[0];
+// The card shows a handful; the page has the rest.
+const MAX_SLIDES = 8;
+const photos = leaf.images.slice(0, MAX_SLIDES);
+const photo = photos[0];
+const creditOf = (p: any) => ({ name: p.credit, href: p.credit_url ?? p.source_url, license: p.permission !== 'granted' ? p.license : null });
 // Reference numbers aren't matched to generations yet, so only show one on a model's own card.
 const refNo = leaf.variant ? null : d.references[0]?.number;
 ---
 <!-- The title link stretches over the whole card, so the card stays one big
-     target while the photo credit keeps a link of its own. -->
+     target while the photo credit keeps a link of its own. With more than one
+     photo, the photos sit above that link so they can be swiped; each photo is
+     then a link to the page itself. -->
 <article class="watch-card"
    data-family={d.family.id} data-model={leaf.ref.id} data-kind={d.kind} data-decade={decadeOf(leaf.years) ?? 'unknown'}
    data-name={leaf.name} data-year={leaf.years.from ?? 9999} data-has-photo={photo ? 'yes' : 'no'}>
-  <div class="watch-card__img">
-    {photo ? <img src={photo.thumb} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy"> : <Dial kind={d.kind} />}
-  </div>
+  {photos.length > 1 ? (
+    <div class="watch-card__img watch-card__carousel" data-carousel>
+      <div class="watch-card__track" data-track>
+        {photos.map((p: any, i: number) => (
+          <a class="watch-card__slide" href={leaf.path} tabindex="-1" aria-hidden={i > 0 ? 'true' : undefined}
+             data-credit={JSON.stringify(creditOf(p))}>
+            <img src={p.thumb} alt={p.alt} width={p.width} height={p.height} loading="lazy" draggable="false">
+          </a>
+        ))}
+      </div>
+      <button type="button" class="watch-card__nav prev" data-prev aria-label={`Previous photo of ${leaf.name}`} disabled>
+        <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 2L4 7l5 5"/></svg>
+      </button>
+      <button type="button" class="watch-card__nav next" data-next aria-label={`Next photo of ${leaf.name}`}>
+        <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 2l5 5-5 5"/></svg>
+      </button>
+      <span class="watch-card__count mono" data-count aria-hidden="true">1 / {photos.length}</span>
+    </div>
+  ) : (
+    <div class="watch-card__img">
+      {photo ? <img src={photo.thumb} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy"> : <Dial kind={d.kind} />}
+    </div>
+  )}
   <div class="watch-card__body">
     <div class="watch-card__top">
       <div>
@@ -31,7 +57,7 @@ const refNo = leaf.variant ? null : d.references[0]?.number;
       <span>{leaf.calibres.join(', ') || 'Calibre unknown'}</span>
       {d.status === 'draft' ? <span class="badge draft">Draft</span> : d.barometer ? <span class="mono">{formatRange(d.barometer)}</span> : <span class="badge verified">Verified</span>}
     </div>
-    <p class="watch-card__credit">
+    <p class="watch-card__credit" data-credit-line>
       {photo
         ? <>Photo: <a href={photo.credit_url ?? photo.source_url} rel="noopener">{photo.credit}</a>{photo.permission !== 'granted' && `, ${photo.license}`}</>
         : 'No photo yet'}
@@ -46,6 +72,20 @@ const refNo = leaf.variant ? null : d.references[0]?.number;
   .watch-card[hidden] { display: none; }
   .watch-card__img { background: var(--plate); aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; }
   .watch-card__img img { width: 100%; height: 100%; object-fit: cover; }
+  .watch-card__carousel { position: relative; z-index: 1; display: block; }
+  .watch-card__track { display: flex; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; overscroll-behavior-x: contain; }
+  .watch-card__track::-webkit-scrollbar { display: none; }
+  .watch-card__slide { flex: 0 0 100%; height: 100%; scroll-snap-align: start; display: block; }
+  .watch-card__slide img { display: block; -webkit-user-drag: none; }
+  .watch-card__nav { position: absolute; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); background: var(--paper); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; opacity: 0; transition: opacity .15s; }
+  .watch-card__nav.prev { left: 8px; }
+  .watch-card__nav.next { right: 8px; }
+  .watch-card__nav:disabled { visibility: hidden; }
+  .watch-card:hover .watch-card__nav, .watch-card__nav:focus-visible { opacity: .92; }
+  .watch-card__nav:hover { border-color: var(--ink); }
+  .watch-card__count { position: absolute; right: 8px; bottom: 8px; font-size: 11px; padding: 2px 6px; border-radius: 4px; background: var(--paper); color: var(--ink-2); opacity: .9; pointer-events: none; }
+  @media (hover: none) { .watch-card__nav { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .watch-card__track { scroll-behavior: auto; } }
   .watch-card__body { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
   .watch-card__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
   .watch-card__top > div { display: flex; flex-direction: column; gap: 2px; }
@@ -56,6 +96,38 @@ const refNo = leaf.variant ? null : d.references[0]?.number;
   .watch-card__ref { font-size: 12px; color: var(--muted); white-space: nowrap; }
   .watch-card__foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--line-soft); font-size: 12px; color: var(--ink-2); }
   .watch-card__credit { margin: 0; font-size: 12px; color: var(--muted); }
-  .watch-card__credit a { position: relative; z-index: 1; color: var(--muted); }
-  .watch-card__credit a:hover { color: var(--accent); }
+  .watch-card__credit :global(a) { position: relative; z-index: 1; color: var(--muted); }
+  .watch-card__credit :global(a:hover) { color: var(--accent); }
 </style>
+
+<script>
+  // Arrows step through the photos; swiping works natively through scroll
+  // snap. The counter and the credit line follow whichever photo is showing.
+  for (const box of document.querySelectorAll<HTMLElement>('[data-carousel]')) {
+    const track = box.querySelector<HTMLElement>('[data-track]')!;
+    const slides = [...track.children] as HTMLElement[];
+    const prev = box.querySelector<HTMLButtonElement>('[data-prev]')!;
+    const next = box.querySelector<HTMLButtonElement>('[data-next]')!;
+    const count = box.querySelector<HTMLElement>('[data-count]')!;
+    const line = box.closest('.watch-card')!.querySelector<HTMLElement>('[data-credit-line]')!;
+    let shown = 0;
+    const show = (i: number) => {
+      if (i === shown) return;
+      shown = i;
+      count.textContent = `${i + 1} / ${slides.length}`;
+      prev.disabled = i === 0;
+      next.disabled = i === slides.length - 1;
+      slides.forEach((s, j) => (j === i ? s.removeAttribute('aria-hidden') : s.setAttribute('aria-hidden', 'true')));
+      const c = JSON.parse(slides[i].dataset.credit!);
+      line.textContent = 'Photo: ';
+      const a = document.createElement('a');
+      a.href = c.href; a.rel = 'noopener'; a.textContent = c.name;
+      line.append(a);
+      if (c.license) line.append(`, ${c.license}`);
+    };
+    const go = (step: number) => track.scrollTo({ left: (shown + step) * track.clientWidth });
+    prev.addEventListener('click', () => go(-1));
+    next.addEventListener('click', () => go(1));
+    track.addEventListener('scroll', () => show(Math.round(track.scrollLeft / track.clientWidth)), { passive: true });
+  }
+</script>
