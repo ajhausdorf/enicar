@@ -7,5 +7,8 @@
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page"
-  }
+  },
+  // Branch builds run `wrangler preview`, which needs this block to exist.
+  // It can stay empty: assets and settings above apply to previews too.
+  "previews": {}
 }
