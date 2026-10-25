@@ -144,6 +144,17 @@ read_more:
     url: https://enicar.org/2018/03/08/the-rise-of-the-sherpa-star/
     source: enicar-org
     note: Martijn van der Ven on the Sherpa Star.
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Sherpa Star, 37 mm"
+      bands:
+        - { condition: "Very good to mint", low: 400, high: 600 }
+        - { condition: "Average to good", low: 250, high: 400 }
+        - { condition: "Poor to fair", low: 75, high: 250 }
+      note: "Published for the 37 mm Star; other sizes are not priced."
 status: draft
 gaps:
   - Production years
@@ -156,4 +167,10 @@ citations:
     title: '@zizi_zap: Enicar Sherpa Star "Volcano" 144-49-01, cal. AR 165'
     retrieved: 2026-10-25
     supports: [movement.calibres]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25

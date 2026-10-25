@@ -51,6 +51,17 @@ variants:
       - 272.5xx – 272.9xx
     dated: 5/60
     production: "500"
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Sherpa Graph Mk Ia"
+          bands:
+            - { condition: "Very good to mint", low: 8500, high: 20000 }
+            - { condition: "Average to good", low: 6000, high: 8500 }
+            - { condition: "Poor to fair", low: 4000, high: 6000 }
+          note: null
     cites:
       - eo-chrono-table
       - e101-graph-mkia
@@ -71,6 +82,17 @@ variants:
       - 409.2xx – 409.6xx
     dated: 11/61
     production: "700"
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Sherpa Graph Mk Ib"
+          bands:
+            - { condition: "Very good to mint", low: 7500, high: 15000 }
+            - { condition: "Average to good", low: 4500, high: 7500 }
+            - { condition: "Poor to fair", low: 3000, high: 4500 }
+          note: null
     cites:
       - eo-chrono-table
       - e101-graph-mkib
@@ -127,6 +149,17 @@ variants:
       - 246.1xx – 246.6xx
     dated: 1963 (est.)
     production: 1,500
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Sherpa Graph Mk II"
+          bands:
+            - { condition: "Very good to mint", low: 6000, high: 10000 }
+            - { condition: "Average to good", low: 4000, high: 6000 }
+            - { condition: "Poor to fair", low: 3000, high: 4000 }
+          note: null
     cites:
       - eo-chrono-table
       - e101-graph-mkii
@@ -155,6 +188,17 @@ variants:
       - 940.5xx – 941.4xx
     dated: 1963 (est.) to 6/66
     production: 3,200
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Sherpa Graph Mk III"
+          bands:
+            - { condition: "Very good to mint", low: 5500, high: 10000 }
+            - { condition: "Average to good", low: 4000, high: 5500 }
+            - { condition: "Poor to fair", low: 3000, high: 4000 }
+          note: null
     cites:
       - eo-chrono-table
       - e101-graph-mkiii
@@ -178,6 +222,17 @@ variants:
       - 1.261.7xx – 1.263.3xx
     dated: 9/67 to 11/68
     production: 2,400
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Sherpa Graph Mk IV"
+          bands:
+            - { condition: "Very good to mint", low: 6500, high: 8500 }
+            - { condition: "Average to good", low: 4500, high: 6500 }
+            - { condition: "Poor to fair", low: 3000, high: 4500 }
+          note: null
     cites:
       - eo-chrono-table
       - e101-graph-iv
@@ -733,7 +788,7 @@ status: draft
 gaps:
   - Visual tells for each generation
   - Case material and lug width
-  - Price
+  - Price guide for the MkIc and MkId (not in Barometer #7)
   - Citation for the Jim Clark nickname
 citations:
   - id: eo-matrix
@@ -799,6 +854,12 @@ citations:
     source: two-crowned-prints
     url: https://www.instagram.com/two_crowned_prints/
     title: Message from James (@two_crowned_prints) to the owner on telling MkII and MkIII black dials apart
+    retrieved: 2026-10-25
+    supports: []
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
 last_reviewed: 2026-10-25

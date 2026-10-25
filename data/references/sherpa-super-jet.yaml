@@ -31,6 +31,17 @@ variants:
     bezel: Inner 24-hour, aluminium insert, silver 6 to 18 and black 18 to 6
     dials: [Black, Silver]
     crowns: Thin compressor, crosshatch, Saturn logo
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Super-Jet Mk I and II"
+          bands:
+            - { condition: "Very good to mint", low: 3500, high: 6000 }
+            - { condition: "Average to good", low: 2000, high: 3500 }
+            - { condition: "Poor to fair", low: 1000, high: 2000 }
+          note: null
     cites: [eo-jet]
   - name: MkII
     years: { from: 1966, to: 1968 }
@@ -43,6 +54,17 @@ variants:
     bezel: Inner 24-hour, slightly thicker, updated numerals
     dials: [Black sunburst, Silver sunburst, Champagne sunburst]
     crowns: Thin or thick compressor, crosshatch, Saturn logo
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Super-Jet Mk I and II"
+          bands:
+            - { condition: "Very good to mint", low: 3500, high: 6000 }
+            - { condition: "Average to good", low: 2000, high: 3500 }
+            - { condition: "Poor to fair", low: 1000, high: 2000 }
+          note: null
     cites: [eo-jet]
   - name: MkIII
     years: { from: 1968, to: 1970 }
@@ -67,6 +89,17 @@ variants:
     bezel: Large two-way bezel with numerals and luminous details
     dials: [Matte black, 3D-globe logo]
     crowns: Thick smooth compressor, Saturn logo
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Super-Dive MkIII and Super-Jet Mk III, cushion case"
+          bands:
+            - { condition: "Very good to mint", low: 2500, high: 3500 }
+            - { condition: "Average to good", low: 2000, high: 2500 }
+            - { condition: "Poor to fair", low: 1500, high: 2000 }
+          note: "The Barometer calls the cushion-case Super-Jet the Mk III; enicar.org's Jet article, which this site follows, calls it the MkIV."
     cites: [eo-jet]
 read_more:
   - title: Exploring the Enicar Sherpa (Super-)Jet
@@ -551,7 +584,7 @@ barometer: null
 status: draft
 gaps:
   - Photos of the MkIII and MkIV (linked below until photographers give permission)
-  - Price (barometer figures need enicar.org's permission; sales data not started)
+  - Price guide for the MkIII (Barometer #7 groups the Super-Jet by its own numbering)
   - Reference numbers per generation
   - Case material
   - Second source for the generation specs
@@ -572,6 +605,12 @@ citations:
     source: craft-and-tailored
     url: https://www.craftandtailored.com/products/tropical-1964-enicar-sherpa-super-jet-gmt-ref-146-003-silver-dial
     title: 1964 Enicar Sherpa Super Jet GMT ref 146/003, silver dial
+    retrieved: 2026-10-25
+    supports: []
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
 last_reviewed: 2026-10-25

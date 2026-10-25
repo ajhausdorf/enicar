@@ -31,6 +31,17 @@ variants:
     bezel: Inner 24-hour, aluminium insert, silver 6 to 18 and black 18 to 6
     dials: [Black, Silver]
     crowns: Thin compressor, crosshatch, Saturn logo
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Sherpa Super-Divette and Jet"
+          bands:
+            - { condition: "Very good to mint", low: 1800, high: 3000 }
+            - { condition: "Average to good", low: 1000, high: 1800 }
+            - { condition: "Poor to fair", low: 800, high: 1000 }
+          note: "enicar.org puts the Jet about 20% above the Super-Divette. Published as € 1.8000 for the top band; read as € 1,800."
     cites: [eo-jet]
   - name: MkII
     years: { from: 1966, to: 1968 }
@@ -43,6 +54,17 @@ variants:
     bezel: Inner 24-hour, slightly thicker, updated numerals
     dials: [Black sunburst, Silver sunburst, Champagne sunburst]
     crowns: Thin or thick compressor, crosshatch, Saturn logo
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Sherpa Super-Divette and Jet"
+          bands:
+            - { condition: "Very good to mint", low: 1800, high: 3000 }
+            - { condition: "Average to good", low: 1000, high: 1800 }
+            - { condition: "Poor to fair", low: 800, high: 1000 }
+          note: "enicar.org puts the Jet about 20% above the Super-Divette. Published as € 1.8000 for the top band; read as € 1,800."
     cites: [eo-jet]
   - name: MkIII
     years: { from: 1968, to: 1970 }
@@ -55,6 +77,17 @@ variants:
     bezel: Inner 24-hour in several colourways, red and blue among them
     dials: [Matte black, Silver, Champagne, Racing dial (two versions)]
     crowns: Thick compressor, crosshatch or smooth, Saturn logo
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Sherpa Super-Divette and Jet"
+          bands:
+            - { condition: "Very good to mint", low: 1800, high: 3000 }
+            - { condition: "Average to good", low: 1000, high: 1800 }
+            - { condition: "Poor to fair", low: 800, high: 1000 }
+          note: "enicar.org puts the Jet about 20% above the Super-Divette. Published as € 1.8000 for the top band; read as € 1,800."
     cites: [eo-jet]
   - name: MkIV
     years: { from: 1970, to: null }
@@ -458,7 +491,6 @@ photos_elsewhere:
 barometer: null
 status: draft
 gaps:
-  - Price (barometer figures need enicar.org's permission; sales data not started)
   - Reference numbers per generation
   - Case material
   - Second source for the generation specs
@@ -479,6 +511,12 @@ citations:
     source: craft-and-tailored
     url: https://www.craftandtailored.com/collections/timepiece-archive/products/1960s-enicar-sherpa-jet-gmt-ref-126-002-black-dial
     title: 1960s Enicar Sherpa Jet GMT ref 126/002, black dial
+    retrieved: 2026-10-25
+    supports: []
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
 last_reviewed: 2026-10-25

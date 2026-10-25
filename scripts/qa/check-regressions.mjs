@@ -24,6 +24,16 @@ function loadAllow() {
   return { removed: new Set(a.removed ?? []), downgraded: new Set(a.downgraded ?? []), barometer: new Set(a.barometer ?? []), large: a.large_change === true, reason: a.reason ?? null };
 }
 
+// Every price band on a record (its own guide and each generation's), keyed so
+// the same band can be compared across versions.
+function bands(d) {
+  const out = new Map();
+  const add = (bar, where) => bar?.entries?.forEach((e) => e.bands.forEach((b) => out.set(`${where} ${e.label ?? ''} ${b.condition}`.trim(), b)));
+  add(d.barometer, '*');
+  for (const v of d.variants ?? []) add(v.barometer, v.name);
+  return out;
+}
+
 export function checkRegressions() {
   const r = new Report(`regressions vs ${base}`);
   const baseFiles = gitLsTree(base, 'data/references');
@@ -61,10 +71,14 @@ export function checkRegressions() {
     const ca = (a.citations ?? []).length; const cb = (b.citations ?? []).length;
     if (a.status === 'verified' && cb < ca && !allow.downgraded.has(id)) r.error(where, `verified record lost citations (${ca} → ${cb})`);
     if (ca !== cb) lines.push(`citations ${ca} → ${cb}`);
-    if (a.barometer && b.barometer) {
+    const ba = bands(a), bb = bands(b);
+    for (const [key, x] of ba) {
+      const y = bb.get(key);
+      if (!y) continue;
       for (const k of ['low', 'high']) {
-        const move = Math.abs(b.barometer[k] - a.barometer[k]) / Math.max(a.barometer[k], 1);
-        if (move > BAROMETER_MAX_MOVE && !allow.barometer.has(id)) r.error(where, `barometer ${k} moved ${(move * 100).toFixed(0)}% (${a.barometer[k]} → ${b.barometer[k]}); list under \`barometer\` in qa-allow.yaml if the source changed`);
+        if (x[k] == null || y[k] == null) continue;
+        const move = Math.abs(y[k] - x[k]) / Math.max(x[k], 1);
+        if (move > BAROMETER_MAX_MOVE && !allow.barometer.has(id)) r.error(where, `barometer ${key} ${k} moved ${(move * 100).toFixed(0)}% (${x[k]} → ${y[k]}); list under \`barometer\` in qa-allow.yaml if the source changed`);
       }
     }
     for (const k of Object.keys({ ...a, ...b })) {

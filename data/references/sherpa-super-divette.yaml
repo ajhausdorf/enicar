@@ -238,11 +238,20 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Super-Divette; caption: early 1960s."
-barometer: null
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Sherpa Super-Divette and Jet"
+      bands:
+        - { condition: "Very good to mint", low: 1800, high: 3000 }
+        - { condition: "Average to good", low: 1000, high: 1800 }
+        - { condition: "Poor to fair", low: 800, high: 1000 }
+      note: "Published as € 1.8000 for the top band; read as € 1,800."
 status: draft
 gaps:
   - Case material and lug width
-  - Price
   - "Movement detail: AR165 in the cushion-case version."
 citations:
   - id: eo-matrix
@@ -254,4 +263,10 @@ citations:
       - case.diameter_mm
       - features
       - movement.calibres
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25

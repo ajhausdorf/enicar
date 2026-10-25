@@ -120,6 +120,17 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Caption: the 40 mm Sherpa Date in the EPSA case, from 1966."
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "\"Regular\" Sherpa, Date and Day-Date"
+      bands:
+        - { condition: "Very good to mint", low: 500, high: 750 }
+        - { condition: "Average to good", low: 300, high: 500 }
+        - { condition: "Poor to fair", low: 150, high: 300 }
+      note: null
 status: draft
 gaps:
   - Reference numbers
@@ -127,5 +138,11 @@ gaps:
   - Movement
   - Case size and material
   - Any written source
-citations: []
+citations:
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25

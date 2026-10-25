@@ -94,6 +94,10 @@ export function checkSources() {
       if (m.variant && !variantNames.has(m.variant)) r.error(where, `read_more "${m.title}" names unknown variant "${m.variant}"`);
     }
     if (d.barometer) checkCites([d.barometer.cite], 'barometer');
+    for (const v of d.variants ?? []) if (v.barometer) checkCites([v.barometer.cite], `variant "${v.name}" barometer`);
+    for (const bar of [d.barometer, ...(d.variants ?? []).map((v) => v.barometer)].filter(Boolean)) {
+      for (const e of bar.entries ?? []) for (const b of e.bands ?? []) if (b.low != null && b.low > b.high) r.error(where, `barometer band "${b.condition}" has low ${b.low} above high ${b.high}`);
+    }
 
     for (const [i, img] of (d.images ?? []).entries()) {
       if (!img.credit || !img.license || !img.permission) r.error(where, `images[${i}] needs credit, license and permission`);

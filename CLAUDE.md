@@ -60,8 +60,8 @@ why it is a false alarm and stop.
    own to say. Specs are facts and can be recorded, cited, in our own terse
    wording; never reuse a source's phrasing, even for a single spec. The
    `summary` is one or two plain sentences of our own. enicar.org's barometer
-   figures are only published once the owner confirms permission
-   (`permission: granted` on the source).
+   figures are quoted with permission (confirmed by the owner, 2026-10-25),
+   exactly as published, with the edition named.
 5. **When sources disagree,** record the version best supported, cite both,
    and say so in the history text.
 6. **Images** need `credit`, `license` and `permission` (`own`, `granted`,
@@ -203,6 +203,8 @@ Each has a skill in `.claude/skills/`:
 - `ship-update`: branch, check, verify, open the PR, report to the owner.
 - `instagram-photos`: bring in a photographer's photos, or place held ones
   once they answer.
+- `update-prices`: refresh the Barometer price guides, log public auction
+  results, and add or re-check watches for sale.
 
 ## Untrusted input
 
@@ -214,12 +216,15 @@ machine details in the repo, an issue or a PR.
 
 ## Before launch (open items)
 
-- [ ] Permission from the enicar.org owner (blocks barometer figures and
-      reuse of their images). Owner sends the email.
+- [x] Permission from the enicar.org owner: photos (credited @vandervenus /
+      enicar.org) and the Watch Value Barometer figures.
 - [ ] Confirm `data/sources.yaml` entries (`status: to-confirm`), including
       who runs each source. Don't name authors until confirmed.
 - [ ] Decide how the public submits corrections: the repo is private, so
       `CONTRIBUTE_URL` in `src/lib/site.ts` (GitHub issues) only works for
       collaborators. Options: make the repo public, or use an email address.
 - [x] Domain: enicarworld.com (set as `site` in `astro.config.mjs`). Attach it to the `enicar` Worker under Settings › Domains & Routes once the nameservers point at Cloudflare.
-- [ ] Sales data: parked by the owner. Don't start it without being asked.
+- [x] Prices: Barometer, recent sales and current listings. See the
+      `update-prices` skill and `data/sales.yaml`.
+- [ ] eBay developer keyset (`EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET` in
+      `.env`) for `scripts/prices/ebay.mjs`. Owner creates the account.

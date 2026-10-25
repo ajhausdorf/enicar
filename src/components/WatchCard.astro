@@ -1,6 +1,6 @@
 ---
 import Dial from './Dial.astro';
-import { formatYears, decadeOf, formatRange, KIND_LABEL } from '../lib/site';
+import { formatYears, decadeOf, formatRange, barometerOf, KIND_LABEL } from '../lib/site';
 
 // One card per page: a generation, or a model with no generations.
 interface Props { leaf: any; familyName: string; }
@@ -14,6 +14,9 @@ const photo = photos[0];
 const creditOf = (p: any) => ({ name: p.credit, href: p.credit_url ?? p.source_url, license: p.permission !== 'granted' ? p.license : null });
 // Reference numbers aren't matched to generations yet, so only show one on a model's own card.
 const refNo = leaf.variant ? null : d.references[0]?.number;
+// The card shows the guide's first band (best condition) of its first entry.
+const bar = barometerOf(leaf);
+const topBand = bar ? bar.entries[0].bands[0] : null;
 ---
 <!-- The title link stretches over the whole card, so the card stays one big
      target while the photo credit keeps a link of its own. With more than one
@@ -55,7 +58,10 @@ const refNo = leaf.variant ? null : d.references[0]?.number;
     </div>
     <div class="watch-card__foot">
       <span>{leaf.calibres.join(', ') || 'Calibre unknown'}</span>
-      {d.status === 'draft' ? <span class="badge draft">Draft</span> : d.barometer ? <span class="mono">{formatRange(d.barometer)}</span> : <span class="badge verified">Verified</span>}
+      <span class="watch-card__price">
+        {topBand && <span class="mono" title={`${topBand.condition}, ${bar.edition}`}>{formatRange(bar.currency, topBand)}</span>}
+        {d.status === 'draft' ? <span class="badge draft">Draft</span> : <span class="badge verified">Verified</span>}
+      </span>
     </div>
     <p class="watch-card__credit" data-credit-line>
       {photo
@@ -95,6 +101,7 @@ const refNo = leaf.variant ? null : d.references[0]?.number;
   .watch-card__meta { font-size: 13px; color: var(--muted); }
   .watch-card__ref { font-size: 12px; color: var(--muted); white-space: nowrap; }
   .watch-card__foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--line-soft); font-size: 12px; color: var(--ink-2); }
+  .watch-card__price { display: inline-flex; align-items: center; gap: 8px; }
   .watch-card__credit { margin: 0; font-size: 12px; color: var(--muted); }
   .watch-card__credit :global(a) { position: relative; z-index: 1; color: var(--muted); }
   .watch-card__credit :global(a:hover) { color: var(--accent); }

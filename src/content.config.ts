@@ -61,6 +61,21 @@ const sources = defineCollection({
 // which fields of the record it supports (dotted paths, e.g. "movement.calibres").
 const cites = z.array(z.string()).default([]);
 
+// A price guide as published by its source (enicar.org's Watch Value
+// Barometer): one or more entries, each with condition bands. Quoted, never
+// adjusted. `low: null` is a band the source gives as "unknown".
+const currency = z.enum(['EUR', 'USD', 'GBP', 'CHF', 'HKD', 'SEK', 'JPY']);
+const barometer = z.object({
+  edition: z.string(),
+  cite: z.string(),
+  currency,
+  entries: z.array(z.object({
+    label: z.string().nullable().default(null),
+    bands: z.array(z.object({ condition: z.string(), low: z.number().nonnegative().nullable(), high: z.number().nonnegative() })).min(1),
+    note: z.string().nullable().default(null)
+  })).min(1)
+}).nullable().default(null);
+
 const citation = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   source: reference('sources'),
@@ -183,6 +198,8 @@ const references = defineCollection({
       serials: z.array(z.string()).default([]),
       dated: z.string().nullable().default(null),
       production: z.string().nullable().default(null),
+      // A price guide for this generation; overrides the record's.
+      barometer,
       cites
     })).default([]),
     // Links out to the writing this record draws on. We link to the story
@@ -205,14 +222,7 @@ const references = defineCollection({
       url: z.url(),
       cites
     })).default([]),
-    barometer: z.object({
-      currency: z.enum(['EUR', 'USD', 'GBP', 'CHF']),
-      low: z.number().nonnegative(),
-      high: z.number().nonnegative(),
-      condition: z.string(),
-      edition: z.string(),
-      cite: z.string()
-    }).nullable().default(null),
+    barometer,
     // draft: work in progress, may have gaps, shown with a Draft badge.
     // verified: every populated fact is covered by a citation (enforced by QA).
     status: z.enum(['draft', 'verified']),
@@ -222,4 +232,26 @@ const references = defineCollection({
   })
 });
 
-export const collections = { families, sources, permissions, calibres, references };
+// Sales and listings, one per entry, each linking to its public page. `sold`
+// entries are results (auction hammer or marketplace sale); `listed` entries
+// are asking prices, shown only while `checked` is recent.
+const sales = defineCollection({
+  loader: file('data/sales.yaml'),
+  schema: z.object({
+    ref: reference('references'),
+    variant: z.string().nullable().default(null),
+    kind: z.enum(['sold', 'listed']),
+    date: isoDate,
+    checked: isoDate.nullable().default(null),
+    price: z.number().positive(),
+    currency,
+    venue: z.string(),
+    venue_kind: z.enum(['auction', 'marketplace', 'dealer']),
+    url: z.url(),
+    title: z.string(),
+    condition: z.string().nullable().default(null),
+    note: z.string().nullable().default(null)
+  })
+});
+
+export const collections = { families, sources, permissions, calibres, references, sales };

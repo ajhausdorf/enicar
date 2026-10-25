@@ -118,6 +118,17 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Guide; caption dates it 1969."
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Sherpa Guide, long-lug and cushion case"
+      bands:
+        - { condition: "Very good to mint", low: 2200, high: 3500 }
+        - { condition: "Average to good", low: 1200, high: 2200 }
+        - { condition: "Poor to fair", low: 600, high: 1200 }
+      note: "Published for the 42 mm Guide; this record gives 43 mm."
 status: draft
 gaps:
   - Production years
@@ -125,7 +136,6 @@ gaps:
   - Case material and lug width
   - "Movement detail: AR166 in the cushion-case version"
   - Photographs
-  - Price
 citations:
   - id: eo-matrix
     source: enicar-org
@@ -133,4 +143,10 @@ citations:
     title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
     retrieved: 2026-10-25
     supports: [case.diameter_mm, features, movement.calibres]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25
