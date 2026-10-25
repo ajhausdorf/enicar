@@ -678,6 +678,22 @@ images:
     caption: "The same watch under UV light."
     identified_by: caption
     identified_note: "The photographer identified it as their MkIII from June 1966 in a message to the owner, 2026-10-25. It shows the MkIII tells: paddle hands with short orange tips, a red-dot chronograph hand and a black tachymetre ring."
+  - file: /images/sherpa-graph/tcp-cwv4vneppni-1.webp
+    thumb: /images/sherpa-graph/tcp-cwv4vneppni-1-sm.webp
+    width: 1389
+    height: 1389
+    alt: "Sherpa Graph with an all black dial, black registers and dark grey Tachymetre ring on a black Tropic strap, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/Cwv4VnePPnI/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "T Swiss is printed at the bottom of the dial. The photographer told the owner on 2026-10-25 that this marks the MkII; on the MkIII the T sits above the 12 on the hour register."
 barometer: null
 status: draft
 gaps:
@@ -685,6 +701,7 @@ gaps:
   - Case material and lug width
   - Price
   - Citation for the Jim Clark nickname
+  - "Dial tell from a collector, not yet in a public source: the MkII has T Swiss Made at the bottom of the dial, the MkIII a T above the 12 on the hour register."
 citations:
   - id: eo-matrix
     source: enicar-org
