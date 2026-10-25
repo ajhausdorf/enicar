@@ -26,18 +26,6 @@ pending:
       - "Owner calls it an early Sherpa Graph."
       - "The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo."
   - account: two_crowned_prints
-    post: https://www.instagram.com/p/Cwv4VnePPnI/
-    code: Cwv4VnePPnI
-    photos:
-      - 1
-    model: sherpa-graph
-    guess: null
-    kind: generation
-    question: "Is this a MkII or a MkIII? The serial would settle it."
-    evidence:
-      - "Black dial with black registers, long-tipped paddle hands, dark grey ring reading Tachymetre."
-      - "A grey ring fits both the MkII and the MkIII on Enicar 101; the MkIII has short orange tips and a red-dot chronograph hand, which are not visible here."
-  - account: two_crowned_prints
     post: https://www.instagram.com/p/C2DSok_vkIO/
     code: C2DSok_vkIO
     photos:

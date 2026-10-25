@@ -111,7 +111,7 @@ variants:
     years:
       from: 1963
       to: 1963
-    tell: "Small logo above the word Enicar (early 601.xxx watches keep the large logo), white or grey tachymetre ring from 300, unpainted paddle hands and a red chronograph hand (straight, or lollipop on later ones)."
+    tell: "Small logo above the word Enicar (early 601.xxx watches keep the large logo), white or grey tachymetre ring from 300, unpainted paddle hands and a red chronograph hand (straight, or lollipop on later ones); on the all-black dial, T Swiss Made is printed at the bottom."
     hands: "Unpainted paddle; straight red chronograph hand, later also lollipop; arrow-shaped, later thin, register hands"
     bezel: "White or grey inner tachymetre ring from 300; some early ones without the word Tachymetre"
     dials:
@@ -131,11 +131,12 @@ variants:
       - eo-chrono-table
       - e101-graph-mkii
       - e101-graph-mk-iib
+      - tcp-msg-graph-dials
   - name: MkIII
     years:
       from: 1963
       to: 1966
-    tell: "Black or grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip."
+    tell: "Black or grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip; on the black dial, a T sits above the 12 on the hour register."
     hands: "Paddle with short orange tips; chronograph hand with a red dot near the tip; thin register hands"
     bezel: "Black or grey inner tachymetre ring from 300"
     dials:
@@ -157,6 +158,7 @@ variants:
     cites:
       - eo-chrono-table
       - e101-graph-mkiii
+      - tcp-msg-graph-dials
   - name: MkIV
     years:
       from: 1967
@@ -646,6 +648,54 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Tachymetre ring blank between 60 and 300 (the owner checked the photo), large early logo, long-tipped paddle hands and a straight red chronograph hand: the MkIb tells on Enicar 101."
+  - file: /images/sherpa-graph/tcp-dm-mkiii-1.webp
+    thumb: /images/sherpa-graph/tcp-dm-mkiii-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Graph with a black dial, grey registers, orange-tipped paddle hands and a red-dot chronograph hand, without strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/two_crowned_prints/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "Sent to us by the photographer; not posted on Instagram."
+    identified_by: caption
+    identified_note: "The photographer identified it as their MkIII from June 1966 in a message to the owner, 2026-10-25. It shows the MkIII tells: paddle hands with short orange tips, a red-dot chronograph hand and a black tachymetre ring."
+  - file: /images/sherpa-graph/tcp-dm-mkiii-2.webp
+    thumb: /images/sherpa-graph/tcp-dm-mkiii-2-sm.webp
+    width: 900
+    height: 1600
+    alt: "The same Sherpa Graph under ultraviolet light, showing the glowing lume on the markers and hands"
+    view: other
+    variant: "MkIII"
+    source_url: https://www.instagram.com/two_crowned_prints/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "The same watch under UV light."
+    identified_by: caption
+    identified_note: "The photographer identified it as their MkIII from June 1966 in a message to the owner, 2026-10-25. It shows the MkIII tells: paddle hands with short orange tips, a red-dot chronograph hand and a black tachymetre ring."
+  - file: /images/sherpa-graph/tcp-cwv4vneppni-1.webp
+    thumb: /images/sherpa-graph/tcp-cwv4vneppni-1-sm.webp
+    width: 1389
+    height: 1389
+    alt: "Sherpa Graph with an all black dial, black registers and dark grey Tachymetre ring on a black Tropic strap, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/Cwv4VnePPnI/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "T Swiss is printed at the bottom of the dial, the MkII tell; the photographer gave this tell in a message to the owner, 2026-10-25."
   - file: /images/sherpa-graph/tcp-dabgn2ponz-1.webp
     thumb: /images/sherpa-graph/tcp-dabgn2ponz-1-sm.webp
     width: 1159
@@ -743,6 +793,12 @@ citations:
     source: enicar101
     url: https://enicar101.com/sherpa-graph-mk-iib/
     title: Sherpa Graph MK IIb
+    retrieved: 2026-10-25
+    supports: []
+  - id: tcp-msg-graph-dials
+    source: two-crowned-prints
+    url: https://www.instagram.com/two_crowned_prints/
+    title: Message from James (@two_crowned_prints) to the owner on telling MkII and MkIII black dials apart
     retrieved: 2026-10-25
     supports: []
 last_reviewed: 2026-10-25

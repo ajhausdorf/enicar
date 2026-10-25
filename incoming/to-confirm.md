@@ -2,7 +2,7 @@
 
 Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs`. Do not edit by hand.
 
-## @two_crowned_prints (43 photos)
+## @two_crowned_prints (42 photos)
 
 ### Their label and the source disagree
 
@@ -39,10 +39,6 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   - White dial, ring reading Tachymetre, unpainted paddle hands, large early logo, black chronograph hand.
   - Owner calls it an early Sherpa Graph.
   - The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo.
-- **https://www.instagram.com/p/Cwv4VnePPnI/** · sherpa-graph
-  Is this a MkII or a MkIII? The serial would settle it.
-  - Black dial with black registers, long-tipped paddle hands, dark grey ring reading Tachymetre.
-  - A grey ring fits both the MkII and the MkIII on Enicar 101; the MkIII has short orange tips and a red-dot chronograph hand, which are not visible here.
 - **https://www.instagram.com/p/C2DSok_vkIO/** · sherpa-graph
   Two Graphs, one white dial and one black: which generation is each?
   - Two watches in one photo, a white-dial and a black-dial Sherpa Graph; the photo cannot go on one generation page.
