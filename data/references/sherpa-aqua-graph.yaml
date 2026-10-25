@@ -36,7 +36,12 @@ variants:
     years:
       from: 1963
       to: 1963
-    tell: Serial range 635.2xx – 635.6xx.
+    tell: "Long orange-tipped paddle hands, arrow-shaped register hands, a small applied logo and a triangle pointer on the red ring."
+    hands: "Paddle with long orange tips; unpainted chronograph hand with a lume dot, early ones spear-shaped; long arrow-shaped register hands, on later ones only on the 12-hour counter"
+    bezel: "Black 60-minute outer bezel, two lume spots at 12; red ring with a triangle pointer"
+    dials:
+      - "All black"
+      - "Black with silver registers"
     refs:
       - 072/002
     serials:
@@ -45,11 +50,17 @@ variants:
     production: "500"
     cites:
       - eo-chrono-table
+      - e101-aqua-graph-mki
   - name: MkIb
     years:
       from: 1964
       to: 1964
-    tell: Serial range 706.5xx – 706.8xx and others.
+    tell: "Paddle hands with shorter orange tips, thin unpainted register hands and a triangle pointer on the red ring."
+    hands: "Paddle with shorter orange tips; chronograph hand with a lume dot; thin unpainted register hands"
+    bezel: "Black 60-minute outer bezel, two lume spots at 12; red ring with a triangle pointer"
+    dials:
+      - "Black"
+      - "Black with grey registers"
     refs:
       - 072/002
     serials:
@@ -59,11 +70,18 @@ variants:
     production: "900"
     cites:
       - eo-chrono-table
+      - e101-aqua-graph-mk-ib
   - name: MkII
     years:
       from: 1966
       to: 1966
-    tell: Serial range 906.9xx – 907.4xx.
+    tell: "Paddle hands with short orange tips, a chronograph hand with a red dot near the tip and a triangle pointer on the red ring."
+    hands: "Paddle with short orange tips; chronograph hand with a red dot near the tip; thin register hands"
+    bezel: "Black 60-minute outer bezel, two lume spots at 12; red ring with a triangle pointer"
+    dials:
+      - "Black with grey registers"
+      - "Black with silver registers"
+      - "All black"
     refs:
       - 072-02-02
     serials:
@@ -72,11 +90,16 @@ variants:
     production: "600"
     cites:
       - eo-chrono-table
+      - e101-aqua-graph-mkii
   - name: MkIII
     years:
       from: 1967
       to: 1967
-    tell: Serial range 986.5xx – 987.3xx.
+    tell: "Baton hands outlined in white, thick black register hands, a chronograph hand with a lume dot and a house-shaped pointer on the red ring."
+    hands: "Baton, outlined in white; chronograph hand with a lume dot near the tip; thick black register hands"
+    bezel: "Black 60-minute outer bezel, two lume spots at 12; red ring with a house-shaped pointer"
+    dials:
+      - "Black with white or grey registers"
     refs:
       - 072-02-02
     serials:
@@ -85,11 +108,16 @@ variants:
     production: 900+
     cites:
       - eo-chrono-table
+      - e101-aqua-graph-mkiii
   - name: MkIV
     years:
       from: 1968
       to: 1969
-    tell: Serial range 1.070.2xx – 1.070.9xx and others.
+    tell: "Baton hands with an orange triangle chronograph hand, an orange minute-counter hand and one lume spot at 12 on the bezel."
+    hands: "Baton, outlined in white; orange triangle chronograph hand; orange minute-counter hand"
+    bezel: "Black 60-minute outer bezel, one lume spot at 12; red ring with a house-shaped pointer"
+    dials:
+      - "Black with white registers"
     refs:
       - 072-02-02
     serials:
@@ -99,6 +127,7 @@ variants:
     production: 1,900+
     cites:
       - eo-chrono-table
+      - e101-aqua-graph-mk-iv
 read_more:
   - title: Sherpa tool watch matrix
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
@@ -215,6 +244,118 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Same racing-dial watch on the same red strap as post DYsK2kPtAKp, which he calls a 1968 MkIII. The production table dates the MkIII from 6/67."
+  - file: /images/sherpa-aqua-graph/tcp-cfjxsmjjpbp-1.webp
+    thumb: /images/sherpa-aqua-graph/tcp-cfjxsmjjpbp-1-sm.webp
+    width: 1440
+    height: 1509
+    alt: "Aqua Graph with a black dial, cream registers and baton hands on a tan suede strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CfjxSmJJpbP/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, black register hands and a house-shaped pointer on the red ring, the MkIII tells on Enicar 101."
+  - file: /images/sherpa-aqua-graph/tcp-cba5bhwpznv-1.webp
+    thumb: /images/sherpa-aqua-graph/tcp-cba5bhwpznv-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Aqua Graph with a black dial, white registers and baton hands on a black Tropic strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CbA5BHWpzNv/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, black register hands and a house-shaped pointer on the red ring, the MkIII tells on Enicar 101."
+  - file: /images/sherpa-aqua-graph/tcp-cu0pb0gpgft-1.webp
+    thumb: /images/sherpa-aqua-graph/tcp-cu0pb0gpgft-1-sm.webp
+    width: 1309
+    height: 1600
+    alt: "Aqua Graph with a black dial and parchment registers on a tan suede strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CU0PB0Gpgft/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, black register hands and a house-shaped pointer on the red ring, the MkIII tells on Enicar 101."
+  - file: /images/sherpa-aqua-graph/tcp-cqrrrxqlta1-1.webp
+    thumb: /images/sherpa-aqua-graph/tcp-cqrrrxqlta1-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Aqua Graph with a black dial and cream registers on a tan suede strap, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CQRrrXqLTA1/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, black register hands and a house-shaped pointer on the red ring, the MkIII tells on Enicar 101."
+  - file: /images/sherpa-aqua-graph/tcp-c7rzcscxro1-1.webp
+    thumb: /images/sherpa-aqua-graph/tcp-c7rzcscxro1-1-sm.webp
+    width: 1378
+    height: 1403
+    alt: "Aqua Graph with a black dial and cream registers on a steel bracelet, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/C7rZcsCxrO1/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, black register hands and a house-shaped pointer on the red ring, the MkIII tells on Enicar 101."
+  - file: /images/sherpa-aqua-graph/tcp-dbtvztds6hz-1.webp
+    thumb: /images/sherpa-aqua-graph/tcp-dbtvztds6hz-1-sm.webp
+    width: 1125
+    height: 1440
+    alt: "Aqua Graph with a black dial, white registers and baton hands on an olive canvas strap, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/DbTVztDs6HZ/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, thick black register hands, a lume-dot chronograph hand and a house-shaped pointer on the red ring, the MkIII tells on Enicar 101."
+  - file: /images/sherpa-aqua-graph/tcp-ccaq6h0ronz-1.webp
+    thumb: /images/sherpa-aqua-graph/tcp-ccaq6h0ronz-1-sm.webp
+    width: 1440
+    height: 1504
+    alt: "Aqua Graph with a black dial and cream registers on a tan suede strap, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/Ccaq6h0roNz/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, black counter hands, a house-shaped pointer on the red ring and two lume dots at 12, the MkIII tells on Enicar 101; the caption mentions the \"doghouse\" pointer."
 barometer: null
 status: draft
 gaps:
@@ -240,4 +381,34 @@ citations:
     supports:
       - years.from
       - years.to
+  - id: e101-aqua-graph-mki
+    source: enicar101
+    url: https://enicar101.com/aqua-graph-mki/
+    title: Aqua Graph MK Ia
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-aqua-graph-mk-ib
+    source: enicar101
+    url: https://enicar101.com/aqua-graph-mk-ib-2/
+    title: Aqua Graph MK Ib
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-aqua-graph-mkii
+    source: enicar101
+    url: https://enicar101.com/aqua-graph-mkii/
+    title: Aqua Graph MK II
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-aqua-graph-mkiii
+    source: enicar101
+    url: https://enicar101.com/aqua-graph-mkiii/
+    title: Aqua Graph MK III
+    retrieved: 2026-10-25
+    supports: []
+  - id: e101-aqua-graph-mk-iv
+    source: enicar101
+    url: https://enicar101.com/aqua-graph-mk-iv/
+    title: Aqua Graph MK IV
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25

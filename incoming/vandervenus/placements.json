@@ -1148,5 +1148,75 @@
   "by": "dial",
   "note": "Dial reads Mini-Dive.",
   "view": "dial"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "DCuYpW7O9cy_01",
+  "variant": "MkIV",
+  "alt": "Jet Graph with a black dial, white registers, red counter hand and checkered GMT hand on a red strap",
+  "caption": null,
+  "by": "tells",
+  "note": "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "CrQeLYStnUu_01",
+  "variant": "MkIV",
+  "alt": "Jet Graph with a black dial, white registers and red counter hands on a red strap",
+  "caption": null,
+  "by": "tells",
+  "note": "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "BzGkRaeoXAV_01",
+  "variant": "MkIV",
+  "alt": "Jet Graph with a black dial, white registers, orange chronograph hand and checkered GMT hand",
+  "caption": null,
+  "by": "tells",
+  "note": "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "CAsvy8QnL5t_01",
+  "variant": "MkIV",
+  "alt": "Jet Graph with a black dial and a red and blue section on the 24-hour bezel, in an Enicar box",
+  "caption": null,
+  "by": "tells",
+  "note": "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "Bq67A_3HuGE_01",
+  "variant": "MkIb",
+  "alt": "Sherpa Graph with a black dial, silver registers and white tachymetre ring on a steel bracelet",
+  "caption": null,
+  "by": "tells",
+  "note": "Silver-white tachymetre ring without the word Tachymetre, large early logo and a straight red chronograph hand: the MkIb tells on Enicar 101. Caption says MkI from 1961; the MkIb is the 1961 generation.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "B21Hpi4oJhJ_01",
+  "variant": "MkIb",
+  "alt": "Sherpa Graph with a black dial and silver registers on a grey woven strap",
+  "caption": null,
+  "by": "tells",
+  "note": "Silver-white tachymetre ring without the word Tachymetre, large early logo and a straight red chronograph hand: the MkIb tells on Enicar 101. Caption says MkI from 1961; the MkIb is the 1961 generation.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "COQL6MGLznL_01",
+  "variant": "MkIb",
+  "alt": "Sherpa Graph with a black dial, silver registers and white tachymetre ring on a steel bracelet, held in the hand",
+  "caption": null,
+  "by": "tells",
+  "note": "Silver-white tachymetre ring without the word Tachymetre, large early logo and a straight red chronograph hand: the MkIb tells on Enicar 101. Caption says MkI from 1961; the MkIb is the 1961 generation.",
+  "view": "dial"
  }
 ]
