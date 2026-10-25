@@ -1,0 +1,141 @@
+name: Sherpa Jet Graph
+family: sherpa
+kind: chronograph
+summary: A GMT chronograph on the Valjoux 724, 40 mm with an outer 24-hour bezel, made in five generations from 1963.
+references:
+  - number: 072/002
+    note: null
+    cites:
+      - eo-chrono-table
+  - number: 072-02-02
+    note: null
+    cites:
+      - eo-chrono-table
+  - number: 072-02-02A
+    note: null
+    cites:
+      - eo-chrono-table
+nicknames: []
+years:
+  from: 1963
+  to: 1969
+  approximate: true
+movement:
+  calibres:
+    - Valjoux 724
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 40
+  lug_mm: null
+  thickness_mm: null
+features:
+  - outer-bezel
+  - red-pointer-ring
+dial: null
+variants:
+  - name: MkIa
+    years:
+      from: 1963
+      to: 1963
+    tell: Serial range 626.7xx – 627.0xx.
+    refs:
+      - 072/002
+    serials:
+      - 626.7xx – 627.0xx
+    dated: 1963 (est.)
+    production: "400"
+    cites:
+      - eo-chrono-table
+  - name: MkIb
+    years:
+      from: 1964
+      to: 1964
+    tell: Serial range 721.9xx.
+    refs:
+      - 072/002
+    serials:
+      - 721.9xx
+    dated: 1964 (est.)
+    production: "100"
+    cites:
+      - eo-chrono-table
+  - name: MkII
+    years:
+      from: 1966
+      to: 1966
+    tell: Serial range 927.3xx.
+    refs:
+      - 072-02-02
+    serials:
+      - 927.3xx
+    dated: 6/66
+    production: null
+    cites:
+      - eo-chrono-table
+  - name: MkIII
+    years:
+      from: 1967
+      to: 1969
+    tell: Serial range 986.8xx and others.
+    refs:
+      - 072-02-02
+      - 072-02-02A
+    serials:
+      - 986.8xx
+      - 1.069.9xx – 1.070.9
+      - 1.263.4xx –
+      - 1.305.2xx – 1.305.9xx
+    dated: 6/67 to 5/69
+    production: 500+
+    cites:
+      - eo-chrono-table
+  - name: MkIV
+    years:
+      from: 1969
+      to: 1969
+    tell: Serial range 1.317.1xx – 1.322.0xx and others.
+    refs:
+      - 072-02-02A
+    serials:
+      - 1.317.1xx – 1.322.0xx
+      - 1.622.2xx
+      - 627.1xx
+    dated: 8/69
+    production: 2,300+
+    cites:
+      - eo-chrono-table
+read_more:
+  - title: Sherpa tool watch matrix
+    url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
+    source: enicar-org
+    note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+images: []
+barometer: null
+status: draft
+gaps:
+  - Visual tells for each generation
+  - Jet Graph MkII production number (not known to the source)
+  - Case material and lug width
+  - Photographs
+  - Price
+citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports:
+      - case.diameter_mm
+      - features
+      - movement.calibres
+  - id: eo-chrono-table
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-right.pdf
+    title: Sherpa chronograph classification and numbers (Enicar book p. 263, data from enicar101.com)
+    retrieved: 2026-10-25
+    supports:
+      - years.from
+      - years.to
+last_reviewed: 2026-10-25

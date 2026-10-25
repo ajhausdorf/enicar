@@ -44,3 +44,14 @@
   use: Openly licensed photographs, with the uploader's description as a weak source for specs.
   leads_to: []
   permission: not-needed
+- id: two-crowned-prints
+  name: "@two_crowned_prints (James)"
+  kind: other
+  tier: secondary
+  url: https://www.instagram.com/two_crowned_prints/
+  author: James
+  status: confirmed
+  what: Instagram account of a collector of vintage Enicar Sherpa watches, with photos and captions describing each watch.
+  use: Photos, with permission, and the owner's own identification of a watch's model or generation where he gives one.
+  leads_to: []
+  permission: granted

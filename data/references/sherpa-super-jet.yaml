@@ -17,6 +17,7 @@ case:
   diameter_mm: null
   lug_mm: null
   thickness_mm: null
+features: [two-crowns, inner-bezel]
 dial: null
 variants:
   - name: MkI
@@ -73,20 +74,6 @@ read_more:
     source: enicar-org
     note: Martijn van der Ven's full history of the Jet and Super-Jet, with photos of every generation.
 images:
-  - file: /images/sherpa-super-jet/mki-two-crowned-prints.webp
-    thumb: /images/sherpa-super-jet/mki-two-crowned-prints-sm.webp
-    width: 990
-    height: 982
-    alt: "Sherpa Super-Jet MkI with a black dial, black and silver 24-hour bezel and red-tipped GMT hand, on a steel bracelet, photographed on period paperwork"
-    view: dial
-    variant: "MkI"
-    source_url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
-    credit: "@two_crowned_prints"
-    credit_url: https://www.instagram.com/two_crowned_prints/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: two-crowned-prints
-
   - file: /images/sherpa-super-jet/mkii-white-two-crowned-prints.webp
     thumb: /images/sherpa-super-jet/mkii-white-two-crowned-prints-sm.webp
     width: 1402
@@ -100,7 +87,201 @@ images:
     license: "Used with permission"
     permission: granted
     permission_ref: two-crowned-prints
-
+    caption: null
+    identified_by: source
+    identified_note: "The enicar.org Jet article shows this photo as a Sherpa Super-Jet MkII."
+  - file: /images/sherpa-super-jet/tcp-dmvzquarrzg-1.webp
+    thumb: /images/sherpa-super-jet/tcp-dmvzquarrzg-1-sm.webp
+    width: 1439
+    height: 1440
+    alt: "Sherpa Super-Jet 33 with a black dial, paddle hands and black and white 24-hour bezel, on a map of Malaysia and Singapore"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/DMVZQuaRrZg/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "A 33-jewel Super-Jet sold in Singapore."
+    identified_by: caption
+    identified_note: "Photographer calls it an early SuperJet 33 with paddle hands; the source gives paddle hands and the 33 jewels dial as MkI."
+  - file: /images/sherpa-super-jet/tcp-dmvzquarrzg-2.webp
+    thumb: /images/sherpa-super-jet/tcp-dmvzquarrzg-2-sm.webp
+    width: 1439
+    height: 1440
+    alt: "A Sherpa Super-Jet 33 next to a smaller Sherpa Jet 33 with a red crescent GMT hand, both with black dials, on black rubber straps"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/DMVZQuaRrZg/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "Next to a Sherpa Jet 33."
+    identified_by: caption
+    identified_note: "Same SuperJet 33 as the first photo in the post."
+  - file: /images/sherpa-super-jet/tcp-dmvzquarrzg-3.webp
+    thumb: /images/sherpa-super-jet/tcp-dmvzquarrzg-3-sm.webp
+    width: 1439
+    height: 1440
+    alt: "Close-up of a Sherpa Super-Jet 33 dial showing the applied Saturn logo, paddle hands and the 33 marking"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/DMVZQuaRrZg/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Same SuperJet 33 as the first photo in the post."
+  - file: /images/sherpa-super-jet/tcp-dm5sezirc2f-1.webp
+    thumb: /images/sherpa-super-jet/tcp-dm5sezirc2f-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a silver dial and white and black 24-hour bezel, without strap, on green fabric"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/DM5SEZIRC2f/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "Case dated October 1964."
+    identified_by: caption
+    identified_note: "Photographer gives a case date of 10/64; the source dates MkI from 1963 to 1966."
+  - file: /images/sherpa-super-jet/tcp-dj9cwkoui6a-1.webp
+    thumb: /images/sherpa-super-jet/tcp-dj9cwkoui6a-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a black dial and black and white 24-hour bezel on a tan strap, on a plane with a flight map on screen"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/DJ9cWkOui6A/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it 40mm of 1965; the source dates MkI from 1963 to 1966."
+  - file: /images/sherpa-super-jet/tcp-c9ui8ekp7ak-1.webp
+    thumb: /images/sherpa-super-jet/tcp-c9ui8ekp7ak-1-sm.webp
+    width: 1439
+    height: 1446
+    alt: "Sherpa Super-Jet with a black dial on a steel bracelet, on 1960s NASA travel paperwork"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/C9ui8Ekp7ak/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: source
+    identified_note: "The enicar.org Jet article shows this photo as a Sherpa Super-Jet MkI."
+  - file: /images/sherpa-super-jet/tcp-c9ui8ekp7ak-2.webp
+    thumb: /images/sherpa-super-jet/tcp-c9ui8ekp7ak-2-sm.webp
+    width: 1440
+    height: 1446
+    alt: "The same Sherpa Super-Jet on its bracelet, seen from the side on NASA paperwork"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/C9ui8Ekp7ak/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: source
+    identified_note: "Same watch the enicar.org Jet article shows as a Sherpa Super-Jet MkI."
+  - file: /images/sherpa-super-jet/tcp-cwdcwokr6jl-1.webp
+    thumb: /images/sherpa-super-jet/tcp-cwdcwokr6jl-1-sm.webp
+    width: 1440
+    height: 1596
+    alt: "Sherpa Super-Jet 33 with a black dial on a steel bracelet, on a 1960s newspaper advertisement"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/CwdCWoKr6jl/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Super-Jet 33 (tagged #33jewels); the source gives the 33 jewels dial as MkI."
+  - file: /images/sherpa-super-jet/tcp-cumyvazrvre-1.webp
+    thumb: /images/sherpa-super-jet/tcp-cumyvazrvre-1-sm.webp
+    width: 1439
+    height: 1439
+    alt: "Sherpa Super-Jet 33 with a black dial and black and white 24-hour bezel, without strap, on a yellow box lid"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/CuMyvazRvRe/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "Sold new in Singapore."
+    identified_by: dial
+    identified_note: "Dial reads Super-Jet 33; the source gives the 33 jewels dial as MkI."
+  - file: /images/sherpa-super-jet/tcp-cumyvazrvre-2.webp
+    thumb: /images/sherpa-super-jet/tcp-cumyvazrvre-2-sm.webp
+    width: 1440
+    height: 1440
+    alt: "The same Sherpa Super-Jet 33 standing in front of its red Enicar box"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/CuMyvazRvRe/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: "Same Super-Jet 33 as the first photo in the post."
+  - file: /images/sherpa-super-jet/tcp-cokfqhcpb8u-1.webp
+    thumb: /images/sherpa-super-jet/tcp-cokfqhcpb8u-1-sm.webp
+    width: 1308
+    height: 1308
+    alt: "A Sherpa Super-Jet with a silver dial next to a Sherpa Super-Dive with a black dial, both without straps"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/CokfQhCpb8U/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "With a Sherpa Super-Dive."
+    identified_by: caption
+    identified_note: "Photographer calls it an early Super Jet from 1964; the source dates MkI from 1963 to 1966."
+  - file: /images/sherpa-super-jet/tcp-c5l2bfdxwku-1.webp
+    thumb: /images/sherpa-super-jet/tcp-c5l2bfdxwku-1-sm.webp
+    width: 1420
+    height: 1600
+    alt: "Sherpa Super-Jet with a dark brown dial, yellow-tipped GMT hand and cream and black 24-hour bezel on a tan strap"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/C5L2BfdxwkU/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Slim yellow-tipped GMT hand; the source gives this as MkII."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article
@@ -129,12 +310,18 @@ photos_elsewhere:
 barometer: null
 status: draft
 gaps:
-  - Photos of the other generations (linked below until photographers give permission)
+  - Photos of the MkIII and MkIV (linked below until photographers give permission)
   - Price (barometer figures need enicar.org's permission; sales data not started)
   - Reference numbers per generation
   - Case material
   - Second source for the generation specs
 citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports: [features]
   - id: eo-jet
     source: enicar-org
     url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/

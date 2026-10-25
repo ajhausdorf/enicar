@@ -81,8 +81,18 @@ const image = z.object({
   license: z.string(),
   permission: z.enum(['own', 'granted', 'cc', 'public-domain']),
   // Required when permission is 'granted': the entry in data/permissions.yaml.
-  permission_ref: reference('permissions').nullable().default(null)
+  permission_ref: reference('permissions').nullable().default(null),
+  // A short line shown under the photo, in our words.
+  caption: z.string().nullable().default(null),
+  // How we know which watch (and generation) this is: printed on the dial,
+  // stated by the photographer, matched to a source's generation tells, or
+  // shown as this watch in a cited source. QA and the fact-check use this.
+  identified_by: z.enum(['dial', 'caption', 'tells', 'source']).default('dial'),
+  identified_note: z.string().nullable().default(null)
 });
+
+// Features from the Sherpa tool watch matrix.
+const feature = z.enum(['two-crowns', 'one-crown', 'inner-bezel', 'outer-bezel', 'red-pointer-ring', 'crown-protection', 'tachymeter-ring', 'cushion-case']);
 
 // Movements. One file per calibre in data/calibres/; watch records name
 // calibres by `name`, and QA checks every name used has a file here.
@@ -136,10 +146,12 @@ const references = defineCollection({
     case: z.object({
       construction: z.string().nullable().default(null),
       material: z.string().nullable().default(null),
-      diameter_mm: z.number().positive().nullable().default(null),
+      // One size, or a list when the model came in more than one.
+      diameter_mm: z.union([z.number().positive(), z.array(z.number().positive())]).nullable().default(null),
       lug_mm: z.number().positive().nullable().default(null),
       thickness_mm: z.number().positive().nullable().default(null)
     }).default({ construction: null, material: null, diameter_mm: null, lug_mm: null, thickness_mm: null }),
+    features: z.array(feature).default([]),
     dial: z.string().nullable().default(null),
     summary: z.string().nullable().default(null),
     history: z.array(z.object({ text: z.string(), cites })).default([]),
@@ -157,6 +169,12 @@ const references = defineCollection({
       bezel: z.string().nullable().default(null),
       dials: z.array(z.string()).default([]),
       crowns: z.string().nullable().default(null),
+      // From production tables: factory references, serial ranges, the
+      // dates those serials were seen, and how many were made.
+      refs: z.array(z.string()).default([]),
+      serials: z.array(z.string()).default([]),
+      dated: z.string().nullable().default(null),
+      production: z.string().nullable().default(null),
       cites
     })).default([]),
     // Links out to the writing this record draws on. We link to the story

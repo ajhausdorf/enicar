@@ -1,0 +1,208 @@
+name: Sherpa OPS
+family: sherpa
+kind: diver
+summary: A 40 mm two-crown diver with crown guards and an inner bezel, on the AR1145.
+references: []
+nicknames: []
+years:
+  from: null
+  to: null
+  approximate: true
+movement:
+  calibres:
+    - AR1145
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 40
+  lug_mm: null
+  thickness_mm: null
+features:
+  - two-crowns
+  - crown-protection
+  - inner-bezel
+dial: null
+variants: []
+read_more:
+  - title: Sherpa tool watch matrix
+    url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
+    source: enicar-org
+    note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+images:
+  - file: /images/sherpa-ops/tcp-dxdag3jjabu-1.webp
+    thumb: /images/sherpa-ops/tcp-dxdag3jjabu-1-sm.webp
+    width: 1266
+    height: 1440
+    alt: "Sherpa OPS with a black case and dial, orange seconds hand and inner bezel, on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DXdaG3jjAbu/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "From the 1970s."
+    identified_by: dial
+    identified_note: "Dial reads Sherpa OPS; photographer dates it to the 1970s."
+  - file: /images/sherpa-ops/tcp-dolsddjiexa-1.webp
+    thumb: /images/sherpa-ops/tcp-dolsddjiexa-1-sm.webp
+    width: 1307
+    height: 1440
+    alt: "Sherpa OPS with a black dial and lollipop seconds hand on a green strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DOlsDDjiexA/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-ops/tcp-dkfstweznzi-1.webp
+    thumb: /images/sherpa-ops/tcp-dkfstweznzi-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa OPS with a black case, dial and inner bezel on a green strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DKFsTWezNzi/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-ops/tcp-dhrflqejj27-1.webp
+    thumb: /images/sherpa-ops/tcp-dhrflqejj27-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa OPS with a black case and dial on a grey strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DHRFlqeJJ27/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "Described by its owner as a MkI."
+    identified_by: caption
+    identified_note: "Tagged #sherpaopsmk1 by the photographer."
+  - file: /images/sherpa-ops/tcp-c1nqof4payo-1.webp
+    thumb: /images/sherpa-ops/tcp-c1nqof4payo-1-sm.webp
+    width: 1440
+    height: 1449
+    alt: "Sherpa OPS with a black case and dial, partly wrapped in a white knitted stocking"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/C1NQOf4Payo/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer tags it #enicarsherpaops."
+  - file: /images/sherpa-ops/tcp-czppevsyucc-1.webp
+    thumb: /images/sherpa-ops/tcp-czppevsyucc-1-sm.webp
+    width: 1440
+    height: 1490
+    alt: "Sherpa OPS with a black case, dial and inner bezel on a black strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CzPPEvSyucc/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-ops/tcp-cvan1onxuq2-1.webp
+    thumb: /images/sherpa-ops/tcp-cvan1onxuq2-1-sm.webp
+    width: 1404
+    height: 1405
+    alt: "Worn Sherpa OPS with a black case and dial, orange seconds hand and inner bezel, on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CvAn1onxuQ2/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-ops/tcp-csk-ix0o3ry-1.webp
+    thumb: /images/sherpa-ops/tcp-csk-ix0o3ry-1-sm.webp
+    width: 1440
+    height: 1441
+    alt: "A Sherpa OPS with a black case behind a Sherpa Ultradive with a steel case"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CsK-IX0O3ry/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "With a Sherpa Ultradive. Described by its owner as a MkIII."
+    identified_by: caption
+    identified_note: "Photographer calls them the Sherpa Ops MKIII and Sherpa Ultradive MKII."
+  - file: /images/sherpa-ops/tcp-dhv61p9uo-r-1.webp
+    thumb: /images/sherpa-ops/tcp-dhv61p9uo-r-1-sm.webp
+    width: 1407
+    height: 1440
+    alt: "A Sherpa Ultradive and a Sherpa OPS, both without straps, on a dark surface with water drops"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DHv61P9uo-r/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "With a Sherpa Ultradive."
+    identified_by: dial
+    identified_note: "Dials read Sherpa Ultradive and Sherpa OPS."
+  - file: /images/sherpa-ops/tcp-cxin8borcl4-1.webp
+    thumb: /images/sherpa-ops/tcp-cxin8borcl4-1-sm.webp
+    width: 1385
+    height: 1600
+    alt: "Three 40 mm Sherpas laid out on a patterned cloth: an Ultradive, an OPS and a Super-Jet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cxin8bORcL4/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "With a Sherpa Ultradive and a Sherpa Super-Jet."
+    identified_by: dial
+    identified_note: "Dials read Ultradive, OPS and Super-Jet."
+barometer: null
+status: draft
+gaps:
+  - Case material and lug width
+  - Price
+citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports:
+      - case.diameter_mm
+      - features
+      - movement.calibres
+last_reviewed: 2026-10-25

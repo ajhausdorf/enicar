@@ -20,10 +20,14 @@ const family = await getEntry(d.family);
 const sources = Object.fromEntries((await getCollection('sources')).map((s) => [s.id, s]));
 const cites = Object.fromEntries(d.citations.map((c) => [c.id, c]));
 const otherModels = (await getCollection('references', (r) => r.data.family.id === d.family.id && r.id !== entry.id))
-  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+  .sort((a, b) => a.data.name.replace(/^Sherpa /, '').localeCompare(b.data.name.replace(/^Sherpa /, '')));
 const generations = leavesOf(entry);
 
-const mm = (n: number | null) => (n ? `${n} mm` : null);
+const mm = (n: number | number[] | null) => (n == null ? null : Array.isArray(n) ? `${n.join(' or ')} mm` : `${n} mm`);
+const FEATURE: Record<string, string> = {
+  'two-crowns': 'Two crowns', 'one-crown': 'One crown', 'inner-bezel': 'Inner bezel', 'outer-bezel': 'Outer bezel',
+  'red-pointer-ring': 'Red pointer ring', 'crown-protection': 'Crown guards', 'tachymeter-ring': 'Tachymeter ring', 'cushion-case': 'Cushion case'
+};
 const calibres = leaf.calibres;
 const specs = [
   ['Produced', formatYears(leaf.years)],
@@ -38,19 +42,27 @@ const specs = [
   ['Hands', v?.hands ?? null],
   ['Bezel', v?.bezel ?? null],
   ['Crowns', v?.crowns ?? null],
+  ['Features', d.features.map((f) => FEATURE[f]).join(', ') || null],
+  ['Factory refs', v?.refs.length ? v.refs.join(', ') : null],
+  ['Serials seen', v?.serials.length ? v.serials.join(', ') : null],
+  ['Dated', v?.dated ?? null],
+  ['Made', v?.production ? `${v.production} watches` : null],
   ['Nicknames', d.nicknames.join(', ') || null],
   ['References', d.references.map((r) => r.number).join(', ') || null]
 ] as const;
 const alwaysShow = ['Produced', 'Movement', 'Case', 'Diameter', 'References'];
 
 const vYears = (y: { from: number | null; to: number | null }) =>
-  y.from && y.to ? `${y.from} to ${y.to}` : y.from ? `${y.from} onward` : '';
+  y.from && y.to ? (y.from === y.to ? `${y.from}` : `${y.from} to ${y.to}`) : y.from ? `${y.from} onward` : '';
 const rows = [
   ['Years', (x: any) => vYears(x.years)],
   ['Diameter', (x: any) => mm(x.diameter_mm)],
   ['Lugs', (x: any) => mm(x.lug_mm)],
   ['Calibre', (x: any) => x.calibres.join(', ')],
-  ['Case', (x: any) => x.case]
+  ['Case', (x: any) => x.case],
+  ['Factory refs', (x: any) => x.refs.join(', ')],
+  ['Dated', (x: any) => x.dated],
+  ['Made', (x: any) => (x.production ? `${x.production} watches` : null)]
 ] as const;
 const usedRows = rows.filter(([, f]) => d.variants.some((x) => f(x)));
 const specCites = (v ? v.cites : []).map((id) => cites[id]).filter(Boolean);
@@ -83,7 +95,7 @@ const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v
             {hero ? <img id="hero-img" src={hero.file} alt={hero.alt} width={hero.width} height={hero.height}> : <Dial kind={d.kind} size={300} />}
           </div>
           <figcaption id="hero-cap">
-            {hero ? <>Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit} · {hero.license} · <a href={hero.source_url}>original</a></> : (elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
+            {hero ? <>{hero.caption && <span class="cap-text">{hero.caption} </span>}Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit} · {hero.license} · <a href={hero.source_url}>original</a></> : (elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
           </figcaption>
         </figure>
         {images.length > 1 && (
@@ -91,7 +103,7 @@ const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v
             {images.map((t, i) => (
               <li><button type="button" class="thumb" aria-pressed={i === 0 ? 'true' : 'false'} aria-label={`Show photo: ${t.alt}`}
                 data-file={t.file} data-alt={t.alt} data-w={t.width} data-h={t.height}
-                data-variant="" data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.license} data-source={t.source_url}>
+                data-variant="" data-caption={t.caption ?? ''} data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.license} data-source={t.source_url}>
                 <img src={t.thumb} alt="" loading="lazy">
               </button></li>
             ))}
@@ -248,7 +260,7 @@ const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v
       if (!img || !cap) return;
       const ds = t.dataset;
       img.src = ds.file!; img.alt = ds.alt!; img.width = Number(ds.w); img.height = Number(ds.h);
-      cap.replaceChildren(ds.variant ? `${ds.variant}. Photo: ` : 'Photo: ');
+      cap.replaceChildren(ds.caption ? `${ds.caption} Photo: ` : 'Photo: ');
       const credit = ds.creditUrl ? Object.assign(document.createElement('a'), { href: ds.creditUrl, textContent: ds.credit }) : document.createTextNode(ds.credit!);
       cap.append(credit, ` · ${ds.license} · `, Object.assign(document.createElement('a'), { href: ds.source, textContent: 'original' }));
       for (const o of thumbs) o.setAttribute('aria-pressed', String(o === t));
@@ -270,6 +282,7 @@ const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v
   .plate img { width: 100%; height: 100%; object-fit: contain; }
   .plate svg { width: 60%; height: auto; max-width: 300px; }
   .hero-img figcaption { font-size: 12px; color: var(--muted); }
+  .hero-img .cap-text { color: var(--ink-2); }
   .hero-img figcaption a { color: var(--muted); }
   .thumbs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 10px; }
   .thumb { display: block; width: 100%; aspect-ratio: 1; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--plate); cursor: pointer; }

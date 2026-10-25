@@ -16,7 +16,7 @@ import { loadReferences, loadCalibres, calibreId, loadSources, loadPermissions, 
 // List items (references, variants, history) carry their own `cites` instead.
 export const FACT_FIELDS = [
   'nicknames', 'years.from', 'years.to', 'movement.calibres', 'movement.winding',
-  'case.construction', 'case.material', 'case.diameter_mm', 'case.lug_mm', 'case.thickness_mm', 'dial'
+  'case.construction', 'case.material', 'case.diameter_mm', 'case.lug_mm', 'case.thickness_mm', 'features', 'dial'
 ];
 
 const PLACEHOLDER = /\[(confirm|tbc|tbd|todo|source|date|price|ref|low|high|n|edition)[^\]]*\]|\bTODO\b|\bTBC\b|lorem ipsum/i;
@@ -96,6 +96,8 @@ export function checkSources() {
 
     for (const [i, img] of (d.images ?? []).entries()) {
       if (!img.credit || !img.license || !img.permission) r.error(where, `images[${i}] needs credit, license and permission`);
+      if (img.variant && !(d.variants ?? []).some((v) => v.name === img.variant)) r.error(where, `images[${i}] is tagged "${img.variant}", which is not a generation on this record`);
+      if (img.identified_by && img.identified_by !== 'dial' && !img.identified_note) r.error(where, `images[${i}] identified by ${img.identified_by} needs an identified_note saying how`);
       if (img.permission === 'granted' && !permissionIds.has(img.permission_ref)) r.error(where, `images[${i}] says permission granted but permission_ref "${img.permission_ref ?? ''}" is not in data/permissions.yaml`);
       for (const key of ['file', 'thumb']) {
         const f = img[key];
