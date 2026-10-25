@@ -1,0 +1,69 @@
+---
+import '../styles/global.css';
+import { SITE_NAME, CONTRIBUTE_URL } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  section?: 'catalog' | 'calibres' | 'coverage' | 'sources' | 'search';
+  // Only watch pages go into the search index.
+  searchable?: boolean;
+}
+const { title, description = 'An independent, sourced index of vintage Enicar watches.', section, searchable = false } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
+const nav = [
+  { key: 'catalog', label: 'Catalog', href: '/' },
+  { key: 'calibres', label: 'Calibres', href: '/calibres/' },
+  { key: 'coverage', label: 'Coverage', href: '/coverage/' },
+  { key: 'sources', label: 'Sources', href: '/sources/' }
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{fullTitle}</title>
+  <meta name="description" content={description}>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <slot name="head" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="6" fill="var(--accent)"></circle><ellipse cx="13" cy="13" rx="12" ry="4" fill="none" stroke="var(--ink)" stroke-width="1.5" transform="rotate(-20 13 13)"></ellipse></svg>
+          <span>{SITE_NAME}</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          {nav.map((n) => <a href={n.href} aria-current={n.key === section ? 'page' : undefined}>{n.label}</a>)}
+        </nav>
+        <form class="search" action="/search/" method="get" role="search">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="var(--muted)" stroke-width="1.6"><circle cx="7" cy="7" r="5"></circle><path d="M11 11l3.5 3.5"></path></svg>
+          <label for="site-q" class="sr-only">Search references, nicknames, calibres</label>
+          <input id="site-q" name="q" type="search" placeholder="Search a reference, nickname or calibre">
+        </form>
+      </div>
+    </header>
+
+    <main data-pagefind-body={searchable ? '' : undefined}>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>{SITE_NAME} is an independent index. Research and dating originate with the sources credited on each page, linked at the point of use. Enicar is a registered trademark of its current owner; this site is not affiliated.</p>
+        <nav aria-label="Footer">
+          <a href="/sources/">Sources and credits</a>
+          <a href="/coverage/">Catalogue coverage</a>
+          <a href={CONTRIBUTE_URL}>Request a correction</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { href } from '../lib/site';
+
+const refs = await getCollection('references');
+const groups = new Map<string, typeof refs>();
+for (const r of refs) {
+  const key = r.data.movement.calibre ?? 'Unknown calibre';
+  groups.set(key, [...(groups.get(key) ?? []), r]);
+}
+const sorted = [...groups.entries()].sort(([a], [b]) => (a === 'Unknown calibre' ? 1 : b === 'Unknown calibre' ? -1 : a.localeCompare(b)));
+---
+<Base title="Calibres" section="calibres">
+  <div class="wrap cal">
+    <section class="intro">
+      <p class="eyebrow">Calibres</p>
+      <h1>By movement.</h1>
+      <p class="lede">Every reference grouped by the calibre inside it.</p>
+    </section>
+    {sorted.map(([calibre, list]) => (
+      <section class="group">
+        <h2>{calibre} <span class="muted mono">{list.length}</span></h2>
+        <ul>{list.sort((a, b) => a.data.name.localeCompare(b.data.name)).map((r) => <li><a href={href.ref(r.id)}>{r.data.name}</a></li>)}</ul>
+      </section>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .cal { display: flex; flex-direction: column; gap: 32px; padding-top: 56px; padding-bottom: 64px; }
+  .intro { display: flex; flex-direction: column; gap: 16px; }
+  .group { display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .group h2 span { font-size: 14px; font-weight: 400; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  li a { display: inline-flex; min-height: 40px; align-items: center; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-size: 14px; }
+</style>

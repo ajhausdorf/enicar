@@ -1,0 +1,65 @@
+---
+// Honest progress toward the full catalogue: what exists, what is verified,
+// and what each record is still missing.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { href } from '../lib/site';
+
+const families = (await getCollection('families')).sort((a, b) => a.data.order - b.data.order);
+const refs = await getCollection('references');
+const rows = families.map((f) => {
+  const list = refs.filter((r) => r.data.family.id === f.id);
+  return {
+    f, list,
+    verified: list.filter((r) => r.data.status === 'verified').length,
+    photos: list.filter((r) => r.data.images.length > 0).length,
+    cited: list.filter((r) => r.data.citations.length > 0).length
+  };
+});
+const withGaps = refs.filter((r) => r.data.gaps.length > 0).sort((a, b) => b.data.gaps.length - a.data.gaps.length);
+---
+<Base title="Catalogue coverage" section="coverage">
+  <div class="wrap cov">
+    <section class="intro">
+      <p class="eyebrow">Coverage</p>
+      <h1>How complete is this?</h1>
+      <p class="lede">The goal is every known Enicar reference, each one sourced. This page shows where that stands, so nothing looks more finished than it is.</p>
+    </section>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Family</th><th scope="col">Records</th><th scope="col">Verified</th><th scope="col">Cited</th><th scope="col">With photo</th></tr></thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr><th scope="row"><a href={href.family(r.f.id)}>{r.f.data.name}</a></th><td>{r.list.length}</td><td>{r.verified}</td><td>{r.cited}</td><td>{r.photos}</td></tr>
+          ))}
+        </tbody>
+        <tfoot><tr><th scope="row">Total</th><td>{refs.length}</td><td>{rows.reduce((n, r) => n + r.verified, 0)}</td><td>{rows.reduce((n, r) => n + r.cited, 0)}</td><td>{rows.reduce((n, r) => n + r.photos, 0)}</td></tr></tfoot>
+      </table>
+    </div>
+
+    <section class="gaps">
+      <h2>Open gaps</h2>
+      <ul>
+        {withGaps.map((r) => (
+          <li class="card"><a href={href.ref(r.id)}><strong>{r.data.name}</strong></a><span class="muted">{r.data.gaps.join(' · ')}</span></li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .cov { display: flex; flex-direction: column; gap: 40px; padding-top: 56px; padding-bottom: 64px; }
+  .intro { display: flex; flex-direction: column; gap: 16px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 12px 16px; text-align: left; border-top: 1px solid var(--line-soft); }
+  thead th { background: var(--wash); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); border-top: 0; }
+  td { font-family: var(--mono); }
+  tfoot th, tfoot td { font-weight: 600; border-top: 1px solid var(--line); }
+  .gaps { display: flex; flex-direction: column; gap: 16px; }
+  .gaps ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .gaps li { padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+  .gaps a { text-decoration: none; }
+</style>

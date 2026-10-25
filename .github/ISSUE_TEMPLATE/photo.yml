@@ -1,0 +1,33 @@
+name: Photo submission
+description: Offer photos of a watch for the archive
+labels: [photo]
+body:
+  - type: input
+    id: watch
+    attributes:
+      label: Which watch
+    validations:
+      required: true
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos
+      description: Drag the images in here. Dial, caseback, movement and profile are most useful.
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: Credit line
+      description: The name to show under the photos
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Permission
+      options:
+        - label: I took these photos myself, or I have the photographer's permission to submit them.
+          required: true
+        - label: I allow Enicar Archive to publish them on the site with the credit above (CC BY 4.0).
+          required: true

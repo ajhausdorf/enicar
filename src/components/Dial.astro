@@ -1,0 +1,21 @@
+---
+// Placeholder illustration shown until a credited photo exists.
+interface Props { kind?: string; size?: number; }
+const { kind = 'other', size = 120 } = Astro.props;
+const chrono = kind === 'chronograph';
+---
+<svg width={size} height={size} viewBox="0 0 120 120" role="img" aria-label="Placeholder watch illustration, no photo yet">
+  <circle cx="60" cy="60" r="52" fill="#FFFFFF" stroke="var(--ink)" stroke-width="2"></circle>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="var(--line)" stroke-width="1"></circle>
+  {chrono && (
+    <>
+      <circle cx="38" cy="60" r="11" fill="none" stroke="var(--ink)" stroke-width="1"></circle>
+      <circle cx="82" cy="60" r="11" fill="none" stroke="var(--ink)" stroke-width="1"></circle>
+      <circle cx="60" cy="82" r="11" fill="none" stroke="var(--ink)" stroke-width="1"></circle>
+    </>
+  )}
+  <path d="M60 60L60 26" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"></path>
+  <path d="M60 60L82 68" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"></path>
+  <path d="M60 60L48 40" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"></path>
+  <circle cx="60" cy="60" r="2.5" fill="var(--ink)"></circle>
+</svg>

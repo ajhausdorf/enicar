@@ -1,0 +1,26 @@
+# DRAFT. Fields below are starting points from general collector knowledge and
+# are NOT yet checked against a source. Do not mark verified until every
+# populated field is covered by a citation.
+name: Sherpa Graph
+family: sherpa
+reference: null
+nicknames: [Jim Clark]
+kind: chronograph
+years: { from: null, to: null, approximate: true }
+movement: { calibre: Valjoux 72, winding: manual }
+case: { construction: EPSA Super-Compressor, material: null, diameter_mm: null }
+dial: null
+summary: Enicar's three-register chronograph, closely associated with the racing driver Jim Clark.
+history: []
+variants: []
+images: []
+barometer: null
+status: draft
+gaps:
+  - Factory reference numbers
+  - Production years
+  - Case material and diameter
+  - Dial and hand generations
+  - Citations for every field above
+citations: []
+last_reviewed: 2026-10-25

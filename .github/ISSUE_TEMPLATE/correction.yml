@@ -1,0 +1,35 @@
+name: Correction
+description: Something on a page is wrong or missing
+labels: [correction]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The address of the page, or the watch name
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Links to a source, catalogue scan, or photos of your own watch. Corrections without evidence can't be applied.
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: How to credit you
+      description: Optional. Leave blank to stay anonymous.

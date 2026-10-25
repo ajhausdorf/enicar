@@ -1,0 +1,47 @@
+# The merge gate. Runs on every pull request and every push to main.
+# Branch protection on main should require the "qa" check to pass.
+name: qa
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1' # Mondays: full link check, catches sources that went away
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Checks (data rules, regressions, build, built site)
+        run: npm run check
+        env:
+          QA_BASE: ${{ github.event_name == 'pull_request' && format('origin/{0}', github.base_ref) || 'HEAD~1' }}
+      - name: Link check (changed records)
+        if: github.event_name == 'pull_request'
+        run: node scripts/qa/check-links.mjs --changed
+        env:
+          QA_BASE: origin/${{ github.base_ref }}
+      - name: Link check (everything)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: node scripts/qa/check-links.mjs
+      - name: Post change summary on the PR
+        if: github.event_name == 'pull_request' && always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f qa-summary.md ] && gh pr comment ${{ github.event.pull_request.number }} --body-file qa-summary.md --edit-last || \
+          gh pr comment ${{ github.event.pull_request.number }} --body-file qa-summary.md || true

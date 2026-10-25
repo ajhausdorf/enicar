@@ -1,0 +1,35 @@
+---
+// Search runs entirely in the browser using the index Pagefind builds from
+// the finished site. It only works after `npm run build`, not in `npm run dev`.
+import Base from '../layouts/Base.astro';
+---
+<Base title="Search" section="search">
+  <link slot="head" rel="stylesheet" href="/pagefind/pagefind-ui.css">
+  <div class="wrap search-page">
+    <p class="eyebrow">Search</p>
+    <h1>Find a reference.</h1>
+    <div id="pagefind"></div>
+    <noscript><p>Search needs JavaScript. Browse the <a href="/">catalog</a> instead.</p></noscript>
+  </div>
+</Base>
+
+<script is:inline>
+  (function () {
+    var s = document.createElement('script');
+    s.src = '/pagefind/pagefind-ui.js';
+    s.onload = function () {
+      var ui = new PagefindUI({ element: '#pagefind', showSubResults: false, showImages: false });
+      var q = new URLSearchParams(location.search).get('q');
+      if (q) ui.triggerSearch(q);
+    };
+    s.onerror = function () {
+      document.getElementById('pagefind').innerHTML = '<p class="notice">The search index is built with the site. Run <code>npm run build</code> and <code>npm run preview</code> to use search locally.</p>';
+    };
+    document.body.appendChild(s);
+  })();
+</script>
+
+<style>
+  .search-page { display: flex; flex-direction: column; gap: 16px; padding-top: 56px; padding-bottom: 64px; min-height: 50vh; }
+  .search-page :global(.pagefind-ui) { --pagefind-ui-primary: var(--accent); --pagefind-ui-font: var(--sans); --pagefind-ui-border: var(--line); margin-top: 16px; }
+</style>

@@ -1,0 +1,20 @@
+# Model families. `order` sets the sidebar order. Summaries stay null until
+# written from cited sources.
+- id: sherpa
+  name: Sherpa
+  order: 1
+- id: seapearl
+  name: Seapearl
+  order: 2
+- id: ocean-pearl
+  name: Ocean Pearl
+  order: 3
+- id: star-jewels
+  name: Star Jewels
+  order: 4
+- id: ultrasonic
+  name: Ultrasonic
+  order: 5
+- id: supertest
+  name: Supertest
+  order: 6

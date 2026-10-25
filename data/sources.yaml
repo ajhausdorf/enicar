@@ -1,0 +1,22 @@
+# Sources we draw on. A source stays `to-confirm` until someone has checked
+# the URL and who runs it; author names are left null until confirmed.
+- id: enicar-org
+  name: enicar.org
+  kind: blog
+  url: https://enicar.org/
+  author: null
+  status: to-confirm
+  what: A long-running research blog on vintage Enicar, with articles on individual references, dating and a price barometer.
+  use: Reference pages, production dates, nicknames and, with permission, barometer ranges.
+  leads_to: []
+  permission: not-asked
+- id: watchuseek
+  name: WatchUSeek Enicar collecting thread
+  kind: forum
+  url: https://www.watchuseek.com/
+  author: null
+  status: to-confirm
+  what: Owner-posted examples and discussion of dial, hand and case variants.
+  use: Variant tells and caseback or serial observations.
+  leads_to: []
+  permission: not-needed

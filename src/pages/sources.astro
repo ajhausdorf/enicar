@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { CONTRIBUTE_URL } from '../lib/site';
+
+const sources = await getCollection('sources');
+const refs = await getCollection('references');
+const usage = Object.fromEntries(sources.map((s) => [s.id, refs.filter((r) => r.data.citations.some((c) => c.source.id === s.id)).length]));
+---
+<Base title="Sources and credits" section="sources">
+  <div class="wrap sources">
+    <section class="intro">
+      <p class="eyebrow">Sources and credits</p>
+      <h1>Nothing here is ours alone.</h1>
+      <p class="lede">This archive re-indexes work done by collectors over many years. Each record links to where its facts came from, and each source below leads onward to the next one.</p>
+    </section>
+
+    <section class="block">
+      <h2>Primary sources</h2>
+      <div class="grid">
+        {sources.map((s) => (
+          <article class="card src">
+            <div class="src__top">
+              <div>
+                <a href={s.data.url} class="src__name">{s.data.name}</a>
+                <span class="muted small">{s.data.author ?? 'Author to be confirmed'}</span>
+              </div>
+              <span class="badge accent">{s.data.kind}</span>
+            </div>
+            <p>{s.data.what}</p>
+            {s.data.use && (
+              <div class="src__use">
+                <span class="eyebrow">We use it for</span>
+                <span class="small">{s.data.use}</span>
+              </div>
+            )}
+            <span class="muted small">Cited on {usage[s.id]} {usage[s.id] === 1 ? 'record' : 'records'}{s.data.status === 'to-confirm' ? ' · details to be confirmed' : ''}</span>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="policies card">
+      <div>
+        <h2>Image policy</h2>
+        <p>Photographs appear only with permission from the photographer or seller, under an open licence, or when we shot them ourselves. Every image carries a visible credit. If your image is here without one, tell us and it comes down the same day.</p>
+      </div>
+      <div>
+        <h2>Barometer and sales</h2>
+        <p>Barometer ranges are quoted as published, with the edition named, and only with the publisher's permission. Sales are logged from public listings with the venue, date and a link; we never record buyers.</p>
+      </div>
+      <div>
+        <h2>Corrections</h2>
+        <p>Dates and attributions follow the sources, and we flag where they disagree. Send a correction with your evidence and it is credited to you in the change history.</p>
+        <a class="btn" href={CONTRIBUTE_URL}>Request a correction</a>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .sources { display: flex; flex-direction: column; gap: 48px; padding-top: 56px; padding-bottom: 64px; }
+  .intro { display: flex; flex-direction: column; gap: 16px; max-width: 760px; }
+  .block { display: flex; flex-direction: column; gap: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+  .small { font-size: 13px; }
+  .src { display: flex; flex-direction: column; gap: 14px; }
+  .src p { margin: 0; font-size: 15px; }
+  .src__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .src__top > div { display: flex; flex-direction: column; gap: 4px; }
+  .src__name { font-size: 20px; font-weight: 600; text-decoration: none; }
+  .src__use { display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 1px solid var(--line-soft); }
+  .policies { display: flex; flex-wrap: wrap; gap: 32px; }
+  .policies > div { flex: 1 1 280px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+  .policies h2 { font-size: 18px; }
+  .policies p { margin: 0; font-size: 14px; color: var(--ink-2); }
+  @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+</style>

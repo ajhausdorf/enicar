@@ -1,0 +1,28 @@
+name: Missing reference
+description: An Enicar model or reference that isn't in the catalog yet
+labels: [new-reference]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Model name
+    validations:
+      required: true
+  - type: input
+    id: ref
+    attributes:
+      label: Reference number, if known
+  - type: textarea
+    id: details
+    attributes:
+      label: What you know
+      description: Years, calibre, case, dial, nicknames. Say where each detail comes from.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links or citations.
+    validations:
+      required: true
