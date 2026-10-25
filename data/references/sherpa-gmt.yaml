@@ -110,12 +110,21 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa GMT."
-barometer: null
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Sherpa GMT and World Time"
+      bands:
+        - { condition: "Very good to mint", low: 2200, high: 3000 }
+        - { condition: "Average to good", low: 1700, high: 2200 }
+        - { condition: "Poor to fair", low: 1000, high: 1700 }
+      note: null
 status: draft
 gaps:
   - Case material and lug width
   - Photographs
-  - Price
 citations:
   - id: eo-matrix
     source: enicar-org
@@ -126,4 +135,10 @@ citations:
       - case.diameter_mm
       - features
       - movement.calibres
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25

@@ -52,6 +52,17 @@ variants:
       - 626.7xx – 627.0xx
     dated: 1963 (est.)
     production: "400"
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Aqua Graph and Jet Graph"
+          bands:
+            - { condition: "Very good to mint", low: 6500, high: 8500 }
+            - { condition: "Average to good", low: 4000, high: 6500 }
+            - { condition: "Poor to fair", low: 2500, high: 4000 }
+          note: "enicar.org adds 20% for MkI versions."
     cites:
       - eo-chrono-table
       - e101-jet-graph-mk-i
@@ -66,6 +77,17 @@ variants:
       - 721.9xx
     dated: 1964 (est.)
     production: "100"
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Aqua Graph and Jet Graph"
+          bands:
+            - { condition: "Very good to mint", low: 6500, high: 8500 }
+            - { condition: "Average to good", low: 4000, high: 6500 }
+            - { condition: "Poor to fair", low: 2500, high: 4000 }
+          note: "enicar.org adds 20% for MkI versions."
     cites:
       - eo-chrono-table
   - name: MkII
@@ -83,6 +105,17 @@ variants:
       - 927.3xx
     dated: 6/66
     production: null
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Aqua Graph and Jet Graph"
+          bands:
+            - { condition: "Very good to mint", low: 6500, high: 8500 }
+            - { condition: "Average to good", low: 4000, high: 6500 }
+            - { condition: "Poor to fair", low: 2500, high: 4000 }
+          note: null
     cites:
       - eo-chrono-table
       - e101-jet-graph-mkii
@@ -106,6 +139,17 @@ variants:
       - 1.305.2xx – 1.305.9xx
     dated: 6/67 to 5/69
     production: 500+
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Aqua Graph and Jet Graph"
+          bands:
+            - { condition: "Very good to mint", low: 6500, high: 8500 }
+            - { condition: "Average to good", low: 4000, high: 6500 }
+            - { condition: "Poor to fair", low: 2500, high: 4000 }
+          note: null
     cites:
       - eo-chrono-table
       - e101-jet-graph-mkiii
@@ -126,6 +170,17 @@ variants:
       - 627.1xx
     dated: 8/69
     production: 2,300+
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Aqua Graph and Jet Graph"
+          bands:
+            - { condition: "Very good to mint", low: 6500, high: 8500 }
+            - { condition: "Average to good", low: 4000, high: 6500 }
+            - { condition: "Poor to fair", low: 2500, high: 4000 }
+          note: null
     cites:
       - eo-chrono-table
       - e101-jet-graph-mkiv
@@ -364,7 +419,6 @@ gaps:
   - Jet Graph MkII production number (not known to the source)
   - Case material and lug width
   - Photographs
-  - Price
 citations:
   - id: eo-matrix
     source: enicar-org
@@ -405,6 +459,12 @@ citations:
     source: enicar101
     url: https://enicar101.com/jet-graph-mkiv/
     title: Jet Graph MK IV
+    retrieved: 2026-10-25
+    supports: []
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
 last_reviewed: 2026-10-25

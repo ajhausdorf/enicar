@@ -31,12 +31,19 @@ export function decadeOf(y: Years): string | null {
   return year == null ? null : `${Math.floor(year / 10) * 10}s`;
 }
 
-const CURRENCY: Record<string, string> = { EUR: '€', USD: '$', GBP: '£', CHF: 'CHF ' };
-export function formatRange(b: { currency: string; low: number; high: number }): string {
-  const s = CURRENCY[b.currency] ?? `${b.currency} `;
-  const n = (v: number) => v.toLocaleString('en-GB');
-  return `${s}${n(b.low)} to ${n(b.high)}`;
+const CURRENCY: Record<string, string> = { EUR: '€', USD: '$', GBP: '£', CHF: 'CHF ', HKD: 'HK$', SEK: 'SEK ', JPY: '¥' };
+export function formatPrice(currency: string, v: number): string {
+  return `${CURRENCY[currency] ?? `${currency} `}${v.toLocaleString('en-GB')}`;
 }
+export function formatRange(currency: string, b: { low: number | null; high: number }): string {
+  return b.low == null ? `up to ${formatPrice(currency, b.high)}` : `${formatPrice(currency, b.low)} to ${b.high.toLocaleString('en-GB')}`;
+}
+// The price guide that applies to a catalog leaf: its generation's own, or the record's.
+export function barometerOf(leaf: { ref: any; variant?: any }) {
+  return leaf.variant?.barometer ?? leaf.ref.data.barometer ?? null;
+}
+// Listings count as current for this long after they were last checked.
+export const LISTING_FRESH_DAYS = 21;
 
 export const href = {
   family: (id: string) => `/?family=${id}`,

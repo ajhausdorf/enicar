@@ -5,7 +5,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Dial from '../../components/Dial.astro';
-import { formatYears, formatRange, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf } from '../../lib/site';
+import { formatYears, formatRange, formatPrice, barometerOf, LISTING_FRESH_DAYS, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf } from '../../lib/site';
 
 export async function getStaticPaths() {
   const refs = await getCollection('references');
@@ -22,6 +22,19 @@ const cites = Object.fromEntries(d.citations.map((c) => [c.id, c]));
 const otherModels = (await getCollection('references', (r) => r.data.family.id === d.family.id && r.id !== entry.id))
   .sort((a, b) => a.data.name.replace(/^Sherpa /, '').localeCompare(b.data.name.replace(/^Sherpa /, '')));
 const generations = leavesOf(entry);
+
+// Prices: the price guide for this generation (or model), then sales and
+// listings for it. A sale with no generation shows on every generation page.
+const bar = barometerOf(leaf);
+const barCite = bar ? cites[bar.cite] : null;
+const salesHere = await getCollection('sales', (s) => s.data.ref.id === entry.id && (!v || !s.data.variant || s.data.variant === v.name));
+const fresh = (dt: Date) => (Date.now() - dt.getTime()) / 864e5 <= LISTING_FRESH_DAYS;
+const byDate = (a: any, b: any) => +b.data.date - +a.data.date;
+const sold = salesHere.filter((s) => s.data.kind === 'sold' && (!v || s.data.variant)).sort(byDate).slice(0, 12);
+// On a generation page, sales of the model whose generation isn't known.
+const soldModel = v ? salesHere.filter((s) => s.data.kind === 'sold' && !s.data.variant).sort(byDate).slice(0, 12) : [];
+const listed = salesHere.filter((s) => s.data.kind === 'listed' && s.data.checked && fresh(s.data.checked)).sort((a, b) => a.data.price - b.data.price);
+const day = (dt: Date) => dt.toISOString().slice(0, 10);
 
 const mm = (n: number | number[] | null) => (n == null ? null : Array.isArray(n) ? `${n.join(' or ')} mm` : `${n} mm`);
 const FEATURE: Record<string, string> = {
@@ -135,16 +148,27 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
         )}
 
         <div class="card barometer">
-          <div class="row"><span class="label">Price</span>
-            {d.barometer && cites[d.barometer.cite] && <a class="muted small" href={cites[d.barometer.cite].url}>Source: {srcName(cites[d.barometer.cite])}, {d.barometer.edition}</a>}
+          <div class="row"><span class="label">Price guide</span>
+            {barCite && <a class="muted small" href={barCite.url}>Source: {srcName(barCite)}, {bar.edition}</a>}
           </div>
-          {d.barometer ? (
+          {bar ? (
             <>
-              <span class="mono price">{formatRange(d.barometer)}</span>
-              <span class="muted small">{d.barometer.condition}. Quoted as published, never adjusted by us.</span>
+              {bar.entries.map((e: any) => (
+                <div class="bar-entry">
+                  {e.label && <span class="bar-label">{e.label}</span>}
+                  <dl class="bands">
+                    {e.bands.map((b: any) => <div><dt>{b.condition}</dt><dd class="mono">{formatRange(bar.currency, b)}</dd></div>)}
+                  </dl>
+                  {e.note && <span class="muted small">{e.note}</span>}
+                </div>
+              ))}
+              <span class="muted small">Figures as published, never re-priced by us.</span>
             </>
           ) : (
-            <span class="muted small">No price yet.</span>
+            <span class="muted small">No price guide yet.</span>
+          )}
+          {(sold.length > 0 || listed.length > 0 || soldModel.length > 0) && (
+            <a class="small" href="#sales">{[sold.length && `${sold.length} ${sold.length === 1 ? 'sale' : 'sales'}`, soldModel.length && `${soldModel.length} ${d.name} ${soldModel.length === 1 ? 'sale' : 'sales'}, generation not stated`, listed.length && `${listed.length} for sale now`].filter(Boolean).join(' · ')}</a>
           )}
         </div>
 
@@ -165,6 +189,50 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
         )}
       </div>
     </section>
+
+    {(sold.length > 0 || listed.length > 0 || soldModel.length > 0) && (
+      <section class="sales" id="sales" aria-labelledby="sales-h" data-pagefind-ignore>
+        <h2 id="sales-h">Sales and listings</h2>
+        {listed.length > 0 && (
+          <div class="sales__group">
+            <h3>For sale now</h3>
+            <div class="table-wrap"><table class="sales-table">
+              <thead><tr><th scope="col">Asking</th><th scope="col">Where</th><th scope="col">Watch</th><th scope="col">Checked</th></tr></thead>
+              <tbody>{listed.map((s) => (
+                <tr><td class="mono">{formatPrice(s.data.currency, s.data.price)}</td><td>{s.data.venue}</td>
+                  <td><a href={s.data.url} rel="noopener">{s.data.title}</a>{v && !s.data.variant && <span class="muted"> (generation not stated)</span>}{s.data.condition && <span class="muted"> · {s.data.condition}</span>}</td>
+                  <td class="mono muted">{day(s.data.checked!)}</td></tr>
+              ))}</tbody>
+            </table></div>
+          </div>
+        )}
+        {sold.length > 0 && (
+          <div class="sales__group">
+            <h3>Sales results</h3>
+            <div class="table-wrap"><table class="sales-table">
+              <thead><tr><th scope="col">Date</th><th scope="col">Price</th><th scope="col">Where</th><th scope="col">Watch</th></tr></thead>
+              <tbody>{sold.map((s) => (
+                <tr><td class="mono muted">{day(s.data.date)}</td><td class="mono">{formatPrice(s.data.currency, s.data.price)}</td><td>{s.data.venue}</td>
+                  <td><a href={s.data.url} rel="noopener">{s.data.title}</a>{s.data.note && <span class="muted"> · {s.data.note}</span>}</td></tr>
+              ))}</tbody>
+            </table></div>
+          </div>
+        )}
+        {soldModel.length > 0 && (
+          <div class="sales__group">
+            <h3>{d.name} sales, generation not stated</h3>
+            <div class="table-wrap"><table class="sales-table">
+              <thead><tr><th scope="col">Date</th><th scope="col">Price</th><th scope="col">Where</th><th scope="col">Watch</th></tr></thead>
+              <tbody>{soldModel.map((s) => (
+                <tr><td class="mono muted">{day(s.data.date)}</td><td class="mono">{formatPrice(s.data.currency, s.data.price)}</td><td>{s.data.venue}</td>
+                  <td><a href={s.data.url} rel="noopener">{s.data.title}</a>{s.data.note && <span class="muted"> · {s.data.note}</span>}</td></tr>
+              ))}</tbody>
+            </table></div>
+          </div>
+        )}
+        <p class="muted small">Prices in the currency of the sale. Auction prices are as the house publishes them, which may include its buyer's premium. Asking prices are what a seller wants, not what a watch sells for; each listing was open on the date checked.</p>
+      </section>
+    )}
 
     {readMore.length > 0 && (
       <section class="read-more" aria-labelledby="rm-h">
@@ -299,7 +367,19 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
   .barometer { display: flex; flex-direction: column; gap: 12px; }
   .row { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
   .label { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
-  .price { font-size: 32px; font-weight: 500; }
+  .bar-entry { display: flex; flex-direction: column; gap: 6px; }
+  .bar-label { font-size: 14px; font-weight: 600; }
+  .bands { margin: 0; display: flex; flex-direction: column; }
+  .bands div { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--line-soft); font-size: 14px; }
+  .bands div:first-child dd { font-size: 18px; font-weight: 600; }
+  .bands dt { color: var(--ink-2); }
+  .bands dd { margin: 0; white-space: nowrap; }
+  .sales { display: flex; flex-direction: column; gap: 20px; }
+  .sales__group { display: flex; flex-direction: column; gap: 10px; }
+  .sales h3 { margin: 0; font-size: 16px; }
+  .sales-table { min-width: 560px; }
+  .sales-table td a { text-decoration: none; }
+  .sales-table td.mono { white-space: nowrap; }
   .specs { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; border-top: 1px solid var(--line); }
   .specs div { display: flex; flex-direction: column; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--line-soft); }
   .specs dt { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }

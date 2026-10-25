@@ -67,6 +67,17 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Caption: Ocean Pearl chronograph nicknamed Interlagos."
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Valjoux 72 chronograph: Ocean Pearl Interlagos, \"Garnix\""
+      bands:
+        - { condition: "Very good to mint", low: 3000, high: 5000 }
+        - { condition: "Average to good", low: 2000, high: 3000 }
+        - { condition: "Poor to fair", low: 1500, high: 2000 }
+      note: "Published for the Valjoux 72 chronographs (Interlagos, \"Garnix\"); the Ocean Pearl automatics are not priced."
 status: draft
 gaps:
   - Factory reference numbers
@@ -74,4 +85,11 @@ gaps:
   - Movement
   - Case
   - Citations
+citations:
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25
