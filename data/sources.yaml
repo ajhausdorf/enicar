@@ -55,3 +55,25 @@
   use: Photos, with permission, and the owner's own identification of a watch's model or generation where he gives one.
   leads_to: []
   permission: granted
+- id: zizi-zap
+  name: "@zizi_zap"
+  kind: other
+  tier: secondary
+  url: https://www.instagram.com/zizi_zap/
+  author: null
+  status: confirmed
+  what: Instagram account of a collector of vintage Enicar, mostly Sherpa Super-Jets and Super-Dives, whose captions often give the reference and calibre.
+  use: Photos, with permission, and the owner's own reference and calibre for a watch.
+  leads_to: []
+  permission: granted
+- id: dropandwatch
+  name: Drop&Watch
+  kind: dealer
+  tier: listing
+  url: https://dropandwatch.com/
+  author: null
+  status: confirmed
+  what: French vintage watch dealer that photographs and sells serviced watches.
+  use: Photos, with permission, and their description of a watch they sold.
+  leads_to: []
+  permission: granted

@@ -5,6 +5,11 @@ import { CONTRIBUTE_URL } from '../lib/site';
 
 const sources = await getCollection('sources');
 const refs = await getCollection('references');
+// Photographers who let us use their photos, with how many are on the site.
+const photographers = (await getCollection('permissions')).map((p) => ({
+  ...p.data,
+  count: refs.reduce((n, r) => n + r.data.images.filter((i) => i.permission_ref?.id === p.id).length, 0)
+})).sort((a, b) => b.count - a.count);
 const usage = Object.fromEntries(sources.map((s) => [s.id, refs.filter((r) => r.data.citations.some((c) => c.source.id === s.id)).length]));
 ---
 <Base title="Sources and credits" section="sources">
@@ -39,6 +44,19 @@ const usage = Object.fromEntries(sources.map((s) => [s.id, refs.filter((r) => r.
       </div>
     </section>
 
+    <section class="block">
+      <h2>Photographers</h2>
+      <p class="small">These collectors and dealers let us show their photos. Each photo on the site credits and links back to them.</p>
+      <ul class="photographers">
+        {photographers.map((p) => (
+          <li class="card">
+            <a href={p.link ?? p.profile_url} class="src__name">{p.credit_as}</a>
+            <span class="muted small">{p.count} {p.count === 1 ? 'photo' : 'photos'}{p.link && <> · <a href={p.profile_url}>Instagram</a></>}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
     <section class="policies card">
       <div>
         <h2>Image policy</h2>
@@ -69,6 +87,9 @@ const usage = Object.fromEntries(sources.map((s) => [s.id, refs.filter((r) => r.
   .src__top > div { display: flex; flex-direction: column; gap: 4px; }
   .src__name { font-size: 20px; font-weight: 600; text-decoration: none; }
   .src__use { display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 1px solid var(--line-soft); }
+  .photographers { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+  .photographers li { padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; }
+  .photographers .src__name { font-size: 17px; }
   .policies { display: flex; flex-wrap: wrap; gap: 32px; }
   .policies > div { flex: 1 1 280px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
   .policies h2 { font-size: 18px; }

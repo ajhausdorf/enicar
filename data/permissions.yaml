@@ -9,3 +9,18 @@
   via: Instagram message to the owner
   scope: Any of his photos, with credit. He also offered to shoot specific details on request.
   credit_as: "@two_crowned_prints"
+- id: zizi-zap
+  who: "@zizi_zap"
+  profile_url: https://www.instagram.com/zizi_zap/
+  granted: 2026-10-25
+  via: Instagram message to the owner
+  scope: Their Enicar photos, with credit and a link back.
+  credit_as: "@zizi_zap"
+- id: dropandwatch
+  who: Drop&Watch (@dropandwatch), vintage watch dealer
+  profile_url: https://www.instagram.com/dropandwatch/
+  granted: 2026-10-25
+  via: Instagram message to the owner
+  scope: Their Enicar photos, with credit and a link back.
+  credit_as: "Drop&Watch"
+  link: https://dropandwatch.com/

@@ -1,0 +1,51 @@
+name: Sherpa Date
+family: sherpa
+kind: other
+summary: null
+references: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+images:
+  - file: /images/sherpa-date/zz-chi7wpylwv4-1.webp
+    thumb: /images/sherpa-date/zz-chi7wpylwv4-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Date with a silver dial, applied 12 and 6, and date at 3 on a black leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CHI7WPyLWV4/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-date/zz-cflgk0jskcg-1.webp
+    thumb: /images/sherpa-date/zz-cflgk0jskcg-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Date with a silver dial and date at 3, without strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CFLGK0jsKCG/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+status: draft
+gaps:
+  - Reference numbers
+  - Production years
+  - Movement
+  - Case size and material
+  - Any written source
+citations: []
+last_reviewed: 2026-10-25

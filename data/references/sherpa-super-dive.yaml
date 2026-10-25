@@ -2,7 +2,10 @@ name: Sherpa Super-Dive
 family: sherpa
 kind: diver
 summary: The 40 mm two-crown diver with an inner bezel, later also in a 42 mm cushion case.
-references: []
+references:
+  - number: 144-35-02
+    note: Given by the owner of one example; not yet matched to a case size.
+    cites: [zz-dg1g]
 nicknames: []
 years:
   from: null
@@ -97,6 +100,310 @@ images:
     caption: "With a Sherpa Super-Jet."
     identified_by: dial
     identified_note: "Dials read Sherpa Super-Dive and Sherpa Super-Jet."
+  - file: /images/sherpa-super-dive/zz-dg-ueqsofnm-1.webp
+    thumb: /images/sherpa-super-dive/zz-dg-ueqsofnm-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "A Sherpa Super-Jet and a Sherpa Super-Dive side by side on brown leather straps, on denim"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DG_UEqSOfNM/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: "With a Sherpa Super-Jet."
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-dg-ueqsofnm-2.webp
+    thumb: /images/sherpa-super-dive/zz-dg-ueqsofnm-2-sm.webp
+    width: 1440
+    height: 1440
+    alt: "A Sherpa Super-Jet and a Sherpa Super-Dive side by side on brown leather straps, on denim"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DG_UEqSOfNM/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: "With a Sherpa Super-Jet."
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-dg-ueqsofnm-3.webp
+    thumb: /images/sherpa-super-dive/zz-dg-ueqsofnm-3-sm.webp
+    width: 1440
+    height: 1440
+    alt: "A Sherpa Super-Jet in front, with a Sherpa Super-Dive behind it"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DG_UEqSOfNM/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: "With a Sherpa Super-Jet."
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-dg-ueqsofnm-4.webp
+    thumb: /images/sherpa-super-dive/zz-dg-ueqsofnm-4-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Dive with a black dial and patinated inner bezel on a brown leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DG_UEqSOfNM/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-dg-ueqsofnm-5.webp
+    thumb: /images/sherpa-super-dive/zz-dg-ueqsofnm-5-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Side view of the crowns of a Sherpa Super-Dive and a Sherpa Super-Jet"
+    view: profile
+    variant: null
+    source_url: https://www.instagram.com/p/DG_UEqSOfNM/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: "With a Sherpa Super-Jet."
+    identified_by: caption
+    identified_note: "Owner calls them a pair of Super Dive and Super Jet."
+  - file: /images/sherpa-super-dive/zz-dg1glmboet6-1.webp
+    thumb: /images/sherpa-super-dive/zz-dg1glmboet6-1-sm.webp
+    width: 1440
+    height: 1439
+    alt: "Sherpa Super-Dive with a black dial and green-patinated inner bezel on a brown leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DG1GLmBOET6/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: "Ref. 144-35-02, per its owner."
+    identified_by: caption
+    identified_note: "Owner gives ref. 144-35-02 and the AR1145."
+  - file: /images/sherpa-super-dive/zz-dg1glmboet6-2.webp
+    thumb: /images/sherpa-super-dive/zz-dg1glmboet6-2-sm.webp
+    width: 1440
+    height: 1440
+    alt: "The same Sherpa Super-Dive at an angle, showing both crowns"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DG1GLmBOET6/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-dg1glmboet6-3.webp
+    thumb: /images/sherpa-super-dive/zz-dg1glmboet6-3-sm.webp
+    width: 1440
+    height: 1440
+    alt: "The same Sherpa Super-Dive lying on khaki fabric"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DG1GLmBOET6/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-dg1glmboet6-4.webp
+    thumb: /images/sherpa-super-dive/zz-dg1glmboet6-4-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Close-up of the same Sherpa Super-Dive dial and inner bezel"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DG1GLmBOET6/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-dg1glmboet6-5.webp
+    thumb: /images/sherpa-super-dive/zz-dg1glmboet6-5-sm.webp
+    width: 1440
+    height: 1440
+    alt: "The same Sherpa Super-Dive from the side, on its strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DG1GLmBOET6/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-dg1glmboet6-6.webp
+    thumb: /images/sherpa-super-dive/zz-dg1glmboet6-6-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Caseback of the same Sherpa Super-Dive with the Sherpa 600 diver engraving"
+    view: caseback
+    variant: null
+    source_url: https://www.instagram.com/p/DG1GLmBOET6/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: caption
+    identified_note: "Post captioned Enicar Sherpa Super-Dive, ref. 144-35-02."
+  - file: /images/sherpa-super-dive/zz-cywsrlsmqdz-1.webp
+    thumb: /images/sherpa-super-dive/zz-cywsrlsmqdz-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Super-Dive with a black dial on a grey suede strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CYWSRLsMqDz/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-crmenchlwfi-1.webp
+    thumb: /images/sherpa-super-dive/zz-crmenchlwfi-1-sm.webp
+    width: 1080
+    height: 720
+    alt: "Sherpa Super-Dive with a black dial on a blue rally strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CRmENChLwfI/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-clznij8l8vu-1.webp
+    thumb: /images/sherpa-super-dive/zz-clznij8l8vu-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Super-Dive with a black dial on a steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CLZNIJ8L8vU/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-ckgvjoulrcz-1.webp
+    thumb: /images/sherpa-super-dive/zz-ckgvjoulrcz-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Super-Dive with a black dial on a green strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CKgVjoULRcZ/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-cjyecr9rrza-1.webp
+    thumb: /images/sherpa-super-dive/zz-cjyecr9rrza-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Super-Dive with a black dial on a dark olive leather strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CJYeCR9rRzA/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-cg4hjd4lnec-1.webp
+    thumb: /images/sherpa-super-dive/zz-cg4hjd4lnec-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Super-Dive with a black dial on a purple braided strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CG4hJD4LNec/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-cge2svlhp8m-1.webp
+    thumb: /images/sherpa-super-dive/zz-cge2svlhp8m-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Super-Dive with a black dial on a purple braided strap, close up"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CGE2svlHP8m/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/zz-cfl-splnrqf-1.webp
+    thumb: /images/sherpa-super-dive/zz-cfl-splnrqf-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Super-Dive with a black dial on a purple braided strap, on stone"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CFl-splnrqF/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
 barometer: null
 status: draft
 gaps:
@@ -104,6 +411,12 @@ gaps:
   - Price
   - "Movement detail: AR167 in the 42 mm cushion case."
 citations:
+  - id: zz-dg1g
+    source: zizi-zap
+    url: https://www.instagram.com/p/DG1GLmBOET6/
+    title: "@zizi_zap: Enicar Sherpa Super-Dive from 1960s, ref. 144-35-02"
+    retrieved: 2026-10-25
+    supports: []
   - id: eo-matrix
     source: enicar-org
     url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf

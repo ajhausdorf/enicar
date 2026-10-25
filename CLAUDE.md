@@ -66,7 +66,9 @@ why it is a false alarm and stop.
    permission. A photo from an issue is usable only if both permission boxes
    were ticked. When someone gives permission (a DM, an email), add them to
    `data/permissions.yaml` (who, when, how, what it covers; summarise, never
-   paste private messages) and set `permission: granted` with
+   paste private messages; if they have a website, put it in `link`, since
+   credits are their backlink and should point there) and set
+   `permission: granted` with
    `permission_ref` on each of their photos. QA fails a granted photo with no
    permission record. Set `variant` on a photo when it shows one generation,
    and say how you know with `identified_by` (`dial`: printed on it;

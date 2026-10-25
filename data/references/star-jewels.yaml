@@ -1,12 +1,67 @@
-# DRAFT stub: name and family only. Everything else needs research.
 name: Star Jewels
 family: star-jewels
 kind: dress
+summary: null
+references:
+  - number: 145/001
+    note: An automatic with the AR1125, per its owner.
+    cites: [zz-cpff]
+  - number: 160-56-02
+    note: A 10 ATM Sherpa 300 version with the AR161, per its owner.
+    cites: [zz-cgeu]
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: [AR1125, AR161]
+  winding: null
+images:
+  - file: /images/star-jewels/zz-cpff2wgtipk-1.webp
+    thumb: /images/star-jewels/zz-cpff2wgtipk-1-sm.webp
+    width: 1424
+    height: 1424
+    alt: "Enicar Star Jewels automatic with a silver dial, date and gold-coloured case on a dark brown leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CpFF2wGtIpk/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: "Ref. 145/001 with the AR1125, per its owner."
+    identified_by: dial
+    identified_note: null
+  - file: /images/star-jewels/zz-cgeugzvrhtq-1.webp
+    thumb: /images/star-jewels/zz-cgeugzvrhtq-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Enicar Star Jewels 10 ATM diver with a black dial, orange seconds hand and black outer bezel on a black rally strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CgeUGZVrHtq/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: "Ref. 160-56-02 with the AR161, per its owner."
+    identified_by: dial
+    identified_note: null
 status: draft
 gaps:
-  - Factory reference numbers
   - Production years
-  - Movement
   - Case
-  - Citations
+  - Whether these references belong to one model or several
+citations:
+  - id: zz-cpff
+    source: zizi-zap
+    url: https://www.instagram.com/p/CpFF2wGtIpk/
+    title: "@zizi_zap: Enicar Star Jewels Automatic, cal. AR 1125, ref. 145/001"
+    retrieved: 2026-10-25
+    supports: [movement.calibres]
+  - id: zz-cgeu
+    source: zizi-zap
+    url: https://www.instagram.com/p/CgeUGZVrHtq/
+    title: "@zizi_zap: Enicar Star Jewels 10ATM Sherpa 300, ref. 160-56-02, cal. AR161"
+    retrieved: 2026-10-25
+    supports: [movement.calibres]
 last_reviewed: 2026-10-25
