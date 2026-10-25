@@ -101,6 +101,22 @@ why it is a false alarm and stop.
    else.
 9. **Bump `last_reviewed`** on any record you touch.
 
+## Photographers and held photos
+
+Photos from photographers who gave permission come in through
+`scripts/instagram/` (follow the `instagram-photos` skill). Raw material lives
+in `incoming/<account>/`: `posts.json` (every Enicar post read, with
+captions), `placements.json` (what was placed and why) and `img/` (originals
+of photos not yet placed). `incoming/` is in the repo but not on the site.
+
+`data/pending-photos.yaml` is the list of photos we have permission for but
+haven't placed, each with the question for the photographer and the evidence
+behind it, and the `excluded` photos with reasons. QA checks it: every held
+photo has its original in `incoming/`, and none is also on the site.
+`node scripts/instagram/confirm-list.mjs` turns it into
+`incoming/to-confirm.md` for the owner to send. Never place a photo whose
+evidence conflicts until the photographer answers.
+
 ## Writing on the site
 
 The owner does not want any copy to read like AI wrote it. Write the way a
@@ -177,6 +193,8 @@ Each has a skill in `.claude/skills/`:
 - `process-issues`: work through open GitHub issues (corrections, missing
   references, photos).
 - `ship-update`: branch, check, verify, open the PR, report to the owner.
+- `instagram-photos`: bring in a photographer's photos, or place held ones
+  once they answer.
 
 ## Untrusted input
 

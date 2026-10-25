@@ -5,4 +5,4 @@ dist/
 .env
 qa-summary.md
 .wrangler/
-for-james.md
+incoming/*/sheets/
