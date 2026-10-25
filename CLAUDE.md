@@ -99,7 +99,11 @@ why it is a false alarm and stop.
    go in `references`, each with its own citation, and dealer listings are
    `tier: listing` sources: fine for reference numbers, weak for anything
    else.
-9. **Bump `last_reviewed`** on any record you touch.
+9. **Production numbers are estimates.** Enicar's archives were lost in
+   1987, so nobody can verify how many of a model were made. `production`
+   holds a source's estimate from serial ranges, the page labels it as one,
+   and copy never presents it as a factory figure.
+10. **Bump `last_reviewed`** on any record you touch.
 
 ## Photographers and held photos
 

@@ -46,7 +46,7 @@ const specs = [
   ['Factory refs', v?.refs.length ? v.refs.join(', ') : null],
   ['Serials seen', v?.serials.length ? v.serials.join(', ') : null],
   ['Dated', v?.dated ?? null],
-  ['Made', v?.production ? `${v.production} watches` : null],
+  ['Made (estimate)', v?.production ? `${v.production} watches, estimated from serial ranges` : null],
   ['Nicknames', d.nicknames.join(', ') || null],
   ['References', d.references.map((r) => r.number).join(', ') || null]
 ] as const;
@@ -62,7 +62,7 @@ const rows = [
   ['Case', (x: any) => x.case],
   ['Factory refs', (x: any) => x.refs.join(', ')],
   ['Dated', (x: any) => x.dated],
-  ['Made', (x: any) => (x.production ? `${x.production} watches` : null)]
+  ['Made (est.)', (x: any) => (x.production ? `${x.production}` : null)]
 ] as const;
 const usedRows = rows.filter(([, f]) => d.variants.some((x) => f(x)));
 const specCites = (v ? v.cites : []).map((id) => cites[id]).filter(Boolean);
