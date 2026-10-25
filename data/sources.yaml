@@ -22,6 +22,17 @@
   use: Variant tells and caseback or serial observations.
   leads_to: []
   permission: not-needed
+- id: enicar101
+  name: Enicar 101
+  kind: blog
+  tier: primary
+  url: https://enicar101.com/
+  author: null
+  status: confirmed
+  what: A collector's research site on the Sherpa chronographs (Graph, Aqua Graph, Jet Graph, Super Graph) and some divers, with a page per generation, serial roll calls and production dates. Its data is the basis of the chronograph table in the Enicar book.
+  use: We link to its generation pages. Its text and photos need the owner's written permission, so we don't copy either.
+  leads_to: [enicar.org]
+  permission: not-asked
 - id: craft-and-tailored
   name: Craft & Tailored
   kind: dealer

@@ -183,6 +183,8 @@ const references = defineCollection({
     // Links out to the writing this record draws on. We link to the story
     // rather than retelling it.
     read_more: z.array(z.object({
+      // Ties the link to one generation; null shows it on every page.
+      variant: z.string().nullable().default(null),
       title: z.string(),
       url: z.url(),
       source: reference('sources'),
