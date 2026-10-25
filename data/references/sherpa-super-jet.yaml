@@ -555,6 +555,38 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV."
+  - file: /images/sherpa-super-jet/c-ck9yic9lxgc-1.webp
+    thumb: /images/sherpa-super-jet/c-ck9yic9lxgc-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a silver dial and checkered GMT hand on a tan suede strap, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CK9YiC9LxgC/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Red and black checkered GMT hand, the MkIII tell in Martijn van der Ven's Jet article."
+  - file: /images/sherpa-super-jet/c-chghonnl7df-1.webp
+    thumb: /images/sherpa-super-jet/c-chghonnl7df-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a silver dial, checkered GMT hand and black and white 24-hour scale on a tan suede strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CHGhONNL7df/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Red and black checkered GMT hand, the MkIII tell in Martijn van der Ven's Jet article."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article

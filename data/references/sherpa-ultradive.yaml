@@ -349,6 +349,54 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Ultradive; caption: MkI and MkII."
+  - file: /images/sherpa-ultradive/c-chljhgkl3qe-1.webp
+    thumb: /images/sherpa-ultradive/c-chljhgkl3qe-1-sm.webp
+    width: 1374
+    height: 1374
+    alt: "Sherpa Ultradive with a black dial, orange seconds hand and cream inner bezel on a brown strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CHlJHGKL3Qe/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive."
+  - file: /images/sherpa-ultradive/c-cfagnwsnymo-1.webp
+    thumb: /images/sherpa-ultradive/c-cfagnwsnymo-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Ultradive with a black dial and orange inner bezel markings on a steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CFagNwsnyMO/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive."
+  - file: /images/sherpa-ultradive/c-cjzmavtrkyr-1.webp
+    thumb: /images/sherpa-ultradive/c-cjzmavtrkyr-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Ultradive with a black dial and orange seconds hand on a brown strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CJZMavtrKyR/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

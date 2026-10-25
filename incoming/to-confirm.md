@@ -238,6 +238,30 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   - Caption: full set NOS Enicar Ocean Pearl, case ref 160-54-30, 38 mm.
   - The dial reads Star Jewels, not Ocean Pearl.
 
+## @ctwatchguy (4 photos)
+
+### Their label and the source disagree
+
+- **https://www.instagram.com/p/CG5XH-XLRF8/** · sherpa-super-jet · our guess: MkIII
+  Your caption calls this a white MK2 Super-Jet, but it has a red and black checkered GMT hand. Is it a MkII or a MkIII?
+  - Caption: rare white MK2 Sherpa Super Jet.
+  - A red and black checkered GMT hand, the MkIII tell in Martijn van der Ven's Jet article; a MkII has a slim plain GMT hand.
+- **https://www.instagram.com/p/CIv3tASrydb/** · sherpa-jet
+  Your caption calls this an albino MK1 Jet, but the GMT hand is slim with an orange tip. Is it a MkI or a MkII?
+  - Caption: Albino MK1 Sherpa Jet.
+  - Bezel and paddle hands fit the MkI.
+  - The GMT hand is slim with an orange tip, the MkII tell; the MkI has a red crescent-moon GMT hand.
+
+### Which generation?
+
+- **https://www.instagram.com/p/CSP2EEJL-3X/** · sherpa-aqua-graph
+  Your black-dial Aqua Graph (also in CRsAQTxruiv, CMpeR7Srvof and CL9vgvELQ7V) has paddle hands but a house-shaped pointer on the red ring. Which generation is it: a MkII with later parts, or a MkIII with older hands?
+  - Paddle hands with orange tips (MkI to MkII on Enicar 101), but a lume-dot chronograph hand, which Enicar 101 gives for the MkIII.
+  - The red ring has a house-shaped pointer, which Enicar 101 gives for the MkIII; its MkII page notes a service ring of that shape on the watch it shows.
+- **https://www.instagram.com/p/CRsAQTxruiv/** · sherpa-aqua-graph
+  Same watch as CSP2EEJL-3X: which generation?
+  - Paddle hands with a house-shaped pointer on the red ring.
+
 ---
 
 Generation tells used for Jets and Super-Jets, from Martijn van der Ven's Jet article (enicar.org): MkI paddle or dauphine hands, '33 jewels' dial, red crescent GMT hand (Jet) or red-tipped needle GMT hand (Super-Jet); MkII tuning-fork hands, slim orange or yellow-tipped GMT hand, sunburst dials; MkIII red and black checkered GMT hand, coloured bezels; MkIV cushion case.

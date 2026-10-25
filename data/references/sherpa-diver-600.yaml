@@ -32,12 +32,91 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
-images: []
+images:
+  - file: /images/sherpa-diver-600/c-cn8kfpergsk-1.webp
+    thumb: /images/sherpa-diver-600/c-cn8kfpergsk-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Diver 600 with an aged brown radium dial and black bezel on a khaki strap, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CN8KfPErGSk/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Diver 600."
+  - file: /images/sherpa-diver-600/c-cnngzgdld-t-1.webp
+    thumb: /images/sherpa-diver-600/c-cnngzgdld-t-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Diver 600 with a faded brown dial and red pointer on a tan leather strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CNngzgdLD_T/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Diver 600."
+  - file: /images/sherpa-diver-600/c-cnichdzlad9-1.webp
+    thumb: /images/sherpa-diver-600/c-cnichdzlad9-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Diver 600 with a heavily aged dial on a tan leather strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CNIchDzLAD9/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Diver 600."
+  - file: /images/sherpa-diver-600/c-cbmmztanafh-1.webp
+    thumb: /images/sherpa-diver-600/c-cbmmztanafh-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Diver 600 with a black gilt dial marked 17 Jewels on a grey suede strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CBMMzTAnaFh/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Diver 600."
+  - file: /images/sherpa-diver-600/c-caydj8mh3mk-1.webp
+    thumb: /images/sherpa-diver-600/c-caydj8mh3mk-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Diver 600 from 1958 with a black gilt radium dial and black bezel on a grey suede strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CAyDj8MH3MK/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Diver 600."
 barometer: null
 status: draft
 gaps:
   - Case material and lug width
-  - Photographs
   - Price
 citations:
   - id: eo-matrix

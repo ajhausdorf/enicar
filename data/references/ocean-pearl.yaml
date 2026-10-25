@@ -67,6 +67,54 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Caption: Ocean Pearl chronograph nicknamed Interlagos."
+  - file: /images/ocean-pearl/c-cndhs1krcjv-1.webp
+    thumb: /images/ocean-pearl/c-cndhs1krcjv-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Ocean Pearl Valjoux 72 chronograph with a white dial and blue, red and orange registers on a grey NATO strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CNdhs1krCjV/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: caption
+    identified_note: "The post's hashtags name the Ocean Pearl and the Valjoux 72; the dial itself reads only Enicar."
+  - file: /images/ocean-pearl/c-cmfjjokr1kl-1.webp
+    thumb: /images/ocean-pearl/c-cmfjjokr1kl-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Ocean Pearl chronograph with a white dial and coloured registers in a cushion case, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CMfjjoKr1KL/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: caption
+    identified_note: "The post's hashtags name the Ocean Pearl and the Valjoux 72; the dial itself reads only Enicar."
+  - file: /images/ocean-pearl/c-cmsk6nyrqj7-1.webp
+    thumb: /images/ocean-pearl/c-cmsk6nyrqj7-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Ocean Pearl chronograph with a white dial, orange chronograph hand and coloured registers, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CMSk6nYrqj7/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: caption
+    identified_note: "The post's hashtags name the Ocean Pearl and the Valjoux 72; the dial itself reads only Enicar."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

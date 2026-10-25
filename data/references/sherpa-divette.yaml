@@ -129,6 +129,22 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Divette."
+  - file: /images/sherpa-divette/c-cj33adtlxyw-1.webp
+    thumb: /images/sherpa-divette/c-cj33adtlxyw-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Late Sherpa Divette with a black dial, date and red pointer ring on a tan strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CJ33aDTLxyw/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Divette; caption: late Divette."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

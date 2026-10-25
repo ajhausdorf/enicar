@@ -463,6 +463,54 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Same 17 Jewels dial and paddle hands as the MkI in post Cfdh51ur9jh."
+  - file: /images/sherpa-jet/c-chtpajbrdbs-1.webp
+    thumb: /images/sherpa-jet/c-chtpajbrdbs-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a black dial, yellow and black inner bezel and checkered GMT hand on a red strap, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CHTPAJbrdBs/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Red and black checkered GMT hand, the MkIII tell in Martijn van der Ven's Jet article."
+  - file: /images/sherpa-jet/c-cez-ermnigm-1.webp
+    thumb: /images/sherpa-jet/c-cez-ermnigm-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Macro view of a Sherpa Jet dial with a checkered GMT hand and date"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CEz-ermniGM/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Red and black checkered GMT hand, the MkIII tell in Martijn van der Ven's Jet article."
+  - file: /images/sherpa-jet/c-ccouoaynrzv-1.webp
+    thumb: /images/sherpa-jet/c-ccouoaynrzv-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a black dial and checkered GMT hand on a black strap, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CCouOaYnRZV/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Red and black checkered GMT hand, the MkIII tell in Martijn van der Ven's Jet article."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article

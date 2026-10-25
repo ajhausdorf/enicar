@@ -66,6 +66,17 @@
   use: Photos, with permission, and the owner's own identification of a watch's model or generation where they give one, in captions or in messages to the site owner.
   leads_to: []
   permission: granted
+- id: ctwatchguy
+  name: "@ctwatchguy"
+  kind: other
+  tier: secondary
+  url: https://www.instagram.com/ctwatchguy/
+  author: null
+  status: confirmed
+  what: Instagram account of a watch collector, including vintage Enicar Sherpas.
+  use: Photos, with permission, and the owner's own identification of a watch where they give one.
+  leads_to: []
+  permission: granted
 - id: zizi-zap
   name: "@zizi_zap"
   kind: other

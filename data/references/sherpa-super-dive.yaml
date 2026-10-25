@@ -500,6 +500,38 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Super-Dive; caption: mid 1960s, dauphine hands."
+  - file: /images/sherpa-super-dive/c-cjevi5blcx8-1.webp
+    thumb: /images/sherpa-super-dive/c-cjevi5blcx8-1-sm.webp
+    width: 1331
+    height: 1331
+    alt: "Sherpa Super-Dive with a black dial and date on a brown leather strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CJEVI5BLcX8/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive."
+  - file: /images/sherpa-super-dive/c-cieyghnlzev-1.webp
+    thumb: /images/sherpa-super-dive/c-cieyghnlzev-1-sm.webp
+    width: 1396
+    height: 1396
+    alt: "Sherpa Super-Dive with a black dial, triangle at 12 and date on a brown strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CIEYgHNLZEv/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
