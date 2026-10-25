@@ -18,7 +18,39 @@ features: []
 dial: null
 variants: []
 read_more: []
-images: []
+images:
+  - file: /images/mantagraph/v-deq4pewufgx-1.webp
+    thumb: /images/mantagraph/v-deq4pewufgx-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Mantagraph chronograph in a TV-shaped case with a gradient dial and red accents on a steel bracelet, in an Enicar box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Deq4PeWuFgX/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar Mantagraph from the early 1970s."
+  - file: /images/mantagraph/v-dr4ktscdii8-1.webp
+    thumb: /images/mantagraph/v-dr4ktscdii8-1-sm.webp
+    width: 1438
+    height: 1438
+    alt: "Mantagraph chronograph with a black coated case, gold bezel and brown dial on a dark brown strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DR4KTSCDII8/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the Mantagraph flyback chronograph, case ref. 219-02-01."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
@@ -35,7 +67,6 @@ gaps:
   - "Which Seiko calibre (enicar.org says only \"a Seiko work\")"
   - "Production years"
   - "Case size and material"
-  - "Photographs"
 citations:
   - id: eo-electric
     source: enicar-org

@@ -32,10 +32,10 @@ barometer:
       note: null
 status: draft
 gaps:
+  - "Photographs"
   - "Calibre (an Antiquorum lot gives a 2980 with 19 jewels)"
   - "Production years"
   - "Case size and material"
-  - "Photographs"
 citations:
   - id: eo-barometer-1
     source: enicar-org

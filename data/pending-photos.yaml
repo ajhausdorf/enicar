@@ -750,6 +750,18 @@ pending:
       - "Caption: Albino MK1 Sherpa Jet."
       - Bezel and paddle hands fit the MkI.
       - The GMT hand is slim with an orange tip, the MkII tell; the MkI has a red crescent-moon GMT hand.
+  - account: vandervenus
+    post: https://www.instagram.com/p/B-wG46DHzgf/
+    code: B-wG46DHzgf
+    photos:
+      - 1
+    model: sherpa-memostar
+    guess: null
+    kind: model
+    question: "Is your 1970s Memostar (automatic, cushion case, dial without Sherpa) the same model the Barometer calls the Sherpa Memostar, or a later Memostar?"
+    evidence:
+      - "Dial reads Enicar Automatic and Memostar, with no Sherpa."
+      - "The Barometer prices a Sherpa Memostar; Antiquorum sold a ref. 298-01-01 Memostar without Sherpa on the dial."
 excluded:
   - account: two_crowned_prints
     code: DVx9x9hDA8P
