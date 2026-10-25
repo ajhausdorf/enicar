@@ -646,6 +646,38 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Tachymetre ring blank between 60 and 300 (the owner checked the photo), large early logo, long-tipped paddle hands and a straight red chronograph hand: the MkIb tells on Enicar 101."
+  - file: /images/sherpa-graph/tcp-dm-mkiii-1.webp
+    thumb: /images/sherpa-graph/tcp-dm-mkiii-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Graph with a black dial, grey registers, orange-tipped paddle hands and a red-dot chronograph hand, without strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/two_crowned_prints/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "Sent to us by the photographer; not posted on Instagram."
+    identified_by: caption
+    identified_note: "The photographer identified it as their MkIII from June 1966 in a message to the owner, 2026-10-25. It shows the MkIII tells: paddle hands with short orange tips, a red-dot chronograph hand and a black tachymetre ring."
+  - file: /images/sherpa-graph/tcp-dm-mkiii-2.webp
+    thumb: /images/sherpa-graph/tcp-dm-mkiii-2-sm.webp
+    width: 900
+    height: 1600
+    alt: "The same Sherpa Graph under ultraviolet light, showing the glowing lume on the markers and hands"
+    view: other
+    variant: "MkIII"
+    source_url: https://www.instagram.com/two_crowned_prints/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "The same watch under UV light."
+    identified_by: caption
+    identified_note: "The photographer identified it as their MkIII from June 1966 in a message to the owner, 2026-10-25. It shows the MkIII tells: paddle hands with short orange tips, a red-dot chronograph hand and a black tachymetre ring."
 barometer: null
 status: draft
 gaps:
