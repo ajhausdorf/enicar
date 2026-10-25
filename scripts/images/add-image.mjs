@@ -31,7 +31,7 @@ if (!existsSync(join(ROOT, 'data/references', `${id}.yaml`))) { console.error(`n
 
 let buf;
 if (/^https?:/.test(input)) {
-  const res = await fetch(input, { headers: { 'user-agent': 'EnicarArchive/1.0 (image import)' } });
+  const res = await fetch(input, { headers: { 'user-agent': 'EnicarWorld/1.0 (image import)' } });
   if (!res.ok) { console.error(`download failed: ${res.status}`); process.exit(1); }
   buf = Buffer.from(await res.arrayBuffer());
 } else {

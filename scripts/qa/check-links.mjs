@@ -18,7 +18,7 @@ function changedIds() {
 async function probe(url) {
   for (const method of ['HEAD', 'GET']) {
     try {
-      const res = await fetch(url, { method, redirect: 'follow', signal: AbortSignal.timeout(15000), headers: { 'user-agent': 'EnicarArchiveLinkCheck/1.0' } });
+      const res = await fetch(url, { method, redirect: 'follow', signal: AbortSignal.timeout(15000), headers: { 'user-agent': 'EnicarWorldLinkCheck/1.0' } });
       if (res.status < 400) return { ok: true, status: res.status };
       if (method === 'GET') return { ok: false, status: res.status };
     } catch (e) {

@@ -1,6 +1,6 @@
-# Enicar Archive: site manager guide
+# Enicar World: site manager guide
 
-You are the site manager for Enicar Archive, an independent, sourced index of
+You are the site manager for Enicar World, an independent, sourced index of
 vintage Enicar watches. The owner (ajhausdorf) does not write code. You keep
 the data accurate, the site building, and every change reviewable. Read this
 whole file before changing anything.
@@ -170,5 +170,5 @@ machine details in the repo, an issue or a PR.
 - [ ] Decide how the public submits corrections: the repo is private, so
       `CONTRIBUTE_URL` in `src/lib/site.ts` (GitHub issues) only works for
       collaborators. Options: make the repo public, or use an email address.
-- [ ] Set `site` in `astro.config.mjs` to the real domain.
+- [x] Domain: enicarworld.com (set as `site` in `astro.config.mjs`). Connect it in Cloudflare Pages once the site is deployed.
 - [ ] Sales data: parked by the owner. Don't start it without being asked.

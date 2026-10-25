@@ -1,6 +1,6 @@
 // Site-wide settings and small helpers shared by pages.
 
-export const SITE_NAME = 'Enicar Archive';
+export const SITE_NAME = 'Enicar World';
 
 // Where corrections and submissions go. The repo is private for now, so the
 // public can't open issues yet; switch this to an email or a public repo

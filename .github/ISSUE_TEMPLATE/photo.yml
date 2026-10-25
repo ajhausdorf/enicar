@@ -29,5 +29,5 @@ body:
       options:
         - label: I took these photos myself, or I have the photographer's permission to submit them.
           required: true
-        - label: I allow Enicar Archive to publish them on the site with the credit above (CC BY 4.0).
+        - label: I allow Enicar World to publish them on the site with the credit above (CC BY 4.0).
           required: true
