@@ -51,6 +51,12 @@ const [hero] = d.images;
 const eyebrow = [family?.data.name, KIND_LABEL[d.kind], d.references[0] && `Ref. ${d.references[0].number}`].filter(Boolean).join(' · ');
 const usedSources = [...new Set(d.citations.map((c) => c.source.id))].map((id) => sources[id]).filter(Boolean);
 const srcName = (c: any) => sources[c.source.id]?.data.name;
+// Group photo links: general ones first, then by generation in table order.
+const groupOrder = [null, ...d.variants.map((v) => v.name)];
+const elsewhere = groupOrder
+  .map((g) => [g ?? 'All generations', d.photos_elsewhere.filter((p) => p.variant === g)] as const)
+  .filter(([, links]) => links.length > 0);
+const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
 ---
 <Base title={d.name} description={d.summary ?? `${d.name}, an Enicar ${family?.data.name} reference.`} section="catalog" searchable>
   <div class="wrap model">
@@ -71,7 +77,7 @@ const srcName = (c: any) => sources[c.source.id]?.data.name;
             {hero ? <img id="hero-img" src={hero.file} alt={hero.alt} width={hero.width} height={hero.height}> : <Dial kind={d.kind} size={300} />}
           </div>
           <figcaption id="hero-cap">
-            {hero ? <>Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit} · {hero.license} · <a href={hero.source_url}>original</a></> : 'Photo wanted. Own one? Send it in with permission to publish.'}
+            {hero ? <>Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit} · {hero.license} · <a href={hero.source_url}>original</a></> : (d.photos_elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
           </figcaption>
         </figure>
         {d.images.length > 1 && (
@@ -84,6 +90,18 @@ const srcName = (c: any) => sources[c.source.id]?.data.name;
               </button></li>
             ))}
           </ul>
+        )}
+        {elsewhere.length > 0 && (
+          <div class="elsewhere">
+            <strong>Photos elsewhere</strong>
+            <span class="small muted">We only show photos we have permission to use. These link to the photographers' own pages.</span>
+            {elsewhere.map(([group, links]) => (
+              <div class="elsewhere__group">
+                <span class="eyebrow">{group}</span>
+                <ul>{links.map((p) => <li><a href={p.url} rel="noopener">{p.label}</a></li>)}</ul>
+              </div>
+            ))}
+          </div>
         )}
       </div>
 
@@ -155,6 +173,12 @@ const srcName = (c: any) => sources[c.source.id]?.data.name;
                 <tr><th scope="row">{label}</th>{d.variants.map((v) => <td>{f(v) || '—'}</td>)}</tr>
               ))}
               <tr><th scope="row">How to tell</th>{d.variants.map((v) => <td>{v.tell}</td>)}</tr>
+              {d.photos_elsewhere.some((p) => p.variant) && (
+                <tr><th scope="row">Photos</th>{d.variants.map((v) => {
+                  const links = d.photos_elsewhere.filter((p) => p.variant === v.name);
+                  return <td>{links.length ? links.map((p, i) => <>{i > 0 && ', '}<a href={p.url} rel="noopener">{handle(p.label)}</a></>) : '—'}</td>;
+                })}</tr>
+              )}
             </tbody>
           </table>
         </div>
@@ -246,6 +270,10 @@ const srcName = (c: any) => sources[c.source.id]?.data.name;
   .thumb { display: block; width: 100%; aspect-ratio: 1; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--plate); cursor: pointer; }
   .thumb[aria-pressed='true'] { border: 2px solid var(--accent); }
   .thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .elsewhere { display: flex; flex-direction: column; gap: 10px; padding: 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--wash); }
+  .elsewhere__group { display: flex; flex-direction: column; gap: 4px; }
+  .elsewhere ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+  .elsewhere li a { display: inline-block; padding: 4px 0; }
   .facts { flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
   .title { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
   .title .lede { font-size: 17px; }

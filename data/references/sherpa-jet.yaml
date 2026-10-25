@@ -77,10 +77,39 @@ read_more:
     source: enicar-org
     note: Enicar's GMT watches and the airline partnerships of the 1960s.
 images: []
+photos_elsewhere:
+  - variant: null
+    label: Every generation pictured in enicar.org's Jet and Super-Jet article
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    cites: [eo-jet]
+  - variant: MkI
+    label: "@seiko_loco on Instagram (Jet MkI)"
+    url: https://www.instagram.com/seiko_loco/
+    cites: [eo-jet]
+  - variant: MkI
+    label: "@two_crowned_prints on Instagram (Jet MkI)"
+    url: https://www.instagram.com/two_crowned_prints/
+    cites: [eo-jet]
+  - variant: MkII
+    label: "@dropandwatch on Instagram (Jet MkII)"
+    url: https://www.instagram.com/dropandwatch/
+    cites: [eo-jet]
+  - variant: MkII
+    label: "@ctwatchguy on Instagram (Jet MkII)"
+    url: https://www.instagram.com/ctwatchguy/
+    cites: [eo-jet]
+  - variant: MkIII
+    label: "@daveswatches on Instagram (Jet MkIII, racing dial)"
+    url: https://www.instagram.com/daveswatches/
+    cites: [eo-jet]
+  - variant: MkIV
+    label: "@mendel3141 on Instagram (Jet MkIV)"
+    url: https://www.instagram.com/mendel3141/
+    cites: [eo-jet]
 barometer: null
 status: draft
 gaps:
-  - Photographs (none with permission yet)
+  - Photographs we can show here (linked below until photographers give permission)
   - Price (barometer figures need enicar.org's permission; sales data not started)
   - Reference numbers per generation
   - Case material

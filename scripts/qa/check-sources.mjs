@@ -51,6 +51,12 @@ export function checkSources() {
     (d.history ?? []).forEach((p, i) => checkCites(p.cites, `history[${i}]`));
     (d.variants ?? []).forEach((v, i) => checkCites(v.cites, `variant "${v.name}"`));
     (d.references ?? []).forEach((x) => checkCites(x.cites, `reference ${x.number}`));
+    const variantNames = new Set((d.variants ?? []).map((v) => v.name));
+    for (const p of d.photos_elsewhere ?? []) {
+      checkCites(p.cites, `photos_elsewhere "${p.label}"`);
+      if (p.variant && !variantNames.has(p.variant)) r.error(where, `photos_elsewhere "${p.label}" names unknown variant "${p.variant}"`);
+      if (/\.(jpe?g|png|webp|gif)(\?|$)/i.test(p.url)) r.error(where, `photos_elsewhere "${p.label}" links straight to an image file; link to the page instead`);
+    }
     for (const m of d.read_more ?? []) {
       if (!sourceIds.has(m.source)) r.error(where, `read_more "${m.title}" points at unknown source "${m.source}"`);
     }

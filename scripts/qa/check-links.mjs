@@ -35,6 +35,7 @@ for (const { id, file, data } of loadReferences()) {
   if (ids && !ids.has(id)) continue;
   for (const c of data.citations ?? []) urls.set(c.url, file);
   for (const img of data.images ?? []) if (img.credit_url) urls.set(img.credit_url, file);
+  for (const p of data.photos_elsewhere ?? []) urls.set(p.url, file);
 }
 
 const results = await Promise.all([...urls].map(async ([url, where]) => [url, where, await probe(url)]));

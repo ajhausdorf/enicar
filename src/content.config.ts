@@ -126,6 +126,15 @@ const references = defineCollection({
       note: z.string().nullable().default(null)
     })).default([]),
     images: z.array(image).default([]),
+    // Photos we may not copy but can point to: a photographer's page or an
+    // article where the watch is pictured. `variant` ties a link to one
+    // generation; `cites` names the citation that attributes the photo.
+    photos_elsewhere: z.array(z.object({
+      variant: z.string().nullable().default(null),
+      label: z.string(),
+      url: z.url(),
+      cites
+    })).default([]),
     barometer: z.object({
       currency: z.enum(['EUR', 'USD', 'GBP', 'CHF']),
       low: z.number().nonnegative(),

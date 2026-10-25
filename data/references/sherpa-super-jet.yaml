@@ -73,10 +73,35 @@ read_more:
     source: enicar-org
     note: Martijn van der Ven's full history of the Jet and Super-Jet, with photos of every generation.
 images: []
+photos_elsewhere:
+  - variant: null
+    label: Every generation pictured in enicar.org's Jet and Super-Jet article
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    cites: [eo-jet]
+  - variant: MkI
+    label: "@two_crowned_prints on Instagram (Super-Jet MkI)"
+    url: https://www.instagram.com/two_crowned_prints/
+    cites: [eo-jet]
+  - variant: MkII
+    label: "@zizi_zap on Instagram (Super-Jet MkII)"
+    url: https://www.instagram.com/zizi_zap/
+    cites: [eo-jet]
+  - variant: MkII
+    label: "@two_crowned_prints on Instagram (Super-Jet MkII)"
+    url: https://www.instagram.com/two_crowned_prints/
+    cites: [eo-jet]
+  - variant: MkIII
+    label: "@northshorechrono on Instagram (Super-Jet MkIII)"
+    url: https://www.instagram.com/northshorechrono/
+    cites: [eo-jet]
+  - variant: MkIV
+    label: "@vintage.eye on Instagram (Super-Jet MkIV)"
+    url: https://www.instagram.com/vintage.eye/
+    cites: [eo-jet]
 barometer: null
 status: draft
 gaps:
-  - Photographs (none with permission yet)
+  - Photographs we can show here (linked below until photographers give permission)
   - Price (barometer figures need enicar.org's permission; sales data not started)
   - Reference numbers per generation
   - Case material
