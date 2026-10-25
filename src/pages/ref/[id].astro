@@ -67,7 +67,7 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
     </nav>
 
     {d.status === 'draft' && (
-      <p class="notice"><strong>Draft record.</strong> We're still checking this one against its sources, so it may be incomplete. What's missing is listed at the bottom.</p>
+      <p class="notice" data-pagefind-ignore><strong>Draft record.</strong> We're still checking this one against its sources, so it may be incomplete. What's missing is listed at the bottom.</p>
     )}
 
     <section class="top">
