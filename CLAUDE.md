@@ -15,8 +15,11 @@ why it is a false alarm and stop.
 ## How the site works
 
 - Static site built with Astro 7 (`src/`) from YAML data (`data/`). No server,
-  no database, no forms. Hosted on Cloudflare Pages, which rebuilds on every
-  push to `main` and builds a preview for every PR.
+  no database, no forms. Hosted on Cloudflare as a Worker named `enicar`
+  that serves `dist/` as static files (`wrangler.jsonc`). Cloudflare runs
+  `npm run build` then `npx wrangler deploy` on every push to `main`. Never
+  add an Astro server adapter; if a deploy log shows wrangler trying
+  `astro add cloudflare`, the config file is missing or broken.
 - Search is Pagefind, built after Astro into `dist/pagefind/`. It only works
   on a built site (`npm run build && npx astro preview`), not `npm run dev`.
 - Node 22 (`.nvmrc`). If `node --version` says 16, prefix commands with
@@ -170,5 +173,5 @@ machine details in the repo, an issue or a PR.
 - [ ] Decide how the public submits corrections: the repo is private, so
       `CONTRIBUTE_URL` in `src/lib/site.ts` (GitHub issues) only works for
       collaborators. Options: make the repo public, or use an email address.
-- [x] Domain: enicarworld.com (set as `site` in `astro.config.mjs`). Connect it in Cloudflare Pages once the site is deployed.
+- [x] Domain: enicarworld.com (set as `site` in `astro.config.mjs`). Attach it to the `enicar` Worker under Settings › Domains & Routes once the nameservers point at Cloudflare.
 - [ ] Sales data: parked by the owner. Don't start it without being asked.
