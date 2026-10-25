@@ -1,26 +1,280 @@
-# DRAFT. Fields below are starting points from general collector knowledge and
-# are NOT yet checked against a source. Do not mark verified until every
-# populated field is covered by a citation.
 name: Sherpa Graph
 family: sherpa
-reference: null
-nicknames: [Jim Clark]
 kind: chronograph
-years: { from: null, to: null, approximate: true }
-movement: { calibres: [Valjoux 72], winding: manual }
-case: { construction: EPSA Super-Compressor, material: null, diameter_mm: null }
+summary: The 40 mm Sherpa chronograph on the Valjoux 72, made in seven generations from 1960.
+references:
+  - number: 1308 BaNCH
+    note: null
+    cites:
+      - eo-chrono-table
+  - number: 072/001
+    note: null
+    cites:
+      - eo-chrono-table
+  - number: 072-02-01
+    note: null
+    cites:
+      - eo-chrono-table
+nicknames:
+  - Jim Clark
+years:
+  from: 1960
+  to: 1968
+  approximate: true
+movement:
+  calibres:
+    - Valjoux 72
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 40
+  lug_mm: null
+  thickness_mm: null
+features:
+  - tachymeter-ring
 dial: null
-summary: Enicar's three-register chronograph, closely associated with the racing driver Jim Clark.
-history: []
-variants: []
-images: []
+variants:
+  - name: MkI
+    years:
+      from: 1960
+      to: 1960
+    tell: Serial range 272.5xx – 272.9xx.
+    refs:
+      - 1308 BaNCH
+    serials:
+      - 272.5xx – 272.9xx
+    dated: 5/60
+    production: "500"
+    cites:
+      - eo-chrono-table
+  - name: MkIb
+    years:
+      from: 1961
+      to: 1961
+    tell: Serial range 409.2xx – 409.6xx.
+    refs:
+      - 1308 BaNCH
+    serials:
+      - 409.2xx – 409.6xx
+    dated: 11/61
+    production: "700"
+    cites:
+      - eo-chrono-table
+  - name: MkIc
+    years:
+      from: 1962
+      to: 1962
+    tell: Serial range 526.0xx – 528.0xx.
+    refs:
+      - 1308 BaNCH
+    serials:
+      - 526.0xx – 528.0xx
+    dated: 4/62
+    production: 600+
+    cites:
+      - eo-chrono-table
+  - name: MkId
+    years:
+      from: 1962
+      to: 1962
+    tell: Serial range 561.7xx – 562.1xx.
+    refs:
+      - 1308 BaNCH
+    serials:
+      - 561.7xx – 562.1xx
+    dated: 6/62
+    production: "500"
+    cites:
+      - eo-chrono-table
+  - name: MkII
+    years:
+      from: 1963
+      to: 1963
+    tell: Serial range 601.5xx – 601.9xx and others.
+    refs:
+      - 072/001
+    serials:
+      - 601.5xx – 601.9xx
+      - 617.1xx – 617.5xx
+      - 246.1xx – 246.6xx
+    dated: 1963 (est.)
+    production: 1,500
+    cites:
+      - eo-chrono-table
+  - name: MkIII
+    years:
+      from: 1963
+      to: 1966
+    tell: Serial range 635.9xx and others.
+    refs:
+      - 072-02-01
+    serials:
+      - 635.9xx
+      - 641.xxx
+      - 835.1xx – 836.2xx
+      - 906.4xx
+      - 908.0xx – 908.8xx
+      - 940.5xx – 941.4xx
+    dated: 1963 (est.) to 6/66
+    production: 3,200
+    cites:
+      - eo-chrono-table
+  - name: MkIV
+    years:
+      from: 1967
+      to: 1968
+    tell: Serial range 1.030.1xx – 1.030.8xx and others.
+    refs:
+      - 072-02-01
+    serials:
+      - 1.030.1xx – 1.030.8xx
+      - 1.261.7xx – 1.263.3xx
+    dated: 9/67 to 11/68
+    production: 2,400
+    cites:
+      - eo-chrono-table
+read_more:
+  - title: Sherpa tool watch matrix
+    url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
+    source: enicar-org
+    note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+images:
+  - file: /images/sherpa-graph/tcp-dcyu-v3g-6m-1.webp
+    thumb: /images/sherpa-graph/tcp-dcyu-v3g-6m-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a silver dial and cream subdials on a white strap, in front of a red-lined Enicar display box"
+    view: dial
+    variant: "MkIb"
+    source_url: https://www.instagram.com/p/DcYu_v3G-6M/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "With a 1960s Japanese-market Enicar box."
+    identified_by: caption
+    identified_note: "Photographer calls it a MK1B Graph."
+  - file: /images/sherpa-graph/tcp-dcyu-v3g-6m-2.webp
+    thumb: /images/sherpa-graph/tcp-dcyu-v3g-6m-2-sm.webp
+    width: 1440
+    height: 1440
+    alt: "The same Sherpa Graph inside its open Enicar box with a red interior"
+    view: dial
+    variant: "MkIb"
+    source_url: https://www.instagram.com/p/DcYu_v3G-6M/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Same watch as the photographer's MK1B Graph post."
+  - file: /images/sherpa-graph/tcp-dlaggdvokml-1.webp
+    thumb: /images/sherpa-graph/tcp-dlaggdvokml-1-sm.webp
+    width: 1363
+    height: 1440
+    alt: "Sherpa Graph with a white dial, silver subdials and outer tachymeter scale on a white strap, on the wrist"
+    view: dial
+    variant: "MkId"
+    source_url: https://www.instagram.com/p/DLaGgdvOkML/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it a MK1D Sherpa Graph."
+  - file: /images/sherpa-graph/tcp-cxqxbmulyr2-1.webp
+    thumb: /images/sherpa-graph/tcp-cxqxbmulyr2-1-sm.webp
+    width: 1226
+    height: 1226
+    alt: "Sherpa Graph with a white dial, silver subdials and a tachymeter scale on the rehaut, on a white strap"
+    view: dial
+    variant: "MkId"
+    source_url: https://www.instagram.com/p/CxQXbMULyr2/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "Dated June 1962 by its owner."
+    identified_by: caption
+    identified_note: "Photographer calls it a Sherpa Graph MKId from June 1962."
+  - file: /images/sherpa-graph/tcp-ct6una-lkyh-1.webp
+    thumb: /images/sherpa-graph/tcp-ct6una-lkyh-1-sm.webp
+    width: 831
+    height: 831
+    alt: "Sherpa Graph with a black dial and black subdials on a white strap, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/Ct6uNA-LKYh/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Tagged #sherpagraphmk2 by the photographer."
+  - file: /images/sherpa-graph/tcp-cp8ltzdpjep-1.webp
+    thumb: /images/sherpa-graph/tcp-cp8ltzdpjep-1-sm.webp
+    width: 1361
+    height: 1600
+    alt: "Sherpa Graph with a black dial and tachymeter scale on a white strap, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/Cp8ltzdPJep/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it this MKII."
+  - file: /images/sherpa-graph/tcp-drm1mi3cf5c-1.webp
+    thumb: /images/sherpa-graph/tcp-drm1mi3cf5c-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a white dial, grey subdials and an orange chronograph hand on a white strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/DRm1mI3Cf5C/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it the white MK4 Graph."
 barometer: null
 status: draft
 gaps:
-  - Factory reference numbers
-  - Production years
-  - Case material and diameter
-  - Dial and hand generations
-  - Citations for every field above
-citations: []
+  - Visual tells for each generation
+  - Case material and lug width
+  - Price
+  - Citation for the Jim Clark nickname
+citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports:
+      - case.diameter_mm
+      - features
+      - movement.calibres
+  - id: eo-chrono-table
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-right.pdf
+    title: Sherpa chronograph classification and numbers (Enicar book p. 263, data from enicar101.com)
+    retrieved: 2026-10-25
+    supports:
+      - years.from
+      - years.to
 last_reviewed: 2026-10-25

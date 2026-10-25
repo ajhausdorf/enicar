@@ -17,6 +17,7 @@ case:
   diameter_mm: null
   lug_mm: null
   thickness_mm: null
+features: [two-crowns, inner-bezel]
 dial: null
 variants:
   - name: MkI
@@ -77,20 +78,182 @@ read_more:
     source: enicar-org
     note: Enicar's GMT watches and the airline partnerships of the 1960s.
 images:
-  - file: /images/sherpa-jet/mki-black-two-crowned-prints.webp
-    thumb: /images/sherpa-jet/mki-black-two-crowned-prints-sm.webp
-    width: 1278
-    height: 1424
-    alt: "Sherpa Jet MkI with a black dial, black and silver 24-hour bezel, red GMT hand, date at 3 and two crowns, on a black rubber strap"
+  - file: /images/sherpa-jet/tcp-ctjelbfrxyl-1.webp
+    thumb: /images/sherpa-jet/tcp-ctjelbfrxyl-1-sm.webp
+    width: 1440
+    height: 1599
+    alt: "Sherpa Jet 33 with a black dial, black and white 24-hour bezel and paddle hands on a black rubber strap"
     view: dial
     variant: "MkI"
-    source_url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    source_url: https://www.instagram.com/p/CtjeLbfrxYl/
     credit: "@two_crowned_prints"
     credit_url: https://www.instagram.com/two_crowned_prints/
     license: "Used with permission"
     permission: granted
     permission_ref: two-crowned-prints
-
+    caption: "A 33-jewel Jet with paddle hands."
+    identified_by: caption
+    identified_note: "Photographer calls it a paddle-handed Jet 33; the source gives paddle hands and the 33 jewels dial as MkI."
+  - file: /images/sherpa-jet/tcp-cjdjwskjn7j-1.webp
+    thumb: /images/sherpa-jet/tcp-cjdjwskjn7j-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet 33 with a black dial on a tan suede strap, on the wrist"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/CjdjwskJn7J/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it the Jet 33; the source gives the 33 jewels dial as MkI."
+  - file: /images/sherpa-jet/tcp-cferjjyrkc-1.webp
+    thumb: /images/sherpa-jet/tcp-cferjjyrkc-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a black dial and paddle hands on a tan suede strap"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/CfeRjjYrkc-/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it the paddle-handed Jet (#enicarsherpajet33); the source gives paddle hands as MkI."
+  - file: /images/sherpa-jet/tcp-csszg0fhywe-1.webp
+    thumb: /images/sherpa-jet/tcp-csszg0fhywe-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet 33 with a black dial and blue and white 24-hour bezel on a tan suede strap"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/CSSZg0FhYwE/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it the '33 (#enicarsherpajet33); the source gives the 33 jewels dial as MkI."
+  - file: /images/sherpa-jet/tcp-cmid9vxlly-1.webp
+    thumb: /images/sherpa-jet/tcp-cmid9vxlly-1-sm.webp
+    width: 1319
+    height: 1600
+    alt: "Sherpa Jet 33 with a black dial and black and silver 24-hour bezel on a tan suede strap"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/CMiD9VXLLy-/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it the 33 (#enicarsherpajet33); the source gives the 33 jewels dial as MkI."
+  - file: /images/sherpa-jet/tcp-b-vee97jaex-1.webp
+    thumb: /images/sherpa-jet/tcp-b-vee97jaex-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet 33 with a black dial and blue and white 24-hour bezel on a black strap"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/B_veE97jAeX/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Jet 33; the source gives the 33 jewels dial as MkI."
+  - file: /images/sherpa-jet/tcp-cgmkxgjrxrd-1.webp
+    thumb: /images/sherpa-jet/tcp-cgmkxgjrxrd-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a black dial and red and blue inner bezel on a black strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CgmKxgjrXRD/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red and blue bezel (tagged #pepsibezel); the source gives red and blue bezels as MkIII."
+  - file: /images/sherpa-jet/tcp-cwrdqlxvqmo-1.webp
+    thumb: /images/sherpa-jet/tcp-cwrdqlxvqmo-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a black dial, orange-tipped hand and red and blue inner bezel on a blue strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CWRDqlXvQmo/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Photographer calls it a blue and red Jet; the source gives red and blue bezels as MkIII."
+  - file: /images/sherpa-jet/tcp-cqcoms6rjnp-1.webp
+    thumb: /images/sherpa-jet/tcp-cqcoms6rjnp-1-sm.webp
+    width: 1440
+    height: 1533
+    alt: "Sherpa Jet with a black dial, checkered GMT hand and red and blue inner bezel on a blue strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CQCOmS6rjNP/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red and blue bezel (tagged #pepsibezel #ar166); the source gives red and blue bezels and the AR166 as MkIII."
+  - file: /images/sherpa-jet/tcp-cptd9adsqrt-1.webp
+    thumb: /images/sherpa-jet/tcp-cptd9adsqrt-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet in a cushion case with a black dial and red, blue and yellow inner bezel on a blue strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CptD9AdSQRt/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it a cushion case Enicar; the source gives the cushion case as MkIV."
+  - file: /images/sherpa-jet/tcp-cvsrhiyl-3l-1.webp
+    thumb: /images/sherpa-jet/tcp-cvsrhiyl-3l-1-sm.webp
+    width: 1367
+    height: 1366
+    alt: "Sherpa Jet in a cushion case with a black dial and red and blue inner bezel with yellow markers, on a blue strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CvSRHiyL_3L/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Cushion case and red and blue bezel with yellow markers; the source gives both as MkIV."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article
@@ -123,12 +286,18 @@ photos_elsewhere:
 barometer: null
 status: draft
 gaps:
-  - Photos of the other generations (linked below until photographers give permission)
+  - Photos of the MkII (three of James's are waiting on his confirmation)
   - Price (barometer figures need enicar.org's permission; sales data not started)
   - Reference numbers per generation
   - Case material
   - Second source for the generation specs
 citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports: [features]
   - id: eo-jet
     source: enicar-org
     url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/

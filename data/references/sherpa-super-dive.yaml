@@ -1,12 +1,116 @@
-# DRAFT stub: name and family only. Everything else needs research.
 name: Sherpa Super-Dive
 family: sherpa
 kind: diver
+summary: The 40 mm two-crown diver with an inner bezel, later also in a 42 mm cushion case.
+references: []
+nicknames: []
+years:
+  from: null
+  to: null
+  approximate: true
+movement:
+  calibres:
+    - AR1125
+    - AR1145
+    - AR167
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm:
+    - 40
+    - 42
+  lug_mm: null
+  thickness_mm: null
+features:
+  - two-crowns
+  - inner-bezel
+dial: null
+variants: []
+read_more:
+  - title: Sherpa tool watch matrix
+    url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
+    source: enicar-org
+    note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+images:
+  - file: /images/sherpa-super-dive/tcp-dyamfnxmnaa-1.webp
+    thumb: /images/sherpa-super-dive/tcp-dyamfnxmnaa-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Dive with a black dial and black inner bezel on a tan suede strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DYaMfnXMnaA/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/tcp-cpmtkr8r0f5-1.webp
+    thumb: /images/sherpa-super-dive/tcp-cpmtkr8r0f5-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Dive on the wrist next to the head of a large dog"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CPMTKr8r0f5/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer tags it #enicarsuperdive."
+  - file: /images/sherpa-super-dive/tcp-cpmtkr8r0f5-2.webp
+    thumb: /images/sherpa-super-dive/tcp-cpmtkr8r0f5-2-sm.webp
+    width: 474
+    height: 475
+    alt: "Sherpa Super-Dive with a black dial on a black strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CPMTKr8r0f5/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-dive/tcp-cokfqhcpb8u-1.webp
+    thumb: /images/sherpa-super-dive/tcp-cokfqhcpb8u-1-sm.webp
+    width: 1308
+    height: 1308
+    alt: "A Sherpa Super-Dive with a black dial next to a Sherpa Super-Jet with a silver dial, both without straps"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CokfQhCpb8U/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "With a Sherpa Super-Jet."
+    identified_by: dial
+    identified_note: "Dials read Sherpa Super-Dive and Sherpa Super-Jet."
+barometer: null
 status: draft
 gaps:
-  - Factory reference numbers
-  - Production years
-  - Movement
-  - Case
-  - Citations
+  - Case material and lug width
+  - Price
+  - "Movement detail: AR167 in the 42 mm cushion case."
+citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports:
+      - case.diameter_mm
+      - features
+      - movement.calibres
 last_reviewed: 2026-10-25

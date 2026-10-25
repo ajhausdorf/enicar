@@ -1,0 +1,161 @@
+name: Sherpa Super-Divette
+family: sherpa
+kind: diver
+summary: The 36 mm two-crown diver with an inner bezel, smaller sister of the Super-Dive.
+references: []
+nicknames: []
+years:
+  from: null
+  to: null
+  approximate: true
+movement:
+  calibres:
+    - AR1145
+    - AR165
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 36
+  lug_mm: null
+  thickness_mm: null
+features:
+  - two-crowns
+  - inner-bezel
+dial: null
+variants: []
+read_more:
+  - title: Sherpa tool watch matrix
+    url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
+    source: enicar-org
+    note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+images:
+  - file: /images/sherpa-super-divette/tcp-cn-v867silx-1.webp
+    thumb: /images/sherpa-super-divette/tcp-cn-v867silx-1-sm.webp
+    width: 1440
+    height: 1417
+    alt: "Sherpa Super-Divette with a black dial and two crowns on a black leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cn-V867SIlX/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer calls it the Super Divette."
+  - file: /images/sherpa-super-divette/tcp-cdrfz0gjey2-1.webp
+    thumb: /images/sherpa-super-divette/tcp-cdrfz0gjey2-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Worn Sherpa Super-Divette with a faded black dial on a black strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CdRFZ0gJeY2/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer tags it #superdivette."
+  - file: /images/sherpa-super-divette/tcp-cavjihtvxkc-1.webp
+    thumb: /images/sherpa-super-divette/tcp-cavjihtvxkc-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Sherpa Super-Divette on a black strap, on the wrist in the desert with a Joshua tree behind"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CavJIhTvXkC/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "Photographer tags it #superdivette."
+  - file: /images/sherpa-super-divette/tcp-cysa-i-v4ct-1.webp
+    thumb: /images/sherpa-super-divette/tcp-cysa-i-v4ct-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Sherpa Super-Divette with a black dial with light patina on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CYsA_i_v4Ct/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-divette/tcp-cpeg1qflyez-1.webp
+    thumb: /images/sherpa-super-divette/tcp-cpeg1qflyez-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Divette with a speckled black dial and red date on a tan leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CPeg1qFLyEz/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-divette/tcp-cmf1zbnrkbn-1.webp
+    thumb: /images/sherpa-super-divette/tcp-cmf1zbnrkbn-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Close-up of a Sherpa Super-Divette dial showing the Saturn logo and worn hands"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CMF1ZbNrkbn/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-super-divette/tcp-cmf1zbnrkbn-2.webp
+    thumb: /images/sherpa-super-divette/tcp-cmf1zbnrkbn-2-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Divette with a worn black dial on a khaki strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CMF1ZbNrkbn/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+barometer: null
+status: draft
+gaps:
+  - Case material and lug width
+  - Price
+  - "Movement detail: AR165 in the cushion-case version."
+citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports:
+      - case.diameter_mm
+      - features
+      - movement.calibres
+last_reviewed: 2026-10-25

@@ -1,0 +1,65 @@
+name: Sherpa Super Graph
+family: sherpa
+kind: chronograph
+summary: A 40 mm Sherpa chronograph with an outer bezel and red pointer ring, on the Valjoux 72.
+references:
+  - number: 072/002
+    note: null
+    cites:
+      - eo-chrono-table
+  - number: 072-02-02
+    note: null
+    cites:
+      - eo-chrono-table
+nicknames: []
+years:
+  from: 1963
+  to: 1966
+  approximate: true
+movement:
+  calibres:
+    - Valjoux 72
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 40
+  lug_mm: null
+  thickness_mm: null
+features:
+  - outer-bezel
+  - red-pointer-ring
+dial: null
+variants: []
+read_more:
+  - title: Sherpa tool watch matrix
+    url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
+    source: enicar-org
+    note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+images: []
+barometer: null
+status: draft
+gaps:
+  - Production numbers (not known to the source)
+  - Case material and lug width
+  - Photographs
+  - Price
+citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports:
+      - case.diameter_mm
+      - features
+      - movement.calibres
+  - id: eo-chrono-table
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-right.pdf
+    title: Sherpa chronograph classification and numbers (Enicar book p. 263, data from enicar101.com)
+    retrieved: 2026-10-25
+    supports:
+      - years.from
+      - years.to
+last_reviewed: 2026-10-25

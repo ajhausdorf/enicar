@@ -68,7 +68,14 @@ why it is a false alarm and stop.
    `data/permissions.yaml` (who, when, how, what it covers; summarise, never
    paste private messages) and set `permission: granted` with
    `permission_ref` on each of their photos. QA fails a granted photo with no
-   permission record. Set `variant` on a photo when it shows one generation.
+   permission record. Set `variant` on a photo when it shows one generation,
+   and say how you know with `identified_by` (`dial`: printed on it;
+   `caption`: the photographer says so; `tells`: it matches a cited source's
+   generation tells; `source`: a cited source shows this photo as that watch)
+   plus an `identified_note`. If a photo's model or generation isn't clear, or
+   the tells contradict each other, don't publish it: list it for the owner
+   to ask the photographer. On a model with generations, never leave a photo
+   untagged, or it shows on every generation.
    Add images only with the tool, which stores a large and a
    small webp in `public/images/<id>/` and prints the entry to paste:
    `node scripts/images/add-image.mjs <id> <url-or-file> <name> --credit ...

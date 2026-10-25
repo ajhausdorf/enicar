@@ -1,0 +1,50 @@
+name: Stewardess
+family: sherpa
+kind: other
+summary: A 27 mm single-crown multi-timezone dive watch with an outer bezel and red pointer ring.
+references: []
+nicknames: []
+years:
+  from: null
+  to: null
+  approximate: true
+movement:
+  calibres:
+    - ETA 2369
+    - AR765
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 27
+  lug_mm: null
+  thickness_mm: null
+features:
+  - one-crown
+  - outer-bezel
+  - red-pointer-ring
+dial: null
+variants: []
+read_more:
+  - title: Sherpa tool watch matrix
+    url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
+    source: enicar-org
+    note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+images: []
+barometer: null
+status: draft
+gaps:
+  - Case material and lug width
+  - Photographs
+  - Price
+citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports:
+      - case.diameter_mm
+      - features
+      - movement.calibres
+last_reviewed: 2026-10-25

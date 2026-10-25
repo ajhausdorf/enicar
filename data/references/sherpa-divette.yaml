@@ -1,0 +1,99 @@
+name: Sherpa Divette
+family: sherpa
+kind: diver
+summary: A 36 mm single-crown diver with an outer bezel and red pointer ring.
+references: []
+nicknames: []
+years:
+  from: null
+  to: null
+  approximate: true
+movement:
+  calibres:
+    - AR1034
+    - AR1035
+    - AR1125
+    - AR1145
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 36
+  lug_mm: null
+  thickness_mm: null
+features:
+  - one-crown
+  - outer-bezel
+  - red-pointer-ring
+dial: null
+variants: []
+read_more:
+  - title: Sherpa tool watch matrix
+    url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
+    source: enicar-org
+    note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+images:
+  - file: /images/sherpa-divette/tcp-cv-qh0av4y-1.webp
+    thumb: /images/sherpa-divette/tcp-cv-qh0av4y-1-sm.webp
+    width: 1440
+    height: 1480
+    alt: "Sherpa Divette with a black dial, orange seconds hand and black outer bezel on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CV_qH0av4y-/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "Missing its red pointer ring."
+    identified_by: caption
+    identified_note: "Photographer calls it the Divette and says it needs a replacement red pointer ring."
+  - file: /images/sherpa-divette/tcp-csqnrvxfciq-1.webp
+    thumb: /images/sherpa-divette/tcp-csqnrvxfciq-1-sm.webp
+    width: 1281
+    height: 1600
+    alt: "Sherpa Divette with a black dial, orange seconds hand and glossy black outer bezel on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CSQNrvXFciq/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-divette/tcp-cq1jplwlufb-1.webp
+    thumb: /images/sherpa-divette/tcp-cq1jplwlufb-1-sm.webp
+    width: 1304
+    height: 1600
+    alt: "Sherpa Divette with a black dial on its original black rubber strap, over a vintage dive shop advertisement"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CQ1JPlWLUfB/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "On its original strap."
+    identified_by: caption
+    identified_note: "Photographer calls it a Divette with its original Tropic strap."
+barometer: null
+status: draft
+gaps:
+  - Case material and lug width
+  - Price
+citations:
+  - id: eo-matrix
+    source: enicar-org
+    url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
+    title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
+    retrieved: 2026-10-25
+    supports:
+      - case.diameter_mm
+      - features
+      - movement.calibres
+last_reviewed: 2026-10-25
