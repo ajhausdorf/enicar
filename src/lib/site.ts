@@ -2,9 +2,8 @@
 
 export const SITE_NAME = 'Enicar World';
 
-// Where corrections and submissions go. The repo is private for now, so the
-// public can't open issues yet; switch this to an email or a public repo
-// before launch (see CLAUDE.md, "Before launch").
+// Where corrections and submissions go: the issue templates on the public
+// repo. Anyone with a GitHub account can file one.
 export const CONTRIBUTE_URL = 'https://github.com/ajhausdorf/enicar/issues/new/choose';
 
 export const KIND_LABEL: Record<string, string> = {

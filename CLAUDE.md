@@ -167,8 +167,8 @@ machine details in the repo, an issue or a PR.
       reuse of their images). Owner sends the email.
 - [ ] Confirm `data/sources.yaml` entries (`status: to-confirm`), including
       who runs each source. Don't name authors until confirmed.
-- [ ] Decide how the public submits corrections: the repo is private, so
-      `CONTRIBUTE_URL` in `src/lib/site.ts` (GitHub issues) only works for
-      collaborators. Options: make the repo public, or use an email address.
+- [x] Corrections: the repo is public, so anyone with a GitHub account can
+      open an issue from `CONTRIBUTE_URL`. People without one can't yet; an
+      email address would cover them.
 - [x] Domain: enicarworld.com (set as `site` in `astro.config.mjs`). Connect it in Cloudflare Pages once the site is deployed.
 - [ ] Sales data: parked by the owner. Don't start it without being asked.
