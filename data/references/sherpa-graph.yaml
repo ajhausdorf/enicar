@@ -696,6 +696,38 @@ images:
     caption: null
     identified_by: tells
     identified_note: "T Swiss is printed at the bottom of the dial, the MkII tell; the photographer gave this tell in a message to the owner, 2026-10-25."
+  - file: /images/sherpa-graph/tcp-dabgn2ponz-1.webp
+    thumb: /images/sherpa-graph/tcp-dabgn2ponz-1-sm.webp
+    width: 1159
+    height: 1440
+    alt: "Sherpa Graph with an all black dial, black registers and paddle hands on a black strap, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/DAbGn2pOnZ_/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: caption
+    identified_note: "The photographer confirmed it is a MkIIb (our MkII, which covers MkIIa and MkIIb) in a message to the owner, 2026-10-25. Enicar 101 lists the all black dial for the MkIIb."
+  - file: /images/sherpa-graph/tcp-c-axwujawl-1.webp
+    thumb: /images/sherpa-graph/tcp-c-axwujawl-1-sm.webp
+    width: 906
+    height: 906
+    alt: "Sherpa Graph with a white dial, white registers and Tachymetre ring on a white strap, on the wrist"
+    view: dial
+    variant: "MkIc"
+    source_url: https://www.instagram.com/p/C--axwuJAWl/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "The chronograph hand has no red paint, and the photographer was told it has always been that way."
+    identified_by: caption
+    identified_note: "The photographer confirmed it is a MkIc in a message to the owner, 2026-10-25. The ring and large logo match the MkIc tells; the unpainted chronograph hand is unusual for the generation."
 barometer: null
 status: draft
 gaps:

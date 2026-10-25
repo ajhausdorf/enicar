@@ -2,7 +2,7 @@
 
 Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs`. Do not edit by hand.
 
-## @two_crowned_prints (44 photos)
+## @two_crowned_prints (42 photos)
 
 ### Their label and the source disagree
 
@@ -33,14 +33,6 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
 - **https://www.instagram.com/p/DOTov7WkTit/** · sherpa-graph
   Is this MkIc or an early MkII? The serial would settle it.
   - White dial, ring reading Tachymetre, paddle hands, large early logo, chronograph hand black or unpainted.
-  - The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo.
-- **https://www.instagram.com/p/DAbGn2pOnZ_/** · sherpa-graph
-  Is this a MkII or a MkIII? The serial would settle it.
-  - Black dial with black registers and paddle hands.
-  - Enicar 101 lists all-black dials for both MkII and MkIII; the MkIII has orange-tipped hands and a red-dot chronograph hand, which aged lume makes hard to judge here.
-- **https://www.instagram.com/p/C--axwuJAWl/** · sherpa-graph
-  Is this MkIc or an early MkII? The serial would settle it.
-  - White dial, ring reading Tachymetre, unpainted paddle hands, large early logo, chronograph hand black or unpainted.
   - The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo.
 - **https://www.instagram.com/p/CyWBh1Nrugk/** · sherpa-graph
   Is this MkIc or an early MkII? The serial would settle it.

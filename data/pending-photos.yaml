@@ -13,30 +13,6 @@ pending:
       - "White dial, ring reading Tachymetre, paddle hands, large early logo, chronograph hand black or unpainted."
       - "The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo."
   - account: two_crowned_prints
-    post: https://www.instagram.com/p/DAbGn2pOnZ_/
-    code: DAbGn2pOnZ_
-    photos:
-      - 1
-    model: sherpa-graph
-    guess: null
-    kind: generation
-    question: "Is this a MkII or a MkIII? The serial would settle it."
-    evidence:
-      - "Black dial with black registers and paddle hands."
-      - "Enicar 101 lists all-black dials for both MkII and MkIII; the MkIII has orange-tipped hands and a red-dot chronograph hand, which aged lume makes hard to judge here."
-  - account: two_crowned_prints
-    post: https://www.instagram.com/p/C--axwuJAWl/
-    code: C--axwuJAWl
-    photos:
-      - 1
-    model: sherpa-graph
-    guess: null
-    kind: generation
-    question: "Is this MkIc or an early MkII? The serial would settle it."
-    evidence:
-      - "White dial, ring reading Tachymetre, unpainted paddle hands, large early logo, chronograph hand black or unpainted."
-      - "The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo."
-  - account: two_crowned_prints
     post: https://www.instagram.com/p/CyWBh1Nrugk/
     code: CyWBh1Nrugk
     photos:
