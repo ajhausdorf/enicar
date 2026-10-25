@@ -3,7 +3,7 @@
 // and the search index was built. Run after `npm run build`.
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
-import { loadReferences, Report, ROOT } from './lib.mjs';
+import { loadReferences, loadCalibres, Report, ROOT } from './lib.mjs';
 
 const DIST = join(ROOT, 'dist');
 
@@ -33,6 +33,12 @@ export function checkSite() {
     const html = decode(readFileSync(page, 'utf8'));
     if (!html.includes(data.name)) r.error(`/ref/${id}/`, `page does not show the record name "${data.name}"`);
     if (data.status === 'draft' && !html.includes('Draft record.')) r.error(`/ref/${id}/`, 'draft record is missing its draft notice');
+  }
+
+  for (const { id, data } of loadCalibres()) {
+    const page = join(DIST, 'calibres', id, 'index.html');
+    if (!existsSync(page)) { r.error(`/calibres/${id}/`, 'page missing'); continue; }
+    if (!decode(readFileSync(page, 'utf8')).includes(data.name)) r.error(`/calibres/${id}/`, `page does not show "${data.name}"`);
   }
 
   const index = existsSync(join(DIST, 'index.html')) ? readFileSync(join(DIST, 'index.html'), 'utf8') : '';

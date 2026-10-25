@@ -76,6 +76,31 @@ why it is a false alarm and stop.
    else.
 8. **Bump `last_reviewed`** on any record you touch.
 
+## Writing on the site
+
+The owner does not want any copy to read like AI wrote it. Write the way a
+collector would label a drawer of watches: plain, short, specific.
+
+- No slogans or taglines ("Every Enicar, indexed."), no clever headings
+  ("Nothing here is ours alone."). A page about sources is titled "Sources".
+- No sentence fragments for effect, no rule-of-three lists, no "not just X
+  but Y", no em-dash asides, no "delve", "journey", "rich history",
+  "timeless", "iconic", "testament to".
+- Say the specific thing. "36 mm, 19 mm lugs" beats "a well-proportioned
+  case". If there's nothing specific to say, say nothing.
+- Don't oversell or apologise. "No price yet." is enough.
+- Read it aloud. If it sounds like a brochure, rewrite it.
+
+## Calibres
+
+Each movement has a record in `data/calibres/<id>.yaml`, where the id is the
+name in lower case with hyphens (`AR1146` → `ar1146`, `Valjoux 72` →
+`valjoux-72`). Watch records name calibres by their exact `name`; QA fails if
+a watch names a calibre with no record. Calibre pages list every watch and
+generation that uses the movement, built from the watch records. Citation
+`supports` for calibres: `maker`, `winding`, `functions`, `base`,
+`introduced`.
+
 ## The checks
 
 `npm run check` runs all of these and must pass before you open a PR:

@@ -40,6 +40,8 @@ const sources = defineCollection({
 
 // A citation on a record: which source, the exact page, when we read it, and
 // which fields of the record it supports (dotted paths, e.g. "movement.calibres").
+const cites = z.array(z.string()).default([]);
+
 const citation = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   source: reference('sources'),
@@ -49,7 +51,6 @@ const citation = z.object({
   supports: z.array(z.string()).default([])
 });
 
-const cites = z.array(z.string()).default([]);
 
 // Images live in public/images/<record id>/, made by scripts/images/add-image.mjs
 // (a large and a small webp). Never hotlinked.
@@ -66,6 +67,32 @@ const image = z.object({
   credit_url: z.url().nullable().default(null),
   license: z.string(),
   permission: z.enum(['own', 'granted', 'cc', 'public-domain'])
+});
+
+// Movements. One file per calibre in data/calibres/; watch records name
+// calibres by `name`, and QA checks every name used has a file here.
+const calibres = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: 'data/calibres' }),
+  schema: z.object({
+    name: z.string(),
+    maker: z.string().nullable().default(null),
+    winding: z.enum(['manual', 'automatic', 'quartz']).nullable().default(null),
+    functions: z.array(z.string()).default([]),
+    base: reference('calibres').nullable().default(null),
+    base_note: z.string().nullable().default(null),
+    introduced: z.string().nullable().default(null),
+    notes: z.array(z.object({ text: z.string(), cites })).default([]),
+    read_more: z.array(z.object({
+      title: z.string(),
+      url: z.url(),
+      source: reference('sources'),
+      note: z.string().nullable().default(null)
+    })).default([]),
+    status: z.enum(['draft', 'verified']),
+    gaps: z.array(z.string()).default([]),
+    citations: z.array(citation).default([]),
+    last_reviewed: isoDate
+  })
 });
 
 const references = defineCollection({
@@ -152,4 +179,4 @@ const references = defineCollection({
   })
 });
 
-export const collections = { families, sources, references };
+export const collections = { families, sources, calibres, references };

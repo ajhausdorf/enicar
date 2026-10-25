@@ -10,13 +10,12 @@ const usage = Object.fromEntries(sources.map((s) => [s.id, refs.filter((r) => r.
 <Base title="Sources and credits" section="sources">
   <div class="wrap sources">
     <section class="intro">
-      <p class="eyebrow">Sources and credits</p>
-      <h1>Nothing here is ours alone.</h1>
-      <p class="lede">This archive re-indexes work done by collectors over many years. Each record links to where its facts came from, and each source below leads onward to the next one.</p>
+      <h1>Sources</h1>
+      <p class="lede">Most of what's here comes from collectors who did the research first. These are the sources we cite and what we use each one for.</p>
     </section>
 
     <section class="block">
-      <h2>Primary sources</h2>
+      <h2>What we cite</h2>
       <div class="grid">
         {sources.map((s) => (
           <article class="card src">
@@ -43,15 +42,15 @@ const usage = Object.fromEntries(sources.map((s) => [s.id, refs.filter((r) => r.
     <section class="policies card">
       <div>
         <h2>Image policy</h2>
-        <p>Photographs appear only with permission from the photographer or seller, under an open licence, or when we shot them ourselves. Every image carries a visible credit. If your image is here without one, tell us and it comes down the same day.</p>
+        <p>We only show a photo if the photographer gave permission, it's under an open licence, or we took it. Every photo is credited. Otherwise we link to the photographer's own page. If a photo of yours is here without permission, tell us and we'll take it down.</p>
       </div>
       <div>
-        <h2>Barometer and sales</h2>
-        <p>Barometer ranges are quoted as published, with the edition named, and only with the publisher's permission. Sales are logged from public listings with the venue, date and a link; we never record buyers.</p>
+        <h2>Prices</h2>
+        <p>Price ranges from the enicar.org barometer will appear only with permission, quoted as published, with the edition named. Sales will be logged from public listings with the venue, date and a link. We don't record buyers.</p>
       </div>
       <div>
         <h2>Corrections</h2>
-        <p>Dates and attributions follow the sources, and we flag where they disagree. Send a correction with your evidence and it is credited to you in the change history.</p>
+        <p>Dates and attributions follow the sources. Where sources disagree, we say so. If something is wrong, send a correction with your evidence and we'll credit you.</p>
         <a class="btn" href={CONTRIBUTE_URL}>Request a correction</a>
       </div>
     </section>

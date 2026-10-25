@@ -1,0 +1,115 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { href, calibreUsage, CONTRIBUTE_URL } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const calibres = await getCollection('calibres');
+  return calibres.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const all = await getCollection('calibres');
+const base = d.base ? await getEntry(d.base) : null;
+const derived = all.filter((c) => c.data.base?.id === entry.id);
+const used = calibreUsage(await getCollection('references')).get(entry.id) ?? [];
+const sources = Object.fromEntries((await getCollection('sources')).map((s) => [s.id, s]));
+const cites = Object.fromEntries(d.citations.map((c) => [c.id, c]));
+const srcName = (c: any) => sources[c.source.id]?.data.name;
+
+const specs = [
+  ['Maker', d.maker],
+  ['Winding', d.winding],
+  ['Functions', d.functions.join(', ') || null],
+  ['Introduced', d.introduced]
+] as const;
+---
+<Base title={`Calibre ${d.name}`} description={`The Enicar ${d.name} movement and the watches that used it.`} section="calibres" searchable>
+  <div class="wrap calibre">
+    <nav aria-label="Breadcrumb" class="crumbs">
+      <a href="/calibres/">Calibres</a><span aria-hidden="true">/</span><span aria-current="page">{d.name}</span>
+    </nav>
+
+    {d.status === 'draft' && (
+      <p class="notice"><strong>Draft record.</strong> We're still checking this one against its sources, so it may be incomplete.</p>
+    )}
+
+    <section class="head">
+      <p class="eyebrow">Calibre</p>
+      <h1 class="mono">{d.name}</h1>
+      {d.base_note && <p class="lede">{d.base_note}</p>}
+    </section>
+
+    <dl class="specs">
+      {specs.map(([k, v]) => <div><dt>{k}</dt><dd class={v ? '' : 'unknown'}>{v ?? 'Unknown'}</dd></div>)}
+      <div><dt>Based on</dt><dd class={base ? '' : 'unknown'}>{base ? <a href={`/calibres/${base.id}/`}>{base.data.name}</a> : 'Unknown'}</dd></div>
+      {derived.length > 0 && <div><dt>Basis for</dt><dd>{derived.map((c, i) => <>{i > 0 && ', '}<a href={`/calibres/${c.id}/`}>{c.data.name}</a></>)}</dd></div>}
+    </dl>
+
+    {d.notes.length > 0 && (
+      <section class="notes">
+        <h2>Notes</h2>
+        <ul>{d.notes.map((n) => <li>{n.text} {n.cites.map((id) => cites[id] && <a class="cite" href={cites[id].url}>{srcName(cites[id])}</a>)}</li>)}</ul>
+      </section>
+    )}
+
+    <section class="used">
+      <h2>Watches with this calibre</h2>
+      {used.length === 0 ? <p class="muted">None recorded yet.</p> : (
+        <ul>
+          {used.map((u) => (
+            <li class="card">
+              <a href={href.ref(u.ref.id)}><strong>{u.ref.data.name}</strong></a>
+              {u.variants.length > 0 && <span class="muted small">{u.variants.join(', ')}</span>}
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+
+    {d.read_more.length > 0 && (
+      <section class="read-more">
+        <h2>Further reading</h2>
+        <ul>{d.read_more.map((m) => <li><a href={m.url}>{m.title}</a> <span class="muted small">{sources[m.source.id]?.data.name}</span></li>)}</ul>
+      </section>
+    )}
+
+    <section class="bottom" data-pagefind-ignore>
+      <div>
+        <h2>Sources</h2>
+        {d.citations.length === 0 ? <p class="muted small">No sources cited yet.</p> : (
+          <ul>{d.citations.map((c) => <li><a href={c.url}>{c.title}</a> <span class="muted small">{srcName(c)} · read {c.retrieved.toISOString().slice(0, 10)}</span></li>)}</ul>
+        )}
+      </div>
+      {d.gaps.length > 0 && (
+        <div>
+          <h2>Still missing</h2>
+          <ul>{d.gaps.map((g) => <li>{g}</li>)}</ul>
+          <a href={CONTRIBUTE_URL}>Know any of these? Send a correction</a>
+        </div>
+      )}
+    </section>
+  </div>
+</Base>
+
+<style>
+  .calibre { display: flex; flex-direction: column; gap: 32px; padding-top: 24px; padding-bottom: 64px; }
+  .crumbs { font-size: 13px; color: var(--muted); display: flex; gap: 8px; }
+  .crumbs a { color: var(--muted); text-decoration: none; }
+  .notice { margin: 0; }
+  .head { display: flex; flex-direction: column; gap: 12px; }
+  .small { font-size: 13px; }
+  .specs { margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); column-gap: 24px; border-top: 1px solid var(--line); max-width: 900px; }
+  .specs div { display: flex; flex-direction: column; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--line-soft); }
+  .specs dt { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .specs dd { margin: 0; font-size: 15px; font-weight: 500; }
+  .specs dd.unknown { color: var(--muted); font-weight: 400; }
+  .notes, .used, .read-more { display: flex; flex-direction: column; gap: 12px; max-width: 900px; }
+  .notes ul, .read-more ul, .bottom ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+  .used ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .used li { padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+  .used a { text-decoration: none; }
+  .bottom { display: flex; flex-wrap: wrap; gap: 40px; }
+  .bottom > div { flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px; }
+</style>

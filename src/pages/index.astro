@@ -19,9 +19,8 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
   <section class="hero">
     <div class="wrap hero__inner">
       <div class="hero__text">
-        <p class="eyebrow">Catalog · Enicar, 1913 to the 1980s</p>
-        <h1>Every Enicar, indexed.</h1>
-        <p class="lede">One record per reference: photographs, dating, the movement and case, and the history behind it. Every fact links to where it came from.</p>
+        <h1>Enicar Archive</h1>
+        <p class="lede">Specs, generations, reference numbers and calibres for vintage Enicar watches. Each record lists its sources. Most are still drafts.</p>
       </div>
       <dl class="stats">
         <div><dt>References</dt><dd class="mono">{refs.length}</dd></div>
@@ -65,9 +64,9 @@ const decades = [...new Set(refs.map((r) => decadeOf(r.data.years)).filter(Boole
         <button type="button" class="fam" data-family={f.id} aria-pressed="false"><span>{f.data.name}</span><span class="mono">{counts[f.id]}</span></button>
       ))}
       <div class="panel about">
-        <strong>How records are checked</strong>
-        <span>Records start as drafts. A record is marked verified only when every fact on it is tied to a cited source.</span>
-        <a href="/coverage/">See catalogue coverage</a>
+        <strong>Drafts</strong>
+        <span>A record stays a draft until every detail on it is backed by a source.</span>
+        <a href="/coverage/">Coverage so far</a>
       </div>
     </aside>
 

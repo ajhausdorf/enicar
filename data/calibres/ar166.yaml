@@ -1,0 +1,30 @@
+name: AR166
+maker: null
+winding: null
+functions: [GMT]
+base: null
+introduced: null
+notes:
+  - text: Written as AR166 in the source. The exact designation should be checked against a movement photo or catalogue.
+    cites: [eo-jet]
+  - text: Spare parts for the GMT versions are scarcer than for Enicar's standard AR calibres.
+    cites: [eo-jet]
+read_more:
+  - title: Exploring the Enicar Sherpa (Super-)Jet
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    source: enicar-org
+    note: Covers the GMT calibres used in the Jet and Super-Jet.
+status: draft
+gaps:
+  - Exact designation
+  - Maker and winding
+  - Base calibre
+  - Jewel count, frequency and other specs
+citations:
+  - id: eo-jet
+    source: enicar-org
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    title: Exploring the Enicar Sherpa (Super-)Jet
+    retrieved: 2026-10-25
+    supports: [functions]
+last_reviewed: 2026-10-25

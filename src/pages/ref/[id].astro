@@ -67,7 +67,7 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
     </nav>
 
     {d.status === 'draft' && (
-      <p class="notice"><strong>Draft record.</strong> Details here are still being checked against their sources and may be incomplete. Open gaps are listed at the bottom of the page.</p>
+      <p class="notice"><strong>Draft record.</strong> We're still checking this one against its sources, so it may be incomplete. What's missing is listed at the bottom.</p>
     )}
 
     <section class="top">
@@ -94,7 +94,7 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
         {elsewhere.length > 0 && (
           <div class="elsewhere">
             <strong>Photos elsewhere</strong>
-            <span class="small muted">We only show photos we have permission to use. These link to the photographers' own pages.</span>
+            <span class="small muted">We don't have permission to show these here, so these links go to the photographers' own pages.</span>
             {elsewhere.map(([group, links]) => (
               <div class="elsewhere__group">
                 <span class="eyebrow">{group}</span>
@@ -110,7 +110,7 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
           <p class="eyebrow">{eyebrow}</p>
           <h1>{d.name}</h1>
           {d.summary && <p class="lede">{d.summary}</p>}
-          <span class={`badge ${d.status}`}>{d.status === 'draft' ? 'Draft, being checked' : 'Verified'}</span>
+          <span class={`badge ${d.status}`}>{d.status === 'draft' ? 'Draft' : 'Verified'}</span>
         </div>
 
         <div class="card barometer">
@@ -123,13 +123,17 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
               <span class="muted small">{d.barometer.condition}. Quoted as published, never adjusted by us.</span>
             </>
           ) : (
-            <span class="muted small">No price yet. Ranges will come from the enicar.org barometer once permission is in place, and from logged sales.</span>
+            <span class="muted small">No price yet.</span>
           )}
         </div>
 
         <dl class="specs">
           {specs.filter(([k, v]) => v || ['References', 'Produced', 'Movement', 'Case', 'Diameter'].includes(k)).map(([k, v]) => (
-            <div><dt>{k}</dt><dd class={v ? '' : 'unknown'}>{v ?? 'Unknown'}</dd></div>
+            <div><dt>{k}</dt><dd class={v ? '' : 'unknown'}>{
+              k === 'Movement' && d.movement.calibres.length
+                ? <>{d.movement.calibres.map((c, i) => <>{i > 0 && ', '}<a href={href.calibre(c)}>{c}</a></>)}{d.movement.winding && ` · ${d.movement.winding}`}</>
+                : v ?? 'Unknown'
+            }</dd></div>
           ))}
         </dl>
         {d.references.some((r) => r.note) && (
@@ -170,7 +174,11 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
             </thead>
             <tbody>
               {usedRows.map(([label, f]) => (
-                <tr><th scope="row">{label}</th>{d.variants.map((v) => <td>{f(v) || '—'}</td>)}</tr>
+                <tr><th scope="row">{label}</th>{d.variants.map((v) => <td>{
+                  label === 'Calibre' && v.calibres.length
+                    ? v.calibres.map((c, i) => <>{i > 0 && ', '}<a href={href.calibre(c)}>{c}</a></>)
+                    : f(v) || '—'
+                }</td>)}</tr>
               ))}
               <tr><th scope="row">How to tell</th>{d.variants.map((v) => <td>{v.tell}</td>)}</tr>
               {d.photos_elsewhere.some((p) => p.variant) && (
@@ -212,7 +220,7 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
         <div class="gaps">
           <h2>Still missing</h2>
           <ul>{d.gaps.map((g) => <li>{g}</li>)}</ul>
-          <a href={CONTRIBUTE_URL}>Can you help? Send evidence</a>
+          <a href={CONTRIBUTE_URL}>Know any of these? Send a correction</a>
         </div>
       )}
     </section>

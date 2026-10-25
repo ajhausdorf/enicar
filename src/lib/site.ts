@@ -40,5 +40,26 @@ export function formatRange(b: { currency: string; low: number; high: number }):
 
 export const href = {
   ref: (id: string) => `/ref/${id}/`,
-  family: (id: string) => `/?family=${id}`
+  family: (id: string) => `/?family=${id}`,
+  calibre: (name: string) => `/calibres/${calibreId(name)}/`
 };
+
+// Calibre names as written in records ("AR1126", "Valjoux 72") map to the
+// file names in data/calibres/ ("ar1126", "valjoux-72").
+export const calibreId = (name: string) => name.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+type RefLike = { id: string; data: { movement: { calibres: string[] }; variants: { name: string; calibres: string[] }[] } };
+
+// Which watches use each calibre, and in which generations.
+export function calibreUsage<T extends RefLike>(refs: T[]) {
+  const use = new Map<string, { ref: T; variants: string[] }[]>();
+  for (const r of refs) {
+    const ids = new Set(r.data.movement.calibres.map(calibreId));
+    for (const v of r.data.variants) for (const c of v.calibres) ids.add(calibreId(c));
+    for (const id of ids) {
+      const variants = r.data.variants.filter((v) => v.calibres.some((c) => calibreId(c) === id)).map((v) => v.name);
+      use.set(id, [...(use.get(id) ?? []), { ref: r, variants }]);
+    }
+  }
+  return use;
+}

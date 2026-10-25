@@ -1,0 +1,28 @@
+name: AR1125
+maker: null
+winding: null
+functions: []
+base: null
+introduced: null
+notes:
+  - text: The source dates it to the late 1950s, but the sentence could also be read as dating the AR1126.
+    cites: [eo-jet]
+read_more:
+  - title: Exploring the Enicar Sherpa (Super-)Jet
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    source: enicar-org
+    note: Covers the GMT calibres used in the Jet and Super-Jet.
+status: draft
+gaps:
+  - Maker and winding
+  - Introduction date (late 1950s, unconfirmed)
+  - Jewel count, frequency and other specs
+  - Which models used it
+citations:
+  - id: eo-jet
+    source: enicar-org
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    title: Exploring the Enicar Sherpa (Super-)Jet
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25
