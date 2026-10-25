@@ -2,7 +2,7 @@
 
 Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs`. Do not edit by hand.
 
-## @two_crowned_prints (47 photos)
+## @two_crowned_prints (45 photos)
 
 ### Their label and the source disagree
 
@@ -30,18 +30,10 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
 
 ### Which generation?
 
-- **https://www.instagram.com/p/DX1qtstDA3D/** · sherpa-graph
-  This looks like a MkIb to us. Can you confirm, or share the serial?
-  - Grey dial with white registers ("Jim Clark"), large early logo, long-tipped paddle hands, straight red chronograph hand.
-  - The ring between 60 and 300 looks blank, the MkIb tell (the MkIc ring reads Tachymetre); glare makes it hard to be certain.
 - **https://www.instagram.com/p/DOTov7WkTit/** · sherpa-graph
   Is this MkIc or an early MkII? The serial would settle it.
   - White dial, ring reading Tachymetre, paddle hands, large early logo, chronograph hand black or unpainted.
   - The ring and logo match the MkIc on Enicar 101, but its MkIc and MkIIa pages both describe a red chronograph hand; early MkII watches (601.xxx) also kept the large logo.
-- **https://www.instagram.com/p/DAwG-oJy_Ta/** · sherpa-graph
-  This looks like a MkIb to us. Can you confirm, or share the serial?
-  - Grey dial with cream registers, large early logo, long-tipped paddle hands, straight red chronograph hand.
-  - The ring looks blank where the MkIc would read Tachymetre, which leans MkIb, but glare covers part of it.
 - **https://www.instagram.com/p/DAbGn2pOnZ_/** · sherpa-graph
   Is this a MkII or a MkIII? The serial would settle it.
   - Black dial with black registers and paddle hands.

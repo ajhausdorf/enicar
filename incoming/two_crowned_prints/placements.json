@@ -838,5 +838,25 @@
   "by": "tells",
   "note": "Baton hands, black counter hands, a house-shaped pointer on the red ring and two lume dots at 12, the MkIII tells on Enicar 101; the caption mentions the \"doghouse\" pointer.",
   "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "DX1qtstDA3D_01",
+  "variant": "MkIb",
+  "alt": "Sherpa Graph with a grey \"Jim Clark\" dial, white registers and silver tachymetre ring on a white strap, on the wrist",
+  "caption": null,
+  "by": "tells",
+  "note": "Tachymetre ring blank between 60 and 300 (the owner checked the photo), large early logo, long-tipped paddle hands and a straight red chronograph hand: the MkIb tells on Enicar 101.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "DAwG-oJy_Ta_01",
+  "variant": "MkIb",
+  "alt": "Sherpa Graph with a grey dial, cream registers and red chronograph hand on a white strap, on the wrist",
+  "caption": null,
+  "by": "tells",
+  "note": "Tachymetre ring blank between 60 and 300 (the owner checked the photo), large early logo, long-tipped paddle hands and a straight red chronograph hand: the MkIb tells on Enicar 101.",
+  "view": "dial"
  }
 ]
