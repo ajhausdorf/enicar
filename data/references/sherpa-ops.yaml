@@ -195,6 +195,102 @@ images:
     caption: "With a Sherpa Ultradive and a Sherpa Super-Jet."
     identified_by: dial
     identified_note: "Dials read Ultradive, OPS and Super-Jet."
+  - file: /images/sherpa-ops/v-cxawfbcrxin-1.webp
+    thumb: /images/sherpa-ops/v-cxawfbcrxin-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa OPS with a PVD-coated case and grey inner bezel on a grey perlon strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CXawFBcrxiN/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa OPS."
+  - file: /images/sherpa-ops/v-ckgvtkglos-1.webp
+    thumb: /images/sherpa-ops/v-ckgvtkglos-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa OPS with a black dial and orange seconds hand, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CKGVTkgLOS_/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa OPS."
+  - file: /images/sherpa-ops/v-chsesforboy-1.webp
+    thumb: /images/sherpa-ops/v-chsesforboy-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa OPS on a grey perlon strap lying on an Enicar box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CHSESFOrbOY/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa OPS."
+  - file: /images/sherpa-ops/v-cejdqgsnpyt-1.webp
+    thumb: /images/sherpa-ops/v-cejdqgsnpyt-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa OPS without strap, black dial and grey inner bezel"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CEjDqgSnPYT/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa OPS."
+  - file: /images/sherpa-ops/v-bta9wdih1cu-1.webp
+    thumb: /images/sherpa-ops/v-bta9wdih1cu-1-sm.webp
+    width: 1080
+    height: 1350
+    alt: "Sherpa OPS held in the hand, black dial and orange seconds hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Bta9wdIH1cu/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa OPS."
+  - file: /images/sherpa-ops/v-bq2tknohu7v-1.webp
+    thumb: /images/sherpa-ops/v-bq2tknohu7v-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa OPS with a PVD-coated 40 mm case and grey inner bezel, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Bq2tkNOHU7V/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa OPS; caption: PVD-coated 40 mm EPSA case with double crown protection."
 barometer: null
 status: draft
 gaps:

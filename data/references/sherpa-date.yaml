@@ -40,6 +40,86 @@ images:
     caption: null
     identified_by: dial
     identified_note: null
+  - file: /images/sherpa-date/v-du-jrbjdlvj-1.webp
+    thumb: /images/sherpa-date/v-du-jrbjdlvj-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Date with a silver dial, applied markers and date at 3 on a black Tropic strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DU-jRbJDLVj/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Date."
+  - file: /images/sherpa-date/v-diitssboxts-1.webp
+    thumb: /images/sherpa-date/v-diitssboxts-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Sherpa Date with a cream pie-pan dial and sharp lugs, without strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DIItSsboXts/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Date; caption dates it 1958."
+  - file: /images/sherpa-date/v-dx-fx7gdyry-1.webp
+    thumb: /images/sherpa-date/v-dx-fx7gdyry-1-sm.webp
+    width: 1440
+    height: 1184
+    alt: "Sherpa Date with a silver dial on a black Tropic strap, in front of a city print"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DX_fX7GDYRY/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Date; caption: early 1960s."
+  - file: /images/sherpa-date/v-dgbuddpowuq-1.webp
+    thumb: /images/sherpa-date/v-dgbuddpowuq-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Date with a silver dial, red date and steel bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DGBuDDPOwuq/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Date; caption: late 1950s."
+  - file: /images/sherpa-date/v-cie1740l0dy-1.webp
+    thumb: /images/sherpa-date/v-cie1740l0dy-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "40 mm Sherpa Date with a silver dial on a steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cie1740L0dY/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the 40 mm Sherpa Date in the EPSA case, from 1966."
 status: draft
 gaps:
   - Reference numbers

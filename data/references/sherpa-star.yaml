@@ -43,6 +43,102 @@ images:
     caption: null
     identified_by: caption
     identified_note: 'Post captioned Enicar Sherpa Star "Volcano" 144-49-01.'
+  - file: /images/sherpa-star/v-dazxx5qdk6u-1.webp
+    thumb: /images/sherpa-star/v-dazxx5qdk6u-1-sm.webp
+    width: 1600
+    height: 1066
+    alt: "Sherpa Star with a gold-coloured textured case, champagne dial and day-date on a gold Saturn bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Dazxx5qDk6U/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: late 1960s Sherpa Star with original NSA Saturn-signed bracelet."
+  - file: /images/sherpa-star/v-dazxx5qdk6u-3.webp
+    thumb: /images/sherpa-star/v-dazxx5qdk6u-3-sm.webp
+    width: 1600
+    height: 1066
+    alt: "Front view of a gold-coloured Sherpa Star with day-date and textured case on its bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Dazxx5qDk6U/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Same watch as Dazxx5qDk6U_01."
+  - file: /images/sherpa-star/v-cp0iclalabj-1.webp
+    thumb: /images/sherpa-star/v-cp0iclalabj-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Steel Sherpa Star day-date with a silver dial on a steel bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CP0icLALABj/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Star day/date from 1969."
+  - file: /images/sherpa-star/v-chpgykormz-1.webp
+    thumb: /images/sherpa-star/v-chpgykormz-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Gold-plated 35 mm Sherpa Star with a silver dial on a brown leather strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CHPgyKormZ-/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: 35 mm gold-plated Sherpa Star; dial reads Sherpa Star."
+  - file: /images/sherpa-star/v-b-zknschkev-1.webp
+    thumb: /images/sherpa-star/v-b-zknschkev-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Sherpa Star with a blue dial and day-date on a steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/B_ZknSCHKEv/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Star."
+  - file: /images/sherpa-star/v-diqmda-ijmi-1.webp
+    thumb: /images/sherpa-star/v-diqmda-ijmi-1-sm.webp
+    width: 1201
+    height: 1600
+    alt: "Gold-coloured Sherpa Star case with day-date, propped against an Enicar box"
+    view: other
+    variant: null
+    source_url: https://www.instagram.com/p/DIqmDA_IjMi/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Star."
 read_more:
   - title: The rise of the Sherpa Star
     url: https://enicar.org/2018/03/08/the-rise-of-the-sherpa-star/

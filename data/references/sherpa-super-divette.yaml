@@ -142,6 +142,102 @@ images:
     caption: null
     identified_by: dial
     identified_note: null
+  - file: /images/sherpa-super-divette/v-cswwhn2lavu-1.webp
+    thumb: /images/sherpa-super-divette/v-cswwhn2lavu-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Divette with a black dial and red date on a tan strap, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CswWhN2LAVU/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette."
+  - file: /images/sherpa-super-divette/v-dec-pklubr2-1.webp
+    thumb: /images/sherpa-super-divette/v-dec-pklubr2-1-sm.webp
+    width: 1440
+    height: 1319
+    alt: "Sherpa Super-Divette with a black dial on a steel bracelet, beside an Enicar oil dispenser"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DEc-PKLubR2/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette; caption: mid 1960s."
+  - file: /images/sherpa-super-divette/v-c8koxe2oc-y-1.webp
+    thumb: /images/sherpa-super-divette/v-c8koxe2oc-y-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Super-Divette with a black dial, orange seconds hand and yellow and black inner bezel on a woven strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/C8kOXE2oc_Y/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette."
+  - file: /images/sherpa-super-divette/v-cyiuhiirp-o-1.webp
+    thumb: /images/sherpa-super-divette/v-cyiuhiirp-o-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Divette with a black dial and yellow inner bezel on a steel bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CyIuhiIrP_O/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette."
+  - file: /images/sherpa-super-divette/v-c8mrit-nmvr-1.webp
+    thumb: /images/sherpa-super-divette/v-c8mrit-nmvr-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Side view of a Sherpa Super-Divette with a black dial and orange seconds hand"
+    view: profile
+    variant: null
+    source_url: https://www.instagram.com/p/C8MRiT_NmvR/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette; caption: 1968, 36 mm."
+  - file: /images/sherpa-super-divette/v-dalmgk7otyk-1.webp
+    thumb: /images/sherpa-super-divette/v-dalmgk7otyk-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Divette with a silver dial on a black strap in an Enicar Ultrasonic box"
+    view: other
+    variant: null
+    source_url: https://www.instagram.com/p/DAlmgk7Otyk/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette; caption: early 1960s."
 barometer: null
 status: draft
 gaps:

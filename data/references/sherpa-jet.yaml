@@ -302,6 +302,134 @@ images:
     caption: null
     identified_by: source
     identified_note: "The enicar.org Jet article shows a photo from this post as a Sherpa Jet MkII."
+  - file: /images/sherpa-jet/v-cln56k8rdx1-1.webp
+    thumb: /images/sherpa-jet/v-cln56k8rdx1-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a silver dial, black and cream inner 24-hour bezel and red and black checkered GMT hand, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/Cln56K8rdx1/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Checkered GMT hand; caption dates it 1969."
+  - file: /images/sherpa-jet/v-cchofewdljx-1.webp
+    thumb: /images/sherpa-jet/v-cchofewdljx-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a silver dial, black and cream inner bezel, red date and checkered GMT hand, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CchofewDljx/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Checkered GMT hand; caption dates it 1968."
+  - file: /images/sherpa-jet/v-c5ylxjnlfoh-1.webp
+    thumb: /images/sherpa-jet/v-c5ylxjnlfoh-1-sm.webp
+    width: 1132
+    height: 1132
+    alt: "Sherpa Jet with a silver dial and red and blue inner bezel, checkered GMT hand, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/C5ylXjNLfoh/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Red and blue bezel and checkered GMT hand."
+  - file: /images/sherpa-jet/v-crybisxnnvo-1.webp
+    thumb: /images/sherpa-jet/v-crybisxnnvo-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a silver dial, red and blue inner bezel and red date, on a steel bracelet"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CryBIsxNnVO/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Pepsi bezel, open 6 and 9 red date disc, checkered GMT hand."
+  - file: /images/sherpa-jet/v-crybisxnnvo-2.webp
+    thumb: /images/sherpa-jet/v-crybisxnnvo-2-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Close view of a Sherpa Jet with a silver dial and red and blue inner bezel"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CryBIsxNnVO/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Pepsi bezel, checkered GMT hand."
+  - file: /images/sherpa-jet/v-cwdlswbshpv-1.webp
+    thumb: /images/sherpa-jet/v-cwdlswbshpv-1-sm.webp
+    width: 1401
+    height: 1401
+    alt: "Sherpa Jet with a black dial, black and white inner bezel and checkered GMT hand, on a steel bracelet"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CWdlsWBsHpv/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Checkered GMT hand."
+  - file: /images/sherpa-jet/v-cfdh51ur9jh-1.webp
+    thumb: /images/sherpa-jet/v-cfdh51ur9jh-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a black dial marked 17 Jewels and a black and white inner bezel, on a case holder"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/Cfdh51ur9jh/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: MkI with 17 Jewels on the dial."
+  - file: /images/sherpa-jet/v-cqa0eelnzzk-1.webp
+    thumb: /images/sherpa-jet/v-cqa0eelnzzk-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Jet with a black dial marked 17 Jewels on a brown leather strap, lying on a 1961 Saturn magazine"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/Cqa0EELNzzK/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Same 17 Jewels dial and paddle hands as the MkI in post Cfdh51ur9jh."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article

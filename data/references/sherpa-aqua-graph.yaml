@@ -134,7 +134,87 @@ read_more:
     url: https://enicar101.com/aqua-graph-mk-iv/
     source: enicar101
     note: null
-images: []
+images:
+  - file: /images/sherpa-aqua-graph/v-b3skttdhs4i-1.webp
+    thumb: /images/sherpa-aqua-graph/v-b3skttdhs4i-1-sm.webp
+    width: 1440
+    height: 1438
+    alt: "Aqua Graph with a black dial, black registers and orange chronograph hand on a steel bracelet"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/B3SKttdHS4I/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Aqua Graph MkII from 1968. The production table dates the MkII from 6/66 and the MkIV from 3/68, so the year is his."
+  - file: /images/sherpa-aqua-graph/v-dysk2kptakp-1.webp
+    thumb: /images/sherpa-aqua-graph/v-dysk2kptakp-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Aqua Graph with a black racing dial, white registers and black outer bezel with red pointer, held in the hand"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/DYsK2kPtAKp/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: MkIII Aqua Graph with racing dial, 1968. The production table dates the MkIII from 6/67."
+  - file: /images/sherpa-aqua-graph/v-cj8e35wlqbr-1.webp
+    thumb: /images/sherpa-aqua-graph/v-cj8e35wlqbr-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Aqua Graph with a black racing dial and white registers on a red strap, held in the hand"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CJ8e35WLQbr/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Same racing-dial watch on the same red strap as post DYsK2kPtAKp, which he calls a 1968 MkIII. The production table dates the MkIII from 6/67."
+  - file: /images/sherpa-aqua-graph/v-bs7nhp5njxt-1.webp
+    thumb: /images/sherpa-aqua-graph/v-bs7nhp5njxt-1-sm.webp
+    width: 1080
+    height: 1350
+    alt: "Close view of an Aqua Graph with a black racing dial and white registers"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/Bs7nhp5nJxT/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Same racing-dial watch on the same red strap as post DYsK2kPtAKp, which he calls a 1968 MkIII. The production table dates the MkIII from 6/67."
+  - file: /images/sherpa-aqua-graph/v-cb3zuy2hopx-1.webp
+    thumb: /images/sherpa-aqua-graph/v-cb3zuy2hopx-1-sm.webp
+    width: 1358
+    height: 1600
+    alt: "Aqua Graph with a racing dial on a red strap in an open green Enicar box"
+    view: other
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CB3ZuY2HoPx/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Same racing-dial watch on the same red strap as post DYsK2kPtAKp, which he calls a 1968 MkIII. The production table dates the MkIII from 6/67."
 barometer: null
 status: draft
 gaps:

@@ -12,7 +12,7 @@
     S[a.getAttribute('href')] = img?.alt || S[a.getAttribute('href')] || '';
   });
   let stable = 0, last = 0;
-  for (let i = 0; i < 150 && stable < 6; i++) {
+  for (let i = 0; i < 400 && stable < 6; i++) {
     grab();
     window.scrollTo(0, document.body.scrollHeight);
     await new Promise((r) => setTimeout(r, 2000 + Math.random() * 900));

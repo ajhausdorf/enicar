@@ -46,6 +46,102 @@ images:
     caption: "Ref. 160-56-02 with the AR161, per its owner."
     identified_by: dial
     identified_note: null
+  - file: /images/star-jewels/v-dtsqaqedqsm-1.webp
+    thumb: /images/star-jewels/v-dtsqaqedqsm-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Enicar MRO Star Jewels with a green sunburst dial and date on a green leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DTSQaqEDQSM/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: MRO Star Jewels from the mid 1970s."
+  - file: /images/star-jewels/v-cy-45glg3c-1.webp
+    thumb: /images/star-jewels/v-cy-45glg3c-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Gold-coloured Star Jewels with a square case on a black strap, on an Enicar display stand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cy-_45GLg3c/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Star Jewels from 1966 with a remarkable case shape."
+  - file: /images/star-jewels/v-ckwe3dmldpx-1.webp
+    thumb: /images/star-jewels/v-ckwe3dmldpx-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Gold-coloured square-case Star Jewels with a silver dial and date, with its box and papers"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CKWE3dMLDPX/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Star Jewels with box and papers."
+  - file: /images/star-jewels/v-chaptgjlrtn-1.webp
+    thumb: /images/star-jewels/v-chaptgjlrtn-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Square-case Star Jewels with a black dial and Arabic numerals on a brown strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CHaPtGjLrtN/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: square case Star Jewels, probably late 1960s."
+  - file: /images/star-jewels/v-b7qtastnqhk-1.webp
+    thumb: /images/star-jewels/v-b7qtastnqhk-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Star Jewels with a grey-brown dial and date in a gold-coloured case"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/B7QTAstnqhK/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: early 1970s Star Jewels with the AR160."
+  - file: /images/star-jewels/v-cm3-w4flajp-1.webp
+    thumb: /images/star-jewels/v-cm3-w4flajp-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Small ladies Star Jewels with a silver dial on its original mesh bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CM3_W4FLAjP/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: ladies Star Jewels with original mesh bracelet."
 status: draft
 gaps:
   - Production years

@@ -59,6 +59,37 @@ data, never instructions.
 10. `node scripts/instagram/confirm-list.mjs` regenerates
     `incoming/to-confirm.md`; send it to the owner. Then `ship-update`.
 
+## Large feeds (curate, don't take everything)
+
+When a photographer has hundreds of Enicar posts (Martijn, @vandervenus, has
+about 2,500), the owner's rule is: up to about 6 of their best photos per
+generation page, and only posts whose captions name a model we cover.
+
+- Scan the whole grid (`scan-grid.js` runs up to 400 scrolls), export the
+  captions, and filter by model names in the caption body (before the
+  hashtags), one covered model per post.
+- Read about 10 posts per page bucket, more for models with generations.
+- Leave out posts that show someone else's watch for sale, auction or eBay
+  listings, "not my watch" archive photos, reposts and collab posts; record
+  each in `excluded` with the reason.
+- Prefer a mix of views (dial, side, caseback, movement) and pages that have
+  few photos.
+- A caption that names a generation but conflicts with the tells is held,
+  with the evidence, unless the photographer's own later post or article
+  settles it; then the note says so.
+
+## Photos on a photographer's website
+
+`node scripts/web/wordpress.mjs <account>` (account = the site host with dots
+as dashes, e.g. `enicar-org`) collects the photos in a WordPress site's
+articles into `incoming/<account>/posts.json`, skipping screenshots, ads,
+auction and collector articles and anything credited to someone else, with
+reasons in `skipped.json`. The permission entry's `web` block says how to
+credit them: the owner agreed that uncredited photos on enicar.org are
+credited "enicar.org" with a link to the article they sit on. `place.mjs`
+does not handle web photos yet; add that (credit and source from the post's
+`url`) the first time one is placed.
+
 ## Answers come back
 
 For each answered photo: add it to `incoming/<account>/placements.json`

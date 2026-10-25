@@ -81,6 +81,54 @@ images:
     caption: "On its original strap."
     identified_by: caption
     identified_note: "Photographer calls it a Divette with its original Tropic strap."
+  - file: /images/sherpa-divette/v-dkuo-kgo8b5-1.webp
+    thumb: /images/sherpa-divette/v-dkuo-kgo8b5-1-sm.webp
+    width: 1250
+    height: 1250
+    alt: "Sherpa Divette with a black dial, date and red pointer ring on a white strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DKUO_kGo8B5/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Divette; caption dates it 1964."
+  - file: /images/sherpa-divette/v-cd24-j-lxy4-1.webp
+    thumb: /images/sherpa-divette/v-cd24-j-lxy4-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Divette with a black dial and red pointer ring on a red and black striped strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cd24_J-LXY4/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Divette; caption dates it 1964."
+  - file: /images/sherpa-divette/v-bmgh2ilhojt-1.webp
+    thumb: /images/sherpa-divette/v-bmgh2ilhojt-1-sm.webp
+    width: 1080
+    height: 1349
+    alt: "Sherpa Divette with a black dial and red pointer ring on a black strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/BmGH2iLHojt/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Divette."
 barometer: null
 status: draft
 gaps:

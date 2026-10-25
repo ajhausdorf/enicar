@@ -29,7 +29,87 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
-images: []
+images:
+  - file: /images/sherpa-star-diver/v-dppngjydxbt-1.webp
+    thumb: /images/sherpa-star-diver/v-dppngjydxbt-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Sherpa Star Diver with a black dial, orange and black outer bezel and day-date, without strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DPPNgjyDXbT/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Star Diver."
+  - file: /images/sherpa-star-diver/v-cqjemiblcun-1.webp
+    thumb: /images/sherpa-star-diver/v-cqjemiblcun-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Star Diver with a black dial and orange bezel on a green strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CQJemibLcuN/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Star Diver."
+  - file: /images/sherpa-star-diver/v-cj3wydklk1j-1.webp
+    thumb: /images/sherpa-star-diver/v-cj3wydklk1j-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Star Diver with a blue dial and orange bezel on a green strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CJ3WYdkLk1J/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Star Diver."
+  - file: /images/sherpa-star-diver/v-cgpg-m6hhwo-1.webp
+    thumb: /images/sherpa-star-diver/v-cgpg-m6hhwo-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Star Diver with a black dial and orange bezel on a steel bracelet, lying on a vintage advert"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CGpG-M6HHwo/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Star Diver; caption: the only Enicar he knows with a screw-down crown."
+  - file: /images/sherpa-star-diver/v-cvul1-hlcmy-1.webp
+    thumb: /images/sherpa-star-diver/v-cvul1-hlcmy-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Side view of a Sherpa Star Diver showing the tall toothed bezel and crown"
+    view: profile
+    variant: null
+    source_url: https://www.instagram.com/p/CVul1-hLcmy/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: one of two bezel versions, the taller one."
 barometer: null
 status: draft
 gaps:
