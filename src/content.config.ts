@@ -23,7 +23,10 @@ const sources = defineCollection({
   loader: file('data/sources.yaml'),
   schema: z.object({
     name: z.string(),
-    kind: z.enum(['blog', 'forum', 'essay', 'interview', 'book', 'catalogue', 'auction', 'archive', 'other']),
+    kind: z.enum(['blog', 'forum', 'essay', 'interview', 'book', 'catalogue', 'auction', 'dealer', 'archive', 'commons', 'other']),
+    // primary: research or period material. listing: a dealer or auction
+    // description, useful for reference numbers but weaker evidence.
+    tier: z.enum(['primary', 'secondary', 'listing']).default('secondary'),
     url: z.url(),
     author: z.string().nullable().default(null),
     // confirmed: we have checked who runs it and that the URL is right.
@@ -36,7 +39,7 @@ const sources = defineCollection({
 });
 
 // A citation on a record: which source, the exact page, when we read it, and
-// which fields of the record it supports (dotted paths, e.g. "movement.calibre").
+// which fields of the record it supports (dotted paths, e.g. "movement.calibres").
 const citation = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   source: reference('sources'),
@@ -46,11 +49,18 @@ const citation = z.object({
   supports: z.array(z.string()).default([])
 });
 
-const cited = z.array(z.string()).default([]);
+const cites = z.array(z.string()).default([]);
 
+// Images live in public/images/<record id>/, made by scripts/images/add-image.mjs
+// (a large and a small webp). Never hotlinked.
 const image = z.object({
   file: z.string(),
+  thumb: z.string(),
+  width: z.number().int().positive(),
+  height: z.number().int().positive(),
   alt: z.string(),
+  variant: z.string().nullable().default(null),
+  source_url: z.url(),
   view: z.enum(['dial', 'caseback', 'movement', 'profile', 'advert', 'other']),
   credit: z.string(),
   credit_url: z.url().nullable().default(null),
@@ -63,7 +73,13 @@ const references = defineCollection({
   schema: z.object({
     name: z.string(),
     family: reference('families'),
-    reference: z.string().nullable().default(null),
+    // Factory reference numbers. Each needs its own citation, because they
+    // usually come from listings rather than the main research source.
+    references: z.array(z.object({
+      number: z.string(),
+      note: z.string().nullable().default(null),
+      cites
+    })).default([]),
     nicknames: z.array(z.string()).default([]),
     kind: z.enum(['chronograph', 'diver', 'gmt', 'dress', 'sport', 'alarm', 'other']),
     years: z.object({
@@ -72,22 +88,42 @@ const references = defineCollection({
       approximate: z.boolean().default(true)
     }).default({ from: null, to: null, approximate: true }),
     movement: z.object({
-      calibre: z.string().nullable().default(null),
+      calibres: z.array(z.string()).default([]),
       winding: z.enum(['manual', 'automatic', 'quartz']).nullable().default(null)
-    }).default({ calibre: null, winding: null }),
+    }).default({ calibres: [], winding: null }),
     case: z.object({
       construction: z.string().nullable().default(null),
       material: z.string().nullable().default(null),
-      diameter_mm: z.number().positive().nullable().default(null)
-    }).default({ construction: null, material: null, diameter_mm: null }),
+      diameter_mm: z.number().positive().nullable().default(null),
+      lug_mm: z.number().positive().nullable().default(null),
+      thickness_mm: z.number().positive().nullable().default(null)
+    }).default({ construction: null, material: null, diameter_mm: null, lug_mm: null, thickness_mm: null }),
     dial: z.string().nullable().default(null),
     summary: z.string().nullable().default(null),
-    history: z.array(z.object({ text: z.string(), cites: cited })).default([]),
+    history: z.array(z.object({ text: z.string(), cites })).default([]),
+    // Generations or variants. Specs that differ between them live here,
+    // covered by the variant's own cites.
     variants: z.array(z.object({
       name: z.string(),
-      years: z.string().nullable().default(null),
+      years: z.object({ from: z.number().int().nullable().default(null), to: z.number().int().nullable().default(null) }).default({ from: null, to: null }),
       tell: z.string(),
-      cites: cited
+      diameter_mm: z.number().positive().nullable().default(null),
+      lug_mm: z.number().positive().nullable().default(null),
+      calibres: z.array(z.string()).default([]),
+      case: z.string().nullable().default(null),
+      hands: z.string().nullable().default(null),
+      bezel: z.string().nullable().default(null),
+      dials: z.array(z.string()).default([]),
+      crowns: z.string().nullable().default(null),
+      cites
+    })).default([]),
+    // Links out to the writing this record draws on. We link to the story
+    // rather than retelling it.
+    read_more: z.array(z.object({
+      title: z.string(),
+      url: z.url(),
+      source: reference('sources'),
+      note: z.string().nullable().default(null)
     })).default([]),
     images: z.array(image).default([]),
     barometer: z.object({

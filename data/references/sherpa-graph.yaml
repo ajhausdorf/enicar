@@ -7,7 +7,7 @@ reference: null
 nicknames: [Jim Clark]
 kind: chronograph
 years: { from: null, to: null, approximate: true }
-movement: { calibre: Valjoux 72, winding: manual }
+movement: { calibres: [Valjoux 72], winding: manual }
 case: { construction: EPSA Super-Compressor, material: null, diameter_mm: null }
 dial: null
 summary: Enicar's three-register chronograph, closely associated with the racing driver Jim Clark.

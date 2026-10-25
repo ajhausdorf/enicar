@@ -14,6 +14,8 @@ function htmlFiles(dir) {
   });
 }
 
+const decode = (html) => html.replace(/&(amp|quot|#34|#39|lt|gt);/g, (_, e) => ({ amp: '&', quot: '"', '#34': '"', '#39': "'", lt: '<', gt: '>' })[e]);
+
 function resolves(urlPath) {
   const clean = decodeURIComponent(urlPath.split(/[?#]/)[0]);
   const p = join(DIST, clean);
@@ -28,8 +30,8 @@ export function checkSite() {
   for (const { id, data } of refs) {
     const page = join(DIST, 'ref', id, 'index.html');
     if (!existsSync(page)) { r.error(`/ref/${id}/`, 'page missing'); continue; }
-    const html = readFileSync(page, 'utf8');
-    if (!html.includes(data.name.replace(/&/g, '&amp;'))) r.error(`/ref/${id}/`, `page does not show the record name "${data.name}"`);
+    const html = decode(readFileSync(page, 'utf8'));
+    if (!html.includes(data.name)) r.error(`/ref/${id}/`, `page does not show the record name "${data.name}"`);
     if (data.status === 'draft' && !html.includes('Draft record.')) r.error(`/ref/${id}/`, 'draft record is missing its draft notice');
   }
 

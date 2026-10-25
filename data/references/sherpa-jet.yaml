@@ -1,12 +1,101 @@
-# DRAFT stub: name and family only. Everything else needs research.
 name: Sherpa Jet
 family: sherpa
 kind: gmt
+summary: The smaller GMT of the Sherpa line, 36 mm (37 mm for the MkIV), with an inner 24-hour bezel, made in four generations from 1963 into the 1970s. The larger sister model is the Sherpa Super-Jet.
+references:
+  - number: 126/002
+    note: From a dealer listing (36.5 mm case); not yet matched to a generation.
+    cites: [ct-126-002]
+nicknames: []
+years: { from: 1963, to: null, approximate: true }
+movement:
+  calibres: [AR1126, AR1146, AR166]
+  winding: automatic
+case:
+  construction: EPSA bayonet-compressor
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+dial: null
+variants:
+  - name: MkI
+    years: { from: 1963, to: 1966 }
+    tell: Dauphine hands on the earliest examples, paddle hands from about 1965; red crescent-moon GMT indicator.
+    diameter_mm: 36
+    lug_mm: 18.5
+    calibres: [AR1126]
+    case: EPSA bayonet-compressor
+    hands: Dauphine, later paddle
+    bezel: Inner 24-hour, aluminium insert, silver 6 to 18 and black 18 to 6
+    dials: [Black, Silver]
+    crowns: Thin compressor, crosshatch, Saturn logo
+    cites: [eo-jet]
+  - name: MkII
+    years: { from: 1966, to: 1968 }
+    tell: Wider hands, trimmed markers at the cardinal positions, a fuller logo.
+    diameter_mm: 36
+    lug_mm: 19
+    calibres: [AR1146, AR1126]
+    case: EPSA bayonet-compressor
+    hands: Tuning fork, slim orange or yellow tipped GMT hand
+    bezel: Inner 24-hour, slightly thicker, updated numerals
+    dials: [Black sunburst, Silver sunburst, Champagne sunburst]
+    crowns: Thin or thick compressor, crosshatch, Saturn logo
+    cites: [eo-jet]
+  - name: MkIII
+    years: { from: 1968, to: 1970 }
+    tell: Red and black checkered GMT hand and coloured bezels, including red and blue.
+    diameter_mm: 36
+    lug_mm: 19
+    calibres: [AR1146, AR166]
+    case: EPSA bayonet-compressor
+    hands: Baton, lollipop or orange triangle seconds, checkered GMT hand
+    bezel: Inner 24-hour in several colourways, red and blue among them
+    dials: [Matte black, Silver, Champagne, Racing dial (two versions)]
+    crowns: Thick compressor, crosshatch or smooth, Saturn logo
+    cites: [eo-jet]
+  - name: MkIV
+    years: { from: 1970, to: null }
+    tell: Cushion case and racing dial with applied logo.
+    diameter_mm: 37
+    lug_mm: 19
+    calibres: [AR166]
+    case: Cushion case
+    hands: Large batons, orange-tipped arrow seconds, checkered GMT hand
+    bezel: Inner red and blue, yellow markers at the quarter hours
+    dials: [Racing dial, applied logo]
+    crowns: Thick smooth compressor, Saturn logo
+    cites: [eo-jet]
+read_more:
+  - title: Exploring the Enicar Sherpa (Super-)Jet
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    source: enicar-org
+    note: Martijn van der Ven's full history of the Jet and Super-Jet, with photos of every generation.
+  - title: "Coming up: Enicar GMT's and the Jet Age"
+    url: https://enicar.org/2024/11/18/coming-up-enicar-gmts-and-the-jet-age/
+    source: enicar-org
+    note: Enicar's GMT watches and the airline partnerships of the 1960s.
+images: []
+barometer: null
 status: draft
 gaps:
-  - Factory reference numbers
-  - Production years
-  - Movement
-  - Case
-  - Citations
+  - Photographs (none with permission yet)
+  - Price (barometer figures need enicar.org's permission; sales data not started)
+  - Reference numbers per generation
+  - Case material
+  - Second source for the generation specs
+citations:
+  - id: eo-jet
+    source: enicar-org
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    title: Exploring the Enicar Sherpa (Super-)Jet
+    retrieved: 2026-10-25
+    supports: [years.from, movement.calibres, movement.winding, case.construction]
+  - id: ct-126-002
+    source: craft-and-tailored
+    url: https://www.craftandtailored.com/collections/timepiece-archive/products/1960s-enicar-sherpa-jet-gmt-ref-126-002-black-dial
+    title: 1960s Enicar Sherpa Jet GMT ref 126/002, black dial
+    retrieved: 2026-10-25
+    supports: []
 last_reviewed: 2026-10-25

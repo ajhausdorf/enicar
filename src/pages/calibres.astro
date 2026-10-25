@@ -6,8 +6,8 @@ import { href } from '../lib/site';
 const refs = await getCollection('references');
 const groups = new Map<string, typeof refs>();
 for (const r of refs) {
-  const key = r.data.movement.calibre ?? 'Unknown calibre';
-  groups.set(key, [...(groups.get(key) ?? []), r]);
+  const keys = r.data.movement.calibres.length ? r.data.movement.calibres : ['Unknown calibre'];
+  for (const key of keys) groups.set(key, [...(groups.get(key) ?? []), r]);
 }
 const sorted = [...groups.entries()].sort(([a], [b]) => (a === 'Unknown calibre' ? 1 : b === 'Unknown calibre' ? -1 : a.localeCompare(b)));
 ---

@@ -2,19 +2,21 @@
 //
 // Every record:
 //   - citations have unique ids and point at a known source
-//   - history, variant and barometer cites point at a citation on the record
+//   - history, variant, reference-number and barometer cites point at a
+//     citation on the record; read_more links name a known source
 //   - images exist on disk and carry credit, licence and permission
 //   - no placeholder text like "[confirm]" or "TODO" in any field
 // Verified records, additionally:
 //   - every populated fact field is listed in some citation's `supports`
-//   - every history paragraph and variant cites at least one citation
+//   - every reference number, history paragraph and variant cites something
 //   - no open gaps
 import { loadReferences, loadSources, get, isPopulated, Report, existsSync, join, ROOT } from './lib.mjs';
 
 // Fact fields that must be backed by a citation once a record is verified.
+// List items (references, variants, history) carry their own `cites` instead.
 export const FACT_FIELDS = [
-  'reference', 'nicknames', 'years.from', 'years.to', 'movement.calibre', 'movement.winding',
-  'case.construction', 'case.material', 'case.diameter_mm', 'dial'
+  'nicknames', 'years.from', 'years.to', 'movement.calibres', 'movement.winding',
+  'case.construction', 'case.material', 'case.diameter_mm', 'case.lug_mm', 'case.thickness_mm', 'dial'
 ];
 
 const PLACEHOLDER = /\[(confirm|tbc|tbd|todo|source|date|price|ref|low|high|n|edition)[^\]]*\]|\bTODO\b|\bTBC\b|lorem ipsum/i;
@@ -48,12 +50,21 @@ export function checkSources() {
     };
     (d.history ?? []).forEach((p, i) => checkCites(p.cites, `history[${i}]`));
     (d.variants ?? []).forEach((v, i) => checkCites(v.cites, `variant "${v.name}"`));
+    (d.references ?? []).forEach((x) => checkCites(x.cites, `reference ${x.number}`));
+    for (const m of d.read_more ?? []) {
+      if (!sourceIds.has(m.source)) r.error(where, `read_more "${m.title}" points at unknown source "${m.source}"`);
+    }
     if (d.barometer) checkCites([d.barometer.cite], 'barometer');
 
     for (const [i, img] of (d.images ?? []).entries()) {
       if (!img.credit || !img.license || !img.permission) r.error(where, `images[${i}] needs credit, license and permission`);
-      if (img.file && img.file.startsWith('/') && !existsSync(join(ROOT, 'public', img.file))) r.error(where, `images[${i}] file ${img.file} not found under public/`);
-      if (img.file && /^https?:/.test(img.file)) r.error(where, `images[${i}] must be a local file under public/images, not a hotlink`);
+      for (const key of ['file', 'thumb']) {
+        const f = img[key];
+        if (!f) continue;
+        if (/^https?:/.test(f)) r.error(where, `images[${i}].${key} must be a local file under public/images, not a hotlink`);
+        else if (!f.startsWith(`/images/${id}/`)) r.error(where, `images[${i}].${key} must live in /images/${id}/`);
+        else if (!existsSync(join(ROOT, 'public', f))) r.error(where, `images[${i}].${key} ${f} not found under public/ (use scripts/images/add-image.mjs)`);
+      }
     }
 
     walkStrings(d, '', (path, s) => {
@@ -67,6 +78,7 @@ export function checkSources() {
       }
       (d.history ?? []).forEach((p, i) => { if (!p.cites?.length) r.error(where, `verified record: history[${i}] has no citation`); });
       (d.variants ?? []).forEach((v) => { if (!v.cites?.length) r.error(where, `verified record: variant "${v.name}" has no citation`); });
+      (d.references ?? []).forEach((x) => { if (!x.cites?.length) r.error(where, `verified record: reference ${x.number} has no citation`); });
       if (d.gaps?.length) r.error(where, 'verified record still lists gaps; resolve them or keep it as draft');
       if (!citations.length) r.error(where, 'verified record has no citations');
     } else if (d.status === 'draft') {

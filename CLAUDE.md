@@ -46,16 +46,35 @@ why it is a false alarm and stop.
 3. **Unknown stays null.** Never guess a reference number, year or size. Use
    `null` and add a gap. Never write placeholders like `[confirm]`; the check
    rejects them.
-4. **Write in our own words.** Summarise sources; don't copy paragraphs.
-   Short quotes only, attributed. enicar.org's barometer figures are only
-   published once the owner confirms permission (`permission: granted` on the
-   source).
+4. **Link to the writing, don't retell it.** The owner's priorities for a
+   record are the watch, its images, its specs and its price. Stories and
+   descriptions belong to their authors: put them in `read_more` with a
+   one-line note, and leave `history` empty unless we have something of our
+   own to say. Specs are facts and can be recorded, cited, in our own terse
+   wording; never reuse a source's phrasing, even for a single spec. The
+   `summary` is one or two plain sentences of our own. enicar.org's barometer
+   figures are only published once the owner confirms permission
+   (`permission: granted` on the source).
 5. **When sources disagree,** record the version best supported, cite both,
    and say so in the history text.
 6. **Images** need `credit`, `license` and `permission` (`own`, `granted`,
-   `cc`, `public-domain`). No scraped auction or marketplace photos. A photo
-   from an issue is usable only if both permission boxes were ticked.
-7. **Bump `last_reviewed`** on any record you touch.
+   `cc`, `public-domain`). No scraped auction or marketplace photos, and no
+   photos from enicar.org or Instagram without the photographer's own
+   permission. A photo from an issue is usable only if both permission boxes
+   were ticked. Add images only with the tool, which stores a large and a
+   small webp in `public/images/<id>/` and prints the entry to paste:
+   `node scripts/images/add-image.mjs <id> <url-or-file> <name> --credit ...
+   --license ... --permission ... --source-url ... --alt ...`. Look at the
+   result before using it, and write alt text from what the photo shows.
+   Openly licensed photos: search Wikimedia Commons by API
+   (`list=search&srnamespace=6&srsearch=intitle:Enicar`).
+7. **Generations go in `variants`.** When specs differ by generation (size,
+   calibre, bezel), leave the top-level field null and record them per
+   variant; the page builds a comparison table from them. Reference numbers
+   go in `references`, each with its own citation, and dealer listings are
+   `tier: listing` sources: fine for reference numbers, weak for anything
+   else.
+8. **Bump `last_reviewed`** on any record you touch.
 
 ## The checks
 

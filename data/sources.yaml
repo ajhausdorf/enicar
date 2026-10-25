@@ -3,20 +3,44 @@
 - id: enicar-org
   name: enicar.org
   kind: blog
+  tier: primary
   url: https://enicar.org/
-  author: null
-  status: to-confirm
-  what: A long-running research blog on vintage Enicar, with articles on individual references, dating and a price barometer.
-  use: Reference pages, production dates, nicknames and, with permission, barometer ranges.
-  leads_to: []
+  author: Martijn van der Ven
+  status: confirmed
+  what: Research blog on Enicar S.A. by collector Martijn van der Ven, with articles on individual models, generations and dating, plus a periodic watch value barometer.
+  use: Specs and generation breakdowns, cited per page. We link to his articles for the story rather than retelling it.
+  leads_to: [Enicar book MkIII, Enicar 101, Vintage Enicar, Enicar Forums]
   permission: not-asked
 - id: watchuseek
   name: WatchUSeek Enicar collecting thread
   kind: forum
+  tier: secondary
   url: https://www.watchuseek.com/
   author: null
   status: to-confirm
   what: Owner-posted examples and discussion of dial, hand and case variants.
   use: Variant tells and caseback or serial observations.
+  leads_to: []
+  permission: not-needed
+- id: craft-and-tailored
+  name: Craft & Tailored
+  kind: dealer
+  tier: listing
+  url: https://www.craftandtailored.com/
+  author: null
+  status: confirmed
+  what: Vintage watch dealer whose listings give reference numbers and case sizes.
+  use: Reference numbers only, until a catalogue or primary source confirms them.
+  leads_to: []
+  permission: not-needed
+- id: wikimedia-commons
+  name: Wikimedia Commons
+  kind: commons
+  tier: secondary
+  url: https://commons.wikimedia.org/
+  author: null
+  status: confirmed
+  what: Freely licensed media repository. Uploaders describe their own photos.
+  use: Openly licensed photographs, with the uploader's description as a weak source for specs.
   leads_to: []
   permission: not-needed
