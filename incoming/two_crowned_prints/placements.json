@@ -858,5 +858,25 @@
   "by": "tells",
   "note": "Tachymetre ring blank between 60 and 300 (the owner checked the photo), large early logo, long-tipped paddle hands and a straight red chronograph hand: the MkIb tells on Enicar 101.",
   "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "DAbGn2pOnZ__01",
+  "variant": "MkII",
+  "alt": "Sherpa Graph with an all black dial, black registers and paddle hands on a black strap, on the wrist",
+  "caption": null,
+  "by": "caption",
+  "note": "The photographer confirmed it is a MkIIb (our MkII, which covers MkIIa and MkIIb) in a message to the owner, 2026-10-25. Enicar 101 lists the all black dial for the MkIIb.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "C--axwuJAWl_01",
+  "variant": "MkIc",
+  "alt": "Sherpa Graph with a white dial, white registers and Tachymetre ring on a white strap, on the wrist",
+  "caption": "The chronograph hand has no red paint, and the photographer was told it has always been that way.",
+  "by": "caption",
+  "note": "The photographer confirmed it is a MkIc in a message to the owner, 2026-10-25. The ring and large logo match the MkIc tells; the unpainted chronograph hand is unusual for the generation.",
+  "view": "dial"
  }
 ]
