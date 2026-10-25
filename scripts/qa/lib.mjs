@@ -32,6 +32,10 @@ export function loadSources() {
   return loadYaml(join(ROOT, 'data/sources.yaml')) ?? [];
 }
 
+export function loadPermissions() {
+  return loadYaml(join(ROOT, 'data/permissions.yaml')) ?? [];
+}
+
 export function loadFamilies() {
   return loadYaml(join(ROOT, 'data/families.yaml')) ?? [];
 }

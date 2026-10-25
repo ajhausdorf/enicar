@@ -76,7 +76,21 @@ read_more:
     url: https://enicar.org/2024/11/18/coming-up-enicar-gmts-and-the-jet-age/
     source: enicar-org
     note: Enicar's GMT watches and the airline partnerships of the 1960s.
-images: []
+images:
+  - file: /images/sherpa-jet/mki-black-two-crowned-prints.webp
+    thumb: /images/sherpa-jet/mki-black-two-crowned-prints-sm.webp
+    width: 1278
+    height: 1424
+    alt: "Sherpa Jet MkI with a black dial, black and silver 24-hour bezel, red GMT hand, date at 3 and two crowns, on a black rubber strap"
+    view: dial
+    variant: "MkI"
+    source_url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article
@@ -109,7 +123,7 @@ photos_elsewhere:
 barometer: null
 status: draft
 gaps:
-  - Photographs we can show here (linked below until photographers give permission)
+  - Photos of the other generations (linked below until photographers give permission)
   - Price (barometer figures need enicar.org's permission; sales data not started)
   - Reference numbers per generation
   - Case material
