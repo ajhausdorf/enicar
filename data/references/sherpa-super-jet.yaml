@@ -298,6 +298,230 @@ images:
     caption: null
     identified_by: source
     identified_note: "The enicar.org Jet article shows this photo as a Sherpa Super-Jet MkII."
+  - file: /images/sherpa-super-jet/v-dtztch3jxrq-1.webp
+    thumb: /images/sherpa-super-jet/v-dtztch3jxrq-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a black dial in its original green box"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/DTztcH3jXRq/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: MkI with the AR1126, 33 jewels version."
+  - file: /images/sherpa-super-jet/v-dtztch3jxrq-2.webp
+    thumb: /images/sherpa-super-jet/v-dtztch3jxrq-2-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a black dial on a grey strap in an open green Enicar box"
+    view: other
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/DTztcH3jXRq/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: MkI with the AR1126."
+  - file: /images/sherpa-super-jet/v-ce6becylbys-1.webp
+    thumb: /images/sherpa-super-jet/v-ce6becylbys-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a silver dial, black and white 24-hour scale and red and black checkered GMT hand, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/Ce6BecyLByS/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: "tells"
+    identified_note: "Checkered GMT hand; caption dates it 1968."
+  - file: /images/sherpa-super-jet/v-dtz6c4qdw-r-1.webp
+    thumb: /images/sherpa-super-jet/v-dtz6c4qdw-r-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a silver dial and red and black checkered GMT hand on a green canvas strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/DTZ6c4qDW-r/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: "tells"
+    identified_note: "Checkered GMT hand."
+  - file: /images/sherpa-super-jet/v-cjsomqglmnz-1.webp
+    thumb: /images/sherpa-super-jet/v-cjsomqglmnz-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a black racing dial, checkered GMT hand and black and white 24-hour scale on a blue strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CJsoMQGLMNZ/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Checkered GMT hand. This 2021 caption says MkII; his later posts of the same racing-dial watch (DRZmPlrjPwc, DL-c1zMImYG) call it MkIII."
+  - file: /images/sherpa-super-jet/v-cjsomqglmnz-5.webp
+    thumb: /images/sherpa-super-jet/v-cjsomqglmnz-5-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Caseback of a Sherpa Super-Jet with an engraved Sherpa medallion and a service sticker"
+    view: caseback
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CJsoMQGLMNZ/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Same watch as CJsoMQGLMNZ_01."
+  - file: /images/sherpa-super-jet/v-drzmplrjpwc-1.webp
+    thumb: /images/sherpa-super-jet/v-drzmplrjpwc-1-sm.webp
+    width: 1391
+    height: 1391
+    alt: "Sherpa Super-Jet with a black racing dial and checkered GMT hand on a blue leather strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/DRZmPlrjPwc/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: 1968 Super-Jet MkIII with racing dial."
+  - file: /images/sherpa-super-jet/v-cbnqztpqt-d-1.webp
+    thumb: /images/sherpa-super-jet/v-cbnqztpqt-d-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet with a black dial, checkered GMT hand and black and white 24-hour scale"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CbNQzTPqt_D/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Checkered GMT hand."
+  - file: /images/sherpa-super-jet/v-c1w1wrcnm6n-1.webp
+    thumb: /images/sherpa-super-jet/v-c1w1wrcnm6n-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet in the cushion case with a black dial and black, white and yellow 24-hour bezel, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/C1w1WRCNM6n/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV."
+  - file: /images/sherpa-super-jet/v-ckdorzdlzhw-1.webp
+    thumb: /images/sherpa-super-jet/v-ckdorzdlzhw-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet in the cushion case with a black dial and checkered GMT hand, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CkDorZDLZHw/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV."
+  - file: /images/sherpa-super-jet/v-cxv-e-rshu3-1.webp
+    thumb: /images/sherpa-super-jet/v-cxv-e-rshu3-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet in the cushion case seen from an angle, black dial with checkered GMT hand"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CXv-e_Rshu3/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV."
+  - file: /images/sherpa-super-jet/v-ctceea7rsuh-1.webp
+    thumb: /images/sherpa-super-jet/v-ctceea7rsuh-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet in the cushion case with a black dial and yellow and black bezel, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CTCEEa7rSuH/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV. Caption: AR166 movement."
+  - file: /images/sherpa-super-jet/v-bzyxrqtiewt-1.webp
+    thumb: /images/sherpa-super-jet/v-bzyxrqtiewt-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet in the cushion case with a black dial, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/BzYXRQTIeWT/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV."
+  - file: /images/sherpa-super-jet/v-bmxbm5nnrrx-1.webp
+    thumb: /images/sherpa-super-jet/v-bmxbm5nnrrx-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Super-Jet in the cushion case on a yellow and navy striped strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/Bmxbm5nnrrX/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article

@@ -21,7 +21,103 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
-images: []
+images:
+  - file: /images/sherpa-guide/v-dh0pxxtov-n-1.webp
+    thumb: /images/sherpa-guide/v-dh0pxxtov-n-1-sm.webp
+    width: 1169
+    height: 1137
+    alt: "Sherpa Guide with a silver dial marked 33, world-city outer bezel and red GMT hand, on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DH0pxXtoV-N/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Guide; caption dates it 1960."
+  - file: /images/sherpa-guide/v-dhqejuaiqph-1.webp
+    thumb: /images/sherpa-guide/v-dhqejuaiqph-1-sm.webp
+    width: 845
+    height: 845
+    alt: "Sherpa Guide with a black dial, yellow and white inner 24-hour bezel and world-city outer bezel on a steel bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DHQeJUAIQpH/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Guide."
+  - file: /images/sherpa-guide/v-cqbdwxtngpn-1.webp
+    thumb: /images/sherpa-guide/v-cqbdwxtngpn-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Guide with a black dial, orange pointer and world-city bezel, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CqBDwxtNgpN/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Guide."
+  - file: /images/sherpa-guide/v-cay5csnraex-1.webp
+    thumb: /images/sherpa-guide/v-cay5csnraex-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Guide with a black dial, cream inner 24-hour bezel and red GMT hand on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cay5CsNraEX/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Guide."
+  - file: /images/sherpa-guide/v-cu5inhcss9f-1.webp
+    thumb: /images/sherpa-guide/v-cu5inhcss9f-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Guide with a silver dial marked 33 and world-city bezel on a grey striped strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CU5iNHcss9f/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Guide."
+  - file: /images/sherpa-guide/v-cszuiord7ij-1.webp
+    thumb: /images/sherpa-guide/v-cszuiord7ij-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Guide with a blue dial, yellow inner bezel and world-city outer bezel on a navy rally strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CSZuIORD7ij/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Guide; caption dates it 1969."
 status: draft
 gaps:
   - Production years

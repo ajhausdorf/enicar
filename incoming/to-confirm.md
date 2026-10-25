@@ -291,6 +291,71 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   The black-dial Ultrasonic from their own collection: which model or reference?
   - Dial reads Enicar Ultrasonic; no model or reference given.
 
+## @vandervenus (18 photos)
+
+### Which generation?
+
+- **https://www.instagram.com/p/CaUwq-HLlPq/** (photos 1, 2, 3, 4) · sherpa-super-jet · our guess: MkIII
+  The black-dial Super-Jet you sold in consignment in 2022: your caption says MkII, but it has a checkered GMT hand. MkII or MkIII? And are these your photos?
+  - Caption: 1968 Sherpa Super-Jet MkII, sold in consignment.
+  - The GMT hand is the red and black checkered hand, the MkIII tell in your Jet article.
+- **https://www.instagram.com/p/Bq67A_3HuGE/** · sherpa-graph · our guess: MkI
+  Your Sherpa Graph MkI posts (Bq67A_3HuGE, B21Hpi4oJhJ, COQL6MGLznL, CahL-_RL6un): which generation is each: MkI, MkIb, MkIc or MkId? The serial number would settle it.
+  - Captions say MkI; two of them date it 1961.
+  - The production table splits it into MkI (1960), MkIb (1961), MkIc and MkId (1962) by serial range only, so the dial alone does not decide it.
+- **https://www.instagram.com/p/B21Hpi4oJhJ/** · sherpa-graph · our guess: MkI
+  Which MkI sub-generation (see Bq67A_3HuGE)?
+  - Caption: Sherpa Graph MkI, 1961 execution.
+  - Sub-generations differ by serial range only.
+- **https://www.instagram.com/p/COQL6MGLznL/** · sherpa-graph · our guess: MkI
+  Which MkI sub-generation (see Bq67A_3HuGE)?
+  - Caption: Sherpa Graph MkI, 1961.
+  - Sub-generations differ by serial range only.
+- **https://www.instagram.com/p/CahL-_RL6un/** · sherpa-graph · our guess: MkI
+  Which MkI sub-generation (see Bq67A_3HuGE)?
+  - Caption: Sherpa Graph MkI, full set sold in 2017.
+  - Sub-generations differ by serial range only.
+- **https://www.instagram.com/p/CXGfWwYrdMI/** · sherpa-aqua-graph
+  Which generation is this, and do you know its serial number?
+  - Caption: 1968 Aqua Graph with red pointer ring.
+  - Aqua Graph generations are defined by serial range only in the production table; in the production table only the MkIV (3/68 to 5/69) covers 1968, though his captions also call 1968 watches MkII and MkIII.
+- **https://www.instagram.com/p/Cipa5o0rbG3/** · sherpa-aqua-graph
+  Which generation is this, and do you know its serial number?
+  - Caption: all black dial Aqua Graph from his archive, no year.
+  - Generations differ by serial range only.
+- **https://www.instagram.com/p/DCuYpW7O9cy/** · sherpa-jet-graph
+  Which generation is this, and do you know its serial number?
+  - Caption names the Jet Graph, no generation or year.
+  - Jet Graph generations are defined by serial range only in the production table.
+- **https://www.instagram.com/p/CrQeLYStnUu/** · sherpa-jet-graph
+  Which generation is this, and do you know its serial number?
+  - Caption names the Jet Graph, no generation or year.
+  - Generations differ by serial range only.
+- **https://www.instagram.com/p/BzGkRaeoXAV/** · sherpa-jet-graph
+  Which generation is this, and do you know its serial number?
+  - Caption names the Jet-Graph, no generation or year.
+  - Generations differ by serial range only.
+- **https://www.instagram.com/p/CAsvy8QnL5t/** · sherpa-jet-graph
+  Which generation is this, and do you know its serial number?
+  - Caption names the Jet Graph, no generation or year; the bezel has a red and blue section.
+  - Generations differ by serial range only.
+- **https://www.instagram.com/p/Cb6--RmMvI2/** · sherpa-super-jet · our guess: MkII
+  Your caption calls this Super-Jet a MkI, but it looks like a MkII to us. Which is it?
+  - Caption: Super-Jet MkI from the early 1960s.
+  - Slim yellow-tipped GMT hand and wider hands, the MkII tells in your Jet article.
+  - No 33 on the dial.
+- **https://www.instagram.com/p/BgoZn-PlRSW/** · sherpa-super-jet · our guess: MkII
+  Same question as Cb6--RmMvI2: MkI as captioned, or MkII?
+  - Caption: MkI Super-Jet.
+  - Slim yellow-tipped GMT hand, no 33 on the dial: MkII tells.
+
+### Which model?
+
+- **https://www.instagram.com/p/DHigeGXoDlr/** (photos 1, 3) · ocean-pearl
+  Your new old stock watch with case ref 160-54-30 is captioned Ocean Pearl, but the dial reads Star Jewels. Where does it belong?
+  - Caption: full set NOS Enicar Ocean Pearl, case ref 160-54-30, 38 mm.
+  - The dial reads Star Jewels, not Ocean Pearl.
+
 ---
 
 Generation tells used for Jets and Super-Jets, from Martijn van der Ven's Jet article (enicar.org): MkI paddle or dauphine hands, '33 jewels' dial, red crescent GMT hand (Jet) or red-tipped needle GMT hand (Super-Jet); MkII tuning-fork hands, slim orange or yellow-tipped GMT hand, sunburst dials; MkIII red and black checkered GMT hand, coloured bezels; MkIV cushion case.

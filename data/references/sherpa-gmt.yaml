@@ -29,7 +29,87 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
-images: []
+images:
+  - file: /images/sherpa-gmt/v-c3mqdx8t1ju-1.webp
+    thumb: /images/sherpa-gmt/v-c3mqdx8t1ju-1-sm.webp
+    width: 1370
+    height: 1370
+    alt: "Sherpa GMT with a cream dial, red GMT hand and black and silver outer 24-hour bezel, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/C3mqdx8t1jU/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa GMT; caption dates it 1960."
+  - file: /images/sherpa-gmt/v-cpetbynluzd-1.webp
+    thumb: /images/sherpa-gmt/v-cpetbynluzd-1-sm.webp
+    width: 1037
+    height: 1025
+    alt: "Sherpa GMT with a silver dial, red arrow GMT hand and black and silver outer 24-hour bezel"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CpetbYNLuzd/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa GMT; caption: 1960, AR1126."
+  - file: /images/sherpa-gmt/v-bl0cky8hixt-1.webp
+    thumb: /images/sherpa-gmt/v-bl0cky8hixt-1-sm.webp
+    width: 1080
+    height: 1349
+    alt: "Sherpa GMT with a silver dial and black and silver outer 24-hour bezel on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Bl0Cky8HIxT/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa GMT; caption dates it 1957."
+  - file: /images/sherpa-gmt/v-bl5aixqhx-y-1.webp
+    thumb: /images/sherpa-gmt/v-bl5aixqhx-y-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa GMT from the front and both sides, silver dial and black and silver bezel"
+    view: other
+    variant: null
+    source_url: https://www.instagram.com/p/Bl5aiXqHX_y/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa GMT."
+  - file: /images/sherpa-gmt/v-bzaznw-o8de-1.webp
+    thumb: /images/sherpa-gmt/v-bzaznw-o8de-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Sherpa GMT with a silver dial on a black and red striped strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/BzAZnw_o8dE/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa GMT."
 barometer: null
 status: draft
 gaps:

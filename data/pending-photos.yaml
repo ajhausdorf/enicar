@@ -879,6 +879,179 @@ pending:
     question: "The black-dial Ultrasonic from their own collection: which model or reference?"
     evidence:
       - Dial reads Enicar Ultrasonic; no model or reference given.
+  - account: vandervenus
+    post: https://www.instagram.com/p/CaUwq-HLlPq/
+    code: CaUwq-HLlPq
+    photos:
+      - 1
+      - 2
+      - 3
+      - 4
+    model: sherpa-super-jet
+    guess: MkIII
+    kind: generation
+    question: "The black-dial Super-Jet you sold in consignment in 2022: your caption says MkII, but it has a checkered GMT hand. MkII or MkIII? And are these your photos?"
+    evidence:
+      - "Caption: 1968 Sherpa Super-Jet MkII, sold in consignment."
+      - The GMT hand is the red and black checkered hand, the MkIII tell in your Jet article.
+  - account: vandervenus
+    post: https://www.instagram.com/p/Bq67A_3HuGE/
+    code: Bq67A_3HuGE
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: MkI
+    kind: generation
+    question: "Your Sherpa Graph MkI posts (Bq67A_3HuGE, B21Hpi4oJhJ, COQL6MGLznL, CahL-_RL6un): which generation is each: MkI, MkIb, MkIc or MkId? The serial number would settle it."
+    evidence:
+      - Captions say MkI; two of them date it 1961.
+      - The production table splits it into MkI (1960), MkIb (1961), MkIc and MkId (1962) by serial range only, so the dial alone does not decide it.
+  - account: vandervenus
+    post: https://www.instagram.com/p/B21Hpi4oJhJ/
+    code: B21Hpi4oJhJ
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: MkI
+    kind: generation
+    question: Which MkI sub-generation (see Bq67A_3HuGE)?
+    evidence:
+      - "Caption: Sherpa Graph MkI, 1961 execution."
+      - Sub-generations differ by serial range only.
+  - account: vandervenus
+    post: https://www.instagram.com/p/COQL6MGLznL/
+    code: COQL6MGLznL
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: MkI
+    kind: generation
+    question: Which MkI sub-generation (see Bq67A_3HuGE)?
+    evidence:
+      - "Caption: Sherpa Graph MkI, 1961."
+      - Sub-generations differ by serial range only.
+  - account: vandervenus
+    post: https://www.instagram.com/p/CahL-_RL6un/
+    code: CahL-_RL6un
+    photos:
+      - 1
+    model: sherpa-graph
+    guess: MkI
+    kind: generation
+    question: Which MkI sub-generation (see Bq67A_3HuGE)?
+    evidence:
+      - "Caption: Sherpa Graph MkI, full set sold in 2017."
+      - Sub-generations differ by serial range only.
+  - account: vandervenus
+    post: https://www.instagram.com/p/CXGfWwYrdMI/
+    code: CXGfWwYrdMI
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: Which generation is this, and do you know its serial number?
+    evidence:
+      - "Caption: 1968 Aqua Graph with red pointer ring."
+      - Aqua Graph generations are defined by serial range only in the production table; in the production table only the MkIV (3/68 to 5/69) covers 1968, though his captions also call 1968 watches MkII and MkIII.
+  - account: vandervenus
+    post: https://www.instagram.com/p/Cipa5o0rbG3/
+    code: Cipa5o0rbG3
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: Which generation is this, and do you know its serial number?
+    evidence:
+      - "Caption: all black dial Aqua Graph from his archive, no year."
+      - Generations differ by serial range only.
+  - account: vandervenus
+    post: https://www.instagram.com/p/DCuYpW7O9cy/
+    code: DCuYpW7O9cy
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: Which generation is this, and do you know its serial number?
+    evidence:
+      - Caption names the Jet Graph, no generation or year.
+      - Jet Graph generations are defined by serial range only in the production table.
+  - account: vandervenus
+    post: https://www.instagram.com/p/CrQeLYStnUu/
+    code: CrQeLYStnUu
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: Which generation is this, and do you know its serial number?
+    evidence:
+      - Caption names the Jet Graph, no generation or year.
+      - Generations differ by serial range only.
+  - account: vandervenus
+    post: https://www.instagram.com/p/BzGkRaeoXAV/
+    code: BzGkRaeoXAV
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: Which generation is this, and do you know its serial number?
+    evidence:
+      - Caption names the Jet-Graph, no generation or year.
+      - Generations differ by serial range only.
+  - account: vandervenus
+    post: https://www.instagram.com/p/CAsvy8QnL5t/
+    code: CAsvy8QnL5t
+    photos:
+      - 1
+    model: sherpa-jet-graph
+    guess: null
+    kind: generation
+    question: Which generation is this, and do you know its serial number?
+    evidence:
+      - Caption names the Jet Graph, no generation or year; the bezel has a red and blue section.
+      - Generations differ by serial range only.
+  - account: vandervenus
+    post: https://www.instagram.com/p/Cb6--RmMvI2/
+    code: Cb6--RmMvI2
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: MkII
+    kind: generation
+    question: Your caption calls this Super-Jet a MkI, but it looks like a MkII to us. Which is it?
+    evidence:
+      - "Caption: Super-Jet MkI from the early 1960s."
+      - Slim yellow-tipped GMT hand and wider hands, the MkII tells in your Jet article.
+      - No 33 on the dial.
+  - account: vandervenus
+    post: https://www.instagram.com/p/BgoZn-PlRSW/
+    code: BgoZn-PlRSW
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: MkII
+    kind: generation
+    question: "Same question as Cb6--RmMvI2: MkI as captioned, or MkII?"
+    evidence:
+      - "Caption: MkI Super-Jet."
+      - "Slim yellow-tipped GMT hand, no 33 on the dial: MkII tells."
+  - account: vandervenus
+    post: https://www.instagram.com/p/DHigeGXoDlr/
+    code: DHigeGXoDlr
+    photos:
+      - 1
+      - 3
+    model: ocean-pearl
+    guess: null
+    kind: model
+    question: Your new old stock watch with case ref 160-54-30 is captioned Ocean Pearl, but the dial reads Star Jewels. Where does it belong?
+    evidence:
+      - "Caption: full set NOS Enicar Ocean Pearl, case ref 160-54-30, 38 mm."
+      - The dial reads Star Jewels, not Ocean Pearl.
 excluded:
   - account: two_crowned_prints
     code: DVx9x9hDA8P
@@ -953,3 +1126,203 @@ excluded:
       - 9
       - 10
     reason: Other brands.
+  - account: vandervenus
+    code: CuJ27RZrZ09
+    photos: all
+    reason: 1956 expedition photo, not his photo
+  - account: vandervenus
+    code: CvaQvhxLG1b
+    photos: all
+    reason: "@horology_biology's watch for sale; photo likely theirs"
+  - account: vandervenus
+    code: CVnngq2LN-s
+    photos: all
+    reason: "@augustyn's watch for sale; photos likely theirs"
+  - account: vandervenus
+    code: COxbQHfLJrL
+    photos: all
+    reason: A collector friend's watch for sale; photo likely theirs
+  - account: vandervenus
+    code: COca93bLEPH
+    photos: all
+    reason: A collector friend's watch for sale; photos likely theirs
+  - account: vandervenus
+    code: DY6na9tNCml
+    photos: all
+    reason: 1969 invoice, not a watch photo
+  - account: vandervenus
+    code: CoFEabqtkrh
+    photos: all
+    reason: Watch sold on eBay; likely the listing photo
+  - account: vandervenus
+    code: DYj4p-qtcXZ
+    photos: all
+    reason: Same new-old-stock Sherpa Graph shoot as Ca6tQGiLIDU; photographer unclear
+  - account: vandervenus
+    code: Cw2kgfbrJTp
+    photos: all
+    reason: Fortis Marinemaster, not an Enicar
+  - account: vandervenus
+    code: CeQQuJIqr7M
+    photos: all
+    reason: Auction lot photo (Watches & Jewels auction), not his photo
+  - account: vandervenus
+    code: CQqlIOPrOx-
+    photos: all
+    reason: eBay listing photo, not his photo
+  - account: vandervenus
+    code: Cw7MpMDrHUf
+    photos: all
+    reason: "@balancedwatches's watch for sale; photo likely theirs"
+  - account: vandervenus
+    code: DRSs93HDOFb
+    photos: all
+    reason: Caption says it is from someone else in the Enicar community
+  - account: vandervenus
+    code: Co4pXvXrNzK
+    photos: all
+    reason: 'Caption: "not my watch", from his photo archive; photographer unknown'
+  - account: vandervenus
+    code: CgSGo89Kmjo
+    photos: all
+    reason: Repost of @rosputinsky_tomas's watch
+  - account: vandervenus
+    code: DKRSL8ioq1W
+    photos: all
+    reason: Modern Sherpa Watches brand product, not a vintage Enicar
+  - account: vandervenus
+    code: DCpan5humEg
+    photos: all
+    reason: Caption says it was originally posted by @watch.care
+  - account: vandervenus
+    code: Cdi8sWCLbpi
+    photos: all
+    reason: "@watch.care's watches for sale; photos likely theirs"
+  - account: vandervenus
+    code: CWqmau0LQFg
+    photos: all
+    reason: Video shoot with @sherpa_watches and @watch.care; photographer unclear
+  - account: vandervenus
+    code: DD4SJoytfm3
+    photos: all
+    reason: Enicar next to a Hamilton; not a catalogue shot
+  - account: vandervenus
+    code: CZreh4QD0wW
+    photos: all
+    reason: Sherpa Star box, no watch as the subject
+  - account: vandervenus
+    code: CYESU57sgB6
+    photos: all
+    reason: Sherpa Star box, no watch as the subject
+  - account: vandervenus
+    code: CFSVphxnada
+    photos: all
+    reason: "@brownsvillewatchguy's watch for sale; photo likely theirs"
+  - account: vandervenus
+    code: DP6PjNEDA7l
+    photos: all
+    reason: Auction lot photo, not his photo
+  - account: vandervenus
+    code: Ct82xBXr6QV
+    photos: all
+    reason: eBay listing photo, not his photo
+  - account: vandervenus
+    code: C-zXLU-tvMf
+    photos: all
+    reason: Film still of Alain Delon, not a watch photo of his
+  - account: vandervenus
+    code: C61LJ2sNZ5R
+    photos: all
+    reason: 'Caption: "Not my watch, photo found in my archive"'
+  - account: vandervenus
+    code: DWyIjCCDqNy
+    photos: all
+    reason: Posted by @choybee (collab post), not covered
+  - account: vandervenus
+    code: DSaT9sRDJfk
+    photos: all
+    reason: 1969 expedition story; archive photo, not his
+  - account: vandervenus
+    code: DEmFLCWIMFc
+    photos: all
+    reason: Blog post announcement graphic
+  - account: vandervenus
+    code: CpmfG9CLdnL
+    photos: all
+    reason: Basel 1965 archive material, not his photo
+  - account: vandervenus
+    code: Cird9-mLPx3
+    photos: all
+    reason: "@augustyn's watch for sale; photo likely theirs"
+  - account: vandervenus
+    code: Ca6tQGiLIDU
+    photos: all
+    reason: Shot with @maartencoolencreatingimages; photographer unclear
+  - account: vandervenus
+    code: CWSpALbrgi9
+    photos: all
+    reason: "@watch.care's watch for sale; photos likely theirs"
+  - account: vandervenus
+    code: CV2zg1Bsbly
+    photos: all
+    reason: "@longdele's watch; photo likely theirs"
+  - account: vandervenus
+    code: CN6zaqErCHe
+    photos: all
+    reason: Bukowskis auction lot photo, not his photo
+  - account: vandervenus
+    code: CNzp09hLO09
+    photos: all
+    reason: A collector friend's watch for sale; photos likely theirs
+  - account: vandervenus
+    code: CBC-V09HJFx
+    photos: all
+    reason: Tribute to Gianvittorio Molteni (GVM); photo likely GVM's
+  - account: vandervenus
+    code: DPBALONjNQ1
+    photos: all
+    reason: For sale by @augustyn; photo likely theirs
+  - account: vandervenus
+    code: Cyi7rKlrl66
+    photos: all
+    reason: For sale by @augustyn; photos likely theirs
+  - account: vandervenus
+    code: CPsLwlMrDE3
+    photos: all
+    reason: For sale by @_jimjupiter; photo may be theirs
+  - account: vandervenus
+    code: DOu4i_WjLYn
+    photos: all
+    reason: For sale through @gambier.art; photo likely theirs
+  - account: vandervenus
+    code: Ci-LFDGjvR2
+    photos: all
+    reason: 1961 Enicar brochure page and illustration, not a photo of a watch
+  - account: vandervenus
+    code: CG5kFaJrVeM
+    photos: all
+    reason: Photo of a printed catalogue page
+  - account: vandervenus
+    code: CdN4bgsKTcw
+    photos: all
+    reason: Catalogue or brochure image, not a photo of his watch
+  - account: vandervenus
+    code: CbFkUKsMVtM
+    photos: all
+    reason: Same photo as C9VLZ12IGGs
+  - account: vandervenus
+    code: BpmxERgHlZU
+    photos: all
+    reason: Halloween mask photo, the watch is not visible
+  - account: vandervenus
+    code: CpaLT5UtfNM
+    photos: all
+    reason: Advert or catalogue image (Ref. 100/76 AaNS), not a photo of a watch
+  - account: vandervenus
+    code: CLOmnzYrSo3
+    photos: all
+    reason: Olympic Super Graph shared with insights from @_jimjupiter; photos may be theirs
+  - account: vandervenus
+    code: DIDtPhloHRt
+    photos: all
+    reason: Caption credits the photo to @belmontwatchessd

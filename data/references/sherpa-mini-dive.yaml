@@ -29,7 +29,23 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
-images: []
+images:
+  - file: /images/sherpa-mini-dive/v-chkart-q5zj-1.webp
+    thumb: /images/sherpa-mini-dive/v-chkart-q5zj-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Mini-Dive with a black dial, red pointer ring and outer bezel next to a toy figure"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/ChkArt_q5zJ/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Mini-Dive."
 barometer: null
 status: draft
 gaps:

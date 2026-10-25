@@ -51,6 +51,102 @@ images:
     caption: "Ref. 100/244 with the AR1124, per its owner."
     identified_by: dial
     identified_note: null
+  - file: /images/sherpa-dive/v-djxixk-oodn-1.webp
+    thumb: /images/sherpa-dive/v-djxixk-oodn-1-sm.webp
+    width: 1147
+    height: 1147
+    alt: "Sherpa Dive with a cream dial, black outer bezel and red pointer ring, without strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DJXIxk-Oodn/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Dive."
+  - file: /images/sherpa-dive/v-cc5ose3hoks-1.webp
+    thumb: /images/sherpa-dive/v-cc5ose3hoks-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Dive with a black dial, large applied markers and black bezel, on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CC5ose3HokS/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Dive; caption dates it 1958."
+  - file: /images/sherpa-dive/v-dd7n86vow9n-1.webp
+    thumb: /images/sherpa-dive/v-dd7n86vow9n-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Dive with a black dial and black outer bezel, no red pointer ring, on a Tropic strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DD7n86VOW9n/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Dive; caption dates it 1958, a year before the red pointer ring."
+  - file: /images/sherpa-dive/v-cbc1x8lrpj9-1.webp
+    thumb: /images/sherpa-dive/v-cbc1x8lrpj9-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Dive with a black dial and black outer bezel on a grey strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CbC1X8LrpJ9/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Dive."
+  - file: /images/sherpa-dive/v-ckgnhqjlijh-1.webp
+    thumb: /images/sherpa-dive/v-ckgnhqjlijh-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Dive with a black dial, date and red and black outer bezel on a brown leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CKgnHqJLIjh/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Dive; caption: single crown, 40 mm EPSA case."
+  - file: /images/sherpa-dive/v-ct6nojntz-y-1.webp
+    thumb: /images/sherpa-dive/v-ct6nojntz-y-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Dive with an aged black dial on a grey strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Ct6NoJNtZ_y/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Dive."
 barometer: null
 status: draft
 gaps:

@@ -238,6 +238,102 @@ images:
     caption: "With a Sherpa OPS and a Sherpa Super-Jet."
     identified_by: dial
     identified_note: "Dials read Ultradive, OPS and Super-Jet."
+  - file: /images/sherpa-ultradive/v-c9vlz12iggs-1.webp
+    thumb: /images/sherpa-ultradive/v-c9vlz12iggs-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Ultradive with a black dial, white and orange inner bezel and crown guards, on a mesh strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/C9VLZ12IGGs/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive."
+  - file: /images/sherpa-ultradive/v-cg7lz1kjidn-1.webp
+    thumb: /images/sherpa-ultradive/v-cg7lz1kjidn-1-sm.webp
+    width: 930
+    height: 930
+    alt: "Worn Sherpa Ultradive with a black dial and cream inner bezel, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cg7Lz1KjIDn/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive."
+  - file: /images/sherpa-ultradive/v-cx-etdlskwm-1.webp
+    thumb: /images/sherpa-ultradive/v-cx-etdlskwm-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Ultradive with a black dial and white inner bezel on a steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CX_etDLskWm/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive."
+  - file: /images/sherpa-ultradive/v-cvxf-ipru9m-1.webp
+    thumb: /images/sherpa-ultradive/v-cvxf-ipru9m-1-sm.webp
+    width: 1440
+    height: 1499
+    alt: "Sherpa Ultradive with a black dial on a steel bracelet, in front of an Enicar display"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CVXf_IPru9m/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive."
+  - file: /images/sherpa-ultradive/v-cdgvwimsw-r-1.webp
+    thumb: /images/sherpa-ultradive/v-cdgvwimsw-r-1-sm.webp
+    width: 1048
+    height: 1048
+    alt: "Sherpa Ultradive with a black dial and cream inner bezel, lying on a newspaper"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CdgVWiMsw_r/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive; caption: the first version."
+  - file: /images/sherpa-ultradive/v-csad4jijtvk-1.webp
+    thumb: /images/sherpa-ultradive/v-csad4jijtvk-1-sm.webp
+    width: 1440
+    height: 1234
+    alt: "Two Sherpa Ultradives side by side on black and orange rally straps"
+    view: other
+    variant: null
+    source_url: https://www.instagram.com/p/CSAD4jijtVK/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive; caption: MkI and MkII."
 barometer: null
 status: draft
 gaps:

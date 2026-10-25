@@ -29,7 +29,10 @@ const permissions = defineCollection({
     credit_as: z.string(),
     // Where credit links point: the photographer's own site if they have
     // one (that's the backlink they want), otherwise their profile.
-    link: z.url().nullable().default(null)
+    link: z.url().nullable().default(null),
+    // When the permission also covers photos on the photographer's website:
+    // those are credited with this name and link to the page they sit on.
+    web: z.object({ site: z.url(), credit_as: z.string() }).nullable().default(null)
   })
 });
 

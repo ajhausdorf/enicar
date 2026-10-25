@@ -404,6 +404,102 @@ images:
     caption: null
     identified_by: dial
     identified_note: null
+  - file: /images/sherpa-super-dive/v-cyykuyuljcq-1.webp
+    thumb: /images/sherpa-super-dive/v-cyykuyuljcq-1-sm.webp
+    width: 741
+    height: 741
+    alt: "Sherpa Super-Dive with a black dial, inner bezel and date on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CyyKUYULjCQ/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive; caption dates it 1964."
+  - file: /images/sherpa-super-dive/v-cvrvas-ljlz-1.webp
+    thumb: /images/sherpa-super-dive/v-cvrvas-ljlz-1-sm.webp
+    width: 1440
+    height: 1528
+    alt: "Sherpa Super-Dive with a black dial on a steel bracelet, in front of an Enicar Sherpa display"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CvrVAS_LJLZ/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive."
+  - file: /images/sherpa-super-dive/v-cis0jcwrx4m-1.webp
+    thumb: /images/sherpa-super-dive/v-cis0jcwrx4m-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Early Sherpa Super-Dive with dauphine-style hands and a black dial, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CiS0JcWrx4m/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive; caption: early, dauphine-style hands."
+  - file: /images/sherpa-super-dive/v-cdvnnrtmx-q-1.webp
+    thumb: /images/sherpa-super-dive/v-cdvnnrtmx-q-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Dive with a black dial and diamond-shaped lume, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CdVNNRTMx-Q/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive."
+  - file: /images/sherpa-super-dive/v-cltuyvmrzhp-1.webp
+    thumb: /images/sherpa-super-dive/v-cltuyvmrzhp-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Dive with a champagne dial on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/ClTUyvMrZHP/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive; caption: 1964, champagne dial."
+  - file: /images/sherpa-super-dive/v-desvtvmij6e-1.webp
+    thumb: /images/sherpa-super-dive/v-desvtvmij6e-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Dive with a black dial and dauphine hands, without strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DEsVtVMIj6e/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive; caption: mid 1960s, dauphine hands."
 barometer: null
 status: draft
 gaps:

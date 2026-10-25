@@ -2,6 +2,71 @@
 name: Ocean Pearl
 family: ocean-pearl
 kind: dress
+images:
+  - file: /images/ocean-pearl/v-c4f7eoanqj4-1.webp
+    thumb: /images/ocean-pearl/v-c4f7eoanqj4-1-sm.webp
+    width: 1537
+    height: 1537
+    alt: "Ocean Pearl with a blue dial and day-date on a steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/C4f7eoaNqJ4/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Ocean Pearl from Japan."
+  - file: /images/ocean-pearl/v-chet2ffd-ml-1.webp
+    thumb: /images/ocean-pearl/v-chet2ffd-ml-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Ocean Pearl with a silver dial and day-date on its original steel bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Chet2fFD_ML/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Ocean Pearl, 1972 version, original bracelet."
+  - file: /images/ocean-pearl/v-csiuywurq0h-1.webp
+    thumb: /images/ocean-pearl/v-csiuywurq0h-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Ocean Pearl chronograph with a white dial, grey registers and orange chronograph hand, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CsiUYWurQ0h/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the Lausanne Ocean Pearl chronograph, Valjoux 23, early 1970s."
+  - file: /images/ocean-pearl/v-co9yvisr2el-1.webp
+    thumb: /images/ocean-pearl/v-co9yvisr2el-1-sm.webp
+    width: 885
+    height: 885
+    alt: "Ocean Pearl chronograph with a blue dial, red and white registers and green chronograph hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Co9YVisr2EL/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Ocean Pearl chronograph nicknamed Interlagos."
 status: draft
 gaps:
   - Factory reference numbers
