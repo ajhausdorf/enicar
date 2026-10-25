@@ -95,7 +95,7 @@ const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v
             {hero ? <img id="hero-img" src={hero.file} alt={hero.alt} width={hero.width} height={hero.height}> : <Dial kind={d.kind} size={300} />}
           </div>
           <figcaption id="hero-cap">
-            {hero ? <>{hero.caption && <span class="cap-text">{hero.caption} </span>}Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit} · {hero.license} · <a href={hero.source_url}>original</a></> : (elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
+            {hero ? <>{hero.caption && <span class="cap-text">{hero.caption} </span>}Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit}{hero.permission !== 'granted' && ` · ${hero.license}`} · <a href={hero.source_url}>original</a></> : (elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
           </figcaption>
         </figure>
         {images.length > 1 && (
@@ -103,7 +103,7 @@ const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v
             {images.map((t, i) => (
               <li><button type="button" class="thumb" aria-pressed={i === 0 ? 'true' : 'false'} aria-label={`Show photo: ${t.alt}`}
                 data-file={t.file} data-alt={t.alt} data-w={t.width} data-h={t.height}
-                data-variant="" data-caption={t.caption ?? ''} data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.license} data-source={t.source_url}>
+                data-variant="" data-caption={t.caption ?? ''} data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.permission === 'granted' ? '' : t.license} data-source={t.source_url}>
                 <img src={t.thumb} alt="" loading="lazy">
               </button></li>
             ))}
@@ -262,7 +262,7 @@ const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v
       img.src = ds.file!; img.alt = ds.alt!; img.width = Number(ds.w); img.height = Number(ds.h);
       cap.replaceChildren(ds.caption ? `${ds.caption} Photo: ` : 'Photo: ');
       const credit = ds.creditUrl ? Object.assign(document.createElement('a'), { href: ds.creditUrl, textContent: ds.credit }) : document.createTextNode(ds.credit!);
-      cap.append(credit, ` · ${ds.license} · `, Object.assign(document.createElement('a'), { href: ds.source, textContent: 'original' }));
+      cap.append(credit, ds.license ? ` · ${ds.license} · ` : ' · ', Object.assign(document.createElement('a'), { href: ds.source, textContent: 'original' }));
       for (const o of thumbs) o.setAttribute('aria-pressed', String(o === t));
     });
   }

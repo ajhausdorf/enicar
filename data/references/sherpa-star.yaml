@@ -1,0 +1,63 @@
+name: Sherpa Star
+family: sherpa
+kind: other
+summary: null
+references:
+  - number: 144-49-01
+    note: 'Given by the owner of one example, in a gold-coloured textured case; the owner calls the watch "Volcano".'
+    cites: [zz-cohv]
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: [AR165]
+  winding: null
+images:
+  - file: /images/sherpa-star/zz-cohve1xlzyi-1.webp
+    thumb: /images/sherpa-star/zz-cohve1xlzyi-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa Star with a silver dial in a gold-coloured textured case, without strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/COhve1XLZYI/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: dial
+    identified_note: null
+  - file: /images/sherpa-star/zz-cohve1xlzyi-2.webp
+    thumb: /images/sherpa-star/zz-cohve1xlzyi-2-sm.webp
+    width: 1080
+    height: 1080
+    alt: "The same Sherpa Star from the side, showing the textured case"
+    view: profile
+    variant: null
+    source_url: https://www.instagram.com/p/COhve1XLZYI/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: caption
+    identified_note: 'Post captioned Enicar Sherpa Star "Volcano" 144-49-01.'
+read_more:
+  - title: The rise of the Sherpa Star
+    url: https://enicar.org/2018/03/08/the-rise-of-the-sherpa-star/
+    source: enicar-org
+    note: Martijn van der Ven on the Sherpa Star.
+status: draft
+gaps:
+  - Production years
+  - Case size and material
+  - Specs from the enicar.org article
+citations:
+  - id: zz-cohv
+    source: zizi-zap
+    url: https://www.instagram.com/p/COhve1XLZYI/
+    title: '@zizi_zap: Enicar Sherpa Star "Volcano" 144-49-01, cal. AR 165'
+    retrieved: 2026-10-25
+    supports: [movement.calibres]
+last_reviewed: 2026-10-25

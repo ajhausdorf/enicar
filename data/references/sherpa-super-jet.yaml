@@ -282,6 +282,22 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Slim yellow-tipped GMT hand; the source gives this as MkII."
+  - file: /images/sherpa-super-jet/zz-coxpf37lxf2-1.webp
+    thumb: /images/sherpa-super-jet/zz-coxpf37lxf2-1-sm.webp
+    width: 1080
+    height: 720
+    alt: "Sherpa Super-Jet with a black dial and cream and black 24-hour bezel on a green suede strap, over an old town engraving"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/COxPf37LXf2/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: source
+    identified_note: "The enicar.org Jet article shows this photo as a Sherpa Super-Jet MkII."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article

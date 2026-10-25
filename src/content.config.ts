@@ -26,7 +26,10 @@ const permissions = defineCollection({
     granted: z.coerce.date(),
     via: z.string(),
     scope: z.string(),
-    credit_as: z.string()
+    credit_as: z.string(),
+    // Where credit links point: the photographer's own site if they have
+    // one (that's the backlink they want), otherwise their profile.
+    link: z.url().nullable().default(null)
   })
 });
 

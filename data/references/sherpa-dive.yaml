@@ -2,7 +2,10 @@ name: Sherpa Dive
 family: sherpa
 kind: diver
 summary: A 40 mm single-crown diver with an outer bezel; the red pointer ring arrived in 1960.
-references: []
+references:
+  - number: 100/244
+    note: Given by the owner of one example, with the AR1124.
+    cites: [zz-crv]
 nicknames: []
 years:
   from: null
@@ -31,14 +34,35 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
-images: []
+images:
+  - file: /images/sherpa-dive/zz-cr-vmi-rog0-1.webp
+    thumb: /images/sherpa-dive/zz-cr-vmi-rog0-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Dive with a black dial, red pointer ring and black outer bezel on a tan leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cr-vMi_roG0/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: "Ref. 100/244 with the AR1124, per its owner."
+    identified_by: dial
+    identified_note: null
 barometer: null
 status: draft
 gaps:
   - Case material and lug width
-  - Photographs
   - Price
 citations:
+  - id: zz-crv
+    source: zizi-zap
+    url: https://www.instagram.com/p/Cr-vMi_roG0/
+    title: "@zizi_zap: Enicar Sherpa DIVE Rubyrotor, cal. AR 1124, ref. 100/244"
+    retrieved: 2026-10-25
+    supports: []
   - id: eo-matrix
     source: enicar-org
     url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf

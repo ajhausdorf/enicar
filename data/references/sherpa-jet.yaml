@@ -254,6 +254,54 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Cushion case and red and blue bezel with yellow markers; the source gives both as MkIV."
+  - file: /images/sherpa-jet/daw-dawm-1borzz-1.webp
+    thumb: /images/sherpa-jet/daw-dawm-1borzz-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Sherpa Jet with a black dial and white and black 24-hour bezel on a green suede strap, on a printed page"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/DAWM-1BORZZ/
+    credit: "Drop&Watch"
+    credit_url: https://dropandwatch.com/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: dropandwatch
+    caption: null
+    identified_by: source
+    identified_note: "The enicar.org Jet article shows a photo from this post as a Sherpa Jet MkII."
+  - file: /images/sherpa-jet/daw-dawm-1borzz-2.webp
+    thumb: /images/sherpa-jet/daw-dawm-1borzz-2-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Close-up of the same Sherpa Jet dial and bezel"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/DAWM-1BORZZ/
+    credit: "Drop&Watch"
+    credit_url: https://dropandwatch.com/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: dropandwatch
+    caption: null
+    identified_by: source
+    identified_note: "The enicar.org Jet article shows a photo from this post as a Sherpa Jet MkII."
+  - file: /images/sherpa-jet/daw-dawm-1borzz-3.webp
+    thumb: /images/sherpa-jet/daw-dawm-1borzz-3-sm.webp
+    width: 1280
+    height: 1600
+    alt: "The same Sherpa Jet at an angle on the printed page"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/DAWM-1BORZZ/
+    credit: "Drop&Watch"
+    credit_url: https://dropandwatch.com/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: dropandwatch
+    caption: null
+    identified_by: source
+    identified_note: "The enicar.org Jet article shows a photo from this post as a Sherpa Jet MkII."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article
@@ -286,7 +334,6 @@ photos_elsewhere:
 barometer: null
 status: draft
 gaps:
-  - Photos of the MkII (three of James's are waiting on his confirmation)
   - Price (barometer figures need enicar.org's permission; sales data not started)
   - Reference numbers per generation
   - Case material

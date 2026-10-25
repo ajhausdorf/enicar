@@ -33,7 +33,7 @@ const refNo = leaf.variant ? null : d.references[0]?.number;
     </div>
     <p class="watch-card__credit">
       {photo
-        ? <>Photo: <a href={photo.credit_url ?? photo.source_url} rel="noopener">{photo.credit}</a>, {photo.license}</>
+        ? <>Photo: <a href={photo.credit_url ?? photo.source_url} rel="noopener">{photo.credit}</a>{photo.permission !== 'granted' && `, ${photo.license}`}</>
         : 'No photo yet'}
     </p>
   </div>
