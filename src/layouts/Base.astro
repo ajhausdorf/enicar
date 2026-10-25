@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { SITE_NAME, CONTRIBUTE_URL } from '../lib/site';
+import { SITE_NAME, CONTRIBUTE_URL, USD_RATES } from '../lib/site';
 
 interface Props {
   title?: string;
@@ -41,6 +41,9 @@ const nav = [
         <nav class="nav" aria-label="Primary">
           {nav.map((n) => <a href={n.href} aria-current={n.key === section ? 'page' : undefined}>{n.label}</a>)}
         </nav>
+        <button type="button" class="cur-toggle" id="cur-toggle" aria-pressed="false" title={`Show prices in US dollars, at fixed rates set ${USD_RATES.asOf}`}>
+          <span aria-hidden="true">$</span> USD<span class="sr-only"> prices</span>
+        </button>
         <form class="search" action="/search/" method="get" role="search">
           <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="var(--muted)" stroke-width="1.6"><circle cx="7" cy="7" r="5"></circle><path d="M11 11l3.5 3.5"></path></svg>
           <label for="site-q" class="sr-only">Search references, nicknames, calibres</label>
@@ -48,6 +51,40 @@ const nav = [
         </form>
       </div>
     </header>
+
+    <script is:inline define:vars={{ rates: USD_RATES.rates, asOf: USD_RATES.asOf }}>
+      // Price currency toggle: rewrites every .money element to US dollars at the
+      // fixed rates, or back to the original. The choice is kept per visitor in
+      // localStorage; prices always render in their original currency first.
+      (() => {
+        const KEY = 'ew-currency';
+        const get = () => { try { return localStorage.getItem(KEY) === 'USD' ? 'USD' : 'orig'; } catch { return 'orig'; } };
+        const set = (m) => { try { localStorage.setItem(KEY, m); } catch {} };
+        const round = (v) => Math.round(v / 10) * 10;
+        const usd = (v) => '$' + round(v).toLocaleString('en-US');
+        const apply = (mode) => {
+          for (const el of document.querySelectorAll('.money')) {
+            if (el.dataset.orig == null) el.dataset.orig = el.textContent;
+            const r = rates[el.dataset.cur];
+            if (mode !== 'USD' || el.dataset.cur === 'USD' || !r) { el.textContent = el.dataset.orig; continue; }
+            if (el.dataset.v != null) el.textContent = '≈ ' + usd(+el.dataset.v * r);
+            else {
+              const hi = +el.dataset.hi * r;
+              el.textContent = el.dataset.lo == null ? '≈ up to ' + usd(hi) : '≈ ' + usd(+el.dataset.lo * r) + ' to ' + round(hi).toLocaleString('en-US');
+            }
+            el.setAttribute('aria-label', el.textContent + ' (' + el.dataset.orig + ' converted at rates set ' + asOf + ')');
+          }
+          for (const n of document.querySelectorAll('[data-usd-note]')) n.hidden = mode !== 'USD';
+          const b = document.getElementById('cur-toggle');
+          if (b) b.setAttribute('aria-pressed', String(mode === 'USD'));
+        };
+        const start = () => {
+          apply(get());
+          document.getElementById('cur-toggle')?.addEventListener('click', () => { const m = get() === 'USD' ? 'orig' : 'USD'; set(m); apply(m); });
+        };
+        document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', start) : start();
+      })();
+    </script>
 
     <main data-pagefind-body={searchable ? '' : undefined}>
       <slot />

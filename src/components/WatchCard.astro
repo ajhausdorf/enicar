@@ -1,6 +1,7 @@
 ---
 import Dial from './Dial.astro';
-import { formatYears, decadeOf, formatRange, barometerOf, KIND_LABEL } from '../lib/site';
+import Money from './Money.astro';
+import { formatYears, decadeOf, barometerOf, toUsd, KIND_LABEL } from '../lib/site';
 
 // One card per page: a generation, or a model with no generations.
 interface Props { leaf: any; familyName: string; }
@@ -17,6 +18,8 @@ const refNo = leaf.variant ? null : d.references[0]?.number;
 // The card shows the guide's first band (best condition) of its first entry.
 const bar = barometerOf(leaf);
 const topBand = bar ? bar.entries[0].bands[0] : null;
+// For sorting by price: the best-condition band's upper figure, in US dollars.
+const sortPrice = topBand ? Math.round(toUsd(bar.currency, topBand.high)) : '';
 ---
 <!-- The title link stretches over the whole card, so the card stays one big
      target while the photo credit keeps a link of its own. With more than one
@@ -24,7 +27,7 @@ const topBand = bar ? bar.entries[0].bands[0] : null;
      then a link to the page itself. -->
 <article class="watch-card"
    data-family={d.family.id} data-model={leaf.ref.id} data-kind={d.kind} data-decade={decadeOf(leaf.years) ?? 'unknown'}
-   data-name={leaf.name} data-year={leaf.years.from ?? 9999} data-has-photo={photo ? 'yes' : 'no'}>
+   data-name={leaf.name} data-year={leaf.years.from ?? 9999} data-price={sortPrice} data-has-photo={photo ? 'yes' : 'no'}>
   {photos.length > 1 ? (
     <div class="watch-card__img watch-card__carousel" data-carousel>
       <div class="watch-card__track" data-track>
@@ -59,7 +62,7 @@ const topBand = bar ? bar.entries[0].bands[0] : null;
     <div class="watch-card__foot">
       <span>{leaf.calibres.join(', ') || 'Calibre unknown'}</span>
       <span class="watch-card__price">
-        {topBand && <span class="mono" title={`${topBand.condition}, ${bar.edition}`}>{formatRange(bar.currency, topBand)}</span>}
+        {topBand && <Money class="mono" title={`${topBand.condition}, ${bar.edition}`} currency={bar.currency} low={topBand.low} high={topBand.high} />}
         {d.status === 'draft' ? <span class="badge draft">Draft</span> : <span class="badge verified">Verified</span>}
       </span>
     </div>
