@@ -34,3 +34,10 @@
   web:
     site: https://enicar.org/
     credit_as: enicar.org
+- id: ctwatchguy
+  who: Michael (@ctwatchguy)
+  profile_url: https://www.instagram.com/ctwatchguy/
+  granted: 2026-10-25
+  via: Instagram message to the owner
+  scope: Their Enicar photos, with credit and a link back. Their bio says some watches shown are not theirs; those posts are left out.
+  credit_as: "@ctwatchguy"

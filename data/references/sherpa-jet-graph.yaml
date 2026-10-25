@@ -412,6 +412,70 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Red minute-counter hand, red triangle chronograph hand and checkered GMT hand, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/c-cqj1uxorcrc-1.webp
+    thumb: /images/sherpa-jet-graph/c-cqj1uxorcrc-1-sm.webp
+    width: 1391
+    height: 1391
+    alt: "Jet Graph with a black dial, white registers, orange chronograph hand and red counter hand on a brown strap, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CQJ1UXOrCRC/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand, triangle chronograph hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/c-cm77kvjlgjq-1.webp
+    thumb: /images/sherpa-jet-graph/c-cm77kvjlgjq-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Jet Graph with a black dial, white registers and red counter hand on a tan strap, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CM77KvJLGjQ/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand, triangle chronograph hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/c-chvlupll2mf-1.webp
+    thumb: /images/sherpa-jet-graph/c-chvlupll2mf-1-sm.webp
+    width: 1389
+    height: 1389
+    alt: "Jet Graph with a black dial, orange chronograph hand and navy and silver 24-hour bezel on an orange strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CHvlUpLL2Mf/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand, triangle chronograph hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/c-cfitrqchfxs-1.webp
+    thumb: /images/sherpa-jet-graph/c-cfitrqchfxs-1-sm.webp
+    width: 1405
+    height: 1405
+    alt: "Jet Graph with a black dial, white registers, orange chronograph hand and checkered GMT hand, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CFITRqCHFxS/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand, triangle chronograph hand and baton hands, the MkIV tells on Enicar 101."
 barometer: null
 status: draft
 gaps:

@@ -702,6 +702,54 @@ pending:
     evidence:
       - "Caption: full set NOS Enicar Ocean Pearl, case ref 160-54-30, 38 mm."
       - The dial reads Star Jewels, not Ocean Pearl.
+  - account: ctwatchguy
+    post: https://www.instagram.com/p/CSP2EEJL-3X/
+    code: CSP2EEJL-3X
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Your black-dial Aqua Graph (also in CRsAQTxruiv, CMpeR7Srvof and CL9vgvELQ7V) has paddle hands but a house-shaped pointer on the red ring. Which generation is it: a MkII with later parts, or a MkIII with older hands?"
+    evidence:
+      - "Paddle hands with orange tips (MkI to MkII on Enicar 101), but a lume-dot chronograph hand, which Enicar 101 gives for the MkIII."
+      - The red ring has a house-shaped pointer, which Enicar 101 gives for the MkIII; its MkII page notes a service ring of that shape on the watch it shows.
+  - account: ctwatchguy
+    post: https://www.instagram.com/p/CRsAQTxruiv/
+    code: CRsAQTxruiv
+    photos:
+      - 1
+    model: sherpa-aqua-graph
+    guess: null
+    kind: generation
+    question: "Same watch as CSP2EEJL-3X: which generation?"
+    evidence:
+      - Paddle hands with a house-shaped pointer on the red ring.
+  - account: ctwatchguy
+    post: https://www.instagram.com/p/CG5XH-XLRF8/
+    code: CG5XH-XLRF8
+    photos:
+      - 1
+    model: sherpa-super-jet
+    guess: MkIII
+    kind: conflict
+    question: Your caption calls this a white MK2 Super-Jet, but it has a red and black checkered GMT hand. Is it a MkII or a MkIII?
+    evidence:
+      - "Caption: rare white MK2 Sherpa Super Jet."
+      - A red and black checkered GMT hand, the MkIII tell in Martijn van der Ven's Jet article; a MkII has a slim plain GMT hand.
+  - account: ctwatchguy
+    post: https://www.instagram.com/p/CIv3tASrydb/
+    code: CIv3tASrydb
+    photos:
+      - 1
+    model: sherpa-jet
+    guess: null
+    kind: conflict
+    question: Your caption calls this an albino MK1 Jet, but the GMT hand is slim with an orange tip. Is it a MkI or a MkII?
+    evidence:
+      - "Caption: Albino MK1 Sherpa Jet."
+      - Bezel and paddle hands fit the MkI.
+      - The GMT hand is slim with an orange tip, the MkII tell; the MkI has a red crescent-moon GMT hand.
 excluded:
   - account: two_crowned_prints
     code: DVx9x9hDA8P
@@ -976,3 +1024,167 @@ excluded:
     code: DIDtPhloHRt
     photos: all
     reason: Caption credits the photo to @belmontwatchessd
+  - account: ctwatchguy
+    code: CKzMMSDr43v
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CJ_sSseLvhK
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CIgQPhjrNIM
+    photos: all
+    reason: Two watches in one photo
+  - account: ctwatchguy
+    code: CHdTFfxrRe4
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CGISQeHnjUJ
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CDwPE1LHlve
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CDub16UH25l
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CQZcRKzrqkt
+    photos: all
+    reason: Same Aqua Graph as the held posts, shot from a distance
+  - account: ctwatchguy
+    code: CPV7dmrLJFQ
+    photos: all
+    reason: Same Aqua Graph as the held posts, shot from a distance
+  - account: ctwatchguy
+    code: CMpeR7Srvof
+    photos: all
+    reason: Same Aqua Graph as the held posts
+  - account: ctwatchguy
+    code: CL9vgvELQ7V
+    photos: all
+    reason: Same Aqua Graph as the held posts
+  - account: ctwatchguy
+    code: CP8og7mLiBQ
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: COoL1AeLu7P
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CMxyo3WLaKq
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CLPUeShLULI
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CIrAzA4LgwK
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CILi25Yrshl
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CGfUzeOHvlu
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CF5Cqxcn_-f
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CErwZJvBp42
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CDoz_5BnOKG
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CB5z94nHQCG
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CAQhr7wnw53
+    photos: all
+    reason: Strap-focused carousel; the watch is shown better in other posts
+  - account: ctwatchguy
+    code: CAJZIwAnwZQ
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CLe3rGqLSmu
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CK4fkyrrV9K
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CJgwlT_Ll1d
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CF7Ys6RHGRx
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CDRk48aHsSG
+    photos: all
+    reason: Video, no photo
+  - account: ctwatchguy
+    code: CCL_TEGnJer
+    photos: all
+    reason: Video, no photo
+  - account: ctwatchguy
+    code: CCJ2aCwHwrq
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CIjF_wsrWkD
+    photos: all
+    reason: Two watches in one photo
+  - account: ctwatchguy
+    code: CLCvokmLee_
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: COA-8ftLzpi
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CMm0tiiruK-
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CLhU35dLzlk
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CIlj_PoLmQJ
+    photos: all
+    reason: Two watches in one photo
+  - account: ctwatchguy
+    code: CGXs6zVnNAi
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CEuwJC-nzyP
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CPBnkvJLQP1
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"
+  - account: ctwatchguy
+    code: CGc7dhGHKsu
+    photos: all
+    reason: "Not chosen: the page already has enough photos of this generation, or the generation is unclear at this size"

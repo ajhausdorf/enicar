@@ -606,7 +606,7 @@ images:
     permission_ref: two-crowned-prints
     caption: null
     identified_by: tells
-    identified_note: "Baton hands, orange triangle chronograph hand and thick black register hands, the MkIV tells on Enicar 101."
+    identified_note: "Baton hands, orange triangle chronograph hand and thick black register hands, the MkIV tells on Enicar 101; the register hands here are thin black, with a red minute counter."
   - file: /images/sherpa-graph/tcp-dpo2fnejq4-1.webp
     thumb: /images/sherpa-graph/tcp-dpo2fnejq4-1-sm.webp
     width: 1440
@@ -783,6 +783,150 @@ images:
     caption: "The chronograph hand has no red paint, and the photographer was told it has always been that way."
     identified_by: caption
     identified_note: "The photographer confirmed it is a MkIc in a message to the owner, 2026-10-25. The ring and large logo match the MkIc tells; the unpainted chronograph hand is unusual for the generation."
+  - file: /images/sherpa-graph/c-csxawlqrdqf-1.webp
+    thumb: /images/sherpa-graph/c-csxawlqrdqf-1-sm.webp
+    width: 1327
+    height: 1327
+    alt: "Sherpa Graph with a black dial, silver registers and white Tachymetre ring on a red strap, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/CSxawlQrdQf/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
+  - file: /images/sherpa-graph/c-crzewolrarn-1.webp
+    thumb: /images/sherpa-graph/c-crzewolrarn-1-sm.webp
+    width: 1189
+    height: 1189
+    alt: "Sherpa Graph with a black dial and silver registers on a tan rally strap, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/CRzeWOLrARn/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
+  - file: /images/sherpa-graph/c-cqlx-mdr-a6-1.webp
+    thumb: /images/sherpa-graph/c-cqlx-mdr-a6-1-sm.webp
+    width: 1304
+    height: 1304
+    alt: "Sherpa Graph with a glossy black dial and silver registers on an orange strap, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/CQlx_mDr_A6/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
+  - file: /images/sherpa-graph/c-co54ymxrfm2-1.webp
+    thumb: /images/sherpa-graph/c-co54ymxrfm2-1-sm.webp
+    width: 1433
+    height: 1433
+    alt: "Sherpa Graph with a black dial and silver registers on an olive strap, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/CO54YMXrfm2/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Graph MK2. Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
+  - file: /images/sherpa-graph/c-cagearunyty-1.webp
+    thumb: /images/sherpa-graph/c-cagearunyty-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a black dial, grey registers and black tachymetre ring on a steel bracelet, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CAGeaRUnyty/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Graph Mark III. Black tachymetre ring, paddle hands with short orange tips and a red dot on the chronograph hand: the MkIII tells on Enicar 101."
+  - file: /images/sherpa-graph/c-cdezaerhbh6-1.webp
+    thumb: /images/sherpa-graph/c-cdezaerhbh6-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Close view of a Sherpa Graph with a black dial, grey registers and orange-tipped hands on a steel bracelet"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CDEzAeRHBh6/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Black tachymetre ring, paddle hands with short orange tips and a red dot on the chronograph hand: the MkIII tells on Enicar 101."
+  - file: /images/sherpa-graph/c-cdcieqbnwsp-1.webp
+    thumb: /images/sherpa-graph/c-cdcieqbnwsp-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a black dial, grey registers and red-dot chronograph hand on a steel bracelet, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CDCiEqBnwSP/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Black tachymetre ring, paddle hands with short orange tips and a red dot on the chronograph hand: the MkIII tells on Enicar 101."
+  - file: /images/sherpa-graph/c-ckmthbtlzfd-1.webp
+    thumb: /images/sherpa-graph/c-ckmthbtlzfd-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a white dial, grey registers and dark grey tachymetre ring on a brown strap, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CKmThBtLZfD/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands and a broad red chronograph hand on a white dial: the MkIV tells on Enicar 101; the register hands here are thin black, with a red minute counter."
+  - file: /images/sherpa-graph/c-ci09pbmrzbf-1.webp
+    thumb: /images/sherpa-graph/c-ci09pbmrzbf-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a white dial, grey registers and red chronograph hand on a brown strap, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CI09PbMrzBF/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands and a broad red chronograph hand on a white dial: the MkIV tells on Enicar 101; the register hands here are thin black, with a red minute counter."
 barometer: null
 status: draft
 gaps:

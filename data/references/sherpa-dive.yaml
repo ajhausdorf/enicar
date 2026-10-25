@@ -147,6 +147,54 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Dive."
+  - file: /images/sherpa-dive/c-ckctubjrjl8-1.webp
+    thumb: /images/sherpa-dive/c-ckctubjrjl8-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Dive with a black dial, red pointer ring and candlestick seconds hand on a brown suede strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CKCTUBjrJL8/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Dive."
+  - file: /images/sherpa-dive/c-citeitdrt-x-1.webp
+    thumb: /images/sherpa-dive/c-citeitdrt-x-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Early Sherpa Dive with a black gilt dial and red pointer on a brown suede strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CITeitDrt-x/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Dive; caption: early gilt dial."
+  - file: /images/sherpa-dive/c-ce7jb2lhnuf-1.webp
+    thumb: /images/sherpa-dive/c-ce7jb2lhnuf-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Dive with a black dial and red pointer ring on an olive strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CE7JB2lHnuF/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Dive."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

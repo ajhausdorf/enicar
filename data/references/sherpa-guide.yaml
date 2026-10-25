@@ -118,6 +118,54 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Guide; caption dates it 1969."
+  - file: /images/sherpa-guide/c-cn2xdlirgcu-1.webp
+    thumb: /images/sherpa-guide/c-cn2xdlirgcu-1-sm.webp
+    width: 1434
+    height: 1434
+    alt: "Sherpa Guide with a black dial, world-city bezel and red pointer on a red strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CN2xdlIrgCU/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Guide."
+  - file: /images/sherpa-guide/c-clxghgtl-sh-1.webp
+    thumb: /images/sherpa-guide/c-clxghgtl-sh-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Guide with a black dial and cream inner 24-hour bezel on a red strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CLXghGTL-sh/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Guide."
+  - file: /images/sherpa-guide/c-ckb8ehprhw3-1.webp
+    thumb: /images/sherpa-guide/c-ckb8ehprhw3-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Guide with a black dial, red date and world-city bezel on a red strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CKb8ehPrHw3/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Guide."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
