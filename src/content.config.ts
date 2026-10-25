@@ -173,7 +173,9 @@ const references = defineCollection({
       dials: z.array(z.string()).default([]),
       crowns: z.string().nullable().default(null),
       // From production tables: factory references, serial ranges, the
-      // dates those serials were seen, and how many were made.
+      // dates those serials were seen, and how many were made. Enicar's
+      // archives were lost in 1987, so production is always an estimate
+      // worked out from serial ranges, and the page says so.
       refs: z.array(z.string()).default([]),
       serials: z.array(z.string()).default([]),
       dated: z.string().nullable().default(null),
