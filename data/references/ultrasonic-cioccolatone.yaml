@@ -1,0 +1,39 @@
+name: Ultrasonic "Cioccolatone"
+family: ultrasonic
+kind: dress
+summary: A gold-plated Ultrasonic in the tank-shaped "Cioccolatone" case design.
+references: []
+nicknames: [Cioccolatone]
+years: { from: 1961, to: null, approximate: true }
+movement: { calibres: [], winding: manual }
+case: { construction: null, material: Gold-plated, diameter_mm: null, lug_mm: null, thickness_mm: 8.5 }
+images:
+  - file: /images/ultrasonic-cioccolatone/dial.webp
+    thumb: /images/ultrasonic-cioccolatone/dial-sm.webp
+    width: 1600
+    height: 1558
+    alt: "Gold-plated Enicar Ultrasonic with a square case, silver dial, gold baton markers and a date window, held in a hand"
+    view: dial
+    variant: null
+    source_url: https://commons.wikimedia.org/wiki/File:1961_Enicar_Ultrasonic_gold-plated_%22Cioccolatone%22_design.jpg
+    credit: "EstrellaSuecia"
+    credit_url: https://commons.wikimedia.org/wiki/User:Estrellato
+    license: "CC0"
+    permission: public-domain
+
+status: draft
+gaps:
+  - Reference number
+  - Production span (only one example, dated 1961)
+  - "Type is listed as dress on our own judgement, not a source"
+  - Calibre
+  - Case dimensions other than thickness
+  - A primary source; the only source so far is a photo uploader's description
+citations:
+  - id: commons-photo
+    source: wikimedia-commons
+    url: https://commons.wikimedia.org/wiki/File:1961_Enicar_Ultrasonic_gold-plated_%22Cioccolatone%22_design.jpg
+    title: 1961 Enicar Ultrasonic gold-plated "Cioccolatone" design
+    retrieved: 2026-10-25
+    supports: [nicknames, years.from, movement.winding, case.material, case.thickness_mm]
+last_reviewed: 2026-10-25

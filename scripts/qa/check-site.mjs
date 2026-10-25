@@ -3,7 +3,7 @@
 // and the search index was built. Run after `npm run build`.
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
-import { loadReferences, Report, ROOT } from './lib.mjs';
+import { loadReferences, loadCalibres, Report, ROOT } from './lib.mjs';
 
 const DIST = join(ROOT, 'dist');
 
@@ -13,6 +13,8 @@ function htmlFiles(dir) {
     return statSync(p).isDirectory() ? (f === 'pagefind' ? [] : htmlFiles(p)) : f.endsWith('.html') ? [p] : [];
   });
 }
+
+const decode = (html) => html.replace(/&(amp|quot|#34|#39|lt|gt);/g, (_, e) => ({ amp: '&', quot: '"', '#34': '"', '#39': "'", lt: '<', gt: '>' })[e]);
 
 function resolves(urlPath) {
   const clean = decodeURIComponent(urlPath.split(/[?#]/)[0]);
@@ -28,9 +30,15 @@ export function checkSite() {
   for (const { id, data } of refs) {
     const page = join(DIST, 'ref', id, 'index.html');
     if (!existsSync(page)) { r.error(`/ref/${id}/`, 'page missing'); continue; }
-    const html = readFileSync(page, 'utf8');
-    if (!html.includes(data.name.replace(/&/g, '&amp;'))) r.error(`/ref/${id}/`, `page does not show the record name "${data.name}"`);
+    const html = decode(readFileSync(page, 'utf8'));
+    if (!html.includes(data.name)) r.error(`/ref/${id}/`, `page does not show the record name "${data.name}"`);
     if (data.status === 'draft' && !html.includes('Draft record.')) r.error(`/ref/${id}/`, 'draft record is missing its draft notice');
+  }
+
+  for (const { id, data } of loadCalibres()) {
+    const page = join(DIST, 'calibres', id, 'index.html');
+    if (!existsSync(page)) { r.error(`/calibres/${id}/`, 'page missing'); continue; }
+    if (!decode(readFileSync(page, 'utf8')).includes(data.name)) r.error(`/calibres/${id}/`, `page does not show "${data.name}"`);
   }
 
   const index = existsSync(join(DIST, 'index.html')) ? readFileSync(join(DIST, 'index.html'), 'utf8') : '';

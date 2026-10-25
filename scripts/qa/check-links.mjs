@@ -18,7 +18,7 @@ function changedIds() {
 async function probe(url) {
   for (const method of ['HEAD', 'GET']) {
     try {
-      const res = await fetch(url, { method, redirect: 'follow', signal: AbortSignal.timeout(15000), headers: { 'user-agent': 'EnicarArchiveLinkCheck/1.0' } });
+      const res = await fetch(url, { method, redirect: 'follow', signal: AbortSignal.timeout(15000), headers: { 'user-agent': 'EnicarWorldLinkCheck/1.0' } });
       if (res.status < 400) return { ok: true, status: res.status };
       if (method === 'GET') return { ok: false, status: res.status };
     } catch (e) {
@@ -35,6 +35,7 @@ for (const { id, file, data } of loadReferences()) {
   if (ids && !ids.has(id)) continue;
   for (const c of data.citations ?? []) urls.set(c.url, file);
   for (const img of data.images ?? []) if (img.credit_url) urls.set(img.credit_url, file);
+  for (const p of data.photos_elsewhere ?? []) urls.set(p.url, file);
 }
 
 const results = await Promise.all([...urls].map(async ([url, where]) => [url, where, await probe(url)]));

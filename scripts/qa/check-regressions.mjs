@@ -69,6 +69,8 @@ export function checkRegressions() {
     }
     for (const k of Object.keys({ ...a, ...b })) {
       if (['citations', 'status', 'last_reviewed'].includes(k)) continue;
+      const empty = (v) => v == null || (Array.isArray(v) && v.length === 0);
+      if (empty(a[k]) && empty(b[k])) continue;
       if (JSON.stringify(a[k]) !== JSON.stringify(b[k])) lines.push(`${k} changed`);
     }
     summary.push(`- **${b.name ?? id}** (\`${id}\`): ${lines.join('; ') || 'review date only'}`);

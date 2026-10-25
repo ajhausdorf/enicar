@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://enicar-archive.pages.dev',
+  site: 'https://enicarworld.com',
   trailingSlash: 'always',
   build: { format: 'directory' }
 });

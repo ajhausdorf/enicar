@@ -1,0 +1,28 @@
+name: AR1126
+maker: null
+winding: automatic
+functions: [GMT]
+base: ar1125
+base_note: Derived from the AR1125.
+introduced: null
+notes:
+  - text: Spare parts for the GMT versions are scarcer than for Enicar's standard AR calibres.
+    cites: [eo-jet]
+read_more:
+  - title: Exploring the Enicar Sherpa (Super-)Jet
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    source: enicar-org
+    note: Covers the GMT calibres used in the Jet and Super-Jet.
+status: draft
+gaps:
+  - Maker
+  - Jewel count, frequency and other specs
+  - Introduction date
+citations:
+  - id: eo-jet
+    source: enicar-org
+    url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
+    title: Exploring the Enicar Sherpa (Super-)Jet
+    retrieved: 2026-10-25
+    supports: [winding, functions, base]
+last_reviewed: 2026-10-25

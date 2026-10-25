@@ -19,6 +19,15 @@ export function loadReferences(dir = REF_DIR) {
     .map((f) => ({ id: basename(f, '.yaml'), file: join('data/references', f), data: loadYaml(join(dir, f)) ?? {} }));
 }
 
+export const CALIBRE_DIR = join(ROOT, 'data/calibres');
+
+export function loadCalibres() {
+  return loadReferences(CALIBRE_DIR).map((c) => ({ ...c, file: c.file.replace('data/references', 'data/calibres') }));
+}
+
+// Same rule as calibreId in src/lib/site.ts.
+export const calibreId = (name) => name.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
 export function loadSources() {
   return loadYaml(join(ROOT, 'data/sources.yaml')) ?? [];
 }

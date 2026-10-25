@@ -12,7 +12,7 @@ const photo = d.images[0];
    data-family={d.family.id} data-kind={d.kind} data-decade={decadeOf(d.years) ?? 'unknown'}
    data-name={d.name} data-year={d.years.from ?? 9999} data-has-photo={photo ? 'yes' : 'no'}>
   <div class="watch-card__img">
-    {photo ? <img src={photo.file} alt={photo.alt} loading="lazy"> : <Dial kind={d.kind} />}
+    {photo ? <img src={photo.thumb} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy"> : <Dial kind={d.kind} />}
     <span class="watch-card__credit">{photo ? `Photo: ${photo.credit}` : 'Photo wanted'}</span>
   </div>
   <div class="watch-card__body">
@@ -21,10 +21,10 @@ const photo = d.images[0];
         <span class="watch-card__name">{d.name}</span>
         <span class="watch-card__meta">{familyName} · {KIND_LABEL[d.kind]}{years && ` · ${years}`}</span>
       </div>
-      <span class="mono watch-card__ref">{d.reference ?? 'ref. unknown'}</span>
+      <span class="mono watch-card__ref">{d.references[0]?.number ?? 'ref. unknown'}</span>
     </div>
     <div class="watch-card__foot">
-      <span>{d.movement.calibre ?? 'Calibre unknown'}</span>
+      <span>{d.movement.calibres.join(', ') || 'Calibre unknown'}</span>
       {d.status === 'draft' ? <span class="badge draft">Draft</span> : d.barometer ? <span class="mono">{formatRange(d.barometer)}</span> : <span class="badge verified">Verified</span>}
     </div>
   </div>

@@ -1,4 +1,4 @@
-# Enicar Archive
+# Enicar World
 
 An independent, sourced index of vintage Enicar watches. Static site, data in
 YAML, every fact cited. Managed by Claude; see [CLAUDE.md](CLAUDE.md).

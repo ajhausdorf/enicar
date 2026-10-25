@@ -1,6 +1,6 @@
 ---
 name: ship-update
-description: Take a finished change to the Enicar Archive through checks, independent verification and a pull request for the owner to merge. Use at the end of every change.
+description: Take a finished change to Enicar World through checks, independent verification and a pull request for the owner to merge. Use at the end of every change.
 ---
 
 # Ship an update

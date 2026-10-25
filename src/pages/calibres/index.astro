@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { href, calibreUsage } from '../../lib/site';
+
+const calibres = (await getCollection('calibres')).sort((a, b) => a.data.name.localeCompare(b.data.name, 'en', { numeric: true }));
+const usage = calibreUsage(await getCollection('references'));
+const byId = Object.fromEntries(calibres.map((c) => [c.id, c]));
+---
+<Base title="Calibres" section="calibres">
+  <div class="wrap cal">
+    <section class="intro">
+      <h1>Calibres</h1>
+      <p class="lede">The movements found in Enicar watches, what each one does, and which models used it.</p>
+    </section>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Calibre</th><th scope="col">Type</th><th scope="col">Based on</th><th scope="col">Used in</th></tr></thead>
+        <tbody>
+          {calibres.map((c) => {
+            const used = usage.get(c.id) ?? [];
+            return (
+              <tr>
+                <th scope="row"><a href={`/calibres/${c.id}/`}>{c.data.name}</a>{c.data.status === 'draft' && <span class="badge draft">Draft</span>}</th>
+                <td>{[c.data.winding, ...c.data.functions].filter(Boolean).join(', ') || <span class="muted">Unknown</span>}</td>
+                <td>{c.data.base ? <a href={`/calibres/${c.data.base.id}/`}>{byId[c.data.base.id]?.data.name}</a> : <span class="muted">—</span>}</td>
+                <td>{used.length ? used.map((u, i) => <>{i > 0 && ', '}<a href={href.ref(u.ref.id)}>{u.ref.data.name}</a></>) : <span class="muted">No watches recorded yet</span>}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .cal { display: flex; flex-direction: column; gap: 32px; padding-top: 56px; padding-bottom: 64px; }
+  .intro { display: flex; flex-direction: column; gap: 16px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 12px 16px; text-align: left; vertical-align: top; border-top: 1px solid var(--line-soft); }
+  thead th { background: var(--wash); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); border-top: 0; }
+  tbody th { font-family: var(--mono); font-weight: 500; white-space: nowrap; }
+  tbody th .badge { margin-left: 8px; }
+</style>
