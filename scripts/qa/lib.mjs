@@ -28,6 +28,14 @@ export function loadCalibres() {
 // Same rule as calibreId in src/lib/site.ts.
 export const calibreId = (name) => name.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
+// Same rule as leavesOf in src/lib/site.ts: one page per generation, or one
+// per model when it has no generations.
+export function leavesOf({ id, data }) {
+  const variants = data.variants ?? [];
+  if (!variants.length) return [{ id, path: `/ref/${id}/`, name: data.name, status: data.status }];
+  return variants.map((v) => ({ id, path: `/ref/${id}/${calibreId(v.name)}/`, name: `${data.name} ${v.name}`, status: data.status }));
+}
+
 export function loadSources() {
   return loadYaml(join(ROOT, 'data/sources.yaml')) ?? [];
 }

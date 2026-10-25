@@ -1,31 +1,34 @@
 ---
 import Dial from './Dial.astro';
-import { formatYears, decadeOf, formatRange, href, KIND_LABEL } from '../lib/site';
+import { formatYears, decadeOf, formatRange, KIND_LABEL } from '../lib/site';
 
-interface Props { entry: any; familyName: string; }
-const { entry, familyName } = Astro.props;
-const d = entry.data;
-const years = formatYears(d.years);
-const photo = d.images[0];
+// One card per page: a generation, or a model with no generations.
+interface Props { leaf: any; familyName: string; }
+const { leaf, familyName } = Astro.props;
+const d = leaf.ref.data;
+const years = formatYears(leaf.years);
+const photo = leaf.images[0];
+// Reference numbers aren't matched to generations yet, so only show one on a model's own card.
+const refNo = leaf.variant ? null : d.references[0]?.number;
 ---
 <!-- The title link stretches over the whole card, so the card stays one big
      target while the photo credit keeps a link of its own. -->
 <article class="watch-card"
-   data-family={d.family.id} data-kind={d.kind} data-decade={decadeOf(d.years) ?? 'unknown'}
-   data-name={d.name} data-year={d.years.from ?? 9999} data-has-photo={photo ? 'yes' : 'no'}>
+   data-family={d.family.id} data-model={leaf.ref.id} data-kind={d.kind} data-decade={decadeOf(leaf.years) ?? 'unknown'}
+   data-name={leaf.name} data-year={leaf.years.from ?? 9999} data-has-photo={photo ? 'yes' : 'no'}>
   <div class="watch-card__img">
     {photo ? <img src={photo.thumb} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy"> : <Dial kind={d.kind} />}
   </div>
   <div class="watch-card__body">
     <div class="watch-card__top">
       <div>
-        <a class="watch-card__name" href={href.ref(entry.id)}>{d.name}</a>
+        <a class="watch-card__name" href={leaf.path}>{leaf.name}</a>
         <span class="watch-card__meta">{familyName} · {KIND_LABEL[d.kind]}{years && ` · ${years}`}</span>
       </div>
-      <span class="mono watch-card__ref">{d.references[0]?.number ?? 'ref. unknown'}</span>
+      {refNo && <span class="mono watch-card__ref">{refNo}</span>}
     </div>
     <div class="watch-card__foot">
-      <span>{d.movement.calibres.join(', ') || 'Calibre unknown'}</span>
+      <span>{leaf.calibres.join(', ') || 'Calibre unknown'}</span>
       {d.status === 'draft' ? <span class="badge draft">Draft</span> : d.barometer ? <span class="mono">{formatRange(d.barometer)}</span> : <span class="badge verified">Verified</span>}
     </div>
     <p class="watch-card__credit">

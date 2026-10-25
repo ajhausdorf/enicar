@@ -39,8 +39,8 @@ export function formatRange(b: { currency: string; low: number; high: number }):
 }
 
 export const href = {
-  ref: (id: string) => `/ref/${id}/`,
   family: (id: string) => `/?family=${id}`,
+  model: (familyId: string, refId: string) => `/?family=${familyId}&model=${refId}`,
   calibre: (name: string) => `/calibres/${calibreId(name)}/`
 };
 
@@ -63,3 +63,43 @@ export function calibreUsage<T extends RefLike>(refs: T[]) {
   }
   return use;
 }
+
+// The catalog has three levels: family (Sherpa), model (Sherpa Jet, one
+// record in data/references/) and generation (MkI, a variant on the record).
+// Only the bottom level gets a page. A model with no generations is its own
+// bottom level. leavesOf() turns a record into those pages.
+type Years = { from: number | null; to: number | null };
+type VariantLike = { name: string; years: Years; calibres: string[] };
+type ImageLike = { variant: string | null };
+type RecordLike = {
+  id: string;
+  data: {
+    name: string;
+    years: Years & { approximate: boolean };
+    movement: { calibres: string[] };
+    variants: VariantLike[];
+    images: ImageLike[];
+  };
+};
+
+export const slugify = calibreId;
+
+export function leavesOf<R extends RecordLike>(ref: R) {
+  const d = ref.data;
+  if (!d.variants.length) {
+    return [{ ref, variant: null, path: `/ref/${ref.id}/`, slug: ref.id, name: d.name, years: d.years, calibres: d.movement.calibres, images: d.images }];
+  }
+  return d.variants.map((v) => ({
+    ref,
+    variant: v as R['data']['variants'][number],
+    path: `/ref/${ref.id}/${slugify(v.name)}/`,
+    slug: `${ref.id}/${slugify(v.name)}`,
+    name: `${d.name} ${v.name}`,
+    years: { ...v.years, approximate: d.years.approximate },
+    calibres: v.calibres.length ? v.calibres : d.movement.calibres,
+    // A photo tagged with a generation shows on that generation; untagged ones show on all.
+    images: d.images.filter((i) => !i.variant || i.variant === v.name) as R['data']['images']
+  }));
+}
+
+export type Leaf<R extends RecordLike> = ReturnType<typeof leavesOf<R>>[number];

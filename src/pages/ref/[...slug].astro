@@ -1,69 +1,75 @@
 ---
+// One page per generation (/ref/sherpa-jet/mki/), or per model when the
+// model has no generations (/ref/sherpa-graph/). Models with generations
+// don't get a page of their own; the catalog filters to them instead.
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Dial from '../../components/Dial.astro';
-import { formatYears, formatRange, href, KIND_LABEL, CONTRIBUTE_URL } from '../../lib/site';
+import { formatYears, formatRange, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf } from '../../lib/site';
 
 export async function getStaticPaths() {
   const refs = await getCollection('references');
-  return refs.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+  return refs.flatMap((ref) => leavesOf(ref).map((leaf) => ({ params: { slug: leaf.slug }, props: { leaf } })));
 }
 
-const { entry } = Astro.props;
+const { leaf } = Astro.props;
+const entry = leaf.ref;
 const d = entry.data;
+const v = leaf.variant;
 const family = await getEntry(d.family);
 const sources = Object.fromEntries((await getCollection('sources')).map((s) => [s.id, s]));
 const cites = Object.fromEntries(d.citations.map((c) => [c.id, c]));
-const siblings = (await getCollection('references', (r) => r.data.family.id === d.family.id && r.id !== entry.id))
+const otherModels = (await getCollection('references', (r) => r.data.family.id === d.family.id && r.id !== entry.id))
   .sort((a, b) => a.data.name.localeCompare(b.data.name));
+const generations = leavesOf(entry);
 
-const mm = (v: number | null) => (v ? `${v} mm` : null);
-const years = formatYears(d.years);
+const mm = (n: number | null) => (n ? `${n} mm` : null);
+const calibres = leaf.calibres;
 const specs = [
-  ['References', d.references.map((r) => r.number).join(', ') || null],
-  ['Produced', years],
+  ['Produced', formatYears(leaf.years)],
   ['Type', KIND_LABEL[d.kind]],
-  ['Movement', [d.movement.calibres.join(', '), d.movement.winding].filter(Boolean).join(' · ') || null],
-  ['Case', d.case.construction],
+  ['Movement', calibres.length || d.movement.winding ? 'movement' : null],
+  ['Case', v?.case ?? d.case.construction],
   ['Material', d.case.material],
-  ['Diameter', mm(d.case.diameter_mm) ?? (d.variants.some((v) => v.diameter_mm) ? 'Varies by generation' : null)],
-  ['Lug width', mm(d.case.lug_mm) ?? (d.variants.some((v) => v.lug_mm) ? 'Varies by generation' : null)],
+  ['Diameter', mm(v?.diameter_mm ?? d.case.diameter_mm)],
+  ['Lug width', mm(v?.lug_mm ?? d.case.lug_mm)],
   ['Thickness', mm(d.case.thickness_mm)],
-  ['Dial', d.dial],
-  ['Nicknames', d.nicknames.join(', ') || null]
+  ['Dial', v?.dials.length ? v.dials.join(', ') : d.dial],
+  ['Hands', v?.hands ?? null],
+  ['Bezel', v?.bezel ?? null],
+  ['Crowns', v?.crowns ?? null],
+  ['Nicknames', d.nicknames.join(', ') || null],
+  ['References', d.references.map((r) => r.number).join(', ') || null]
 ] as const;
+const alwaysShow = ['Produced', 'Movement', 'Case', 'Diameter', 'References'];
+
 const vYears = (y: { from: number | null; to: number | null }) =>
   y.from && y.to ? `${y.from} to ${y.to}` : y.from ? `${y.from} onward` : '';
 const rows = [
-  ['Years', (v: any) => vYears(v.years)],
-  ['Diameter', (v: any) => mm(v.diameter_mm)],
-  ['Lugs', (v: any) => mm(v.lug_mm)],
-  ['Calibre', (v: any) => v.calibres.join(', ')],
-  ['Case', (v: any) => v.case],
-  ['Hands', (v: any) => v.hands],
-  ['Bezel', (v: any) => v.bezel],
-  ['Dials', (v: any) => v.dials.join(', ')],
-  ['Crowns', (v: any) => v.crowns]
+  ['Years', (x: any) => vYears(x.years)],
+  ['Diameter', (x: any) => mm(x.diameter_mm)],
+  ['Lugs', (x: any) => mm(x.lug_mm)],
+  ['Calibre', (x: any) => x.calibres.join(', ')],
+  ['Case', (x: any) => x.case]
 ] as const;
-const usedRows = rows.filter(([, f]) => d.variants.some((v) => f(v)));
-const variantCites = [...new Set(d.variants.flatMap((v) => v.cites))].map((id) => cites[id]).filter(Boolean);
-const [hero] = d.images;
-const eyebrow = [family?.data.name, KIND_LABEL[d.kind], d.references[0] && `Ref. ${d.references[0].number}`].filter(Boolean).join(' · ');
+const usedRows = rows.filter(([, f]) => d.variants.some((x) => f(x)));
+const specCites = (v ? v.cites : []).map((id) => cites[id]).filter(Boolean);
+const images = leaf.images;
+const [hero] = images;
+const eyebrow = [family?.data.name, KIND_LABEL[d.kind]].filter(Boolean).join(' · ');
 const usedSources = [...new Set(d.citations.map((c) => c.source.id))].map((id) => sources[id]).filter(Boolean);
 const srcName = (c: any) => sources[c.source.id]?.data.name;
-// Group photo links: general ones first, then by generation in table order.
-const groupOrder = [null, ...d.variants.map((v) => v.name)];
-const elsewhere = groupOrder
-  .map((g) => [g ?? 'All generations', d.photos_elsewhere.filter((p) => p.variant === g)] as const)
-  .filter(([, links]) => links.length > 0);
-const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
+// Photo links for this generation, plus any that cover every generation.
+const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v?.name);
 ---
-<Base title={d.name} description={d.summary ?? `${d.name}, an Enicar ${family?.data.name} reference.`} section="catalog" searchable>
+<Base title={leaf.name} description={`${leaf.name}${v ? `, ${vYears(v.years)}` : ''}. ${d.summary ?? ''}`.trim()} section="catalog" searchable>
   <div class="wrap model">
     <nav aria-label="Breadcrumb" class="crumbs">
       <a href="/">Catalog</a><span aria-hidden="true">/</span>
       <a href={href.family(d.family.id)}>{family?.data.name}</a><span aria-hidden="true">/</span>
-      <span aria-current="page">{d.name}</span>
+      {v ? (
+        <><a href={href.model(d.family.id, entry.id)}>{d.name}</a><span aria-hidden="true">/</span><span aria-current="page">{v.name}</span></>
+      ) : <span aria-current="page">{d.name}</span>}
     </nav>
 
     {d.status === 'draft' && (
@@ -77,15 +83,15 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
             {hero ? <img id="hero-img" src={hero.file} alt={hero.alt} width={hero.width} height={hero.height}> : <Dial kind={d.kind} size={300} />}
           </div>
           <figcaption id="hero-cap">
-            {hero ? <>{hero.variant && `${hero.variant}. `}Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit} · {hero.license} · <a href={hero.source_url}>original</a></> : (d.photos_elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
+            {hero ? <>Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit} · {hero.license} · <a href={hero.source_url}>original</a></> : (elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
           </figcaption>
         </figure>
-        {d.images.length > 1 && (
+        {images.length > 1 && (
           <ul class="thumbs">
-            {d.images.map((t, i) => (
+            {images.map((t, i) => (
               <li><button type="button" class="thumb" aria-pressed={i === 0 ? 'true' : 'false'} aria-label={`Show photo: ${t.alt}`}
                 data-file={t.file} data-alt={t.alt} data-w={t.width} data-h={t.height}
-                data-variant={t.variant ?? ''} data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.license} data-source={t.source_url}>
+                data-variant="" data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.license} data-source={t.source_url}>
                 <img src={t.thumb} alt="" loading="lazy">
               </button></li>
             ))}
@@ -95,12 +101,7 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
           <div class="elsewhere">
             <strong>Photos elsewhere</strong>
             <span class="small muted">We don't have permission to show these here, so these links go to the photographers' own pages.</span>
-            {elsewhere.map(([group, links]) => (
-              <div class="elsewhere__group">
-                <span class="eyebrow">{group}</span>
-                <ul>{links.map((p) => <li><a href={p.url} rel="noopener">{p.label}</a></li>)}</ul>
-              </div>
-            ))}
+            <ul>{elsewhere.map((p) => <li><a href={p.url} rel="noopener">{p.label}</a></li>)}</ul>
           </div>
         )}
       </div>
@@ -108,10 +109,17 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
       <div class="facts">
         <div class="title">
           <p class="eyebrow">{eyebrow}</p>
-          <h1>{d.name}</h1>
-          {d.summary && <p class="lede">{d.summary}</p>}
+          <h1>{leaf.name}</h1>
+          {v ? <p class="tell"><strong>How to tell:</strong> {v.tell}</p> : d.summary && <p class="lede">{d.summary}</p>}
           <span class={`badge ${d.status}`}>{d.status === 'draft' ? 'Draft' : 'Verified'}</span>
         </div>
+
+        {generations.length > 1 && (
+          <nav class="gen-nav" aria-label={`${d.name} generations`} data-pagefind-ignore>
+            <span>{d.name}</span>
+            {generations.map((g) => <a href={g.path} aria-current={g.slug === leaf.slug ? 'page' : undefined}>{g.variant?.name}</a>)}
+          </nav>
+        )}
 
         <div class="card barometer">
           <div class="row"><span class="label">Price</span>
@@ -128,14 +136,15 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
         </div>
 
         <dl class="specs">
-          {specs.filter(([k, v]) => v || ['References', 'Produced', 'Movement', 'Case', 'Diameter'].includes(k)).map(([k, v]) => (
-            <div><dt>{k}</dt><dd class={v ? '' : 'unknown'}>{
-              k === 'Movement' && d.movement.calibres.length
-                ? <>{d.movement.calibres.map((c, i) => <>{i > 0 && ', '}<a href={href.calibre(c)}>{c}</a></>)}{d.movement.winding && ` · ${d.movement.winding}`}</>
-                : v ?? 'Unknown'
+          {specs.filter(([k, val]) => val || alwaysShow.includes(k)).map(([k, val]) => (
+            <div><dt>{k}</dt><dd class={val ? '' : 'unknown'}>{
+              k === 'Movement' && val
+                ? <>{calibres.map((c, i) => <>{i > 0 && ', '}<a href={href.calibre(c)}>{c}</a></>)}{d.movement.winding && `${calibres.length ? ' · ' : ''}${d.movement.winding}`}</>
+                : val ?? 'Unknown'
             }</dd></div>
           ))}
         </dl>
+        {specCites.length > 0 && <p class="small muted">Specs from {specCites.map((c) => <a class="cite" href={c.url}>{srcName(c)}</a>)}</p>}
         {d.references.some((r) => r.note) && (
           <ul class="ref-notes small muted">
             {d.references.map((r) => <li><span class="mono">{r.number}</span>: {r.note} {r.cites.map((id) => cites[id] && <a class="cite" href={cites[id].url}>{srcName(cites[id])}</a>)}</li>)}
@@ -161,32 +170,20 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
       </section>
     )}
 
-    {d.variants.length > 0 && (
-      <section class="gens" aria-labelledby="gen-h">
-        <div class="gens__head">
-          <h2 id="gen-h">Generations</h2>
-          {variantCites.length > 0 && <span class="small muted">Specs from {variantCites.map((c) => <a class="cite" href={c.url}>{srcName(c)}</a>)}</span>}
-        </div>
+    {v && usedRows.length > 0 && (
+      <section class="gens" aria-labelledby="gen-h" data-pagefind-ignore>
+        <div class="gens__head"><h2 id="gen-h">{d.name} generations compared</h2></div>
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th scope="col"><span class="sr-only">Spec</span></th>{d.variants.map((v) => <th scope="col">{v.name}</th>)}</tr>
+              <tr><th scope="col"><span class="sr-only">Spec</span></th>{generations.map((g) => (
+                <th scope="col" class={g.slug === leaf.slug ? 'current' : ''}>{g.slug === leaf.slug ? g.variant?.name : <a href={g.path}>{g.variant?.name}</a>}</th>
+              ))}</tr>
             </thead>
             <tbody>
               {usedRows.map(([label, f]) => (
-                <tr><th scope="row">{label}</th>{d.variants.map((v) => <td>{
-                  label === 'Calibre' && v.calibres.length
-                    ? v.calibres.map((c, i) => <>{i > 0 && ', '}<a href={href.calibre(c)}>{c}</a></>)
-                    : f(v) || '—'
-                }</td>)}</tr>
+                <tr><th scope="row">{label}</th>{generations.map((g) => <td class={g.slug === leaf.slug ? 'current' : ''}>{f(g.variant) || '—'}</td>)}</tr>
               ))}
-              <tr><th scope="row">How to tell</th>{d.variants.map((v) => <td>{v.tell}</td>)}</tr>
-              {d.photos_elsewhere.some((p) => p.variant) && (
-                <tr><th scope="row">Photos</th>{d.variants.map((v) => {
-                  const links = d.photos_elsewhere.filter((p) => p.variant === v.name);
-                  return <td>{links.length ? links.map((p, i) => <>{i > 0 && ', '}<a href={p.url} rel="noopener">{handle(p.label)}</a></>) : '—'}</td>;
-                })}</tr>
-              )}
             </tbody>
           </table>
         </div>
@@ -225,10 +222,10 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
       )}
     </section>
 
-    {siblings.length > 0 && (
+    {otherModels.length > 0 && (
       <section class="siblings" data-pagefind-ignore>
         <h2>More in the {family?.data.name} family</h2>
-        <ul>{siblings.map((s) => <li><a href={href.ref(s.id)}>{s.data.name}</a></li>)}</ul>
+        <ul>{otherModels.map((s) => <li><a href={leavesOf(s).length > 1 ? href.model(d.family.id, s.id) : leavesOf(s)[0].path}>{s.data.name}</a></li>)}</ul>
       </section>
     )}
 
@@ -321,5 +318,12 @@ const handle = (label: string) => label.match(/^@\S+/)?.[0] ?? label;
   .credits { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
   .credits div { flex: 1 1 420px; display: flex; flex-direction: column; gap: 6px; color: var(--ink-2); }
   .credits strong { color: var(--ink); }
+  .tell { margin: 0; font-size: 15px; color: var(--ink-2); }
+  .gen-nav { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .gen-nav span { font-size: 12px; color: var(--muted); margin-right: 4px; }
+  .gen-nav a { display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-size: 14px; }
+  .gen-nav a[aria-current='page'] { background: var(--ink); border-color: var(--ink); color: #fff; }
+  th.current, td.current { background: var(--accent-wash); }
+  thead th a { text-decoration: none; }
   @media (max-width: 520px) { .specs { grid-template-columns: 1fr; } }
 </style>
