@@ -8,6 +8,9 @@ interface Props { leaf: any; familyName: string; }
 const { leaf, familyName } = Astro.props;
 const d = leaf.ref.data;
 const years = formatYears(leaf.years);
+// Case size, the measure collectors compare first: the generation's own, else the model's.
+const dia = leaf.variant?.diameter_mm ?? d.case.diameter_mm;
+const size = dia == null ? null : `${Array.isArray(dia) ? dia.join(' or ') : dia} mm`;
 // The card shows a handful; the page has the rest.
 const MAX_SLIDES = 8;
 const photos = leaf.images.slice(0, MAX_SLIDES);
@@ -55,7 +58,7 @@ const sortPrice = topBand ? Math.round(toUsd(bar.currency, topBand.high)) : '';
     <div class="watch-card__top">
       <div>
         <a class="watch-card__name" href={leaf.path}>{leaf.name}</a>
-        <span class="watch-card__meta">{familyName} · {KIND_LABEL[d.kind]}{years && ` · ${years}`}</span>
+        <span class="watch-card__meta">{familyName} · {KIND_LABEL[d.kind]}{years && ` · ${years}`}{size && ` · ${size}`}</span>
       </div>
       {refNo && <span class="mono watch-card__ref">{refNo}</span>}
     </div>
