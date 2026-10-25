@@ -1,0 +1,102 @@
+name: F45 football timer
+family: chronographs
+kind: chronograph
+summary: "A Big Eye variant for timing football matches: its modified Valjoux 23 counts to 45 minutes rather than 30."
+references: []
+nicknames: ["F45"]
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: ["Valjoux 23"]
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+variants: []
+read_more:
+  - title: "The Enicar F45 Pelé chronograph"
+    url: https://enicar.org/2021/03/15/the-enicar-f45-pele-chronograph/
+    source: enicar-org
+    note: "The F45 and its link to football."
+images:
+  - file: /images/f45/c-codhithlxwd-1.webp
+    thumb: /images/f45/c-codhithlxwd-1-sm.webp
+    width: 1421
+    height: 1421
+    alt: "F45 chronograph with a navy dial, white registers and a 45-minute counter on a tan rally strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/COdhiThLxWd/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads F45; the right-hand counter runs to 45 minutes."
+  - file: /images/f45/c-coimml-l0bo-1.webp
+    thumb: /images/f45/c-coimml-l0bo-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "F45 chronograph with a navy dial and orange chronograph hand, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/COimml-L0bO/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads F45; the right-hand counter runs to 45 minutes."
+  - file: /images/f45/c-cskoy6sljht-1.webp
+    thumb: /images/f45/c-cskoy6sljht-1-sm.webp
+    width: 1415
+    height: 1415
+    alt: "F45 chronograph with a navy dial, white registers and orange chronograph hand on a navy strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CSKOy6sLjhT/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads F45; the right-hand counter runs to 45 minutes."
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Valjoux 23 F45 football timer, Big Eye yacht dial version"
+      bands:
+        - { condition: "Very good to mint", low: 3500, high: 5000 }
+        - { condition: "Average to good", low: 2500, high: 3500 }
+        - { condition: "Poor to fair", low: null, high: 2500 }
+      note: "Published together with the yacht-dial Big Eye."
+status: draft
+gaps:
+  - "Factory reference numbers"
+  - "Case size and material"
+citations:
+  - id: eo-f45
+    source: enicar-org
+    url: https://enicar.org/2021/03/15/the-enicar-f45-pele-chronograph/
+    title: "The Enicar F45 Pele chronograph"
+    retrieved: 2026-10-25
+    supports: [movement.calibres, nicknames]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25

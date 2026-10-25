@@ -1,0 +1,119 @@
+name: Big Eye
+family: chronographs
+kind: chronograph
+summary: "A two-register chronograph, named for its larger right-hand counter."
+references: []
+nicknames: ["Big Eye"]
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+variants: []
+read_more:
+  - title: "The Enicar F45 Pelé chronograph"
+    url: https://enicar.org/2021/03/15/the-enicar-f45-pele-chronograph/
+    source: enicar-org
+    note: "Covers the Big Eye and its football version."
+images:
+  - file: /images/big-eye/c-cbua1dzhhdp-1.webp
+    thumb: /images/big-eye/c-cbua1dzhhdp-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Big Eye with a white dial, grey left register and larger right-hand counter on a tan strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CBUA1dzHhDp/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: caption
+    identified_note: "Two-register dial with the larger right-hand counter that gives the Big Eye its name (enicar.org). Caption: rare white dial Big Eye."
+  - file: /images/big-eye/c-cc3lcm0nkuc-1.webp
+    thumb: /images/big-eye/c-cc3lcm0nkuc-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Big Eye with an albino silver dial and orange chronograph hand on a tan rally strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CC3lcM0nkUC/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: caption
+    identified_note: "Two-register dial with the larger right-hand counter that gives the Big Eye its name (enicar.org). Caption: his albino Big Eye."
+  - file: /images/big-eye/c-cp-qv71l5cm-1.webp
+    thumb: /images/big-eye/c-cp-qv71l5cm-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Big Eye with a white dial and larger right-hand counter on a navy strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CP_QV71L5Cm/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Two-register dial with the larger right-hand counter that gives the Big Eye its name (enicar.org)."
+  - file: /images/big-eye/c-cm2rcq0rq7n-1.webp
+    thumb: /images/big-eye/c-cm2rcq0rq7n-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Big Eye with a white dial and orange chronograph hand on a tan strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CM2rCq0rQ7n/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: tells
+    identified_note: "Two-register dial with the larger right-hand counter that gives the Big Eye its name (enicar.org)."
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Valjoux 23 chronograph: Big Eye, Lausanne"
+      bands:
+        - { condition: "Very good to mint", low: 3000, high: 4000 }
+        - { condition: "Average to good", low: 2000, high: 3000 }
+        - { condition: "Poor to fair", low: null, high: 2000 }
+      note: "Published with the Lausanne. The yacht-dial Big Eye is priced with the F45."
+status: draft
+gaps:
+  - "Calibre: the F45 article and the Barometer say Valjoux 23; the Lausanne article says the Big Eye shares the Lausanne's Valjoux 232"
+  - "Factory reference numbers"
+  - "Case size and material"
+citations:
+  - id: eo-f45
+    source: enicar-org
+    url: https://enicar.org/2021/03/15/the-enicar-f45-pele-chronograph/
+    title: "The Enicar F45 Pele chronograph"
+    retrieved: 2026-10-25
+    supports: [nicknames]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25

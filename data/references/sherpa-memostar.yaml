@@ -1,0 +1,52 @@
+name: Sherpa Memostar
+family: sherpa
+kind: alarm
+summary: "An alarm watch."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+variants: []
+read_more: []
+images: []
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Sherpa Memostar"
+      bands:
+        - { condition: "Very good to mint", low: 1800, high: 2500 }
+        - { condition: "Average to good", low: 1000, high: 1800 }
+        - { condition: "Poor to fair", low: 750, high: 1000 }
+      note: null
+status: draft
+gaps:
+  - "Calibre (an Antiquorum lot gives a 2980 with 19 jewels)"
+  - "Production years"
+  - "Case size and material"
+  - "Photographs"
+citations:
+  - id: eo-barometer-1
+    source: enicar-org
+    url: https://enicar.org/2018/01/10/watch-value-barometer-1/
+    title: "Watch Value Barometer #1, January 2018"
+    retrieved: 2026-10-25
+    supports: []
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-25
+    supports: []
+last_reviewed: 2026-10-25
