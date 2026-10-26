@@ -318,5 +318,35 @@
   "by": "tells",
   "note": "Caseback reads 124/003 Seapearl.",
   "view": "caseback"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "enicar-aqua-graph-reference-0720202a_01",
+  "variant": "MkIV",
+  "alt": "Aqua Graph MkIV with a white dial, grey registers and orange chronograph hand on a black rally strap",
+  "caption": null,
+  "by": "tells",
+  "note": "Orange triangle chronograph hand, baton hands, applied logo and a house-shaped pointer; white dial with grey registers, as on the MkIV serial 1.070.295 sold on OmegaForums. The listing calls it a MK IV, ref. 072-02-02A.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "enicar-aqua-graph-reference-0720202a_02",
+  "variant": "MkIV",
+  "alt": "Aqua Graph MkIV with a white dial and black diving bezel, on the wrist",
+  "caption": null,
+  "by": "tells",
+  "note": "Orange triangle chronograph hand, baton hands, applied logo and a house-shaped pointer; white dial with grey registers, as on the MkIV serial 1.070.295 sold on OmegaForums. The listing calls it a MK IV, ref. 072-02-02A.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "enicar-aqua-graph-reference-0720202a_07",
+  "variant": "MkIV",
+  "alt": "Caseback of an Aqua Graph MkIV, reading Sherpa 300, held in the hand",
+  "caption": null,
+  "by": "tells",
+  "note": "Orange triangle chronograph hand, baton hands, applied logo and a house-shaped pointer; white dial with grey registers, as on the MkIV serial 1.070.295 sold on OmegaForums. The listing calls it a MK IV, ref. 072-02-02A.",
+  "view": "caseback"
  }
 ]
