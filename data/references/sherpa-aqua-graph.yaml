@@ -491,6 +491,22 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands outlined in white, thick black register hands, a chronograph hand with a lume dot and a house-shaped pointer on the red ring. Caption: 1968."
+  - file: /images/sherpa-aqua-graph/of-stigmata-1146291.webp
+    thumb: /images/sherpa-aqua-graph/of-stigmata-1146291-sm.webp
+    width: 900
+    height: 900
+    alt: "Aqua Graph MkII with a black dial, grey registers and orange triangle pointer on a black strap"
+    view: dial
+    variant: "MkII"
+    source_url: https://omegaforums.net/posts/1146291/
+    credit: "stigmata (OmegaForums)"
+    credit_url: https://omegaforums.net/posts/1146291/
+    license: "Forum photo"
+    permission: credited
+    permission_ref: null
+    caption: null
+    identified_by: tells
+    identified_note: "Paddle hands with short orange tips, a chronograph hand with a red dot near the tip and a triangle pointer on the ring. Post: their '66 Aqua Graph."
 barometer: null
 status: draft
 gaps:

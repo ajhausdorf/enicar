@@ -22,8 +22,8 @@ if (!id || !input || !name || missing.length) {
   if (missing.length) console.error(`missing: ${missing.join(', ')}`);
   process.exit(1);
 }
-if (!['own', 'granted', 'cc', 'public-domain'].includes(opts.permission)) {
-  console.error('--permission must be own, granted, cc or public-domain');
+if (!['own', 'granted', 'cc', 'public-domain', 'credited'].includes(opts.permission)) {
+  console.error('--permission must be own, granted, cc, public-domain or credited');
   process.exit(1);
 }
 if (opts.permission === 'granted' && !opts['permission-ref']) {

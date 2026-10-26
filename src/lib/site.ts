@@ -7,6 +7,10 @@ export const SITE_NAME = 'Enicar World';
 // before launch (see CLAUDE.md, "Before launch").
 export const CONTRIBUTE_URL = 'https://github.com/ajhausdorf/enicar/issues/new/choose';
 
+// Where a photographer asks us to take down a 'credited' photo.
+export const REMOVAL_URL = 'https://github.com/ajhausdorf/enicar/issues/new?template=photo-removal.yml';
+export const removalUrl = (file: string) => `${REMOVAL_URL}&title=${encodeURIComponent('Remove photo ' + file)}`;
+
 export const KIND_LABEL: Record<string, string> = {
   chronograph: 'Chronograph',
   diver: 'Diver',

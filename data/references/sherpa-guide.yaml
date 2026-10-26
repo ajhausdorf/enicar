@@ -218,6 +218,22 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands with lume tips, a thin 24-hour hand with an orange tip, long-lug case."
+  - file: /images/sherpa-guide/of-stigmata-717054.webp
+    thumb: /images/sherpa-guide/of-stigmata-717054-sm.webp
+    width: 768
+    height: 1024
+    alt: "Sherpa Guide MkI with a white dial and world-city bezel on a black strap with red stitching, on the wrist"
+    view: dial
+    variant: "MkI"
+    source_url: https://omegaforums.net/posts/717054/
+    credit: "stigmata (OmegaForums)"
+    credit_url: https://omegaforums.net/posts/717054/
+    license: "Forum photo"
+    permission: credited
+    permission_ref: null
+    caption: null
+    identified_by: caption
+    identified_note: "Posted as their white Guide MkI, in the OmegaForums thread on the Guide Mark 1."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
