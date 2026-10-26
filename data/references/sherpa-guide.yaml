@@ -16,11 +16,63 @@ case:
   thickness_mm: null
 features: [two-crowns, inner-bezel, outer-bezel, red-pointer-ring]
 dial: null
+variants:
+  - name: MkI
+    years: { from: 1960, to: null }
+    tell: "Dauphine hands and a crescent-moon 24-hour hand; early dials carry the old logo with ENICAR inside Saturn."
+    calibres: [AR1126]
+    hands: "Dauphine; crescent-moon 24-hour hand"
+    bezel: "Inner 24-hour bezel, black and white or red and white; red pointer ring"
+    dials: ["Black", "Cream or white", "Gold (Rubyrotor)"]
+    crowns: Thin
+    refs: [100/205]
+    cites: [sb-guide, eo-guide]
+  - name: MkII
+    tell: "Baton hands tipped with lume, a slim 24-hour hand and a seconds hand with a round dot; wider markers with lume dots at 6, 9 and 12."
+    calibres: [AR1146]
+    hands: "Baton, lume at the tips; slim 24-hour hand, orange-tipped on some; dot seconds hand"
+    bezel: "Inner 24-hour bezel, black and yellow more often than black and white; red pointer ring"
+    dials: ["Black", "White or cream"]
+    crowns: Wider
+    refs: [146/001, 148.35.01]
+    cites: [sb-guide]
+  - name: MkIII
+    years: { from: 1968, to: null }
+    tell: "Rally-style 24-hour hand, pencil lume in the minute hand and a lozenge lume in the hour hand, applied logo and thick crowns."
+    hands: "Baton, pencil lume in the minute hand and lozenge lume in the hour hand; rally-style 24-hour hand; lollipop or red triangle seconds hand"
+    bezel: "Inner 24-hour bezel in several colours, some with a checkered chapter ring; red pointer ring"
+    dials: ["Black", "White"]
+    crowns: Thick
+    refs: [148-35-01, 148-35-01A]
+    cites: [sb-guide]
+  - name: MkIV
+    years: { from: 1969, to: null }
+    tell: "Cushion case with an orange pointer ring, a checkered chapter ring and black 6, 12, 18 and 24 markers on the inner bezel."
+    calibres: [AR166]
+    case: Cushion (short-lug)
+    bezel: "Multi-coloured inner 24-hour bezel, 6, 12, 18 and 24 in black; orange pointer ring"
+    refs: [166-35-04]
+    cites: [sb-guide, eo-guide]
+  - name: MkIVa
+    tell: "A two-ring Saturn logo, no checkered chapter ring, and trapezoid lume plots at the quarter hours; in a cushion or a long-lug case."
+    calibres: [AR166]
+    case: Cushion (short-lug) or long-lug
+    bezel: "Multi-coloured inner 24-hour bezel; the 6, 12, 18 and 24 markers not always in a contrasting colour"
+    refs: [166-35-04]
+    cites: [sb-guide]
 read_more:
   - title: Sherpa tool watch matrix
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+  - title: The many colors of the Enicar Sherpa Guide (and why it deserves more love)
+    url: https://enicar.org/2017/11/29/the-many-colors-of-the-enicar-sherpa-guide-and-why-it-deserves-more-love/
+    source: enicar-org
+    note: null
+  - title: "Enicar Sherpa Pilot (2 crown models), archived copy"
+    url: https://web.archive.org/web/20191210020427/https://thespringbar.com/blogs/guides/enicar-sherpa-pilot-2-crown-models/
+    source: thespringbar
+    note: The Guide generation by generation, from the Mark I to the Mark IVA. The original page is gone.
 images:
   - file: /images/sherpa-guide/v-dh0pxxtov-n-1.webp
     thumb: /images/sherpa-guide/v-dh0pxxtov-n-1-sm.webp
@@ -28,7 +80,7 @@ images:
     height: 1137
     alt: "Sherpa Guide with a silver dial marked 33, world-city outer bezel and red GMT hand, on a black strap"
     view: dial
-    variant: null
+    variant: "MkI"
     source_url: https://www.instagram.com/p/DH0pxXtoV-N/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -36,15 +88,15 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Guide; caption dates it 1960."
+    identified_by: tells
+    identified_note: "Dauphine hands and a crescent-moon 24-hour hand; dial reads Guide 33. Caption dates it 1960."
   - file: /images/sherpa-guide/v-dhqejuaiqph-1.webp
     thumb: /images/sherpa-guide/v-dhqejuaiqph-1-sm.webp
     width: 845
     height: 845
     alt: "Sherpa Guide with a black dial, yellow and white inner 24-hour bezel and world-city outer bezel on a steel bracelet"
     view: dial
-    variant: null
+    variant: "MkIV"
     source_url: https://www.instagram.com/p/DHQeJUAIQpH/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -52,15 +104,15 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Guide."
+    identified_by: tells
+    identified_note: "Cushion case, orange pointer ring and a checkered chapter ring inside the inner bezel."
   - file: /images/sherpa-guide/v-cqbdwxtngpn-1.webp
     thumb: /images/sherpa-guide/v-cqbdwxtngpn-1-sm.webp
     width: 1440
     height: 1440
     alt: "Sherpa Guide with a black dial, orange pointer and world-city bezel, on the wrist"
     view: dial
-    variant: null
+    variant: "MkIV"
     source_url: https://www.instagram.com/p/CqBDwxtNgpN/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -68,15 +120,15 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Guide."
+    identified_by: tells
+    identified_note: "Cushion case, orange pointer ring and a checkered chapter ring inside the inner bezel."
   - file: /images/sherpa-guide/v-cay5csnraex-1.webp
     thumb: /images/sherpa-guide/v-cay5csnraex-1-sm.webp
     width: 1440
     height: 1440
-    alt: "Sherpa Guide with a black dial, cream inner 24-hour bezel and red GMT hand on a black strap"
+    alt: "Sherpa Guide with a dark navy dial, cream inner 24-hour bezel and red GMT hand on a black strap"
     view: dial
-    variant: null
+    variant: "MkIVa"
     source_url: https://www.instagram.com/p/Cay5CsNraEX/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -84,15 +136,15 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Guide."
+    identified_by: tells
+    identified_note: "Cushion case and orange pointer ring, with the two-ring Saturn logo and no checkered chapter ring."
   - file: /images/sherpa-guide/v-cu5inhcss9f-1.webp
     thumb: /images/sherpa-guide/v-cu5inhcss9f-1-sm.webp
     width: 1440
     height: 1440
     alt: "Sherpa Guide with a silver dial marked 33 and world-city bezel on a grey striped strap"
     view: dial
-    variant: null
+    variant: "MkI"
     source_url: https://www.instagram.com/p/CU5iNHcss9f/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -100,15 +152,15 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Guide."
+    identified_by: tells
+    identified_note: "Dauphine hands and a crescent-moon 24-hour hand; dial reads Guide 33."
   - file: /images/sherpa-guide/v-cszuiord7ij-1.webp
     thumb: /images/sherpa-guide/v-cszuiord7ij-1-sm.webp
     width: 1440
     height: 1440
     alt: "Sherpa Guide with a blue dial, yellow inner bezel and world-city outer bezel on a navy rally strap"
     view: dial
-    variant: null
+    variant: "MkIVa"
     source_url: https://www.instagram.com/p/CSZuIORD7ij/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -116,15 +168,15 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Guide; caption dates it 1969."
+    identified_by: tells
+    identified_note: "Cushion case and orange pointer ring, with the two-ring Saturn logo and no checkered chapter ring. Caption dates it 1969."
   - file: /images/sherpa-guide/c-cn2xdlirgcu-1.webp
     thumb: /images/sherpa-guide/c-cn2xdlirgcu-1-sm.webp
     width: 1434
     height: 1434
     alt: "Sherpa Guide with a black dial, world-city bezel and red pointer on a red strap, on the wrist"
     view: dial
-    variant: null
+    variant: "MkII"
     source_url: https://www.instagram.com/p/CN2xdlIrgCU/
     credit: "@ctwatchguy"
     credit_url: https://www.instagram.com/ctwatchguy/
@@ -132,15 +184,15 @@ images:
     permission: granted
     permission_ref: ctwatchguy
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Guide."
+    identified_by: tells
+    identified_note: "Baton hands with lume tips, a thin 24-hour hand with an orange tip, long-lug case."
   - file: /images/sherpa-guide/c-clxghgtl-sh-1.webp
     thumb: /images/sherpa-guide/c-clxghgtl-sh-1-sm.webp
     width: 1440
     height: 1440
     alt: "Sherpa Guide with a black dial and cream inner 24-hour bezel on a red strap, on the wrist"
     view: dial
-    variant: null
+    variant: "MkII"
     source_url: https://www.instagram.com/p/CLXghGTL-sh/
     credit: "@ctwatchguy"
     credit_url: https://www.instagram.com/ctwatchguy/
@@ -148,15 +200,15 @@ images:
     permission: granted
     permission_ref: ctwatchguy
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Guide."
+    identified_by: tells
+    identified_note: "Baton hands with lume tips, a thin 24-hour hand with an orange tip, long-lug case."
   - file: /images/sherpa-guide/c-ckb8ehprhw3-1.webp
     thumb: /images/sherpa-guide/c-ckb8ehprhw3-1-sm.webp
     width: 1440
     height: 1440
     alt: "Sherpa Guide with a black dial, red date and world-city bezel on a red strap, on the wrist"
     view: dial
-    variant: null
+    variant: "MkII"
     source_url: https://www.instagram.com/p/CKb8ehPrHw3/
     credit: "@ctwatchguy"
     credit_url: https://www.instagram.com/ctwatchguy/
@@ -164,8 +216,8 @@ images:
     permission: granted
     permission_ref: ctwatchguy
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Guide."
+    identified_by: tells
+    identified_note: "Baton hands with lume tips, a thin 24-hour hand with an orange tip, long-lug case."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
@@ -179,8 +231,8 @@ barometer:
       note: "Published for the 42 mm Guide; this record gives 43 mm."
 status: draft
 gaps:
-  - Production years
-  - Reference numbers
+  - Production years for MkII and MkIVa
+  - Serial ranges
   - Case material and lug width
   - "Movement detail: AR166 in the cushion-case version"
   - Photographs
@@ -191,6 +243,18 @@ citations:
     title: Sherpa tool watch matrix, 1958+ models (Enicar book p. 262)
     retrieved: 2026-10-25
     supports: [case.diameter_mm, features, movement.calibres]
+  - id: sb-guide
+    source: thespringbar
+    url: https://web.archive.org/web/20191210020427/https://thespringbar.com/blogs/guides/enicar-sherpa-pilot-2-crown-models/
+    title: "Enicar Sherpa Pilot (2 crown models), The Spring Bar (archived 10 December 2019)"
+    retrieved: 2026-10-25
+    supports: []
+  - id: eo-guide
+    source: enicar-org
+    url: https://enicar.org/2017/11/29/the-many-colors-of-the-enicar-sherpa-guide-and-why-it-deserves-more-love/
+    title: The many colors of the Enicar Sherpa Guide (and why it deserves more love)
+    retrieved: 2026-10-25
+    supports: []
   - id: eo-barometer-7
     source: enicar-org
     url: https://enicar.org/2025/12/08/watch-value-barometer-7/
