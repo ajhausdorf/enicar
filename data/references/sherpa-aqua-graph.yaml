@@ -165,6 +165,7 @@ variants:
       - "White with grey registers"
     refs:
       - 072-02-02
+      - 072-02-02A
     serials:
       - 1.070.2xx – 1.070.9xx
       - 1.317.6xx – 1.321.8xx
@@ -460,7 +461,23 @@ images:
     permission_ref: eric-wind
     caption: null
     identified_by: tells
-    identified_note: "Orange triangle chronograph hand, baton hands, applied logo and a house-shaped pointer; white dial with grey registers, as on the MkIV serial 1.070.295 sold on OmegaForums. The listing calls it a MK IV, ref. 072-02-02A."
+    identified_note: "Caseback of the white-dial MkIV in the same listing (orange triangle chronograph hand, house-shaped pointer); reads Sherpa 300."
+  - file: /images/sherpa-aqua-graph/ew-dvsjmnajhqd-1.webp
+    thumb: /images/sherpa-aqua-graph/ew-dvsjmnajhqd-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Aqua Graph MkIV with a white dial and grey registers on a black strap, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/DVsJmnAjHqd/
+    credit: "@ericmwind"
+    credit_url: https://www.instagram.com/ericmwind/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "The white-dial watch from the Wind Vintage MK IV listing: orange triangle chronograph hand and house-shaped pointer."
 barometer: null
 status: draft
 gaps:

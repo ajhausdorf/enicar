@@ -1,0 +1,62 @@
+[
+ {
+  "rec": "sherpa-graph",
+  "src": "B-BWsdYJOsI_01",
+  "variant": "MkI",
+  "alt": "Sherpa Graph MkI with a black dial and white registers on a brown strap, on the wrist",
+  "caption": null,
+  "by": "caption",
+  "note": "Caption: a Sherpa Graph “Mark 1A” in an EPSA case made in 1960; large logo and plain chronograph hand.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "CIKoScHMY6A_01",
+  "variant": "MkIV",
+  "alt": "Sherpa Graph MkIV with a black dial, white registers and orange chronograph hand on a tan strap, on the wrist",
+  "caption": null,
+  "by": "tells",
+  "note": "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "DE883LXs40z_01",
+  "variant": "MkIII",
+  "alt": "Sherpa Graph MkIII with an all-black dial and grey tachymetre ring on a tan strap, on the wrist",
+  "caption": null,
+  "by": "tells",
+  "note": "Grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "CLix5XrMGZD_01",
+  "variant": "MkIII",
+  "alt": "Jet Graph MkIII with a black dial, white registers and 24-hour bezel on a tan strap, on the wrist",
+  "caption": null,
+  "by": "tells",
+  "note": "Baton hands, a lollipop chronograph hand with a red dot and a red and black checkered GMT hand.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "DVsJmnAjHqd_01",
+  "variant": "MkIV",
+  "alt": "Aqua Graph MkIV with a white dial and grey registers on a black strap, on the wrist",
+  "caption": null,
+  "by": "tells",
+  "note": "The white-dial watch from the Wind Vintage MK IV listing: orange triangle chronograph hand and house-shaped pointer.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-ultradive",
+  "src": "BzrnWrepGlu_01",
+  "variant": null,
+  "alt": "Sherpa Ultradive with a black dial and orange inner ring track on its original steel bracelet, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Sherpa Ultradive; caption: on its rare original bracelet.",
+  "view": "dial"
+ }
+]

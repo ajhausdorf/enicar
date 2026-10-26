@@ -524,6 +524,22 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands, a lollipop chronograph hand with a red dot and a red and black checkered GMT hand, on an all-black dial. The listing gives ref. 072-02-02A."
+  - file: /images/sherpa-jet-graph/ew-clix5xrmgzd-1.webp
+    thumb: /images/sherpa-jet-graph/ew-clix5xrmgzd-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Jet Graph MkIII with a dark grey dial, white registers and 24-hour bezel on a tan strap, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CLix5XrMGZD/
+    credit: "@ericmwind"
+    credit_url: https://www.instagram.com/ericmwind/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, a lollipop chronograph hand with a red dot and a red and black checkered GMT hand."
 barometer: null
 status: draft
 gaps:

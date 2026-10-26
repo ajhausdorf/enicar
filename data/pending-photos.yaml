@@ -762,6 +762,19 @@ pending:
     evidence:
       - "Dial reads Enicar Automatic and Memostar, with no Sherpa."
       - "The Barometer prices a Sherpa Memostar; Antiquorum sold a ref. 298-01-01 Memostar without Sherpa on the dial."
+  - account: ericmwind
+    post: https://www.instagram.com/p/CDEVpXAsCSR/
+    code: CDEVpXAsCSR
+    photos:
+      - 1
+    model: sherpa-date
+    guess: null
+    kind: model
+    question: "Is this 40 mm Sherpa automatic with a date at 3 a Sherpa Date, or another model?"
+    evidence:
+      - "Dial reads Enicar automatic and Sherpa, with a red date at 3; it does not say Date."
+      - "Caption: a 40 mm Sherpa that is a dress watch in a dive watch case."
+      - "Our Sherpa Date photos are all identified by a dial reading Sherpa Date, apart from one 40 mm EPSA-cased example identified by its caption."
 
 excluded:
   - account: two_crowned_prints
@@ -1205,3 +1218,59 @@ excluded:
     code: enicar-oceanpearl-alarm-unpolished
     photos: all
     reason: An Ocean Pearl alarm watch; the Ocean Pearl record doesn't cover the alarm model and the dial doesn't read Ocean Pearl.
+  - account: ericmwind
+    code: CAWbikBskmO
+    photos: all
+    reason: "A plain Sherpa with a silver dial and no date; no record covers it."
+  - account: ericmwind
+    code: BzrnWrepGlu
+    photos: [2, 3]
+    reason: "Photo 2 is the bracelet clasp only; photo 3 is a catalogue page."
+  - account: ericmwind
+    code: C5kHf1ssKxc
+    photos: all
+    reason: "Ultradive already has many photos; photo 2 is a book cover."
+  - account: ericmwind
+    code: Ct-v62lsaBY
+    photos: all
+    reason: "The same MkII as the Wind Vintage 072/001 listing, already placed."
+  - account: ericmwind
+    code: CdxA6n2sAx1
+    photos: all
+    reason: "The same blue-dial MkIV as the Wind Vintage 072-02-01 listing, already placed."
+  - account: ericmwind
+    code: CRnbqhwsXoo
+    photos: all
+    reason: "Sherpa Graph MkIV already has enough photos of this black dial."
+  - account: ericmwind
+    code: C7zb1C9JLeu
+    photos: all
+    reason: "A modern Sherpa Watches Ultradive, not a vintage Enicar."
+  - account: ericmwind
+    code: BvWUwt9Jpya
+    photos: all
+    reason: "About the Enicar book crowdfunding, not a watch photo."
+  - account: ericmwind
+    code: CLyQX_Pslqp
+    photos: all
+    reason: "An Ocean Pearl Alarm; the Ocean Pearl record doesn't cover the alarm model."
+  - account: ericmwind
+    code: DXIo2rMDLRK
+    photos: all
+    reason: "Ultradive already has many photos."
+  - account: ericmwind
+    code: DRQx3KODKn0
+    photos: all
+    reason: "Ultradive already has many photos."
+  - account: ericmwind
+    code: Cwgzfv9sf3I
+    photos: all
+    reason: "Ultradive already has many photos."
+  - account: ericmwind
+    code: CUMTBz-MbEz
+    photos: all
+    reason: "Ultradive already has many photos."
+  - account: ericmwind
+    code: CAjQUo1MGRt
+    photos: all
+    reason: "Ultradive already has many photos."

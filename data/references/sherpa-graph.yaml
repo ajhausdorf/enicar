@@ -1135,6 +1135,54 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand on a blue dial with white registers. The listing gives ref. 072-02-01."
+  - file: /images/sherpa-graph/ew-b-bwsdyjosi-1.webp
+    thumb: /images/sherpa-graph/ew-b-bwsdyjosi-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph MkI with a black dial and white registers on a brown strap, on the wrist"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/B-BWsdYJOsI/
+    credit: "@ericmwind"
+    credit_url: https://www.instagram.com/ericmwind/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: a Sherpa Graph “Mark 1A” in an EPSA case made in 1960; large logo and plain chronograph hand."
+  - file: /images/sherpa-graph/ew-cikoschmy6a-1.webp
+    thumb: /images/sherpa-graph/ew-cikoschmy6a-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph MkIV with a black dial, white registers and orange chronograph hand on a tan strap, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CIKoScHMY6A/
+    credit: "@ericmwind"
+    credit_url: https://www.instagram.com/ericmwind/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand."
+  - file: /images/sherpa-graph/ew-de883lxs40z-1.webp
+    thumb: /images/sherpa-graph/ew-de883lxs40z-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph MkIII with an all-black dial and grey tachymetre ring on a tan strap, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/DE883LXs40z/
+    credit: "@ericmwind"
+    credit_url: https://www.instagram.com/ericmwind/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip."
 barometer: null
 status: draft
 gaps:

@@ -461,6 +461,22 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Ultradive. The listing gives ref. 144/35/03."
+  - file: /images/sherpa-ultradive/ew-bzrnwrepglu-1.webp
+    thumb: /images/sherpa-ultradive/ew-bzrnwrepglu-1-sm.webp
+    width: 1284
+    height: 1600
+    alt: "Sherpa Ultradive with a black dial, cream inner ring with an orange track and red date, on its original steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/BzrnWrepGlu/
+    credit: "@ericmwind"
+    credit_url: https://www.instagram.com/ericmwind/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive; caption: on its rare original bracelet."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
