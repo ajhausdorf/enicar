@@ -25,7 +25,71 @@ read_more:
     url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
     source: enicar-org
     note: "How Enicar built and tested its electric watch."
-images: []
+images:
+  - file: /images/sherpa-electric/eo-p1436-01.webp
+    thumb: /images/sherpa-electric/eo-p1436-01-sm.webp
+    width: 1198
+    height: 1600
+    alt: "Gold-plated Sherpa Electric with a silver dial and gilt markers on a black strap, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    credit: "enicar.org"
+    credit_url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: source
+    identified_note: "Dial reads Sherpa Electric; the article's first photo."
+  - file: /images/sherpa-electric/eo-p1436-02.webp
+    thumb: /images/sherpa-electric/eo-p1436-02-sm.webp
+    width: 640
+    height: 853
+    alt: "The Landeron 4750 electro-mechanical movement inside a Sherpa Electric, caseback removed"
+    view: movement
+    variant: null
+    source_url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    credit: "enicar.org"
+    credit_url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: source
+    identified_note: "Captioned in the enicar.org Sherpa Electric article."
+  - file: /images/sherpa-electric/eo-p1436-03.webp
+    thumb: /images/sherpa-electric/eo-p1436-03-sm.webp
+    width: 640
+    height: 748
+    alt: "Caseback of a Sherpa Electric with its separate battery hatch"
+    view: caseback
+    variant: null
+    source_url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    credit: "enicar.org"
+    credit_url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: source
+    identified_note: "Captioned in the enicar.org Sherpa Electric article."
+  - file: /images/sherpa-electric/eo-p1436-06.webp
+    thumb: /images/sherpa-electric/eo-p1436-06-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Gold-plated Sherpa Electric in an Enicar Ultrasonic box"
+    view: other
+    variant: null
+    source_url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    credit: "enicar.org"
+    credit_url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: source
+    identified_note: "From the enicar.org Sherpa Electric article."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
@@ -41,7 +105,6 @@ status: draft
 gaps:
   - "Production years"
   - "Case material"
-  - "Photographs"
 citations:
   - id: eo-electric
     source: enicar-org

@@ -200,7 +200,7 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   The black-dial Ultrasonic from their own collection: which model or reference?
   - Dial reads Enicar Ultrasonic; no model or reference given.
 
-## @vandervenus (11 photos)
+## @vandervenus (12 photos)
 
 ### Which generation?
 
@@ -237,6 +237,10 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   Your new old stock watch with case ref 160-54-30 is captioned Ocean Pearl, but the dial reads Star Jewels. Where does it belong?
   - Caption: full set NOS Enicar Ocean Pearl, case ref 160-54-30, 38 mm.
   - The dial reads Star Jewels, not Ocean Pearl.
+- **https://www.instagram.com/p/B-wG46DHzgf/** · sherpa-memostar
+  Is your 1970s Memostar (automatic, cushion case, dial without Sherpa) the same model the Barometer calls the Sherpa Memostar, or a later Memostar?
+  - Dial reads Enicar Automatic and Memostar, with no Sherpa.
+  - The Barometer prices a Sherpa Memostar; Antiquorum sold a ref. 298-01-01 Memostar without Sherpa on the dial.
 
 ## @ctwatchguy (4 photos)
 

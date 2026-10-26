@@ -25,7 +25,39 @@ read_more:
     url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
     source: enicar-org
     note: "Where the nickname comes from."
-images: []
+images:
+  - file: /images/lausanne/eo-p2531-01.webp
+    thumb: /images/lausanne/eo-p2531-01-sm.webp
+    width: 1192
+    height: 1192
+    alt: "Lausanne chronograph with a white dial, grey registers and orange chronograph hand on an olive canvas strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    credit: "enicar.org"
+    credit_url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: source
+    identified_note: "Shown as the Lausanne in its enicar.org article."
+  - file: /images/lausanne/eo-p2531-10.webp
+    thumb: /images/lausanne/eo-p2531-10-sm.webp
+    width: 1338
+    height: 1600
+    alt: "Screw-down caseback of the Lausanne with an engraved leaping shark"
+    view: caseback
+    variant: null
+    source_url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    credit: "enicar.org"
+    credit_url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: source
+    identified_note: "Shown with the Lausanne in its enicar.org article. The engraving reads 232-01-02, not the 232-01-01 the article gives for the Lausanne."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
@@ -40,7 +72,6 @@ barometer:
 status: draft
 gaps:
   - "Case size and material"
-  - "Photographs"
 citations:
   - id: eo-lausanne
     source: enicar-org

@@ -22,7 +22,23 @@ read_more:
     url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
     source: enicar-org
     note: "Mentions the Gerhard Mitter among Enicar's nicknamed chronographs."
-images: []
+images:
+  - file: /images/gerhard-mitter/eo-p2531-08.webp
+    thumb: /images/gerhard-mitter/eo-p2531-08-sm.webp
+    width: 1182
+    height: 1150
+    alt: "Gerhard Mitter chronograph with a dark grey-blue dial, silver registers and orange chronograph hand in a cushion case, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    credit: "enicar.org"
+    credit_url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: source
+    identified_note: "Captioned as the Gerhard Mitter chronograph in the enicar.org Lausanne article."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
@@ -39,7 +55,6 @@ gaps:
   - "Factory reference numbers"
   - "Production years"
   - "Case size"
-  - "Photographs"
 citations:
   - id: eo-lausanne
     source: enicar-org

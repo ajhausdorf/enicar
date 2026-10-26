@@ -90,6 +90,17 @@ credited "enicar.org" with a link to the article they sit on. `place.mjs`
 does not handle web photos yet; add that (credit and source from the post's
 `url`) the first time one is placed.
 
+## Pages with no photo
+
+Check regularly for pages with no photo. For each, look at the enicar.org
+articles it links to (or that mention it) and search Martijn's Instagram
+captions for the model name. Photos in an enicar.org article that the article
+doesn't credit to someone else are covered by his permission: add them with
+`scripts/images/add-image.mjs`, credit `enicar.org`, and set both
+`credit_url` and `source_url` to the article. Skip adverts, catalogue pages
+and archive scans. Enicar 101's photos are not covered: its site says nothing
+may be used without the owner's written permission, so link to it instead.
+
 ## Answers come back
 
 For each answered photo: add it to `incoming/<account>/placements.json`
