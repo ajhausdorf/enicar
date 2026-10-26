@@ -564,6 +564,54 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Super Dive. The listing gives ref. 144-35-02."
+  - file: /images/sherpa-super-dive/ve-1970-enicar-sherpa-super-dive-145006-1.webp
+    thumb: /images/sherpa-super-dive/ve-1970-enicar-sherpa-super-dive-145006-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Super-Dive with a silver dial and grey bezel on a black strap, against a red background"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1970-enicar-sherpa-super-dive-145006
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1970-enicar-sherpa-super-dive-145006
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive. The listing gives ref. 145/006."
+  - file: /images/sherpa-super-dive/ve-1970-enicar-sherpa-super-dive-145006-6.webp
+    thumb: /images/sherpa-super-dive/ve-1970-enicar-sherpa-super-dive-145006-6-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Super-Dive with a silver dial and steel markers with cream lume, close up"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1970-enicar-sherpa-super-dive-145006
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1970-enicar-sherpa-super-dive-145006
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive. The listing gives ref. 145/006."
+  - file: /images/sherpa-super-dive/ve-1970-enicar-sherpa-super-dive-145006-4.webp
+    thumb: /images/sherpa-super-dive/ve-1970-enicar-sherpa-super-dive-145006-4-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Caseback of a Sherpa Super-Dive on a black strap"
+    view: caseback
+    variant: null
+    source_url: https://vintageeyewatches.com/1970-enicar-sherpa-super-dive-145006
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1970-enicar-sherpa-super-dive-145006
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Dive. The listing gives ref. 145/006."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

@@ -121,3 +121,14 @@
   use: Generation tells for the two-crown pilot models (Guide, Jet, Super-Jet).
   leads_to: []
   permission: not-needed
+- id: vintage-eye
+  name: Vintage Eye Watches
+  kind: dealer
+  tier: listing
+  url: https://vintageeyewatches.com/
+  author: null
+  status: confirmed
+  what: Vintage watch dealer with Enicar Sherpa listings and an Instagram feed.
+  use: Photos, with permission. Listing details are dealer descriptions, fine for reference numbers, weak for anything else.
+  leads_to: []
+  permission: granted
