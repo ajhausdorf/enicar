@@ -219,6 +219,22 @@ read_more:
     source: enicar101
     note: null
 images:
+  - file: /images/sherpa-aqua-graph/ve-dze6ppze10d-1.webp
+    thumb: /images/sherpa-aqua-graph/ve-dze6ppze10d-1-sm.webp
+    width: 1080
+    height: 1440
+    alt: "Aqua Graph MkIII with a black dial and white registers on its original steel bracelet, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/DZe6PpzE10D/
+    credit: "@vintage.eye"
+    credit_url: https://www.instagram.com/vintage.eye/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands outlined in white, thick black register hands, a chronograph hand with a lume dot and a house-shaped pointer on the red ring. Caption: NOS, 1968, on its original bracelet. The production table dates the MkIII from 6/67."
   - file: /images/sherpa-aqua-graph/v-b3skttdhs4i-1.webp
     thumb: /images/sherpa-aqua-graph/v-b3skttdhs4i-1-sm.webp
     width: 1440
@@ -251,38 +267,6 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Caption: MkIII Aqua Graph with racing dial, 1968. The production table dates the MkIII from 6/67."
-  - file: /images/sherpa-aqua-graph/v-cj8e35wlqbr-1.webp
-    thumb: /images/sherpa-aqua-graph/v-cj8e35wlqbr-1-sm.webp
-    width: 1440
-    height: 1440
-    alt: "Aqua Graph with a black racing dial and white registers on a red strap, held in the hand"
-    view: dial
-    variant: "MkIII"
-    source_url: https://www.instagram.com/p/CJ8e35WLQbr/
-    credit: "@vandervenus"
-    credit_url: https://www.instagram.com/vandervenus/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: vandervenus
-    caption: null
-    identified_by: caption
-    identified_note: "Same racing-dial watch on the same red strap as post DYsK2kPtAKp, which he calls a 1968 MkIII. The production table dates the MkIII from 6/67."
-  - file: /images/sherpa-aqua-graph/v-bs7nhp5njxt-1.webp
-    thumb: /images/sherpa-aqua-graph/v-bs7nhp5njxt-1-sm.webp
-    width: 1080
-    height: 1350
-    alt: "Close view of an Aqua Graph with a black racing dial and white registers"
-    view: dial
-    variant: "MkIII"
-    source_url: https://www.instagram.com/p/Bs7nhp5nJxT/
-    credit: "@vandervenus"
-    credit_url: https://www.instagram.com/vandervenus/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: vandervenus
-    caption: null
-    identified_by: caption
-    identified_note: "Same racing-dial watch on the same red strap as post DYsK2kPtAKp, which he calls a 1968 MkIII. The production table dates the MkIII from 6/67."
   - file: /images/sherpa-aqua-graph/v-cb3zuy2hopx-1.webp
     thumb: /images/sherpa-aqua-graph/v-cb3zuy2hopx-1-sm.webp
     width: 1358
@@ -411,22 +395,6 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands, black counter hands, a house-shaped pointer on the red ring and two lume dots at 12, the MkIII tells on Enicar 101; the caption mentions the \"doghouse\" pointer."
-  - file: /images/sherpa-aqua-graph/ve-dze6ppze10d-1.webp
-    thumb: /images/sherpa-aqua-graph/ve-dze6ppze10d-1-sm.webp
-    width: 1080
-    height: 1440
-    alt: "Aqua Graph MkIII with a black dial and white registers on its original steel bracelet, on the wrist"
-    view: dial
-    variant: "MkIII"
-    source_url: https://www.instagram.com/p/DZe6PpzE10D/
-    credit: "@vintage.eye"
-    credit_url: https://www.instagram.com/vintage.eye/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: vintage-eye
-    caption: null
-    identified_by: tells
-    identified_note: "Baton hands outlined in white, thick black register hands, a chronograph hand with a lume dot and a house-shaped pointer on the red ring. Caption: NOS, 1968, on its original bracelet. The production table dates the MkIII from 6/67."
   - file: /images/sherpa-aqua-graph/ve-dcqjanczvx5-1.webp
     thumb: /images/sherpa-aqua-graph/ve-dcqjanczvx5-1-sm.webp
     width: 1440
