@@ -65,7 +65,7 @@ When a photographer has hundreds of Enicar posts (Martijn, @vandervenus, has
 about 2,500), the owner's rule is: up to about 6 of their best photos per
 generation page, and only posts whose captions name a model we cover.
 
-- Scan the whole grid (`scan-grid.js` runs up to 400 scrolls), export the
+- Scan the whole grid (`scan-grid.js` runs up to 1,500 scrolls and waits out stalls), export the
   captions, and filter by model names in the caption body (before the
   hashtags), one covered model per post.
 - Read about 10 posts per page bucket, more for models with generations.
