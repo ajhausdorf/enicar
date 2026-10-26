@@ -478,6 +478,86 @@ images:
     caption: null
     identified_by: tells
     identified_note: "The white-dial watch from the Wind Vintage MK IV listing: orange triangle chronograph hand and house-shaped pointer."
+  - file: /images/sherpa-aqua-graph/ve-dze6ppze10d-1.webp
+    thumb: /images/sherpa-aqua-graph/ve-dze6ppze10d-1-sm.webp
+    width: 1080
+    height: 1440
+    alt: "Aqua Graph MkIII with a black dial and white registers on its original steel bracelet, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/DZe6PpzE10D/
+    credit: "@vintage.eye"
+    credit_url: https://www.instagram.com/vintage.eye/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands outlined in white, thick black register hands, a chronograph hand with a lume dot and a house-shaped pointer on the red ring. Caption: NOS, 1968, on its original bracelet. The production table dates the MkIII from 6/67."
+  - file: /images/sherpa-aqua-graph/ve-dcqjanczvx5-1.webp
+    thumb: /images/sherpa-aqua-graph/ve-dcqjanczvx5-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Aqua Graph MkIII with a black dial and white registers on its steel bracelet, in its Enicar box with the swing tag"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/DcQjaNCzvx5/
+    credit: "@vintage.eye"
+    credit_url: https://www.instagram.com/vintage.eye/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands outlined in white, thick black register hands, a chronograph hand with a lume dot and a house-shaped pointer on the red ring. Caption: NOS, 1968, on its original bracelet. The production table dates the MkIII from 6/67."
+  - file: /images/sherpa-aqua-graph/ve-b-4hl44nxuw-1.webp
+    thumb: /images/sherpa-aqua-graph/ve-b-4hl44nxuw-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Aqua Graph MkIII with a black dial and white registers on a steel bracelet, with its Enicar wallet, guarantee and swing tag"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/B_4hl44nxUw/
+    credit: "@vintage.eye"
+    credit_url: https://www.instagram.com/vintage.eye/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands outlined in white, thick black register hands, a chronograph hand with a lume dot and a house-shaped pointer on the red ring. Captioned 1968 here; post CeD28KvLo2J shows the same guarantee card, no. 10665, captioned 1966. The production table dates the MkIII from 6/67."
+  - file: /images/sherpa-aqua-graph/ve-clb8x6mlg0w-1.webp
+    thumb: /images/sherpa-aqua-graph/ve-clb8x6mlg0w-1-sm.webp
+    width: 1428
+    height: 1429
+    alt: "Dial of an Aqua Graph MkIII with white registers and orange-lumed hands, close up"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CLB8x6MLg0W/
+    credit: "@vintage.eye"
+    credit_url: https://www.instagram.com/vintage.eye/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands outlined in white, thick black register hands, a chronograph hand with a lume dot and a house-shaped pointer on the red ring. Caption: 1968."
+  - file: /images/sherpa-aqua-graph/ve-cdv8-w4nhmj-1.webp
+    thumb: /images/sherpa-aqua-graph/ve-cdv8-w4nhmj-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Aqua Graph MkIII with a black dial and white registers on a steel bracelet, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/CDv8-W4nhMj/
+    credit: "@vintage.eye"
+    credit_url: https://www.instagram.com/vintage.eye/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands outlined in white, thick black register hands, a chronograph hand with a lume dot and a house-shaped pointer on the red ring. Caption: 1968."
 barometer: null
 status: draft
 gaps:

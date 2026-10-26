@@ -121,3 +121,25 @@
   use: Evidence that a variant exists (a dial with its serial). Seller descriptions are weak for anything else; photos are not ours to use.
   leads_to: []
   permission: not-needed
+- id: thespringbar
+  name: The Spring Bar
+  kind: blog
+  tier: secondary
+  url: https://web.archive.org/web/2019/https://thespringbar.com/blogs/guides/
+  author: JonDev
+  status: confirmed
+  what: Collector guides to Enicar Sherpa models, built from forum photos and dated examples. The site is gone; read through the Wayback Machine.
+  use: Generation tells for the two-crown pilot models (Guide, Jet, Super-Jet).
+  leads_to: []
+  permission: not-needed
+- id: vintage-eye
+  name: Vintage Eye Watches
+  kind: dealer
+  tier: listing
+  url: https://vintageeyewatches.com/
+  author: null
+  status: confirmed
+  what: Vintage watch dealer with Enicar Sherpa listings and an Instagram feed.
+  use: Photos, with permission. Listing details are dealer descriptions, fine for reference numbers, weak for anything else.
+  leads_to: []
+  permission: granted
