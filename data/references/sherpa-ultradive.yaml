@@ -397,6 +397,70 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Ultradive."
+  - file: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-1.webp
+    thumb: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-1-sm.webp
+    width: 1132
+    height: 1132
+    alt: "Sherpa Ultradive with a black dial, red date and orange seconds hand on a black strap, against a yellow background"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-sherpa-ultradive
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-ultradive
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive."
+  - file: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-12.webp
+    thumb: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-12-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of a Sherpa Ultradive on a black strap"
+    view: caseback
+    variant: null
+    source_url: https://www.windvintage.com/enicar-sherpa-ultradive
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-ultradive
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive."
+  - file: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-1.webp
+    thumb: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Ultradive with a black dial and white inner ring with an orange track, on a tan strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-sherpa-ultradive-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-ultradive-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive. The listing gives ref. 144/35/03."
+  - file: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-6.webp
+    thumb: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-6-sm.webp
+    width: 1600
+    height: 1280
+    alt: "Caseback of a Sherpa Ultradive, held in the hand"
+    view: caseback
+    variant: null
+    source_url: https://www.windvintage.com/enicar-sherpa-ultradive-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-ultradive-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive. The listing gives ref. 144/35/03."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

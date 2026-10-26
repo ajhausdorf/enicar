@@ -587,6 +587,38 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Red and black checkered GMT hand, the MkIII tell in Martijn van der Ven's Jet article."
+  - file: /images/sherpa-super-jet/ew-enicar-sherpa-super-jet-146-003-unpolished-1.webp
+    thumb: /images/sherpa-super-jet/ew-enicar-sherpa-super-jet-146-003-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Super-Jet with a champagne sunburst dial and black and white 24-hour bezel on a dark strap"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.windvintage.com/enicar-sherpa-super-jet-146/003-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-super-jet-146/003-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Dial reads Sherpa Super-Jet; tuning-fork hands, a slim orange-tipped GMT hand and a champagne sunburst dial. The listing gives ref. 146/003."
+  - file: /images/sherpa-super-jet/ew-enicar-sherpa-super-jet-146-003-unpolished-7.webp
+    thumb: /images/sherpa-super-jet/ew-enicar-sherpa-super-jet-146-003-unpolished-7-sm.webp
+    width: 1067
+    height: 1600
+    alt: "Caseback of a Sherpa Super-Jet, held in the hand"
+    view: caseback
+    variant: "MkII"
+    source_url: https://www.windvintage.com/enicar-sherpa-super-jet-146/003-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-super-jet-146/003-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Dial reads Sherpa Super-Jet; tuning-fork hands, a slim orange-tipped GMT hand and a champagne sunburst dial. The listing gives ref. 146/003."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article

@@ -15,9 +15,6 @@
 - id: ultrasonic
   name: Ultrasonic
   order: 5
-- id: supertest
-  name: Supertest
-  order: 6
 - id: chronographs
   name: Other chronographs
   order: 7

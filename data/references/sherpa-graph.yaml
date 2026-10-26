@@ -927,6 +927,214 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands and a broad red chronograph hand on a white dial: the MkIV tells on Enicar 101; the register hands here are thin black, with a red minute counter."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-1.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-1-sm.webp
+    width: 1219
+    height: 1219
+    alt: "Sherpa Graph MkI with a black dial, cream registers and Tachymetre Base 1000 ring, on a brown strap"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Tachymetre Base 1000 ring, large early logo, paddle hands and a plain chronograph hand. Caseback serial 272894, in the MkI range. The listing calls it a Mark 1A."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-7.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-7-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Sherpa Graph MkI with a black dial and cream registers on a brown strap, against a blue background"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Tachymetre Base 1000 ring, large early logo, paddle hands and a plain chronograph hand. Caseback serial 272894, in the MkI range. The listing calls it a Mark 1A."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-12.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-12-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of a Sherpa Graph MkI on a brown strap"
+    view: caseback
+    variant: "MkI"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Tachymetre Base 1000 ring, large early logo, paddle hands and a plain chronograph hand. Caseback serial 272894, in the MkI range. The listing calls it a Mark 1A."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-1.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Graph MkI with a black dial and cream registers on a beads-of-rice bracelet, on the wrist"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph-mark-1a-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph-mark-1a-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Tachymetre Base 1000 ring, large early logo, paddle hands and a plain chronograph hand. Caseback serial 272776, in the MkI range. The listing calls it a Mark 1A."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-8.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-8-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of a Sherpa Graph MkI on its bracelet"
+    view: caseback
+    variant: "MkI"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph-mark-1a-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph-mark-1a-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Tachymetre Base 1000 ring, large early logo, paddle hands and a plain chronograph hand. Caseback serial 272776, in the MkI range. The listing calls it a Mark 1A."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-001-mk-iib-unpolished-1.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-001-mk-iib-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Graph MkII with a black dial and silver registers on a black strap with red stitching, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072/001-mk-iib-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072/001-mk-iib-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Small logo above Enicar, unpainted paddle hands and a straight red chronograph hand. The listing calls it ref. 072/001 MK IIb."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-001-mk-iib-unpolished-7.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-001-mk-iib-unpolished-7-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of a Sherpa Graph MkII, held in the hand"
+    view: caseback
+    variant: "MkII"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072/001-mk-iib-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072/001-mk-iib-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Small logo above Enicar, unpainted paddle hands and a straight red chronograph hand. The listing calls it ref. 072/001 MK IIb."
+  - file: /images/sherpa-graph/ew-enicar-mk-3-sherpa-graph-reference-0720201-unpolished-1.webp
+    thumb: /images/sherpa-graph/ew-enicar-mk-3-sherpa-graph-reference-0720201-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Graph MkIII with an all-black dial and grey tachymetre ring on a steel bracelet, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.windvintage.com/enicar-mk-3-sherpa-graph-reference-0720201-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-mk-3-sherpa-graph-reference-0720201-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip. The listing calls it a Mk 3, ref. 072-02-01."
+  - file: /images/sherpa-graph/ew-enicar-mk-3-sherpa-graph-reference-0720201-unpolished-6.webp
+    thumb: /images/sherpa-graph/ew-enicar-mk-3-sherpa-graph-reference-0720201-unpolished-6-sm.webp
+    width: 1067
+    height: 1600
+    alt: "Caseback of a Sherpa Graph MkIII on a steel bracelet"
+    view: caseback
+    variant: "MkIII"
+    source_url: https://www.windvintage.com/enicar-mk-3-sherpa-graph-reference-0720201-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-mk-3-sherpa-graph-reference-0720201-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip. The listing calls it a Mk 3, ref. 072-02-01."
+  - file: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-1.webp
+    thumb: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Graph MkIV with a black dial, white registers and orange chronograph hand on a tan rally strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.windvintage.com/enicar-mk-iv-sherpa-graph-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-mk-iv-sherpa-graph-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand. The listing calls it a Mk IV."
+  - file: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-7.webp
+    thumb: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-7-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of a Sherpa Graph MkIV on a tan rally strap"
+    view: caseback
+    variant: "MkIV"
+    source_url: https://www.windvintage.com/enicar-mk-iv-sherpa-graph-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-mk-iv-sherpa-graph-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand. The listing calls it a Mk IV."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-02-01-1.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-02-01-1-sm.webp
+    width: 1520
+    height: 1600
+    alt: "Sherpa Graph MkIV with a blue dial, white registers and orange chronograph hand on a tan strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072-02-01
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072-02-01
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand on a blue dial with white registers. The listing gives ref. 072-02-01."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-02-01-5.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-02-01-5-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of a Sherpa Graph MkIV with a blue dial, held in the hand"
+    view: caseback
+    variant: "MkIV"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072-02-01
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072-02-01
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand on a blue dial with white registers. The listing gives ref. 072-02-01."
 barometer: null
 status: draft
 gaps:

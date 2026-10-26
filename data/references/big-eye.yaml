@@ -87,6 +87,54 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Two-register dial with the larger right-hand counter that gives the Big Eye its name (enicar.org)."
+  - file: /images/big-eye/ew-enicar-big-eye-chrono-1.webp
+    thumb: /images/big-eye/ew-enicar-big-eye-chrono-1-sm.webp
+    width: 1163
+    height: 1163
+    alt: "Big Eye chronograph with a blue dial, white registers and orange chronograph and register hands, against an orange background"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-big-eye-chrono
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-big-eye-chrono
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: source
+    identified_note: "Two registers with the larger counter on the right. The listing page calls it a Big Eye, ref. 232-01-02."
+  - file: /images/big-eye/ew-enicar-big-eye-chrono-13.webp
+    thumb: /images/big-eye/ew-enicar-big-eye-chrono-13-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Big Eye chronograph with a blue dial and date at 6 on a tan strap"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-big-eye-chrono
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-big-eye-chrono
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: source
+    identified_note: "Two registers with the larger counter on the right. The listing page calls it a Big Eye, ref. 232-01-02."
+  - file: /images/big-eye/ew-enicar-big-eye-chrono-12.webp
+    thumb: /images/big-eye/ew-enicar-big-eye-chrono-12-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of a Big Eye chronograph on a tan strap"
+    view: caseback
+    variant: null
+    source_url: https://www.windvintage.com/enicar-big-eye-chrono
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-big-eye-chrono
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: source
+    identified_note: "Two registers with the larger counter on the right. The listing page calls it a Big Eye, ref. 232-01-02."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
