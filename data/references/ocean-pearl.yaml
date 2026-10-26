@@ -115,6 +115,54 @@ images:
     caption: null
     identified_by: caption
     identified_note: "The post's hashtags name the Ocean Pearl and the Valjoux 72; the dial itself reads only Enicar."
+  - file: /images/ocean-pearl/ve-1969-enicar-ocean-pearl-072-03-01-1.webp
+    thumb: /images/ocean-pearl/ve-1969-enicar-ocean-pearl-072-03-01-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Ocean Pearl chronograph with a white dial, red-and-black and silver registers and green chronograph hand on a steel bracelet"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1969-enicar-ocean-pearl-072-03-01
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1969-enicar-ocean-pearl-072-03-01
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: source
+    identified_note: "Listing calls it an Ocean Pearl, ref. 072-03-01: a white-dial chronograph with red and black registers and a green chronograph hand in a cushion case."
+  - file: /images/ocean-pearl/ve-1969-enicar-ocean-pearl-072-03-01-8.webp
+    thumb: /images/ocean-pearl/ve-1969-enicar-ocean-pearl-072-03-01-8-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Dial of an Ocean Pearl chronograph, close up, with red-and-black and silver registers"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1969-enicar-ocean-pearl-072-03-01
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1969-enicar-ocean-pearl-072-03-01
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: source
+    identified_note: "Listing calls it an Ocean Pearl, ref. 072-03-01: a white-dial chronograph with red and black registers and a green chronograph hand in a cushion case."
+  - file: /images/ocean-pearl/ve-1969-enicar-ocean-pearl-072-03-01-10.webp
+    thumb: /images/ocean-pearl/ve-1969-enicar-ocean-pearl-072-03-01-10-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Caseback of an Ocean Pearl chronograph on a steel bracelet"
+    view: caseback
+    variant: null
+    source_url: https://vintageeyewatches.com/1969-enicar-ocean-pearl-072-03-01
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1969-enicar-ocean-pearl-072-03-01
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: source
+    identified_note: "Listing calls it an Ocean Pearl, ref. 072-03-01: a white-dial chronograph with red and black registers and a green chronograph hand in a cushion case."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

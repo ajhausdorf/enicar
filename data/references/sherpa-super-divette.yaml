@@ -238,6 +238,102 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Super-Divette; caption: early 1960s."
+  - file: /images/sherpa-super-divette/ve-1964-enicar-sherpa-super-divette-33-ref-126002-1.webp
+    thumb: /images/sherpa-super-divette/ve-1964-enicar-sherpa-super-divette-33-ref-126002-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Super-Divette 33 with a black dial and date at 3 on a tan strap, against a red background"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1964-enicar-sherpa-super-divette-33-ref-126002
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1964-enicar-sherpa-super-divette-33-ref-126002
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette 33. The listing gives ref. 126/002."
+  - file: /images/sherpa-super-divette/ve-1964-enicar-sherpa-super-divette-33-ref-126002-4.webp
+    thumb: /images/sherpa-super-divette/ve-1964-enicar-sherpa-super-divette-33-ref-126002-4-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Dial of a Sherpa Super-Divette 33, close up"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1964-enicar-sherpa-super-divette-33-ref-126002
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1964-enicar-sherpa-super-divette-33-ref-126002
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette 33. The listing gives ref. 126/002."
+  - file: /images/sherpa-super-divette/ve-1964-enicar-sherpa-super-divette-33-ref-126002-8.webp
+    thumb: /images/sherpa-super-divette/ve-1964-enicar-sherpa-super-divette-33-ref-126002-8-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Caseback of a Sherpa Super-Divette 33 on a tan strap"
+    view: caseback
+    variant: null
+    source_url: https://vintageeyewatches.com/1964-enicar-sherpa-super-divette-33-ref-126002
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1964-enicar-sherpa-super-divette-33-ref-126002
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette 33. The listing gives ref. 126/002."
+  - file: /images/sherpa-super-divette/ve-1969-enicar-sherpa-super-divette-165-35-05-1.webp
+    thumb: /images/sherpa-super-divette/ve-1969-enicar-sherpa-super-divette-165-35-05-1-sm.webp
+    width: 1233
+    height: 1600
+    alt: "Sherpa Super-Divette with a black dial, orange and white minute track and orange seconds hand on a black rally strap"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1969-enicar-sherpa-super-divette-165-35-05
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1969-enicar-sherpa-super-divette-165-35-05
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette. The caseback and listing give ref. 165-35-05."
+  - file: /images/sherpa-super-divette/ve-1969-enicar-sherpa-super-divette-165-35-05-3.webp
+    thumb: /images/sherpa-super-divette/ve-1969-enicar-sherpa-super-divette-165-35-05-3-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Dial of a Sherpa Super-Divette with an orange minute track and red date, close up"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1969-enicar-sherpa-super-divette-165-35-05
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1969-enicar-sherpa-super-divette-165-35-05
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette. The caseback and listing give ref. 165-35-05."
+  - file: /images/sherpa-super-divette/ve-1969-enicar-sherpa-super-divette-165-35-05-7.webp
+    thumb: /images/sherpa-super-divette/ve-1969-enicar-sherpa-super-divette-165-35-05-7-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Caseback of a Sherpa Super-Divette, ref. 165-35-05"
+    view: caseback
+    variant: null
+    source_url: https://vintageeyewatches.com/1969-enicar-sherpa-super-divette-165-35-05
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1969-enicar-sherpa-super-divette-165-35-05
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super-Divette. The caseback and listing give ref. 165-35-05."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

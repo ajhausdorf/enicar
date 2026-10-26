@@ -1135,6 +1135,86 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand on a blue dial with white registers. The listing gives ref. 072-02-01."
+  - file: /images/sherpa-graph/ve-1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph-1.webp
+    thumb: /images/sherpa-graph/ve-1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Graph MkIII with a black dial and grey registers on a tan strap, against a red background"
+    view: dial
+    variant: "MkIII"
+    source_url: https://vintageeyewatches.com/1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Paddle hands with short orange tips and a chronograph hand with a red dot near the tip; black dial with grey registers. The listing calls it a MK III, ref. 072-02-01."
+  - file: /images/sherpa-graph/ve-1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph-6.webp
+    thumb: /images/sherpa-graph/ve-1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph-6-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Caseback of a Sherpa Graph MkIII on a tan strap"
+    view: caseback
+    variant: "MkIII"
+    source_url: https://vintageeyewatches.com/1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Paddle hands with short orange tips and a chronograph hand with a red dot near the tip; black dial with grey registers. The listing calls it a MK III, ref. 072-02-01."
+  - file: /images/sherpa-graph/ve-1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph-9.webp
+    thumb: /images/sherpa-graph/ve-1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph-9-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Valjoux 72 movement of a Sherpa Graph MkIII, caseback open"
+    view: movement
+    variant: "MkIII"
+    source_url: https://vintageeyewatches.com/1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1965-enicar-sherpa-graph-jim-clark-mk-iii-chronograph
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Paddle hands with short orange tips and a chronograph hand with a red dot near the tip; black dial with grey registers. The listing calls it a MK III, ref. 072-02-01."
+  - file: /images/sherpa-graph/ve-1966-enicar-sherpa-jim-clark-mk-iii-chronograph-1.webp
+    thumb: /images/sherpa-graph/ve-1966-enicar-sherpa-jim-clark-mk-iii-chronograph-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Graph MkIII with a black dial and silver registers on a black rally strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://vintageeyewatches.com/1966-enicar-sherpa-jim-clark-mk-iii-chronograph
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1966-enicar-sherpa-jim-clark-mk-iii-chronograph
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Paddle hands with short orange tips and a chronograph hand with a red dot near the tip; black dial with silver registers. The listing calls it a MK III, ref. 072-02-01."
+  - file: /images/sherpa-graph/ve-1966-enicar-sherpa-jim-clark-mk-iii-chronograph-3.webp
+    thumb: /images/sherpa-graph/ve-1966-enicar-sherpa-jim-clark-mk-iii-chronograph-3-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Caseback of a Sherpa Graph MkIII on a black rally strap"
+    view: caseback
+    variant: "MkIII"
+    source_url: https://vintageeyewatches.com/1966-enicar-sherpa-jim-clark-mk-iii-chronograph
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1966-enicar-sherpa-jim-clark-mk-iii-chronograph
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Paddle hands with short orange tips and a chronograph hand with a red dot near the tip; black dial with silver registers. The listing calls it a MK III, ref. 072-02-01."
 barometer: null
 status: draft
 gaps:
