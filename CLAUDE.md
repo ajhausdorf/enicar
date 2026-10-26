@@ -65,9 +65,14 @@ why it is a false alarm and stop.
 5. **When sources disagree,** record the version best supported, cite both,
    and say so in the history text.
 6. **Images** need `credit`, `license` and `permission` (`own`, `granted`,
-   `cc`, `public-domain`). No scraped auction or marketplace photos, and no
-   photos from enicar.org or Instagram without the photographer's own
-   permission. A photo from an issue is usable only if both permission boxes
+   `cc`, `public-domain`, `credited`). No scraped auction or marketplace
+   photos, and no photos from Instagram or a photographer's own site
+   without their permission. Photos posted publicly on watch forums
+   (WatchUSeek, OmegaForums and the like) don't need permission (owner's
+   decision, 2026-10-26): use `permission: credited`, credit the forum
+   username and forum, link `credit_url` and `source_url` to the post (or
+   the page that names them), and the page adds a link to ask for removal.
+   Act on a removal issue straight away. A photo from an issue is usable only if both permission boxes
    were ticked. When someone gives permission (a DM, an email), add them to
    `data/permissions.yaml` (who, when, how, what it covers; summarise, never
    paste private messages; if they have a website, put it in `link`, since

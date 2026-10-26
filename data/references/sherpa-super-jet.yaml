@@ -715,6 +715,38 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Dial reads Sherpa Super-Jet; cushion case. The caseback and listing give ref. 166-36-01."
+  - file: /images/sherpa-super-jet/of-stigmata-1145601.webp
+    thumb: /images/sherpa-super-jet/of-stigmata-1145601-sm.webp
+    width: 778
+    height: 1600
+    alt: "Sherpa Super-Jet MkIII with a dark blue-grey dial, black and cream 24-hour bezel and checkered GMT hand on a steel bracelet"
+    view: dial
+    variant: "MkIII"
+    source_url: https://omegaforums.net/posts/1145601/
+    credit: "stigmata (OmegaForums)"
+    credit_url: https://omegaforums.net/posts/1145601/
+    license: "Forum photo"
+    permission: credited
+    permission_ref: null
+    caption: null
+    identified_by: tells
+    identified_note: "Dial reads Sherpa Super-Jet; red and black checkered GMT hand and a two-colour inner bezel."
+  - file: /images/sherpa-super-jet/of-stigmata-612085.webp
+    thumb: /images/sherpa-super-jet/of-stigmata-612085-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Super-Jet MkIII with a black dial, black and cream 24-hour bezel and checkered GMT hand on a brown strap, held in the hand"
+    view: dial
+    variant: "MkIII"
+    source_url: https://omegaforums.net/posts/612085/
+    credit: "stigmata (OmegaForums)"
+    credit_url: https://omegaforums.net/posts/612085/
+    license: "Forum photo"
+    permission: credited
+    permission_ref: null
+    caption: null
+    identified_by: tells
+    identified_note: "Dial reads Sherpa Super-Jet; orange and black checkered GMT hand and a two-colour inner bezel."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article

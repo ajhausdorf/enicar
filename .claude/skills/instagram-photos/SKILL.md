@@ -115,3 +115,14 @@ For each answered photo: add it to `incoming/<account>/placements.json`
 (`identified_by: caption`, note what the photographer said and when), delete
 its entry from `pending-photos.yaml`, run `place.mjs` (it skips photos already
 placed), regenerate the confirm list, check, verify, ship.
+
+## Forum photos
+
+Photos posted publicly on watch forums don't need permission (Instagram
+photos always do). Place them with `scripts/images/add-image.mjs ...
+--permission credited --license "Forum photo" --credit "<user> (<forum>)"
+--credit-url <post> --source-url <post>`. If the post is gone, link the page
+that shows the photo and names the user. The page shows a "Your photo? Ask
+us to remove it" link; act on any removal issue straight away. Skip forum
+photos of someone else's watch for sale, collages that mix photographers,
+and group shots.

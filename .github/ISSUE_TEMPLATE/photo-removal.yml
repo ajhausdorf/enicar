@@ -1,0 +1,22 @@
+name: Photo removal
+description: Ask us to take down a photo of yours
+labels: [photo, removal]
+body:
+  - type: input
+    id: photo
+    attributes:
+      label: Which photo
+      description: The page it's on, or the file name in the title
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Your name or forum username
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Optional. If you'd rather keep it up with a different credit, say so here.
