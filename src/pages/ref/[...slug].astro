@@ -6,7 +6,7 @@ import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Dial from '../../components/Dial.astro';
 import Money from '../../components/Money.astro';
-import { formatYears, barometerOf, USD_RATES, LISTING_FRESH_DAYS, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf, removalUrl } from '../../lib/site';
+import { formatYears, barometerOf, USD_RATES, LISTING_FRESH_DAYS, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf } from '../../lib/site';
 
 export async function getStaticPaths() {
   const refs = await getCollection('references');
@@ -110,7 +110,7 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
             {hero ? <img id="hero-img" src={hero.file} alt={hero.alt} width={hero.width} height={hero.height}> : <Dial kind={d.kind} size={300} />}
           </div>
           <figcaption id="hero-cap">
-            {hero ? <>{hero.caption && <span class="cap-text">{hero.caption} </span>}Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit}{hero.permission !== 'granted' && ` · ${hero.license}`} · <a href={hero.source_url}>original</a>{hero.permission === 'credited' && <> · <a href={removalUrl(hero.file)}>Your photo? Ask us to remove it</a></>}</> : (elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
+            {hero ? <>{hero.caption && <span class="cap-text">{hero.caption} </span>}Photo: {hero.credit_url ? <a href={hero.credit_url}>{hero.credit}</a> : hero.credit}{hero.permission !== 'granted' && ` · ${hero.license}`} · <a href={hero.source_url}>original</a></> : (elsewhere.length ? 'No photo with permission yet; see the links below.' : 'Photo wanted. Own one? Send it in with permission to publish.')}
           </figcaption>
         </figure>
         {images.length > 1 && (
@@ -118,7 +118,7 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
             {images.map((t, i) => (
               <li><button type="button" class="thumb" aria-pressed={i === 0 ? 'true' : 'false'} aria-label={`Show photo: ${t.alt}`}
                 data-file={t.file} data-alt={t.alt} data-w={t.width} data-h={t.height}
-                data-variant="" data-caption={t.caption ?? ''} data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.permission === 'granted' ? '' : t.license} data-source={t.source_url} data-removal={t.permission === 'credited' ? removalUrl(t.file) : ''}>
+                data-variant="" data-caption={t.caption ?? ''} data-credit={t.credit} data-credit-url={t.credit_url ?? ''} data-license={t.permission === 'granted' ? '' : t.license} data-source={t.source_url}>
                 <img src={t.thumb} alt="" loading="lazy">
               </button></li>
             ))}
@@ -333,7 +333,6 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
       cap.replaceChildren(ds.caption ? `${ds.caption} Photo: ` : 'Photo: ');
       const credit = ds.creditUrl ? Object.assign(document.createElement('a'), { href: ds.creditUrl, textContent: ds.credit }) : document.createTextNode(ds.credit!);
       cap.append(credit, ds.license ? ` · ${ds.license} · ` : ' · ', Object.assign(document.createElement('a'), { href: ds.source, textContent: 'original' }));
-      if (ds.removal) cap.append(' · ', Object.assign(document.createElement('a'), { href: ds.removal, textContent: 'Your photo? Ask us to remove it' }));
       for (const o of thumbs) o.setAttribute('aria-pressed', String(o === t));
     });
   }

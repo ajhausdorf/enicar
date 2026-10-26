@@ -101,8 +101,8 @@ const image = z.object({
   credit_url: z.url().nullable().default(null),
   license: z.string(),
   // 'credited': posted publicly on a forum, shown with credit and a link to
-  // the post but without the photographer's permission, and taken down on
-  // request. Instagram photos always need permission ('granted').
+  // the post but without the photographer's permission; taken down on
+  // request (the Sources page says how). Instagram photos always need permission ('granted').
   permission: z.enum(['own', 'granted', 'cc', 'public-domain', 'credited']),
   // Required when permission is 'granted': the entry in data/permissions.yaml.
   permission_ref: reference('permissions').nullable().default(null),

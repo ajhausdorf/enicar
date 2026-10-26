@@ -122,7 +122,7 @@ Photos posted publicly on watch forums don't need permission (Instagram
 photos always do). Place them with `scripts/images/add-image.mjs ...
 --permission credited --license "Forum photo" --credit "<user> (<forum>)"
 --credit-url <post> --source-url <post>`. If the post is gone, link the page
-that shows the photo and names the user. The page shows a "Your photo? Ask
-us to remove it" link; act on any removal issue straight away. Skip forum
+that shows the photo and names the user. The Sources page tells
+photographers they can ask for removal; act on any request straight away. Skip forum
 photos of someone else's watch for sale, collages that mix photographers,
 and group shots.
