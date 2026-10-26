@@ -157,11 +157,12 @@ variants:
     years:
       from: 1968
       to: 1969
-    tell: "Baton hands with an orange triangle chronograph hand, an orange minute-counter hand and one lume spot at 12 on the bezel."
-    hands: "Baton, outlined in white; orange triangle chronograph hand; orange minute-counter hand"
+    tell: "Baton hands with an orange triangle chronograph hand and one lume spot at 12 on the bezel; on black dials the minute-counter hand is orange too."
+    hands: "Baton, outlined in white (black on white dials); orange triangle chronograph hand; minute-counter hand orange on black dials"
     bezel: "Black 60-minute outer bezel, one lume spot at 12; red ring with a house-shaped pointer"
     dials:
-      - "Black with white registers"
+      - "Black with white registers (the most common)"
+      - "White with grey registers"
     refs:
       - 072-02-02
     serials:
@@ -183,6 +184,7 @@ variants:
     cites:
       - eo-chrono-table
       - e101-aqua-graph-mk-iv
+      - of-aqua-graph-white-1070295
 read_more:
   - title: Sherpa tool watch matrix
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
@@ -411,6 +413,54 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands, black counter hands, a house-shaped pointer on the red ring and two lume dots at 12, the MkIII tells on Enicar 101; the caption mentions the \"doghouse\" pointer."
+  - file: /images/sherpa-aqua-graph/ew-enicar-aqua-graph-reference-0720202a-1.webp
+    thumb: /images/sherpa-aqua-graph/ew-enicar-aqua-graph-reference-0720202a-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Aqua Graph MkIV with a white dial, grey registers and orange chronograph hand on a black rally strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.windvintage.com/enicar-aqua-graph-reference-0720202a
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-aqua-graph-reference-0720202a
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Orange triangle chronograph hand, baton hands, applied logo and a house-shaped pointer; white dial with grey registers, as on the MkIV serial 1.070.295 sold on OmegaForums. The listing calls it a MK IV, ref. 072-02-02A."
+  - file: /images/sherpa-aqua-graph/ew-enicar-aqua-graph-reference-0720202a-2.webp
+    thumb: /images/sherpa-aqua-graph/ew-enicar-aqua-graph-reference-0720202a-2-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Aqua Graph MkIV with a white dial and black diving bezel, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.windvintage.com/enicar-aqua-graph-reference-0720202a
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-aqua-graph-reference-0720202a
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Orange triangle chronograph hand, baton hands, applied logo and a house-shaped pointer; white dial with grey registers, as on the MkIV serial 1.070.295 sold on OmegaForums. The listing calls it a MK IV, ref. 072-02-02A."
+  - file: /images/sherpa-aqua-graph/ew-enicar-aqua-graph-reference-0720202a-7.webp
+    thumb: /images/sherpa-aqua-graph/ew-enicar-aqua-graph-reference-0720202a-7-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Caseback of an Aqua Graph MkIV, reading Sherpa 300, held in the hand"
+    view: caseback
+    variant: "MkIV"
+    source_url: https://www.windvintage.com/enicar-aqua-graph-reference-0720202a
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-aqua-graph-reference-0720202a
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Orange triangle chronograph hand, baton hands, applied logo and a house-shaped pointer; white dial with grey registers, as on the MkIV serial 1.070.295 sold on OmegaForums. The listing calls it a MK IV, ref. 072-02-02A."
 barometer: null
 status: draft
 gaps:
@@ -463,6 +513,12 @@ citations:
     source: enicar101
     url: https://enicar101.com/aqua-graph-mk-iv/
     title: Aqua Graph MK IV
+    retrieved: 2026-10-25
+    supports: []
+  - id: of-aqua-graph-white-1070295
+    source: omegaforums
+    url: https://omegaforums.net/threads/vintage-enicar-aqua-graph-white-dial-chronograph-valjoux-72.181847/
+    title: "Vintage Enicar Aqua Graph White Dial Chronograph Valjoux 72 (sale thread)"
     retrieved: 2026-10-25
     supports: []
   - id: eo-barometer-7

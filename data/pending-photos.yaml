@@ -762,21 +762,6 @@ pending:
     evidence:
       - "Dial reads Enicar Automatic and Memostar, with no Sherpa."
       - "The Barometer prices a Sherpa Memostar; Antiquorum sold a ref. 298-01-01 Memostar without Sherpa on the dial."
-  - account: wind-vintage
-    post: https://www.windvintage.com/enicar-aqua-graph-reference-0720202a
-    code: enicar-aqua-graph-reference-0720202a
-    photos:
-      - 1
-      - 2
-      - 7
-    model: sherpa-aqua-graph
-    guess: MkIV
-    kind: generation
-    question: "Wind Vintage calls this white-dial Aqua Graph a MK IV. Is it, and is white a MkIV dial?"
-    evidence:
-      - "Baton hands outlined in black, an orange chronograph hand and a house-shaped pointer, as on the MkIV."
-      - "But the dial is white with grey registers and the minute-counter hand is black; the MkIV tells list only black dials with white registers and an orange minute-counter hand."
-      - "The listing gives ref. 072-02-02A."
 
 excluded:
   - account: two_crowned_prints

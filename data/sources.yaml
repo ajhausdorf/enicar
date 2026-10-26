@@ -110,3 +110,14 @@
   use: Photos, with permission, and their description of a watch they sold.
   leads_to: []
   permission: granted
+- id: omegaforums
+  name: OmegaForums sales corner
+  kind: forum
+  tier: listing
+  url: https://omegaforums.net/
+  author: null
+  status: confirmed
+  what: Collector sale threads, often with caseback serials and close-up photos.
+  use: Evidence that a variant exists (a dial with its serial). Seller descriptions are weak for anything else; photos are not ours to use.
+  leads_to: []
+  permission: not-needed
