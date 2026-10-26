@@ -110,3 +110,14 @@
   use: Photos, with permission, and their description of a watch they sold.
   leads_to: []
   permission: granted
+- id: vintage-eye
+  name: Vintage Eye Watches
+  kind: dealer
+  tier: listing
+  url: https://vintageeyewatches.com/
+  author: null
+  status: confirmed
+  what: Vintage watch dealer with Enicar Sherpa listings and an Instagram feed.
+  use: Photos, with permission. Listing details are dealer descriptions, fine for reference numbers, weak for anything else.
+  leads_to: []
+  permission: granted

@@ -51,3 +51,13 @@
   web:
     site: https://www.windvintage.com/
     credit_as: Wind Vintage
+- id: vintage-eye
+  who: Vintage Eye Watches (@vintage.eye), a vintage watch dealer and collector
+  profile_url: https://www.instagram.com/vintage.eye/
+  granted: 2026-10-25
+  via: Message to the owner
+  scope: Photos from their Instagram and the Vintage Eye Watches website, with credit.
+  credit_as: "@vintage.eye"
+  web:
+    site: https://vintageeyewatches.com/
+    credit_as: Vintage Eye Watches
