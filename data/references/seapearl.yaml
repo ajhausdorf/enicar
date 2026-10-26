@@ -131,6 +131,38 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Seapearl 600."
+  - file: /images/seapearl/ew-enicar-seapearl-ref-124-003-unpolished-1.webp
+    thumb: /images/seapearl/ew-enicar-seapearl-ref-124-003-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Seapearl automatic with a silver dial and baton markers on a yellow leather strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-seapearl-ref-124/003-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-seapearl-ref-124/003-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Caseback reads 124/003 Seapearl."
+  - file: /images/seapearl/ew-enicar-seapearl-ref-124-003-unpolished-6.webp
+    thumb: /images/seapearl/ew-enicar-seapearl-ref-124-003-unpolished-6-sm.webp
+    width: 1600
+    height: 960
+    alt: "Caseback of a Seapearl, ref. 124/003, held in the hand"
+    view: caseback
+    variant: null
+    source_url: https://www.windvintage.com/enicar-seapearl-ref-124/003-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-seapearl-ref-124/003-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Caseback reads 124/003 Seapearl."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

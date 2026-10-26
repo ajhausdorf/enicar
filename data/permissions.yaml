@@ -41,3 +41,13 @@
   via: Instagram message to the owner
   scope: Their Enicar photos, with credit and a link back. Their bio says some watches shown are not theirs; those posts are left out.
   credit_as: "@ctwatchguy"
+- id: eric-wind
+  who: Eric Wind (@ericmwind), founder of the dealer Wind Vintage
+  profile_url: https://www.instagram.com/ericmwind/
+  granted: 2026-10-25
+  via: Message to the owner
+  scope: Photos from his Instagram and the Wind Vintage website, with credit.
+  credit_as: "@ericmwind"
+  web:
+    site: https://www.windvintage.com/
+    credit_as: Wind Vintage

@@ -86,9 +86,17 @@ articles into `incoming/<account>/posts.json`, skipping screenshots, ads,
 auction and collector articles and anything credited to someone else, with
 reasons in `skipped.json`. The permission entry's `web` block says how to
 credit them: the owner agreed that uncredited photos on enicar.org are
-credited "enicar.org" with a link to the article they sit on. `place.mjs`
-does not handle web photos yet; add that (credit and source from the post's
-`url`) the first time one is placed.
+credited "enicar.org" with a link to the article they sit on.
+
+Other sites (a dealer's Squarespace shop, say): `node scripts/web/pages.mjs
+<account> --sitemap <site>/sitemap.xml <match>` collects each matching page's
+photos, one "post" per page. Then download, sheets and `place.mjs <account>`
+as for Instagram: for posts with a page `url`, place.mjs credits the
+permission entry's `web.credit_as` and links both `credit_url` and
+`source_url` to that page. A dealer's title is a claim, not a tell: check the
+generation against the record's tells, and where they disagree leave the
+variant null and say why in `identified_note`. Leave out models we don't
+have a record for.
 
 ## Pages with no photo
 

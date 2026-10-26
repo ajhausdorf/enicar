@@ -10,7 +10,18 @@ export function checkPending() {
   const p = join(ROOT, 'data/pending-photos.yaml');
   if (!existsSync(p)) return r;
   const { pending = [], excluded = [] } = YAML.parse(readFileSync(p, 'utf8')) ?? {};
-  const accounts = new Set(loadPermissions().map((x) => x.profile_url.replace(/\/$/, '').split('/').pop()));
+  const perms = loadPermissions();
+  const accounts = new Set(perms.map((x) => x.profile_url.replace(/\/$/, '').split('/').pop()));
+  // Folders of website photos (scripts/web/pages.mjs) count when their pages
+  // are on a site some entry's `web.site` covers.
+  const host = (u) => new URL(u).host.replace(/^www\./, '');
+  const sites = new Set(perms.filter((x) => x.web?.site).map((x) => host(x.web.site)));
+  const incoming = join(ROOT, 'incoming');
+  for (const d of existsSync(incoming) ? readdirSync(incoming) : []) {
+    const f = join(incoming, d, 'posts.json');
+    const url = existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')).find((x) => x.url)?.url : null;
+    if (url && sites.has(host(url))) accounts.add(d);
+  }
   // Photos on the site, as "<account>/<code>/<n>", recovered from source_url and file name.
   const placed = new Set();
   for (const { data } of loadReferences()) {

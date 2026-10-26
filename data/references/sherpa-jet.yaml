@@ -511,6 +511,54 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Red and black checkered GMT hand, the MkIII tell in Martijn van der Ven's Jet article."
+  - file: /images/sherpa-jet/ew-enicar-sherpa-jet-ref-1483502-unpolished-1.webp
+    thumb: /images/sherpa-jet/ew-enicar-sherpa-jet-ref-1483502-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Jet MkIII with a black dial and yellow and black 24-hour bezel on a steel bracelet"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.windvintage.com/enicar-sherpa-jet-ref-1483502-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-jet-ref-1483502-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Round case and a red and black checkered GMT hand. The listing gives ref. 148-35-02."
+  - file: /images/sherpa-jet/ew-enicar-sherpa-jet-ref-1483502-unpolished-3.webp
+    thumb: /images/sherpa-jet/ew-enicar-sherpa-jet-ref-1483502-unpolished-3-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Dial of a Sherpa Jet MkIII, close up, with the checkered GMT hand"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.windvintage.com/enicar-sherpa-jet-ref-1483502-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-jet-ref-1483502-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Round case and a red and black checkered GMT hand. The listing gives ref. 148-35-02."
+  - file: /images/sherpa-jet/ew-enicar-sherpa-jet-ref-1483502-unpolished-9.webp
+    thumb: /images/sherpa-jet/ew-enicar-sherpa-jet-ref-1483502-unpolished-9-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Caseback of a Sherpa Jet MkIII on a steel bracelet"
+    view: caseback
+    variant: "MkIII"
+    source_url: https://www.windvintage.com/enicar-sherpa-jet-ref-1483502-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-jet-ref-1483502-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Round case and a red and black checkered GMT hand. The listing gives ref. 148-35-02."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article

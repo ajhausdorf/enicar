@@ -11,6 +11,10 @@
 //     "view": "dial" | "caseback" | "movement" | "profile" | "other" }
 // Credit, link and permission come from data/permissions.yaml (the entry whose
 // profile_url is this account), so they can't be mistyped per photo.
+// Photos collected from a website by scripts/web/pages.mjs (posts with a page
+// `url`) are credited with the entry's `web.credit_as` and link to that page;
+// <account> is then the folder under incoming/, and the entry is the one whose
+// web.site is the page's host.
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { createRequire } from 'node:module';
@@ -21,9 +25,15 @@ const sharp = createRequire(join(ROOT, 'package.json'))('sharp');
 const account = process.argv[2];
 if (!account) { console.error('usage: place.mjs <account>'); process.exit(1); }
 
-const perm = (YAML.parse(readFileSync(join(ROOT, 'data/permissions.yaml'), 'utf8')) ?? [])
-  .find((p) => p.profile_url.replace(/\/$/, '').endsWith('/' + account));
-if (!perm) { console.error(`no entry in data/permissions.yaml for ${account}; record their permission first`); process.exit(1); }
+const perms = YAML.parse(readFileSync(join(ROOT, 'data/permissions.yaml'), 'utf8')) ?? [];
+const postsFile = join(ROOT, 'incoming', account, 'posts.json');
+const pages = new Map((existsSync(postsFile) ? JSON.parse(readFileSync(postsFile, 'utf8')) : []).filter((p) => p.url).map((p) => [p.code, p]));
+const host = (u) => new URL(u).host.replace(/^www\./, '');
+const webHost = pages.size ? host([...pages.values()][0].url) : null;
+const perm = webHost
+  ? perms.find((p) => p.web?.site && host(p.web.site) === webHost)
+  : perms.find((p) => p.profile_url.replace(/\/$/, '').endsWith('/' + account));
+if (!perm) { console.error(`no entry in data/permissions.yaml for ${webHost ?? account}; record their permission first`); process.exit(1); }
 const placements = JSON.parse(readFileSync(join(ROOT, 'incoming', account, 'placements.json'), 'utf8'));
 const prefix = perm.id.split('-').map((w) => w[0]).join('');
 const q = (s) => JSON.stringify(s);
@@ -31,6 +41,8 @@ const q = (s) => JSON.stringify(s);
 const byRec = {};
 for (const x of placements) {
   const code = x.src.replace(/_\d\d$/, ''), n = Number(x.src.slice(-2));
+  const page = pages.get(code);
+  if (webHost && !page) { console.error(`${x.src}: no page for ${code} in posts.json`); process.exit(1); }
   const name = `${prefix}-${code.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}-${n}`;
   const recFile = join(ROOT, 'data/references', x.rec + '.yaml');
   if (!existsSync(recFile)) { console.error(`no record ${x.rec}`); process.exit(1); }
@@ -47,9 +59,9 @@ for (const x of placements) {
     alt: ${q(x.alt)}
     view: ${x.view ?? 'dial'}
     variant: ${x.variant ? q(x.variant) : 'null'}
-    source_url: https://www.instagram.com/p/${code}/
-    credit: ${q(perm.credit_as)}
-    credit_url: ${perm.link ?? perm.profile_url}
+    source_url: ${page ? page.url : `https://www.instagram.com/p/${code}/`}
+    credit: ${q(page ? perm.web.credit_as : perm.credit_as)}
+    credit_url: ${page ? page.url : perm.link ?? perm.profile_url}
     license: "Used with permission"
     permission: granted
     permission_ref: ${perm.id}

@@ -476,6 +476,54 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Red minute-counter hand, triangle chronograph hand and baton hands, the MkIV tells on Enicar 101."
+  - file: /images/sherpa-jet-graph/ew-enicar-jet-graph-reference-072-02-02a-unpolished-1.webp
+    thumb: /images/sherpa-jet-graph/ew-enicar-jet-graph-reference-072-02-02a-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Jet Graph MkIII with an all-black dial, checkered GMT hand and 24-hour bezel on a tan strap"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.windvintage.com/enicar-jet-graph-reference-072-02-02a-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-jet-graph-reference-072-02-02a-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, a lollipop chronograph hand with a red dot and a red and black checkered GMT hand, on an all-black dial. The listing gives ref. 072-02-02A."
+  - file: /images/sherpa-jet-graph/ew-enicar-jet-graph-reference-072-02-02a-unpolished-2.webp
+    thumb: /images/sherpa-jet-graph/ew-enicar-jet-graph-reference-072-02-02a-unpolished-2-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Jet Graph MkIII on a tan strap, on the wrist"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.windvintage.com/enicar-jet-graph-reference-072-02-02a-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-jet-graph-reference-072-02-02a-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, a lollipop chronograph hand with a red dot and a red and black checkered GMT hand, on an all-black dial. The listing gives ref. 072-02-02A."
+  - file: /images/sherpa-jet-graph/ew-enicar-jet-graph-reference-072-02-02a-unpolished-6.webp
+    thumb: /images/sherpa-jet-graph/ew-enicar-jet-graph-reference-072-02-02a-unpolished-6-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of a Jet Graph MkIII, held in the hand"
+    view: caseback
+    variant: "MkIII"
+    source_url: https://www.windvintage.com/enicar-jet-graph-reference-072-02-02a-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-jet-graph-reference-072-02-02a-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, a lollipop chronograph hand with a red dot and a red and black checkered GMT hand, on an all-black dial. The listing gives ref. 072-02-02A."
 barometer: null
 status: draft
 gaps:

@@ -532,6 +532,38 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Super-Dive."
+  - file: /images/sherpa-super-dive/ew-enicar-sherpa-super-dive-1.webp
+    thumb: /images/sherpa-super-dive/ew-enicar-sherpa-super-dive-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Super-Dive with a black dial and date at 3 on a black strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-sherpa-super-dive
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-super-dive
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super Dive. The listing gives ref. 144-35-02."
+  - file: /images/sherpa-super-dive/ew-enicar-sherpa-super-dive-7.webp
+    thumb: /images/sherpa-super-dive/ew-enicar-sherpa-super-dive-7-sm.webp
+    width: 1067
+    height: 1600
+    alt: "Caseback of a Sherpa Super-Dive, held in the hand"
+    view: caseback
+    variant: null
+    source_url: https://www.windvintage.com/enicar-sherpa-super-dive
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-super-dive
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Super Dive. The listing gives ref. 144-35-02."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

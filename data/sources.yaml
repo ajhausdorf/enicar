@@ -77,6 +77,17 @@
   use: Photos, with permission, and the owner's own identification of a watch where they give one.
   leads_to: []
   permission: granted
+- id: wind-vintage
+  name: Wind Vintage
+  kind: dealer
+  tier: listing
+  url: https://www.windvintage.com/
+  author: Eric Wind
+  status: confirmed
+  what: Vintage watch dealer run by Eric Wind, with detailed listings of Enicar Sherpa watches.
+  use: Photos, with permission. Listing details are dealer descriptions, fine for reference numbers, weak for anything else.
+  leads_to: []
+  permission: granted
 - id: zizi-zap
   name: "@zizi_zap"
   kind: other
