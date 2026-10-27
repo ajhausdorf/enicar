@@ -52,8 +52,8 @@ images:
 barometer: null
 status: draft
 gaps:
-  - Case material and lug width
-  - Photographs
+  - Lug width
+  - "Photographs of real watches (only a catalogue image so far)"
   - Price
 citations:
   - id: e101-cat-1960-ch

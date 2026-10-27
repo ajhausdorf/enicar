@@ -50,8 +50,8 @@ barometer: null
 status: draft
 gaps:
   - "Reference number: the 1960 catalogue reads 10?/216 BaANXTCS, with the third digit unclear in the scan"
-  - Case material and lug width
-  - Photographs
+  - Lug width
+  - "Photographs of real watches (only a catalogue image so far)"
   - Price
 citations:
   - id: e101-cat-1960-ch
