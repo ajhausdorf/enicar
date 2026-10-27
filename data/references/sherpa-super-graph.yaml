@@ -218,6 +218,8 @@ images:
     caption: null
     identified_by: source
     identified_note: "Dial reads Super Graph. Enicar 101 calls this version the \"Simonet\", made for the 1964 Olympic shooting team (ref. 072/002)."
+  # Aaron King's photos are used with credit but without permission, on the
+  # owner's decision (2026-10-27): Aaron King couldn't be found. Remove on request.
   - file: /images/sherpa-super-graph/ak-sg-mkiii-1.webp
     thumb: /images/sherpa-super-graph/ak-sg-mkiii-1-sm.webp
     width: 1600
@@ -228,9 +230,9 @@ images:
     source_url: https://enicar101.com/super-graph-mk-iii/
     credit: "Aaron King"
     credit_url: https://enicar101.com/super-graph-mk-iii/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: aaron-king
+    license: "Credited; removed on request"
+    permission: credited
+    permission_ref: null
     caption: null
     identified_by: source
     identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/), which credits the pictures to Aaron King."
@@ -244,9 +246,9 @@ images:
     source_url: https://enicar101.com/super-graph-mk-iii/
     credit: "Aaron King"
     credit_url: https://enicar101.com/super-graph-mk-iii/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: aaron-king
+    license: "Credited; removed on request"
+    permission: credited
+    permission_ref: null
     caption: null
     identified_by: source
     identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/), which credits the pictures to Aaron King."
@@ -260,9 +262,9 @@ images:
     source_url: https://enicar101.com/super-graph-mk-iii/
     credit: "Aaron King"
     credit_url: https://enicar101.com/super-graph-mk-iii/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: aaron-king
+    license: "Credited; removed on request"
+    permission: credited
+    permission_ref: null
     caption: null
     identified_by: source
     identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/), which credits the pictures to Aaron King."
@@ -276,9 +278,9 @@ images:
     source_url: https://enicar101.com/super-graph-mk-iii/
     credit: "Aaron King"
     credit_url: https://enicar101.com/super-graph-mk-iii/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: aaron-king
+    license: "Credited; removed on request"
+    permission: credited
+    permission_ref: null
     caption: null
     identified_by: source
     identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/), which credits the pictures to Aaron King. The caseback is stamped 072-02-02."
@@ -292,9 +294,9 @@ images:
     source_url: https://enicar101.com/super-graph-mk-iii/
     credit: "Aaron King"
     credit_url: https://enicar101.com/super-graph-mk-iii/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: aaron-king
+    license: "Credited; removed on request"
+    permission: credited
+    permission_ref: null
     caption: null
     identified_by: source
     identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/), which credits the pictures to Aaron King."
