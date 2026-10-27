@@ -232,7 +232,7 @@
  {
   "rec": "sherpa-graph",
   "src": "DXD-yDIDQIP_01",
-  "variant": "MkII",
+  "variant": "MkIIb",
   "alt": "Sherpa Graph with an all black dial and black registers on a black leather strap",
   "caption": null,
   "by": "caption",
@@ -242,7 +242,7 @@
  {
   "rec": "sherpa-graph",
   "src": "DUQFgHwDA8K_01",
-  "variant": "MkII",
+  "variant": "MkIIb",
   "alt": "Sherpa Graph with a cream dial on a black rubber strap, lying on a printing plate",
   "caption": null,
   "by": "caption",
@@ -252,7 +252,7 @@
  {
   "rec": "sherpa-graph",
   "src": "DFkpyclIwgj_01",
-  "variant": "MkII",
+  "variant": "MkIIb",
   "alt": "Sherpa Graph with an all black dial and orange chronograph hand on a black rally strap",
   "caption": null,
   "by": "caption",
@@ -262,32 +262,12 @@
  {
   "rec": "sherpa-graph",
   "src": "CpiCjEYtOOU_01",
-  "variant": "MkII",
+  "variant": "MkIIb",
   "alt": "Sherpa Graph with an aged cream dial on a black Tropic strap",
   "caption": null,
   "by": "caption",
   "note": "Caption names it MkII and dates it 1962; the production table starts the MkII in 1963, an estimate.",
   "view": "dial"
- },
- {
-  "rec": "sherpa-graph",
-  "src": "CjkR9SHrLH9_01",
-  "variant": "MkII",
-  "alt": "Sherpa Graph with a black dial on a steel bracelet in its original Enicar Ultrasonic box",
-  "caption": null,
-  "by": "caption",
-  "note": "Caption names it MkII and dates it 1962; the production table starts the MkII in 1963, an estimate.",
-  "view": "other"
- },
- {
-  "rec": "sherpa-graph",
-  "src": "BlQU2LZHUaa_01",
-  "variant": "MkII",
-  "alt": "The Enicar-signed Valjoux 72 movement inside a Sherpa Graph, caseback removed",
-  "caption": null,
-  "by": "caption",
-  "note": "Caption: inside his Sherpa Graph MkII, Enicar signed adjusted Valjoux 72.",
-  "view": "movement"
  },
  {
   "rec": "sherpa-graph",
