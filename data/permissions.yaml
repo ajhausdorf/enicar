@@ -71,3 +71,10 @@
   web:
     site: https://enicar101.com/
     credit_as: Enicar 101
+- id: aaron-king
+  who: Aaron King, whose Super Graph MkIII photos appear on Enicar 101
+  profile_url: https://enicar101.com/super-graph-mk-iii/
+  granted: 2026-10-27
+  via: Confirmed to the owner (reported 2026-10-27)
+  scope: Their Super Graph MkIII photos on Enicar 101, credited to Aaron King with a link to that page.
+  credit_as: "Aaron King"
