@@ -18,7 +18,55 @@ features: []
 dial: null
 variants: []
 read_more: []
-images: []
+images:
+  - file: /images/sherpa-memostar/vv-b-wg46dhzgf-1.webp
+    thumb: /images/sherpa-memostar/vv-b-wg46dhzgf-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Enicar Memostar alarm watch with a silver and pale blue dial and a date window, in its Enicar box on a tan strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/B-wG46DHzgf/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Memostar printed on the dial; Martijn captions it a Memostar alarm watch."
+  - file: /images/sherpa-memostar/of-bristnj-1.webp
+    thumb: /images/sherpa-memostar/of-bristnj-1-sm.webp
+    width: 1459
+    height: 1592
+    alt: "Enicar Memostar alarm watch with a dark blue and silver dial and a date window, on a steel bracelet"
+    view: dial
+    variant: null
+    source_url: https://omegaforums.net/posts/1708600/
+    credit: "bristnj (OmegaForums)"
+    credit_url: https://omegaforums.net/posts/1708600/
+    license: "Forum photo"
+    permission: credited
+    permission_ref: null
+    caption: null
+    identified_by: dial
+    identified_note: "Memostar printed on the dial; the owner's OmegaForums post calls it a 1960s Memostar ref. 298-01-01."
+  - file: /images/sherpa-memostar/of-bikehomero-1.webp
+    thumb: /images/sherpa-memostar/of-bikehomero-1-sm.webp
+    width: 1176
+    height: 784
+    alt: "Enicar Memostar alarm watch with a silver dial and a date window, on a brown leather strap"
+    view: dial
+    variant: null
+    source_url: https://omegaforums.net/posts/2175859/
+    credit: "bikehomero (OmegaForums)"
+    credit_url: https://omegaforums.net/posts/2175859/
+    license: "Forum photo"
+    permission: credited
+    permission_ref: null
+    caption: null
+    identified_by: dial
+    identified_note: "Memostar printed on the dial; posted by its owner on OmegaForums as a new Memostar."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
@@ -32,7 +80,6 @@ barometer:
       note: null
 status: draft
 gaps:
-  - "Photographs"
   - "Calibre (an Antiquorum lot gives a 2980 with 19 jewels)"
   - "Production years"
   - "Case size and material"
@@ -49,4 +96,4 @@ citations:
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-25
+last_reviewed: 2026-10-27
