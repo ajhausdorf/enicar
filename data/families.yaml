@@ -21,3 +21,6 @@
 - id: healthways
   name: Healthways
   order: 8
+- id: other
+  name: Other watches
+  order: 9

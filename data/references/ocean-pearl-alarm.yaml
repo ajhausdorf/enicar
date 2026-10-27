@@ -1,0 +1,83 @@
+name: Ocean Pearl Alarm
+family: ocean-pearl
+kind: alarm
+summary: "A compact dive watch with a mechanical alarm, in an EPSA case with a rotating bezel. Very few are known."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: EPSA
+  material: null
+  diameter_mm: 35
+  lug_mm: null
+  thickness_mm: null
+features: [outer-bezel]
+dial: "Explorer-style layout."
+variants: []
+read_more: []
+images:
+  - file: /images/ocean-pearl-alarm/ew-enicar-oceanpearl-alarm-unpolished-1.webp
+    thumb: /images/ocean-pearl-alarm/ew-enicar-oceanpearl-alarm-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Enicar dive alarm with an aged cream dial, black rotating bezel and steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-oceanpearl-alarm-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-oceanpearl-alarm-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: source
+    identified_note: "Dial reads Enicar alarm, in a dive case with a rotating bezel. The listing calls it an Ocean Pearl Alarm."
+  - file: /images/ocean-pearl-alarm/ew-enicar-oceanpearl-alarm-unpolished-2.webp
+    thumb: /images/ocean-pearl-alarm/ew-enicar-oceanpearl-alarm-unpolished-2-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Enicar dive alarm with a cream dial and black bezel, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-oceanpearl-alarm-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-oceanpearl-alarm-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: source
+    identified_note: "Dial reads Enicar alarm, in a dive case with a rotating bezel. The listing calls it an Ocean Pearl Alarm."
+  - file: /images/ocean-pearl-alarm/ew-enicar-oceanpearl-alarm-unpolished-9.webp
+    thumb: /images/ocean-pearl-alarm/ew-enicar-oceanpearl-alarm-unpolished-9-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of the Enicar dive alarm on its bracelet"
+    view: caseback
+    variant: null
+    source_url: https://www.windvintage.com/enicar-oceanpearl-alarm-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-oceanpearl-alarm-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: source
+    identified_note: "Caseback of the same watch in the Wind Vintage listing."
+status: draft
+gaps:
+  - Reference number
+  - Production years
+  - "Calibre: the dealer names A. Schild without a number"
+  - Whether Enicar sold it as an Ocean Pearl; the name comes from the dealer
+citations:
+  - id: wv-alarm
+    source: wind-vintage
+    url: https://www.windvintage.com/enicar-oceanpearl-alarm-unpolished
+    title: "Enicar Ocean Pearl Alarm Unpolished (Wind Vintage listing)"
+    retrieved: 2026-10-27
+    supports: [case.construction, case.diameter_mm, features, dial]
+last_reviewed: 2026-10-27
