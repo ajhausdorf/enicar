@@ -30,28 +30,28 @@ read_more:
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
 images:
-  - file: /images/sherpa-time/e101-catalogue-time.webp
-    thumb: /images/sherpa-time/e101-catalogue-time-sm.webp
-    width: 560
-    height: 680
-    alt: "Sherpa Time with a white dial and world-city outer bezel, from Enicar's 1960 Sherpa catalogue"
+  - file: /images/sherpa-time/vv-sherpa-time-1.webp
+    thumb: /images/sherpa-time/vv-sherpa-time-1-sm.webp
+    width: 802
+    height: 1003
+    alt: "Period Enicar picture of a Sherpa Time with a white dial, date window and world-city outer bezel, on a black strap"
     view: advert
     variant: null
-    source_url: https://enicar101.wordpress.com/wp-content/uploads/2019/11/brochure_1960_switzerland.pdf
-    credit: "Enicar 101"
-    credit_url: https://enicar101.com/brochures-ads/
+    source_url: https://www.instagram.com/p/BxaZzB5H63d/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
     license: "Used with permission"
     permission: granted
-    permission_ref: enicar101
-    caption: "From Enicar's 1960 Sherpa catalogue (Switzerland)."
-    identified_by: source
-    identified_note: "Captioned Sherpa Time in the catalogue."
+    permission_ref: vandervenus
+    caption: "A period Enicar catalogue picture, posted by Martijn van der Ven."
+    identified_by: dial
+    identified_note: "The dial reads Sherpa Time; Martijn's caption names it too."
 barometer: null
 status: draft
 gaps:
   - "Reference number: the 1960 catalogue reads 10?/216 BaANXTCS, with the third digit unclear in the scan"
   - Lug width
-  - "Photographs of real watches (only a catalogue image so far)"
+  - "Photographs of real watches (only a period catalogue picture so far)"
   - Price
 citations:
   - id: e101-cat-1960-ch
@@ -69,4 +69,4 @@ citations:
       - case.diameter_mm
       - features
       - movement.calibres
-last_reviewed: 2026-10-25
+last_reviewed: 2026-10-27
