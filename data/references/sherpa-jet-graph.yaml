@@ -579,8 +579,8 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: tells
-    identified_note: "Applied logo, long orange-tipped paddle hands, thin plain chronograph hand, silver GMT hand with an orange tip, triangle pointer. Enicar 101 labels it MK Ia."
+    identified_by: source
+    identified_note: "Shown on Enicar 101's page titled Jet Graph MK Ia (https://enicar101.com/jet-graph-mk-i/)."
   - file: /images/sherpa-jet-graph/e-jet-graph-mk-i-2.webp
     thumb: /images/sherpa-jet-graph/e-jet-graph-mk-i-2-sm.webp
     width: 1578
@@ -595,8 +595,8 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: tells
-    identified_note: "Caseback marked 072/002 with the Seapearl medallion, same watch as the MK Ia dial photos."
+    identified_by: source
+    identified_note: "Shown on Enicar 101's page titled Jet Graph MK Ia (https://enicar101.com/jet-graph-mk-i/)."
   - file: /images/sherpa-jet-graph/e-jet-graph-mk-i-3.webp
     thumb: /images/sherpa-jet-graph/e-jet-graph-mk-i-3-sm.webp
     width: 1600
@@ -611,8 +611,8 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: tells
-    identified_note: "Movement of the same 072/002 watch on Enicar 101's MK Ia page."
+    identified_by: source
+    identified_note: "Shown on Enicar 101's page titled Jet Graph MK Ia (https://enicar101.com/jet-graph-mk-i/)."
   - file: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-1.webp
     thumb: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-1-sm.webp
     width: 1600
@@ -627,8 +627,8 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: tells
-    identified_note: "Applied logo, long orange-tipped paddle hands, silver orange-tipped GMT hand, triangle pointer. Enicar 101 calls it a MK1a."
+    identified_by: source
+    identified_note: "Shown as a Jet Graph MK Ia on Enicar 101 (https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/)."
   - file: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-2.webp
     thumb: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-2-sm.webp
     width: 1600
@@ -643,8 +643,8 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: tells
-    identified_note: "Same blue-dial watch: applied logo, long orange-tipped hands, triangle pointer. Enicar 101 calls it a MK1a."
+    identified_by: source
+    identified_note: "Shown as a Jet Graph MK Ia on Enicar 101 (https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/)."
   - file: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-3.webp
     thumb: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-3-sm.webp
     width: 1600
@@ -659,8 +659,8 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: tells
-    identified_note: "Same blue-dial watch: orange-tipped paddle and GMT hands, triangle pointer. Enicar 101 calls it a MK1a."
+    identified_by: source
+    identified_note: "Shown as a Jet Graph MK Ia on Enicar 101 (https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/)."
   - file: /images/sherpa-jet-graph/e-dj1aw42ihga-1.webp
     thumb: /images/sherpa-jet-graph/e-dj1aw42ihga-1-sm.webp
     width: 1440

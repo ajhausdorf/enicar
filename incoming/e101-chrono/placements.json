@@ -1,0 +1,42 @@
+[
+ {
+  "rec": "sherpas-chronometer",
+  "src": "chronometer-cold-edge_05",
+  "variant": null,
+  "alt": "Ultrasonic Sherpas Chronometer with a black dial, triangle and Arabic markers on a black strap",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Enicar Ultrasonic Sherpas Chronometer Automatic. Enicar 101's own watch, ref. 100/76 AaNS.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpas-chronometer",
+  "src": "chronometer-cold-edge_01",
+  "variant": null,
+  "alt": "Ultrasonic Sherpas Chronometer with a black dial on a black strap, at an angle",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Enicar Ultrasonic Sherpas Chronometer Automatic. Enicar 101's own watch, ref. 100/76 AaNS.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpas-chronometer",
+  "src": "chronometer-cold-edge_02",
+  "variant": null,
+  "alt": "Caseback of the Ultrasonic Sherpas Chronometer with the Enicar Ultrasonic emblem",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Enicar Ultrasonic Sherpas Chronometer Automatic. Enicar 101's own watch, ref. 100/76 AaNS.",
+  "view": "caseback"
+ },
+ {
+  "rec": "sherpas-chronometer",
+  "src": "chronometer-cold-edge_04",
+  "variant": null,
+  "alt": "Chronometer movement of the Ultrasonic Sherpas Chronometer, caseback open",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Enicar Ultrasonic Sherpas Chronometer Automatic. Enicar 101's own watch, ref. 100/76 AaNS.",
+  "view": "movement"
+ }
+]

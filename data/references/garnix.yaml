@@ -1,0 +1,60 @@
+name: "\"Garnix\" chronograph"
+family: chronographs
+kind: chronograph
+summary: "A 36 mm chronograph from the mid-1960s with no model name on the dial, in a plain water-resistant case rather than a compressor case. Collectors call it \"Garnix\", German slang for nothing, after the empty dial."
+references:
+  - number: "2303"
+    cites: [e101-garnix]
+  - number: 072/003
+    cites: [e101-garnix]
+nicknames: ["Garnix", "Pre-Sherpa (a dealer misnomer)"]
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: Water-resistant case, not a compressor case
+  material: null
+  diameter_mm: 36
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "No model name; tritium lume and paddle hands."
+variants: []
+read_more:
+  - variant: null
+    title: "The \"Pre-Sherpa\" mystery"
+    url: https://enicar101.com/2019/11/03/the-pre-sherpa-mystery/
+    source: enicar101
+    note: "Why the Garnix is not a pre-Sherpa, compared side by side with a Sherpa Graph."
+images: []
+barometer:
+  edition: "#7, December 2025"
+  cite: eo-barometer-7
+  currency: EUR
+  entries:
+    - label: "Valjoux 72 chronograph, Ocean Pearl Interlagos, \"Garnix\""
+      bands:
+        - { condition: "Very good to mint", low: 3000, high: 5000 }
+        - { condition: "Average to good", low: 2000, high: 3000 }
+        - { condition: "Poor to fair", low: 1500, high: 2000 }
+      note: "Published together with the Ocean Pearl Interlagos."
+status: draft
+gaps:
+  - "Calibre: the Barometer groups it with the Valjoux 72 chronographs; not confirmed for this reference"
+  - Production years
+  - Case material
+citations:
+  - id: e101-garnix
+    source: enicar101
+    url: https://enicar101.com/2019/11/03/the-pre-sherpa-mystery/
+    title: "The \"Pre-Sherpa\" mystery"
+    retrieved: 2026-10-27
+    supports: [nicknames, case.construction, case.diameter_mm, dial]
+  - id: eo-barometer-7
+    source: enicar-org
+    url: https://enicar.org/2025/12/08/watch-value-barometer-7/
+    title: "Watch Value Barometer #7, December 2025"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

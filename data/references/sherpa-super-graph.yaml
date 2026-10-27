@@ -30,7 +30,53 @@ features:
   - outer-bezel
   - red-pointer-ring
 dial: null
-variants: []
+variants:
+  - name: MkI
+    years: { from: 1963, to: null }
+    tell: "Grey glossy 60-minute bezel, long orange-tipped paddle hands, a spear-tipped chronograph hand and arrow-shaped register hands; Seapearl caseback."
+    calibres: [Valjoux 72]
+    hands: "Paddle with long orange tips; spear-tipped lumed chronograph hand; arrow-shaped steel register hands"
+    bezel: "Grey glossy aluminium 60-minute bezel, no clicks; red ring with a triangle pointer"
+    dials: ["Black"]
+    crowns: "Compressor crown with Saturn"
+    refs: [072/002]
+    serials: ["626.6xx", "627.0xx – 627.1xx", "635.8xx", "706.8xx"]
+    production: "under 200"
+    cites: [e101-sg-mki]
+  - name: Simonet
+    years: { from: 1964, to: null }
+    tell: "Black bezel with red segments, orange markers on the hour counter and an orange-tipped hour-counter hand; made for the shooting events at the 1964 Tokyo Olympics."
+    calibres: [Valjoux 72]
+    hands: "Paddle with long orange tips; spear-tipped chronograph hand with orange lume; arrow-shaped register hands, the hour-counter hand tipped orange"
+    bezel: "Black 60-minute bezel with red segments; red ring with a triangle pointer"
+    dials: ["Black with black registers"]
+    crowns: "Compressor crown without the Saturn"
+    refs: [072/002]
+    serials: ["627.0xx – 627.1xx"]
+    production: "under 50"
+    cites: [e101-sg-simonet]
+  - name: MkII
+    years: { from: 1966, to: null }
+    tell: "Shorter orange tips on the paddle hands, a chronograph hand with a red dot near the tip, and thin, short unpainted register hands; Sherpa 300 caseback."
+    calibres: [Valjoux 72]
+    hands: "Paddle with short orange tips; chronograph hand with a red dot near the tip; thin unpainted register hands"
+    bezel: "Grey glossy aluminium 60-minute bezel; red ring with a triangle pointer"
+    dials: ["Black", "White (one known, as a spare)"]
+    crowns: "Compressor crown with Saturn"
+    refs: [072-02-02]
+    serials: ["906.7xx"]
+    production: "about 100"
+    cites: [e101-sg-mkii]
+  - name: MkIII
+    years: { from: 1969, to: null }
+    tell: "Baton hands outlined in white, a red or orange lollipop or triangle chronograph hand and thicker black register hands, with a rally-style minute track."
+    calibres: [Valjoux 72]
+    hands: "Baton, outlined in white; red or orange lollipop or triangle chronograph hand; thick black register hands"
+    bezel: "Grey glossy aluminium 60-minute bezel; red ring with a triangle pointer"
+    dials: ["Black with white registers"]
+    refs: [072-02-02]
+    serials: ["1.070.1xx", "1.321.9xx"]
+    cites: [e101-sg-mkiii]
 read_more:
   - title: Sherpa tool watch matrix
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
@@ -41,22 +87,22 @@ read_more:
     url: https://enicar101.com/super-graph/
     source: enicar101
     note: Generation pages with serial ranges, case details and photos.
-  - variant: null
+  - variant: "Simonet"
     title: "Super Graph \"Simonet\""
     url: https://enicar101.com/super-graph-simonet/
     source: enicar101
     note: "Guide to the Super Graph version made for the 1964 Olympic shooting team."
-  - variant: null
+  - variant: "MkIII"
     title: "Super Graph MK III"
     url: https://enicar101.com/super-graph-mk-iii/
     source: enicar101
     note: "Guide to the late Super Graph, ref. 072-02-02."
-  - variant: null
+  - variant: "MkII"
     title: "Super Graph MK II"
     url: https://enicar101.com/super-graph-mk-ii/
     source: enicar101
     note: "Guide to the Super Graph MK II, ref. 072-02-02."
-  - variant: null
+  - variant: "MkI"
     title: "Super Graph MK I"
     url: https://enicar101.com/super-graph-coming-soon/
     source: enicar101
@@ -98,7 +144,7 @@ images:
     height: 1500
     alt: "Super Graph head with an all-black dial, grey countdown bezel and red ring with a triangle pointer"
     view: dial
-    variant: null
+    variant: "MkI"
     source_url: https://enicar101.com/super-graph-coming-soon/
     credit: "Enicar 101"
     credit_url: https://enicar101.com/super-graph-coming-soon/
@@ -106,15 +152,15 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Super Graph. Enicar 101 labels it MK I (ref. 072/002); our record has no generations."
+    identified_by: source
+    identified_note: "Dial reads Super Graph. Enicar 101 labels it MK I (ref. 072/002); shown on its MK I page."
   - file: /images/sherpa-super-graph/e-super-graph-mk-ii-1.webp
     thumb: /images/sherpa-super-graph/e-super-graph-mk-ii-1-sm.webp
     width: 1500
     height: 876
     alt: "Super Graph with an all-black dial, grey countdown bezel and red ring, on a steel bracelet"
     view: dial
-    variant: null
+    variant: "MkII"
     source_url: https://enicar101.com/super-graph-mk-ii/
     credit: "Enicar 101"
     credit_url: https://enicar101.com/super-graph-mk-ii/
@@ -122,15 +168,15 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: dial
-    identified_note: "Dial reads Super Graph. Enicar 101 labels it MK II; our record has no generations."
+    identified_by: source
+    identified_note: "Dial reads Super Graph. Enicar 101 labels it MK II; shown on its MK II page."
   - file: /images/sherpa-super-graph/e-super-graph-mk-ii-2.webp
     thumb: /images/sherpa-super-graph/e-super-graph-mk-ii-2-sm.webp
     width: 1201
     height: 1194
     alt: "Close-up of an all-black Super Graph dial with paddle hands and a red-dot chronograph hand"
     view: dial
-    variant: null
+    variant: "MkII"
     source_url: https://enicar101.com/super-graph-mk-ii/
     credit: "Enicar 101"
     credit_url: https://enicar101.com/super-graph-mk-ii/
@@ -138,7 +184,7 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: dial
+    identified_by: source
     identified_note: "Dial reads Super Graph. Enicar 101 labels it MK II."
   - file: /images/sherpa-super-graph/e-super-graph-mk-ii-3.webp
     thumb: /images/sherpa-super-graph/e-super-graph-mk-ii-3-sm.webp
@@ -146,7 +192,7 @@ images:
     height: 834
     alt: "Super Graph caseback on a steel bracelet"
     view: caseback
-    variant: null
+    variant: "MkII"
     source_url: https://enicar101.com/super-graph-mk-ii/
     credit: "Enicar 101"
     credit_url: https://enicar101.com/super-graph-mk-ii/
@@ -154,7 +200,7 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: dial
+    identified_by: source
     identified_note: "Caseback of the same Super Graph on Enicar 101's MK II page."
   - file: /images/sherpa-super-graph/e-super-graph-simonet-1.webp
     thumb: /images/sherpa-super-graph/e-super-graph-simonet-1-sm.webp
@@ -162,7 +208,7 @@ images:
     height: 1500
     alt: "Close-up of the Super Graph \"Simonet\" black dial with black registers and orange marks on the hour counter"
     view: dial
-    variant: null
+    variant: "Simonet"
     source_url: https://enicar101.com/super-graph-simonet/
     credit: "Enicar 101"
     credit_url: https://enicar101.com/super-graph-simonet/
@@ -170,7 +216,7 @@ images:
     permission: granted
     permission_ref: enicar101
     caption: null
-    identified_by: dial
+    identified_by: source
     identified_note: "Dial reads Super Graph. Enicar 101 calls this version the \"Simonet\", made for the 1964 Olympic shooting team (ref. 072/002)."
 barometer: null
 status: draft
@@ -180,6 +226,30 @@ gaps:
   - Photographs
   - Price
 citations:
+  - id: e101-sg-mki
+    source: enicar101
+    url: https://enicar101.com/super-graph-coming-soon/
+    title: Super Graph MK I
+    retrieved: 2026-10-27
+    supports: []
+  - id: e101-sg-simonet
+    source: enicar101
+    url: https://enicar101.com/super-graph-simonet/
+    title: "Super Graph \"Simonet\""
+    retrieved: 2026-10-27
+    supports: []
+  - id: e101-sg-mkii
+    source: enicar101
+    url: https://enicar101.com/super-graph-mk-ii/
+    title: Super Graph MK II
+    retrieved: 2026-10-27
+    supports: []
+  - id: e101-sg-mkiii
+    source: enicar101
+    url: https://enicar101.com/super-graph-mk-iii/
+    title: Super Graph MK III
+    retrieved: 2026-10-27
+    supports: []
   - id: eo-matrix
     source: enicar-org
     url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf

@@ -1,0 +1,127 @@
+name: Jump Hour
+family: other
+kind: other
+summary: "A 1970s automatic in a tonneau case that shows the hour as a jumping digit in a window instead of an hour hand."
+references:
+  - number: 119-01-01
+    cites: [ve-jump-hour]
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: automatic
+case:
+  construction: null
+  material: Stainless steel
+  diameter_mm: 37
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Jumping hour shown digitally in a window, with the minutes and seconds also read off the dial; magnifying crystal."
+variants: []
+read_more:
+  - title: "Booknews: Time for a Change, MkIII"
+    url: https://enicar.org/2023/10/05/booknews-time-for-a-change-mkiii/
+    source: enicar-org
+    note: "The third edition of the Enicar book adds a chapter on the jump hour collection."
+images:
+  - file: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-01-1.webp
+    thumb: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-01-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Enicar Jump Hour with a blue dial in a brushed steel tonneau case on its integrated bracelet"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-01
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-01
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Enicar automatic, with a jumping-hour window beside rotating minute and seconds discs. The listing gives ref. 119-01-01."
+  - file: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-01-2.webp
+    thumb: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-01-2-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Enicar Jump Hour with a blue dial, seen at an angle"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-01
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-01
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Enicar automatic, with a jumping-hour window beside rotating minute and seconds discs. The listing gives ref. 119-01-01."
+  - file: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-011-7.webp
+    thumb: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-011-7-sm.webp
+    width: 1600
+    height: 1599
+    alt: "Close-up of a blue Jump Hour dial showing the hour in a window and the minutes and seconds on discs"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-011
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-011
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Enicar automatic, with a jumping-hour window beside rotating minute and seconds discs. The listing gives ref. 119-01-01."
+  - file: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-011-8.webp
+    thumb: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-011-8-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Close-up of a brown Jump Hour dial showing the hour in a window and the minutes and seconds on discs"
+    view: dial
+    variant: null
+    source_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-011
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-011
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Enicar automatic, with a jumping-hour window beside rotating minute and seconds discs. The listing gives ref. 119-01-01."
+  - file: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-01-9.webp
+    thumb: /images/jump-hour/ve-1970s-enicar-jump-hour-automatic-ref-119-01-01-9-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Caseback of an Enicar Jump Hour, ref. 119-01-01, with a \"geprüft\" sticker"
+    view: caseback
+    variant: null
+    source_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-01
+    credit: "Vintage Eye Watches"
+    credit_url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-01
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vintage-eye
+    caption: null
+    identified_by: tells
+    identified_note: "Caseback reads 119-01-01, with a blue \"geprüft\" (tested) sticker."
+status: draft
+gaps:
+  - Production years (the dealer says 1970s)
+  - Calibre
+  - Other references in the jump hour line
+  - Case construction, lug width and thickness
+citations:
+  - id: ve-jump-hour
+    source: vintage-eye
+    url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-01
+    title: "1970s Enicar \"Jump Hour\" Automatic Ref. 119-01-01 (Vintage Eye Watches listing)"
+    retrieved: 2026-10-27
+    supports: [movement.winding, case.material, case.diameter_mm, dial]
+  - id: eo-book-mkiii
+    source: enicar-org
+    url: https://enicar.org/2023/10/05/booknews-time-for-a-change-mkiii/
+    title: "Booknews: Time for a Change, MkIII"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

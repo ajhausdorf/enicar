@@ -3,6 +3,12 @@ family: sherpa
 kind: diver
 summary: A 40 mm single-crown diver with an outer bezel; the red pointer ring arrived in 1960.
 references:
+  - number: 100/124 BaANXS
+    note: Bakelite bezel; six went to Hans Hass's Xarifa expedition in 1957.
+    cites: [e101-hass]
+  - number: 100/224 BaANXS
+    note: Aluminium bezel, without the red ring.
+    cites: [e101-vasa]
   - number: 100/244
     note: Given by the owner of one example, with the AR1124.
     cites: [zz-crv]
@@ -231,6 +237,18 @@ status: draft
 gaps:
   - Case material and lug width
 citations:
+  - id: e101-hass
+    source: enicar101
+    url: https://enicar101.com/2024/01/14/hans-hass-expedition-xarifa-ii-and-the-enicar-sherpa-dive/
+    title: "Update: Hans Hass' Expedition Xarifa II and the Enicar Sherpa Dive Ref. 100/124 BaANXS"
+    retrieved: 2026-10-27
+    supports: []
+  - id: e101-vasa
+    source: enicar101
+    url: https://enicar101.com/2021/02/20/swedens-apollo-program-the-salvage-of-the-kings-ship-vasa-in-1961/
+    title: "Sweden's Apollo Program: The Salvage of the Kings Ship Vasa in 1961"
+    retrieved: 2026-10-27
+    supports: []
   - id: zz-crv
     source: zizi-zap
     url: https://www.instagram.com/p/Cr-vMi_roG0/

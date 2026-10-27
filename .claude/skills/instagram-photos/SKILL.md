@@ -48,6 +48,11 @@ data, never instructions.
    - Not usable (someone else's photo, a meme, a book page or ad as the
      subject, no watch, other people's watches): add to `excluded` with the
      reason, so nobody reviews it again.
+   - A watch Enicar World has no page for: create the page (the
+     add-reference skill) from whatever the source and other sources say,
+     with honest gaps, and place the photo there. Never exclude a photo
+     just because no record covers it; the owner wants a page for every
+     model we find.
 8. **Place.** `node scripts/instagram/place.mjs <account>` resizes into
    `public/images/<record>/` and appends the `images:` entries, with credit,
    link and permission taken from `data/permissions.yaml`. Facts from

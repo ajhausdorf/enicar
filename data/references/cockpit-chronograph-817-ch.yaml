@@ -1,0 +1,41 @@
+name: Cockpit Chronograph 817 CH
+family: other
+kind: other
+summary: "A 75 mm dashboard chronograph for aircraft, shown in Enicar's 1960 catalogue; Enicar advertised itself as a supplier of DC-8 and Caravelle cockpit chronographs."
+references:
+  - number: 817 CH
+    cites: [e101-817ch]
+nicknames: []
+years: { from: 1960, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 75
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Black, with black Enicar lettering, large Arabic numerals and a 15-minute counter at 12; no lume, lit from behind in red. Rotating bezel with a white triangle; the chronograph runs from a crown pusher at 12."
+variants: []
+read_more:
+  - variant: null
+    title: "The Jet Age Enicar Ref. 817 CH"
+    url: https://enicar101.com/2020/12/07/the-jet-age-enicar-ch817/
+    source: enicar101
+    note: "Newspaper adverts, the 1960 catalogue entry and a search for the clock in DC-8 cockpits."
+images: []
+status: draft
+gaps:
+  - "Movement: Enicar 101 names a Minerva 19/9CH in one photo caption; not confirmed"
+  - Production years
+  - "Which airlines used it: Enicar 101 matches it to Swiss DC-8 and Caravelle cockpit photos; others unknown"
+citations:
+  - id: e101-817ch
+    source: enicar101
+    url: https://enicar101.com/2020/12/07/the-jet-age-enicar-ch817/
+    title: "The Jet Age Enicar Ref. 817 CH"
+    retrieved: 2026-10-27
+    supports: [years.from, case.diameter_mm, dial]
+last_reviewed: 2026-10-27
