@@ -129,26 +129,25 @@ variants:
     production: "500"
     cites:
       - eo-chrono-table
-  - name: MkII
+  - name: MkIIa
     years:
       from: 1963
-      to: 1963
-    tell: "Small logo above the word Enicar (early 601.xxx watches keep the large logo), white or grey tachymetre ring from 300, unpainted paddle hands and a red chronograph hand (straight, or lollipop on later ones); on the all-black dial, T Swiss Made is printed at the bottom."
-    hands: "Unpainted paddle; straight red chronograph hand, later also lollipop; arrow-shaped, later thin, register hands"
+      to: null
+    tell: "Arrow-shaped register hands and a straight red chronograph hand; small logo above the word Enicar (early 601.xxx watches keep the large logo). On the all-black dial, T Swiss Made is printed at the bottom."
+    hands: "Unpainted paddle with long unpainted tips; straight red chronograph hand; arrow-shaped register hands, painted black or unpainted"
     bezel: "White or grey inner tachymetre ring from 300; some early ones without the word Tachymetre"
     dials:
       - "Black with silver registers"
       - "All black"
       - "White"
       - "White and silver"
+    crowns: "Thin compressor crown with Saturn"
     refs:
       - 072/001
     serials:
       - 601.5xx – 601.9xx
       - 617.1xx – 617.5xx
-      - 246.1xx – 246.6xx
-    dated: 1963 (est.)
-    production: 1,500
+    production: about 1,000
     barometer:
       edition: "#7, December 2025"
       cite: eo-barometer-7
@@ -163,6 +162,36 @@ variants:
     cites:
       - eo-chrono-table
       - e101-graph-mkii
+      - tcp-msg-graph-dials
+  - name: MkIIb
+    years:
+      from: 1964
+      to: null
+    tell: "Thin register hands with no arrow tips; on later watches a lollipop chronograph hand, on others the straight red one of the MkIIa. On the all-black dial, T Swiss Made is printed at the bottom."
+    hands: "Unpainted paddle with long or short tips; straight red or lollipop chronograph hand; thin register hands"
+    bezel: "White or grey inner tachymetre ring from 300, always with the word Tachymetre"
+    dials:
+      - "Black with silver registers"
+      - "All black"
+    crowns: "Thin compressor crown with Saturn"
+    refs:
+      - 072/001
+    serials:
+      - 246.1xx – 246.6xx
+    production: about 600
+    barometer:
+      edition: "#7, December 2025"
+      cite: eo-barometer-7
+      currency: EUR
+      entries:
+        - label: "Sherpa Graph Mk II"
+          bands:
+            - { condition: "Very good to mint", low: 6000, high: 10000 }
+            - { condition: "Average to good", low: 4000, high: 6000 }
+            - { condition: "Poor to fair", low: 3000, high: 4000 }
+          note: null
+    cites:
+      - eo-chrono-table
       - e101-graph-mk-iib
       - tcp-msg-graph-dials
   - name: MkIII
@@ -266,12 +295,12 @@ read_more:
     url: https://enicar101.com/serhpa-graph-mk-id/
     source: enicar101
     note: null
-  - variant: MkII
+  - variant: MkIIa
     title: Sherpa Graph MK IIa
     url: https://enicar101.com/sherpa-graph-mkii/
     source: enicar101
     note: "Enicar 101 splits our MkII into IIa and IIb."
-  - variant: MkII
+  - variant: MkIIb
     title: Sherpa Graph MK IIb
     url: https://enicar101.com/sherpa-graph-mk-iib/
     source: enicar101
@@ -346,7 +375,7 @@ read_more:
     url: https://enicar101.com/2020/07/29/stirling-moss-and-his-stirling-moss/
     source: enicar101
     note: "Period photos of Stirling Moss wearing a first-series Sherpa Graph."
-  - variant: "MkII"
+  - variant: "MkIIa"
     title: "Swedish racing quartet"
     url: https://enicar101.com/2020/04/27/swedish-racing-quartet/
     source: enicar101
@@ -366,7 +395,12 @@ read_more:
     url: https://enicar101.com/2018/12/03/new-addition-to-serial-reference-and-new-topic/
     source: enicar101
     note: "Site news: serial list update and a MK Ic guide in the works."
-  - variant: "MkII"
+  - variant: "MkIIa"
+    title: "\"Mr. Saab\" and his Sherpa Graph MK II"
+    url: https://enicar101.com/2018/10/24/mr-saab-and-his-sherpa-graph-mk-ii/
+    source: enicar101
+    note: "A Swedish advert with rally driver Erik Carlsson wearing a Sherpa Graph."
+  - variant: "MkIIb"
     title: "\"Mr. Saab\" and his Sherpa Graph MK II"
     url: https://enicar101.com/2018/10/24/mr-saab-and-his-sherpa-graph-mk-ii/
     source: enicar101
@@ -457,7 +491,7 @@ images:
     height: 831
     alt: "Sherpa Graph with a black dial and black subdials on a white strap, on the wrist"
     view: dial
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.instagram.com/p/Ct6uNA-LKYh/
     credit: "@two_crowned_prints"
     credit_url: https://www.instagram.com/two_crowned_prints/
@@ -465,15 +499,15 @@ images:
     permission: granted
     permission_ref: two-crowned-prints
     caption: null
-    identified_by: caption
-    identified_note: "Tagged #sherpagraphmk2 by the photographer."
+    identified_by: tells
+    identified_note: "Thin register hands and a lollipop chronograph hand. Tagged #sherpagraphmk2 by the photographer."
   - file: /images/sherpa-graph/tcp-cp8ltzdpjep-1.webp
     thumb: /images/sherpa-graph/tcp-cp8ltzdpjep-1-sm.webp
     width: 1361
     height: 1600
     alt: "Sherpa Graph with a black dial and tachymeter scale on a white strap, on the wrist"
     view: dial
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.instagram.com/p/Cp8ltzdPJep/
     credit: "@two_crowned_prints"
     credit_url: https://www.instagram.com/two_crowned_prints/
@@ -481,8 +515,8 @@ images:
     permission: granted
     permission_ref: two-crowned-prints
     caption: null
-    identified_by: caption
-    identified_note: "Photographer calls it this MKII."
+    identified_by: tells
+    identified_note: "Thin register hands. Photographer calls it this MKII."
   - file: /images/sherpa-graph/tcp-drm1mi3cf5c-1.webp
     thumb: /images/sherpa-graph/tcp-drm1mi3cf5c-1-sm.webp
     width: 1440
@@ -521,7 +555,7 @@ images:
     height: 1600
     alt: "Sherpa Graph with an all black dial and black registers on a black leather strap"
     view: dial
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.instagram.com/p/DXD-yDIDQIP/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -529,15 +563,15 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: caption
-    identified_note: "Caption names it MkII and dates it 1962; the production table starts the MkII in 1963, an estimate."
+    identified_by: tells
+    identified_note: "Thin register hands. Caption names it MkII and dates it 1962; the production table starts the MkII in 1963, an estimate."
   - file: /images/sherpa-graph/v-duqfghwda8k-1.webp
     thumb: /images/sherpa-graph/v-duqfghwda8k-1-sm.webp
     width: 1440
     height: 1440
     alt: "Sherpa Graph with a cream dial on a black rubber strap, lying on a printing plate"
     view: dial
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.instagram.com/p/DUQFgHwDA8K/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -545,15 +579,15 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: caption
-    identified_note: "Caption names it MkII and dates it 1962; the production table starts the MkII in 1963, an estimate."
+    identified_by: tells
+    identified_note: "Thin register hands. Enicar 101 lists the white dial only for the MkIIa; the hands decide. Caption names it MkII and dates it 1962; the production table starts the MkII in 1963, an estimate."
   - file: /images/sherpa-graph/v-dfkpycliwgj-1.webp
     thumb: /images/sherpa-graph/v-dfkpycliwgj-1-sm.webp
     width: 1440
     height: 1440
     alt: "Sherpa Graph with an all black dial and orange chronograph hand on a black rally strap"
     view: dial
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.instagram.com/p/DFkpyclIwgj/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -561,15 +595,15 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: caption
-    identified_note: "Caption: Sherpa Graph MkII in Stealth / Ultraman mode."
+    identified_by: tells
+    identified_note: "Thin register hands; the orange chronograph hand is not one Enicar 101 lists. Caption: Sherpa Graph MkII in Stealth / Ultraman mode."
   - file: /images/sherpa-graph/v-cpicjeytoou-1.webp
     thumb: /images/sherpa-graph/v-cpicjeytoou-1-sm.webp
     width: 1440
     height: 1440
     alt: "Sherpa Graph with an aged cream dial on a black Tropic strap"
     view: dial
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.instagram.com/p/CpiCjEYtOOU/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -577,40 +611,8 @@ images:
     permission: granted
     permission_ref: vandervenus
     caption: null
-    identified_by: caption
-    identified_note: "Caption names it MkII and dates it 1962; the production table starts the MkII in 1963, an estimate."
-  - file: /images/sherpa-graph/v-cjkr9shrlh9-1.webp
-    thumb: /images/sherpa-graph/v-cjkr9shrlh9-1-sm.webp
-    width: 1440
-    height: 1440
-    alt: "Sherpa Graph with a black dial on a steel bracelet in its original Enicar Ultrasonic box"
-    view: other
-    variant: "MkII"
-    source_url: https://www.instagram.com/p/CjkR9SHrLH9/
-    credit: "@vandervenus"
-    credit_url: https://www.instagram.com/vandervenus/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: vandervenus
-    caption: null
-    identified_by: caption
-    identified_note: "Caption names it MkII and dates it 1962; the production table starts the MkII in 1963, an estimate."
-  - file: /images/sherpa-graph/v-blqu2lzhuaa-1.webp
-    thumb: /images/sherpa-graph/v-blqu2lzhuaa-1-sm.webp
-    width: 888
-    height: 888
-    alt: "The Enicar-signed Valjoux 72 movement inside a Sherpa Graph, caseback removed"
-    view: movement
-    variant: "MkII"
-    source_url: https://www.instagram.com/p/BlQU2LZHUaa/
-    credit: "@vandervenus"
-    credit_url: https://www.instagram.com/vandervenus/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: vandervenus
-    caption: null
-    identified_by: caption
-    identified_note: "Caption: inside his Sherpa Graph MkII, Enicar signed adjusted Valjoux 72."
+    identified_by: tells
+    identified_note: "Thin register hands and a straight red chronograph hand. Enicar 101 lists the white dial only for the MkIIa; the hands decide. Caption names it MkII and dates it 1962; the production table starts the MkII in 1963, an estimate."
   - file: /images/sherpa-graph/v-dgdxqwtoqqt-1.webp
     thumb: /images/sherpa-graph/v-dgdxqwtoqqt-1-sm.webp
     width: 1370
@@ -841,7 +843,7 @@ images:
     height: 1389
     alt: "Sherpa Graph with an all black dial, black registers and dark grey Tachymetre ring on a black Tropic strap, on the wrist"
     view: dial
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.instagram.com/p/Cwv4VnePPnI/
     credit: "@two_crowned_prints"
     credit_url: https://www.instagram.com/two_crowned_prints/
@@ -850,14 +852,14 @@ images:
     permission_ref: two-crowned-prints
     caption: null
     identified_by: tells
-    identified_note: "T Swiss is printed at the bottom of the dial, the MkII tell; the photographer gave this tell in a message to the owner, 2026-10-25."
+    identified_note: "Thin register hands. T Swiss is printed at the bottom of the dial, the MkII tell; the photographer gave this tell in a message to the owner, 2026-10-25."
   - file: /images/sherpa-graph/tcp-dabgn2ponz-1.webp
     thumb: /images/sherpa-graph/tcp-dabgn2ponz-1-sm.webp
     width: 1159
     height: 1440
     alt: "Sherpa Graph with an all black dial, black registers and paddle hands on a black strap, on the wrist"
     view: dial
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.instagram.com/p/DAbGn2pOnZ_/
     credit: "@two_crowned_prints"
     credit_url: https://www.instagram.com/two_crowned_prints/
@@ -866,7 +868,7 @@ images:
     permission_ref: two-crowned-prints
     caption: null
     identified_by: caption
-    identified_note: "The photographer confirmed it is a MkIIb (our MkII, which covers MkIIa and MkIIb) in a message to the owner, 2026-10-25. Enicar 101 lists the all black dial for the MkIIb."
+    identified_note: "The photographer confirmed it is a MkIIb in a message to the owner, 2026-10-25. Enicar 101 lists the all black dial for the MkIIb."
   - file: /images/sherpa-graph/tcp-c-axwujawl-1.webp
     thumb: /images/sherpa-graph/tcp-c-axwujawl-1-sm.webp
     width: 906
@@ -889,7 +891,7 @@ images:
     height: 1327
     alt: "Sherpa Graph with a black dial, silver registers and white Tachymetre ring on a red strap, on the wrist"
     view: dial
-    variant: "MkII"
+    variant: "MkIIa"
     source_url: https://www.instagram.com/p/CSxawlQrdQf/
     credit: "@ctwatchguy"
     credit_url: https://www.instagram.com/ctwatchguy/
@@ -898,14 +900,14 @@ images:
     permission_ref: ctwatchguy
     caption: null
     identified_by: tells
-    identified_note: "Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
+    identified_note: "Arrow-shaped register hands, the MkIIa tell on Enicar 101. Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
   - file: /images/sherpa-graph/c-crzewolrarn-1.webp
     thumb: /images/sherpa-graph/c-crzewolrarn-1-sm.webp
     width: 1189
     height: 1189
     alt: "Sherpa Graph with a black dial and silver registers on a tan rally strap, on the wrist"
     view: dial
-    variant: "MkII"
+    variant: "MkIIa"
     source_url: https://www.instagram.com/p/CRzeWOLrARn/
     credit: "@ctwatchguy"
     credit_url: https://www.instagram.com/ctwatchguy/
@@ -914,14 +916,14 @@ images:
     permission_ref: ctwatchguy
     caption: null
     identified_by: tells
-    identified_note: "Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
+    identified_note: "Arrow-shaped register hands, the MkIIa tell on Enicar 101. Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
   - file: /images/sherpa-graph/c-cqlx-mdr-a6-1.webp
     thumb: /images/sherpa-graph/c-cqlx-mdr-a6-1-sm.webp
     width: 1304
     height: 1304
     alt: "Sherpa Graph with a glossy black dial and silver registers on an orange strap, on the wrist"
     view: dial
-    variant: "MkII"
+    variant: "MkIIa"
     source_url: https://www.instagram.com/p/CQlx_mDr_A6/
     credit: "@ctwatchguy"
     credit_url: https://www.instagram.com/ctwatchguy/
@@ -930,14 +932,14 @@ images:
     permission_ref: ctwatchguy
     caption: null
     identified_by: tells
-    identified_note: "Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
+    identified_note: "Arrow-shaped register hands, the MkIIa tell on Enicar 101. Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
   - file: /images/sherpa-graph/c-co54ymxrfm2-1.webp
     thumb: /images/sherpa-graph/c-co54ymxrfm2-1-sm.webp
     width: 1433
     height: 1433
     alt: "Sherpa Graph with a black dial and silver registers on an olive strap, on the wrist"
     view: dial
-    variant: "MkII"
+    variant: "MkIIa"
     source_url: https://www.instagram.com/p/CO54YMXrfm2/
     credit: "@ctwatchguy"
     credit_url: https://www.instagram.com/ctwatchguy/
@@ -945,8 +947,8 @@ images:
     permission: granted
     permission_ref: ctwatchguy
     caption: null
-    identified_by: caption
-    identified_note: "Caption: Sherpa Graph MK2. Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
+    identified_by: tells
+    identified_note: "Arrow-shaped register hands, the MkIIa tell on Enicar 101. Caption: Sherpa Graph MK2. Small logo above ENICAR, white ring reading Tachymetre from 300, unpainted paddle hands and a straight red chronograph hand: the MkII tells on Enicar 101."
   - file: /images/sherpa-graph/c-cagearunyty-1.webp
     thumb: /images/sherpa-graph/c-cagearunyty-1-sm.webp
     width: 1440
@@ -1113,7 +1115,7 @@ images:
     height: 1600
     alt: "Sherpa Graph MkII with a black dial and silver registers on a black strap with red stitching, on the wrist"
     view: dial
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072/001-mk-iib-unpolished
     credit: "Wind Vintage"
     credit_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072/001-mk-iib-unpolished
@@ -1122,14 +1124,14 @@ images:
     permission_ref: eric-wind
     caption: null
     identified_by: tells
-    identified_note: "Small logo above Enicar, unpainted paddle hands and a straight red chronograph hand. The listing calls it ref. 072/001 MK IIb."
+    identified_note: "Thin register hands and a straight red chronograph hand; the listing calls it a MK IIb. Small logo above Enicar, unpainted paddle hands and a straight red chronograph hand. The listing calls it ref. 072/001 MK IIb."
   - file: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-001-mk-iib-unpolished-7.webp
     thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-reference-072-001-mk-iib-unpolished-7-sm.webp
     width: 1600
     height: 1068
     alt: "Caseback of a Sherpa Graph MkII, held in the hand"
     view: caseback
-    variant: "MkII"
+    variant: "MkIIb"
     source_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072/001-mk-iib-unpolished
     credit: "Wind Vintage"
     credit_url: https://www.windvintage.com/enicar-sherpa-graph-reference-072/001-mk-iib-unpolished
@@ -1138,7 +1140,7 @@ images:
     permission_ref: eric-wind
     caption: null
     identified_by: tells
-    identified_note: "Small logo above Enicar, unpainted paddle hands and a straight red chronograph hand. The listing calls it ref. 072/001 MK IIb."
+    identified_note: "Caseback of the same watch; the listing calls it a MK IIb. Small logo above Enicar, unpainted paddle hands and a straight red chronograph hand. The listing calls it ref. 072/001 MK IIb."
   - file: /images/sherpa-graph/ew-enicar-mk-3-sherpa-graph-reference-0720201-unpolished-1.webp
     thumb: /images/sherpa-graph/ew-enicar-mk-3-sherpa-graph-reference-0720201-unpolished-1-sm.webp
     width: 1600
