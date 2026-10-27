@@ -1,0 +1,63 @@
+name: Sherpa 350
+family: sherpa
+kind: other
+summary: "An early-1970s automatic Sherpa on the AR 167, in a trapezium-shaped case with the crown in an unusual position."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: [AR167]
+  winding: automatic
+case:
+  construction: "Trapezium-shaped case, same lug width at both ends"
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+history:
+  - text: "Martijn van der Ven dates his to the early 1970s and later found its original gold-plated bracelet."
+    cites: [vv-350-bracelet]
+variants: []
+read_more:
+  - title: "Four fearless Enicar designs"
+    url: https://enicar.org/2020/03/16/four-fearless-enicar-designs/
+    source: enicar-org
+    note: "The Sherpa 350 and the Super Quartz compared."
+images:
+  - file: /images/sherpa-350/v-dzj2d3ltcys-1.webp
+    thumb: /images/sherpa-350/v-dzj2d3ltcys-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Gold-plated Sherpa 350 with a brown gradient dial and day-date in a trapezium case, on its gold bracelet in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DZJ2d3LtCys/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names the Sherpa 350 on its original bracelet."
+status: draft
+gaps:
+  - Reference numbers
+  - Production years
+  - Case size and material
+citations:
+  - id: eo-fearless
+    source: enicar-org
+    url: https://enicar.org/2020/03/16/four-fearless-enicar-designs/
+    title: "Four fearless Enicar designs"
+    retrieved: 2026-10-27
+    supports: [movement.calibres, movement.winding, case.construction]
+  - id: vv-350-bracelet
+    source: vandervenus
+    url: https://www.instagram.com/p/CnMdGXTLq1N/
+    title: "@vandervenus post: Sherpa 350 from the early 1970s on its gold-plated bracelet"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

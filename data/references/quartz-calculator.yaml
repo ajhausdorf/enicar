@@ -1,0 +1,114 @@
+name: Calculator Quartz
+family: other
+kind: other
+summary: "A late-1970s LCD watch with a calculator keypad on the dial, signed Enicar Calculator Quartz."
+references: []
+nicknames: ["Quartz Calculator"]
+years: { from: 1978, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: quartz
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+history:
+  - text: "Martijn van der Ven names it, with the Quartz-Computer, as a watch for which Enicar turned to Orient."
+    cites: [vv-qc-orient]
+variants: []
+read_more: []
+images:
+  - file: /images/quartz-calculator/v-bhq7dojho7c-1.webp
+    thumb: /images/quartz-calculator/v-bhq7dojho7c-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Calculator Quartz with an LCD and a blue calculator keypad on the dial, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Bhq7DOJHo7c/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Enicar Calculator Quartz."
+  - file: /images/quartz-calculator/v-bjhgqzvnnqa-1.webp
+    thumb: /images/quartz-calculator/v-bjhgqzvnnqa-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Calculator Quartz on its steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/BjhGqZVnnQa/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Enicar Calculator Quartz."
+  - file: /images/quartz-calculator/v-coh-b9llqhg-1.webp
+    thumb: /images/quartz-calculator/v-coh-b9llqhg-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Calculator Quartz on its bracelet in an Enicar presentation box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/COH-b9LLQhG/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names the Quartz Calculator."
+  - file: /images/quartz-calculator/v-byvpk8kcnkr-1.webp
+    thumb: /images/quartz-calculator/v-byvpk8kcnkr-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Calculator Quartz on its bracelet in a red Enicar box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/ByvPk8KCnKr/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Tagged #calculator; the same keypad dial as his other Calculator Quartz posts."
+status: draft
+gaps:
+  - Reference numbers
+  - Calibre
+  - Production years
+  - Case size and material
+citations:
+  - id: vv-calc-1978
+    source: vandervenus
+    url: https://www.instagram.com/p/Bk97FB3H_fB/
+    title: "@vandervenus post: a 1918 trench watch and a 1978 calculator"
+    retrieved: 2026-10-27
+    supports: [years.from]
+  - id: vv-calc-name
+    source: vandervenus
+    url: https://www.instagram.com/p/COH-b9LLQhG/
+    title: "@vandervenus post: the Quartz Calculator"
+    retrieved: 2026-10-27
+    supports: [nicknames, movement.winding]
+  - id: vv-qc-orient
+    source: vandervenus
+    url: https://www.instagram.com/p/C3Aj8b1Nq2H/
+    title: "@vandervenus post: the Quartz-Computer and the Orient link"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

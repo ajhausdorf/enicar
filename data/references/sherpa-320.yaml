@@ -1,0 +1,124 @@
+name: Sherpa 320
+family: sherpa
+kind: other
+summary: "A large 1970s Sherpa with day and date in a cushion-shaped, space-age case, from the same period as the Sherpa 350 and the Super Quartz."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+history:
+  - text: "Martijn van der Ven sold one measuring 41 mm, and owns a gold-plated example he describes as an extra-large 1975 edition, so more than one size or finish may exist."
+    cites: [vv-320-sold, vv-320-gold]
+variants: []
+read_more:
+  - title: "Four fearless Enicar designs"
+    url: https://enicar.org/2020/03/16/four-fearless-enicar-designs/
+    source: enicar-org
+    note: "Enicar's early-1970s space-age models, with the Sherpa 320 at the top of the article."
+images:
+  - file: /images/sherpa-320/v-dql7dmcduov-1.webp
+    thumb: /images/sherpa-320/v-dql7dmcduov-1-sm.webp
+    width: 1201
+    height: 1600
+    alt: "Sherpa 320 with a two-tone grey and cream dial and day-date in an angular case, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DQL7dmCDUOV/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names the Sherpa 320."
+  - file: /images/sherpa-320/v-cdqwxb8l8uh-1.webp
+    thumb: /images/sherpa-320/v-cdqwxb8l8uh-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Gold-plated Sherpa 320 with a brown gradient dial on its gold-plated bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CdQWxb8L8Uh/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: gold-plated Sherpa 320, 1975."
+  - file: /images/sherpa-320/v-caecmr1lkcr-1.webp
+    thumb: /images/sherpa-320/v-caecmr1lkcr-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Gold-plated Sherpa 320 with a brown gradient dial and day-date on its bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CaEcmR1Lkcr/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names the Sherpa 320."
+  - file: /images/sherpa-320/v-cozrhtqriyc-1.webp
+    thumb: /images/sherpa-320/v-cozrhtqriyc-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Gold-plated Sherpa 320 with day and date, on the wrist under a denim sleeve"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CoZRHTQriyc/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Tagged #sherpa320 by the photographer; the same gold-plated case as his other Sherpa 320 posts."
+status: draft
+gaps:
+  - Reference numbers
+  - Calibre
+  - Production years
+  - Case sizes and materials across the line
+citations:
+  - id: eo-fearless
+    source: enicar-org
+    url: https://enicar.org/2020/03/16/four-fearless-enicar-designs/
+    title: "Four fearless Enicar designs"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-320-sold
+    source: vandervenus
+    url: https://www.instagram.com/p/DTscrGijOUg/
+    title: "@vandervenus post: a 41 mm Sherpa 320 sold"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-320-gold
+    source: vandervenus
+    url: https://www.instagram.com/p/CdQWxb8L8Uh/
+    title: "@vandervenus post: gold-plated Sherpa 320, 1975"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-320-daydate
+    source: vandervenus
+    url: https://www.instagram.com/p/CaEcmR1Lkcr/
+    title: "@vandervenus post: his Sherpa 320, tagged day-date"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

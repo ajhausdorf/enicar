@@ -143,3 +143,14 @@
   use: Photos, with permission. Listing details are dealer descriptions, fine for reference numbers, weak for anything else.
   leads_to: []
   permission: granted
+- id: vandervenus
+  name: "@vandervenus (Martijn van der Ven)"
+  kind: other
+  tier: secondary
+  url: https://www.instagram.com/vandervenus/
+  author: Martijn van der Ven
+  status: confirmed
+  what: Instagram account of the collector who runs enicar.org. Captions often give the model, year, case size, reference and calibre of the watch shown.
+  use: Photos, with permission, and his description of his own watches. Cited per post.
+  leads_to: [enicar.org]
+  permission: granted

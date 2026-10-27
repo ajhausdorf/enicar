@@ -1,0 +1,126 @@
+name: DDM 260
+family: other
+kind: other
+summary: "A 1970s automatic day-date in a TV-shaped case, on the AR 167."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: [AR167]
+  winding: automatic
+case:
+  construction: TV-shaped case
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Day and date."
+variants: []
+read_more: []
+images:
+  - file: /images/ddm-260/v-cmo1mrrlsyp-1.webp
+    thumb: /images/ddm-260/v-cmo1mrrlsyp-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "DDM 260 with a green sunburst dial and day-date in a TV-shaped steel case on a beads-of-rice bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CMO1mrRLsYp/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names the DDM 260."
+  - file: /images/ddm-260/v-qfrvzs9ze-1.webp
+    thumb: /images/ddm-260/v-qfrvzs9ze-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Gold-coloured DDM 260 with a brown dial and day-date on a grey strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/-qfRvzS9zE/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names a new old stock DDM260."
+  - file: /images/ddm-260/v-4v6mjzy9z6-1.webp
+    thumb: /images/ddm-260/v-4v6mjzy9z6-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Gold-coloured DDM 260 with a grey dial in its Enicar box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/4v6Mjzy9z6/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names a new old stock DDM260 automatic."
+  - file: /images/ddm-260/v-2aw5yts9zp-1.webp
+    thumb: /images/ddm-260/v-2aw5yts9zp-1-sm.webp
+    width: 640
+    height: 640
+    alt: "Gold-coloured DDM 260 with a grey sunburst dial and day-date on a brown strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/2aW5ytS9zP/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names a 1970s DDM260."
+  - file: /images/ddm-260/v-yobqny9yh-1.webp
+    thumb: /images/ddm-260/v-yobqny9yh-1-sm.webp
+    width: 557
+    height: 557
+    alt: "Caseback of a DDM 260 with Enicar's dolphin medallion"
+    view: caseback
+    variant: null
+    source_url: https://www.instagram.com/p/-Yobqny9yh/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the back of his new old stock DDM260."
+status: draft
+gaps:
+  - Reference numbers
+  - Production years
+  - Case size and material
+citations:
+  - id: vv-ddm-ar167
+    source: vandervenus
+    url: https://www.instagram.com/p/CDqfGcKnTPq/
+    title: "@vandervenus post: TV-shaped DDM 260 with the AR167 day-date"
+    retrieved: 2026-10-27
+    supports: [movement.calibres, case.construction, dial]
+  - id: vv-ddm-auto
+    source: vandervenus
+    url: https://www.instagram.com/p/4v6Mjzy9z6/
+    title: "@vandervenus post: new old stock DDM260 automatic"
+    retrieved: 2026-10-27
+    supports: [movement.winding]
+  - id: vv-ddm-70s
+    source: vandervenus
+    url: https://www.instagram.com/p/2aW5ytS9zP/
+    title: "@vandervenus post: DDM260 from the 1970s"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

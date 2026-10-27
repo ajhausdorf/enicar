@@ -348,5 +348,35 @@
   "by": "tells",
   "note": "Orange triangle chronograph hand, baton hands, applied logo and a house-shaped pointer; white dial with grey registers, as on the MkIV serial 1.070.295 sold on OmegaForums. The listing calls it a MK IV, ref. 072-02-02A.",
   "view": "caseback"
+ },
+ {
+  "rec": "ultrasonic-1000-24",
+  "src": "enicar-ultrasonic-reference-1000-24-a-s_01",
+  "variant": null,
+  "alt": "Ultrasonic 1000/24 with a white dial, baton markers and centre seconds on a yellow strap, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Enicar Ultrasonic; the listing gives ref. 1000/24 a S.",
+  "view": "dial"
+ },
+ {
+  "rec": "ultrasonic-1000-24",
+  "src": "enicar-ultrasonic-reference-1000-24-a-s_02",
+  "variant": null,
+  "alt": "Ultrasonic 1000/24 on a yellow strap, on the wrist",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Enicar Ultrasonic; the listing gives ref. 1000/24 a S.",
+  "view": "dial"
+ },
+ {
+  "rec": "ultrasonic-1000-24",
+  "src": "enicar-ultrasonic-reference-1000-24-a-s_04",
+  "variant": null,
+  "alt": "Caseback of the Ultrasonic 1000/24",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Enicar Ultrasonic; the listing gives ref. 1000/24 a S.",
+  "view": "caseback"
  }
 ]

@@ -1,0 +1,134 @@
+name: Sport
+family: other
+kind: sport
+summary: "A small Enicar wristwatch introduced in 1940 for both civilian and military buyers."
+references: []
+nicknames: []
+years: { from: 1940, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+history:
+  - text: "The 1944 example on enicar.org has centre seconds. Martijn van der Ven also shows Sport dials with small seconds, which he dates to the 1940s and the 1950s."
+    cites: [eo-sport, vv-sport-1940s, vv-sport-1950s]
+variants: []
+read_more:
+  - title: "WWII soldier B.T. Jatkowski and his Enicar Sport"
+    url: https://enicar.org/2018/02/05/wwii-soldier-b-t-jatkowski-and-his-enicar-sport/
+    source: enicar-org
+    note: "The Sport worn by a US soldier from Normandy in 1944 to Augsburg in 1945, with his papers."
+images:
+  - file: /images/enicar-sport/v-csrql01l4am-1.webp
+    thumb: /images/enicar-sport/v-csrql01l4am-1-sm.webp
+    width: 1357
+    height: 1357
+    alt: "Enicar Sport with a white dial, Arabic numerals and red centre seconds on an olive canvas strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CsrQL01L4Am/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Caption names the Enicar Sport, 1944; the dial is signed Sport."
+  - file: /images/enicar-sport/v-bv6sqp6nnhc-1.webp
+    thumb: /images/enicar-sport/v-bv6sqp6nnhc-1-sm.webp
+    width: 1080
+    height: 1350
+    alt: "Enicar Sport with a white dial and red centre seconds on a striped NATO strap, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Bv6SQP6nnhc/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Caption: a 1944 Enicar Sport worn in Normandy; the dial is signed Sport."
+  - file: /images/enicar-sport/v-cygpgpqsp42-1.webp
+    thumb: /images/enicar-sport/v-cygpgpqsp42-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Enicar Sport with a cream dial, Arabic numerals and small seconds, on a leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CYgpgPQsp42/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Enicar Sport; caption calls it the 1940s Sport."
+  - file: /images/enicar-sport/v-bh1uodgb9dd-1.webp
+    thumb: /images/enicar-sport/v-bh1uodgb9dd-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Enicar Sport with a cream dial, Arabic numerals and small seconds, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/BH1uODgB9DD/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Enicar Sport."
+  - file: /images/enicar-sport/v-2vguhjs97r-1.webp
+    thumb: /images/enicar-sport/v-2vguhjs97r-1-sm.webp
+    width: 640
+    height: 640
+    alt: "Enicar Sport with a cream dial and small seconds on a grey leather strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/2VguHjS97R/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Enicar Sport."
+status: draft
+gaps:
+  - Reference numbers
+  - Calibre and winding
+  - Case size and material
+  - When production ended
+citations:
+  - id: eo-sport
+    source: enicar-org
+    url: https://enicar.org/2018/02/05/wwii-soldier-b-t-jatkowski-and-his-enicar-sport/
+    title: "WWII soldier B.T. Jatkowski and his Enicar Sport"
+    retrieved: 2026-10-27
+    supports: [years.from]
+  - id: vv-sport-1940s
+    source: vandervenus
+    url: https://www.instagram.com/p/CYgpgPQsp42/
+    title: "@vandervenus post: a 1940s Enicar Sport with small seconds"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-sport-1950s
+    source: vandervenus
+    url: https://www.instagram.com/p/BH1uODgB9DD/
+    title: "@vandervenus post: an Enicar Sport from the fifties"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27
