@@ -41,7 +41,137 @@ read_more:
     url: https://enicar101.com/super-graph/
     source: enicar101
     note: Generation pages with serial ranges, case details and photos.
-images: []
+  - variant: null
+    title: "Super Graph \"Simonet\""
+    url: https://enicar101.com/super-graph-simonet/
+    source: enicar101
+    note: "Guide to the Super Graph version made for the 1964 Olympic shooting team."
+  - variant: null
+    title: "Super Graph MK III"
+    url: https://enicar101.com/super-graph-mk-iii/
+    source: enicar101
+    note: "Guide to the late Super Graph, ref. 072-02-02."
+  - variant: null
+    title: "Super Graph MK II"
+    url: https://enicar101.com/super-graph-mk-ii/
+    source: enicar101
+    note: "Guide to the Super Graph MK II, ref. 072-02-02."
+  - variant: null
+    title: "Super Graph MK I"
+    url: https://enicar101.com/super-graph-coming-soon/
+    source: enicar101
+    note: "Guide to the first Super Graph, ref. 072/002, with serial ranges."
+  - variant: null
+    title: "Enicar Production dates"
+    url: https://enicar101.com/enicar-production-dates/
+    source: enicar101
+    note: "Rough table of production years by serial number, built from the chronographs."
+  - variant: null
+    title: "Serial Reference"
+    url: https://enicar101.com/serial-reference/
+    source: enicar101
+    note: "Serial ranges, references, dates and production estimates for every Graph generation."
+  - variant: null
+    title: "Enicar Super Graph \"Simonet\""
+    url: https://enicar101.com/2020/12/18/enicar-super-graph-simonet/
+    source: enicar101
+    note: "The story of the Super Graph worn by a Swiss shooter at the 1964 Olympics."
+  - variant: null
+    title: "For the bookworms…"
+    url: https://enicar101.com/2020/08/23/for-the-bookworms/
+    source: enicar101
+    note: "Enicar manuals added to the site, one showing a white-dial Super Graph."
+  - variant: null
+    title: "The Super (rare) Graph"
+    url: https://enicar101.com/2020/05/17/the-super-rare-graph/
+    source: enicar101
+    note: "On how rare the Super Graph is, and a version marked for shooting competitions."
+  - variant: null
+    title: "Exciting Times!"
+    url: https://enicar101.com/2019/03/03/exciting-times/
+    source: enicar101
+    note: "Short post showing a newly found Super Graph."
+images:
+  - file: /images/sherpa-super-graph/e-super-graph-coming-soon-1.webp
+    thumb: /images/sherpa-super-graph/e-super-graph-coming-soon-1-sm.webp
+    width: 1500
+    height: 1500
+    alt: "Super Graph head with an all-black dial, grey countdown bezel and red ring with a triangle pointer"
+    view: dial
+    variant: null
+    source_url: https://enicar101.com/super-graph-coming-soon/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-coming-soon/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Super Graph. Enicar 101 labels it MK I (ref. 072/002); our record has no generations."
+  - file: /images/sherpa-super-graph/e-super-graph-mk-ii-1.webp
+    thumb: /images/sherpa-super-graph/e-super-graph-mk-ii-1-sm.webp
+    width: 1500
+    height: 876
+    alt: "Super Graph with an all-black dial, grey countdown bezel and red ring, on a steel bracelet"
+    view: dial
+    variant: null
+    source_url: https://enicar101.com/super-graph-mk-ii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-mk-ii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Super Graph. Enicar 101 labels it MK II; our record has no generations."
+  - file: /images/sherpa-super-graph/e-super-graph-mk-ii-2.webp
+    thumb: /images/sherpa-super-graph/e-super-graph-mk-ii-2-sm.webp
+    width: 1201
+    height: 1194
+    alt: "Close-up of an all-black Super Graph dial with paddle hands and a red-dot chronograph hand"
+    view: dial
+    variant: null
+    source_url: https://enicar101.com/super-graph-mk-ii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-mk-ii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Super Graph. Enicar 101 labels it MK II."
+  - file: /images/sherpa-super-graph/e-super-graph-mk-ii-3.webp
+    thumb: /images/sherpa-super-graph/e-super-graph-mk-ii-3-sm.webp
+    width: 1500
+    height: 834
+    alt: "Super Graph caseback on a steel bracelet"
+    view: caseback
+    variant: null
+    source_url: https://enicar101.com/super-graph-mk-ii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-mk-ii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: dial
+    identified_note: "Caseback of the same Super Graph on Enicar 101's MK II page."
+  - file: /images/sherpa-super-graph/e-super-graph-simonet-1.webp
+    thumb: /images/sherpa-super-graph/e-super-graph-simonet-1-sm.webp
+    width: 1500
+    height: 1500
+    alt: "Close-up of the Super Graph \"Simonet\" black dial with black registers and orange marks on the hour counter"
+    view: dial
+    variant: null
+    source_url: https://enicar101.com/super-graph-simonet/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-simonet/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Super Graph. Enicar 101 calls this version the \"Simonet\", made for the 1964 Olympic shooting team (ref. 072/002)."
 barometer: null
 status: draft
 gaps:

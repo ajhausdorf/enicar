@@ -1,0 +1,292 @@
+[
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mki_01",
+  "variant": "MkIa",
+  "alt": "Aqua Graph with an all-black dial, black 60-minute bezel and red pointer ring, on a beads-of-rice bracelet",
+  "caption": null,
+  "by": "tells",
+  "note": "Long orange-tipped paddle hands, arrow-shaped hand on the 12-hour counter, small applied logo, triangle pointer on the red ring. Enicar 101 labels it MK Ia.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mki_02",
+  "variant": "MkIa",
+  "alt": "Close-up of an Aqua Graph bezel at 12 with the red ring's triangle pointer and two lume spots, black dial",
+  "caption": null,
+  "by": "tells",
+  "note": "Triangle pointer on the red ring, two lume spots at 12, long orange-tipped hands. Shown on Enicar 101's MK Ia page.",
+  "view": "other"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mki_03",
+  "variant": "MkIa",
+  "alt": "Close-up of an all-black Aqua Graph dial showing the register hands",
+  "caption": null,
+  "by": "tells",
+  "note": "Arrow-shaped register hands and long orange-tipped paddle hands. Enicar 101 labels it MK Ia.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mki_04",
+  "variant": "MkIa",
+  "alt": "Aqua Graph caseback with the Seapearl medallion, on a beads-of-rice bracelet",
+  "caption": null,
+  "by": "tells",
+  "note": "Seapearl caseback of the 072/002 case, same watch as the MK Ia dial photos on Enicar 101's MK Ia page.",
+  "view": "caseback"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mki_05",
+  "variant": "MkIa",
+  "alt": "Aqua Graph with the caseback off, showing the gilt Valjoux 72 movement",
+  "caption": null,
+  "by": "tells",
+  "note": "Valjoux 72 of the same watch shown on Enicar 101's MK Ia page.",
+  "view": "movement"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mk-ib-2_01",
+  "variant": "MkIb",
+  "alt": "Aqua Graph with a black dial and grey registers, black 60-minute bezel and red ring, on a black leather strap",
+  "caption": null,
+  "by": "tells",
+  "note": "Paddle hands with short orange tips, thin plain register hands, lume dot on the chronograph hand, triangle pointer. Enicar 101 labels it MK Ib.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mk-ib-2_02",
+  "variant": "MkIb",
+  "alt": "Close-up of an Aqua Graph bezel at 12 with the red ring's triangle pointer, black dial with grey registers",
+  "caption": null,
+  "by": "tells",
+  "note": "Triangle pointer and two lume spots at 12, thin register hands. Shown on Enicar 101's MK Ib page.",
+  "view": "other"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mk-ib-2_03",
+  "variant": "MkIb",
+  "alt": "Close-up of an Aqua Graph black dial with grey registers and its paddle hands",
+  "caption": null,
+  "by": "tells",
+  "note": "Short orange tips on the paddle hands and thin unpainted register hands. Enicar 101 labels the handset MK Ib.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mk-ib-2_04",
+  "variant": "MkIb",
+  "alt": "Aqua Graph caseback with the Seapearl medallion, on a black strap",
+  "caption": null,
+  "by": "tells",
+  "note": "Seapearl caseback of the 072/002 case, same watch as the MK Ib dial photo on Enicar 101's MK Ib page.",
+  "view": "caseback"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mk-ib-2_05",
+  "variant": "MkIb",
+  "alt": "Aqua Graph with the caseback off, showing the Valjoux 72 movement",
+  "caption": null,
+  "by": "tells",
+  "note": "Movement of the same watch shown on Enicar 101's MK Ib page.",
+  "view": "movement"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mkii_01",
+  "variant": "MkII",
+  "alt": "Aqua Graph with a black dial and grey registers, black 60-minute bezel and red ring, on a black leather strap",
+  "caption": null,
+  "by": "tells",
+  "note": "Short orange-tipped paddle hands and a chronograph hand with a red dot near the tip. Enicar 101 labels it MK II.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mkii_02",
+  "variant": "MkII",
+  "alt": "Close-up of an Aqua Graph black dial with grey registers",
+  "caption": null,
+  "by": "tells",
+  "note": "Short orange tips on the paddle hands, thin register hands. Shown on Enicar 101's MK II page.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-aqua-graph",
+  "src": "aqua-graph-mkii_03",
+  "variant": "MkII",
+  "alt": "Aqua Graph caseback with the Sherpa 300 medallion and 072-02-02 stamped below",
+  "caption": null,
+  "by": "tells",
+  "note": "Caseback marked 072-02-02, the MK II case reference. Shown on Enicar 101's MK II page.",
+  "view": "caseback"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "jet-graph-mk-i_01",
+  "variant": "MkIa",
+  "alt": "Close-up of a blue Jet Graph dial with silver registers inside a red ring and 24-hour bezel",
+  "caption": null,
+  "by": "tells",
+  "note": "Applied logo, long orange-tipped paddle hands, thin plain chronograph hand, silver GMT hand with an orange tip, triangle pointer. Enicar 101 labels it MK Ia.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "jet-graph-mk-i_02",
+  "variant": "MkIa",
+  "alt": "Jet Graph caseback with the Seapearl medallion and 072/002 stamped below, on a beads-of-rice bracelet",
+  "caption": null,
+  "by": "tells",
+  "note": "Caseback marked 072/002 with the Seapearl medallion, same watch as the MK Ia dial photos.",
+  "view": "caseback"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "jet-graph-mk-i_03",
+  "variant": "MkIa",
+  "alt": "Jet Graph with the caseback off, showing the Valjoux 724 movement",
+  "caption": null,
+  "by": "tells",
+  "note": "Movement of the same 072/002 watch on Enicar 101's MK Ia page.",
+  "view": "movement"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "jet-graph-served-its-tour-of-duty_01",
+  "variant": "MkIa",
+  "alt": "Jet Graph with a blue dial, silver registers and 24-hour bezel on a beads-of-rice bracelet",
+  "caption": null,
+  "by": "tells",
+  "note": "Applied logo, long orange-tipped paddle hands, silver orange-tipped GMT hand, triangle pointer. Enicar 101 calls it a MK1a.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "jet-graph-served-its-tour-of-duty_02",
+  "variant": "MkIa",
+  "alt": "Blue-dial Jet Graph on a beads-of-rice bracelet lying on its Enicar guarantee card",
+  "caption": null,
+  "by": "tells",
+  "note": "Same blue-dial watch: applied logo, long orange-tipped hands, triangle pointer. Enicar 101 calls it a MK1a.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-jet-graph",
+  "src": "jet-graph-served-its-tour-of-duty_03",
+  "variant": "MkIa",
+  "alt": "Blue-dial Jet Graph seen at an angle, showing the 24-hour bezel and pushers",
+  "caption": null,
+  "by": "tells",
+  "note": "Same blue-dial watch: orange-tipped paddle and GMT hands, triangle pointer. Enicar 101 calls it a MK1a.",
+  "view": "profile"
+ },
+ {
+  "rec": "sherpa-super-graph",
+  "src": "super-graph-coming-soon_01",
+  "variant": null,
+  "alt": "Super Graph head with an all-black dial, grey countdown bezel and red ring with a triangle pointer",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Super Graph. Enicar 101 labels it MK I (ref. 072/002); our record has no generations.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-super-graph",
+  "src": "super-graph-mk-ii_01",
+  "variant": null,
+  "alt": "Super Graph with an all-black dial, grey countdown bezel and red ring, on a steel bracelet",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Super Graph. Enicar 101 labels it MK II; our record has no generations.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-super-graph",
+  "src": "super-graph-mk-ii_02",
+  "variant": null,
+  "alt": "Close-up of an all-black Super Graph dial with paddle hands and a red-dot chronograph hand",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Super Graph. Enicar 101 labels it MK II.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-super-graph",
+  "src": "super-graph-mk-ii_03",
+  "variant": null,
+  "alt": "Super Graph caseback on a steel bracelet",
+  "caption": null,
+  "by": "dial",
+  "note": "Caseback of the same Super Graph on Enicar 101's MK II page.",
+  "view": "caseback"
+ },
+ {
+  "rec": "sherpa-super-graph",
+  "src": "super-graph-simonet_01",
+  "variant": null,
+  "alt": "Close-up of the Super Graph \"Simonet\" black dial with black registers and orange marks on the hour counter",
+  "caption": null,
+  "by": "dial",
+  "note": "Dial reads Super Graph. Enicar 101 calls this version the \"Simonet\", made for the 1964 Olympic shooting team (ref. 072/002).",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "sherpa-graph-ic_01",
+  "variant": "MkIc",
+  "alt": "Sherpa Graph with a white dial and silver-white tachymetre ring, on a beads-of-rice bracelet",
+  "caption": null,
+  "by": "tells",
+  "note": "Silver-white tachymetre ring marked Tachymetre, large early logo, long-tipped paddle hands, straight red chronograph hand. Enicar 101 labels it MK Ic.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "sherpa-graph-ic_02",
+  "variant": "MkIc",
+  "alt": "Close-up of a white Sherpa Graph dial with a red chronograph hand and tachymetre ring",
+  "caption": null,
+  "by": "tells",
+  "note": "Ring marked Tachymetre, large early logo, arrow-shaped register hand, straight red chronograph hand. Enicar 101 labels it MK Ic.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "sherpa-graph-ic_03",
+  "variant": "MkIc",
+  "alt": "Close-up of the white Sherpa Graph dial at 3 o'clock showing the tachymetre scale starting at 300",
+  "caption": null,
+  "by": "tells",
+  "note": "Tachymetre scale from 300, long-tipped paddle hands. Enicar 101 labels it MK Ic.",
+  "view": "dial"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "sherpa-graph-ic_04",
+  "variant": "MkIc",
+  "alt": "Sherpa Graph caseback stamped 1308 BaNCH, on a beads-of-rice bracelet",
+  "caption": null,
+  "by": "tells",
+  "note": "Caseback stamped 1308 BaNCH; same watch as the MK Ic dial photos.",
+  "view": "caseback"
+ },
+ {
+  "rec": "sherpa-graph",
+  "src": "sherpa-graph-ic_05",
+  "variant": "MkIc",
+  "alt": "Sherpa Graph with the caseback off, showing the Valjoux 72 movement",
+  "caption": null,
+  "by": "tells",
+  "note": "Movement of the same watch on Enicar 101's MK Ic page.",
+  "view": "movement"
+ }
+]

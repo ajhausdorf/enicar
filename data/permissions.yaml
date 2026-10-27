@@ -61,3 +61,13 @@
   web:
     site: https://vintageeyewatches.com/
     credit_as: Vintage Eye Watches
+- id: enicar101
+  who: JimJupiter, author of Enicar 101 (enicar101.com) and @_jimjupiter on Instagram
+  profile_url: https://www.instagram.com/_jimjupiter/
+  granted: 2026-10-27
+  via: Email to the owner
+  scope: Photos from enicar101.com and his Instagram, with credit and a link back. Photos the site credits to someone else (for example "Copyright Dogen") are not his to give and are handled separately.
+  credit_as: "@_jimjupiter"
+  web:
+    site: https://enicar101.com/
+    credit_as: Enicar 101

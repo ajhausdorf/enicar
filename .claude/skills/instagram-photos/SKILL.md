@@ -106,8 +106,9 @@ captions for the model name. Photos in an enicar.org article that the article
 doesn't credit to someone else are covered by his permission: add them with
 `scripts/images/add-image.mjs`, credit `enicar.org`, and set both
 `credit_url` and `source_url` to the article. Skip adverts, catalogue pages
-and archive scans. Enicar 101's photos are not covered: its site says nothing
-may be used without the owner's written permission, so link to it instead.
+and archive scans. Enicar 101's owner (JimJupiter) gave permission on 2026-10-27: credit
+"Enicar 101" and link the page. Photos it credits to someone else are not
+his to give.
 
 ## Answers come back
 

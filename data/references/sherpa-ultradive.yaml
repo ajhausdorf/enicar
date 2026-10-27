@@ -44,6 +44,11 @@ read_more:
     url: https://enicar101.com/2021/12/30/enicar-sherpa-ultradive-and-ops-sn-research/
     source: enicar101
     note: "Enicar 101 is building a classification from owners’ serial numbers. If you have one, they want to hear from you."
+  - variant: null
+    title: "Alain Delon's Ultradive"
+    url: https://enicar101.com/2021/02/04/alain-delons-ultra-dive/
+    source: enicar101
+    note: "Film and private photos of Alain Delon wearing an early Ultradive."
 images:
   - file: /images/sherpa-ultradive/tcp-dqzkotseh3s-1.webp
     thumb: /images/sherpa-ultradive/tcp-dqzkotseh3s-1-sm.webp

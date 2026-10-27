@@ -286,6 +286,106 @@ read_more:
     url: https://enicar101.com/sherpa-graph-iv/
     source: enicar101
     note: null
+  - variant: null
+    title: "Sherpa Graph Cousins"
+    url: https://enicar101.com/sherpa-graph-cousins/
+    source: enicar101
+    note: "How to tell a real Sherpa Graph from look-alike chronographs by other brands."
+  - variant: "MkI"
+    title: "Sherpa Graph MK 1a Roll Call"
+    url: https://enicar101.com/sherpa-graph-mk-1a-roll-call/
+    source: enicar101
+    note: "A running list of known first-series serials with dial colour and hand style."
+  - variant: null
+    title: "Enicar Production dates"
+    url: https://enicar101.com/enicar-production-dates/
+    source: enicar101
+    note: "Rough table of production years by serial number, built from the chronographs."
+  - variant: null
+    title: "Serial Reference"
+    url: https://enicar101.com/serial-reference/
+    source: enicar101
+    note: "Serial ranges, references, dates and production estimates for every Graph generation."
+  - variant: null
+    title: "Brochures & Manuals"
+    url: https://enicar101.com/brochures-ads/
+    source: enicar101
+    note: "Scans of Enicar catalogues, manuals and adverts from the 1950s to the 1970s."
+  - variant: null
+    title: "Racing Heritage"
+    url: https://enicar101.com/racing-heritage-2/
+    source: enicar101
+    note: "Racing drivers who wore or advertised Enicar, from Stirling Moss to Jim Clark."
+  - variant: null
+    title: "1960s Formula 1 drivers and the Enicar Sherpa Graph"
+    url: https://enicar101.com/2021/12/08/1960s-formula-1-drivers-and-the-enicar-sherpa-graph/
+    source: enicar101
+    note: "Period photos of Moss, Clark, Ireland, Hill and Mitter wearing Sherpa Graphs."
+  - variant: "MkIb"
+    title: "The correct reference of Jim Clarks Sherpa Graph"
+    url: https://enicar101.com/2021/11/19/the-correct-reference-of-jim-clarks-sherpa-graph/
+    source: enicar101
+    note: "Works out which Sherpa Graph series Jim Clark actually wore."
+  - variant: "MkI"
+    title: "How to spot one of 500 Sherpa Graph MK1a?"
+    url: https://enicar101.com/2021/04/03/how-to-spot-one-of-500-sherpa-graph-mk1a/
+    source: enicar101
+    note: "Side-by-side comparison of the first series with its successor."
+  - variant: "MkI"
+    title: "Sweden's Apollo Program: The Salvage of the Kings Ship Vasa in 1961"
+    url: https://enicar101.com/2021/02/20/swedens-apollo-program-the-salvage-of-the-kings-ship-vasa-in-1961/
+    source: enicar101
+    note: "A first-series Sherpa Graph and a Sherpa Dive given to a member of the Vasa salvage team."
+  - variant: "MkI"
+    title: "Story behind my watches Pt.2: Enicar Sherpa Graph Mk Ia"
+    url: https://enicar101.com/2020/11/08/story-behind-my-watches-pt-2-enicar-sherpa-graph-mk-ia/
+    source: enicar101
+    note: "The history of a grey-dial first-series Sherpa Graph with skeleton hands."
+  - variant: "MkI"
+    title: "Stirling Moss and his \"Stirling Moss\""
+    url: https://enicar101.com/2020/07/29/stirling-moss-and-his-stirling-moss/
+    source: enicar101
+    note: "Period photos of Stirling Moss wearing a first-series Sherpa Graph."
+  - variant: "MkII"
+    title: "Swedish racing quartet"
+    url: https://enicar101.com/2020/04/27/swedish-racing-quartet/
+    source: enicar101
+    note: "Swedish adverts with Erik Carlsson and other drivers, and an all-white Sherpa Graph."
+  - variant: "MkI"
+    title: "Lume or no lume – that is the question!"
+    url: https://enicar101.com/2019/12/29/lume-or-no-lume-that-is-the-question/
+    source: enicar101
+    note: "Evidence that some first-series Sherpa Graphs left the factory with unlumed hands."
+  - variant: "MkIc"
+    title: "New Addition and insights"
+    url: https://enicar101.com/2018/12/28/new-addition-and-insights/
+    source: enicar101
+    note: "A MK Ic in the hand and production estimates for each Sherpa Graph series."
+  - variant: "MkIc"
+    title: "New additions to Serial Reference Guide and new category"
+    url: https://enicar101.com/2018/12/03/new-addition-to-serial-reference-and-new-topic/
+    source: enicar101
+    note: "Site news: serial list update and a MK Ic guide in the works."
+  - variant: "MkII"
+    title: "\"Mr. Saab\" and his Sherpa Graph MK II"
+    url: https://enicar101.com/2018/10/24/mr-saab-and-his-sherpa-graph-mk-ii/
+    source: enicar101
+    note: "A Swedish advert with rally driver Erik Carlsson wearing a Sherpa Graph."
+  - variant: null
+    title: "New content and some optimization"
+    url: https://enicar101.com/2018/05/03/new-content-and-some-optimization/
+    source: enicar101
+    note: "Site news announcing the first Sherpa Graph and Aqua Graph guide pages."
+  - variant: null
+    title: "Serial Guide Online!"
+    url: https://enicar101.com/2018/04/29/serial-guide-online/
+    source: enicar101
+    note: "Launch of the serial number project behind the series classification."
+  - variant: null
+    title: "We are online folks!"
+    url: https://enicar101.com/2017/12/01/we-are-online-folks/
+    source: enicar101
+    note: "The launch post of Enicar 101."
 images:
   - file: /images/sherpa-graph/tcp-dcyu-v3g-6m-1.webp
     thumb: /images/sherpa-graph/tcp-dcyu-v3g-6m-1-sm.webp
@@ -1263,6 +1363,86 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Paddle hands with short orange tips and a chronograph hand with a red dot near the tip; black dial with silver registers. The listing calls it a MK III, ref. 072-02-01."
+  - file: /images/sherpa-graph/e-sherpa-graph-ic-1.webp
+    thumb: /images/sherpa-graph/e-sherpa-graph-ic-1-sm.webp
+    width: 1600
+    height: 1066
+    alt: "Sherpa Graph with a white dial and silver-white tachymetre ring, on a beads-of-rice bracelet"
+    view: dial
+    variant: "MkIc"
+    source_url: https://enicar101.com/sherpa-graph-ic/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/sherpa-graph-ic/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Silver-white tachymetre ring marked Tachymetre, large early logo, long-tipped paddle hands, straight red chronograph hand. Enicar 101 labels it MK Ic."
+  - file: /images/sherpa-graph/e-sherpa-graph-ic-2.webp
+    thumb: /images/sherpa-graph/e-sherpa-graph-ic-2-sm.webp
+    width: 1500
+    height: 1500
+    alt: "Close-up of a white Sherpa Graph dial with a red chronograph hand and tachymetre ring"
+    view: dial
+    variant: "MkIc"
+    source_url: https://enicar101.com/sherpa-graph-ic/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/sherpa-graph-ic/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Ring marked Tachymetre, large early logo, arrow-shaped register hand, straight red chronograph hand. Enicar 101 labels it MK Ic."
+  - file: /images/sherpa-graph/e-sherpa-graph-ic-3.webp
+    thumb: /images/sherpa-graph/e-sherpa-graph-ic-3-sm.webp
+    width: 1600
+    height: 1066
+    alt: "Close-up of the white Sherpa Graph dial at 3 o'clock showing the tachymetre scale starting at 300"
+    view: dial
+    variant: "MkIc"
+    source_url: https://enicar101.com/sherpa-graph-ic/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/sherpa-graph-ic/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Tachymetre scale from 300, long-tipped paddle hands. Enicar 101 labels it MK Ic."
+  - file: /images/sherpa-graph/e-sherpa-graph-ic-4.webp
+    thumb: /images/sherpa-graph/e-sherpa-graph-ic-4-sm.webp
+    width: 1500
+    height: 1000
+    alt: "Sherpa Graph caseback stamped 1308 BaNCH, on a beads-of-rice bracelet"
+    view: caseback
+    variant: "MkIc"
+    source_url: https://enicar101.com/sherpa-graph-ic/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/sherpa-graph-ic/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Caseback stamped 1308 BaNCH; same watch as the MK Ic dial photos."
+  - file: /images/sherpa-graph/e-sherpa-graph-ic-5.webp
+    thumb: /images/sherpa-graph/e-sherpa-graph-ic-5-sm.webp
+    width: 1600
+    height: 770
+    alt: "Sherpa Graph with the caseback off, showing the Valjoux 72 movement"
+    view: movement
+    variant: "MkIc"
+    source_url: https://enicar101.com/sherpa-graph-ic/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/sherpa-graph-ic/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Movement of the same watch on Enicar 101's MK Ic page."
 barometer: null
 status: draft
 gaps:

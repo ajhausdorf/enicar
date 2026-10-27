@@ -35,6 +35,16 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+  - variant: null
+    title: "Super Dive \"Polish Navy\""
+    url: https://enicar101.com/super-dive-polish-navy/
+    source: enicar101
+    note: "Serial and MW issue-number list for Super Dives used by the Polish Navy."
+  - variant: null
+    title: "The Polish Navy Super Dives"
+    url: https://enicar101.com/2025/03/04/the-polish-navy-super-dives/
+    source: enicar101
+    note: "Blog post introducing the Polish Navy Super Dive serial project."
 images:
   - file: /images/sherpa-super-dive/tcp-dyamfnxmnaa-1.webp
     thumb: /images/sherpa-super-dive/tcp-dyamfnxmnaa-1-sm.webp
