@@ -250,6 +250,22 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Caption: first-generation Guide from 1960, with different cities on the bezel, a different hand set and crowns without the Saturn. Posted again in 2026 as a Guide MK I with dauphine and crescent hands."
+  - file: /images/sherpa-guide/e101-catalogue-guide3.webp
+    thumb: /images/sherpa-guide/e101-catalogue-guide3-sm.webp
+    width: 464
+    height: 997
+    alt: "Sherpa Guide MkIII with a black dial, rally-style 24-hour hand and world-city bezel on a steel bracelet, from Enicar's 1969 catalogue"
+    view: advert
+    variant: "MkIII"
+    source_url: https://enicar101.wordpress.com/wp-content/uploads/2019/05/brochure_1969_germany.pdf
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/brochures-ads/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: "From Enicar's 1969 catalogue (Germany)."
+    identified_by: source
+    identified_note: "Captioned Sherpa Guide 148 35 01 (166 35 01) in the 1969 catalogue; MkIII by its rally-style 24-hour hand."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
