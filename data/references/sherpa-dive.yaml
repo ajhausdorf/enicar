@@ -34,6 +34,21 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
+  - variant: null
+    title: "Update: Hans Hass' Expedition Xarifa II and the Enicar Sherpa Dive Ref. 100/124 BaANXS"
+    url: https://enicar101.com/2024/01/14/hans-hass-expedition-xarifa-ii-and-the-enicar-sherpa-dive/
+    source: enicar101
+    note: "Hans Hass, his Xarifa expedition and the early Sherpa Dive with a bakelite bezel."
+  - variant: null
+    title: "Sherpa Dive Review from 1961"
+    url: https://enicar101.com/2021/03/08/sherpa-dive-review-from-1961/
+    source: enicar101
+    note: "A 1961 German diving magazine test of the Sherpa Dive."
+  - variant: null
+    title: "Sweden's Apollo Program: The Salvage of the Kings Ship Vasa in 1961"
+    url: https://enicar101.com/2021/02/20/swedens-apollo-program-the-salvage-of-the-kings-ship-vasa-in-1961/
+    source: enicar101
+    note: "Shows the Sherpa Dive given to a member of the Vasa salvage team."
 images:
   - file: /images/sherpa-dive/zz-cr-vmi-rog0-1.webp
     thumb: /images/sherpa-dive/zz-cr-vmi-rog0-1-sm.webp

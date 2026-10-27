@@ -221,6 +221,46 @@ read_more:
     url: https://enicar101.com/aqua-graph-mk-iv/
     source: enicar101
     note: null
+  - variant: null
+    title: "Enicar Production dates"
+    url: https://enicar101.com/enicar-production-dates/
+    source: enicar101
+    note: "Rough table of production years by serial number, built from the chronographs."
+  - variant: null
+    title: "Serial Reference"
+    url: https://enicar101.com/serial-reference/
+    source: enicar101
+    note: "Serial ranges, references, dates and production estimates for every Graph generation."
+  - variant: "MkII"
+    title: "Brigitte Bardot, Romy Schneider and Maurice Ronet's Aqua Graph"
+    url: https://enicar101.com/2022/05/15/brigitte-bardot-romy-schneider-and-maurice-ronets-aqua-graph/
+    source: enicar101
+    note: "Film stills of actor Maurice Ronet wearing an Aqua Graph MK II."
+  - variant: "MkII"
+    title: "Story behind my watches Pt.1: Enicar Aqua Graph Mk II"
+    url: https://enicar101.com/2020/10/12/story-behind-my-watches-pt-1-enicar-aqua-graph-mk-ii/
+    source: enicar101
+    note: "The history of one Aqua Graph MK II and its first owner."
+  - variant: null
+    title: "More motorsport and numbers"
+    url: https://enicar101.com/2019/06/12/more-motorsport-and-numbers/
+    source: enicar101
+    note: "Production estimates for each Aqua Graph and Jet Graph series."
+  - variant: null
+    title: "Aqua Graph MK Ib and some Wabi Sabi"
+    url: https://enicar101.com/2018/10/22/aqua-graph-mk-ib-and-some-wabi-sabi/
+    source: enicar101
+    note: "Announces the MK Ib guide and shows a restored first-series Aqua Graph."
+  - variant: "MkIa"
+    title: "Aqua Graph \"watercolor\" project"
+    url: https://enicar101.com/2018/09/18/aqua-graph-watercolor-project/
+    source: enicar101
+    note: "Restoring two first-series Aqua Graphs bought as project watches."
+  - variant: "MkIa"
+    title: "Early Aqua Graph bezel mystery"
+    url: https://enicar101.com/2018/06/03/early-aqua-graph-bezel-mystery/
+    source: enicar101
+    note: "Adverts showing early Aqua Graphs with the Sherpa Dive bezel."
 images:
   - file: /images/sherpa-aqua-graph/ve-dze6ppze10d-1.webp
     thumb: /images/sherpa-aqua-graph/ve-dze6ppze10d-1-sm.webp
@@ -542,6 +582,246 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Paddle hands with short orange tips, a chronograph hand with a red dot near the tip and a triangle pointer on the ring. Post: their '66 Aqua Graph."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mki-1.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mki-1-sm.webp
+    width: 1000
+    height: 550
+    alt: "Aqua Graph with an all-black dial, black 60-minute bezel and red pointer ring, on a beads-of-rice bracelet"
+    view: dial
+    variant: "MkIa"
+    source_url: https://enicar101.com/aqua-graph-mki/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mki/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Long orange-tipped paddle hands, arrow-shaped hand on the 12-hour counter, small applied logo, triangle pointer on the red ring. Enicar 101 labels it MK Ia."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mki-2.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mki-2-sm.webp
+    width: 1000
+    height: 382
+    alt: "Close-up of an Aqua Graph bezel at 12 with the red ring's triangle pointer and two lume spots, black dial"
+    view: other
+    variant: "MkIa"
+    source_url: https://enicar101.com/aqua-graph-mki/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mki/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Triangle pointer on the red ring, two lume spots at 12, long orange-tipped hands. Shown on Enicar 101's MK Ia page."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mki-3.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mki-3-sm.webp
+    width: 1000
+    height: 420
+    alt: "Close-up of an all-black Aqua Graph dial showing the register hands"
+    view: dial
+    variant: "MkIa"
+    source_url: https://enicar101.com/aqua-graph-mki/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mki/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Arrow-shaped register hands and long orange-tipped paddle hands. Enicar 101 labels it MK Ia."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mki-4.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mki-4-sm.webp
+    width: 1000
+    height: 480
+    alt: "Aqua Graph caseback with the Seapearl medallion, on a beads-of-rice bracelet"
+    view: caseback
+    variant: "MkIa"
+    source_url: https://enicar101.com/aqua-graph-mki/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mki/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Seapearl caseback of the 072/002 case, same watch as the MK Ia dial photos on Enicar 101's MK Ia page."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mki-5.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mki-5-sm.webp
+    width: 1000
+    height: 632
+    alt: "Aqua Graph with the caseback off, showing the gilt Valjoux 72 movement"
+    view: movement
+    variant: "MkIa"
+    source_url: https://enicar101.com/aqua-graph-mki/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mki/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Valjoux 72 of the same watch shown on Enicar 101's MK Ia page."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-1.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-1-sm.webp
+    width: 1000
+    height: 415
+    alt: "Aqua Graph with a black dial and grey registers, black 60-minute bezel and red ring, on a black leather strap"
+    view: dial
+    variant: "MkIb"
+    source_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Paddle hands with short orange tips, thin plain register hands, lume dot on the chronograph hand, triangle pointer. Enicar 101 labels it MK Ib."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-2.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-2-sm.webp
+    width: 1000
+    height: 318
+    alt: "Close-up of an Aqua Graph bezel at 12 with the red ring's triangle pointer, black dial with grey registers"
+    view: other
+    variant: "MkIb"
+    source_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Triangle pointer and two lume spots at 12, thin register hands. Shown on Enicar 101's MK Ib page."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-3.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-3-sm.webp
+    width: 1000
+    height: 388
+    alt: "Close-up of an Aqua Graph black dial with grey registers and its paddle hands"
+    view: dial
+    variant: "MkIb"
+    source_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Short orange tips on the paddle hands and thin unpainted register hands. Enicar 101 labels the handset MK Ib."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-4.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-4-sm.webp
+    width: 1000
+    height: 571
+    alt: "Aqua Graph caseback with the Seapearl medallion, on a black strap"
+    view: caseback
+    variant: "MkIb"
+    source_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Seapearl caseback of the 072/002 case, same watch as the MK Ib dial photo on Enicar 101's MK Ib page."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-5.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mk-ib-2-5-sm.webp
+    width: 1000
+    height: 571
+    alt: "Aqua Graph with the caseback off, showing the Valjoux 72 movement"
+    view: movement
+    variant: "MkIb"
+    source_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mk-ib-2/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Movement of the same watch shown on Enicar 101's MK Ib page."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mkii-1.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mkii-1-sm.webp
+    width: 1000
+    height: 530
+    alt: "Aqua Graph with a black dial and grey registers, black 60-minute bezel and red ring, on a black perforated rally strap"
+    view: dial
+    variant: "MkII"
+    source_url: https://enicar101.com/aqua-graph-mkii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mkii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Short orange-tipped paddle hands and a chronograph hand with a red dot near the tip. Enicar 101 labels it MK II."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mkii-2.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mkii-2-sm.webp
+    width: 996
+    height: 996
+    alt: "Close-up of an Aqua Graph black dial with grey registers"
+    view: dial
+    variant: "MkII"
+    source_url: https://enicar101.com/aqua-graph-mkii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mkii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Short orange tips on the paddle hands, thin register hands. Shown on Enicar 101's MK II page."
+  - file: /images/sherpa-aqua-graph/e-aqua-graph-mkii-3.webp
+    thumb: /images/sherpa-aqua-graph/e-aqua-graph-mkii-3-sm.webp
+    width: 1500
+    height: 996
+    alt: "Aqua Graph caseback with the Sherpa 300 medallion and 072-02-02 stamped below"
+    view: caseback
+    variant: "MkII"
+    source_url: https://enicar101.com/aqua-graph-mkii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/aqua-graph-mkii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Caseback marked 072-02-02, the MK II case reference. Shown on Enicar 101's MK II page."
+  - file: /images/sherpa-aqua-graph/dogen-e101-aqua-graph-mkiv-1.webp
+    thumb: /images/sherpa-aqua-graph/dogen-e101-aqua-graph-mkiv-1-sm.webp
+    width: 1000
+    height: 527
+    alt: "Aqua Graph MkIV with a black dial and white registers, red chronograph hand and red ring, on a black textured strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://enicar101.com/aqua-graph-mk-iv/
+    credit: "Dogen"
+    credit_url: https://enicar101.com/aqua-graph-mk-iv/
+    license: "Shown on Enicar 101"
+    permission: credited
+    permission_ref: null
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, orange-red triangle chronograph hand, orange minute-counter hand on a black dial, house-shaped pointer. Captioned \"Copyright Dogen\" on Enicar 101's MK IV page."
+  - file: /images/sherpa-aqua-graph/dogen-e101-aqua-graph-mkiv-2.webp
+    thumb: /images/sherpa-aqua-graph/dogen-e101-aqua-graph-mkiv-2-sm.webp
+    width: 739
+    height: 722
+    alt: "Close-up of an Aqua Graph black dial with white registers and an orange-red minute-counter hand"
+    view: dial
+    variant: "MkIV"
+    source_url: https://enicar101.com/aqua-graph-mk-iv/
+    credit: "Dogen"
+    credit_url: https://enicar101.com/aqua-graph-mk-iv/
+    license: "Shown on Enicar 101"
+    permission: credited
+    permission_ref: null
+    caption: null
+    identified_by: tells
+    identified_note: "Orange-red triangle chronograph hand and orange minute-counter hand on a black dial, baton hands. Captioned \"Copyright Dogen\" on Enicar 101's MK IV page."
 barometer: null
 status: draft
 gaps:

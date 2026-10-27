@@ -219,6 +219,31 @@ read_more:
     url: https://enicar101.com/jet-graph-mkiv/
     source: enicar101
     note: null
+  - variant: null
+    title: "Enicar Production dates"
+    url: https://enicar101.com/enicar-production-dates/
+    source: enicar101
+    note: "Rough table of production years by serial number, built from the chronographs."
+  - variant: null
+    title: "Serial Reference"
+    url: https://enicar101.com/serial-reference/
+    source: enicar101
+    note: "Serial ranges, references, dates and production estimates for every Graph generation."
+  - variant: "MkIa"
+    title: "Jet Graph served its tour of duty"
+    url: https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/
+    source: enicar101
+    note: "Three first-series Jet Graphs worn by soldiers and pilots in Asia in the 1960s."
+  - variant: null
+    title: "More motorsport and numbers"
+    url: https://enicar101.com/2019/06/12/more-motorsport-and-numbers/
+    source: enicar101
+    note: "Production estimates for each Aqua Graph and Jet Graph series."
+  - variant: null
+    title: "First descriptions available"
+    url: https://enicar101.com/2017/12/01/first-descriptions-available/
+    source: enicar101
+    note: "Site news announcing the first Jet Graph and Aqua Graph guide pages."
 images:
   - file: /images/sherpa-jet-graph/tcp-de10-ormb3t-1.webp
     thumb: /images/sherpa-jet-graph/tcp-de10-ormb3t-1-sm.webp
@@ -540,6 +565,166 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands, a lollipop chronograph hand with a red dot and a red and black checkered GMT hand."
+  - file: /images/sherpa-jet-graph/e-jet-graph-mk-i-1.webp
+    thumb: /images/sherpa-jet-graph/e-jet-graph-mk-i-1-sm.webp
+    width: 1400
+    height: 1400
+    alt: "Close-up of a blue Jet Graph dial with silver registers inside a red ring and 24-hour bezel"
+    view: dial
+    variant: "MkIa"
+    source_url: https://enicar101.com/jet-graph-mk-i/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/jet-graph-mk-i/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Applied logo, long orange-tipped paddle hands, thin plain chronograph hand, silver GMT hand with an orange tip, triangle pointer. Enicar 101 labels it MK Ia."
+  - file: /images/sherpa-jet-graph/e-jet-graph-mk-i-2.webp
+    thumb: /images/sherpa-jet-graph/e-jet-graph-mk-i-2-sm.webp
+    width: 1578
+    height: 1600
+    alt: "Jet Graph caseback with the Seapearl medallion and 072/002 stamped below, on a beads-of-rice bracelet"
+    view: caseback
+    variant: "MkIa"
+    source_url: https://enicar101.com/jet-graph-mk-i/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/jet-graph-mk-i/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Caseback marked 072/002 with the Seapearl medallion, same watch as the MK Ia dial photos."
+  - file: /images/sherpa-jet-graph/e-jet-graph-mk-i-3.webp
+    thumb: /images/sherpa-jet-graph/e-jet-graph-mk-i-3-sm.webp
+    width: 1600
+    height: 1529
+    alt: "Jet Graph with the caseback off, showing the Valjoux 724 movement"
+    view: movement
+    variant: "MkIa"
+    source_url: https://enicar101.com/jet-graph-mk-i/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/jet-graph-mk-i/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Movement of the same 072/002 watch on Enicar 101's MK Ia page."
+  - file: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-1.webp
+    thumb: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Jet Graph with a blue dial, silver registers and 24-hour bezel on a beads-of-rice bracelet"
+    view: dial
+    variant: "MkIa"
+    source_url: https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Applied logo, long orange-tipped paddle hands, silver orange-tipped GMT hand, triangle pointer. Enicar 101 calls it a MK1a."
+  - file: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-2.webp
+    thumb: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-2-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Blue-dial Jet Graph on a beads-of-rice bracelet lying on its Enicar guarantee card"
+    view: dial
+    variant: "MkIa"
+    source_url: https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Same blue-dial watch: applied logo, long orange-tipped hands, triangle pointer. Enicar 101 calls it a MK1a."
+  - file: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-3.webp
+    thumb: /images/sherpa-jet-graph/e-jet-graph-served-its-tour-of-duty-3-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Blue-dial Jet Graph seen at an angle, showing the 24-hour bezel and pushers"
+    view: profile
+    variant: "MkIa"
+    source_url: https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/2021/06/16/jet-graph-served-its-tour-of-duty/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "Same blue-dial watch: orange-tipped paddle and GMT hands, triangle pointer. Enicar 101 calls it a MK1a."
+  - file: /images/sherpa-jet-graph/e-dj1aw42ihga-1.webp
+    thumb: /images/sherpa-jet-graph/e-dj1aw42ihga-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Jet Graph MkII with an all-black dial and black and white 24-hour bezel on a steel bracelet"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/DJ1aW42IHga/
+    credit: "@_jimjupiter"
+    credit_url: https://www.instagram.com/_jimjupiter/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "All-black dial with a printed logo, paddle hands with orange tips, a thin red chronograph hand and thin white register hands. Caption: early sixties, thin hand set, all black dial."
+  - file: /images/sherpa-jet-graph/e-dyz15mhclm6-1.webp
+    thumb: /images/sherpa-jet-graph/e-dyz15mhclm6-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Jet Graph MkII with an all-black dial on a steel bracelet, lying on its guarantee"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/DYZ15MHCLM6/
+    credit: "@_jimjupiter"
+    credit_url: https://www.instagram.com/_jimjupiter/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "All-black dial with a printed logo, paddle hands with orange tips, a thin red chronograph hand and thin white register hands. Caption: an early example with paddle hands and a thin GMT hand."
+  - file: /images/sherpa-jet-graph/e-ccdyu0vr2y5-1.webp
+    thumb: /images/sherpa-jet-graph/e-ccdyu0vr2y5-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Jet Graph MkII with an all-black dial and black and pale blue 24-hour bezel on a steel bracelet, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/CcdYU0vr2Y5/
+    credit: "@_jimjupiter"
+    credit_url: https://www.instagram.com/_jimjupiter/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "All-black dial with a printed logo, paddle hands with orange tips, a thin red chronograph hand and thin white register hands. Caption: black on black with a slim hand set."
+  - file: /images/sherpa-jet-graph/e-ce8w-ttr7-a-1.webp
+    thumb: /images/sherpa-jet-graph/e-ce8w-ttr7-a-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Jet Graph MkII with an all-black dial and black and white 24-hour bezel on a steel bracelet, on the wrist"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/Ce8w_tTr7_A/
+    credit: "@_jimjupiter"
+    credit_url: https://www.instagram.com/_jimjupiter/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: tells
+    identified_note: "All-black dial with a printed logo, paddle hands with orange tips, a thin red chronograph hand and thin white register hands. Caption: an early all-black Jet Graph."
 barometer: null
 status: draft
 gaps:

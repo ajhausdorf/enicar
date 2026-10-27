@@ -73,6 +73,11 @@ read_more:
     url: https://web.archive.org/web/20191210020427/https://thespringbar.com/blogs/guides/enicar-sherpa-pilot-2-crown-models/
     source: thespringbar
     note: The Guide generation by generation, from the Mark I to the Mark IVA. The original page is gone.
+  - variant: "MkI"
+    title: "The Jet Age Enicar Ref. 817 CH"
+    url: https://enicar101.com/2020/12/07/the-jet-age-enicar-ch817/
+    source: enicar101
+    note: "Mostly about the Ref. 817 CH cockpit chronograph; the airline adverts shown feature the early Sherpa Guide."
 images:
   - file: /images/sherpa-guide/v-dh0pxxtov-n-1.webp
     thumb: /images/sherpa-guide/v-dh0pxxtov-n-1-sm.webp
@@ -234,6 +239,22 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Posted as their white Guide MkI, in the OmegaForums thread on the Guide Mark 1."
+  - file: /images/sherpa-guide/e-cy4javqitdw-1.webp
+    thumb: /images/sherpa-guide/e-cy4javqitdw-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Guide MkI with a black dial and world-city bezel on a steel bracelet"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/CY4JaVqITdw/
+    credit: "@_jimjupiter"
+    credit_url: https://www.instagram.com/_jimjupiter/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: first-generation Guide from 1960, with different cities on the bezel, a different hand set and crowns without the Saturn. Posted again in 2026 as a Guide MK I with dauphine and crescent hands."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
