@@ -26,6 +26,38 @@ read_more:
     source: enicar101
     note: "Newspaper adverts, the 1960 catalogue entry and a search for the clock in DC-8 cockpits."
 images:
+  - file: /images/cockpit-chronograph-817-ch/e101-817ch-1.webp
+    thumb: /images/cockpit-chronograph-817-ch/e101-817ch-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "817 CH cockpit chronograph with a black dial, white Arabic numerals and a 15-minute counter, in its black mounting ring"
+    view: dial
+    variant: null
+    source_url: https://enicar101.com/2020/12/07/the-jet-age-enicar-ch817/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/2020/12/07/the-jet-age-enicar-ch817/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: source
+    identified_note: "Shown in Enicar 101's post The Jet Age Enicar Ref. 817 CH (https://enicar101.com/2020/12/07/the-jet-age-enicar-ch817/), and matches the 817 CH in the 1960 catalogue."
+  - file: /images/cockpit-chronograph-817-ch/e101-817ch-2.webp
+    thumb: /images/cockpit-chronograph-817-ch/e101-817ch-2-sm.webp
+    width: 1600
+    height: 1600
+    alt: "The movement of an 817 CH cockpit chronograph, signed Enicar, with lighting wires running across it"
+    view: movement
+    variant: null
+    source_url: https://enicar101.com/2020/12/07/the-jet-age-enicar-ch817/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/2020/12/07/the-jet-age-enicar-ch817/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: source
+    identified_note: "Shown in Enicar 101's post The Jet Age Enicar Ref. 817 CH (https://enicar101.com/2020/12/07/the-jet-age-enicar-ch817/) as the movement of that watch."
   - file: /images/cockpit-chronograph-817-ch/e101-catalogue-817ch.webp
     thumb: /images/cockpit-chronograph-817-ch/e101-catalogue-817ch-sm.webp
     width: 450

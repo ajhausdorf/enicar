@@ -30,6 +30,22 @@ read_more:
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
 images:
+  - file: /images/sherpa-time/vv-sherpa-time-1.webp
+    thumb: /images/sherpa-time/vv-sherpa-time-1-sm.webp
+    width: 802
+    height: 1003
+    alt: "Period picture of a Sherpa Time with a white dial, world-city outer bezel and red pointer, on a black strap"
+    view: advert
+    variant: null
+    source_url: https://www.instagram.com/p/BxaZzB5H63d/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: "A period Enicar picture posted by Martijn van der Ven."
+    identified_by: caption
+    identified_note: "Martijn's caption names it a Sherpa Time; the dial is printed Sherpa Time."
   - file: /images/sherpa-time/e101-catalogue-time.webp
     thumb: /images/sherpa-time/e101-catalogue-time-sm.webp
     width: 560
@@ -51,7 +67,7 @@ status: draft
 gaps:
   - "Reference number: the 1960 catalogue reads 10?/216 BaANXTCS, with the third digit unclear in the scan"
   - Lug width
-  - "Photographs of real watches (only a catalogue image so far)"
+  - "Photographs of real watches (only period catalogue pictures so far)"
   - Price
 citations:
   - id: e101-cat-1960-ch
@@ -69,4 +85,4 @@ citations:
       - case.diameter_mm
       - features
       - movement.calibres
-last_reviewed: 2026-10-25
+last_reviewed: 2026-10-27

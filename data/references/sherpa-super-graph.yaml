@@ -218,12 +218,92 @@ images:
     caption: null
     identified_by: source
     identified_note: "Dial reads Super Graph. Enicar 101 calls this version the \"Simonet\", made for the 1964 Olympic shooting team (ref. 072/002)."
+  - file: /images/sherpa-super-graph/e101-sg-mkiii-1.webp
+    thumb: /images/sherpa-super-graph/e101-sg-mkiii-1-sm.webp
+    width: 1600
+    height: 815
+    alt: "Super Graph MkIII with a black dial, silver registers, red pointer ring and grey 60-minute bezel, on a white strap"
+    view: dial
+    variant: null
+    source_url: https://enicar101.com/super-graph-mk-iii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-mk-iii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: source
+    identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/)."
+  - file: /images/sherpa-super-graph/e101-sg-mkiii-2.webp
+    thumb: /images/sherpa-super-graph/e101-sg-mkiii-2-sm.webp
+    width: 1095
+    height: 1095
+    alt: "Super Graph MkIII from above, showing the grey 60-minute bezel and the red triangle pointer"
+    view: dial
+    variant: null
+    source_url: https://enicar101.com/super-graph-mk-iii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-mk-iii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: source
+    identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/)."
+  - file: /images/sherpa-super-graph/e101-sg-mkiii-3.webp
+    thumb: /images/sherpa-super-graph/e101-sg-mkiii-3-sm.webp
+    width: 840
+    height: 857
+    alt: "Close-up of a Super Graph MkIII dial: black with silver registers, baton hands and a red ring"
+    view: dial
+    variant: null
+    source_url: https://enicar101.com/super-graph-mk-iii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-mk-iii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: source
+    identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/)."
+  - file: /images/sherpa-super-graph/e101-sg-mkiii-4.webp
+    thumb: /images/sherpa-super-graph/e101-sg-mkiii-4-sm.webp
+    width: 1200
+    height: 1200
+    alt: "Super Graph MkIII caseback with the Sherpa 600 medallion, stamped 072-02-02"
+    view: caseback
+    variant: null
+    source_url: https://enicar101.com/super-graph-mk-iii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-mk-iii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: source
+    identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/). The caseback is stamped 072-02-02."
+  - file: /images/sherpa-super-graph/e101-sg-mkiii-5.webp
+    thumb: /images/sherpa-super-graph/e101-sg-mkiii-5-sm.webp
+    width: 1125
+    height: 1107
+    alt: "The chronograph movement inside a Super Graph MkIII"
+    view: movement
+    variant: null
+    source_url: https://enicar101.com/super-graph-mk-iii/
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/super-graph-mk-iii/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: null
+    identified_by: source
+    identified_note: "Shown on Enicar 101's page titled Super Graph MK III (https://enicar101.com/super-graph-mk-iii/)."
 barometer: null
 status: draft
 gaps:
   - Production numbers (not known to the source)
   - Case material and lug width
-  - Photographs
+  - "More photographs of the MkI and Simonet (one each)"
   - Price
 citations:
   - id: e101-sg-mki
@@ -267,4 +347,4 @@ citations:
     supports:
       - years.from
       - years.to
-last_reviewed: 2026-10-25
+last_reviewed: 2026-10-27
