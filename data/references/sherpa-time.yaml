@@ -5,16 +5,16 @@ summary: A 36 mm single-crown world time dive watch with an outer bezel and red 
 references: []
 nicknames: []
 years:
-  from: null
+  from: 1960
   to: null
   approximate: true
 movement:
   calibres:
     - AR1125
-  winding: null
+  winding: automatic
 case:
   construction: null
-  material: null
+  material: Stainless steel
   diameter_mm: 36
   lug_mm: null
   thickness_mm: null
@@ -29,14 +29,37 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
-images: []
+images:
+  - file: /images/sherpa-time/e101-catalogue-time.webp
+    thumb: /images/sherpa-time/e101-catalogue-time-sm.webp
+    width: 560
+    height: 680
+    alt: "Sherpa Time with a white dial and world-city outer bezel, from Enicar's 1960 Sherpa catalogue"
+    view: advert
+    variant: null
+    source_url: https://enicar101.wordpress.com/wp-content/uploads/2019/11/brochure_1960_switzerland.pdf
+    credit: "Enicar 101"
+    credit_url: https://enicar101.com/brochures-ads/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicar101
+    caption: "From Enicar's 1960 Sherpa catalogue (Switzerland)."
+    identified_by: source
+    identified_note: "Captioned Sherpa Time in the catalogue."
 barometer: null
 status: draft
 gaps:
+  - "Reference number: the 1960 catalogue reads 10?/216 BaANXTCS, with the third digit unclear in the scan"
   - Case material and lug width
   - Photographs
   - Price
 citations:
+  - id: e101-cat-1960-ch
+    source: enicar101
+    url: https://enicar101.wordpress.com/wp-content/uploads/2019/11/brochure_1960_switzerland.pdf
+    title: "Enicar Sherpa catalogue, Switzerland, 1960 (scan on Enicar 101)"
+    retrieved: 2026-10-27
+    supports: [movement.winding, case.material, years.from]
   - id: eo-matrix
     source: enicar-org
     url: https://enicar.org/wp-content/uploads/2020/07/Sherpa-tool-watch-matrix-page-left.pdf
