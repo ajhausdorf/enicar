@@ -27,7 +27,23 @@ read_more:
     url: https://enicar101.com/2019/11/03/the-pre-sherpa-mystery/
     source: enicar101
     note: "Why the Garnix is not a pre-Sherpa, compared side by side with a Sherpa Graph."
-images: []
+images:
+  - file: /images/garnix/of-thebosston-1.webp
+    thumb: /images/garnix/of-thebosston-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Garnix chronograph with a black dial, silver registers, no model name and an orange chronograph hand, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://omegaforums.net/posts/1784050/
+    credit: "TheBosston (OmegaForums)"
+    credit_url: https://omegaforums.net/posts/1784050/
+    license: "Forum photo"
+    permission: credited
+    permission_ref: null
+    caption: null
+    identified_by: caption
+    identified_note: "Posted by its owner in their OmegaForums thread on buying an Enicar Garnix 2303. The dial has no model name, which Enicar 101 gives as the Garnix tell."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

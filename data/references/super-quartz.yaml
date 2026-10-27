@@ -1,0 +1,180 @@
+name: Super Quartz
+family: other
+kind: other
+summary: "Enicar's mid-1970s analogue quartz line, mostly on the AR 320, made in several shaped cases including a trapezium, a hexagon and an octagon."
+references: []
+nicknames: []
+years: { from: 1974, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: quartz
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+history:
+  - text: "Europa Star announced the Super Quartz models in 1974. Martijn van der Ven reads them as Enicar's attempt to answer cheaper Japanese quartz watches. The trapezium version is 17 mm between the lugs at 6 and 24 mm at 12."
+    cites: [vv-sq-1974, vv-sq-japan, eo-fearless]
+  - text: "Examples he shows include a hexagon case, an octagon case and an asymmetric gold-coloured case, all dated about 1975."
+    cites: [vv-sq-hexagon, vv-sq-octagon, vv-sq-asym]
+variants: []
+read_more:
+  - title: "Four fearless Enicar designs"
+    url: https://enicar.org/2020/03/16/four-fearless-enicar-designs/
+    source: enicar-org
+    note: "The Super Quartz and the Sherpa 350 compared."
+  - title: "Sherpa Super Dive MkIII: a quartz that never happened?"
+    url: https://enicar.org/2018/02/12/sherpa-super-dive-mkiii-a-quartz-that-never-happened/
+    source: enicar-org
+    note: "A Super Dive dial marked Super Quartz, and the Super Quartz models around it."
+images:
+  - file: /images/super-quartz/v-dc8ts-utzn-1.webp
+    thumb: /images/super-quartz/v-dc8ts-utzn-1-sm.webp
+    width: 1397
+    height: 1397
+    alt: "Gold-coloured Super Quartz in an asymmetric case on its bracelet, on an Enicar stand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DC8ts_-uTZN/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: 1975 Super-Quartz in an asymmetric case."
+  - file: /images/super-quartz/v-cslo2-4r4cj-1.webp
+    thumb: /images/super-quartz/v-cslo2-4r4cj-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Super Quartz with a blue sunburst dial and day-date in its Enicar Quartz box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CslO2_4r4cJ/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names a 1975 Super Quartz with a blue dial."
+  - file: /images/super-quartz/v-ccakza-mssc-1.webp
+    thumb: /images/super-quartz/v-ccakza-mssc-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "New old stock Super Quartz with a silver dial in a hexagon case, with its price tag"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CcakZA_MSSc/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Super Quartz; caption gives the AR320 and the hexagon case."
+  - file: /images/super-quartz/v-cw-zicll8a0-1.webp
+    thumb: /images/super-quartz/v-cw-zicll8a0-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Super Quartz with a blue dial in an octagon case on a mesh bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CW-ZiClL8a0/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Super Quartz; caption calls the case an octagon."
+  - file: /images/super-quartz/v-cpxfawpluqs-1.webp
+    thumb: /images/super-quartz/v-cpxfawpluqs-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Super Quartz with a blue dial and day-date in a faceted case on a tan strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CPXfAwpLUQs/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Super Quartz."
+  - file: /images/super-quartz/v-b9jmpnhnioy-1.webp
+    thumb: /images/super-quartz/v-b9jmpnhnioy-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Super Quartz with a blue dial and day-date in a faceted steel case"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/B9jMPnhnIoY/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Super Quartz; caption gives the AR320."
+status: draft
+gaps:
+  - Reference numbers for each case shape
+  - "Calibre record for the AR 320"
+  - When the line ended
+  - Case sizes and materials
+citations:
+  - id: eo-fearless
+    source: enicar-org
+    url: https://enicar.org/2020/03/16/four-fearless-enicar-designs/
+    title: "Four fearless Enicar designs"
+    retrieved: 2026-10-27
+    supports: [movement.winding]
+  - id: vv-sq-1974
+    source: vandervenus
+    url: https://www.instagram.com/p/COr21dUrcB_/
+    title: "@vandervenus post: the Super Quartz models as announced in Europa Star, 1974"
+    retrieved: 2026-10-27
+    supports: [years.from]
+  - id: vv-sq-japan
+    source: vandervenus
+    url: https://www.instagram.com/p/DWl2Y_IDFI3/
+    title: "@vandervenus post: the 1975 Super-Quartz and Japanese competition"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-sq-hexagon
+    source: vandervenus
+    url: https://www.instagram.com/p/CcakZA_MSSc/
+    title: "@vandervenus post: new old stock Super Quartz, AR320, hexagon case, 1975"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-sq-octagon
+    source: vandervenus
+    url: https://www.instagram.com/p/CW-ZiClL8a0/
+    title: "@vandervenus post: Super Quartz in an octagon case, 1975"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-sq-asym
+    source: vandervenus
+    url: https://www.instagram.com/p/DC8ts_-uTZN/
+    title: "@vandervenus post: asymmetric Super-Quartz, 1975"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-sq-ar320
+    source: vandervenus
+    url: https://www.instagram.com/p/B9jMPnhnIoY/
+    title: "@vandervenus post: mid-1970s Super Quartz with the AR320"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

@@ -1,0 +1,158 @@
+name: Sherpa World Time
+family: sherpa
+kind: other
+summary: "A 1967 world-time prototype on the AR 1145 automatic, with six small dials for six time zones and an inner ring of 64 cities. It was shown at the 1967 Swiss watch fair but never went into production."
+references: []
+nicknames: ["Kaleidoscope"]
+years: { from: 1967, to: null, approximate: true }
+movement:
+  calibres: [AR1145]
+  winding: automatic
+case:
+  construction: "40 x 45 mm case with no reference number on the back"
+  material: Stainless steel
+  diameter_mm: 40
+  lug_mm: 18
+  thickness_mm: 10
+features: [inner-bezel]
+dial: "Six small dials, one per time zone, each with its own hand and arrow disc, around the main hands; 64 city names on the inner ring."
+history:
+  - text: "Enicar presented it at the 1967 Swiss watch fair. The Musée international d'horlogerie in La Chaux-de-Fonds has one in its collection and, according to the museum, it was one of a series of three prototypes. The seller of Martijn van der Ven's example said ten were made."
+    cites: [eo-ws-discovery, vv-ws-mih, vv-ws-mih-show]
+variants: []
+read_more:
+  - title: "The discovery of the Enicar Sherpa World Time 'Kaleidoscope' from 1967"
+    url: https://enicar.org/2017/11/26/eerste-blogbericht/
+    source: enicar-org
+    note: "How Martijn van der Ven found the watch."
+  - title: "Exploring the Enicar Sherpa World Time 'Kaleidoscope'"
+    url: https://enicar.org/2017/11/27/exploring-the-enicar-sherpa-world-time-kaleidoscope/
+    source: enicar-org
+    note: "The watch taken apart by a watchmaker, with the case, dial and movement in detail."
+images:
+  - file: /images/sherpa-world-time/v-bmqhev6hnad-1.webp
+    thumb: /images/sherpa-world-time/v-bmqhev6hnad-1-sm.webp
+    width: 1080
+    height: 1349
+    alt: "Sherpa World Time with a grey dial, six small time-zone dials and a ring of city names, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/BmQHEv6HNaD/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption tags it #kaleidoscope; the six small dials and the city ring match enicar.org's description of the watch."
+  - file: /images/sherpa-world-time/v-bioc2efhsil-1.webp
+    thumb: /images/sherpa-world-time/v-bioc2efhsil-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa World Time on its steel bracelet in an Enicar presentation box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Bioc2EFHSIL/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names the 'Kaleidoscope' worldtimer."
+  - file: /images/sherpa-world-time/v-bgtfrrraz8k-1.webp
+    thumb: /images/sherpa-world-time/v-bgtfrrraz8k-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa World Time on a brown leather strap, showing its wide polished case"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/BgTFRrrAz8K/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption tags it #Kaleidoscope and #Worldtime."
+  - file: /images/sherpa-world-time/v-cfb-1-qn-qe-1.webp
+    thumb: /images/sherpa-world-time/v-cfb-1-qn-qe-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa World Time on a dark leather strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CFB-1-qn_qE/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption calls it his Enicar World Time and tags it #kaleidoscope."
+  - file: /images/sherpa-world-time/v-brcn2utnxtq-1.webp
+    thumb: /images/sherpa-world-time/v-brcn2utnxtq-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Sherpa World Time dial out of its case, showing the six small dials and the date"
+    view: other
+    variant: null
+    source_url: https://www.instagram.com/p/BrCn2uTnXtQ/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the Kaleidoscope, shown without its case."
+  - file: /images/sherpa-world-time/eo-kaleidoscope-ar1145.webp
+    thumb: /images/sherpa-world-time/eo-kaleidoscope-ar1145-sm.webp
+    width: 1600
+    height: 1600
+    alt: "The AR 1145 automatic movement in the Sherpa World Time case, with the caseback off"
+    view: movement
+    variant: null
+    source_url: https://enicar.org/2017/11/27/exploring-the-enicar-sherpa-world-time-kaleidoscope/
+    credit: "enicar.org"
+    credit_url: https://enicar.org/2017/11/27/exploring-the-enicar-sherpa-world-time-kaleidoscope/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: source
+    identified_note: "From enicar.org's article on taking this watch apart."
+status: draft
+gaps:
+  - "Reference number: the caseback carries none"
+  - "How many were made: the museum says three, the seller of one said ten"
+citations:
+  - id: eo-ws-explore
+    source: enicar-org
+    url: https://enicar.org/2017/11/27/exploring-the-enicar-sherpa-world-time-kaleidoscope/
+    title: "Exploring the Enicar Sherpa World Time 'Kaleidoscope'"
+    retrieved: 2026-10-27
+    supports: [nicknames, movement.calibres, movement.winding, case.construction, case.material, case.diameter_mm, case.lug_mm, case.thickness_mm, features, dial]
+  - id: eo-ws-discovery
+    source: enicar-org
+    url: https://enicar.org/2017/11/26/eerste-blogbericht/
+    title: "The discovery of the Enicar Sherpa World Time 'Kaleidoscope' from 1967"
+    retrieved: 2026-10-27
+    supports: [years.from]
+  - id: vv-ws-mih
+    source: vandervenus
+    url: https://www.instagram.com/p/BvZU3E4nRJD/
+    title: "@vandervenus post: the MIH acquires an Enicar World Timer, a prototype in a series of three"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-ws-mih-show
+    source: vandervenus
+    url: https://www.instagram.com/p/B13d6e5IfjU/
+    title: "@vandervenus post: the 1967 Sherpa World Time on show at the MIH"
+    retrieved: 2026-10-27
+    supports: [nicknames]
+last_reviewed: 2026-10-27

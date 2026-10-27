@@ -1,0 +1,69 @@
+name: Sherpa D
+family: sherpa
+kind: other
+summary: "A mid-1970s Sherpa in a 38 mm case, on the AR 161."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: [AR161]
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: 38
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+history:
+  - text: "Martijn van der Ven dates a new-old-stock example to 1975. enicar.org also shows one with Star Jewels on the dial."
+    cites: [vv-sd-1975, eo-star-jewels]
+variants: []
+read_more:
+  - title: "Ultrasonic and Star Jewels: model line or not?"
+    url: https://enicar.org/2020/01/21/ultrasonic-and-star-jewels-model-line-or-not/
+    source: enicar-org
+    note: "Includes a Sherpa D with Star Jewels on the dial."
+images:
+  - file: /images/sherpa-d/v-ddrxtvauryx-1.webp
+    thumb: /images/sherpa-d/v-ddrxtvauryx-1-sm.webp
+    width: 1316
+    height: 1316
+    alt: "Sherpa D with a green chequered gradient dial, date and red seconds hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DDRxTVauRYX/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names a 1975 Sherpa D."
+status: draft
+gaps:
+  - Reference numbers
+  - Production years
+  - Winding and case material
+citations:
+  - id: vv-sd-ar161
+    source: vandervenus
+    url: https://www.instagram.com/p/DB6cD1cIiCN/
+    title: "@vandervenus post: new old stock Sherpa D, AR161, 38 mm"
+    retrieved: 2026-10-27
+    supports: [movement.calibres, case.diameter_mm]
+  - id: vv-sd-1975
+    source: vandervenus
+    url: https://www.instagram.com/p/DDRxTVauRYX/
+    title: "@vandervenus post: Sherpa D from 1975"
+    retrieved: 2026-10-27
+    supports: []
+  - id: eo-star-jewels
+    source: enicar-org
+    url: https://enicar.org/2020/01/21/ultrasonic-and-star-jewels-model-line-or-not/
+    title: "Ultrasonic and Star Jewels: model line or not?"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

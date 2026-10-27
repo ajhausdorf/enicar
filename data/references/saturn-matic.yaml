@@ -1,0 +1,74 @@
+name: Saturn-Matic
+family: other
+kind: other
+summary: "A day-date watch on the AR 1147. One version has an egg-shaped case."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: "Made in more than one shape; one is egg-shaped"
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Day and date."
+variants: []
+read_more: []
+images:
+  - file: /images/saturn-matic/v-b2bwk-sikyg-1.webp
+    thumb: /images/saturn-matic/v-b2bwk-sikyg-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Saturn-Matic with a blue dial, blue seconds hand and day-date in a cushion case on a steel bracelet"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/B2BWK_sIkyg/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Saturn-Matic."
+  - file: /images/saturn-matic/v-b-4gfzdn4on-1.webp
+    thumb: /images/saturn-matic/v-b-4gfzdn4on-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Saturn-Matic with a blue dial in an egg cup"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/B-4GFzDn4oN/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Saturn-Matic."
+status: draft
+gaps:
+  - "Calibre record for the AR 1147"
+  - Winding
+  - Reference numbers
+  - Production years
+  - Case size and material
+citations:
+  - id: vv-sm-ar1147
+    source: vandervenus
+    url: https://www.instagram.com/p/B2BWK_sIkyg/
+    title: "@vandervenus post: blue-dial Saturn-Matic with the AR1147 and day-date"
+    retrieved: 2026-10-27
+    supports: [dial]
+  - id: vv-sm-egg
+    source: vandervenus
+    url: https://www.instagram.com/p/B-4GFzDn4oN/
+    title: "@vandervenus post: the egg-shaped Saturn-Matic"
+    retrieved: 2026-10-27
+    supports: [case.construction]
+last_reviewed: 2026-10-27

@@ -1,0 +1,88 @@
+name: "Ultrasonic, ref. 1000/24"
+family: ultrasonic
+kind: dress
+summary: "A plain Ultrasonic dress watch, known here from one dealer listing."
+references:
+  - number: 1000/24 a S
+    cites: [wv-ultrasonic-1000]
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: null
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+variants: []
+read_more:
+  - title: "Ultrasonic and Star Jewels: model line or not?"
+    url: https://enicar.org/2020/01/21/ultrasonic-and-star-jewels-model-line-or-not/
+    source: enicar-org
+    note: "What the Ultrasonic name on a dial does and doesn't tell you."
+images:
+  - file: /images/ultrasonic-1000-24/ew-enicar-ultrasonic-reference-1000-24-a-s-1.webp
+    thumb: /images/ultrasonic-1000-24/ew-enicar-ultrasonic-reference-1000-24-a-s-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Ultrasonic 1000/24 with a white dial, baton markers and centre seconds on a yellow strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-ultrasonic-reference-1000/24-a-s
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-ultrasonic-reference-1000/24-a-s
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: source
+    identified_note: "The Wind Vintage listing shows this watch as ref. 1000/24 a S."
+  - file: /images/ultrasonic-1000-24/ew-enicar-ultrasonic-reference-1000-24-a-s-2.webp
+    thumb: /images/ultrasonic-1000-24/ew-enicar-ultrasonic-reference-1000-24-a-s-2-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Ultrasonic 1000/24 on a yellow strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-ultrasonic-reference-1000/24-a-s
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-ultrasonic-reference-1000/24-a-s
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: source
+    identified_note: "The Wind Vintage listing shows this watch as ref. 1000/24 a S."
+  - file: /images/ultrasonic-1000-24/ew-enicar-ultrasonic-reference-1000-24-a-s-4.webp
+    thumb: /images/ultrasonic-1000-24/ew-enicar-ultrasonic-reference-1000-24-a-s-4-sm.webp
+    width: 1600
+    height: 1068
+    alt: "Caseback of the Ultrasonic 1000/24"
+    view: caseback
+    variant: null
+    source_url: https://www.windvintage.com/enicar-ultrasonic-reference-1000/24-a-s
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-ultrasonic-reference-1000/24-a-s
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: source
+    identified_note: "The Wind Vintage listing shows this watch as ref. 1000/24 a S."
+status: draft
+gaps:
+  - Production years
+  - Calibre and winding
+  - Case size and material
+citations:
+  - id: wv-ultrasonic-1000
+    source: wind-vintage
+    url: https://www.windvintage.com/enicar-ultrasonic-reference-1000/24-a-s
+    title: "Enicar Ultrasonic Reference 1000/24 a S (Wind Vintage listing)"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

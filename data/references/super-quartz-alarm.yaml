@@ -1,0 +1,92 @@
+name: Super Quartz Alarm
+family: other
+kind: alarm
+summary: "A late-1970s Super Quartz with an alarm, showing the time by hands and in an LCD window below them, on the ESA 900.911."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: quartz
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Hands and an LCD window together; signed Alarm and Super Quartz."
+history:
+  - text: "Martijn van der Ven dates his to 1979 and the movement to 1978. Other brands used the same ESA movement, and he notes the LCD often no longer works."
+    cites: [vv-sqa-1979, vv-sqa-esa]
+variants: []
+read_more: []
+images:
+  - file: /images/super-quartz-alarm/v-b-enog4kd56-1.webp
+    thumb: /images/super-quartz-alarm/v-b-enog4kd56-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Super Quartz Alarm with a black dial and an LCD window below the hands, in front of its box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/B-eNOg4Kd56/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Alarm and Super Quartz."
+  - file: /images/super-quartz-alarm/v-cplviuxljfe-1.webp
+    thumb: /images/super-quartz-alarm/v-cplviuxljfe-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Super Quartz Alarm with a black dial and LCD window on a steel bracelet, held in the hand"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CPLviUxLjFe/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Alarm and Super Quartz."
+  - file: /images/super-quartz-alarm/v-ckf1pttrqoz-1.webp
+    thumb: /images/super-quartz-alarm/v-ckf1pttrqoz-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Super Quartz Alarm on its steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Ckf1PTtrQOZ/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Alarm and Super Quartz; caption names the model."
+status: draft
+gaps:
+  - Reference numbers
+  - "Calibre record for the ESA 900.911"
+  - Production years
+  - Case size and material
+citations:
+  - id: vv-sqa-1979
+    source: vandervenus
+    url: https://www.instagram.com/p/B-eNOg4Kd56/
+    title: "@vandervenus post: Super Quartz Alarm from 1979, ESA 900.911, analogue and digital display"
+    retrieved: 2026-10-27
+    supports: [movement.winding, dial]
+  - id: vv-sqa-esa
+    source: vandervenus
+    url: https://www.instagram.com/p/Ckf1PTtrQOZ/
+    title: "@vandervenus post: Super Quartz Alarm with the ESA 900.911 from 1978"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

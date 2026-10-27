@@ -1,0 +1,59 @@
+name: "Sherpa 100 square, ref. 177-02-01"
+family: sherpa
+kind: dress
+summary: "A 30 mm square automatic with day and date from 1968, engraved Sherpa 100 on the back."
+references:
+  - number: 177-02-01
+    note: "Catalogue reference."
+    cites: [vv-s100-ref]
+nicknames: []
+years: { from: 1968, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: automatic
+case:
+  construction: "Square case, Sherpa 100 engraved on the caseback"
+  material: null
+  diameter_mm: 30
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Day and date."
+variants: []
+read_more: []
+images:
+  - file: /images/sherpa-100-square/v-ch27pdrr8zt-1.webp
+    thumb: /images/sherpa-100-square/v-ch27pdrr8zt-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Square Enicar automatic with a silver dial and day-date on a mesh bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CH27pDrr8zt/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names his square Sherpa 100."
+status: draft
+gaps:
+  - Calibre
+  - When production ended
+  - Case material
+citations:
+  - id: vv-s100-ref
+    source: vandervenus
+    url: https://www.instagram.com/p/DZMopr9DsqP/
+    title: "@vandervenus post: square 1968 automatic, ref. 177-02-01, Sherpa 100 caseback"
+    retrieved: 2026-10-27
+    supports: [years.from, movement.winding, case.construction, case.diameter_mm, dial]
+  - id: vv-s100-wrist
+    source: vandervenus
+    url: https://www.instagram.com/p/CH27pDrr8zt/
+    title: "@vandervenus post: his square Sherpa 100"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

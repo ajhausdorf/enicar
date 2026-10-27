@@ -1,0 +1,109 @@
+name: Quartz-Computer
+family: other
+kind: other
+summary: "A 1970s LCD digital watch, made in a gold-plated and a steel case. Its movement is shared with an Orient LCD watch."
+references:
+  - number: 300-01-02
+    note: "Gold-plated case, 22 mm lugs."
+    cites: [vv-qc-refs]
+  - number: 350-01-01
+    note: "Stainless steel case, 18 mm lugs."
+    cites: [vv-qc-refs]
+nicknames: []
+years: { from: 1976, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: quartz
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: null
+history:
+  - text: "Martijn van der Ven shows one from 1976 next to an Orient with the same movement, and takes it as a sign that Enicar turned to Japanese makers for more than design ideas during the quartz crisis. In other posts he dates his own to about 1979 and to the late 1970s."
+    cites: [vv-qc-orient, vv-qc-1979, vv-qc-late70s]
+variants: []
+read_more: []
+images:
+  - file: /images/quartz-computer/v-bgourabgapz-1.webp
+    thumb: /images/quartz-computer/v-bgourabgapz-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Quartz-Computer LCD watch in a faceted steel case, on a keyboard"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/BgOUrAbgaPz/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Quartz-Computer."
+  - file: /images/quartz-computer/v-czgqpikrazu-1.webp
+    thumb: /images/quartz-computer/v-czgqpikrazu-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Quartz-Computer LCD watch on a grey suede strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CzGQPIKraZu/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names the Quartz-Computer."
+  - file: /images/quartz-computer/v-bg-7poafdmx-1.webp
+    thumb: /images/quartz-computer/v-bg-7poafdmx-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Quartz-Computer LCD watch on its steel bracelet, in black and white"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Bg-7POAFDMx/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names the Quartz-Computer."
+status: draft
+gaps:
+  - Calibre name
+  - When production ended
+  - Case sizes
+citations:
+  - id: vv-qc-refs
+    source: vandervenus
+    url: https://www.instagram.com/p/DUiiYMFDPfm/
+    title: "@vandervenus post: two mid-1970s Quartz-Computer models, case references and lug sizes"
+    retrieved: 2026-10-27
+    supports: [movement.winding]
+  - id: vv-qc-orient
+    source: vandervenus
+    url: https://www.instagram.com/p/C3Aj8b1Nq2H/
+    title: "@vandervenus post: the Quartz-Computer from 1976 and the Orient sharing its movement"
+    retrieved: 2026-10-27
+    supports: [years.from]
+  - id: vv-qc-1979
+    source: vandervenus
+    url: https://www.instagram.com/p/BgOUrAbgaPz/
+    title: "@vandervenus post: Quartz-Computer from around 1979"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-qc-late70s
+    source: vandervenus
+    url: https://www.instagram.com/p/CzGQPIKraZu/
+    title: "@vandervenus post: Quartz-Computer from the late 1970s"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27

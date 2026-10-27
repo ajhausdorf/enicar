@@ -1,0 +1,169 @@
+name: Supertest
+family: other
+kind: dress
+summary: "Enicar's own tested watches of the late 1950s and early 1960s. Each watch was timed in three positions and had to stay within five seconds a day to have Supertest printed on the dial."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: [AR1124, AR1126]
+  winding: automatic
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Signed Supertest."
+history:
+  - text: "The test was Enicar's own, run over three days, and each watch came with a signed certificate. Martijn van der Ven's examples range from 1957 to the early 1960s."
+    cites: [vv-st-test, vv-st-cert, vv-st-1957, vv-st-1960s]
+variants: []
+read_more: []
+images:
+  - file: /images/supertest/v-cqlkho-rlhm-1.webp
+    thumb: /images/supertest/v-cqlkho-rlhm-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Supertest with a silver dial and arrow markers on a white perforated strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CQLKHO-rlhM/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Supertest; caption dates it 1957."
+  - file: /images/supertest/v-c9e6ngdou6-1.webp
+    thumb: /images/supertest/v-c9e6ngdou6-1-sm.webp
+    width: 1037
+    height: 1037
+    alt: "Gold-plated Supertest with a black dial and date on a brown strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/C9E6NgDou6_/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption names a Supertest from about 1958."
+  - file: /images/supertest/v-bhhgyttlic0-1.webp
+    thumb: /images/supertest/v-bhhgyttlic0-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Gold-plated Supertest with a silver dial and date on an expanding bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/BhHGYtTlIC0/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Supertest."
+  - file: /images/supertest/v-ddkx5whu67u-1.webp
+    thumb: /images/supertest/v-ddkx5whu67u-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Supertest with a gold dial and radial markers on a tan strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DDKX5whu67u/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Supertest 300 with the AR1124."
+  - file: /images/supertest/v-cumhizol7ri-1.webp
+    thumb: /images/supertest/v-cumhizol7ri-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Supertest with a gold-tone sunburst dial and gold hands, in front of an Enicar card"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CUmhiZOL7RI/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Tagged #supertest by the photographer."
+  - file: /images/supertest/v-bm3qnhflqu6-1.webp
+    thumb: /images/supertest/v-bm3qnhflqu6-1-sm.webp
+    width: 1080
+    height: 1080
+    alt: "Supertest automatic movement with a signed Supertest wheel, in a gold-plated case"
+    view: movement
+    variant: null
+    source_url: https://www.instagram.com/p/BM3QnHflQu6/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the Supertest-signed wheel and EPSA case."
+status: draft
+gaps:
+  - Reference numbers
+  - Production years
+  - Case sizes and materials
+citations:
+  - id: vv-st-rate
+    source: vandervenus
+    url: https://www.instagram.com/p/CDZegj3HuOq/
+    title: "@vandervenus post: how Supertest watches were rated"
+    retrieved: 2026-10-27
+    supports: [dial]
+  - id: vv-st-test
+    source: vandervenus
+    url: https://www.instagram.com/p/BM3QnHflQu6/
+    title: "@vandervenus post: the three-day Supertest procedure"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-st-cert
+    source: vandervenus
+    url: https://www.instagram.com/p/B0Ioq74H-9Q/
+    title: "@vandervenus post: the Supertest certificate"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-st-ar1124
+    source: vandervenus
+    url: https://www.instagram.com/p/BxmQsndiP3E/
+    title: "@vandervenus post: Supertest with the AR1124 automatic"
+    retrieved: 2026-10-27
+    supports: [movement.calibres, movement.winding]
+  - id: vv-st-ar1126
+    source: vandervenus
+    url: https://www.instagram.com/p/BtMILTOnS-W/
+    title: "@vandervenus post: the AR1126 as the Supertest movement"
+    retrieved: 2026-10-27
+    supports: [movement.calibres]
+  - id: vv-st-1957
+    source: vandervenus
+    url: https://www.instagram.com/p/CQLKHO-rlhM/
+    title: "@vandervenus post: a 1957 Supertest"
+    retrieved: 2026-10-27
+    supports: []
+  - id: vv-st-1960s
+    source: vandervenus
+    url: https://www.instagram.com/p/DCbnP3IOG9m/
+    title: "@vandervenus post: a Supertest from the early 1960s"
+    retrieved: 2026-10-27
+    supports: []
+last_reviewed: 2026-10-27
