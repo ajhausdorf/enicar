@@ -182,13 +182,13 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
   .families .eyebrow { margin-bottom: 8px; }
   .fam { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 44px; padding: 0 10px; border: 0; border-radius: 6px; background: transparent; color: var(--ink); font: inherit; font-size: 14px; text-align: left; cursor: pointer; }
   .fam .mono { font-size: 12px; color: var(--muted); }
-  .fam[aria-pressed='true'] { background: var(--plate); color: var(--accent); font-weight: 600; }
+  .fam[aria-pressed='true'] { background: var(--paper); color: var(--ink); font-weight: 700; border-radius: 0; box-shadow: inset 3px 0 0 var(--signal); }
   .fam-group { display: flex; flex-direction: column; gap: 2px; }
   .models { display: flex; flex-direction: column; gap: 2px; margin: 0 0 6px 12px; padding-left: 8px; border-left: 1px solid var(--line); }
   .models[hidden] { display: none; }
   .model { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 40px; padding: 0 10px; border: 0; border-radius: 6px; background: transparent; color: var(--ink-2); font: inherit; font-size: 13px; text-align: left; cursor: pointer; }
   .model .mono { font-size: 12px; color: var(--muted); }
-  .model[aria-pressed='true'] { background: var(--plate); color: var(--accent); font-weight: 600; }
+  .model[aria-pressed='true'] { background: var(--paper); color: var(--ink); font-weight: 700; border-radius: 0; box-shadow: inset 3px 0 0 var(--signal); }
   .about { margin-top: 20px; padding: 16px; display: flex; flex-direction: column; gap: 8px; font-size: 13px; color: var(--ink-2); }
   .about strong { color: var(--ink); }
   .results { flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
