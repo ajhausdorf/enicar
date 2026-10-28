@@ -5,7 +5,7 @@ import { SITE_NAME, CONTRIBUTE_URL, USD_RATES } from '../lib/site';
 interface Props {
   title?: string;
   description?: string;
-  section?: 'catalog' | 'calibres' | 'serial' | 'coverage' | 'sources' | 'search';
+  section?: 'catalog' | 'calibres' | 'serial' | 'sources' | 'search';
   // Only watch pages go into the search index.
   searchable?: boolean;
 }
@@ -17,7 +17,6 @@ const nav = [
   { key: 'catalog', label: 'Catalog', href: '/' },
   { key: 'calibres', label: 'Calibres', href: '/calibres/' },
   { key: 'serial', label: 'Serials', href: '/serial/' },
-  { key: 'coverage', label: 'Coverage', href: '/coverage/' },
   { key: 'sources', label: 'Sources', href: '/sources/' }
 ];
 ---
@@ -101,7 +100,6 @@ const nav = [
         <p>{SITE_NAME} is an independent, non-commercial project. The research behind each record comes from the sources credited on its page. Enicar is a trademark of its current owner, and this site isn't affiliated with them.</p>
         <nav aria-label="Footer">
           <a href="/sources/">Sources and credits</a>
-          <a href="/coverage/">Catalogue coverage</a>
           <a href={CONTRIBUTE_URL}>Request a correction</a>
         </nav>
       </div>
