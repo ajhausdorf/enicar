@@ -1,0 +1,97 @@
+---
+// Barometer figures for one price-guide entry across every edition: one
+// cluster of three range bars (one per condition) per edition, evenly spaced
+// (two editions came out two months apart in 2018, so dates would overlap).
+// The figures are also in a table underneath, as published.
+import { historyOf, type Band } from '../lib/barometer';
+
+interface Props { entry: { label: string | null; bands: Band[] }; edition: string; currency: string }
+const { entry, edition, currency } = Astro.props;
+const points = historyOf(entry, edition);
+
+const CONDS = ['Poor to fair', 'Average to good', 'Very good to mint'];
+// One hue, light to dark as condition improves.
+const COLOR: Record<string, string> = { 'Poor to fair': '#86A6D9', 'Average to good': '#4F7BC2', 'Very good to mint': '#1E4A8F' };
+const W = 520, H = 220, L = 44, R = 12, T = 12, B = 40;
+const slot = (W - L - R) / Math.max(points.length, 1);
+const x = (i: number) => L + slot * (i + 0.5);
+const values = points.flatMap((p) => p.bands.flatMap((b) => [b.low, b.high])).filter((v): v is number => v != null);
+const top = Math.max(1000, ...values);
+const stepK = top > 16000 ? 5000 : top > 8000 ? 2500 : 1000;
+const ymax = Math.ceil(top / stepK) * stepK;
+const y = (v: number) => T + (1 - v / ymax) * (H - T - B);
+const ticks = Array.from({ length: ymax / stepK + 1 }, (_, i) => i * stepK);
+const sym = currency === 'EUR' ? '€' : currency + ' ';
+const k = (v: number) => `${sym}${v >= 1000 ? `${+(v / 1000).toFixed(1)}k` : v}`;
+const full = (v: number | null) => (v == null ? 'unknown' : `${sym}${v.toLocaleString('en-US')}`);
+const bandText = (b: Band | undefined) => !b ? '—' : b.note && b.low == null && b.high == null ? 'No figure' : b.high == null ? `From ${full(b.low)}` : b.low == null ? `Unknown to ${full(b.high)}` : `${full(b.low)} to ${full(b.high)}`;
+const year = (s: string) => s.slice(0, 4);
+---
+{points.length > 1 && (
+  <figure class="ph">
+    <figcaption class="ph__cap">Barometer over time{entry.label && <>: {entry.label}</>}</figcaption>
+    <ul class="ph__legend" aria-hidden="true">
+      {[...CONDS].reverse().map((c) => <li><span style={`background:${COLOR[c]}`}></span>{c}</li>)}
+    </ul>
+    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Barometer price ranges by edition${entry.label ? ` for ${entry.label}` : ''}; the figures are in the table below.`}>
+      {ticks.map((v) => (
+        <g>
+          <line x1={L} x2={W - R} y1={y(v)} y2={y(v)} stroke="var(--line-soft)" />
+          <text x={L - 6} y={y(v) + 4} text-anchor="end" class="ph__axis">{k(v)}</text>
+        </g>
+      ))}
+      {points.map((p, pi) => (
+        <g>
+          <text x={x(pi)} y={H - B + 16} text-anchor="middle" class="ph__axis">#{p.n}</text>
+          <text x={x(pi)} y={H - B + 30} text-anchor="middle" class="ph__axis">{year(p.date)}</text>
+          {CONDS.map((c, i) => {
+            const b = p.bands.find((z) => z.condition === c);
+            if (!b || (b.low == null && b.high == null)) return null;
+            const cx = x(pi) + (i - 1) * 9;
+            const tip = `${p.label}, Barometer #${p.n} (${year(p.date)}). ${c}: ${bandText(b)}`;
+            // A band with only one end published gets a dot at that end.
+            if (b.low == null || b.high == null) {
+              const v = (b.high ?? b.low)!;
+              return <circle cx={cx} cy={y(v)} r="4" fill={COLOR[c]} stroke="var(--paper)" stroke-width="2"><title>{tip}</title></circle>;
+            }
+            const y1 = y(b.high), h = Math.max(4, y(b.low) - y1);
+            return <rect x={cx - 3} y={y1} width="6" height={h} rx="3" fill={COLOR[c]}><title>{tip}</title></rect>;
+          })}
+        </g>
+      ))}
+    </svg>
+    <details class="ph__table">
+      <summary>Show the figures</summary>
+      <div class="ph__wrap">
+        <table>
+          <thead><tr><th scope="col">Edition</th>{[...CONDS].reverse().map((c) => <th scope="col">{c}</th>)}</tr></thead>
+          <tbody>
+            {[...points].reverse().map((p) => (
+              <tr>
+                <th scope="row"><a href={p.url}>#{p.n}, {year(p.date)}</a>{p.label !== entry.label && <span class="ph__as">as “{p.label}”</span>}</th>
+                {[...CONDS].reverse().map((c) => <td class="mono">{bandText(p.bands.find((z) => z.condition === c))}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </figure>
+)}
+
+<style>
+  .ph { margin: 8px 0 0; display: flex; flex-direction: column; gap: 6px; }
+  .ph__cap { font-size: 13px; font-weight: 700; }
+  .ph__legend { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--muted); }
+  .ph__legend li { display: inline-flex; align-items: center; gap: 6px; }
+  .ph__legend span { width: 10px; height: 10px; border-radius: 3px; }
+  .ph svg { width: 100%; height: auto; overflow: visible; }
+  .ph__axis { font-family: var(--mono); font-size: 11px; fill: var(--muted); }
+  .ph__table summary { font-size: 13px; cursor: pointer; color: var(--accent); min-height: 32px; display: flex; align-items: center; }
+  .ph__wrap { overflow-x: auto; }
+  .ph__table table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .ph__table th, .ph__table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  .ph__table tbody th { white-space: nowrap; }
+  .ph__table thead th { font-weight: 700; color: var(--muted); }
+  .ph__as { display: block; font-weight: 400; font-size: 11px; color: var(--muted); white-space: normal; min-width: 110px; }
+</style>
