@@ -50,7 +50,7 @@ export function checkSite() {
   const cards = (index.match(/class="watch-card"/g) ?? []).length;
   if (cards !== leaves.length) r.error('/', `catalog shows ${cards} cards but there are ${leaves.length} watch pages`);
 
-  for (const page of ['sources', 'coverage', 'calibres', 'search']) {
+  for (const page of ['sources', 'serial', 'calibres', 'search']) {
     if (!existsSync(join(DIST, page, 'index.html'))) r.error(`/${page}/`, 'page missing');
   }
   if (!existsSync(join(DIST, 'pagefind', 'pagefind-ui.js'))) r.error('search', 'Pagefind index missing; the build must run pagefind');
