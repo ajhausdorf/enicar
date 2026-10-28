@@ -4,6 +4,8 @@
 // (two editions came out two months apart in 2018, so dates would overlap).
 // The figures are also in a table underneath, as published.
 import { historyOf, type Band } from '../lib/barometer';
+import Money from './Money.astro';
+import { USD_RATES } from '../lib/site';
 
 interface Props { entry: { label: string | null; bands: Band[] }; edition: string; currency: string }
 const { entry, edition, currency } = Astro.props;
@@ -25,10 +27,12 @@ const sym = currency === 'EUR' ? '€' : currency + ' ';
 const k = (v: number) => `${sym}${v >= 1000 ? `${+(v / 1000).toFixed(1)}k` : v}`;
 const full = (v: number | null) => (v == null ? 'unknown' : `${sym}${v.toLocaleString('en-US')}`);
 const bandText = (b: Band | undefined) => !b ? '—' : b.note && b.low == null && b.high == null ? 'No figure' : b.high == null ? `From ${full(b.low)}` : b.low == null ? `Unknown to ${full(b.high)}` : `${full(b.low)} to ${full(b.high)}`;
+// Table cells use Money, so the header's US dollar switch converts them too.
+const rate = USD_RATES.rates[currency];
 const year = (s: string) => s.slice(0, 4);
 ---
 {points.length > 1 && (
-  <figure class="ph">
+  <figure class="ph" data-ph data-rate={rate}>
     <figcaption class="ph__cap">Barometer over time{entry.label && <>: {entry.label}</>}</figcaption>
     <ul class="ph__legend" aria-hidden="true">
       {[...CONDS].reverse().map((c) => <li><span style={`background:${COLOR[c]}`}></span>{c}</li>)}
@@ -37,7 +41,7 @@ const year = (s: string) => s.slice(0, 4);
       {ticks.map((v) => (
         <g>
           <line x1={L} x2={W - R} y1={y(v)} y2={y(v)} stroke="var(--line-soft)" />
-          <text x={L - 6} y={y(v) + 4} text-anchor="end" class="ph__axis">{k(v)}</text>
+          <text x={L - 6} y={y(v) + 4} text-anchor="end" class="ph__axis" data-v={v} data-label={k(v)}>{k(v)}</text>
         </g>
       ))}
       {points.map((p, pi) => (
@@ -69,7 +73,16 @@ const year = (s: string) => s.slice(0, 4);
             {[...points].reverse().map((p) => (
               <tr>
                 <th scope="row"><a href={p.url}>#{p.n}, {year(p.date)}</a>{p.label !== entry.label && <span class="ph__as">as “{p.label}”</span>}</th>
-                {[...CONDS].reverse().map((c) => <td class="mono">{bandText(p.bands.find((z) => z.condition === c))}</td>)}
+                {[...CONDS].reverse().map((c) => {
+                  const b = p.bands.find((z) => z.condition === c);
+                  return (
+                    <td class="mono">
+                      {!b || (b.low == null && b.high == null) ? (b ? 'No figure' : '—')
+                        : b.high == null ? <>From <Money currency={currency} value={b.low!} /></>
+                        : <Money currency={currency} low={b.low} high={b.high} />}
+                    </td>
+                  );
+                })}
               </tr>
             ))}
           </tbody>
@@ -78,6 +91,26 @@ const year = (s: string) => s.slice(0, 4);
     </details>
   </figure>
 )}
+
+<script>
+  // The axis labels follow the header's currency switch: the bars stay where
+  // they are, and each gridline is relabelled with its value in US dollars.
+  const KEY = 'ew-currency';
+  const relabel = () => {
+    let usd = false;
+    try { usd = localStorage.getItem(KEY) === 'USD'; } catch {}
+    for (const fig of document.querySelectorAll<HTMLElement>('[data-ph]')) {
+      const rate = Number(fig.dataset.rate);
+      for (const tx of fig.querySelectorAll<SVGTextElement>('text[data-v]')) {
+        const v = Number(tx.dataset.v) * rate;
+        tx.textContent = usd && rate ? `$${v >= 1000 ? `${+(v / 1000).toFixed(1)}k` : Math.round(v)}` : tx.dataset.label!;
+      }
+    }
+  };
+  relabel();
+  // The header's own handler stores the choice first, so read it after it runs.
+  document.getElementById('cur-toggle')?.addEventListener('click', () => setTimeout(relabel));
+</script>
 
 <style>
   .ph { margin: 8px 0 0; display: flex; flex-direction: column; gap: 6px; }
