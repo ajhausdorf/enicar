@@ -202,8 +202,12 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
     .families .eyebrow, .about { flex-basis: 100%; }
     .fam { flex: 0 0 auto; gap: 8px; }
     .fam-group { display: contents; }
-    .models { flex-basis: 100%; flex-direction: row; flex-wrap: wrap; margin: 0; border-left: 0; padding-left: 0; }
-    .model { flex: 0 0 auto; gap: 8px; }
+    /* On a phone the models sit in their own panel as pills, so they don't
+       run together with the families around them. */
+    .models { flex-basis: 100%; flex-direction: row; flex-wrap: wrap; gap: 8px; margin: 4px 0 8px; padding: 12px; border: 1px solid var(--line); border-left: 3px solid var(--signal); border-radius: 0 8px 8px 0; background: var(--paper); }
+    .model { flex: 0 0 auto; gap: 6px; min-height: 40px; padding: 0 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--ground); color: var(--ink); font-size: 14px; }
+    .model[aria-pressed='true'] { background: var(--ink); border-color: var(--ink); color: var(--paper); box-shadow: none; border-radius: 999px; }
+    .model[aria-pressed='true'] .mono { color: var(--night-muted); }
     .ctl--end { margin-left: 0; }
   }
 </style>
