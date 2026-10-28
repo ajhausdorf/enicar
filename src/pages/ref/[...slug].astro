@@ -256,6 +256,37 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
       </section>
     )}
 
+    {v && generations.length > 1 && (
+      <section class="ident" aria-labelledby="ident-h" data-pagefind-ignore>
+        <div class="gens__head">
+          <h2 id="ident-h">Which {d.name} is it?</h2>
+          <span class="small muted">One photo of each generation, with what sets it apart.</span>
+        </div>
+        <ul class="ident__list">
+          {generations.map((g) => {
+            // Prefer a photo of this generation itself, then a dial shot, over a shared or advert image.
+            const own = g.images.filter((i: any) => i.variant === g.variant?.name);
+            const pick = [...own, ...g.images].find((i: any) => i.view === 'dial') ?? own[0] ?? g.images[0];
+            const here = g.slug === leaf.slug;
+            return (
+              <li class={here ? 'ident__card current' : 'ident__card'}>
+                <div class="ident__img">
+                  {pick ? <img src={pick.thumb} alt={pick.alt} width={pick.width} height={pick.height} loading="lazy"> : <Dial kind={d.kind} size={88} />}
+                </div>
+                <div class="ident__body">
+                  <span class="ident__name">
+                    {here ? <>{g.variant?.name} <span class="ident__here">This page</span></> : <a href={g.path}>{g.variant?.name}</a>}
+                  </span>
+                  {formatYears(g.years) && <span class="small muted">{formatYears(g.years)}</span>}
+                  <p class="ident__tell">{g.variant?.tell}</p>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
+
     {v && usedRows.length > 0 && (
       <section class="gens" aria-labelledby="gen-h" data-pagefind-ignore>
         <div class="gens__head"><h2 id="gen-h">{d.name} generations compared</h2></div>
@@ -502,6 +533,19 @@ const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
   .read-more li { display: flex; flex-direction: column; gap: 6px; padding: 20px; }
   .rm-title { font-size: 18px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; color: var(--accent); }
   .gens { display: flex; flex-direction: column; gap: 16px; }
+  .ident { display: flex; flex-direction: column; gap: 16px; }
+  .ident__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  .ident__card { position: relative; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); }
+  .ident__card.current { border-color: var(--ink); box-shadow: inset 0 3px 0 var(--signal); }
+  .ident__card:not(.current):hover { border-color: var(--ink); }
+  .ident__img { aspect-ratio: 4 / 3; background: var(--photo-ground); display: flex; align-items: center; justify-content: center; }
+  .ident__img img { width: 100%; height: 100%; object-fit: cover; }
+  .ident__body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 4px; }
+  .ident__name { font-weight: 700; font-size: 16px; }
+  .ident__name a { text-decoration: none; }
+  .ident__name a::after { content: ''; position: absolute; inset: 0; }
+  .ident__here { margin-left: 6px; font-family: var(--mono); font-size: 11px; font-weight: 400; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .ident__tell { margin: 4px 0 0; font-size: 13px; line-height: 1.45; color: var(--ink-2); }
   .gens__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
   .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
   table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 14px; }
