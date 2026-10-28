@@ -1,0 +1,949 @@
+# Past editions of enicar.org's Watch Value Barometer, quoted as published
+# (permission confirmed by the owner, 2026-10-25). The current edition lives
+# in each record's `barometer`; this file holds the earlier ones for the
+# price-history chart. Each series is keyed by the label the current edition
+# uses (`current`), and each past entry keeps the label that edition used,
+# since categories were split and renamed over the years.
+# A null `low` is a band published as "unknown"; a `note` marks a band the
+# edition gave no figure for. Conditions are written as the records write
+# them ("Very good to mint" for the editions' "very good – mint").
+editions:
+  - { n: 1, date: 2018-01-10, url: https://enicar.org/2018/01/10/watch-value-barometer-1/ }
+  - { n: 2, date: 2018-03-31, url: https://enicar.org/2018/03/31/watch-value-barometer-2/ }
+  - { n: 3, date: 2018-12-20, url: https://enicar.org/2018/12/20/watch-value-barometer-3/ }
+  - { n: 4, date: 2019-09-30, url: https://enicar.org/2019/09/30/watch-value-barometer-4/ }
+  - { n: 5, date: 2020-09-02, url: https://enicar.org/2020/09/02/watch-value-barometer-5/ }
+  - { n: 6, date: 2021-12-31, url: https://enicar.org/2021/12/31/watch-value-barometer-6/ }
+  # The current edition: its figures are in the records.
+  - { n: 7, date: 2025-12-08, url: https://enicar.org/2025/12/08/watch-value-barometer-7/ }
+series:
+  - current: ["Sherpa Graph Mk Ia"]
+    past:
+      - edition: 1
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 8000, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 6000, high: 8000 }
+          - { condition: "Poor to fair", low: 3000, high: 6000 }
+      - edition: 2
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 9000, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 6500, high: 9000 }
+          - { condition: "Poor to fair", low: null, high: null, note: "no figure given" }
+      - edition: 3
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 7500, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 5000, high: 7500 }
+          - { condition: "Poor to fair", low: 3000, high: 4000 }
+      - edition: 4
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 9000, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 6000, high: 9000 }
+          - { condition: "Poor to fair", low: 3000, high: 6000 }
+      - edition: 5
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 10000, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 7000, high: 10000 }
+          - { condition: "Poor to fair", low: 5000, high: 7000 }
+      - edition: 6
+        label: "Sherpa Graph Mk Ia"
+        bands:
+          - { condition: "Very good to mint", low: 15000, high: 22000 }
+          - { condition: "Average to good", low: 9000, high: 15000 }
+          - { condition: "Poor to fair", low: 7000, high: 9000 }
+  - current: ["Sherpa Graph Mk Ib"]
+    past:
+      - edition: 1
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 8000, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 6000, high: 8000 }
+          - { condition: "Poor to fair", low: 3000, high: 6000 }
+      - edition: 2
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 9000, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 6500, high: 9000 }
+          - { condition: "Poor to fair", low: null, high: null, note: "no figure given" }
+      - edition: 3
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 7500, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 5000, high: 7500 }
+          - { condition: "Poor to fair", low: 3000, high: 4000 }
+      - edition: 4
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 9000, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 6000, high: 9000 }
+          - { condition: "Poor to fair", low: 3000, high: 6000 }
+      - edition: 5
+        label: "Sherpa Graph Mk I"
+        bands:
+          - { condition: "Very good to mint", low: 10000, high: null, note: "no upper figure given" }
+          - { condition: "Average to good", low: 7000, high: 10000 }
+          - { condition: "Poor to fair", low: 5000, high: 7000 }
+      - edition: 6
+        label: "Sherpa Graph Mk Ib"
+        bands:
+          - { condition: "Very good to mint", low: 9000, high: 12500 }
+          - { condition: "Average to good", low: 6000, high: 9000 }
+          - { condition: "Poor to fair", low: 4500, high: 6000 }
+  - current: ["Sherpa Graph Mk II"]
+    past:
+      - edition: 1
+        label: "Sherpa Graph Mk II, III and IV"
+        bands:
+          - { condition: "Very good to mint", low: 6500, high: 9000 }
+          - { condition: "Average to good", low: 5500, high: 6500 }
+          - { condition: "Poor to fair", low: 3000, high: 5500 }
+      - edition: 2
+        label: "Sherpa Graph Mk II"
+        bands:
+          - { condition: "Very good to mint", low: 7500, high: 12000 }
+          - { condition: "Average to good", low: 5500, high: 7500 }
+          - { condition: "Poor to fair", low: 3000, high: 5500 }
+      - edition: 3
+        label: "Sherpa Graph Mk II"
+        bands:
+          - { condition: "Very good to mint", low: 6500, high: 10000 }
+          - { condition: "Average to good", low: 4500, high: 6500 }
+          - { condition: "Poor to fair", low: 3000, high: 4500 }
+      - edition: 4
+        label: "Sherpa Graph Mk II"
+        bands:
+          - { condition: "Very good to mint", low: 8000, high: 10000 }
+          - { condition: "Average to good", low: 5000, high: 8000 }
+          - { condition: "Poor to fair", low: 3000, high: 5000 }
+      - edition: 5
+        label: "Sherpa Graph Mk II"
+        bands:
+          - { condition: "Very good to mint", low: 8000, high: 11000 }
+          - { condition: "Average to good", low: 6000, high: 8000 }
+          - { condition: "Poor to fair", low: 4000, high: 6000 }
+      - edition: 6
+        label: "Sherpa Graph Mk II"
+        bands:
+          - { condition: "Very good to mint", low: 6500, high: 9000 }
+          - { condition: "Average to good", low: 5000, high: 6500 }
+          - { condition: "Poor to fair", low: 3500, high: 5000 }
+  - current: ["Sherpa Graph Mk III"]
+    past:
+      - edition: 1
+        label: "Sherpa Graph Mk II, III and IV"
+        bands:
+          - { condition: "Very good to mint", low: 6500, high: 9000 }
+          - { condition: "Average to good", low: 5500, high: 6500 }
+          - { condition: "Poor to fair", low: 3000, high: 5500 }
+      - edition: 2
+        label: "Sherpa Graph Mk III"
+        bands:
+          - { condition: "Very good to mint", low: 7000, high: 10000 }
+          - { condition: "Average to good", low: 5500, high: 7000 }
+          - { condition: "Poor to fair", low: 3000, high: 5500 }
+      - edition: 3
+        label: "Sherpa Graph Mk III"
+        bands:
+          - { condition: "Very good to mint", low: 6000, high: 8000 }
+          - { condition: "Average to good", low: 5500, high: 6000 }
+          - { condition: "Poor to fair", low: 3000, high: 4500 }
+      - edition: 4
+        label: "Sherpa Graph Mk III"
+        bands:
+          - { condition: "Very good to mint", low: 5500, high: 8000 }
+          - { condition: "Average to good", low: 4000, high: 5500 }
+          - { condition: "Poor to fair", low: 3000, high: 4000 }
+      - edition: 5
+        label: "Sherpa Graph Mk III"
+        bands:
+          - { condition: "Very good to mint", low: 7000, high: 9000 }
+          - { condition: "Average to good", low: 5500, high: 7000 }
+          - { condition: "Poor to fair", low: 3500, high: 5500 }
+      - edition: 6
+        label: "Sherpa Graph Mk III"
+        bands:
+          - { condition: "Very good to mint", low: 8000, high: 13000 }
+          - { condition: "Average to good", low: 6000, high: 8000 }
+          - { condition: "Poor to fair", low: 4000, high: 6000 }
+  - current: ["Sherpa Graph Mk IV"]
+    past:
+      - edition: 1
+        label: "Sherpa Graph Mk II, III and IV"
+        bands:
+          - { condition: "Very good to mint", low: 6500, high: 9000 }
+          - { condition: "Average to good", low: 5500, high: 6500 }
+          - { condition: "Poor to fair", low: 3000, high: 5500 }
+      - edition: 2
+        label: "Sherpa Graph Mk IV"
+        bands:
+          - { condition: "Very good to mint", low: 6000, high: 8500 }
+          - { condition: "Average to good", low: 5000, high: 6000 }
+          - { condition: "Poor to fair", low: 3000, high: 5000 }
+      - edition: 3
+        label: "Sherpa Graph Mk IV"
+        bands:
+          - { condition: "Very good to mint", low: 5500, high: 7500 }
+          - { condition: "Average to good", low: 4000, high: 5500 }
+          - { condition: "Poor to fair", low: 3000, high: 4000 }
+      - edition: 4
+        label: "Sherpa Graph Mk IV"
+        bands:
+          - { condition: "Very good to mint", low: 5000, high: 8000 }
+          - { condition: "Average to good", low: 4000, high: 5000 }
+          - { condition: "Poor to fair", low: 3000, high: 4000 }
+      - edition: 5
+        label: "Sherpa Graph Mk IV"
+        bands:
+          - { condition: "Very good to mint", low: 7000, high: 9000 }
+          - { condition: "Average to good", low: 5500, high: 7000 }
+          - { condition: "Poor to fair", low: 3500, high: 5500 }
+      - edition: 6
+        label: "Sherpa Graph Mk IV"
+        bands:
+          - { condition: "Very good to mint", low: 6000, high: 8000 }
+          - { condition: "Average to good", low: 4500, high: 6000 }
+          - { condition: "Poor to fair", low: 3000, high: 4500 }
+  - current: ["Aqua Graph and Jet Graph"]
+    past:
+      - edition: 1
+        label: "Aqua Graph Mk I, II / Jet Graph Mk I, II"
+        bands:
+          - { condition: "Very good to mint", low: 6000, high: 8000 }
+          - { condition: "Average to good", low: 4500, high: 6000 }
+          - { condition: "Poor to fair", low: 3500, high: 4500 }
+      - edition: 2
+        label: "Aqua Graph Mk I, II / Jet Graph Mk I, II"
+        bands:
+          - { condition: "Very good to mint", low: 5000, high: 7500 }
+          - { condition: "Average to good", low: 4000, high: 5000 }
+          - { condition: "Poor to fair", low: 3000, high: 4000 }
+      - edition: 3
+        label: "Aqua Graph Mk I, II / Jet Graph Mk I, II"
+        bands:
+          - { condition: "Very good to mint", low: 5000, high: 7500 }
+          - { condition: "Average to good", low: 4000, high: 5000 }
+          - { condition: "Poor to fair", low: 3000, high: 4000 }
+      - edition: 4
+        label: "Aqua Graph Mk I, II / Jet Graph Mk I, II"
+        bands:
+          - { condition: "Very good to mint", low: 5000, high: 8000 }
+          - { condition: "Average to good", low: 4000, high: 5000 }
+          - { condition: "Poor to fair", low: null, high: null, note: "no figure given" }
+      - edition: 5
+        label: "Aqua Graph / Jet Graph (MkI versions add 20%)"
+        bands:
+          - { condition: "Very good to mint", low: 7000, high: 8500 }
+          - { condition: "Average to good", low: 4500, high: 7000 }
+          - { condition: "Poor to fair", low: 3000, high: 4500 }
+      - edition: 6
+        label: "Aqua Graph / Jet Graph (MkI versions add 20%)"
+        bands:
+          - { condition: "Very good to mint", low: 7000, high: 10000 }
+          - { condition: "Average to good", low: 4000, high: 7000 }
+          - { condition: "Poor to fair", low: 2500, high: 4000 }
+  - current: ["Grapho-Matic"]
+    past:
+      - edition: 1
+        label: "Grapho-Matic"
+        bands:
+          - { condition: "Very good to mint", low: 1500, high: 2100 }
+          - { condition: "Average to good", low: 750, high: 1500 }
+          - { condition: "Poor to fair", low: 500, high: 750 }
+      - edition: 2
+        label: "Grapho-Matic"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 2400 }
+          - { condition: "Average to good", low: 750, high: 1750 }
+          - { condition: "Poor to fair", low: 500, high: 750 }
+      - edition: 3
+        label: "Grapho-Matic: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 2400 }
+          - { condition: "Average to good", low: 750, high: 1750 }
+          - { condition: "Poor to fair", low: 500, high: 750 }
+      - edition: 4
+        label: "Grapho-Matic: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 2400 }
+          - { condition: "Average to good", low: 750, high: 1750 }
+          - { condition: "Poor to fair", low: 500, high: 750 }
+      - edition: 5
+        label: "Grapho-Matic"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 2750 }
+          - { condition: "Average to good", low: 1500, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+      - edition: 6
+        label: "Grapho-Matic"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3000 }
+          - { condition: "Average to good", low: 1500, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+  - current: ["Mantagraph"]
+    past:
+      - edition: 1
+        label: "Mantagraph"
+        bands:
+          - { condition: "Very good to mint", low: 1000, high: 2000 }
+          - { condition: "Average to good", low: 500, high: 1000 }
+          - { condition: "Poor to fair", low: 300, high: 500 }
+      - edition: 2
+        label: "Mantagraph"
+        bands:
+          - { condition: "Very good to mint", low: 1200, high: 2000 }
+          - { condition: "Average to good", low: 500, high: 1200 }
+          - { condition: "Poor to fair", low: 300, high: 500 }
+      - edition: 3
+        label: "Mantagraph"
+        bands:
+          - { condition: "Very good to mint", low: 1000, high: 1750 }
+          - { condition: "Average to good", low: 500, high: 1000 }
+          - { condition: "Poor to fair", low: 300, high: 500 }
+      - edition: 4
+        label: "Mantagraph"
+        bands:
+          - { condition: "Very good to mint", low: 900, high: 1750 }
+          - { condition: "Average to good", low: 600, high: 900 }
+          - { condition: "Poor to fair", low: null, high: null, note: "no figure given" }
+      - edition: 5
+        label: "Mantagraph"
+        bands:
+          - { condition: "Very good to mint", low: 1500, high: 2000 }
+          - { condition: "Average to good", low: 1000, high: 1500 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+      - edition: 6
+        label: "Mantagraph"
+        bands:
+          - { condition: "Very good to mint", low: 1250, high: 1750 }
+          - { condition: "Average to good", low: 1000, high: 1250 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+  - current: ["Sherpa Dive with red pointer ring"]
+    past:
+      - edition: 4
+        label: "Sherpa Dive (non-bakelite bezel version)"
+        bands:
+          - { condition: "Very good to mint", low: 1800, high: 2500 }
+          - { condition: "Average to good", low: 1400, high: 1800 }
+          - { condition: "Poor to fair", low: 900, high: 1400 }
+      - edition: 5
+        label: "Sherpa Dive (red pointer ring, not sufficient data to evaluate pre-1958 version)"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3000 }
+          - { condition: "Average to good", low: 1500, high: 2000 }
+          - { condition: "Poor to fair", low: null, high: 1500 }
+      - edition: 6
+        label: "Sherpa Dive (red pointer ring)"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3000 }
+          - { condition: "Average to good", low: 1500, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+  - current: ["Sherpa Dive, pre-1958 version"]
+    past:
+      - edition: 6
+        label: "Sherpa Dive (pre-1958 version)"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3500 }
+          - { condition: "Average to good", low: 2000, high: 2500 }
+          - { condition: "Poor to fair", low: 1000, high: 2000 }
+  - current: ["Sherpa Divette"]
+    past:
+      - edition: 2
+        label: "Sherpa Divette: new"
+        bands:
+          - { condition: "Very good to mint", low: 1500, high: 2200 }
+          - { condition: "Average to good", low: 1000, high: 1500 }
+          - { condition: "Poor to fair", low: 600, high: 1000 }
+      - edition: 3
+        label: "Sherpa Divette"
+        bands:
+          - { condition: "Very good to mint", low: 1250, high: 2000 }
+          - { condition: "Average to good", low: 750, high: 1250 }
+          - { condition: "Poor to fair", low: 500, high: 750 }
+      - edition: 4
+        label: "Sherpa Divette: no changes, except MkI hands are up"
+        bands:
+          - { condition: "Very good to mint", low: 1250, high: 2000 }
+          - { condition: "Average to good", low: 750, high: 1250 }
+          - { condition: "Poor to fair", low: 500, high: 750 }
+      - edition: 5
+        label: "Sherpa Divette"
+        bands:
+          - { condition: "Very good to mint", low: 1500, high: 2250 }
+          - { condition: "Average to good", low: 1000, high: 1500 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+      - edition: 6
+        label: "Sherpa Divette"
+        bands:
+          - { condition: "Very good to mint", low: 1500, high: 2250 }
+          - { condition: "Average to good", low: 1000, high: 1500 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+  - current: ["Sherpa Electric"]
+    past:
+      - edition: 1
+        label: "Sherpa Electric"
+        bands:
+          - { condition: "Very good to mint", low: 400, high: 750 }
+          - { condition: "Average to good", low: 150, high: 400 }
+          - { condition: "Poor to fair", low: 100, high: 150 }
+      - edition: 2
+        label: "Sherpa Electric: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 400, high: 750 }
+          - { condition: "Average to good", low: 150, high: 400 }
+          - { condition: "Poor to fair", low: 100, high: 150 }
+      - edition: 3
+        label: "Sherpa Electric"
+        bands:
+          - { condition: "Very good to mint", low: 300, high: 500 }
+          - { condition: "Average to good", low: 150, high: 300 }
+          - { condition: "Poor to fair", low: 100, high: 150 }
+      - edition: 4
+        label: "Sherpa Electric"
+        bands:
+          - { condition: "Very good to mint", low: 400, high: 600 }
+          - { condition: "Average to good", low: 150, high: 400 }
+          - { condition: "Poor to fair", low: null, high: null, note: "no figure given" }
+      - edition: 5
+        label: "Sherpa Electric"
+        bands:
+          - { condition: "Very good to mint", low: 500, high: 800 }
+          - { condition: "Average to good", low: 300, high: 500 }
+          - { condition: "Poor to fair", low: 150, high: 300 }
+      - edition: 6
+        label: "Sherpa Electric"
+        bands:
+          - { condition: "Very good to mint", low: 750, high: 1000 }
+          - { condition: "Average to good", low: 500, high: 750 }
+          - { condition: "Poor to fair", low: 250, high: 500 }
+  - current: ["Sherpa GMT and World Time"]
+    past:
+      - edition: 3
+        label: "Sherpa GMT and World Time, new"
+        bands:
+          - { condition: "Very good to mint", low: 1250, high: 1900 }
+          - { condition: "Average to good", low: 750, high: 1250 }
+          - { condition: "Poor to fair", low: 500, high: 750 }
+      - edition: 4
+        label: "Sherpa GMT and World Time: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 1250, high: 1900 }
+          - { condition: "Average to good", low: 750, high: 1250 }
+          - { condition: "Poor to fair", low: 500, high: 750 }
+      - edition: 5
+        label: "Sherpa GMT and World Time"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 2750 }
+          - { condition: "Average to good", low: 1500, high: 2000 }
+          - { condition: "Poor to fair", low: 750, high: 1500 }
+      - edition: 6
+        label: "Sherpa GMT and World Time"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 2500 }
+          - { condition: "Average to good", low: 1500, high: 2000 }
+          - { condition: "Poor to fair", low: 750, high: 1500 }
+  - current: ["Sherpa Guide, long-lug and cushion case"]
+    past:
+      - edition: 4
+        label: "Sherpa Guide (42 mm, long lugs case and cushion case)"
+        bands:
+          - { condition: "Very good to mint", low: 1250, high: 2500 }
+          - { condition: "Average to good", low: 750, high: 1250 }
+          - { condition: "Poor to fair", low: 500, high: 750 }
+      - edition: 5
+        label: "Sherpa Guide (42 mm, long lugs case and cushion case)"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3500 }
+          - { condition: "Average to good", low: 1250, high: 2000 }
+          - { condition: "Poor to fair", low: 900, high: 1250 }
+      - edition: 6
+        label: "Sherpa Guide (42 mm, long lugs case and cushion case)"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3000 }
+          - { condition: "Average to good", low: 1000, high: 2000 }
+          - { condition: "Poor to fair", low: 700, high: 1000 }
+  - current: ["Sherpa Memostar"]
+    past:
+      - edition: 1
+        label: "Sherpa Memostar"
+        bands:
+          - { condition: "Very good to mint", low: 1600, high: 2000 }
+          - { condition: "Average to good", low: 1000, high: 1600 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+      - edition: 2
+        label: "Sherpa Memostar"
+        bands:
+          - { condition: "Very good to mint", low: 1600, high: 2200 }
+          - { condition: "Average to good", low: 1000, high: 1600 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+      - edition: 3
+        label: "Sherpa Memostar: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 2500 }
+          - { condition: "Average to good", low: 1000, high: 1750 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+      - edition: 4
+        label: "Sherpa Memostar"
+        bands:
+          - { condition: "Very good to mint", low: 1350, high: 2000 }
+          - { condition: "Average to good", low: 1000, high: 1350 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+      - edition: 5
+        label: "Sherpa Memostar: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 1350, high: 2000 }
+          - { condition: "Average to good", low: 1000, high: 1350 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+      - edition: 6
+        label: "Sherpa Memostar"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 2500 }
+          - { condition: "Average to good", low: 1250, high: 1750 }
+          - { condition: "Poor to fair", low: 750, high: 1250 }
+  - current: ["Sherpa Seapearl 600 (turtle lugs) and Healthways", "Sherpa Seapearl 600 (turtle lugs), Healthways"]
+    past:
+      - edition: 1
+        label: "Sherpa Seapearl 600, Healthways"
+        bands:
+          - { condition: "Very good to mint", low: 750, high: 1500 }
+          - { condition: "Average to good", low: 500, high: 750 }
+          - { condition: "Poor to fair", low: 300, high: 500 }
+      - edition: 2
+        label: "Sherpa Seapearl 600, Healthways: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 750, high: 1500 }
+          - { condition: "Average to good", low: 500, high: 750 }
+          - { condition: "Poor to fair", low: 300, high: 500 }
+      - edition: 3
+        label: "Sherpa Seapearl 600, Healthways: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 750, high: 1500 }
+          - { condition: "Average to good", low: 500, high: 750 }
+          - { condition: "Poor to fair", low: 300, high: 500 }
+      - edition: 4
+        label: "Sherpa Seapearl 600, Healthways"
+        bands:
+          - { condition: "Very good to mint", low: 800, high: 1600 }
+          - { condition: "Average to good", low: 600, high: 800 }
+          - { condition: "Poor to fair", low: 400, high: 600 }
+      - edition: 5
+        label: "Sherpa Seapearl 600 (turtle lugs), Healthways"
+        bands:
+          - { condition: "Very good to mint", low: 1250, high: 1750 }
+          - { condition: "Average to good", low: 900, high: 1250 }
+          - { condition: "Poor to fair", low: 600, high: 900 }
+      - edition: 6
+        label: "Sherpa Seapearl 600 (turtle lugs), Healthways"
+        bands:
+          - { condition: "Very good to mint", low: 1500, high: 2000 }
+          - { condition: "Average to good", low: 1000, high: 1500 }
+          - { condition: "Poor to fair", low: 700, high: 1000 }
+  - current: ["Sherpa Star Diver"]
+    past:
+      - edition: 1
+        label: "Sherpa Star Diver"
+        bands:
+          - { condition: "Very good to mint", low: 2200, high: 2750 }
+          - { condition: "Average to good", low: 1750, high: 2200 }
+          - { condition: "Poor to fair", low: 1000, high: 1750 }
+      - edition: 2
+        label: "Sherpa Star Diver"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 2900 }
+          - { condition: "Average to good", low: 1500, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+      - edition: 3
+        label: "Sherpa Star Diver"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 2500 }
+          - { condition: "Average to good", low: 1500, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+      - edition: 4
+        label: "Sherpa Star Diver"
+        bands:
+          - { condition: "Very good to mint", low: 2200, high: 3000 }
+          - { condition: "Average to good", low: 1500, high: 2200 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+      - edition: 5
+        label: "Sherpa Star Diver"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3000 }
+          - { condition: "Average to good", low: 1500, high: 2500 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+      - edition: 6
+        label: "Sherpa Star Diver"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 2750 }
+          - { condition: "Average to good", low: 1250, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1250 }
+  - current: ["Sherpa Star, 37 mm"]
+    past:
+      - edition: 1
+        label: "Sherpa Star (37 mm)"
+        bands:
+          - { condition: "Very good to mint", low: 250, high: 400 }
+          - { condition: "Average to good", low: 150, high: 250 }
+          - { condition: "Poor to fair", low: 100, high: 150 }
+      - edition: 2
+        label: "Sherpa Star (37 mm)"
+        bands:
+          - { condition: "Very good to mint", low: 300, high: 500 }
+          - { condition: "Average to good", low: 150, high: 300 }
+          - { condition: "Poor to fair", low: 100, high: 150 }
+      - edition: 3
+        label: "Sherpa Star (37 mm)"
+        bands:
+          - { condition: "Very good to mint", low: 250, high: 400 }
+          - { condition: "Average to good", low: 100, high: 250 }
+          - { condition: "Poor to fair", low: 50, high: 100 }
+      - edition: 4
+        label: "Sherpa Star (37 mm): no changes"
+        bands:
+          - { condition: "Very good to mint", low: 250, high: 400 }
+          - { condition: "Average to good", low: 100, high: 250 }
+          - { condition: "Poor to fair", low: 75, high: 100 }
+      - edition: 5
+        label: "Sherpa Star (37 mm)"
+        bands:
+          - { condition: "Very good to mint", low: 400, high: 600 }
+          - { condition: "Average to good", low: 200, high: 400 }
+          - { condition: "Poor to fair", low: 75, high: 200 }
+      - edition: 6
+        label: "Sherpa Star (37 mm)"
+        bands:
+          - { condition: "Very good to mint", low: 300, high: 600 }
+          - { condition: "Average to good", low: 200, high: 300 }
+          - { condition: "Poor to fair", low: 75, high: 200 }
+  - current: ["Sherpa Super-Divette and Jet"]
+    past:
+      - edition: 1
+        label: "Sherpa Super-Divette and Jet"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 2500 }
+          - { condition: "Average to good", low: 1250, high: 2000 }
+          - { condition: "Poor to fair", low: 800, high: 1250 }
+      - edition: 2
+        label: "Sherpa Super-Divette and Jet"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 2700 }
+          - { condition: "Average to good", low: 1250, high: 2000 }
+          - { condition: "Poor to fair", low: 800, high: 1250 }
+      - edition: 3
+        label: "Sherpa Super-Divette and Jet"
+        bands:
+          - { condition: "Very good to mint", low: 1500, high: 2250 }
+          - { condition: "Average to good", low: 800, high: 1500 }
+          - { condition: "Poor to fair", low: 600, high: 800 }
+      - edition: 4
+        label: "Sherpa Super-Divette and Jet"
+        bands:
+          - { condition: "Very good to mint", low: 1000, high: 2250 }
+          - { condition: "Average to good", low: 700, high: 1000 }
+          - { condition: "Poor to fair", low: 500, high: 700 }
+      - edition: 5
+        label: "Sherpa Super-Divette and Jet (Jet is approx. 20% more expensive)"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3500 }
+          - { condition: "Average to good", low: 1500, high: 2500 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+      - edition: 6
+        label: "Sherpa Super-Divette and Jet (Jet is approx. 20% more expensive)"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3250 }
+          - { condition: "Average to good", low: 1250, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1250 }
+  - current: ["Sherpa Ultradive and OPS"]
+    past:
+      - edition: 1
+        label: "Sherpa Ultradive and OPS"
+        bands:
+          - { condition: "Very good to mint", low: 2800, high: 4000 }
+          - { condition: "Average to good", low: 2000, high: 2800 }
+          - { condition: "Poor to fair", low: 1200, high: 2000 }
+      - edition: 2
+        label: "Sherpa Ultradive and OPS"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 4000 }
+          - { condition: "Average to good", low: 2000, high: 2500 }
+          - { condition: "Poor to fair", low: 900, high: 2000 }
+      - edition: 3
+        label: "Sherpa Ultradive and OPS"
+        bands:
+          - { condition: "Very good to mint", low: 2200, high: 4000 }
+          - { condition: "Average to good", low: 1750, high: 2200 }
+          - { condition: "Poor to fair", low: 1000, high: 1750 }
+      - edition: 4
+        label: "Sherpa Ultradive and OPS"
+        bands:
+          - { condition: "Very good to mint", low: 2600, high: 4500 }
+          - { condition: "Average to good", low: 2000, high: 2600 }
+          - { condition: "Poor to fair", low: 1000, high: 2000 }
+      - edition: 5
+        label: "Sherpa Ultradive and OPS"
+        bands:
+          - { condition: "Very good to mint", low: 3500, high: 5000 }
+          - { condition: "Average to good", low: 2500, high: 3500 }
+          - { condition: "Poor to fair", low: 2000, high: 2500 }
+      - edition: 6
+        label: "Sherpa Ultradive and OPS"
+        bands:
+          - { condition: "Very good to mint", low: 5000, high: 7000 }
+          - { condition: "Average to good", low: 3000, high: 5000 }
+          - { condition: "Poor to fair", low: 2000, high: 3000 }
+  - current: ["Super-Dive MkI and II"]
+    past:
+      - edition: 1
+        label: "Sherpa Super-Dive and Super-Jet"
+        bands:
+          - { condition: "Very good to mint", low: 2200, high: 3200 }
+          - { condition: "Average to good", low: 1600, high: 2200 }
+          - { condition: "Poor to fair", low: 1000, high: 1600 }
+      - edition: 2
+        label: "Sherpa Super-Dive MkI and II, Super-Jet Mk I and II"
+        bands:
+          - { condition: "Very good to mint", low: 2200, high: 3750 }
+          - { condition: "Average to good", low: 1400, high: 2200 }
+          - { condition: "Poor to fair", low: 1000, high: 1400 }
+      - edition: 3
+        label: "Sherpa Super-Dive MkI and II, Super-Jet Mk I and II"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3200 }
+          - { condition: "Average to good", low: 1200, high: 2000 }
+          - { condition: "Poor to fair", low: 750, high: 1200 }
+      - edition: 4
+        label: "Sherpa Super-Dive MkI and II, except MkI dauphine hands are up"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 3000 }
+          - { condition: "Average to good", low: 1000, high: 1750 }
+          - { condition: "Poor to fair", low: 750, high: 1000 }
+      - edition: 5
+        label: "Sherpa Super-Dive MkI and II"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3500 }
+          - { condition: "Average to good", low: 1500, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+      - edition: 6
+        label: "Sherpa Super-Dive MkI and II"
+        bands:
+          - { condition: "Very good to mint", low: 3000, high: 4000 }
+          - { condition: "Average to good", low: 1500, high: 3000 }
+          - { condition: "Poor to fair", low: 1000, high: 1500 }
+  - current: ["Super-Jet Mk I and II"]
+    past:
+      - edition: 1
+        label: "Sherpa Super-Dive and Super-Jet"
+        bands:
+          - { condition: "Very good to mint", low: 2200, high: 3200 }
+          - { condition: "Average to good", low: 1600, high: 2200 }
+          - { condition: "Poor to fair", low: 1000, high: 1600 }
+      - edition: 2
+        label: "Sherpa Super-Dive MkI and II, Super-Jet Mk I and II"
+        bands:
+          - { condition: "Very good to mint", low: 2200, high: 3750 }
+          - { condition: "Average to good", low: 1400, high: 2200 }
+          - { condition: "Poor to fair", low: 1000, high: 1400 }
+      - edition: 3
+        label: "Sherpa Super-Dive MkI and II, Super-Jet Mk I and II"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3200 }
+          - { condition: "Average to good", low: 1200, high: 2000 }
+          - { condition: "Poor to fair", low: 750, high: 1200 }
+      - edition: 4
+        label: "Super-Jet Mk I and II"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3200 }
+          - { condition: "Average to good", low: 1200, high: 2500 }
+          - { condition: "Poor to fair", low: 750, high: 1200 }
+      - edition: 5
+        label: "Super-Jet Mk I and II"
+        bands:
+          - { condition: "Very good to mint", low: 3000, high: 4000 }
+          - { condition: "Average to good", low: 1750, high: 3000 }
+          - { condition: "Poor to fair", low: 1200, high: 1750 }
+      - edition: 6
+        label: "Super-Jet Mk I and II"
+        bands:
+          - { condition: "Very good to mint", low: 3000, high: 4500 }
+          - { condition: "Average to good", low: 1750, high: 3000 }
+          - { condition: "Poor to fair", low: 1200, high: 1750 }
+  - current: ["Super-Dive MkIII and Super-Jet Mk III, cushion case", "Super-Dive MkIII, cushion case"]
+    past:
+      - edition: 2
+        label: "Sherpa Super-Dive MkIII, Super-Jet Mk III: new"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 2500 }
+          - { condition: "Average to good", low: 1400, high: 1750 }
+          - { condition: "Poor to fair", low: 1000, high: 1400 }
+      - edition: 3
+        label: "Sherpa Super-Dive MkIII, Super-Jet Mk III: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 2500 }
+          - { condition: "Average to good", low: 1400, high: 1750 }
+          - { condition: "Poor to fair", low: 1000, high: 1400 }
+      - edition: 4
+        label: "Sherpa Super-Dive MkIII, Super-Jet Mk III (cushion case)"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 2800 }
+          - { condition: "Average to good", low: 1400, high: 1750 }
+          - { condition: "Poor to fair", low: null, high: null, note: "no figure given" }
+      - edition: 5
+        label: "Sherpa Super-Dive MkIII, Super-Jet Mk III (cushion case)"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3500 }
+          - { condition: "Average to good", low: 2000, high: 2500 }
+          - { condition: "Poor to fair", low: 1500, high: 2000 }
+      - edition: 6
+        label: "Sherpa Super-Dive MkIII, Super-Jet Mk III (cushion case)"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3500 }
+          - { condition: "Average to good", low: 2000, high: 2500 }
+          - { condition: "Poor to fair", low: 1500, high: 2000 }
+  - current: ["Valjoux 23 chronograph: Big Eye, Lausanne"]
+    past:
+      - edition: 1
+        label: "Valjoux 23 chronograph (for instance Big Eye)"
+        bands:
+          - { condition: "Very good to mint", low: 1800, high: 2500 }
+          - { condition: "Average to good", low: 1200, high: 1800 }
+          - { condition: "Poor to fair", low: 1000, high: 1200 }
+      - edition: 2
+        label: "Valjoux 23 chronograph (for instance Big Eye)"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 2800 }
+          - { condition: "Average to good", low: 1200, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1200 }
+      - edition: 3
+        label: "Valjoux 23 chronograph (for instance Big Eye)"
+        bands:
+          - { condition: "Very good to mint", low: 1750, high: 2500 }
+          - { condition: "Average to good", low: 1200, high: 1750 }
+          - { condition: "Poor to fair", low: 1000, high: 1200 }
+      - edition: 4
+        label: "Valjoux 23 chronograph (for instance Big Eye, not the yacht dial version)"
+        bands:
+          - { condition: "Very good to mint", low: 2000, high: 3000 }
+          - { condition: "Average to good", low: 1400, high: 2000 }
+          - { condition: "Poor to fair", low: 1000, high: 1400 }
+      - edition: 5
+        label: "Valjoux 23 chronograph (for instance Big Eye, not the yacht dial version)"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3500 }
+          - { condition: "Average to good", low: 1750, high: 2500 }
+          - { condition: "Poor to fair", low: null, high: 1750 }
+      - edition: 6
+        label: "Valjoux 23 chronograph (Big Eye (not the yacht dial version), Lausanne)"
+        bands:
+          - { condition: "Very good to mint", low: 3000, high: 4000 }
+          - { condition: "Average to good", low: 2000, high: 3000 }
+          - { condition: "Poor to fair", low: null, high: 2000 }
+  - current: ["Valjoux 72 chronograph, Ocean Pearl Interlagos, \"Garnix\"", "Valjoux 72 chronograph: Ocean Pearl Interlagos, \"Garnix\""]
+    past:
+      - edition: 1
+        label: "Valjoux 72 chronograph (for instance Ocean Pearl Interlagos)"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3500 }
+          - { condition: "Average to good", low: 2000, high: 2500 }
+          - { condition: "Poor to fair", low: 1000, high: 2000 }
+      - edition: 2
+        label: "Valjoux 72 chronograph, Ocean Pearl Interlagos"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3750 }
+          - { condition: "Average to good", low: 1800, high: 2500 }
+          - { condition: "Poor to fair", low: 1000, high: 1800 }
+      - edition: 3
+        label: "Valjoux 72 chronograph, Ocean Pearl Interlagos"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 4000 }
+          - { condition: "Average to good", low: 1800, high: 2500 }
+          - { condition: "Poor to fair", low: 1000, high: 1800 }
+      - edition: 4
+        label: "Valjoux 72 chronograph, Ocean Pearl Interlagos: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 4000 }
+          - { condition: "Average to good", low: 1800, high: 2500 }
+          - { condition: "Poor to fair", low: 1000, high: 1800 }
+      - edition: 5
+        label: "Valjoux 72 chronograph, Ocean Pearl Interlagos"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 3500 }
+          - { condition: "Average to good", low: 1750, high: 2500 }
+          - { condition: "Poor to fair", low: 1000, high: 1750 }
+      - edition: 6
+        label: "Valjoux 72 chronograph, Ocean Pearl Interlagos, “Garnix”"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 4000 }
+          - { condition: "Average to good", low: 1750, high: 2500 }
+          - { condition: "Poor to fair", low: 1000, high: 1750 }
+  - current: ["Valjoux 72 chronograph, cushion case (Gerhard Mitter)"]
+    past:
+      - edition: 2
+        label: "Valjoux 72 chronograph, cushion case: new"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 4000 }
+          - { condition: "Average to good", low: 1800, high: 2500 }
+          - { condition: "Poor to fair", low: null, high: 1800 }
+      - edition: 3
+        label: "Valjoux 72 chronograph, cushion case: no changes"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 4500 }
+          - { condition: "Average to good", low: 1800, high: 2500 }
+          - { condition: "Poor to fair", low: null, high: 1800 }
+      - edition: 4
+        label: "Valjoux 72 chronograph, cushion case (Gerhard Mitter)"
+        bands:
+          - { condition: "Very good to mint", low: 2250, high: 4000 }
+          - { condition: "Average to good", low: 1800, high: 2250 }
+          - { condition: "Poor to fair", low: null, high: 1800 }
+      - edition: 5
+        label: "Valjoux 72 chronograph, cushion case (Gerhard Mitter)"
+        bands:
+          - { condition: "Very good to mint", low: 2500, high: 4500 }
+          - { condition: "Average to good", low: 2000, high: 2500 }
+          - { condition: "Poor to fair", low: null, high: 2000 }
+      - edition: 6
+        label: "Valjoux 72 chronograph, cushion case (Gerhard Mitter)"
+        bands:
+          - { condition: "Very good to mint", low: 3000, high: 4500 }
+          - { condition: "Average to good", low: 2000, high: 3000 }
+          - { condition: "Poor to fair", low: null, high: 2000 }
+  - current: ["\"Regular\" Sherpa, Date and Day-Date"]
+    past:
+      - edition: 1
+        label: "‘Regular’ Sherpa (Date, Day-Date)"
+        bands:
+          - { condition: "Very good to mint", low: 250, high: 450 }
+          - { condition: "Average to good", low: 150, high: 250 }
+          - { condition: "Poor to fair", low: 100, high: 150 }
+      - edition: 2
+        label: "‘Regular’ Sherpa (Date, Day-Date)"
+        bands:
+          - { condition: "Very good to mint", low: 200, high: 400 }
+          - { condition: "Average to good", low: 150, high: 200 }
+          - { condition: "Poor to fair", low: 75, high: 150 }
+      - edition: 3
+        label: "‘Regular’ Sherpa (Date, Day-Date)"
+        bands:
+          - { condition: "Very good to mint", low: 200, high: 350 }
+          - { condition: "Average to good", low: 150, high: 200 }
+          - { condition: "Poor to fair", low: 75, high: 150 }
+      - edition: 4
+        label: "‘Regular’ Sherpa (Date, Day-Date)"
+        bands:
+          - { condition: "Very good to mint", low: 300, high: 400 }
+          - { condition: "Average to good", low: 150, high: 300 }
+          - { condition: "Poor to fair", low: 75, high: 150 }
+      - edition: 5
+        label: "‘Regular’ Sherpa (Date, Day-Date)"
+        bands:
+          - { condition: "Very good to mint", low: 500, high: 750 }
+          - { condition: "Average to good", low: 300, high: 500 }
+          - { condition: "Poor to fair", low: 150, high: 300 }
+      - edition: 6
+        label: "‘Regular’ Sherpa (Date, Day-Date)"
+        bands:
+          - { condition: "Very good to mint", low: 500, high: 750 }
+          - { condition: "Average to good", low: 300, high: 500 }
+          - { condition: "Poor to fair", low: 150, high: 300 }
