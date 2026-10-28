@@ -1,0 +1,114 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { serialRanges } from '../lib/serials';
+
+const refs = await getCollection('references');
+const ranges = serialRanges(refs);
+const covered = [...new Set(refs.filter((r) => r.data.variants.some((v) => v.serials.length)).map((r) => r.data.name))].sort();
+---
+<Base title="Serial lookup" description="Find which Enicar generation a case serial number belongs to." section="serial">
+  <div class="wrap serial">
+    <section class="intro">
+      <h1>Serial lookup</h1>
+      <p class="lede">Type a case serial and see which generation it falls in, from the serial ranges the sources have recorded.</p>
+      <p class="small muted">Covers {covered.join(', ')} so far. Other models have no recorded ranges yet.</p>
+    </section>
+
+    <form class="lookup" id="serial-form" role="search">
+      <label for="serial-q">Case serial</label>
+      <div class="lookup__row">
+        <input id="serial-q" name="serial" inputmode="numeric" autocomplete="off" placeholder="e.g. 721.956 or 1.070.123" class="mono">
+        <button type="submit" class="btn">Look up</button>
+      </div>
+    </form>
+
+    <div id="serial-out" class="out" aria-live="polite"></div>
+
+    <section class="all">
+      <h2>Every recorded range</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Serials</th><th scope="col">Generation</th><th scope="col">Dated</th></tr></thead>
+          <tbody>
+            {ranges.map((r) => (
+              <tr data-lo={r.lo} data-hi={r.hi}>
+                <td class="mono">{r.text}</td>
+                <td><a href={r.path}>{r.name}</a></td>
+                <td>{r.dated ?? r.years ?? <span class="muted">Unknown</span>}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="small muted">Each generation's page cites where its range comes from. Enicar's own records were lost, so ranges come from watches collectors have logged, and a serial outside every range isn't necessarily wrong.</p>
+    </section>
+  </div>
+</Base>
+
+<script is:inline define:vars={{ ranges }}>
+  (() => {
+    const form = document.getElementById('serial-form');
+    const input = document.getElementById('serial-q');
+    const out = document.getElementById('serial-out');
+    const rows = [...document.querySelectorAll('tbody tr')];
+    const el = (tag, props, ...kids) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
+    const link = (r) => el('a', { href: r.path }, r.name);
+    const when = (r) => r.dated ?? r.years;
+    const line = (r) => el('li', {}, link(r), ` · ${r.text}`, when(r) ? ` · ${when(r)}` : '');
+
+    const look = (raw) => {
+      const d = raw.replace(/\D/g, '');
+      for (const tr of rows) tr.classList.remove('hit');
+      if (!d) { out.replaceChildren(); return; }
+      const n = Number(d);
+      const hits = ranges.filter((r) => n >= r.lo && n <= r.hi);
+      rows.forEach((tr) => { if (n >= +tr.dataset.lo && n <= +tr.dataset.hi) tr.classList.add('hit'); });
+      if (hits.length) {
+        out.replaceChildren(el('div', { className: 'panel' },
+          el('p', { className: 'out__head' }, `${raw.trim()} falls in ${hits.length === 1 ? 'this range' : 'these ranges'}:`),
+          el('ul', {}, ...hits.map(line))));
+        return;
+      }
+      // No range covers it: show the nearest recorded range on each side,
+      // among serials with the same number of digits.
+      const same = ranges.filter((r) => String(r.lo).length === d.length);
+      const below = same.filter((r) => r.hi < n).sort((a, b) => b.hi - a.hi)[0];
+      const above = same.filter((r) => r.lo > n).sort((a, b) => a.lo - b.lo)[0];
+      const near = [below && ['Just below', below], above && ['Just above', above]].filter(Boolean);
+      out.replaceChildren(el('div', { className: 'panel' },
+        el('p', { className: 'out__head' }, `No recorded range covers ${raw.trim()}.`),
+        near.length
+          ? el('ul', {}, ...near.map(([label, r]) => el('li', {}, `${label}: `, link(r), ` · ${r.text}`, when(r) ? ` · ${when(r)}` : '')))
+          : el('p', { className: 'small muted' }, 'Nothing nearby either. Check the digits, or the model may not be covered yet.')));
+    };
+
+    form.addEventListener('submit', (e) => { e.preventDefault(); look(input.value); history.replaceState(null, '', input.value ? `?s=${encodeURIComponent(input.value)}` : location.pathname); });
+    const s = new URLSearchParams(location.search).get('s');
+    if (s) { input.value = s; look(s); }
+  })();
+</script>
+
+<style>
+  .serial { display: flex; flex-direction: column; gap: 32px; padding-top: 40px; padding-bottom: 56px; }
+  .intro { display: flex; flex-direction: column; gap: 12px; }
+  .small { font-size: 13px; margin: 0; }
+  .lookup { display: flex; flex-direction: column; gap: 8px; max-width: 560px; }
+  .lookup label { font-size: 13px; font-weight: 700; }
+  .lookup__row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .lookup input { flex: 1 1 240px; min-height: 48px; padding: 0 14px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); font-size: 18px; color: var(--ink); }
+  .lookup input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 2px var(--accent-wash); }
+  .lookup .btn { min-height: 48px; }
+  .out:empty { display: none; }
+  .out .panel { background: var(--paper); max-width: 720px; }
+  .out__head { margin: 0 0 8px; font-weight: 700; }
+  .out ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+  .all { display: flex; flex-direction: column; gap: 12px; }
+  .all h2 { font-size: 20px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 16px; border-bottom: 1px solid var(--line-soft); }
+  thead th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  tr.hit td { background: var(--accent-wash); }
+  tr.hit td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+</style>
