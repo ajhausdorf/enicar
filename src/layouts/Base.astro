@@ -11,6 +11,8 @@ interface Props {
 }
 const { title, description = 'An independent, sourced index of vintage Enicar watches.', section, searchable = false } = Astro.props;
 const fullTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
+// The 24-hour bezel strip under the header: 0 to 10 blue, 12 to 22 red.
+const bezel = Array.from({ length: 24 }, (_, h) => ({ label: h % 2 ? '·' : String(h), night: h >= 12, dot: h % 2 === 1 }));
 const nav = [
   { key: 'catalog', label: 'Catalog', href: '/' },
   { key: 'calibres', label: 'Calibres', href: '/calibres/' },
@@ -28,7 +30,7 @@ const nav = [
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=B612+Mono:wght@400;700&display=swap">
   <slot name="head" />
 </head>
 <body>
@@ -45,12 +47,15 @@ const nav = [
           <span aria-hidden="true">$</span> USD<span class="sr-only"> prices</span>
         </button>
         <form class="search" action="/search/" method="get" role="search">
-          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="var(--muted)" stroke-width="1.6"><circle cx="7" cy="7" r="5"></circle><path d="M11 11l3.5 3.5"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke-width="1.6"><circle cx="7" cy="7" r="5"></circle><path d="M11 11l3.5 3.5"></path></svg>
           <label for="site-q" class="sr-only">Search references, nicknames, calibres</label>
           <input id="site-q" name="q" type="search" placeholder="Search a reference, nickname or calibre">
         </form>
       </div>
     </header>
+    <div class="bezel" aria-hidden="true">
+      {bezel.map((b) => <span class:list={[{ night: b.night, dot: b.dot }]}>{b.label}</span>)}
+    </div>
 
     <script is:inline define:vars={{ rates: USD_RATES.rates, asOf: USD_RATES.asOf }}>
       // Price currency toggle: rewrites every .money element to US dollars at the

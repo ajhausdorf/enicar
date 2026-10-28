@@ -1,24 +1,36 @@
-/* Design tokens from the Enicar Archive canvas. */
+/* Design tokens: "Sherpa Jet GMT Mk IV, night" (Riff B1 on the Enicar World
+   canvas). Night is the header, footer and photo ground; the bezel colours
+   (blue day half, red night half) and the yellow GMT-hand signal are accents. */
 :root {
-  --ink: #15171A;
-  --ink-2: #3A3F45;
-  --muted: #5B6066;
-  --line: #DDDFDA;
-  --line-soft: #EEEFEB;
+  --ink: #111317;
+  --ink-2: #353A44;
+  --muted: #4C5260;
+  --line: #CDD1D8;
+  --line-soft: #E0E3E8;
   --paper: #FFFFFF;
-  --wash: #FAFAF8;
-  --plate: #F3F4F1;
-  --accent: #B5461A;
-  --accent-wash: #FFF6F1;
-  --sans: Archivo, 'Helvetica Neue', Arial, sans-serif;
-  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --ground: #ECEEF1;
+  --wash: #E0E3E8;
+  --plate: #FFFFFF;
+  --night: #111317;
+  --night-2: #1B1E24;
+  --night-line: #2B2F37;
+  --night-muted: #A6ABB5;
+  --cream: #F4F1E6;
+  --photo-ground: #111317;
+  --accent: #2457A8;
+  --accent-wash: #E6EDF8;
+  --bezel-day: #2457A8;
+  --bezel-night: #D8342C;
+  --signal: #F2C230;
+  --sans: B612, 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'B612 Mono', ui-monospace, monospace;
   --gutter: 40px;
 }
 @media (max-width: 720px) { :root { --gutter: 16px; } }
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; font-family: var(--sans); color: var(--ink); background: var(--paper); line-height: 1.5; }
+body { margin: 0; font-family: var(--sans); color: var(--ink); background: var(--ground); line-height: 1.5; }
 a { color: var(--ink); }
 a:hover { color: var(--accent); }
 img { max-width: 100%; display: block; }
@@ -29,23 +41,36 @@ img { max-width: 100%; display: block; }
 .mono { font-family: var(--mono); }
 .muted { color: var(--muted); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-h1 { margin: 0; font-size: clamp(36px, 6vw, 56px); line-height: 1.02; font-weight: 600; letter-spacing: -0.02em; }
-h2 { margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.01em; }
+h1 { margin: 0; font-size: clamp(32px, 5vw, 48px); line-height: 1.05; font-weight: 700; }
+h2 { margin: 0; font-size: 22px; font-weight: 700; }
 .lede { margin: 0; max-width: 680px; font-size: 18px; color: var(--ink-2); }
 
-/* Header */
-.site-header { border-bottom: 1px solid var(--line); }
-.site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; min-height: 64px; padding-top: 10px; padding-bottom: 10px; }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; font-size: 16px; letter-spacing: 0.08em; text-transform: uppercase; }
-.nav { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 14px; font-weight: 500; }
-.nav a { text-decoration: none; padding: 10px 0; }
-.nav a[aria-current='page'] { color: var(--accent); }
-.cur-toggle { margin-left: auto; height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--ink-2); font: inherit; font-size: 13px; font-weight: 500; cursor: pointer; }
-.cur-toggle:hover { border-color: var(--ink); }
-.cur-toggle[aria-pressed='true'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-.search { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 6px; padding: 0 12px; height: 44px; flex: 0 1 300px; min-width: 200px; background: var(--wash); }
-.search input { border: 0; background: transparent; font: inherit; font-size: 14px; flex: 1; min-width: 0; outline: none; color: var(--ink); }
-@media (max-width: 720px) { .search { flex: 1 1 100%; } }
+/* Header: night, with a triangle pointer under the current section */
+.site-header { background: var(--night); color: var(--cream); }
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 0 28px; min-height: 64px; }
+.site-header a { color: var(--cream); }
+.brand { display: flex; align-items: center; gap: 10px; min-height: 64px; text-decoration: none; font-weight: 700; font-size: 16px; letter-spacing: 0.16em; text-transform: uppercase; }
+.nav { display: flex; flex-wrap: wrap; gap: 0 24px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.nav a { position: relative; display: inline-flex; align-items: center; min-height: 64px; padding: 0 4px; text-decoration: none; color: var(--night-muted); }
+.nav a:hover { color: var(--cream); }
+.nav a[aria-current='page'] { color: var(--cream); }
+.nav a[aria-current='page']::after { content: ''; position: absolute; left: 50%; bottom: 0; margin-left: -6px; border: 6px solid transparent; border-top: 0; border-bottom: 8px solid var(--signal); }
+.cur-toggle { margin-left: auto; height: 36px; padding: 0 12px; border: 1px solid var(--night-line); border-radius: 999px; background: var(--night-2); color: var(--night-muted); font: inherit; font-size: 13px; cursor: pointer; }
+.cur-toggle:hover { border-color: var(--night-muted); color: var(--cream); }
+.cur-toggle[aria-pressed='true'] { background: var(--signal); color: var(--night); border-color: var(--signal); }
+.search { display: flex; align-items: center; gap: 8px; margin: 10px 0; border: 1px solid var(--night-line); border-radius: 4px; padding: 0 14px; height: 44px; flex: 0 1 300px; min-width: 200px; background: var(--night-2); }
+.search svg { stroke: var(--night-muted); }
+.search input { border: 0; background: transparent; font: inherit; font-size: 14px; flex: 1; min-width: 0; outline: none; color: var(--cream); }
+.search input::placeholder { color: var(--night-muted); }
+.search:focus-within { border-color: var(--signal); }
+.site-header :focus-visible { outline-color: var(--signal); }
+@media (max-width: 720px) { .search { flex: 1 1 100%; } .nav a, .brand { min-height: 48px; } }
+
+/* The 24-hour bezel under the header: day hours blue, night hours red */
+.bezel { display: flex; font-family: var(--mono); font-size: 11px; font-weight: 700; color: #FFFFFF; }
+.bezel span { flex: 1; text-align: center; padding: 4px 0; background: var(--bezel-day); }
+.bezel span.night { background: var(--bezel-night); }
+@media (max-width: 720px) { .bezel span.dot { display: none; } }
 
 /* Buttons and chips */
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border-radius: 6px; background: var(--ink); color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; border: 0; }
@@ -63,8 +88,11 @@ h2 { margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.01em; }
 .notice { border: 1px solid #E8D9B0; background: #FFF8E6; border-radius: 10px; padding: 14px 16px; font-size: 14px; color: #5C4300; }
 
 /* Footer */
-.site-footer { margin-top: auto; border-top: 1px solid var(--line); background: var(--wash); font-size: 13px; color: var(--ink-2); }
+.site-footer { margin-top: auto; background: var(--night); font-size: 13px; color: var(--night-muted); }
 .site-footer .wrap { display: flex; flex-wrap: wrap; gap: 24px 32px; padding-top: 32px; padding-bottom: 40px; }
 .site-footer p { margin: 0; flex: 1 1 420px; max-width: 640px; }
 .site-footer nav { display: flex; flex-direction: column; gap: 6px; }
+.site-footer a { color: var(--cream); }
+.site-footer a:hover { color: var(--signal); }
+.site-footer :focus-visible { outline-color: var(--signal); }
 .page { min-height: 100vh; display: flex; flex-direction: column; }
