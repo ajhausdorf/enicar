@@ -5,7 +5,8 @@
 # uses (`current`), and each past entry keeps the label that edition used,
 # since categories were split and renamed over the years.
 # A null `low` is a band published as "unknown"; a `note` marks a band the
-# edition gave no figure for.
+# edition gave no figure for. Conditions are written as the records write
+# them ("Very good to mint" for the editions' "very good – mint").
 editions:
   - { n: 1, date: 2018-01-10, url: https://enicar.org/2018/01/10/watch-value-barometer-1/ }
   - { n: 2, date: 2018-03-31, url: https://enicar.org/2018/03/31/watch-value-barometer-2/ }
@@ -322,6 +323,12 @@ series:
           - { condition: "Poor to fair", low: 750, high: 1000 }
   - current: ["Sherpa Dive with red pointer ring"]
     past:
+      - edition: 4
+        label: "Sherpa Dive (non-bakelite bezel version)"
+        bands:
+          - { condition: "Very good to mint", low: 1800, high: 2500 }
+          - { condition: "Average to good", low: 1400, high: 1800 }
+          - { condition: "Poor to fair", low: 900, high: 1400 }
       - edition: 5
         label: "Sherpa Dive (red pointer ring, not sufficient data to evaluate pre-1958 version)"
         bands:
