@@ -1,13 +1,29 @@
 ---
 // Search runs entirely in the browser using the index Pagefind builds from
 // the finished site. It only works after `npm run build`, not in `npm run dev`.
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import WatchCard from '../components/WatchCard.astro';
+import { leavesOf } from '../lib/site';
+
+// Watches whose name matches lead the results, as catalog cards; the
+// full-text results from Pagefind follow. Every card is on the page, hidden
+// until a search picks it.
+const familyName = Object.fromEntries((await getCollection('families')).map((f) => [f.id, f.data.name]));
+const leaves = (await getCollection('references')).flatMap((r) => leavesOf(r));
 ---
 <Base title="Search" section="search">
   <link slot="head" rel="stylesheet" href="/pagefind/pagefind-ui.css">
   <div class="wrap search-page">
     <h1>Search</h1>
     <div id="pagefind"></div>
+    <section class="hits" id="hits" aria-labelledby="hits-h" hidden>
+      <h2 id="hits-h">Watches</h2>
+      <div class="grid">
+        {leaves.map((l) => <WatchCard leaf={l} familyName={familyName[l.ref.data.family.id]} />)}
+      </div>
+    </section>
+    <h2 id="pages-h" class="pages-h" hidden>Pages that mention it</h2>
     <noscript><p>Search needs JavaScript. Browse the <a href="/">catalog</a> instead.</p></noscript>
   </div>
 </Base>
@@ -16,10 +32,32 @@ import Base from '../layouts/Base.astro';
   (function () {
     var s = document.createElement('script');
     s.src = '/pagefind/pagefind-ui.js';
+    // A card matches when every word of the query is in its name, ignoring
+    // case, spaces and punctuation ("mk iv", "MkIV" and "Mk-IV" all match).
+    var hits = document.getElementById('hits');
+    var pagesH = document.getElementById('pages-h');
+    var cards = [].slice.call(hits.querySelectorAll('.watch-card'));
+    var squash = function (t) { return t.toLowerCase().replace(/[^a-z0-9]/g, ''); };
+    var match = function (q) {
+      var words = q.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+      var n = 0;
+      cards.forEach(function (c) {
+        var name = squash(c.dataset.name);
+        var ok = words.length > 0 && q.replace(/\s/g, '').length > 1 && words.every(function (w) { return name.indexOf(w) !== -1; });
+        c.hidden = !ok;
+        if (ok) n++;
+      });
+      hits.hidden = n === 0;
+      pagesH.hidden = !q.trim();
+    };
     s.onload = function () {
       var ui = new PagefindUI({ element: '#pagefind', showSubResults: false, showImages: false });
+        // Put the cards between the search box and Pagefind's own results.
+      var drawer = document.querySelector('#pagefind .pagefind-ui__drawer');
+      if (drawer) { drawer.before(hits); drawer.before(pagesH); }
+      document.getElementById('pagefind').addEventListener('input', function (e) { if (e.target.matches('input')) match(e.target.value); });
       var q = new URLSearchParams(location.search).get('q');
-      if (q) ui.triggerSearch(q);
+      if (q) { ui.triggerSearch(q); match(q); }
     };
     s.onerror = function () {
       document.getElementById('pagefind').innerHTML = '<p class="notice">The search index is built with the site. Run <code>npm run build</code> and <code>npm run preview</code> to use search locally.</p>';
@@ -30,5 +68,8 @@ import Base from '../layouts/Base.astro';
 
 <style>
   .search-page { display: flex; flex-direction: column; gap: 16px; padding-top: 56px; padding-bottom: 64px; min-height: 50vh; }
+  .hits { display: flex; flex-direction: column; gap: 16px; margin: 16px 0 32px; }
+  .hits h2, .pages-h { font-size: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
   .search-page :global(.pagefind-ui) { --pagefind-ui-primary: var(--accent); --pagefind-ui-font: var(--sans); --pagefind-ui-border: var(--line); margin-top: 16px; }
 </style>
