@@ -266,6 +266,70 @@ images:
     caption: "From Enicar's 1969 catalogue (Germany)."
     identified_by: source
     identified_note: "Captioned Sherpa Guide 148 35 01 (166 35 01) in the 1969 catalogue; MkIII by its rally-style 24-hour hand."
+  - file: /images/sherpa-guide/sop-db5qzdgt-hg-1.webp
+    thumb: /images/sherpa-guide/sop-db5qzdgt-hg-1-sm.webp
+    width: 1600
+    height: 1577
+    alt: "Sherpa Guide automatic 33 with a silver dial, red pointer ring and world-city outer bezel, without strap"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/Db5qZdGt-HG/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Guide MK2 33, bought new in 1963. Baton hands with lume tips and a slim 24-hour hand, the MkII tells."
+  - file: /images/sherpa-guide/sop-dlz2c7jtkmh-1.webp
+    thumb: /images/sherpa-guide/sop-dlz2c7jtkmh-1-sm.webp
+    width: 1281
+    height: 1600
+    alt: "Sherpa Guide automatic with a silver dial, dark pointer and world-city outer bezel on a steel bracelet"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/DLZ2C7jtKmH/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Guide MK2, dated 05-1965. Baton hands with lume tips and a slim yellow-tipped 24-hour hand, the MkII tells."
+  - file: /images/sherpa-guide/sop-dtm33a-desf-1.webp
+    thumb: /images/sherpa-guide/sop-dtm33a-desf-1-sm.webp
+    width: 1201
+    height: 1600
+    alt: "Sherpa Guide automatic with a silver dial and world-city outer bezel on a steel bracelet, seen at an angle"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/DTm33A-DesF/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Guide MK2 with a touch of yellow on the GMT hand. Baton hands with lume tips and a slim 24-hour hand, the MkII tells."
+  - file: /images/sherpa-guide/sop-dbwvscrrgem-1.webp
+    thumb: /images/sherpa-guide/sop-dbwvscrrgem-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Sherpa Guide automatic with a black dial, rally-style red 24-hour hand, red seconds hand, red pointer and world-city outer bezel on a steel bracelet"
+    view: dial
+    variant: "MkIII"
+    source_url: https://www.instagram.com/p/DBwvSCrRgEm/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Guide 600 GMT Mark III, 1968, AR 1146. The rally-style 24-hour hand is the MkIII tell."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

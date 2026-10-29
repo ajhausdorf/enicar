@@ -12,7 +12,7 @@ const photographers = (await getCollection('permissions')).map((p) => ({
 })).sort((a, b) => b.count - a.count);
 const usage = Object.fromEntries(sources.map((s) => [s.id, refs.filter((r) => r.data.citations.some((c) => c.source.id === s.id)).length]));
 ---
-<Base title="Sources and credits" section="sources">
+<Base title="Sources and credits" description="The collectors, archives and sites behind Enicar World's records, and the photographers who let us use their photos." section="sources">
   <div class="wrap sources">
     <section class="intro">
       <h1>Sources</h1>

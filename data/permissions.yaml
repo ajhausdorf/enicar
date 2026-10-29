@@ -71,3 +71,10 @@
   web:
     site: https://enicar101.com/
     credit_as: Enicar 101
+- id: shot-of-patina
+  who: "@shot.of.patina"
+  profile_url: https://www.instagram.com/shot.of.patina/
+  granted: 2026-10-26
+  via: Instagram message to the owner, relayed by the owner on 2026-10-28
+  scope: Their Enicar photos, with credit. The owner relayed a yes to using their photos; no further terms were passed on.
+  credit_as: "@shot.of.patina"

@@ -459,22 +459,22 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Checkered GMT hand."
-  - file: /images/sherpa-super-jet/v-c1w1wrcnm6n-1.webp
-    thumb: /images/sherpa-super-jet/v-c1w1wrcnm6n-1-sm.webp
-    width: 1440
-    height: 1440
-    alt: "Sherpa Super-Jet in the cushion case with a black dial and black, white and yellow 24-hour bezel, on the wrist"
+  - file: /images/sherpa-super-jet/sop-dp6nrppdgr0-1.webp
+    thumb: /images/sherpa-super-jet/sop-dp6nrppdgr0-1-sm.webp
+    width: 1270
+    height: 1600
+    alt: "Two Sherpa Super-Jets in the cushion case with black dials and black, white and yellow 24-hour rings, one on a black rally strap and one, an automatic, on a steel bracelet"
     view: dial
     variant: "MkIV"
-    source_url: https://www.instagram.com/p/C1w1WRCNM6n/
-    credit: "@vandervenus"
-    credit_url: https://www.instagram.com/vandervenus/
+    source_url: https://www.instagram.com/p/DP6NrPpDGR0/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
     license: "Used with permission"
     permission: granted
-    permission_ref: vandervenus
+    permission_ref: shot-of-patina
     caption: null
-    identified_by: tells
-    identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV."
+    identified_by: caption
+    identified_note: "Caption: Sherpa Super Jet MkIV, ref. 166-36-01, circa 1975. Both watches are in the cushion case, which the source gives as MkIV; the one on the bracelet reads automatic."
   - file: /images/sherpa-super-jet/v-ckdorzdlzhw-1.webp
     thumb: /images/sherpa-super-jet/v-ckdorzdlzhw-1-sm.webp
     width: 1440

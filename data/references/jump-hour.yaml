@@ -1,10 +1,14 @@
 name: Jump Hour
 family: other
 kind: other
-summary: "A 1970s automatic in a tonneau case that shows the hour as a jumping digit in a window instead of an hour hand."
+summary: "A 1970s automatic that shows the hour as a jumping digit in a window instead of an hour hand. The 119-01-01 has a tonneau case; the 173-01-01 adds a date."
 references:
   - number: 119-01-01
+    note: "Stainless steel tonneau case, 37 mm, with the minutes and seconds read off the dial."
     cites: [ve-jump-hour]
+  - number: 173-01-01
+    note: "Automatic Jumping Hour Date in a gold-plated 40.5 x 41.5 mm case on the AS 2073, per its owner."
+    cites: [sop-cqly]
 nicknames: []
 years: { from: null, to: null, approximate: true }
 movement:
@@ -12,12 +16,12 @@ movement:
   winding: automatic
 case:
   construction: null
-  material: Stainless steel
-  diameter_mm: 37
+  material: null
+  diameter_mm: null
   lug_mm: null
   thickness_mm: null
 features: []
-dial: "Jumping hour shown digitally in a window, with the minutes and seconds also read off the dial; magnifying crystal."
+dial: "Jumping hour shown digitally in a window."
 variants: []
 read_more:
   - title: "Booknews: Time for a Change, MkIII"
@@ -105,10 +109,42 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Caseback reads 119-01-01, with a blue \"geprüft\" (tested) sticker."
+  - file: /images/jump-hour/sop-cqlyjyvlaje-1.webp
+    thumb: /images/jump-hour/sop-cqlyjyvlaje-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Gold-plated Enicar automatic jumping hour with the hour and minutes on discs and a date window, on a dark brown strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CqLyJYVLaJE/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar Automatic Jumping Hour Date, ref. 173 01 01, AS 2073."
+  - file: /images/jump-hour/sop-cpzlz-yrd0z-1.webp
+    thumb: /images/jump-hour/sop-cpzlz-yrd0z-1-sm.webp
+    width: 1367
+    height: 1534
+    alt: "Gold-plated Enicar automatic jumping hour with a date window, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cpzlz_Yrd0Z/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar Automatic Jumping Hour Date, ref. 173 01 01; the same watch as CqLyJYVLaJE."
 status: draft
 gaps:
   - Production years (the dealer says 1970s)
-  - Calibre
+  - Calibre of the 119-01-01 (the owner of a 173-01-01 gives the AS 2073)
   - Other references in the jump hour line
   - Case construction, lug width and thickness
 citations:
@@ -117,11 +153,17 @@ citations:
     url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-01
     title: "1970s Enicar \"Jump Hour\" Automatic Ref. 119-01-01 (Vintage Eye Watches listing)"
     retrieved: 2026-10-27
-    supports: [movement.winding, case.material, case.diameter_mm, dial]
+    supports: [movement.winding, dial]
+  - id: sop-cqly
+    source: shot-of-patina
+    url: https://www.instagram.com/p/CqLyJYVLaJE/
+    title: "@shot.of.patina: Enicar Automatic Jumping Hour Date, ref. 173 01 01, AS 2073"
+    retrieved: 2026-10-29
+    supports: []
   - id: eo-book-mkiii
     source: enicar-org
     url: https://enicar.org/2023/10/05/booknews-time-for-a-change-mkiii/
     title: "Booknews: Time for a Change, MkIII"
     retrieved: 2026-10-27
     supports: []
-last_reviewed: 2026-10-27
+last_reviewed: 2026-10-29

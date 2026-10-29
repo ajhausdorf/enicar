@@ -1,5 +1,6 @@
 // data/pending-photos.yaml: every held photo still has its original in
 // incoming/<account>/img/, names a known account, and isn't also on the site.
+// Photos awaiting permission name an account with no entry yet.
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import YAML from 'yaml';
@@ -9,7 +10,7 @@ export function checkPending() {
   const r = new Report('pending photos');
   const p = join(ROOT, 'data/pending-photos.yaml');
   if (!existsSync(p)) return r;
-  const { pending = [], excluded = [] } = YAML.parse(readFileSync(p, 'utf8')) ?? {};
+  const { pending = [], excluded = [], awaiting_permission = [] } = YAML.parse(readFileSync(p, 'utf8')) ?? {};
   const perms = loadPermissions();
   const accounts = new Set(perms.map((x) => x.profile_url.replace(/\/$/, '').split('/').pop()));
   // Folders of website photos (scripts/web/pages.mjs) count when their pages
@@ -44,6 +45,12 @@ export function checkPending() {
       const f = join(ROOT, 'incoming', x.account, 'img', `${x.code}_${String(n).padStart(2, '0')}.webp`);
       if (!existsSync(f)) r.error(where, `original missing: ${f.replace(ROOT, '')}`);
     }
+  }
+  for (const x of awaiting_permission) {
+    const where = `awaiting permission ${x.code}`;
+    if (accounts.has(x.account)) r.error(where, `account "${x.account}" now has a permission entry; bring the photos in with the instagram-photos skill`);
+    if (!x.question || !x.evidence?.length) r.error(where, 'needs a question and the evidence behind it');
+    if (x.photos?.some((n) => placed.has(`${x.code}/${n}`))) r.error(where, 'already on the site without a permission entry');
   }
   for (const x of excluded) if (!x.reason) r.error(`excluded ${x.code}`, 'needs a reason');
   return r;

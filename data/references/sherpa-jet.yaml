@@ -255,6 +255,22 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Red and blue bezel (tagged #pepsibezel #ar166); the source gives red and blue bezels and the AR166 as MkIII."
+  - file: /images/sherpa-jet/sop-dmfabp1t3a7-1.webp
+    thumb: /images/sherpa-jet/sop-dmfabp1t3a7-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Jet automatic in a cushion case with a black dial, red and blue inner bezel with yellow markers and date at 3, on a blue strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/DMFABP1t3A7/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Jet MkIV (166-35-05). Cushion case and red and blue bezel with yellow markers; the source gives both as MkIV."
   - file: /images/sherpa-jet/tcp-cptd9adsqrt-1.webp
     thumb: /images/sherpa-jet/tcp-cptd9adsqrt-1-sm.webp
     width: 1440
@@ -559,6 +575,22 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Round case and a red and black checkered GMT hand. The listing gives ref. 148-35-02."
+  - file: /images/sherpa-jet/sop-dvn2nvijjwc-1.webp
+    thumb: /images/sherpa-jet/sop-dvn2nvijjwc-1-sm.webp
+    width: 1440
+    height: 1514
+    alt: "Sherpa Jet automatic in a cushion case with a black dial and red, blue and yellow inner bezel, on a blue strap over a blue patterned cloth"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/DVN2nVijjwc/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Jet MkIV (166-35-05); the same watch as DMFABP1t3A7. Cushion case and red and blue bezel with yellow markers; the source gives both as MkIV."
 photos_elsewhere:
   - variant: null
     label: Every generation pictured in enicar.org's Jet and Super-Jet article
