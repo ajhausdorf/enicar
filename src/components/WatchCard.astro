@@ -82,13 +82,16 @@ const sortPrice = topBand ? Math.round(toUsd(bar.currency, topBand.high)) : '';
   .watch-card:hover { border-color: var(--ink); }
   .watch-card:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
   .watch-card[hidden] { display: none; }
-  .watch-card__img { background: var(--photo-ground); aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; }
-  .watch-card__img img { width: 100%; height: 100%; object-fit: cover; }
-  .watch-card__carousel { position: relative; z-index: 1; display: block; }
-  .watch-card__track { display: flex; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; overscroll-behavior-x: contain; }
+  /* Every card's photo area is the same 4:3 box, whatever the photo's shape.
+     The photo is laid over the box and cropped to fill it, so a tall or
+     square photo can't stretch the card. */
+  .watch-card__img { position: relative; overflow: hidden; background: var(--photo-ground); aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; }
+  .watch-card__img > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .watch-card__carousel { z-index: 1; display: block; }
+  .watch-card__track { position: absolute; inset: 0; display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; overscroll-behavior-x: contain; }
   .watch-card__track::-webkit-scrollbar { display: none; }
   .watch-card__slide { flex: 0 0 100%; height: 100%; scroll-snap-align: start; display: block; }
-  .watch-card__slide img { display: block; -webkit-user-drag: none; }
+  .watch-card__slide img { display: block; width: 100%; height: 100%; object-fit: cover; -webkit-user-drag: none; }
   .watch-card__nav { position: absolute; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); background: var(--paper); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; opacity: 0; transition: opacity .15s; }
   .watch-card__nav.prev { left: 8px; }
   .watch-card__nav.next { right: 8px; }
