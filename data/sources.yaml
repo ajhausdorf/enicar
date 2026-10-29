@@ -99,6 +99,17 @@
   use: Photos, with permission, and the owner's own reference and calibre for a watch.
   leads_to: []
   permission: granted
+- id: shot-of-patina
+  name: "@shot.of.patina"
+  kind: other
+  tier: secondary
+  url: https://www.instagram.com/shot.of.patina/
+  author: null
+  status: confirmed
+  what: Instagram account of a collector of vintage watches, many of them Enicar (Sherpa Jets and Guides, Super Quartz, Saturn-Matic, the Garnix), whose captions often give the reference and calibre.
+  use: Photos, with permission, and the owner's own reference and calibre for a watch.
+  leads_to: []
+  permission: granted
 - id: dropandwatch
   name: Drop&Watch
   kind: dealer

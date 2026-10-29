@@ -1,0 +1,53 @@
+name: "Automatic 167-23-36"
+family: other
+kind: dress
+summary: "A 1970s automatic day-date on the AR 167D, known here from one example in a black PVD case with a gold-coloured bezel."
+references:
+  - number: 167-23-36
+    note: "Given by the owner of the one example here, written 167.23.36."
+    cites: [sop-cm6s]
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: [AR167]
+  winding: automatic
+case:
+  construction: null
+  material: "Black PVD, with a gold-coloured bezel"
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Day and date; this example shows the day in Spanish."
+variants: []
+images:
+  - file: /images/automatic-167-23-36/sop-cm6soeonzqp-1.webp
+    thumb: /images/automatic-167-23-36/sop-cm6soeonzqp-1-sm.webp
+    width: 1331
+    height: 1600
+    alt: "Enicar automatic with a white dial and day-date in a black PVD cushion case with a gold-coloured bezel, on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cm6sOEONzqp/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar ref. 167.23.36 automatic, AR 167D with Spanish day, black PVD case with golden bezel."
+status: draft
+gaps:
+  - Production years (the owner says 1970s)
+  - Case size, construction and lug width
+  - Whether the PVD case is the only finish for this reference
+  - Any source beyond the owner's caption
+citations:
+  - id: sop-cm6s
+    source: shot-of-patina
+    url: https://www.instagram.com/p/Cm6sOEONzqp/
+    title: "@shot.of.patina: Enicar Automatic ref. 167.23.36, AR 167D, black PVD case"
+    retrieved: 2026-10-29
+    supports: [movement.calibres, movement.winding, case.material, dial]
+last_reviewed: 2026-10-29

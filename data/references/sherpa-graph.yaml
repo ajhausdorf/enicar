@@ -1445,6 +1445,38 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Movement of the same watch on Enicar 101's MK Ic page."
+  - file: /images/sherpa-graph/sop-da1-s9zdb0l-1.webp
+    thumb: /images/sherpa-graph/sop-da1-s9zdb0l-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Graph with an aged cream dial and tachymetre scale on a cream racing strap"
+    view: dial
+    variant: "MkId"
+    source_url: https://www.instagram.com/p/Da1_S9zDb0L/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Graph Mk1D, dated 06/1962; the source dates the MkId 6/62."
+  - file: /images/sherpa-graph/sop-da1-s9zdb0l-3.webp
+    thumb: /images/sherpa-graph/sop-da1-s9zdb0l-3-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Sherpa Graph with a cream dial on a cream racing strap, on the wrist"
+    view: dial
+    variant: "MkId"
+    source_url: https://www.instagram.com/p/Da1_S9zDb0L/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Sherpa Graph Mk1D, dated 06/1962; the same watch as photo 1."
 barometer: null
 status: draft
 gaps:

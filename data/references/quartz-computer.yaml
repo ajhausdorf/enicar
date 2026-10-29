@@ -76,6 +76,22 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Caption names the Quartz-Computer."
+  - file: /images/quartz-computer/sop-dd2hmx3v6l7-3.webp
+    thumb: /images/quartz-computer/sop-dd2hmx3v6l7-3-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Quartz-Computer LCD watch in a steel case on a mesh bracelet, in its Enicar box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DD2HmX3v6L7/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the Enicar Quartz-Computer, a full set with its box and instructions from 1976."
 status: draft
 gaps:
   - Calibre name

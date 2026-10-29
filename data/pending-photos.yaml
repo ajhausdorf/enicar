@@ -765,6 +765,182 @@ pending:
       - "Our Sherpa Date photos are all identified by a dial reading Sherpa Date, apart from one 40 mm EPSA-cased example identified by its caption."
 
 excluded:
+  - account: shot.of.patina
+    code: DUd74UQDZhh
+    photos: all
+    reason: "Sherpa Guide with no generation in the caption, and the tells are not clear at this angle."
+  - account: shot.of.patina
+    code: DbfQX4GDSuR
+    photos: all
+    reason: "Sherpa Guide with no generation in the caption; angled shots that don't show the hands clearly."
+  - account: shot.of.patina
+    code: DWvTGikjB3I
+    photos: all
+    reason: "Two Guide MkIIs compared; the MkII already has six photos, three of them from this account."
+  - account: shot.of.patina
+    code: DWQ0nIADi5S
+    photos: all
+    reason: "Black-dial diver on the wrist with no model named; Super-Dive or OPS can't be told apart here."
+  - account: shot.of.patina
+    code: DZQnmURDRya
+    photos: all
+    reason: "Super-Dive; that page already has 36 photos."
+  - account: shot.of.patina
+    code: DSujBehjfMK
+    photos: all
+    reason: "Super-Dive; that page already has 36 photos."
+  - account: shot.of.patina
+    code: DRmzWIbjFsn
+    photos: all
+    reason: "Super-Dive 167-08-02; that page already has 36 photos."
+  - account: shot.of.patina
+    code: DRCuig-DOS7
+    photos: all
+    reason: "Super-Dive 167-08-02; that page already has 36 photos."
+  - account: shot.of.patina
+    code: DQOltWxDfjc
+    photos: all
+    reason: "Super-Dive 167-08-02; that page already has 36 photos."
+  - account: shot.of.patina
+    code: C3YgDMPsjiH
+    photos: all
+    reason: "Super-Dive 167-08-02; that page already has 36 photos."
+  - account: shot.of.patina
+    code: C5eQADGLbKi
+    photos: all
+    reason: "Two Super-Dives in one photo; photo 2 is a period advert."
+  - account: shot.of.patina
+    code: DWb_6hRjVzy
+    photos: all
+    reason: "Two Super Quartz watches together in most photos; the page now has eight photos."
+  - account: shot.of.patina
+    code: DWro7xnDZf3
+    photos: [2, 3, 4]
+    reason: "The same watch as photo 1, which is placed."
+  - account: shot.of.patina
+    code: DULS1ByDSX3
+    photos: all
+    reason: "Super Quartz; the page now has eight photos, including a gold octagon from this account."
+  - account: shot.of.patina
+    code: DTvH9aTjMsz
+    photos: all
+    reason: "Super Quartz; the page now has eight photos."
+  - account: shot.of.patina
+    code: DFqATHNtq_9
+    photos: all
+    reason: "Super Quartz; the page now has eight photos."
+  - account: shot.of.patina
+    code: DB09N6ZNXDy
+    photos: all
+    reason: "Super Quartz; the page now has eight photos."
+  - account: shot.of.patina
+    code: DTbQgv9DRld
+    photos: all
+    reason: "The same Jet MkIV as DMFABP1t3A7 and DVN2nVijjwc, which are placed."
+  - account: shot.of.patina
+    code: DKzmN2TtphC
+    photos: all
+    reason: "Sherpa Jet with no generation in the caption; the Jet page already has 30 photos."
+  - account: shot.of.patina
+    code: DLkVRaytaWm
+    photos: all
+    reason: "Super-Jet MkIV; that generation now has nine photos."
+  - account: shot.of.patina
+    code: DKhhuh0NsLH
+    photos: all
+    reason: "Super-Jet MkIV; that generation now has nine photos."
+  - account: shot.of.patina
+    code: DTe_l_OjW5j
+    photos: all
+    reason: "A detail crop of a bezel and crowns, not the whole watch."
+  - account: shot.of.patina
+    code: DM7GNRstkd_
+    photos: all
+    reason: "Lume under black light; doesn't show the watch."
+  - account: shot.of.patina
+    code: DMhh7vTsgn3
+    photos: all
+    reason: "Three watches in one photo."
+  - account: shot.of.patina
+    code: DMNsmLHNsFP
+    photos: all
+    reason: "A Jet and a Super-Jet in one photo."
+  - account: shot.of.patina
+    code: DDm63wYNXVj
+    photos: all
+    reason: "Two watches in one photo."
+  - account: shot.of.patina
+    code: DQFBYEzjKfc
+    photos: all
+    reason: "Women's Sherpa Star 765-10-01 posted for sale; the Sherpa Star page already has eight photos."
+  - account: shot.of.patina
+    code: DP_3WShDMeV
+    photos: all
+    reason: "1940s Enicar on the cal. 410 with no model name or reference to build a page on; told to the owner."
+  - account: shot.of.patina
+    code: Caw9wziLsxW
+    photos: all
+    reason: "The same 1940s cal. 410 watch as DP_3WShDMeV; no model name or reference to build a page on."
+  - account: shot.of.patina
+    code: DF8gMusyZD-
+    photos: all
+    reason: "Macro of the same Garnix dial as Cei59thL8qJ, which is placed."
+  - account: shot.of.patina
+    code: CcL0xS8r_S1
+    photos: all
+    reason: "The same Garnix, small in the frame among macarons."
+  - account: shot.of.patina
+    code: DEA6KDrx4UY
+    photos: all
+    reason: "A single hand, no watch."
+  - account: shot.of.patina
+    code: DD2HmX3v6L7
+    photos: [1, 2]
+    reason: "Photo 1 repeats photo 3, which is placed; photo 2 is the box only."
+  - account: shot.of.patina
+    code: DCC2MrdT2ME
+    photos: all
+    reason: "Star Jewels; that page already has eight photos."
+  - account: shot.of.patina
+    code: C_piI1stNUv
+    photos: all
+    reason: "Star Jewels; that page already has eight photos."
+  - account: shot.of.patina
+    code: CZULs34LNcd
+    photos: all
+    reason: "Star Jewels; that page already has eight photos."
+  - account: shot.of.patina
+    code: CZMFN3WrI67
+    photos: all
+    reason: "Star Jewels; that page already has eight photos."
+  - account: shot.of.patina
+    code: C-xG1qvNIzr
+    photos: all
+    reason: "The same Guide MkIII as DBwvSCrRgEm, which is placed."
+  - account: shot.of.patina
+    code: C-zOa_TRmVA
+    photos: all
+    reason: "The same Guide MkIII as DBwvSCrRgEm, on a book cover."
+  - account: shot.of.patina
+    code: CnwEIMFryBn
+    photos: all
+    reason: "Saturn-Matic posted for sale; the page now has five photos."
+  - account: shot.of.patina
+    code: Cb4dsBDsZrp
+    photos: all
+    reason: "Saturn-Matic on the wrist in a car; the page now has five photos."
+  - account: shot.of.patina
+    code: Cl_UW97rM2t
+    photos: all
+    reason: "The same Sherpa Electric as CqP54z6jTWN, on the wrist."
+  - account: shot.of.patina
+    code: Da1_S9zDb0L
+    photos: [2]
+    reason: "The same Sherpa Graph as photos 1 and 3, which are placed."
+  - account: shot.of.patina
+    code: DLb_l0itLuL
+    photos: all
+    reason: "A box offered for sale, no watch."
   - account: vandervenus
     code: C1w1WRCNM6n
     photos: all

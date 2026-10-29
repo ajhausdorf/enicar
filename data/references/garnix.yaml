@@ -44,6 +44,54 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Posted by its owner in their OmegaForums thread on buying an Enicar Garnix 2303. The dial has no model name, which Enicar 101 gives as the Garnix tell."
+  - file: /images/garnix/sop-c-81fuctnrj-1.webp
+    thumb: /images/garnix/sop-c-81fuctnrj-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Garnix chronograph with a grey dial and darker registers, no model name, on a steel bracelet against gold fabric"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/C_81fuCtNRj/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar ref 2303 aka Garnix. No model name on the dial, which Enicar 101 gives as the Garnix tell."
+  - file: /images/garnix/sop-cei59thl8qj-1.webp
+    thumb: /images/garnix/sop-cei59thl8qj-1-sm.webp
+    width: 1279
+    height: 1600
+    alt: "Close-up of a Garnix chronograph dial: grey dial with paddle hands, tachymetre scale and a seconds hand with a small red dot"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cei59thL8qJ/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar ref 2303 aka Garnix, with paddle hands, small red lollipop and small lume plots."
+  - file: /images/garnix/sop-cc-annurx5e-1.webp
+    thumb: /images/garnix/sop-cc-annurx5e-1-sm.webp
+    width: 1300
+    height: 1600
+    alt: "Garnix chronograph with a grey dial lying in front of a vintage camera"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cc-aNNurX5E/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar ref 2303 aka Garnix, on the Valjoux 72. No model name on the dial."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

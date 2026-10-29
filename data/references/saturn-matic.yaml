@@ -51,6 +51,54 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial signed Saturn-Matic."
+  - file: /images/saturn-matic/sop-cx2nqpim-ht-1.webp
+    thumb: /images/saturn-matic/sop-cx2nqpim-ht-1-sm.webp
+    width: 1283
+    height: 1600
+    alt: "Saturn-Matic with a blue dial, gold and silver markers and day-date in an egg-shaped case, on a blue strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cx2nqpIM-ht/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar Saturn-Matic, cal. 1147B, ref. 147-03-01."
+  - file: /images/saturn-matic/sop-cbne0fimpx8-1.webp
+    thumb: /images/saturn-matic/sop-cbne0fimpx8-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Saturn-Matic with a white dial and day-date in a brushed cushion case, on a brown ostrich strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CbNE0fiMPx8/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar Saturn-Matic, cal. 1147, ref. 147-03-01."
+  - file: /images/saturn-matic/sop-cdbttdml84v-1.webp
+    thumb: /images/saturn-matic/sop-cdbttdml84v-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Saturn-Matic with a white dial and day-date on a tan strap, with lily of the valley"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CdBttdmL84V/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar Saturn-Matic, cal. 1147, ref. 147-03-01; the dial reads Saturn-Matic."
 status: draft
 gaps:
   - "Calibre record for the AR 1147"
