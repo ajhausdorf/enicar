@@ -1,7 +1,8 @@
 name: Enicar 410
 maker: Enicar
 winding: manual
-functions: []
+functions:
+  - Centre seconds
 lignes: "10.5"
 diameter_mm: "23.7"
 height_mm: "4.55"
@@ -16,7 +17,6 @@ notes:
       - sop-dp3w
 status: draft
 gaps:
-  - Functions (the watch here has centre seconds)
   - Base calibre
 citations:
   - id: ranfft
@@ -27,6 +27,7 @@ citations:
     supports:
       - maker
       - winding
+      - functions
       - lignes
       - diameter_mm
       - height_mm
