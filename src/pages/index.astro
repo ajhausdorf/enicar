@@ -116,13 +116,15 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
   const empty = document.getElementById('empty')!;
   const params = new URLSearchParams(location.search);
   let family = params.get('family') ?? '';
-  let model = params.get('model') ?? '';
+  // Models are a multi-select within one family. They start empty on every
+  // visit and clear when the family changes; only the family goes in the URL.
+  const models = new Set<string>();
 
   function apply() {
     let n = 0;
     for (const c of cards) {
       const ok = (!family || c.dataset.family === family) &&
-        (!model || c.dataset.model === model) &&
+        (!models.size || models.has(c.dataset.model!)) &&
         (!kind.value || c.dataset.kind === kind.value) &&
         (!decade.value || c.dataset.decade === decade.value) &&
         (photo.getAttribute('aria-pressed') !== 'true' || c.dataset.hasPhoto === 'yes');
@@ -142,25 +144,35 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
       sort.value === 'year' ? Number(a.dataset.year) - Number(b.dataset.year) :
       order.get(a)! - order.get(b)!);
     grid.append(...sorted);
-    for (const b of famButtons) b.setAttribute('aria-pressed', String(b.dataset.family === family && !model));
-    for (const b of modelButtons) b.setAttribute('aria-pressed', String(b.dataset.model === model));
+    for (const b of famButtons) b.setAttribute('aria-pressed', String(b.dataset.family === family && !models.size));
+    for (const b of modelButtons) b.setAttribute('aria-pressed', String(models.has(b.dataset.model!)));
     for (const l of modelLists) l.hidden = l.dataset.modelsOf !== family;
     const activeFam = famButtons.find((b) => b.dataset.family === family);
-    const activeModel = modelButtons.find((b) => b.dataset.model === model);
-    heading.textContent = activeModel ? activeModel.firstElementChild!.textContent!
+    const picked = modelButtons.filter((b) => models.has(b.dataset.model!)).map((b) => b.firstElementChild!.textContent!);
+    heading.textContent = picked.length > 2 ? `${picked.length} models`
+      : picked.length ? picked.join(' and ')
       : family && activeFam ? `${activeFam.firstElementChild!.textContent} family` : 'All watches';
     shown.textContent = `${n} shown`;
     empty.hidden = n > 0;
     const url = new URL(location.href);
     family ? url.searchParams.set('family', family) : url.searchParams.delete('family');
-    model ? url.searchParams.set('model', model) : url.searchParams.delete('model');
+    url.searchParams.delete('model');
     history.replaceState(null, '', url);
   }
-  for (const b of famButtons) b.addEventListener('click', () => { family = b.dataset.family ?? ''; model = ''; apply(); });
-  for (const b of modelButtons) b.addEventListener('click', () => { family = b.dataset.family ?? ''; model = b.dataset.model ?? ''; apply(); });
+  for (const b of famButtons) b.addEventListener('click', () => { family = b.dataset.family ?? ''; models.clear(); apply(); });
+  for (const b of modelButtons) b.addEventListener('click', () => {
+    const f = b.dataset.family ?? '', m = b.dataset.model!;
+    if (f !== family) { family = f; models.clear(); }
+    models.has(m) ? models.delete(m) : models.add(m);
+    apply();
+  });
   photo.addEventListener('click', () => { photo.setAttribute('aria-pressed', String(photo.getAttribute('aria-pressed') !== 'true')); apply(); });
   for (const el of [kind, decade, sort]) el.addEventListener('change', apply);
-  apply();
+  // Coming back to the catalogue (including the browser's back button, which
+  // can restore the page and its form fields) starts with the filters clear.
+  const reset = () => { models.clear(); kind.value = ''; decade.value = ''; photo.setAttribute('aria-pressed', 'false'); apply(); };
+  window.addEventListener('pageshow', (e) => { if (e.persisted) reset(); });
+  reset();
 </script>
 
 <style>
