@@ -33,8 +33,17 @@ const specs = [
 
 const photos = calibrePhotos(entry, refs);
 const ranfft = ranfftUrl(entry);
+const pageUrl = (path: string) => new URL(path, Astro.site).href;
+const jsonld = [
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Calibres', item: pageUrl('/calibres/') },
+    { '@type': 'ListItem', position: 2, name: d.name, item: pageUrl(`/calibres/${entry.id}/`) }
+  ] },
+  { '@type': 'WebPage', name: `Enicar calibre ${d.name}`, url: pageUrl(`/calibres/${entry.id}/`),
+    citation: [...d.citations, ...d.read_more].map((c: any) => ({ '@type': 'CreativeWork', name: c.title, url: c.url })) }
+];
 ---
-<Base title={`Calibre ${d.name}`} description={`The Enicar ${d.name} movement and the watches that used it.`} section="calibres" searchable>
+<Base title={`Calibre ${d.name}`} description={`The Enicar ${d.name} movement and the watches that used it.`} section="calibres" searchable image={photos[0]?.file} jsonld={jsonld}>
   <div class="wrap calibre">
     <nav aria-label="Breadcrumb" class="crumbs">
       <a href="/calibres/">Calibres</a><span aria-hidden="true">/</span><span aria-current="page">{d.name}</span>

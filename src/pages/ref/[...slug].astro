@@ -89,8 +89,22 @@ const srcName = (c: any) => sources[c.source.id]?.data.name;
 // Photo links for this generation, plus any that cover every generation.
 const elsewhere = d.photos_elsewhere.filter((p) => !p.variant || p.variant === v?.name);
 const readMore = d.read_more.filter((m) => !m.variant || m.variant === v?.name);
+// What search engines read: where the page sits in the catalog, and the
+// sources it is built on (each cited page gets credit as a citation).
+const pageUrl = (path: string) => new URL(path, Astro.site).href;
+const jsonld = [
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Catalog', item: pageUrl('/') },
+    { '@type': 'ListItem', position: 2, name: family?.data.name, item: pageUrl(`/?family=${d.family.id}`) },
+    { '@type': 'ListItem', position: 3, name: leaf.name, item: pageUrl(leaf.path) }
+  ] },
+  { '@type': 'WebPage', name: `Enicar ${leaf.name}`, url: pageUrl(leaf.path),
+    about: { '@type': 'Thing', name: `Enicar ${leaf.name}` },
+    ...(images[0] ? { primaryImageOfPage: pageUrl(images[0].file) } : {}),
+    citation: d.citations.map((c) => ({ '@type': 'CreativeWork', name: c.title, url: c.url })) }
+];
 ---
-<Base title={leaf.name} description={`${leaf.name}${v ? `, ${vYears(v.years)}` : ''}. ${d.summary ?? ''}`.trim()} section="catalog" searchable>
+<Base title={leaf.name} description={`${leaf.name}${v ? `, ${vYears(v.years)}` : ''}. ${d.summary ?? ''}`.trim()} section="catalog" searchable image={images[0]?.file} jsonld={jsonld}>
   <div class="wrap model">
     <nav aria-label="Breadcrumb" class="crumbs">
       <a href="/">Catalog</a><span aria-hidden="true">/</span>

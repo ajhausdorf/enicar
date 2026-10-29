@@ -8,9 +8,22 @@ interface Props {
   section?: 'catalog' | 'calibres' | 'serial' | 'sources' | 'search';
   // Only watch pages go into the search index.
   searchable?: boolean;
+  // A photo for link previews, as a site path.
+  image?: string | null;
+  // Structured data for the page, beside the site-wide WebSite entry.
+  jsonld?: object[];
+  // Keep the page out of search engines (search results, the 404 page).
+  noindex?: boolean;
 }
-const { title, description = 'An independent, sourced index of vintage Enicar watches.', section, searchable = false } = Astro.props;
+const { title, description = 'An independent, sourced index of vintage Enicar watches.', section, searchable = false, image = null, jsonld = [], noindex = false } = Astro.props;
 const fullTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
+// Every page has one address: the site's own, with no query string.
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const imageUrl = image ? new URL(image, Astro.site).href : null;
+const structured = [
+  { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, url: new URL('/', Astro.site).href },
+  ...jsonld.map((j) => ({ '@context': 'https://schema.org', ...j }))
+];
 // The 24-hour bezel strip under the header: 0 to 10 blue, 12 to 22 red.
 const bezel = Array.from({ length: 24 }, (_, h) => ({ label: h % 2 ? '·' : String(h), night: h >= 12, dot: h % 2 === 1 }));
 const nav = [
@@ -27,6 +40,15 @@ const nav = [
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{fullTitle}</title>
   <meta name="description" content={description}>
+  {noindex ? <meta name="robots" content="noindex"> : <link rel="canonical" href={canonical}>}
+  <meta property="og:site_name" content={SITE_NAME}>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={title ?? SITE_NAME}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonical}>
+  {imageUrl && <meta property="og:image" content={imageUrl}>}
+  <meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'}>
+  <script type="application/ld+json" set:html={JSON.stringify(structured)} />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

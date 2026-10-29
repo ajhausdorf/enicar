@@ -23,7 +23,7 @@ const tree = families.map((f) => ({
 const kinds = [...new Set(refs.map((r) => r.data.kind))].sort();
 const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean))].sort() as string[];
 ---
-<Base section="catalog">
+<Base section="catalog" description="Every vintage Enicar watch by model and generation: Sherpa, Seapearl, Ocean Pearl, Star Jewels, Ultrasonic and more, with specs, calibres, serials, prices and the sources behind each.">
   <section class="hero">
     <div class="wrap hero__inner">
       <div class="hero__text">

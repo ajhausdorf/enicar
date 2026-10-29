@@ -12,7 +12,7 @@ import { leavesOf } from '../lib/site';
 const familyName = Object.fromEntries((await getCollection('families')).map((f) => [f.id, f.data.name]));
 const leaves = (await getCollection('references')).flatMap((r) => leavesOf(r));
 ---
-<Base title="Search" section="search">
+<Base title="Search" section="search" noindex>
   <link slot="head" rel="stylesheet" href="/pagefind/pagefind-ui.css">
   <div class="wrap search-page">
     <h1>Search</h1>
