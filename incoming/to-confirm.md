@@ -272,20 +272,6 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   - Caption: a 40 mm Sherpa that is a dress watch in a dive watch case.
   - Our Sherpa Date photos are all identified by a dial reading Sherpa Date, apart from one 40 mm EPSA-cased example identified by its caption.
 
-## Waiting on permission
-
-No entry in `data/permissions.yaml` for these accounts yet, so nothing has been downloaded or placed.
-
-- **@shot.of.patina** https://www.instagram.com/p/DP6NrPpDGR0/ · sherpa-super-jet MkIV
-  Did @shot.of.patina give permission to use their photos, and when and how?
-  - Posted by @shot.of.patina on 2025-10-17, a single photo, not a collab. Caption: Sherpa Super Jet MkIV, ref. 166-36-01, circa 1975.
-  - Two Super-Jets side by side, both in the cushion case (MkIV), one on a strap and one on a bracelet.
-  - The owner asked for it to replace one of the first two MkIV photos on sherpa-super-jet: v-c1w1wrcnm6n-1 (post C1w1WRCNM6n) and v-ckdorzdlzhw-1 (post CkDorZDLZHw) are the same wrist shot of the same watch, cropped differently. Replace v-c1w1wrcnm6n-1, the later post.
-- **@shot.of.patina** https://www.instagram.com/p/DMFABP1t3A7/ · sherpa-jet MkIV
-  Did @shot.of.patina give permission to use their photos, and when and how?
-  - Posted by @shot.of.patina on 2025-07-14 (06:27 UTC; US time zones show 13 July), a single photo, not a collab. Caption: Sherpa Jet MkIV (166-35-05), official watch of the Blue Angels in the mid 1970s.
-  - Cushion case and red and blue inner bezel with yellow markers on a blue strap: the record's MkIV tells.
-
 ---
 
 Generation tells used for Jets and Super-Jets, from Martijn van der Ven's Jet article (enicar.org): MkI paddle or dauphine hands, '33 jewels' dial, red crescent GMT hand (Jet) or red-tipped needle GMT hand (Super-Jet); MkII tuning-fork hands, slim orange or yellow-tipped GMT hand, sunburst dials; MkIII red and black checkered GMT hand, coloured bezels; MkIV cushion case.
