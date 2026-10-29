@@ -16,8 +16,6 @@ const MAX_SLIDES = 8;
 const photos = leaf.images.slice(0, MAX_SLIDES);
 const photo = photos[0];
 const creditOf = (p: any) => ({ name: p.credit, href: p.credit_url ?? p.source_url, license: p.permission !== 'granted' ? p.license : null });
-// Reference numbers aren't matched to generations yet, so only show one on a model's own card.
-const refNo = leaf.variant ? null : d.references[0]?.number;
 // The card shows the guide's first band (best condition) of its first entry.
 const bar = barometerOf(leaf);
 const topBand = bar ? bar.entries[0].bands[0] : null;
@@ -60,13 +58,11 @@ const sortPrice = topBand ? Math.round(toUsd(bar.currency, topBand.high)) : '';
         <a class="watch-card__name" href={leaf.path}>{leaf.name}</a>
         <span class="watch-card__meta">{familyName} · {KIND_LABEL[d.kind]}{years && ` · ${years}`}{size && ` · ${size}`}</span>
       </div>
-      {refNo && <span class="mono watch-card__ref">{refNo}</span>}
     </div>
     <div class="watch-card__foot">
       <span>{leaf.calibres.join(', ') || 'Calibre unknown'}</span>
       <span class="watch-card__price">
         {topBand && <Money class="mono" title={`${topBand.condition}, ${bar.edition}`} currency={bar.currency} low={topBand.low} high={topBand.high} />}
-        {d.status === 'draft' ? <span class="badge draft">Draft</span> : <span class="badge verified">Verified</span>}
       </span>
     </div>
     <p class="watch-card__credit" data-credit-line>
@@ -105,7 +101,6 @@ const sortPrice = topBand ? Math.round(toUsd(bar.currency, topBand.high)) : '';
   .watch-card__name:focus-visible { outline: none; }
   .watch-card__name::after { content: ''; position: absolute; inset: 0; }
   .watch-card__meta { font-size: 13px; color: var(--muted); }
-  .watch-card__ref { font-size: 12px; white-space: nowrap; background: var(--night); color: var(--signal); padding: 3px 7px; border-radius: 3px; border-left: 3px solid var(--bezel-night); border-right: 3px solid var(--bezel-day); }
   .watch-card__foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid var(--line-soft); font-size: 12px; color: var(--ink-2); }
   .watch-card__price { display: inline-flex; align-items: center; gap: 8px; }
   .watch-card__credit { margin: 0; font-size: 12px; color: var(--muted); }
