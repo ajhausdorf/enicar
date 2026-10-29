@@ -245,14 +245,14 @@ read_more:
     source: enicar101
     note: "Site news announcing the first Jet Graph and Aqua Graph guide pages."
 images:
-  - file: /images/sherpa-jet-graph/tcp-de10-ormb3t-1.webp
-    thumb: /images/sherpa-jet-graph/tcp-de10-ormb3t-1-sm.webp
-    width: 1438
-    height: 1440
-    alt: "Jet Graph with a black dial, white registers, red minute-counter hand and checkered GMT hand, on the wrist"
+  - file: /images/sherpa-jet-graph/tcp-dm-2026-10-29-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-dm-2026-10-29-1-sm.webp
+    width: 1267
+    height: 1600
+    alt: "Jet Graph with a black dial, white registers, red minute-counter hand, checkered GMT hand and black and silver 24-hour bezel on an orange strap"
     view: dial
     variant: "MkIV"
-    source_url: https://www.instagram.com/p/De10_oRMb3T/
+    source_url: https://www.instagram.com/two_crowned_prints/
     credit: "@two_crowned_prints"
     credit_url: https://www.instagram.com/two_crowned_prints/
     license: "Used with permission"
@@ -260,7 +260,7 @@ images:
     permission_ref: two-crowned-prints
     caption: null
     identified_by: tells
-    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
+    identified_note: "James sent this to the owner by Instagram message on 2026-10-29 as a clearer photo of the same watch as his De10_oRMb3T post (same pink inner ring and bezel), to use instead of it. Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
   - file: /images/sherpa-jet-graph/tcp-c-qrrgzpr5p-1.webp
     thumb: /images/sherpa-jet-graph/tcp-c-qrrgzpr5p-1-sm.webp
     width: 1346
