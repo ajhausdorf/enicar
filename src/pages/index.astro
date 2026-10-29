@@ -4,13 +4,18 @@ import Base from '../layouts/Base.astro';
 import WatchCard from '../components/WatchCard.astro';
 import { KIND_LABEL, decadeOf, leavesOf } from '../lib/site';
 
-// Sort models as a collector would: Aqua Graph, Dive, ... rather than every 'Sherpa' together.
+// Sort models as a collector would: Aqua Graph, Dive, ... rather than every 'Sherpa' together,
+// with the named models before the numbered ones (Sherpa Aqua Graph before Sherpa 100).
 const sortName = (n: string) => n.replace(/^Sherpa /, '');
+const byName = (a: string, b: string) => {
+  const x = sortName(a), y = sortName(b);
+  return Number(/^\d/.test(x)) - Number(/^\d/.test(y)) || x.localeCompare(y, 'en', { numeric: true });
+};
 const families = (await getCollection('families')).sort((a, b) => a.data.order - b.data.order);
 const familyName = Object.fromEntries(families.map((f) => [f.id, f.data.name]));
 const refs = (await getCollection('references')).sort((a, b) =>
   (families.findIndex((f) => f.id === a.data.family.id) - families.findIndex((f) => f.id === b.data.family.id)) ||
-  sortName(a.data.name).localeCompare(sortName(b.data.name)));
+  byName(a.data.name, b.data.name));
 
 // One card per generation (or per model, when it has no generations).
 const leaves = refs.flatMap((r) => leavesOf(r));
