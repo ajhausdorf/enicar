@@ -154,3 +154,25 @@
   use: Photos, with permission, and his description of his own watches. Cited per post.
   leads_to: [enicar.org]
   permission: granted
+- id: ranfft
+  name: Ranfft watch movement archive
+  kind: archive
+  tier: secondary
+  url: https://ranfft.org/
+  author: null
+  status: to-confirm
+  what: Long-running reference database of watch movements, started by Dr. Ranfft, with dimensions, jewels, beat rate and functions per calibre.
+  use: Calibre specs (size, height, jewels, beat rate, power reserve, functions), cited per calibre page. Its photos are not ours to use.
+  leads_to: []
+  permission: not-needed
+- id: grail-watch
+  name: Grail Watch Reference
+  kind: archive
+  tier: secondary
+  url: https://reference.grail-watch.com/
+  author: null
+  status: to-confirm
+  what: Collector reference library of watch movements, with specs and production notes per calibre.
+  use: Calibre specs where Ranfft has no entry.
+  leads_to: []
+  permission: not-needed

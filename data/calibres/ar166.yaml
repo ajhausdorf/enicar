@@ -1,30 +1,53 @@
 name: AR166
-maker: null
-winding: null
-functions: [GMT]
+maker: Enicar
+winding: automatic
+functions:
+  - Centre seconds
+  - Date
+  - 24-hour hand (GMT)
+lignes: "11.75"
+diameter_mm: "26.8"
+height_mm: "5.30"
+jewels: "24"
+beat_rate: 21,600 A/h
+power_reserve: 45 h
 base: null
-introduced: null
 notes:
-  - text: Written as AR166 in the source. The exact designation should be checked against a movement photo or catalogue.
-    cites: [eo-jet]
   - text: Spare parts for the GMT versions are scarcer than for Enicar's standard AR calibres.
-    cites: [eo-jet]
+    cites:
+      - eo-jet
 read_more:
   - title: Exploring the Enicar Sherpa (Super-)Jet
     url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
     source: enicar-org
     note: Covers the GMT calibres used in the Jet and Super-Jet.
+  - title: Facts, figures and features
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    source: enicar-org
+    note: Enicar's in-house calibres by series, with winding, jewels and power reserve, and an offer of scanned calibre manuals.
 status: draft
-gaps:
-  - Exact designation
-  - Maker and winding
-  - Base calibre
-  - Jewel count, frequency and other specs
+gaps: []
 citations:
   - id: eo-jet
     source: enicar-org
     url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
     title: Exploring the Enicar Sherpa (Super-)Jet
     retrieved: 2026-10-25
-    supports: [functions]
-last_reviewed: 2026-10-25
+    supports:
+      - functions
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/3608-Enicar-166
+    title: "Ranfft archive: Enicar 166"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+last_reviewed: 2026-10-28

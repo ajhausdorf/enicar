@@ -1,13 +1,38 @@
 name: Valjoux 23
-maker: null
-winding: null
-functions: []
+maker: Valjoux
+winding: manual
+functions:
+  - Chronograph with minute counter
+  - Small seconds
+lignes: "13"
+diameter_mm: "30"
+height_mm: "5.82"
+jewels: "17"
+beat_rate: 18,000 A/h
+power_reserve: 48 h
 base: null
-introduced: null
 notes: []
-read_more: []
+read_more:
+  - title: "The Enicar F45 'Pelé' chronograph"
+    url: https://enicar.org/2021/03/15/the-enicar-f45-pele-chronograph/
+    source: enicar-org
+    note: "The football timer built on the Valjoux 23 family."
 status: draft
-gaps:
-  - Maker, winding and functions, with citations
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/10493-Valjoux-23
+    title: "Ranfft archive: Valjoux 23"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+last_reviewed: 2026-10-28

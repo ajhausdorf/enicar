@@ -152,8 +152,13 @@ name in lower case with hyphens (`AR1146` → `ar1146`, `Valjoux 72` →
 `valjoux-72`). Watch records name calibres by their exact `name`; QA fails if
 a watch names a calibre with no record. Calibre pages list every watch and
 generation that uses the movement, built from the watch records. Citation
-`supports` for calibres: `maker`, `winding`, `functions`, `base`,
-`introduced`.
+`supports` for calibres: `maker`, `winding`, `functions`, `base`, `lignes`,
+`diameter_mm`, `height_mm`, `jewels`, `beat_rate`, `power_reserve`. Specs come
+from enicar.org's calibre table for Enicar's own movements and from the Ranfft
+archive (ranfft.org) for the rest; where they disagree, give both ("24 or 25")
+and add a note saying which says what. Movement photos go in the calibre's
+`images` (`node scripts/images/add-image.mjs calibres/<id> ...`); the page also
+shows `view: movement` photos from watches that use only that calibre.
 
 ## The checks
 

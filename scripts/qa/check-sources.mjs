@@ -27,10 +27,10 @@ function walkStrings(value, path, fn) {
   else if (value && typeof value === 'object') for (const [k, v] of Object.entries(value)) walkStrings(v, path ? `${path}.${k}` : k, fn);
 }
 
-export const CALIBRE_FACT_FIELDS = ['maker', 'winding', 'functions', 'base', 'introduced'];
+export const CALIBRE_FACT_FIELDS = ['maker', 'winding', 'functions', 'base', 'lignes', 'diameter_mm', 'height_mm', 'jewels', 'beat_rate', 'power_reserve'];
 
 // Calibre records: citation integrity, and full coverage once verified.
-function checkCalibres(r, sourceIds) {
+function checkCalibres(r, sourceIds, permissionIds) {
   const calibres = loadCalibres();
   const ids = new Set(calibres.map((c) => c.id));
   for (const { id, file: where, data: d } of calibres) {
@@ -41,6 +41,16 @@ function checkCalibres(r, sourceIds) {
     }
     (d.notes ?? []).forEach((n, i) => (n.cites ?? []).forEach((cid) => { if (!citeIds.has(cid)) r.error(where, `notes[${i}] cites "${cid}", which is not a citation on this record`); }));
     if (d.base && !ids.has(d.base)) r.error(where, `base "${d.base}" has no file in data/calibres/`);
+    for (const [i, img] of (d.images ?? []).entries()) {
+      if (!img.credit || !img.license || !img.permission) r.error(where, `images[${i}] needs credit, license and permission`);
+      if (img.identified_by && img.identified_by !== 'dial' && !img.identified_note) r.error(where, `images[${i}] identified by ${img.identified_by} needs an identified_note saying how`);
+      if (img.permission === 'granted' && !permissionIds.has(img.permission_ref)) r.error(where, `images[${i}] says permission granted but permission_ref "${img.permission_ref ?? ''}" is not in data/permissions.yaml`);
+      for (const key of ['file', 'thumb']) {
+        const f = img[key] ?? '';
+        if (!f.startsWith(`/images/calibres/${id}/`)) r.error(where, `images[${i}].${key} must live in /images/calibres/${id}/`);
+        else if (!existsSync(join(ROOT, 'public', f))) r.error(where, `images[${i}].${key} ${f} not found under public/ (use scripts/images/add-image.mjs calibres/${id} ...)`);
+      }
+    }
     if (calibreId(d.name ?? '') !== id) r.error(where, `file name should be ${calibreId(d.name ?? '')}.yaml to match the name "${d.name}"`);
     walkStrings(d, '', (path, s) => { if (PLACEHOLDER.test(s)) r.error(where, `placeholder text in ${path}: "${s}"`); });
     if (d.status === 'verified') {
@@ -56,8 +66,8 @@ function checkCalibres(r, sourceIds) {
 export function checkSources() {
   const r = new Report('sources and citations');
   const sourceIds = new Set(loadSources().map((s) => s.id));
-  const calibreIds = checkCalibres(r, sourceIds);
   const permissionIds = new Set(loadPermissions().map((p) => p.id));
+  const calibreIds = checkCalibres(r, sourceIds, permissionIds);
 
   for (const { id, file, data: d } of loadReferences()) {
     const where = file;

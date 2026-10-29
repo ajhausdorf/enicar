@@ -1,14 +1,41 @@
 name: AR765
-maker: null
-winding: null
-functions: []
+maker: Enicar
+winding: automatic
+functions:
+  - Centre seconds
+  - Date
+lignes: "7.75"
+diameter_mm: "17.5"
+height_mm: "4.65"
+jewels: "23"
+beat_rate: 21,600 A/h
+power_reserve: 42 h
 base: null
-introduced: null
-notes: []
-read_more: []
+notes:
+  - text: Ranfft gives the ETA 2551 as its base calibre.
+    cites:
+      - ranfft
+read_more:
+  - title: Facts, figures and features
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    source: enicar-org
+    note: Enicar's in-house calibres by series, with winding, jewels and power reserve, and an offer of scanned calibre manuals.
 status: draft
-gaps:
-  - Maker, winding and functions
-  - Specs
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/3627-Enicar-765
+    title: "Ranfft archive: Enicar 765"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+      - lignes
+last_reviewed: 2026-10-28

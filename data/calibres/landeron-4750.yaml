@@ -1,13 +1,47 @@
 name: Landeron 4750
-maker: null
-winding: null
-functions: []
+maker: Landeron
+winding: electric
+functions:
+  - Centre seconds
+lignes: "11.5"
+diameter_mm: "25.94"
+height_mm: "4.35"
+jewels: "13"
+beat_rate: 18,000 A/h
+power_reserve: null
 base: null
-introduced: null
-notes: []
-read_more: []
+notes:
+  - text: Battery-driven, so there is no mainspring power reserve. Ranfft lists it as crown-wound; enicar.org describes it as electro-mechanical.
+    cites:
+      - eo-electric
+      - ranfft
+read_more:
+  - title: The staying power of the Sherpa Electric
+    url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    source: enicar-org
+    note: How Enicar came to use the Landeron 4750, and how the factory tested each one.
 status: draft
-gaps:
-  - Maker, winding and functions, with citations
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/7171-Landeron-4750
+    title: "Ranfft archive: Landeron 4750"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+  - id: eo-electric
+    source: enicar-org
+    url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
+    title: The staying power of the Sherpa Electric
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+last_reviewed: 2026-10-28

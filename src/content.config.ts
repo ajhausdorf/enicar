@@ -125,11 +125,18 @@ const calibres = defineCollection({
   schema: z.object({
     name: z.string(),
     maker: z.string().nullable().default(null),
-    winding: z.enum(['manual', 'automatic', 'quartz']).nullable().default(null),
+    winding: z.enum(['manual', 'automatic', 'electric', 'quartz']).nullable().default(null),
     functions: z.array(z.string()).default([]),
+    // Specs as the sources give them. Text, so a figure the sources disagree
+    // on can read "24 or 25" (with a note saying which source says what).
+    lignes: z.string().nullable().default(null),
+    diameter_mm: z.string().nullable().default(null),
+    height_mm: z.string().nullable().default(null),
+    jewels: z.string().nullable().default(null),
+    beat_rate: z.string().nullable().default(null),
+    power_reserve: z.string().nullable().default(null),
     base: reference('calibres').nullable().default(null),
     base_note: z.string().nullable().default(null),
-    introduced: z.string().nullable().default(null),
     notes: z.array(z.object({ text: z.string(), cites })).default([]),
     read_more: z.array(z.object({
       title: z.string(),
@@ -137,6 +144,9 @@ const calibres = defineCollection({
       source: reference('sources'),
       note: z.string().nullable().default(null)
     })).default([]),
+    // Movement photos of this calibre. The page also shows movement photos
+    // from watch pages whose watch uses only this calibre.
+    images: z.array(image).default([]),
     status: z.enum(['draft', 'verified']),
     gaps: z.array(z.string()).default([]),
     citations: z.array(citation).default([]),
