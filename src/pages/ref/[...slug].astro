@@ -7,7 +7,7 @@ import Base from '../../layouts/Base.astro';
 import Dial from '../../components/Dial.astro';
 import Money from '../../components/Money.astro';
 import PriceHistory from '../../components/PriceHistory.astro';
-import { formatYears, barometerOf, USD_RATES, LISTING_FRESH_DAYS, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf } from '../../lib/site';
+import { formatYears, barometerOf, USD_RATES, LISTING_FRESH_DAYS, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf, fullYears } from '../../lib/site';
 
 export async function getStaticPaths() {
   const refs = await getCollection('references');
@@ -60,7 +60,7 @@ const specs = [
   ['Features', d.features.map((f) => FEATURE[f]).join(', ') || null],
   ['Factory refs', v?.refs.length ? v.refs.join(', ') : null],
   ['Serials seen', v?.serials.length ? v.serials.join(', ') : null],
-  ['Dated', v?.dated ?? null],
+  ['Dated', v?.dated ? fullYears(v.dated) : null],
   ['Made (estimate)', v?.production ? `${v.production} watches, estimated from serial ranges` : null],
   ['Nicknames', d.nicknames.join(', ') || null],
   ['References', d.references.map((r) => r.number).join(', ') || null]
@@ -76,7 +76,7 @@ const rows = [
   ['Calibre', (x: any) => x.calibres.join(', ')],
   ['Case', (x: any) => x.case],
   ['Factory refs', (x: any) => x.refs.join(', ')],
-  ['Dated', (x: any) => x.dated],
+  ['Dated', (x: any) => x.dated && fullYears(x.dated)],
   ['Made (est.)', (x: any) => (x.production ? `${x.production}` : null)]
 ] as const;
 const usedRows = rows.filter(([, f]) => d.variants.some((x) => f(x)));

@@ -4,7 +4,7 @@
 // Ranges are written the way the sources print them: "626.7xx – 627.0xx",
 // a single block "721.9xx", or an open end "1.263.4xx –". An x stands for
 // any digit, so a block's low end fills the x's with 0 and its high end with 9.
-import { leavesOf, formatYears } from './site';
+import { leavesOf, formatYears, fullYears } from './site';
 
 export interface SerialRange {
   lo: number;
@@ -15,6 +15,8 @@ export interface SerialRange {
   years: string | null;
   dated: string | null;
   openEnd: boolean;
+  // The citations behind this generation, serial range included.
+  cites: { source: { id: string }; url: string; title: string }[];
 }
 
 const digits = (s: string) => s.replace(/[^0-9x]/gi, '').toLowerCase();
@@ -38,7 +40,7 @@ export function serialRanges(refs: any[]): SerialRange[] {
       for (const text of leaf.variant?.serials ?? []) {
         const r = parseRange(text);
         if (!r) continue;
-        out.push({ ...r, text, name: leaf.name, path: leaf.path, years: formatYears(leaf.years), dated: leaf.variant?.dated ?? null });
+        out.push({ ...r, text, name: leaf.name, path: leaf.path, years: formatYears(leaf.years), dated: leaf.variant?.dated ? fullYears(leaf.variant.dated) : null, cites: (leaf.variant?.cites ?? []).map((id: string) => ref.data.citations.find((c: any) => c.id === id)).filter(Boolean) });
       }
     }
   }
