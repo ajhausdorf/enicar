@@ -64,7 +64,15 @@ h2 { margin: 0; font-size: 22px; font-weight: 700; }
 .search input::placeholder { color: var(--night-muted); }
 .search:focus-within { border-color: var(--signal); }
 .site-header :focus-visible { outline-color: var(--signal); }
-@media (max-width: 720px) { .search { flex: 1 1 100%; } .nav a, .brand { min-height: 48px; } }
+@media (max-width: 720px) {
+  /* Phone: the name and the currency switch share the top row, the switch at
+     the right; the sections and search wrap below. */
+  .brand { order: 1; }
+  .cur-toggle { order: 2; }
+  .nav { order: 3; flex-basis: 100%; }
+  .search { order: 4; flex: 1 1 100%; }
+  .nav a, .brand { min-height: 48px; }
+}
 
 /* The 24-hour bezel under the header: day hours blue, night hours red */
 .bezel { display: flex; font-family: var(--mono); font-size: 11px; font-weight: 700; color: #FFFFFF; }
