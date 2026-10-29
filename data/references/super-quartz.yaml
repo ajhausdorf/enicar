@@ -132,7 +132,7 @@ images:
     thumb: /images/super-quartz/sop-dwro7xndzf3-1-sm.webp
     width: 1200
     height: 1600
-    alt: "Gold-coloured Super Quartz with a brown sunburst dial and day-date in an octagon case, on a black strap"
+    alt: "Gold-coloured Super Quartz with a brown sunburst dial and day-date in an octagon case, on a dark brown strap"
     view: dial
     variant: null
     source_url: https://www.instagram.com/p/DWro7xnDZf3/
@@ -159,7 +159,7 @@ images:
     permission_ref: shot-of-patina
     caption: null
     identified_by: caption
-    identified_note: "Dial reads Super Quartz. Caption: ref. 380.003.001, an analogue-digital watch on the ESA 900.231, without the alarm of the Super Quartz Alarm."
+    identified_note: "Dial reads Super Quartz. Caption: ref. 380.003.001, an analogue-digital watch on the ESA 900.231."
 status: draft
 gaps:
   - Reference numbers for each case shape

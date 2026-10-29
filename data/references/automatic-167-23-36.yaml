@@ -1,10 +1,10 @@
 name: "Automatic 167-23-36"
 family: other
-kind: dress
-summary: "A 1970s automatic day-date on the AR 167D, known here from one example in a black PVD case with a gold-coloured bezel."
+kind: other
+summary: "A 1970s automatic day-date on the AR 167D, known here from one example, which its owner has in a new-old-stock black PVD case with a gold-coloured bezel."
 references:
   - number: 167-23-36
-    note: "Given by the owner of the one example here, written 167.23.36."
+    note: "Given by the owner of the one example here, written 167.23.36. That watch is in a new-old-stock black PVD case with a gold-coloured bezel, so the reference may also have come in other cases."
     cites: [sop-cm6s]
 nicknames: []
 years: { from: null, to: null, approximate: true }
@@ -13,7 +13,7 @@ movement:
   winding: automatic
 case:
   construction: null
-  material: "Black PVD, with a gold-coloured bezel"
+  material: null
   diameter_mm: null
   lug_mm: null
   thickness_mm: null
@@ -49,5 +49,5 @@ citations:
     url: https://www.instagram.com/p/Cm6sOEONzqp/
     title: "@shot.of.patina: Enicar Automatic ref. 167.23.36, AR 167D, black PVD case"
     retrieved: 2026-10-29
-    supports: [movement.calibres, movement.winding, case.material, dial]
+    supports: [movement.calibres, movement.winding, dial]
 last_reviewed: 2026-10-29
