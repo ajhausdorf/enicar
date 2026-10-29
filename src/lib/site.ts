@@ -121,3 +121,26 @@ export function leavesOf<R extends RecordLike>(ref: R) {
 }
 
 export type Leaf<R extends RecordLike> = ReturnType<typeof leavesOf<R>>[number];
+
+// A calibre's photos: its own, then movement photos from watch pages whose
+// watch (or generation) uses this calibre and no other, so the movement shown
+// can only be this one. On a model with generations the photo must be tagged
+// with one, or it could be another generation's movement.
+export function calibrePhotos(calibre: { id: string; data: { images: any[] } }, refs: any[]) {
+  const fromWatches = refs.flatMap((r) => leavesOf(r)
+    .filter((l) => l.calibres.length === 1 && calibreId(l.calibres[0]) === calibre.id)
+    .flatMap((l) => (l.images as any[]).filter((i) => i.view === 'movement' && (!l.ref.data.variants.length || i.variant)).map((i) => ({ ...i, from: { name: l.name, path: l.path } }))));
+  const seen = new Set<string>();
+  return [...calibre.data.images, ...fromWatches].filter((i: any) => !seen.has(i.file) && seen.add(i.file));
+}
+
+// The watch pages that use a calibre, one per generation where the record has them.
+export const calibreWatches = (usage: { ref: any; variants: string[] }[]) => usage.flatMap((u) => u.variants.length
+  ? u.variants.map((v) => ({ name: `${u.ref.data.name} ${v}`, path: `/ref/${u.ref.id}/${slugify(v)}/` }))
+  : [{ name: u.ref.data.name, path: leavesOf(u.ref)[0].path }]);
+
+export const WINDING: Record<string, string> = { manual: 'Hand-wound', automatic: 'Automatic', electric: 'Electric (battery)', quartz: 'Quartz' };
+
+// Ranfft's archive has photos of most calibres; link there when we have none.
+export const ranfftUrl = (calibre: { data: { citations: { source: { id: string }; url: string }[] } }) =>
+  calibre.data.citations.find((c) => c.source.id === 'ranfft')?.url ?? null;
