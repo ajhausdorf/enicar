@@ -200,7 +200,7 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   The black-dial Ultrasonic from their own collection: which model or reference?
   - Dial reads Enicar Ultrasonic; no model or reference given.
 
-## @vandervenus (12 photos)
+## @vandervenus (11 photos)
 
 ### Which generation?
 
@@ -237,10 +237,6 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
   Your new old stock watch with case ref 160-54-30 is captioned Ocean Pearl, but the dial reads Star Jewels. Where does it belong?
   - Caption: full set NOS Enicar Ocean Pearl, case ref 160-54-30, 38 mm.
   - The dial reads Star Jewels, not Ocean Pearl.
-- **https://www.instagram.com/p/B-wG46DHzgf/** · sherpa-memostar
-  Is your 1970s Memostar (automatic, cushion case, dial without Sherpa) the same model the Barometer calls the Sherpa Memostar, or a later Memostar?
-  - Dial reads Enicar Automatic and Memostar, with no Sherpa.
-  - The Barometer prices a Sherpa Memostar; Antiquorum sold a ref. 298-01-01 Memostar without Sherpa on the dial.
 
 ## @ctwatchguy (4 photos)
 
@@ -265,6 +261,30 @@ Generated from `data/pending-photos.yaml` by `scripts/instagram/confirm-list.mjs
 - **https://www.instagram.com/p/CRsAQTxruiv/** · sherpa-aqua-graph
   Same watch as CSP2EEJL-3X: which generation?
   - Paddle hands with a house-shaped pointer on the red ring.
+
+## @ericmwind (1 photos)
+
+### Which model?
+
+- **https://www.instagram.com/p/CDEVpXAsCSR/** · sherpa-date
+  Is this 40 mm Sherpa automatic with a date at 3 a Sherpa Date, or another model?
+  - Dial reads Enicar automatic and Sherpa, with a red date at 3; it does not say Date.
+  - Caption: a 40 mm Sherpa that is a dress watch in a dive watch case.
+  - Our Sherpa Date photos are all identified by a dial reading Sherpa Date, apart from one 40 mm EPSA-cased example identified by its caption.
+
+## Waiting on permission
+
+No entry in `data/permissions.yaml` for these accounts yet, so nothing has been downloaded or placed.
+
+- **@shot.of.patina** https://www.instagram.com/p/DP6NrPpDGR0/ · sherpa-super-jet MkIV
+  Did @shot.of.patina give permission to use their photos, and when and how?
+  - Posted by @shot.of.patina on 2025-10-17, a single photo, not a collab. Caption: Sherpa Super Jet MkIV, ref. 166-36-01, circa 1975.
+  - Two Super-Jets side by side, both in the cushion case (MkIV), one on a strap and one on a bracelet.
+  - The owner asked for it to replace one of the first two MkIV photos on sherpa-super-jet: v-c1w1wrcnm6n-1 (post C1w1WRCNM6n) and v-ckdorzdlzhw-1 (post CkDorZDLZHw) are the same wrist shot of the same watch, cropped differently. Replace v-c1w1wrcnm6n-1, the later post.
+- **@shot.of.patina** https://www.instagram.com/p/DMFABP1t3A7/ · sherpa-jet MkIV
+  Did @shot.of.patina give permission to use their photos, and when and how?
+  - Posted by @shot.of.patina on 2025-07-14 (06:27 UTC; US time zones show 13 July), a single photo, not a collab. Caption: Sherpa Jet MkIV (166-35-05), official watch of the Blue Angels in the mid 1970s.
+  - Cushion case and red and blue inner bezel with yellow markers on a blue strap: the record's MkIV tells.
 
 ---
 

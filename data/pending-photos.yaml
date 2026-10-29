@@ -1,4 +1,4 @@
-# Photos we have permission for but have not placed. Each needs the owner to confirm the model or generation; the evidence says why. When one is answered, place it with scripts/instagram/place.mjs and delete its entry here. `excluded` are left out on purpose; do not re-review them.
+# Photos we have permission for but have not placed. Each needs the owner to confirm the model or generation; the evidence says why. When one is answered, place it with scripts/instagram/place.mjs and delete its entry here. `excluded` are left out on purpose; do not re-review them. `awaiting_permission` are photos the owner wants from accounts with no entry in data/permissions.yaml yet: nothing is downloaded or placed until the owner confirms the permission; then record it and bring them in with the instagram-photos skill.
 pending:
   - account: two_crowned_prints
     post: https://www.instagram.com/p/DOTov7WkTit/
@@ -763,6 +763,33 @@ pending:
       - "Dial reads Enicar automatic and Sherpa, with a red date at 3; it does not say Date."
       - "Caption: a 40 mm Sherpa that is a dress watch in a dive watch case."
       - "Our Sherpa Date photos are all identified by a dial reading Sherpa Date, apart from one 40 mm EPSA-cased example identified by its caption."
+
+awaiting_permission:
+  - account: shot.of.patina
+    post: https://www.instagram.com/p/DP6NrPpDGR0/
+    code: DP6NrPpDGR0
+    photos:
+      - 1
+    model: sherpa-super-jet
+    variant: MkIV
+    requested: 2026-10-28
+    question: "Did @shot.of.patina give permission to use their photos, and when and how?"
+    evidence:
+      - "Posted by @shot.of.patina on 2025-10-17, a single photo, not a collab. Caption: Sherpa Super Jet MkIV, ref. 166-36-01, circa 1975."
+      - "Two Super-Jets side by side, both in the cushion case (MkIV), one on a strap and one on a bracelet."
+      - "The owner asked for it to replace one of the first two MkIV photos on sherpa-super-jet: v-c1w1wrcnm6n-1 (post C1w1WRCNM6n) and v-ckdorzdlzhw-1 (post CkDorZDLZHw) are the same wrist shot of the same watch, cropped differently. Replace v-c1w1wrcnm6n-1, the later post."
+  - account: shot.of.patina
+    post: https://www.instagram.com/p/DMFABP1t3A7/
+    code: DMFABP1t3A7
+    photos:
+      - 1
+    model: sherpa-jet
+    variant: MkIV
+    requested: 2026-10-28
+    question: "Did @shot.of.patina give permission to use their photos, and when and how?"
+    evidence:
+      - "Posted by @shot.of.patina on 2025-07-14 (06:27 UTC; US time zones show 13 July), a single photo, not a collab. Caption: Sherpa Jet MkIV (166-35-05), official watch of the Blue Angels in the mid 1970s."
+      - "Cushion case and red and blue inner bezel with yellow markers on a blue strap: the record's MkIV tells."
 
 excluded:
   - account: two_crowned_prints
