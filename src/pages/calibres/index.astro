@@ -1,50 +1,83 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { calibreUsage, leavesOf, slugify } from '../../lib/site';
+import { calibreUsage, calibrePhotos, calibreWatches, ranfftUrl, WINDING } from '../../lib/site';
 
 const calibres = (await getCollection('calibres')).sort((a, b) => a.data.name.localeCompare(b.data.name, 'en', { numeric: true }));
-const usage = calibreUsage(await getCollection('references'));
+const refs = await getCollection('references');
+const usage = calibreUsage(refs);
 const byId = Object.fromEntries(calibres.map((c) => [c.id, c]));
+// One card per calibre, laid out like the catalog's watch cards.
+const cards = calibres.map((c) => {
+  const d = c.data;
+  return {
+    c,
+    photo: calibrePhotos(c, refs)[0],
+    meta: [d.maker, d.winding && WINDING[d.winding], d.diameter_mm && `${d.diameter_mm} mm`].filter(Boolean).join(' · '),
+    watches: calibreWatches(usage.get(c.id) ?? []),
+    base: d.base ? byId[d.base.id] : null,
+    ranfft: ranfftUrl(c)
+  };
+});
 ---
-<Base title="Calibres" section="calibres">
+<Base title="Calibres" description="Every movement found in vintage Enicar watches, in-house and bought in: specs, photos and the models that used each one." section="calibres">
   <div class="wrap cal">
     <section class="intro">
       <h1>Calibres</h1>
       <p class="lede">The movements found in Enicar watches, what each one does, and which models used it.</p>
     </section>
 
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th scope="col">Calibre</th><th scope="col">Type</th><th scope="col">Based on</th><th scope="col">Used in</th></tr></thead>
-        <tbody>
-          {calibres.map((c) => {
-            const used = usage.get(c.id) ?? [];
-            return (
-              <tr>
-                <th scope="row"><a href={`/calibres/${c.id}/`}>{c.data.name}</a>{c.data.status === 'draft' && <span class="badge draft">Draft</span>}</th>
-                <td>{[c.data.winding, ...c.data.functions].filter(Boolean).join(', ') || <span class="muted">Unknown</span>}</td>
-                <td>{c.data.base ? <a href={`/calibres/${c.data.base.id}/`}>{byId[c.data.base.id]?.data.name}</a> : <span class="muted">—</span>}</td>
-                <td>{used.length ? used.flatMap((u) => u.variants.length
-                    ? u.variants.map((v) => ({ name: `${u.ref.data.name} ${v}`, path: `/ref/${u.ref.id}/${slugify(v)}/` }))
-                    : [{ name: u.ref.data.name, path: leavesOf(u.ref)[0].path }]
-                  ).map((l, i) => <>{i > 0 && ', '}<a href={l.path}>{l.name}</a></>) : <span class="muted">No watches recorded yet</span>}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
+    <ul class="grid">
+      {cards.map(({ c, photo, meta, watches, base, ranfft }) => (
+        <li class="cal-card">
+          <div class="cal-card__img">
+            {photo
+              ? <img src={photo.thumb} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy">
+              : <span class="cal-card__none mono" aria-hidden="true">{c.data.name}</span>}
+          </div>
+          <div class="cal-card__body">
+            <div>
+              <a class="cal-card__name mono" href={`/calibres/${c.id}/`}>{c.data.name}</a>
+              {meta && <span class="cal-card__meta">{meta}</span>}
+            </div>
+            {c.data.functions.length > 0 && <p class="cal-card__fn">{c.data.functions.join(', ')}</p>}
+            <div class="cal-card__foot">
+              <span title={watches.map((w) => w.name).join(', ')}>{watches.length ? `In ${watches.length} ${watches.length === 1 ? 'watch' : 'watches'}` : 'No watches recorded yet'}</span>
+              {base && <span>Based on {base.data.name}</span>}
+            </div>
+            <p class="cal-card__credit">
+              {photo
+                ? <>Photo: <a href={photo.credit_url ?? photo.source_url} rel="noopener">{photo.credit}</a>{photo.permission !== 'granted' && `, ${photo.license}`}</>
+                : <>No photo yet{ranfft && <> · <a href={ranfft} rel="noopener">photos on Ranfft</a></>}</>}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ul>
   </div>
 </Base>
 
 <style>
   .cal { display: flex; flex-direction: column; gap: 32px; padding-top: 56px; padding-bottom: 64px; }
   .intro { display: flex; flex-direction: column; gap: 16px; }
-  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
-  table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 14px; }
-  th, td { padding: 12px 16px; text-align: left; vertical-align: top; border-top: 1px solid var(--line-soft); }
-  thead th { background: var(--wash); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); border-top: 0; }
-  tbody th { font-family: var(--mono); font-weight: 500; white-space: nowrap; }
-  tbody th .badge { margin-left: 8px; }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+  /* Same shape as the catalog's watch cards: a 4:3 photo box, then the body.
+     The name link stretches over the whole card; the credit keeps its own link. */
+  .cal-card { position: relative; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--paper); }
+  .cal-card:hover { border-color: var(--ink); }
+  .cal-card:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .cal-card__img { position: relative; overflow: hidden; background: var(--photo-ground); aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; }
+  .cal-card__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .cal-card__none { font-size: 22px; font-weight: 700; color: var(--night-line); letter-spacing: 0.04em; }
+  .cal-card__body { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .cal-card__body > div:first-child { display: flex; flex-direction: column; gap: 2px; }
+  .cal-card__name { font-size: 16px; font-weight: 700; line-height: 1.2; text-decoration: none; color: var(--ink); }
+  .cal-card__name:focus-visible { outline: none; }
+  .cal-card__name::after { content: ''; position: absolute; inset: 0; }
+  .cal-card__meta { font-size: 13px; color: var(--muted); }
+  .cal-card__fn { margin: 0; font-size: 13px; color: var(--ink-2); }
+  .cal-card__foot { margin-top: auto; display: flex; justify-content: space-between; gap: 8px; padding-top: 10px; border-top: 1px solid var(--line-soft); font-size: 12px; color: var(--ink-2); }
+  .cal-card__credit { margin: 0; font-size: 12px; color: var(--muted); }
+  .cal-card__credit a { position: relative; z-index: 1; color: var(--muted); }
+  .cal-card__credit a:hover { color: var(--accent); }
 </style>

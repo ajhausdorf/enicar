@@ -1,7 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { calibreUsage, leavesOf, slugify, calibreId, CONTRIBUTE_URL } from '../../lib/site';
+import { calibreUsage, calibrePhotos, calibreWatches, ranfftUrl, WINDING, CONTRIBUTE_URL } from '../../lib/site';
 
 export async function getStaticPaths() {
   const calibres = await getCollection('calibres');
@@ -13,12 +13,12 @@ const d = entry.data;
 const all = await getCollection('calibres');
 const base = d.base ? await getEntry(d.base) : null;
 const derived = all.filter((c) => c.data.base?.id === entry.id);
-const used = calibreUsage(await getCollection('references')).get(entry.id) ?? [];
+const refs = await getCollection('references');
+const watches = calibreWatches(calibreUsage(refs).get(entry.id) ?? []);
 const sources = Object.fromEntries((await getCollection('sources')).map((s) => [s.id, s]));
 const cites = Object.fromEntries(d.citations.map((c) => [c.id, c]));
 const srcName = (c: any) => sources[c.source.id]?.data.name;
 
-const WINDING: Record<string, string> = { manual: 'Hand-wound', automatic: 'Automatic', electric: 'Electric (battery)', quartz: 'Quartz' };
 const size = [d.lignes && `${d.lignes} lignes`, d.diameter_mm && `${d.diameter_mm} mm`].filter(Boolean).join(', ') || null;
 const specs = [
   ['Maker', d.maker],
@@ -31,17 +31,19 @@ const specs = [
   ['Power reserve', d.power_reserve ?? (d.winding === 'electric' ? 'Battery' : null)]
 ] as const;
 
-// Photos: this calibre's own, then movement photos from watch pages whose
-// watch (or generation) uses this calibre and no other, so the movement shown
-// can only be this one. On a model with generations the photo must be tagged
-// with one, or it could be another generation's movement.
-const fromWatches = (await getCollection('references')).flatMap((r) => leavesOf(r)
-  .filter((l) => l.calibres.length === 1 && calibreId(l.calibres[0]) === entry.id)
-  .flatMap((l) => l.images.filter((i: any) => i.view === 'movement' && (!l.ref.data.variants.length || i.variant)).map((i: any) => ({ ...i, from: { name: l.name, path: l.path } }))));
-const seenPhoto = new Set<string>();
-const photos = [...d.images, ...fromWatches].filter((i: any) => !seenPhoto.has(i.file) && seenPhoto.add(i.file));
+const photos = calibrePhotos(entry, refs);
+const ranfft = ranfftUrl(entry);
+const pageUrl = (path: string) => new URL(path, Astro.site).href;
+const jsonld = [
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Calibres', item: pageUrl('/calibres/') },
+    { '@type': 'ListItem', position: 2, name: d.name, item: pageUrl(`/calibres/${entry.id}/`) }
+  ] },
+  { '@type': 'WebPage', name: `Enicar calibre ${d.name}`, url: pageUrl(`/calibres/${entry.id}/`),
+    citation: [...d.citations, ...d.read_more].map((c: any) => ({ '@type': 'CreativeWork', name: c.title, url: c.url })) }
+];
 ---
-<Base title={`Calibre ${d.name}`} description={`The Enicar ${d.name} movement and the watches that used it.`} section="calibres" searchable>
+<Base title={`Calibre ${d.name}`} description={`The Enicar ${d.name} movement and the watches that used it.`} section="calibres" searchable image={photos[0]?.file} jsonld={jsonld}>
   <div class="wrap calibre">
     <nav aria-label="Breadcrumb" class="crumbs">
       <a href="/calibres/">Calibres</a><span aria-hidden="true">/</span><span aria-current="page">{d.name}</span>
@@ -81,7 +83,7 @@ const photos = [...d.images, ...fromWatches].filter((i: any) => !seenPhoto.has(i
         </ul>
       </section>
     ) : (
-      <p class="muted small" data-pagefind-ignore>No photo of this movement yet.</p>
+      <p class="muted small" data-pagefind-ignore>No photo of this movement yet.{ranfft && <> <a href={ranfft}>Ranfft's archive has photos of it</a>.</>}</p>
     )}
 
     {d.notes.length > 0 && (
@@ -93,12 +95,9 @@ const photos = [...d.images, ...fromWatches].filter((i: any) => !seenPhoto.has(i
 
     <section class="used">
       <h2>Watches with this calibre</h2>
-      {used.length === 0 ? <p class="muted">None recorded yet.</p> : (
+      {watches.length === 0 ? <p class="muted">None recorded yet.</p> : (
         <ul>
-          {used.flatMap((u) => u.variants.length
-            ? u.variants.map((v) => ({ name: `${u.ref.data.name} ${v}`, path: `/ref/${u.ref.id}/${slugify(v)}/` }))
-            : [{ name: u.ref.data.name, path: leavesOf(u.ref)[0].path }]
-          ).map((l) => (
+          {watches.map((l) => (
             <li class="card"><a href={l.path}><strong>{l.name}</strong></a></li>
           ))}
         </ul>
