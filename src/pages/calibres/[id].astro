@@ -1,7 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { calibreUsage, leavesOf, slugify, CONTRIBUTE_URL } from '../../lib/site';
+import { calibreUsage, leavesOf, slugify, calibreId, CONTRIBUTE_URL } from '../../lib/site';
 
 export async function getStaticPaths() {
   const calibres = await getCollection('calibres');
@@ -18,12 +18,28 @@ const sources = Object.fromEntries((await getCollection('sources')).map((s) => [
 const cites = Object.fromEntries(d.citations.map((c) => [c.id, c]));
 const srcName = (c: any) => sources[c.source.id]?.data.name;
 
+const WINDING: Record<string, string> = { manual: 'Hand-wound', automatic: 'Automatic', electric: 'Electric (battery)', quartz: 'Quartz' };
+const size = [d.lignes && `${d.lignes} lignes`, d.diameter_mm && `${d.diameter_mm} mm`].filter(Boolean).join(', ') || null;
 const specs = [
   ['Maker', d.maker],
-  ['Winding', d.winding],
+  ['Winding', d.winding ? WINDING[d.winding] : null],
   ['Functions', d.functions.join(', ') || null],
-  ['Introduced', d.introduced]
+  ['Size', size],
+  ['Height', d.height_mm && `${d.height_mm} mm`],
+  ['Jewels', d.jewels],
+  ['Beat rate', d.beat_rate],
+  ['Power reserve', d.power_reserve ?? (d.winding === 'electric' ? 'Battery' : null)]
 ] as const;
+
+// Photos: this calibre's own, then movement photos from watch pages whose
+// watch (or generation) uses this calibre and no other, so the movement shown
+// can only be this one. On a model with generations the photo must be tagged
+// with one, or it could be another generation's movement.
+const fromWatches = (await getCollection('references')).flatMap((r) => leavesOf(r)
+  .filter((l) => l.calibres.length === 1 && calibreId(l.calibres[0]) === entry.id)
+  .flatMap((l) => l.images.filter((i: any) => i.view === 'movement' && (!l.ref.data.variants.length || i.variant)).map((i: any) => ({ ...i, from: { name: l.name, path: l.path } }))));
+const seenPhoto = new Set<string>();
+const photos = [...d.images, ...fromWatches].filter((i: any) => !seenPhoto.has(i.file) && seenPhoto.add(i.file));
 ---
 <Base title={`Calibre ${d.name}`} description={`The Enicar ${d.name} movement and the watches that used it.`} section="calibres" searchable>
   <div class="wrap calibre">
@@ -43,9 +59,30 @@ const specs = [
 
     <dl class="specs">
       {specs.map(([k, v]) => <div><dt>{k}</dt><dd class={v ? '' : 'unknown'}>{v ?? 'Unknown'}</dd></div>)}
-      <div><dt>Based on</dt><dd class={base ? '' : 'unknown'}>{base ? <a href={`/calibres/${base.id}/`}>{base.data.name}</a> : 'Unknown'}</dd></div>
+      {base && <div><dt>Based on</dt><dd><a href={`/calibres/${base.id}/`}>{base.data.name}</a></dd></div>}
       {derived.length > 0 && <div><dt>Basis for</dt><dd>{derived.map((c, i) => <>{i > 0 && ', '}<a href={`/calibres/${c.id}/`}>{c.data.name}</a></>)}</dd></div>}
     </dl>
+
+    {photos.length > 0 ? (
+      <section class="photos" aria-labelledby="ph-h" data-pagefind-ignore>
+        <h2 id="ph-h">Photos</h2>
+        <ul>
+          {photos.map((p: any) => (
+            <li>
+              <figure>
+                <a href={p.file} class="ph-img"><img src={p.thumb} alt={p.alt} width={p.width} height={p.height} loading="lazy"></a>
+                <figcaption>
+                  Photo: {p.credit_url ? <a href={p.credit_url}>{p.credit}</a> : p.credit}{p.permission !== 'granted' && ` · ${p.license}`} · <a href={p.source_url}>original</a>
+                  {p.from && <span class="from">In the <a href={p.from.path}>{p.from.name}</a></span>}
+                </figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ) : (
+      <p class="muted small" data-pagefind-ignore>No photo of this movement yet.</p>
+    )}
 
     {d.notes.length > 0 && (
       <section class="notes">
@@ -111,5 +148,12 @@ const specs = [
   .used li { padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
   .used a { text-decoration: none; }
   .bottom { display: flex; flex-wrap: wrap; gap: 40px; }
+  .photos { display: flex; flex-direction: column; gap: 12px; max-width: 900px; }
+  .photos ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+  .photos figure { margin: 0; display: flex; flex-direction: column; gap: 6px; }
+  .ph-img { display: block; aspect-ratio: 1; overflow: hidden; border-radius: 8px; background: var(--photo-ground); cursor: zoom-in; }
+  .ph-img img { width: 100%; height: 100%; object-fit: cover; }
+  .photos figcaption { font-size: 12px; color: var(--muted); display: flex; flex-direction: column; gap: 2px; }
+  .photos figcaption a { color: var(--muted); }
   .bottom > div { flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px; }
 </style>

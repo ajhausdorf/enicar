@@ -1,13 +1,39 @@
 name: Valjoux 232
-maker: null
-winding: null
-functions: []
+maker: Valjoux
+winding: manual
+functions:
+  - Chronograph with minute counter
+  - Small seconds
+  - Date
+lignes: "13"
+diameter_mm: "29.5"
+height_mm: null
+jewels: "17"
+beat_rate: 18,000 A/h
+power_reserve: null
 base: null
-introduced: null
 notes: []
-read_more: []
+read_more:
+  - title: The Enicar 'Lausanne' chronograph
+    url: https://enicar.org/2020/04/28/the-enicar-lausanne-chronograph/
+    source: enicar-org
+    note: The Enicar chronograph built on the Valjoux 232.
 status: draft
 gaps:
-  - Maker, winding and functions, with citations
-citations: []
-last_reviewed: 2026-10-25
+  - Movement height
+  - Power reserve
+citations:
+  - id: grail-232
+    source: grail-watch
+    url: https://reference.grail-watch.com/movement/valjoux-232/
+    title: "Grail Watch Reference: Valjoux 232"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - jewels
+      - beat_rate
+last_reviewed: 2026-10-28

@@ -1,14 +1,39 @@
 name: Valjoux 724
-maker: null
-winding: null
-functions: []
+maker: Valjoux
+winding: manual
+functions:
+  - Chronograph with minute and hour counters
+  - Small seconds
+  - 24-hour hand (GMT)
+lignes: "13"
+diameter_mm: "30"
+height_mm: "6.95"
+jewels: "17"
+beat_rate: 18,000 A/h
+power_reserve: 48 h
 base: null
-introduced: null
 notes: []
-read_more: []
+read_more:
+  - title: "Jet Graph MK Ia"
+    url: https://enicar101.com/jet-graph-mk-i/
+    source: enicar101
+    note: "The first Jet Graph, the Valjoux 724 GMT chronograph, with movement photos."
 status: draft
-gaps:
-  - Maker, winding and functions
-  - Specs
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/10510-Valjoux-724
+    title: "Ranfft archive: Valjoux 724"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+last_reviewed: 2026-10-28

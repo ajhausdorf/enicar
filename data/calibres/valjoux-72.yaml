@@ -1,15 +1,55 @@
-# DRAFT, unsourced: filled from general knowledge, needs citations.
 name: Valjoux 72
 maker: Valjoux
 winding: manual
-functions: [Chronograph]
+functions:
+  - Chronograph with minute and hour counters
+  - Small seconds
+lignes: "13"
+diameter_mm: "30"
+height_mm: "6.95"
+jewels: "17"
+beat_rate: 18,000 A/h
+power_reserve: 48 h
 base: null
-introduced: null
 notes: []
-read_more: []
+read_more:
+  - title: "The handsome cousins of the Sherpa Graph"
+    url: https://enicar.org/2018/07/30/the-handsome-cousins-of-the-sherpa-graph/
+    source: enicar-org
+    note: "Enicar's other Valjoux 72 chronographs, beyond the Sherpa Graph."
+images:
+  - file: /images/calibres/valjoux-72/vv-valjoux72-1.webp
+    thumb: /images/calibres/valjoux-72/vv-valjoux72-1-sm.webp
+    width: 888
+    height: 888
+    alt: "Valjoux 72 chronograph movement inside a Sherpa Graph, caseback off"
+    view: movement
+    variant: null
+    source_url: https://www.instagram.com/p/BlQU2LZHUaa/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Martijn's caption: an Enicar-signed, adjusted Valjoux 72 inside his Sherpa Graph MkII."
 status: draft
-gaps:
-  - Citations for maker, winding and function
-  - Specs
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/10513-Valjoux-72
+    title: "Ranfft archive: Valjoux 72"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+last_reviewed: 2026-10-28

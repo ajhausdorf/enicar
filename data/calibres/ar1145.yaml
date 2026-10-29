@@ -1,20 +1,62 @@
 name: AR1145
-maker: null
-winding: null
-functions: []
+maker: Enicar
+winding: automatic
+functions:
+  - Centre seconds
+  - Date
+lignes: "11.75"
+diameter_mm: "26.8"
+height_mm: "5.30"
+jewels: 24 or 25
+beat_rate: 18,000 A/h
+power_reserve: 45 h
 base: null
-introduced: null
-notes: []
+notes:
+  - text: enicar.org's calibre table gives 25 jewels for the 145 series; Ranfft gives 24.
+    cites:
+      - eo-facts
+      - ranfft
 read_more:
+  - title: "Exploring the Enicar Sherpa World Time 'Kaleidoscope'"
+    url: https://enicar.org/2017/11/27/exploring-the-enicar-sherpa-world-time-kaleidoscope/
+    source: enicar-org
+    note: "A Sherpa World Time with its AR1145 shown."
   - title: Exploring the Enicar Sherpa (Super-)Jet
     url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
     source: enicar-org
     note: Covers the GMT calibres used in the Jet and Super-Jet.
+  - title: Facts, figures and features
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    source: enicar-org
+    note: Enicar's in-house calibres by series, with winding, jewels and power reserve, and an offer of scanned calibre manuals.
 status: draft
-gaps:
-  - Maker and winding
-  - Jewel count, frequency and other specs
-  - Introduction date
-  - Which models used it
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/3570-Enicar-1145
+    title: "Ranfft archive: Enicar 1145"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+  - id: eo-facts
+    source: enicar-org
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    title: Facts, figures and features (calibre table)
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - jewels
+      - beat_rate
+      - power_reserve
+      - functions
+last_reviewed: 2026-10-28

@@ -1,13 +1,39 @@
 name: Lemania 1341
-maker: null
-winding: null
-functions: []
+maker: Lemania
+winding: automatic
+functions:
+  - Chronograph with minute and hour counters
+  - Small seconds
+  - Date
+lignes: "13.75"
+diameter_mm: "31"
+height_mm: "8.00"
+jewels: "22"
+beat_rate: 28,800 A/h
+power_reserve: 44 h
 base: null
-introduced: null
 notes: []
-read_more: []
+read_more:
+  - title: "The handsome cousins of the Sherpa Graph"
+    url: https://enicar.org/2018/07/30/the-handsome-cousins-of-the-sherpa-graph/
+    source: enicar-org
+    note: "Covers the Grapho-Matic and its Lemania automatic chronograph."
 status: draft
-gaps:
-  - Maker, winding and functions, with citations
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/7373-Lemania-1341
+    title: "Ranfft archive: Lemania 1341"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+last_reviewed: 2026-10-28

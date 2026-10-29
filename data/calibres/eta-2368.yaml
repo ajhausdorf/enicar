@@ -1,14 +1,33 @@
 name: ETA 2368
-maker: null
-winding: null
-functions: []
+maker: ETA
+winding: automatic
+functions:
+  - Centre seconds
+lignes: "7.75"
+diameter_mm: "17.5"
+height_mm: "5.25"
+jewels: "25"
+beat_rate: 18,000 A/h
+power_reserve: 38 h
 base: null
-introduced: null
 notes: []
 read_more: []
 status: draft
-gaps:
-  - Maker, winding and functions
-  - Specs
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/3996-ETA-2368
+    title: "Ranfft archive: ETA 2368"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+last_reviewed: 2026-10-28

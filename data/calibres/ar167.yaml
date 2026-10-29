@@ -1,14 +1,87 @@
 name: AR167
-maker: null
-winding: null
-functions: []
+maker: Enicar
+winding: automatic
+functions:
+  - Centre seconds
+  - Day and date
+lignes: "11.75"
+diameter_mm: "26.8"
+height_mm: "6.00"
+jewels: "24"
+beat_rate: 21,600 A/h
+power_reserve: 42 or 45 h
 base: null
-introduced: null
-notes: []
-read_more: []
+notes:
+  - text: enicar.org's calibre table gives 42 hours of power reserve for the 167; Ranfft gives 45.
+    cites:
+      - eo-facts
+      - ranfft
+read_more:
+  - title: Facts, figures and features
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    source: enicar-org
+    note: Enicar's in-house calibres by series, with winding, jewels and power reserve, and an offer of scanned calibre manuals.
+images:
+  - file: /images/calibres/ar167/zz-ar167-1.webp
+    thumb: /images/calibres/ar167/zz-ar167-1-sm.webp
+    width: 1031
+    height: 1030
+    alt: "Enicar AR167 automatic movement out of its case, rotor signed Enicar Watch Co"
+    view: movement
+    variant: null
+    source_url: https://www.instagram.com/p/CMHzZQFLyST/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: caption
+    identified_note: "zizi_zap's caption names it Cal. A-R 167; the close-up from the same post shows 167 and 24 jewels engraved on the movement."
+  - file: /images/calibres/ar167/zz-ar167-2.webp
+    thumb: /images/calibres/ar167/zz-ar167-2-sm.webp
+    width: 720
+    height: 720
+    alt: "Close-up of the AR167 balance and bridge, engraved with the calibre number and 24 jewels"
+    view: movement
+    variant: null
+    source_url: https://www.instagram.com/p/CMHzZQFLyST/
+    credit: "@zizi_zap"
+    credit_url: https://www.instagram.com/zizi_zap/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: zizi-zap
+    caption: null
+    identified_by: caption
+    identified_note: "zizi_zap's caption names it Cal. A-R 167, and 167 and 24 jewels are engraved on the movement."
 status: draft
-gaps:
-  - Maker, winding and functions
-  - Specs
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/3600-Enicar-167
+    title: "Ranfft archive: Enicar 167"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+  - id: eo-facts
+    source: enicar-org
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    title: Facts, figures and features (calibre table)
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - jewels
+      - beat_rate
+      - power_reserve
+      - functions
+last_reviewed: 2026-10-28

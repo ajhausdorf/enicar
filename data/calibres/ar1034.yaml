@@ -1,14 +1,43 @@
 name: AR1034
-maker: null
-winding: null
-functions: []
+maker: Enicar
+winding: automatic
+functions:
+  - Centre seconds
+lignes: null
+diameter_mm: "26"
+height_mm: "5.75"
+jewels: "30"
+beat_rate: 18,000 A/h
+power_reserve: 38 h
 base: null
-introduced: null
 notes: []
-read_more: []
+read_more:
+  - title: Facts, figures and features
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    source: enicar-org
+    note: Enicar's in-house calibres by series, with winding, jewels and power reserve, and an offer of scanned calibre manuals.
 status: draft
-gaps:
-  - Maker, winding and functions
-  - Specs
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/3556-Enicar-1034
+    title: "Ranfft archive: Enicar 1034"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+  - id: eo-facts
+    source: enicar-org
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    title: Facts, figures and features (calibre table)
+    retrieved: 2026-10-28
+    supports:
+      - maker
+last_reviewed: 2026-10-28

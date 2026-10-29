@@ -1,14 +1,27 @@
 name: AR1134
-maker: null
+maker: Enicar
 winding: null
 functions: []
 base: null
-introduced: null
-notes: []
-read_more: []
+notes:
+  - text: Enicar 101 shows it as a chronometer-certified movement, in the Sherpas Chronometer ref. 100/76 AaNS.
+    cites:
+      - e101-chronometer
+read_more:
+  - title: Enicar Sherpas Chronometer Ref. 100/76 AaNS at the (cold) edge of the world
+    url: https://enicar101.com/2021/01/20/enicar-chronometers-at-the-cold-edge-of-the-world/
+    source: enicar101
+    note: The chronometer that used the AR1134, with photos of its movement.
 status: draft
 gaps:
-  - Maker, winding and functions
-  - Specs
-citations: []
-last_reviewed: 2026-10-27
+  - Winding and functions
+  - Size, height, jewels, beat rate and power reserve (no entry in Ranfft)
+citations:
+  - id: e101-chronometer
+    source: enicar101
+    url: https://enicar101.com/2021/01/20/enicar-chronometers-at-the-cold-edge-of-the-world/
+    title: Enicar Sherpas Chronometer Ref. 100/76 AaNS at the (cold) edge of the world
+    retrieved: 2026-10-28
+    supports:
+      - maker
+last_reviewed: 2026-10-28

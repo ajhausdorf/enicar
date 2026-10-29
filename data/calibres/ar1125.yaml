@@ -1,23 +1,32 @@
 name: AR1125
-maker: null
-winding: null
-functions: []
+maker: Enicar
+winding: automatic
+functions:
+  - Centre seconds
+  - Date
+lignes: "11.75"
+diameter_mm: "26.8"
+height_mm: "5.30"
+jewels: 25 or 30
+beat_rate: 18,000 A/h
+power_reserve: 45 h
 base: null
-introduced: null
 notes:
-  - text: The source dates it to the late 1950s, but the sentence could also be read as dating the AR1126.
-    cites: [eo-jet]
+  - text: enicar.org's calibre table gives 25 jewels; Ranfft gives 30.
+    cites:
+      - eo-facts
+      - ranfft
 read_more:
   - title: Exploring the Enicar Sherpa (Super-)Jet
     url: https://enicar.org/2025/01/08/exploring-the-enicar-sherpa-super-jet/
     source: enicar-org
     note: Covers the GMT calibres used in the Jet and Super-Jet.
+  - title: Facts, figures and features
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    source: enicar-org
+    note: Enicar's in-house calibres by series, with winding, jewels and power reserve, and an offer of scanned calibre manuals.
 status: draft
-gaps:
-  - Maker and winding
-  - Introduction date (late 1950s, unconfirmed)
-  - Jewel count, frequency and other specs
-  - Which models used it
+gaps: []
 citations:
   - id: eo-jet
     source: enicar-org
@@ -25,4 +34,31 @@ citations:
     title: Exploring the Enicar Sherpa (Super-)Jet
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-25
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/3559-Enicar-1125
+    title: "Ranfft archive: Enicar 1125"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+  - id: eo-facts
+    source: enicar-org
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    title: Facts, figures and features (calibre table)
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - jewels
+      - beat_rate
+      - power_reserve
+      - functions
+last_reviewed: 2026-10-28

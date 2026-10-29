@@ -1,14 +1,50 @@
 name: AR161
-maker: null
-winding: null
-functions: []
+maker: Enicar
+winding: manual
+functions:
+  - Centre seconds
+  - Date
+lignes: "11.75"
+diameter_mm: "26.8"
+height_mm: "3.95"
+jewels: "17"
+beat_rate: 21,600 A/h
+power_reserve: 46 h
 base: null
-introduced: null
 notes: []
-read_more: []
+read_more:
+  - title: Facts, figures and features
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    source: enicar-org
+    note: Enicar's in-house calibres by series, with winding, jewels and power reserve, and an offer of scanned calibre manuals.
 status: draft
-gaps:
-  - Maker, winding and functions
-  - Specs
-citations: []
-last_reviewed: 2026-10-25
+gaps: []
+citations:
+  - id: ranfft
+    source: ranfft
+    url: https://ranfft.org/caliber/3597-Enicar-161
+    title: "Ranfft archive: Enicar 161"
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - functions
+      - lignes
+      - diameter_mm
+      - height_mm
+      - jewels
+      - beat_rate
+      - power_reserve
+  - id: eo-facts
+    source: enicar-org
+    url: https://enicar.org/2018/03/15/facts-figures-and-features/
+    title: Facts, figures and features (calibre table)
+    retrieved: 2026-10-28
+    supports:
+      - maker
+      - winding
+      - jewels
+      - beat_rate
+      - power_reserve
+      - functions
+last_reviewed: 2026-10-28

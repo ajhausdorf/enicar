@@ -3,7 +3,7 @@
 // record. Credit, licence and permission are required up front so a photo can
 // never land without them.
 //
-//   node scripts/images/add-image.mjs <record-id> <url-or-path> <name> \
+//   node scripts/images/add-image.mjs <record-id | calibres/<id>> <url-or-path> <name> \
 //     --credit "EstrellaSuecia" --license "CC0" --permission cc \
 //     --source-url <page the photo came from> --alt "..." [--view dial] [--variant MkII]
 import { mkdirSync, readFileSync, existsSync } from 'node:fs';
@@ -31,7 +31,9 @@ if (opts.permission === 'granted' && !opts['permission-ref']) {
   process.exit(1);
 }
 if (!/^[a-z0-9-]+$/.test(name)) { console.error('<name> must be lower-case-with-hyphens'); process.exit(1); }
-if (!existsSync(join(ROOT, 'data/references', `${id}.yaml`))) { console.error(`no record data/references/${id}.yaml`); process.exit(1); }
+// A calibre's photos go under calibres/<id> (its record is data/calibres/<id>.yaml).
+const recordFile = id.startsWith('calibres/') ? join(ROOT, 'data', `${id}.yaml`) : join(ROOT, 'data/references', `${id}.yaml`);
+if (!existsSync(recordFile)) { console.error(`no record ${recordFile.replace(ROOT, '')}`); process.exit(1); }
 
 let buf;
 if (/^https?:/.test(input)) {
