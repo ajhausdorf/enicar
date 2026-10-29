@@ -4,14 +4,17 @@ winding: automatic
 functions:
   - Centre seconds
   - Date
-lignes: null
+lignes: "7.75"
 diameter_mm: "17.5"
 height_mm: "4.65"
 jewels: "23"
 beat_rate: 21,600 A/h
 power_reserve: 42 h
 base: null
-notes: []
+notes:
+  - text: Ranfft gives the ETA 2551 as its base calibre.
+    cites:
+      - ranfft
 read_more:
   - title: Facts, figures and features
     url: https://enicar.org/2018/03/15/facts-figures-and-features/
@@ -34,11 +37,5 @@ citations:
       - jewels
       - beat_rate
       - power_reserve
-  - id: eo-facts
-    source: enicar-org
-    url: https://enicar.org/2018/03/15/facts-figures-and-features/
-    title: Facts, figures and features (calibre table)
-    retrieved: 2026-10-28
-    supports:
-      - maker
+      - lignes
 last_reviewed: 2026-10-28

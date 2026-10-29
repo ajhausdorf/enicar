@@ -4,14 +4,20 @@ winding: automatic
 functions:
   - Centre seconds
   - Date
-lignes: null
+lignes: "11.5"
 diameter_mm: "26"
 height_mm: null
-jewels: "30"
+jewels: 17 or 30
 beat_rate: 18,000 A/h
 power_reserve: 38 h
 base: null
-notes: []
+notes:
+  - text: Ranfft lists 17- and 30-jewel versions; the 30-jewel one is signed as a chronometer.
+    cites:
+      - ranfft
+  - text: Ranfft gives the AS 1555N as its base calibre (an outside ébauche Enicar finished as its own).
+    cites:
+      - ranfft
 read_more:
   - title: Facts, figures and features
     url: https://enicar.org/2018/03/15/facts-figures-and-features/
@@ -34,11 +40,5 @@ citations:
       - jewels
       - beat_rate
       - power_reserve
-  - id: eo-facts
-    source: enicar-org
-    url: https://enicar.org/2018/03/15/facts-figures-and-features/
-    title: Facts, figures and features (calibre table)
-    retrieved: 2026-10-28
-    supports:
-      - maker
+      - lignes
 last_reviewed: 2026-10-28

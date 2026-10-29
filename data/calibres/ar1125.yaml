@@ -12,7 +12,7 @@ beat_rate: 18,000 A/h
 power_reserve: 45 h
 base: null
 notes:
-  - text: enicar.org's calibre table gives 25 jewels; Ranfft gives 30.
+  - text: enicar.org's calibre table gives 25 jewels. Ranfft lists 25- and 30-jewel versions and gives 30 as its main figure.
     cites:
       - eo-facts
       - ranfft

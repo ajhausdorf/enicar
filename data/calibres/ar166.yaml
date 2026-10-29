@@ -50,11 +50,4 @@ citations:
       - jewels
       - beat_rate
       - power_reserve
-  - id: eo-facts
-    source: enicar-org
-    url: https://enicar.org/2018/03/15/facts-figures-and-features/
-    title: Facts, figures and features (calibre table)
-    retrieved: 2026-10-28
-    supports:
-      - maker
 last_reviewed: 2026-10-28
