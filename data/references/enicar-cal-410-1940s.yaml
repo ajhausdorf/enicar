@@ -1,0 +1,72 @@
+name: "Enicar cal. 410 (1940s)"
+family: other
+kind: other
+summary: "A 33 mm Enicar from the 1940s with no model name, a two-tone enamel dial and the manual-wind cal. 410, known here from one example."
+references: []
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: [Enicar 410]
+  winding: manual
+case:
+  construction: null
+  material: null
+  diameter_mm: 33
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Signed two-tone enamel dial with radium lume, blued steel syringe hands and a red centre seconds hand."
+variants: []
+images:
+  - file: /images/enicar-cal-410-1940s/sop-dp-3wshdmev-1.webp
+    thumb: /images/enicar-cal-410-1940s/sop-dp-3wshdmev-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "1940s Enicar with a two-tone cream and salmon dial, Arabic numerals and a red seconds hand, on an olive fabric strap among autumn leaves"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DP_3WShDMeV/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: a 1940s Enicar (WW2 period) with a signed two-tone enamel dial, 33 mm, 17 jewels, cal. 410."
+  - file: /images/enicar-cal-410-1940s/sop-caw9wzilsxw-1.webp
+    thumb: /images/enicar-cal-410-1940s/sop-caw9wzilsxw-1-sm.webp
+    width: 1440
+    height: 1568
+    alt: "The same 1940s Enicar with a two-tone dial and red seconds hand on an olive fabric strap, on red packaging"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Caw9wziLsxW/
+    credit: "@shot.of.patina"
+    credit_url: https://www.instagram.com/shot.of.patina/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: shot-of-patina
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the same 1940s Enicar, cal. 410, as DP_3WShDMeV; identical caption and the same dial."
+status: draft
+gaps:
+  - Model name and case reference
+  - Production years (its owner says 1940s, the Second World War period; Ranfft dates the calibre to 1950)
+  - Case material, construction and lug width (its owner describes the lugs as rare and special)
+  - Any source beyond its owner's caption
+citations:
+  - id: sop-dp3w
+    source: shot-of-patina
+    url: https://www.instagram.com/p/DP_3WShDMeV/
+    title: "@shot.of.patina: a 1940s Enicar with a two-tone enamel dial, 33 mm, 17 jewels, cal. 410"
+    retrieved: 2026-10-29
+    supports: [movement.calibres, case.diameter_mm, dial]
+  - id: ranfft-410
+    source: ranfft
+    url: https://ranfft.org/caliber/3614-Enicar-410
+    title: "Ranfft archive: Enicar 410"
+    retrieved: 2026-10-29
+    supports: [movement.winding]
+last_reviewed: 2026-10-29
