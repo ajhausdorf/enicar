@@ -5,6 +5,15 @@ import { serialRanges } from '../lib/serials';
 
 const refs = await getCollection('references');
 const ranges = serialRanges(refs);
+// Every page the ranges come from, once each, grouped by who publishes it.
+// Serial ranges come from Enicar 101's generation pages and the enicar.org
+// classification table; a generation's other citations (a sale thread, a
+// message about dials) aren't about serials, so they're left out here.
+const SERIAL_SOURCES = new Set(['enicar101', 'enicar-org']);
+const sourceNames = Object.fromEntries((await getCollection('sources')).map((s) => [s.id, s.data.name]));
+const seen = new Map<string, { source: string; title: string; url: string }>();
+for (const r of ranges) for (const c of r.cites) if (SERIAL_SOURCES.has(c.source.id) && !seen.has(c.url)) seen.set(c.url, { source: sourceNames[c.source.id] ?? c.source.id, title: c.title, url: c.url });
+const bySource = [...seen.values()].reduce((m, c) => m.set(c.source, [...(m.get(c.source) ?? []), c]), new Map<string, { title: string; url: string }[]>());
 const covered = [...new Set(refs.filter((r) => r.data.variants.some((v) => v.serials.length)).map((r) => r.data.name))].sort();
 ---
 <Base title="Serial lookup" description="Find which Enicar generation a case serial number belongs to." section="serial">
@@ -41,7 +50,18 @@ const covered = [...new Set(refs.filter((r) => r.data.variants.some((v) => v.ser
           </tbody>
         </table>
       </div>
-      <p class="small muted">Each generation's page cites where its range comes from. Enicar's own records were lost, so ranges come from watches collectors have logged, and a serial outside every range isn't necessarily wrong.</p>
+      <p class="small muted">Enicar's own records were lost, so ranges come from watches collectors have logged, and a serial outside every range isn't necessarily wrong.</p>
+    </section>
+
+    <section class="sources" aria-labelledby="src-h">
+      <h2 id="src-h">Sources</h2>
+      <p class="small muted">The serial ranges and dates come from these pages.</p>
+      {[...bySource].map(([name, list]) => (
+        <div class="src-group">
+          <h3>{name}</h3>
+          <ul>{[...list].sort((a, b) => a.title.localeCompare(b.title, 'en', { numeric: true })).map((c) => <li><a href={c.url}>{c.title}</a></li>)}</ul>
+        </div>
+      ))}
     </section>
   </div>
 </Base>
@@ -110,5 +130,9 @@ const covered = [...new Set(refs.filter((r) => r.data.variants.some((v) => v.ser
   th, td { text-align: left; padding: 10px 16px; border-bottom: 1px solid var(--line-soft); }
   thead th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
   tr.hit td { background: var(--accent-wash); }
+  .sources { display: flex; flex-direction: column; gap: 12px; }
+  .sources h2 { font-size: 20px; }
+  .src-group h3 { margin: 0 0 6px; font-size: 15px; }
+  .src-group ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
   tr.hit td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
 </style>

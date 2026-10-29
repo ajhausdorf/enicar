@@ -98,6 +98,10 @@ type RecordLike = {
 
 export const slugify = calibreId;
 
+// Production dates are recorded as the sources print them ("6/66"); show
+// the year in full ("6/1966"). Every Enicar date here is in the 1900s.
+export const fullYears = (s: string) => s.replace(/\b(\d{1,2})\/(\d{2})\b/g, '$1/19$2');
+
 export function leavesOf<R extends RecordLike>(ref: R) {
   const d = ref.data;
   if (!d.variants.length) {
