@@ -765,6 +765,62 @@ pending:
       - "Our Sherpa Date photos are all identified by a dial reading Sherpa Date, apart from one 40 mm EPSA-cased example identified by its caption."
 
 excluded:
+  - account: enicarsherpaguru
+    code: C-wwehVoeQa
+    photos: all
+    reason: "Jet Graph with no generation in the caption; the Jet Graph page already has 30 photos."
+  - account: enicarsherpaguru
+    code: C0ENrxgMId-
+    photos: all
+    reason: "Jet Graph beside a phone charger; the Jet Graph page already has 30 photos."
+  - account: enicarsherpaguru
+    code: C3o8oHsNexC
+    photos: all
+    reason: "Watch small in the frame at a lunch table."
+  - account: enicarsherpaguru
+    code: C3htIhYs8_F
+    photos: all
+    reason: "A page of the Enicar book, not a watch."
+  - account: enicarsherpaguru
+    code: Ci23K5_KKbu
+    photos: all
+    reason: "Sherpa Guide with MkII tells; the MkII already has six photos."
+  - account: enicarsherpaguru
+    code: CtTdNOdrSMK
+    photos: all
+    reason: "Sherpa Guide with MkII tells; the MkII already has six photos."
+  - account: enicarsherpaguru
+    code: DIVwMjJOaby
+    photos: all
+    reason: "Photo 1 is a Sherpa Guide in a shop box with no generation stated; photos 2 and 3 are a sports-watch shop's adverts with mostly other makes."
+  - account: enicarsherpaguru
+    code: Cutenybt0NZ
+    photos: all
+    reason: "Sherpa Jet with no generation in the caption; the Jet page already has 30 photos."
+  - account: enicarsherpaguru
+    code: DI5iTX1oiiQ
+    photos: all
+    reason: "Sherpa Jet with no generation in the caption; the Jet page already has 30 photos."
+  - account: enicarsherpaguru
+    code: DExWfDnoq7b
+    photos: all
+    reason: "For-sale graphic with text over the photo."
+  - account: enicarsherpaguru
+    code: CwaMmCCIlBd
+    photos: all
+    reason: "Sherpa Graph MkII, but not whether MkIIa or MkIIb; the Graph page already has 64 photos."
+  - account: enicarsherpaguru
+    code: CxQknb_oJkq
+    photos: all
+    reason: "Ocean Pearl chronograph; that page already has ten photos, eight of them chronographs."
+  - account: enicarsherpaguru
+    code: DAv1wEloL5g
+    photos: all
+    reason: "Three Jump Hours and a book in one photo."
+  - account: enicarsherpaguru
+    code: DGVTu0yIFV1
+    photos: all
+    reason: "An Enicar automatic day-date offered for sale, with no model named; photo 1 lies on a catalogue page."
   - account: shot.of.patina
     code: DUd74UQDZhh
     photos: all

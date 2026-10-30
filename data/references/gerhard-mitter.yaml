@@ -44,6 +44,38 @@ images:
     caption: null
     identified_by: source
     identified_note: "Captioned as the Gerhard Mitter chronograph in the enicar.org Lausanne article."
+  - file: /images/gerhard-mitter/e-ctlrkffr-av-1.webp
+    thumb: /images/gerhard-mitter/e-ctlrkffr-av-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Gerhard Mitter chronograph with a black dial, white registers and orange chronograph hand in a cushion case, on the wrist against a cracked painted door"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CtlrKFFr-Av/
+    credit: "@enicarsherpaguru"
+    credit_url: https://www.instagram.com/enicarsherpaguru/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicarsherpaguru
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: my Gerhard Mitter. Three-register chronograph in a cushion case, as the record describes."
+  - file: /images/gerhard-mitter/e-csdij9arhlp-1.webp
+    thumb: /images/gerhard-mitter/e-csdij9arhlp-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Gerhard Mitter chronograph with a black dial and white registers on the wrist, by the gear lever of a car"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CsdiJ9ArhlP/
+    credit: "@enicarsherpaguru"
+    credit_url: https://www.instagram.com/enicarsherpaguru/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicarsherpaguru
+    caption: null
+    identified_by: caption
+    identified_note: "The caption puns on an inner Mitter and its hashtags name the Gerhard Mitter; the same dial, case and strap as CtlrKFFr-Av."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
