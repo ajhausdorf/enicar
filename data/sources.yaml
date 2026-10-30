@@ -110,6 +110,17 @@
   use: Photos, with permission, and the owner's own reference and calibre for a watch.
   leads_to: []
   permission: granted
+- id: enicarsherpaguru
+  name: "@enicarsherpaguru"
+  kind: other
+  tier: secondary
+  url: https://www.instagram.com/enicarsherpaguru/
+  author: null
+  status: confirmed
+  what: Instagram account of a UK collector of vintage Enicar (Sherpa Guide, Jet, Jet Graph, Gerhard Mitter and others), whose captions sometimes give the reference and movement.
+  use: Photos, with permission, and the owner's own reference and movement for a watch.
+  leads_to: []
+  permission: granted
 - id: dropandwatch
   name: Drop&Watch
   kind: dealer

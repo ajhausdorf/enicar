@@ -1,0 +1,85 @@
+name: "EQ Quartz Satellite"
+family: other
+kind: other
+summary: "A quartz Enicar from the mid-1980s with a dial marked EQ Quartz and Satellite, known here from one example."
+references:
+  - number: 502-672-532
+    note: "Given by the owner of the one example here, with a Harvey 672 movement on a 364 battery, which the owner thinks is based on the Ronda 762."
+    cites: [esg-c4td]
+nicknames: []
+years: { from: null, to: null, approximate: true }
+movement:
+  calibres: []
+  winding: quartz
+case:
+  construction: null
+  material: null
+  diameter_mm: null
+  lug_mm: null
+  thickness_mm: null
+features: []
+dial: "Marked EQ Quartz and Satellite."
+variants: []
+images:
+  - file: /images/eq-quartz-satellite/e-c4tdtw9mavu-2.webp
+    thumb: /images/eq-quartz-satellite/e-c4tdtw9mavu-2-sm.webp
+    width: 1280
+    height: 1600
+    alt: "EQ Quartz Satellite with a silver dial and gold-coloured surround in a rectangular steel case on a mesh bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/C4TDtW9MavU/
+    credit: "@enicarsherpaguru"
+    credit_url: https://www.instagram.com/enicarsherpaguru/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicarsherpaguru
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar EQ Quartz Satellite, ref. 502-672-532; the dial reads EQ Quartz and Satellite."
+  - file: /images/eq-quartz-satellite/e-c4tdtw9mavu-1.webp
+    thumb: /images/eq-quartz-satellite/e-c4tdtw9mavu-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "The same EQ Quartz Satellite on the wrist, in front of Enicar printed material"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/C4TDtW9MavU/
+    credit: "@enicarsherpaguru"
+    credit_url: https://www.instagram.com/enicarsherpaguru/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicarsherpaguru
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: Enicar EQ Quartz Satellite, ref. 502-672-532."
+  - file: /images/eq-quartz-satellite/e-c4tdtw9mavu-3.webp
+    thumb: /images/eq-quartz-satellite/e-c4tdtw9mavu-3-sm.webp
+    width: 1283
+    height: 1600
+    alt: "The quartz movement and button-cell battery of the EQ Quartz Satellite, caseback removed"
+    view: movement
+    variant: null
+    source_url: https://www.instagram.com/p/C4TDtW9MavU/
+    credit: "@enicarsherpaguru"
+    credit_url: https://www.instagram.com/enicarsherpaguru/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: enicarsherpaguru
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: a Harvey 672 movement and a 364 battery, per the owner."
+status: draft
+gaps:
+  - Production years (its owner dates it to the mid-1980s with Martijn van der Ven's help)
+  - Movement, confirmed beyond the owner's caption
+  - Case size, material and construction
+  - Any source beyond its owner's caption
+citations:
+  - id: esg-c4td
+    source: enicarsherpaguru
+    url: https://www.instagram.com/p/C4TDtW9MavU/
+    title: "@enicarsherpaguru: Enicar EQ Quartz Satellite, ref. 502-672-532, Harvey 672 movement"
+    retrieved: 2026-10-29
+    supports: [movement.winding, dial]
+last_reviewed: 2026-10-29
