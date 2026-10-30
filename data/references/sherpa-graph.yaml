@@ -1029,6 +1029,22 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Baton hands and a broad red chronograph hand on a white dial: the MkIV tells on Enicar 101; the register hands here are thin black, with a red minute counter."
+  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-1.webp
+    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Graph MkI with a black dial and cream registers on a beads-of-rice bracelet, on the wrist"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.windvintage.com/enicar-sherpa-graph-mark-1a-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-graph-mark-1a-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Tachymetre Base 1000 ring, large early logo, paddle hands and a plain chronograph hand. Caseback serial 272776, in the MkI range. The listing calls it a Mark 1A."
   - file: /images/sherpa-graph/ew-enicar-sherpa-graph-1.webp
     thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-1-sm.webp
     width: 1219
@@ -1077,22 +1093,6 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Tachymetre Base 1000 ring, large early logo, paddle hands and a plain chronograph hand. Caseback serial 272894, in the MkI range. The listing calls it a Mark 1A."
-  - file: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-1.webp
-    thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-1-sm.webp
-    width: 1600
-    height: 1600
-    alt: "Sherpa Graph MkI with a black dial and cream registers on a beads-of-rice bracelet, on the wrist"
-    view: dial
-    variant: "MkI"
-    source_url: https://www.windvintage.com/enicar-sherpa-graph-mark-1a-unpolished
-    credit: "Wind Vintage"
-    credit_url: https://www.windvintage.com/enicar-sherpa-graph-mark-1a-unpolished
-    license: "Used with permission"
-    permission: granted
-    permission_ref: eric-wind
-    caption: null
-    identified_by: tells
-    identified_note: "Tachymetre Base 1000 ring, large early logo, paddle hands and a plain chronograph hand. Caseback serial 272776, in the MkI range. The listing calls it a Mark 1A."
   - file: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-8.webp
     thumb: /images/sherpa-graph/ew-enicar-sherpa-graph-mark-1a-unpolished-8-sm.webp
     width: 1600
