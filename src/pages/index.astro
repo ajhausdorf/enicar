@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import WatchCard from '../components/WatchCard.astro';
-import { KIND_LABEL, decadeOf, leavesOf } from '../lib/site';
+import { KIND_LABEL, decadeOf, diametersOf, leavesOf } from '../lib/site';
 
 // Sort models as a collector would: Aqua Graph, Dive, ... rather than every 'Sherpa' together,
 // with the named models before the numbered ones (Sherpa Aqua Graph before Sherpa 100).
@@ -29,6 +29,8 @@ const tree = families.map((f) => ({
 }));
 const kinds = [...new Set(refs.map((r) => r.data.kind))].sort();
 const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean))].sort() as string[];
+// Size options: each whole-millimetre size on record.
+const sizes = [...new Set(leaves.flatMap(diametersOf).map(Math.floor))].sort((a, b) => a - b);
 ---
 <Base section="catalog" description="Every vintage Enicar watch by model and generation: Sherpa, Seapearl, Ocean Pearl, Star Jewels, Ultrasonic and more, with specs, calibres, serials, prices and the sources behind each.">
   <section class="hero">
@@ -53,6 +55,17 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
           <option value="">Any decade</option>
           {decades.map((d) => <option value={d}>{d}</option>)}
           <option value="unknown">Undated</option>
+        </select>
+      </label>
+      <label class="ctl">Size
+        <select id="f-min" aria-label="Smallest case diameter">
+          <option value="">Min</option>
+          {sizes.map((n) => <option value={n}>{n} mm</option>)}
+        </select>
+        <span class="muted" aria-hidden="true">to</span>
+        <select id="f-max" aria-label="Largest case diameter">
+          <option value="">Max</option>
+          {sizes.map((n) => <option value={n}>{n} mm</option>)}
         </select>
       </label>
       <button type="button" class="chip" id="f-photo" aria-pressed="false">Has photo</button>
@@ -107,6 +120,8 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
   const kind = document.getElementById('f-kind') as HTMLSelectElement;
   const decade = document.getElementById('f-decade') as HTMLSelectElement;
   const photo = document.getElementById('f-photo') as HTMLButtonElement;
+  const minSize = document.getElementById('f-min') as HTMLSelectElement;
+  const maxSize = document.getElementById('f-max') as HTMLSelectElement;
   const sort = document.getElementById('f-sort') as HTMLSelectElement;
   const heading = document.getElementById('results-h')!;
   const shown = document.getElementById('shown')!;
@@ -119,6 +134,14 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
   // fresh visit starts clear.
   const models = new Set<string>();
 
+  // A card fits the size range when any of its recorded diameters does. With
+  // a size picked, cards with no recorded diameter drop out.
+  function fitsSize(c: HTMLElement) {
+    if (!minSize.value && !maxSize.value) return true;
+    const lo = minSize.value ? Number(minSize.value) : -Infinity, hi = maxSize.value ? Number(maxSize.value) : Infinity;
+    return (c.dataset.dia ?? '').split(' ').filter(Boolean).map(Number).some((d) => d >= lo && d < hi + 1);
+  }
+
   function apply() {
     let n = 0;
     for (const c of cards) {
@@ -126,7 +149,8 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
         (!models.size || models.has(c.dataset.model!)) &&
         (!kind.value || c.dataset.kind === kind.value) &&
         (!decade.value || c.dataset.decade === decade.value) &&
-        (photo.getAttribute('aria-pressed') !== 'true' || c.dataset.hasPhoto === 'yes');
+        (photo.getAttribute('aria-pressed') !== 'true' || c.dataset.hasPhoto === 'yes') &&
+        fitsSize(c);
       c.hidden = !ok;
       if (ok) n++;
     }
@@ -156,7 +180,7 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
     const url = new URL(location.href);
     family ? url.searchParams.set('family', family) : url.searchParams.delete('family');
     url.searchParams.delete('model');
-    const state = { models: [...models], kind: kind.value, decade: decade.value, photo: photo.getAttribute('aria-pressed') === 'true', sort: sort.value };
+    const state = { models: [...models], kind: kind.value, decade: decade.value, photo: photo.getAttribute('aria-pressed') === 'true', min: minSize.value, max: maxSize.value, sort: sort.value };
     history.replaceState({ ...history.state, catalog: state }, '', url);
   }
   for (const b of famButtons) b.addEventListener('click', () => { family = b.dataset.family ?? ''; models.clear(); apply(); });
@@ -167,7 +191,7 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
     apply();
   });
   photo.addEventListener('click', () => { photo.setAttribute('aria-pressed', String(photo.getAttribute('aria-pressed') !== 'true')); apply(); });
-  for (const el of [kind, decade, sort]) el.addEventListener('change', apply);
+  for (const el of [kind, decade, minSize, maxSize, sort]) el.addEventListener('change', apply);
   // Back (or forward) to the catalogue restores the filters from the history
   // entry. A page the browser kept whole needs nothing; any other visit,
   // including a reload, starts clear.
@@ -178,6 +202,8 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
   kind.value = saved?.kind ?? '';
   decade.value = saved?.decade ?? '';
   photo.setAttribute('aria-pressed', String(!!saved?.photo));
+  minSize.value = saved?.min ?? '';
+  maxSize.value = saved?.max ?? '';
   sort.value = saved?.sort ?? 'family';
   apply();
 </script>
