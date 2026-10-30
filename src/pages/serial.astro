@@ -17,7 +17,7 @@ const bySource = [...seen.values()].reduce((m, c) => m.set(c.source, [...(m.get(
 const covered = [...new Set(refs.filter((r) => r.data.variants.some((v) => v.serials.length)).map((r) => r.data.name))].sort();
 ---
 <Base title="Serial lookup" description="Find which Enicar generation a case serial number belongs to." section="serial">
-  <div class="wrap serial">
+  <div class="wrap serial accents">
     <section class="intro">
       <h1>Serial lookup</h1>
       <p class="lede">Type a case serial and see which generation it falls in, from the serial ranges the sources have recorded.</p>
@@ -36,7 +36,7 @@ const covered = [...new Set(refs.filter((r) => r.data.variants.some((v) => v.ser
 
     <section class="all">
       <h2>Every recorded range</h2>
-      <div class="table-wrap">
+      <div class="table-wrap bezel-top">
         <table>
           <thead><tr><th scope="col">Serials</th><th scope="col">Generation</th><th scope="col">Dated</th></tr></thead>
           <tbody>

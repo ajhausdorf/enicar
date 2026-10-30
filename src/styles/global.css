@@ -95,22 +95,31 @@ h2 { margin: 0; font-size: 22px; font-weight: 700; }
 .panel { border: 1px solid var(--line); border-radius: 12px; padding: 24px; background: var(--wash); }
 .notice { border: 1px solid #E8D9B0; background: #FFF8E6; border-radius: 10px; padding: 14px 16px; font-size: 14px; color: #5C4300; }
 
-/* Detail pages (a watch, a calibre) borrow the Sherpa GMT bezel: each section
-   heading carries a day-and-night bezel chip, sections are ruled off like a
-   bezel scale, and the eyebrow gets the yellow GMT-hand tip. */
-.detail h2 { display: flex; align-items: center; gap: 12px; }
-.detail h2::before { content: ''; flex: none; width: 28px; height: 6px; border-radius: 1px; background: linear-gradient(90deg, var(--bezel-day) 50%, var(--bezel-night) 50%); }
-.detail > section:not(.top):not(.head):not(.panel) {
+/* Every page borrows the Sherpa GMT bezel: each section heading carries a
+   day-and-night bezel chip, sections are ruled off like a bezel scale, and
+   the eyebrow gets the yellow GMT-hand tip. Detail pages (a watch, a calibre)
+   use .detail; the other pages use .accents. */
+:is(.detail, .accents) h2 { display: flex; align-items: center; gap: 12px; }
+:is(.detail, .accents) h2::before { content: ''; flex: none; width: 28px; height: 6px; border-radius: 1px; background: linear-gradient(90deg, var(--bezel-day) 50%, var(--bezel-night) 50%); }
+:is(.detail, .accents) > section:not(.top):not(.head):not(.panel):not(.intro):not(.card) {
   padding-top: 28px;
   background:
     linear-gradient(var(--line), var(--line)) top left / 100% 1px no-repeat,
     repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 16px) top left / 100% 6px no-repeat;
 }
-.detail .eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 700; }
-.detail .eyebrow::before { content: ''; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 8px solid var(--signal); filter: drop-shadow(0 0 0.5px var(--night)); }
+:is(.detail, .accents) .eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 700; }
+:is(.detail, .accents) .eyebrow::before { content: ''; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 8px solid var(--signal); filter: drop-shadow(0 0 0.5px var(--night)); }
 .detail dl.specs { border-top: 2px solid var(--ink); }
 .detail .barometer { position: relative; overflow: hidden; }
 .detail .barometer::before { content: ''; position: absolute; inset: 0 0 auto; height: 4px; background: linear-gradient(90deg, var(--bezel-day) 50%, var(--bezel-night) 50%); }
+
+/* The same bezel stripe along the top edge: always on boxed panels and
+   tables (.bezel-top), and on linked cards while hovered. */
+.bezel-top, .watch-card, .cal-card { position: relative; }
+.bezel-top { overflow: hidden; }
+.bezel-top::before, .watch-card::before, .cal-card::before { content: ''; position: absolute; inset: 0 0 auto; z-index: 2; height: 4px; pointer-events: none; background: linear-gradient(90deg, var(--bezel-day) 50%, var(--bezel-night) 50%); }
+.watch-card::before, .cal-card::before { opacity: 0; transition: opacity .15s; }
+.watch-card:hover::before, .cal-card:hover::before, .watch-card:focus-within::before, .cal-card:focus-within::before { opacity: 1; }
 
 /* Footer */
 .site-footer { margin-top: auto; background: var(--night); font-size: 13px; color: var(--night-muted); }
