@@ -3,6 +3,22 @@ name: Seapearl
 family: seapearl
 kind: dress
 images:
+  - file: /images/seapearl/c-cjq85nbriku-1.webp
+    thumb: /images/seapearl/c-cjq85nbriku-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Seapearl 600 with a dial turning cranberry brown on an olive strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CJq85nBrIKu/
+    credit: "@ctwatchguy"
+    credit_url: https://www.instagram.com/ctwatchguy/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: ctwatchguy
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Seapearl 600."
   - file: /images/seapearl/v-dbc5edkuxur-1.webp
     thumb: /images/seapearl/v-dbc5edkuxur-1-sm.webp
     width: 896
@@ -107,22 +123,6 @@ images:
     view: dial
     variant: null
     source_url: https://www.instagram.com/p/CNFu_xvL7oP/
-    credit: "@ctwatchguy"
-    credit_url: https://www.instagram.com/ctwatchguy/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: ctwatchguy
-    caption: null
-    identified_by: dial
-    identified_note: "Dial reads Seapearl 600."
-  - file: /images/seapearl/c-cjq85nbriku-1.webp
-    thumb: /images/seapearl/c-cjq85nbriku-1-sm.webp
-    width: 1440
-    height: 1440
-    alt: "Seapearl 600 with a dial turning cranberry brown on an olive strap, on the wrist"
-    view: dial
-    variant: null
-    source_url: https://www.instagram.com/p/CJq85nBrIKu/
     credit: "@ctwatchguy"
     credit_url: https://www.instagram.com/ctwatchguy/
     license: "Used with permission"

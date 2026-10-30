@@ -111,6 +111,22 @@ read_more:
     source: enicar-org
     note: Enicar's GMT watches and the airline partnerships of the 1960s.
 images:
+  - file: /images/sherpa-jet/daw-dawm-1borzz-3.webp
+    thumb: /images/sherpa-jet/daw-dawm-1borzz-3-sm.webp
+    width: 1280
+    height: 1600
+    alt: "The same Sherpa Jet at an angle on the printed page"
+    view: dial
+    variant: "MkII"
+    source_url: https://www.instagram.com/p/DAWM-1BORZZ/
+    credit: "Drop&Watch"
+    credit_url: https://dropandwatch.com/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: dropandwatch
+    caption: null
+    identified_by: source
+    identified_note: "The enicar.org Jet article shows a photo from this post as a Sherpa Jet MkII."
   - file: /images/sherpa-jet/tcp-ctjelbfrxyl-1.webp
     thumb: /images/sherpa-jet/tcp-ctjelbfrxyl-1-sm.webp
     width: 1440
@@ -324,22 +340,6 @@ images:
     width: 1280
     height: 1600
     alt: "Close-up of the same Sherpa Jet dial and bezel"
-    view: dial
-    variant: "MkII"
-    source_url: https://www.instagram.com/p/DAWM-1BORZZ/
-    credit: "Drop&Watch"
-    credit_url: https://dropandwatch.com/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: dropandwatch
-    caption: null
-    identified_by: source
-    identified_note: "The enicar.org Jet article shows a photo from this post as a Sherpa Jet MkII."
-  - file: /images/sherpa-jet/daw-dawm-1borzz-3.webp
-    thumb: /images/sherpa-jet/daw-dawm-1borzz-3-sm.webp
-    width: 1280
-    height: 1600
-    alt: "The same Sherpa Jet at an angle on the printed page"
     view: dial
     variant: "MkII"
     source_url: https://www.instagram.com/p/DAWM-1BORZZ/

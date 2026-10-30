@@ -2,7 +2,13 @@ name: Mantagraph
 family: chronographs
 kind: chronograph
 summary: "A chronograph with a Seiko movement."
-references: []
+references:
+  - number: 219-01-01
+    note: "TV-shaped case."
+    cites: [vv-manta]
+  - number: 219-02-01
+    note: "Coated case, black, brown or grey, with silver or gold accents."
+    cites: [vv-manta]
 nicknames: []
 years: { from: null, to: null, approximate: true }
 movement:
@@ -16,7 +22,22 @@ case:
   thickness_mm: null
 features: []
 dial: null
-variants: []
+history:
+  - text: "Martijn van der Ven gives the movement as the AR219, which he identifies as the Seiko 7016A automatic flyback calibre, made from 1972 to 1977. He knows of two case versions and probably three dial colours: brown, green and blue."
+    cites: [vv-manta]
+variants:
+  - name: TV case
+    years: { from: null, to: null }
+    tell: "TV-shaped case, ref. 219-01-01."
+    case: "TV shape"
+    refs: [219-01-01]
+    cites: [vv-manta]
+  - name: Coated case
+    years: { from: null, to: null }
+    tell: "Case coated black, brown or grey, with silver or gold accents, ref. 219-02-01."
+    case: "Coated, black, brown or grey"
+    refs: [219-02-01]
+    cites: [vv-manta]
 read_more: []
 images:
   - file: /images/mantagraph/v-deq4pewufgx-1.webp
@@ -25,7 +46,7 @@ images:
     height: 1600
     alt: "Mantagraph chronograph in a TV-shaped case with a gradient dial and red accents on a steel bracelet, in an Enicar box"
     view: dial
-    variant: null
+    variant: "TV case"
     source_url: https://www.instagram.com/p/Deq4PeWuFgX/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -34,14 +55,14 @@ images:
     permission_ref: vandervenus
     caption: null
     identified_by: caption
-    identified_note: "Caption: Enicar Mantagraph from the early 1970s."
+    identified_note: "Caption: Enicar Mantagraph from the early 1970s. TV-shaped case, which Martijn gives as ref. 219-01-01."
   - file: /images/mantagraph/v-dr4ktscdii8-1.webp
     thumb: /images/mantagraph/v-dr4ktscdii8-1-sm.webp
     width: 1438
     height: 1438
     alt: "Mantagraph chronograph with a black coated case, gold bezel and brown dial on a dark brown strap"
     view: dial
-    variant: null
+    variant: "Coated case"
     source_url: https://www.instagram.com/p/DR4KTSCDII8/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -64,10 +85,16 @@ barometer:
       note: null
 status: draft
 gaps:
-  - "Which Seiko calibre (enicar.org says only \"a Seiko work\")"
+  - "Calibre record for the AR219 (Seiko 7016A)"
   - "Production years"
   - "Case size and material"
 citations:
+  - id: vv-manta
+    source: vandervenus
+    url: https://www.instagram.com/p/DR4KTSCDII8/
+    title: "@vandervenus post: the Mantagraph flyback chronograph, AR219 / Seiko 7016A, case refs. 219-01-01 and 219-02-01"
+    retrieved: 2026-10-29
+    supports: []
   - id: eo-electric
     source: enicar-org
     url: https://enicar.org/2018/11/05/the-staying-power-of-the-sherpa-electric/
@@ -80,4 +107,4 @@ citations:
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-25
+last_reviewed: 2026-10-29

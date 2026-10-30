@@ -58,6 +58,22 @@ images:
     caption: null
     identified_by: source
     identified_note: "Shown with the Lausanne in its enicar.org article. The engraving reads 232-01-02, not the 232-01-01 the article gives for the Lausanne."
+  - file: /images/lausanne/v-csiuywurq0h-1.webp
+    thumb: /images/lausanne/v-csiuywurq0h-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Lausanne chronograph with a white dial, two silver registers and an orange chronograph hand, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CsiUYWurQ0h/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the 'Lausanne' Ocean Pearl chronograph, two-register, early 1970s. White dial, silver subregisters and orange triangle chronograph hand match the white Lausanne in the enicar.org article."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

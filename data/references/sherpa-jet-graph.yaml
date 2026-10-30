@@ -245,6 +245,22 @@ read_more:
     source: enicar101
     note: "Site news announcing the first Jet Graph and Aqua Graph guide pages."
 images:
+  - file: /images/sherpa-jet-graph/tcp-ci5datcpur0-1.webp
+    thumb: /images/sherpa-jet-graph/tcp-ci5datcpur0-1-sm.webp
+    width: 1280
+    height: 1600
+    alt: "Jet Graph with a black dial, white registers and red counter hand on a black strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/Ci5daTCpur0/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: tells
+    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
   - file: /images/sherpa-jet-graph/tcp-dm-2026-10-29-1.webp
     thumb: /images/sherpa-jet-graph/tcp-dm-2026-10-29-1-sm.webp
     width: 1267
@@ -285,22 +301,6 @@ images:
     view: dial
     variant: "MkIV"
     source_url: https://www.instagram.com/p/CzRuY0JvJum/
-    credit: "@two_crowned_prints"
-    credit_url: https://www.instagram.com/two_crowned_prints/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: two-crowned-prints
-    caption: null
-    identified_by: tells
-    identified_note: "Red minute-counter hand and baton hands, the MkIV tells on Enicar 101."
-  - file: /images/sherpa-jet-graph/tcp-ci5datcpur0-1.webp
-    thumb: /images/sherpa-jet-graph/tcp-ci5datcpur0-1-sm.webp
-    width: 1280
-    height: 1600
-    alt: "Jet Graph with a black dial, white registers and red counter hand on a black strap"
-    view: dial
-    variant: "MkIV"
-    source_url: https://www.instagram.com/p/Ci5daTCpur0/
     credit: "@two_crowned_prints"
     credit_url: https://www.instagram.com/two_crowned_prints/
     license: "Used with permission"

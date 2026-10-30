@@ -50,6 +50,22 @@ read_more:
     source: enicar101
     note: "Film and private photos of Alain Delon wearing an early Ultradive."
 images:
+  - file: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-1.webp
+    thumb: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Ultradive with a black dial and white inner ring with an orange track, on a tan strap, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.windvintage.com/enicar-sherpa-ultradive-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-sherpa-ultradive-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: dial
+    identified_note: "Dial reads Sherpa Ultradive. The listing gives ref. 144/35/03."
   - file: /images/sherpa-ultradive/tcp-dqzkotseh3s-1.webp
     thumb: /images/sherpa-ultradive/tcp-dqzkotseh3s-1-sm.webp
     width: 1433
@@ -434,22 +450,6 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Ultradive."
-  - file: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-1.webp
-    thumb: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-1-sm.webp
-    width: 1600
-    height: 1600
-    alt: "Sherpa Ultradive with a black dial and white inner ring with an orange track, on a tan strap, on the wrist"
-    view: dial
-    variant: null
-    source_url: https://www.windvintage.com/enicar-sherpa-ultradive-unpolished
-    credit: "Wind Vintage"
-    credit_url: https://www.windvintage.com/enicar-sherpa-ultradive-unpolished
-    license: "Used with permission"
-    permission: granted
-    permission_ref: eric-wind
-    caption: null
-    identified_by: dial
-    identified_note: "Dial reads Sherpa Ultradive. The listing gives ref. 144/35/03."
   - file: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-6.webp
     thumb: /images/sherpa-ultradive/ew-enicar-sherpa-ultradive-unpolished-6-sm.webp
     width: 1600

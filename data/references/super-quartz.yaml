@@ -144,22 +144,6 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Super Quartz."
-  - file: /images/super-quartz/sop-dlszaixrnsv-1.webp
-    thumb: /images/super-quartz/sop-dlszaixrnsv-1-sm.webp
-    width: 1241
-    height: 1600
-    alt: "Gold-coloured Super Quartz with a cream dial, hands and an LCD window, in a shaped case on a green strap"
-    view: dial
-    variant: null
-    source_url: https://www.instagram.com/p/DLSZAIxRnsV/
-    credit: "@shot.of.patina"
-    credit_url: https://www.instagram.com/shot.of.patina/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: shot-of-patina
-    caption: null
-    identified_by: caption
-    identified_note: "Dial reads Super Quartz. Caption: ref. 380.003.001, an analogue-digital watch on the ESA 900.231."
 status: draft
 gaps:
   - Reference numbers for each case shape

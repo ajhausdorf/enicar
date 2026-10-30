@@ -107,6 +107,38 @@ read_more:
     source: enicar-org
     note: Martijn van der Ven's full history of the Jet and Super-Jet, with photos of every generation.
 images:
+  - file: /images/sherpa-super-jet/tcp-c9ui8ekp7ak-2.webp
+    thumb: /images/sherpa-super-jet/tcp-c9ui8ekp7ak-2-sm.webp
+    width: 1440
+    height: 1446
+    alt: "The same Sherpa Super-Jet on its bracelet, seen from the side on NASA paperwork"
+    view: dial
+    variant: "MkI"
+    source_url: https://www.instagram.com/p/C9ui8Ekp7ak/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: null
+    identified_by: source
+    identified_note: "Same watch the enicar.org Jet article shows as a Sherpa Super-Jet MkI."
+  - file: /images/sherpa-super-jet/v-ckdorzdlzhw-1.webp
+    thumb: /images/sherpa-super-jet/v-ckdorzdlzhw-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Super-Jet in the cushion case with a black dial and checkered GMT hand, on the wrist"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.instagram.com/p/CkDorZDLZHw/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV."
   - file: /images/sherpa-super-jet/mkii-white-two-crowned-prints.webp
     thumb: /images/sherpa-super-jet/mkii-white-two-crowned-prints-sm.webp
     width: 1402
@@ -219,22 +251,6 @@ images:
     caption: null
     identified_by: source
     identified_note: "The enicar.org Jet article shows this photo as a Sherpa Super-Jet MkI."
-  - file: /images/sherpa-super-jet/tcp-c9ui8ekp7ak-2.webp
-    thumb: /images/sherpa-super-jet/tcp-c9ui8ekp7ak-2-sm.webp
-    width: 1440
-    height: 1446
-    alt: "The same Sherpa Super-Jet on its bracelet, seen from the side on NASA paperwork"
-    view: dial
-    variant: "MkI"
-    source_url: https://www.instagram.com/p/C9ui8Ekp7ak/
-    credit: "@two_crowned_prints"
-    credit_url: https://www.instagram.com/two_crowned_prints/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: two-crowned-prints
-    caption: null
-    identified_by: source
-    identified_note: "Same watch the enicar.org Jet article shows as a Sherpa Super-Jet MkI."
   - file: /images/sherpa-super-jet/tcp-cwdcwokr6jl-1.webp
     thumb: /images/sherpa-super-jet/tcp-cwdcwokr6jl-1-sm.webp
     width: 1440
@@ -475,22 +491,6 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Caption: Sherpa Super Jet MkIV, ref. 166-36-01, circa 1975. Both watches are in the cushion case, which the source gives as MkIV; the one on the bracelet reads automatic."
-  - file: /images/sherpa-super-jet/v-ckdorzdlzhw-1.webp
-    thumb: /images/sherpa-super-jet/v-ckdorzdlzhw-1-sm.webp
-    width: 1440
-    height: 1440
-    alt: "Sherpa Super-Jet in the cushion case with a black dial and checkered GMT hand, on the wrist"
-    view: dial
-    variant: "MkIV"
-    source_url: https://www.instagram.com/p/CkDorZDLZHw/
-    credit: "@vandervenus"
-    credit_url: https://www.instagram.com/vandervenus/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: vandervenus
-    caption: null
-    identified_by: tells
-    identified_note: "Caption says MkIII; his Sherpa (Super-)Jet article puts the cushion case in the MkIV."
   - file: /images/sherpa-super-jet/v-cxv-e-rshu3-1.webp
     thumb: /images/sherpa-super-jet/v-cxv-e-rshu3-1-sm.webp
     width: 1440
