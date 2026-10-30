@@ -54,7 +54,7 @@ status: draft
 gaps:
   - "Factory reference numbers"
   - "Calibre"
-  - "Case size and material"
+  - "Case material"
 citations:
   - id: eo-everest
     source: enicar-org

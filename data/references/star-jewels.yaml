@@ -177,7 +177,7 @@ images:
 status: draft
 gaps:
   - Production years
-  - Case
+  - "Case sizes for the Automatic, Sherpa 300, Square case and AR160 versions; the MRO size is from one reference, 160-80-01"
   - Whether Star Jewels was a model line or only a dial signature
 citations:
   - id: zz-cpff

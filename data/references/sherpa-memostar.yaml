@@ -80,10 +80,10 @@ barometer:
       note: null
 status: draft
 gaps:
-  - "Case size is from an auction lot titled Memostar ref. 298-01-01; whether every Sherpa Memostar is that reference"
+  - "Case size is from auction lots titled Memostar ref. 298-01-01; unconfirmed whether every Sherpa Memostar is that reference"
   - "Calibre (an Antiquorum lot gives a 2980 with 19 jewels)"
   - "Production years"
-  - "Case size and material"
+  - "Case material"
 citations:
   - id: eo-barometer-1
     source: enicar-org

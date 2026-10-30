@@ -93,7 +93,7 @@ images:
 status: draft
 gaps:
   - Production years
-  - Case size
+  - "Case size is from one forum post (35 x 44 mm); we list the first figure"
   - Dial variants
 citations:
   - id: e101-chronometer

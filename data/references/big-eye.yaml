@@ -148,10 +148,10 @@ barometer:
       note: "Published with the Lausanne. The yacht-dial Big Eye is priced with the F45."
 status: draft
 gaps:
-  - "Case size: enicar.org gives the Lausanne's 37 mm; Wind Vintage measured one Big Eye at 39 mm"
+  - "Case size: enicar.org gives the Lausanne's 37 mm for the Big Eye too; the Wind Vintage listing measures its Big Eye at 39 mm"
   - "Calibre: the F45 article and the Barometer say Valjoux 23; the Lausanne article says the Big Eye shares the Lausanne's Valjoux 232"
   - "Factory reference numbers"
-  - "Case size and material"
+  - "Case material"
 citations:
   - id: eo-f45
     source: enicar-org
@@ -171,4 +171,10 @@ citations:
     title: "The Enicar Lausanne chronograph: the Big Eye shares its case size"
     retrieved: 2026-10-30
     supports: [case.diameter_mm]
+  - id: wv-bigeye
+    source: wind-vintage
+    url: https://www.windvintage.com/enicar-big-eye-chrono
+    title: "Enicar Big Eye chronograph (Wind Vintage listing): 39 mm"
+    retrieved: 2026-10-30
+    supports: []
 last_reviewed: 2026-10-30

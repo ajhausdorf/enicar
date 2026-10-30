@@ -160,7 +160,7 @@ barometer:
 status: draft
 gaps:
   - Production years
-  - Case size and material
+  - Case material
   - Specs from the enicar.org article
 citations:
   - id: zz-cohv

@@ -77,7 +77,7 @@ status: draft
 gaps:
   - Production years
   - Calibre and winding
-  - Case size and material
+  - Case material
 citations:
   - id: wv-ultrasonic-1000
     source: wind-vintage

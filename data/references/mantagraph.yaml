@@ -89,7 +89,7 @@ status: draft
 gaps:
   - "Calibre record for the AR219 (Seiko 7016A)"
   - "Production years"
-  - "Case size and material"
+  - "Case material"
 citations:
   - id: vv-manta
     source: vandervenus

@@ -96,10 +96,10 @@ barometer:
       note: "Barometer #3 (2018) captions it as Seiko powered; his Sherpa Electric article names the Lemania 1341, and Barometer #1 a Lemania movement."
 status: draft
 gaps:
-  - "Case size: sellers give 38.5 to 40 mm across refs. 134-01-01 and 134-01-02; we show the 39 mm a forum seller measured"
+  - "Case size is one forum seller's measurement of a ref. 134-01-02"
   - "Factory reference numbers"
   - "Production years"
-  - "Case size and material"
+  - "Case material"
 citations:
   - id: eo-electric
     source: enicar-org
