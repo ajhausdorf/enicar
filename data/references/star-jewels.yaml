@@ -22,12 +22,12 @@ variants:
     cites: [zz-cpff]
   - name: Sherpa 300
     years: { from: null, to: null }
-    tell: "10 ATM diver signed Sherpa 300, ref. 160-56-02, on the AR161."
+    tell: "10 ATM diver its owner calls the Sherpa 300, ref. 160-56-02, on the AR161."
     calibres: [AR161]
     refs: [160-56-02]
     cites: [zz-cgeu]
   - name: Square case
-    years: { from: 1966, to: null }
+    years: { from: null, to: null }
     tell: "Square case; Martijn van der Ven dates one to 1966 and another to the late 1960s."
     case: Square
     cites: [vv-sj-1966, vv-sj-square, vv-sj-late60s]
