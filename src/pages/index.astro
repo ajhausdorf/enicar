@@ -7,6 +7,8 @@ import { KIND_LABEL, decadeOf, leavesOf } from '../lib/site';
 // Sort models as a collector would: Aqua Graph, Dive, ... rather than every 'Sherpa' together,
 // with the named models before the numbered ones (Sherpa Aqua Graph before Sherpa 100).
 const sortName = (n: string) => n.replace(/^Sherpa /, '');
+// Under its family, a model drops the family's name: "Aqua Graph" under Sherpa.
+const shortName = (name: string, family: string) => name.startsWith(`${family} `) ? name.slice(family.length + 1) : name;
 const byName = (a: string, b: string) => {
   const x = sortName(a), y = sortName(b);
   return Number(/^\d/.test(x)) - Number(/^\d/.test(y)) || x.localeCompare(y, 'en', { numeric: true });
@@ -75,7 +77,7 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
           <button type="button" class="fam" data-family={f.id} aria-pressed="false"><span>{f.data.name}</span><span class="mono">{count}</span></button>
           <div class="models" data-models-of={f.id} hidden>
             {models.map(({ r, count: n }) => (
-              <button type="button" class="model" data-family={f.id} data-model={r.id} aria-pressed="false"><span>{r.data.name}</span><span class="mono">{n}</span></button>
+              <button type="button" class="model" data-family={f.id} data-model={r.id} data-name={r.data.name} aria-pressed="false"><span>{shortName(r.data.name, f.data.name)}</span><span class="mono">{n}</span></button>
             ))}
           </div>
         </div>
@@ -145,7 +147,7 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
     for (const b of modelButtons) b.setAttribute('aria-pressed', String(models.has(b.dataset.model!)));
     for (const l of modelLists) l.hidden = l.dataset.modelsOf !== family;
     const activeFam = famButtons.find((b) => b.dataset.family === family);
-    const picked = modelButtons.filter((b) => models.has(b.dataset.model!)).map((b) => b.firstElementChild!.textContent!);
+    const picked = modelButtons.filter((b) => models.has(b.dataset.model!)).map((b) => b.dataset.name!);
     heading.textContent = picked.length > 2 ? `${picked.length} models`
       : picked.length ? picked.join(' and ')
       : family && activeFam ? `${activeFam.firstElementChild!.textContent} family` : 'All watches';

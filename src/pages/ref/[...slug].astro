@@ -105,7 +105,7 @@ const jsonld = [
 ];
 ---
 <Base title={leaf.name} description={`${leaf.name}${v ? `, ${vYears(v.years)}` : ''}. ${d.summary ?? ''}`.trim()} section="catalog" searchable image={images[0]?.file} jsonld={jsonld}>
-  <div class="wrap model">
+  <div class="wrap model detail">
     <nav aria-label="Breadcrumb" class="crumbs">
       <a href="/">Catalog</a><span aria-hidden="true">/</span>
       <a href={href.family(d.family.id)}>{family?.data.name}</a><span aria-hidden="true">/</span>
