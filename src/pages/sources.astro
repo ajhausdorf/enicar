@@ -13,7 +13,7 @@ const photographers = (await getCollection('permissions')).map((p) => ({
 const usage = Object.fromEntries(sources.map((s) => [s.id, refs.filter((r) => r.data.citations.some((c) => c.source.id === s.id)).length]));
 ---
 <Base title="Sources and credits" description="The collectors, archives and sites behind Enicar World's records, and the photographers who let us use their photos." section="sources">
-  <div class="wrap sources">
+  <div class="wrap sources accents">
     <section class="intro">
       <h1>Sources</h1>
       <p class="lede">Most of what's here comes from collectors who did the research first. These are the sources we cite and what we use each one for.</p>
@@ -57,7 +57,7 @@ const usage = Object.fromEntries(sources.map((s) => [s.id, refs.filter((r) => r.
       </ul>
     </section>
 
-    <section class="policies card">
+    <section class="policies card bezel-top">
       <div>
         <h2>Image policy</h2>
         <p>Photos from Instagram and photographers' own sites are shown only with the photographer's permission. Photos posted publicly on watch forums are shown with credit and a link to the post. Every photo is credited. If a photo of yours is here and you'd rather it wasn't, tell us and we'll remove it.</p>

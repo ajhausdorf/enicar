@@ -69,7 +69,7 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
   </div>
 
   <div class="wrap layout">
-    <aside class="families" aria-label="Families">
+    <aside class="families accents" aria-label="Families">
       <p class="eyebrow">Families</p>
       <button type="button" class="fam" data-family="" aria-pressed="true"><span>All</span><span class="mono">{leaves.length}</span></button>
       {tree.map(({ f, count, models }) => (
@@ -84,7 +84,7 @@ const decades = [...new Set(leaves.map((l) => decadeOf(l.years)).filter(Boolean)
       ))}
     </aside>
 
-    <section class="results" aria-labelledby="results-h">
+    <section class="results accents" aria-labelledby="results-h">
       <div class="results__head">
         <h2 id="results-h">All watches</h2>
         <span class="muted" id="shown" aria-live="polite">{leaves.length} shown</span>
