@@ -1,7 +1,7 @@
 ---
 import Dial from './Dial.astro';
 import Money from './Money.astro';
-import { formatYears, decadeOf, barometerOf, toUsd, KIND_LABEL } from '../lib/site';
+import { formatYears, decadeOf, barometerOf, toUsd, diametersOf, KIND_LABEL } from '../lib/site';
 
 // One card per page: a generation, or a model with no generations.
 interface Props { leaf: any; familyName: string; }
@@ -9,8 +9,8 @@ const { leaf, familyName } = Astro.props;
 const d = leaf.ref.data;
 const years = formatYears(leaf.years);
 // Case size, the measure collectors compare first: the generation's own, else the model's.
-const dia = leaf.variant?.diameter_mm ?? d.case.diameter_mm;
-const size = dia == null ? null : `${Array.isArray(dia) ? dia.join(' or ') : dia} mm`;
+const dias = diametersOf(leaf);
+const size = dias.length ? `${dias.join(' or ')} mm` : null;
 // The card shows a handful; the page has the rest.
 const MAX_SLIDES = 8;
 const photos = leaf.images.slice(0, MAX_SLIDES);
@@ -28,7 +28,7 @@ const sortPrice = topBand ? Math.round(toUsd(bar.currency, topBand.high)) : '';
      then a link to the page itself. -->
 <article class="watch-card"
    data-family={d.family.id} data-model={leaf.ref.id} data-kind={d.kind} data-decade={decadeOf(leaf.years) ?? 'unknown'}
-   data-name={leaf.name} data-year={leaf.years.from ?? 9999} data-price={sortPrice} data-has-photo={photo ? 'yes' : 'no'}>
+   data-name={leaf.name} data-year={leaf.years.from ?? 9999} data-price={sortPrice} data-has-photo={photo ? 'yes' : 'no'} data-dia={dias.join(' ')}>
   {photos.length > 1 ? (
     <div class="watch-card__img watch-card__carousel" data-carousel>
       <div class="watch-card__track" data-track>

@@ -122,6 +122,13 @@ export function leavesOf<R extends RecordLike>(ref: R) {
 
 export type Leaf<R extends RecordLike> = ReturnType<typeof leavesOf<R>>[number];
 
+// Case diameters in mm: the generation's own, else the model's (which may list
+// several sizes). Empty when no source gives one.
+export function diametersOf(leaf: { ref: RecordLike; variant: any }): number[] {
+  const dia = leaf.variant?.diameter_mm ?? (leaf.ref.data as any).case?.diameter_mm;
+  return dia == null ? [] : [dia].flat();
+}
+
 // A calibre's photos: its own, then movement photos from watch pages whose
 // watch (or generation) uses this calibre and no other, so the movement shown
 // can only be this one. On a model with generations the photo must be tagged
