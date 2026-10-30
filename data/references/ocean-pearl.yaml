@@ -3,6 +3,8 @@ name: Ocean Pearl
 family: ocean-pearl
 kind: dress
 read_more: []
+case:
+  diameter_mm: 35
 images:
   - file: /images/ocean-pearl/v-c4f7eoanqj4-1.webp
     thumb: /images/ocean-pearl/v-c4f7eoanqj4-1-sm.webp
@@ -52,7 +54,7 @@ gaps:
   - Factory reference numbers
   - Production years
   - Movement
-  - Case
+  - "Case size is from one example, ref. 2169.51.30; case material"
   - Citations
 citations:
   - id: eo-barometer-7
@@ -61,4 +63,10 @@ citations:
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-25
+  - id: ws-op-daydate
+    source: watch-spare
+    url: https://en.watch-spare.com/enicar-ocean-pearl-day-date-automatic-circa-1970-ref-2169-51-30.html
+    title: "Watch-Spare: Enicar Ocean Pearl Day-Date Automatic, ref. 2169.51.30, circa 1970"
+    retrieved: 2026-10-30
+    supports: [case.diameter_mm]
+last_reviewed: 2026-10-30

@@ -11,7 +11,7 @@ movement:
 case:
   construction: null
   material: null
-  diameter_mm: null
+  diameter_mm: 39
   lug_mm: null
   thickness_mm: null
 features: []
@@ -80,9 +80,10 @@ barometer:
       note: null
 status: draft
 gaps:
+  - "Case size is from auction lots titled Memostar ref. 298-01-01; unconfirmed whether every Sherpa Memostar is that reference"
   - "Calibre (an Antiquorum lot gives a 2980 with 19 jewels)"
   - "Production years"
-  - "Case size and material"
+  - "Case material"
 citations:
   - id: eo-barometer-1
     source: enicar-org
@@ -96,4 +97,10 @@ citations:
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-27
+  - id: um-memostar
+    source: uhren-muser
+    url: https://uhren-muser.de/en/archives/113/62404
+    title: "Uhren-Muser auction 113: Enicar Memostar ref. 298-01-01, Lemania 2980, 39 x 44 mm"
+    retrieved: 2026-10-30
+    supports: [case.diameter_mm]
+last_reviewed: 2026-10-30

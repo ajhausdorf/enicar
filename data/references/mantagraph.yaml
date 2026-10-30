@@ -28,16 +28,18 @@ history:
 variants:
   - name: TV case
     years: { from: null, to: null }
+    diameter_mm: 36
     tell: "TV-shaped case, ref. 219-01-01."
     case: "TV shape"
     refs: [219-01-01]
-    cites: [vv-manta]
+    cites: [vv-manta, of-manta-tv]
   - name: Coated case
     years: { from: null, to: null }
+    diameter_mm: 38
     tell: "Case coated black, brown or grey, with silver or gold accents, ref. 219-02-01."
     case: "Coated, black, brown or grey"
     refs: [219-02-01]
-    cites: [vv-manta]
+    cites: [vv-manta, of-manta-coated]
 read_more: []
 images:
   - file: /images/mantagraph/v-deq4pewufgx-1.webp
@@ -87,7 +89,7 @@ status: draft
 gaps:
   - "Calibre record for the AR219 (Seiko 7016A)"
   - "Production years"
-  - "Case size and material"
+  - "Case material"
 citations:
   - id: vv-manta
     source: vandervenus
@@ -107,4 +109,16 @@ citations:
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-29
+  - id: of-manta-tv
+    source: omegaforums
+    url: https://omegaforums.net/threads/sold-enicar-mantagraph-219-01-01-tv-dial-case.115654/
+    title: "OmegaForums: Enicar Mantagraph 219-01-01 TV case"
+    retrieved: 2026-10-30
+    supports: []
+  - id: of-manta-coated
+    source: omegaforums
+    url: https://omegaforums.net/threads/enicar-mantagraph-flyback-chronograph-ref-219-02-01.194184/
+    title: "OmegaForums: Enicar Mantagraph flyback chronograph ref. 219-02-01"
+    retrieved: 2026-10-30
+    supports: []
+last_reviewed: 2026-10-30

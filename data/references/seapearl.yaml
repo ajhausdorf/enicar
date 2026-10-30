@@ -2,6 +2,8 @@
 name: Seapearl
 family: seapearl
 kind: dress
+case:
+  diameter_mm: 35
 images:
   - file: /images/seapearl/c-cjq85nbriku-1.webp
     thumb: /images/seapearl/c-cjq85nbriku-1-sm.webp
@@ -179,7 +181,7 @@ gaps:
   - Factory reference numbers
   - Production years
   - Movement
-  - Case
+  - "Case size is from one example, ref. 124/003; enicar.org gives 34.5 mm for the Seapearl 600"
   - Citations
 citations:
   - id: eo-barometer-7
@@ -188,4 +190,10 @@ citations:
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-25
+  - id: wv-seapearl-124
+    source: wind-vintage
+    url: https://www.windvintage.com/enicar-seapearl-ref-124/003-unpolished
+    title: "Enicar Seapearl ref. 124/003 Unpolished (Wind Vintage listing)"
+    retrieved: 2026-10-30
+    supports: [case.diameter_mm]
+last_reviewed: 2026-10-30

@@ -11,7 +11,7 @@ movement:
 case:
   construction: null
   material: null
-  diameter_mm: null
+  diameter_mm: 39
   lug_mm: null
   thickness_mm: null
 features: []
@@ -96,9 +96,10 @@ barometer:
       note: "Barometer #3 (2018) captions it as Seiko powered; his Sherpa Electric article names the Lemania 1341, and Barometer #1 a Lemania movement."
 status: draft
 gaps:
+  - "Case size is one forum seller's measurement of a ref. 134-01-02"
   - "Factory reference numbers"
   - "Production years"
-  - "Case size and material"
+  - "Case material"
 citations:
   - id: eo-electric
     source: enicar-org
@@ -112,4 +113,10 @@ citations:
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-25
+  - id: of-grapho
+    source: omegaforums
+    url: https://omegaforums.net/threads/enicar-grapho-matic-134-01-02.116973/
+    title: "OmegaForums: Enicar Grapho-Matic 134-01-02"
+    retrieved: 2026-10-30
+    supports: [case.diameter_mm]
+last_reviewed: 2026-10-30

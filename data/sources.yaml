@@ -198,3 +198,47 @@
   use: Calibre specs where Ranfft has no entry.
   leads_to: []
   permission: not-needed
+- id: uhren-muser
+  name: Uhren-Muser auctions
+  kind: auction
+  tier: listing
+  url: https://uhren-muser.de/
+  author: null
+  status: to-confirm
+  what: German watch auction house; archived lots give reference, calibre and case size.
+  use: Case sizes and references from auction lot descriptions.
+  leads_to: []
+  permission: not-needed
+- id: watch-spare
+  name: Watch-Spare
+  kind: dealer
+  tier: listing
+  url: https://en.watch-spare.com/
+  author: null
+  status: to-confirm
+  what: Watch dealer listing vintage watches with reference numbers and case sizes.
+  use: Case sizes from its listings.
+  leads_to: []
+  permission: not-needed
+- id: revolver-club
+  name: The Revolver Club
+  kind: dealer
+  tier: listing
+  url: https://www.therevolverclub.com/
+  author: null
+  status: to-confirm
+  what: Vintage watch dealer whose listings give case sizes.
+  use: Case sizes from its listings.
+  leads_to: []
+  permission: not-needed
+- id: dialicious
+  name: Dialicious
+  kind: other
+  tier: listing
+  url: https://www.dialicious.com/
+  author: null
+  status: to-confirm
+  what: Watch reference site with model pages listing references and case sizes.
+  use: Case sizes and references, checked against other sources where possible.
+  leads_to: []
+  permission: not-needed
