@@ -10,6 +10,8 @@ years: { from: null, to: null, approximate: true }
 movement:
   calibres: [AR165]
   winding: null
+case:
+  diameter_mm: [35, 37]
 images:
   - file: /images/sherpa-star/zz-cohve1xlzyi-1.webp
     thumb: /images/sherpa-star/zz-cohve1xlzyi-1-sm.webp
@@ -172,5 +174,11 @@ citations:
     url: https://enicar.org/2025/12/08/watch-value-barometer-7/
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
-    supports: []
-last_reviewed: 2026-10-25
+    supports: [case.diameter_mm]
+  - id: vv-star-35
+    source: vandervenus
+    url: https://www.instagram.com/p/CHPgyKormZ-/
+    title: "@vandervenus post: a 35 mm gold-plated Sherpa Star"
+    retrieved: 2026-10-30
+    supports: [case.diameter_mm]
+last_reviewed: 2026-10-30

@@ -17,7 +17,7 @@ movement:
 case:
   construction: null
   material: null
-  diameter_mm: null
+  diameter_mm: [37, 40.5]
   lug_mm: null
   thickness_mm: null
 features: []
@@ -143,6 +143,7 @@ images:
     identified_note: "Caption: Enicar Automatic Jumping Hour Date, ref. 173 01 01; the same watch as CqLyJYVLaJE."
 status: draft
 gaps:
+  - "Case sizes are width by length of a shaped case (37 x 36 mm for ref. 119-01-01, 40.5 x 41.5 mm for ref. 173-01-01); we list the first figure"
   - Production years (the dealer says 1970s)
   - Calibre of the 119-01-01 (the owner of a 173-01-01 gives the AS 2073)
   - Other references in the jump hour line
@@ -153,17 +154,17 @@ citations:
     url: https://vintageeyewatches.com/1970s-enicar-jump-hour-automatic-ref-119-01-01
     title: "1970s Enicar \"Jump Hour\" Automatic Ref. 119-01-01 (Vintage Eye Watches listing)"
     retrieved: 2026-10-27
-    supports: [movement.winding, dial]
+    supports: [movement.winding, dial, case.diameter_mm]
   - id: sop-cqly
     source: shot-of-patina
     url: https://www.instagram.com/p/CqLyJYVLaJE/
     title: "@shot.of.patina: Enicar Automatic Jumping Hour Date, ref. 173 01 01, AS 2073"
     retrieved: 2026-10-29
-    supports: []
+    supports: [case.diameter_mm]
   - id: eo-book-mkiii
     source: enicar-org
     url: https://enicar.org/2023/10/05/booknews-time-for-a-change-mkiii/
     title: "Booknews: Time for a Change, MkIII"
     retrieved: 2026-10-27
     supports: []
-last_reviewed: 2026-10-29
+last_reviewed: 2026-10-30

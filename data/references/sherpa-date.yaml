@@ -7,6 +7,8 @@ years: { from: null, to: null, approximate: true }
 movement:
   calibres: []
   winding: null
+case:
+  diameter_mm: [36, 40]
 images:
   - file: /images/sherpa-date/v-cie1740l0dy-1.webp
     thumb: /images/sherpa-date/v-cie1740l0dy-1-sm.webp
@@ -145,4 +147,10 @@ citations:
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-25
+  - id: vv-date-40
+    source: vandervenus
+    url: https://www.instagram.com/p/Cie1740L0dY/
+    title: "@vandervenus post: the 40 mm Sherpa Date next to the more common 36 mm version"
+    retrieved: 2026-10-30
+    supports: [case.diameter_mm]
+last_reviewed: 2026-10-30

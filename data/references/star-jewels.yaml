@@ -37,12 +37,14 @@ variants:
     cites: [vv-sj-ar160]
   - name: MRO
     years: { from: null, to: null }
+    diameter_mm: 37
     tell: "Dial signed MRO as well as Enicar; Martijn van der Ven dates his to the mid 1970s."
-    cites: [vv-sj-mro]
+    cites: [vv-sj-mro, dl-star-jewels]
   - name: Ladies
     years: { from: null, to: null }
+    diameter_mm: 30
     tell: "Small ladies watch."
-    cites: [vv-sj-ladies]
+    cites: [vv-sj-ladies, rc-sj-ladies]
 images:
   - file: /images/star-jewels/zz-cpff2wgtipk-1.webp
     thumb: /images/star-jewels/zz-cpff2wgtipk-1-sm.webp
@@ -226,4 +228,16 @@ citations:
     title: "@vandervenus post: Star Jewels ladies watch with original mesh bracelet"
     retrieved: 2026-10-29
     supports: []
-last_reviewed: 2026-10-29
+  - id: rc-sj-ladies
+    source: revolver-club
+    url: https://www.therevolverclub.com/products/enicar-star-jewels-ladies-manual-wind
+    title: "The Revolver Club: Enicar Star Jewels Ladies, 30 mm, manual wind"
+    retrieved: 2026-10-30
+    supports: []
+  - id: dl-star-jewels
+    source: dialicious
+    url: https://www.dialicious.com/en/enicar/star_jewels
+    title: "Dialicious: Enicar Star Jewels"
+    retrieved: 2026-10-30
+    supports: []
+last_reviewed: 2026-10-30

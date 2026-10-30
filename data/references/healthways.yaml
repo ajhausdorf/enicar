@@ -11,7 +11,7 @@ movement:
 case:
   construction: null
   material: null
-  diameter_mm: null
+  diameter_mm: 34.5
   lug_mm: null
   thickness_mm: null
 features: []
@@ -61,11 +61,11 @@ citations:
     url: https://enicar.org/2018/07/02/birth-of-the-sherpa-the-1956-mount-everest-expedition/
     title: "Birth of the Sherpa: the 1956 Mount Everest and Lhotse expedition"
     retrieved: 2026-10-25
-    supports: [years.from]
+    supports: [years.from, case.diameter_mm]
   - id: eo-barometer-7
     source: enicar-org
     url: https://enicar.org/2025/12/08/watch-value-barometer-7/
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-25
     supports: []
-last_reviewed: 2026-10-25
+last_reviewed: 2026-10-30

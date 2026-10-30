@@ -11,7 +11,7 @@ movement:
 case:
   construction: "Made in more than one shape; one is egg-shaped"
   material: null
-  diameter_mm: null
+  diameter_mm: 35
   lug_mm: null
   thickness_mm: null
 features: []
@@ -101,6 +101,7 @@ images:
     identified_note: "Caption: Enicar Saturn-Matic, cal. 1147, ref. 147-03-01; the dial reads Saturn-Matic."
 status: draft
 gaps:
+  - "Case size is from one example (35 x 43 mm); other case shapes may differ"
   - "Calibre record for the AR 1147"
   - Winding
   - Reference numbers
@@ -119,4 +120,10 @@ citations:
     title: "@vandervenus post: the egg-shaped Saturn-Matic"
     retrieved: 2026-10-27
     supports: [case.construction]
-last_reviewed: 2026-10-27
+  - id: sop-sm-147
+    source: shot-of-patina
+    url: https://www.instagram.com/p/Cx2nqpIM-ht/
+    title: "@shot.of.patina post: Saturn-Matic ref. 147-03-01, case 35 x 43 mm"
+    retrieved: 2026-10-30
+    supports: [case.diameter_mm]
+last_reviewed: 2026-10-30

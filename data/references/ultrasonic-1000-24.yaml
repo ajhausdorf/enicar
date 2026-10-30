@@ -13,7 +13,7 @@ movement:
 case:
   construction: null
   material: null
-  diameter_mm: null
+  diameter_mm: 35
   lug_mm: null
   thickness_mm: null
 features: []
@@ -84,5 +84,5 @@ citations:
     url: https://www.windvintage.com/enicar-ultrasonic-reference-1000/24-a-s
     title: "Enicar Ultrasonic Reference 1000/24 a S (Wind Vintage listing)"
     retrieved: 2026-10-27
-    supports: []
-last_reviewed: 2026-10-27
+    supports: [case.diameter_mm]
+last_reviewed: 2026-10-30

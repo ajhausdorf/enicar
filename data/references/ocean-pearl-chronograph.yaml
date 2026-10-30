@@ -14,7 +14,7 @@ movement:
 case:
   construction: null
   material: null
-  diameter_mm: null
+  diameter_mm: 40
   lug_mm: null
   thickness_mm: null
 features: [cushion-case]
@@ -145,11 +145,11 @@ citations:
     url: https://vintageeyewatches.com/1969-enicar-ocean-pearl-072-03-01
     title: "1969 Enicar Ocean Pearl 072-03-01 (Vintage Eye Watches listing)"
     retrieved: 2026-10-29
-    supports: [movement.calibres, movement.winding, features]
+    supports: [movement.calibres, movement.winding, features, case.diameter_mm]
   - id: vv-op-interlagos
     source: vandervenus
     url: https://www.instagram.com/p/Co9YVisr2EL/
     title: "@vandervenus post: Ocean Pearl chronograph, called Interlagos, Valjoux 72"
     retrieved: 2026-10-29
     supports: [nicknames, movement.calibres]
-last_reviewed: 2026-10-29
+last_reviewed: 2026-10-30
