@@ -421,6 +421,38 @@ read_more:
     source: enicar101
     note: "The launch post of Enicar 101."
 images:
+  - file: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-1.webp
+    thumb: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-1-sm.webp
+    width: 1600
+    height: 1600
+    alt: "Sherpa Graph MkIV with a black dial, white registers and orange chronograph hand on a tan rally strap"
+    view: dial
+    variant: "MkIV"
+    source_url: https://www.windvintage.com/enicar-mk-iv-sherpa-graph-unpolished
+    credit: "Wind Vintage"
+    credit_url: https://www.windvintage.com/enicar-mk-iv-sherpa-graph-unpolished
+    license: "Used with permission"
+    permission: granted
+    permission_ref: eric-wind
+    caption: null
+    identified_by: tells
+    identified_note: "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand. The listing calls it a Mk IV."
+  - file: /images/sherpa-graph/v-coql6mglznl-1.webp
+    thumb: /images/sherpa-graph/v-coql6mglznl-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Sherpa Graph with a black dial, silver registers and white tachymetre ring on a steel bracelet, held in the hand"
+    view: dial
+    variant: "MkIb"
+    source_url: https://www.instagram.com/p/COQL6MGLznL/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: tells
+    identified_note: "Silver-white tachymetre ring without the word Tachymetre, large early logo and a straight red chronograph hand: the MkIb tells on Enicar 101. Caption says MkI from 1961, which fits the MkIb (1961) and favours it over an early MkIIa with the same features."
   - file: /images/sherpa-graph/tcp-dcyu-v3g-6m-1.webp
     thumb: /images/sherpa-graph/tcp-dcyu-v3g-6m-1-sm.webp
     width: 1440
@@ -749,22 +781,6 @@ images:
     view: dial
     variant: "MkIb"
     source_url: https://www.instagram.com/p/B21Hpi4oJhJ/
-    credit: "@vandervenus"
-    credit_url: https://www.instagram.com/vandervenus/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: vandervenus
-    caption: null
-    identified_by: tells
-    identified_note: "Silver-white tachymetre ring without the word Tachymetre, large early logo and a straight red chronograph hand: the MkIb tells on Enicar 101. Caption says MkI from 1961, which fits the MkIb (1961) and favours it over an early MkIIa with the same features."
-  - file: /images/sherpa-graph/v-coql6mglznl-1.webp
-    thumb: /images/sherpa-graph/v-coql6mglznl-1-sm.webp
-    width: 1440
-    height: 1440
-    alt: "Sherpa Graph with a black dial, silver registers and white tachymetre ring on a steel bracelet, held in the hand"
-    view: dial
-    variant: "MkIb"
-    source_url: https://www.instagram.com/p/COQL6MGLznL/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
     license: "Used with permission"
@@ -1173,22 +1189,6 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Grey tachymetre ring, paddle hands with short orange tips and a chronograph hand with a red dot near the tip. The listing calls it a Mk 3, ref. 072-02-01."
-  - file: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-1.webp
-    thumb: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-1-sm.webp
-    width: 1600
-    height: 1600
-    alt: "Sherpa Graph MkIV with a black dial, white registers and orange chronograph hand on a tan rally strap"
-    view: dial
-    variant: "MkIV"
-    source_url: https://www.windvintage.com/enicar-mk-iv-sherpa-graph-unpolished
-    credit: "Wind Vintage"
-    credit_url: https://www.windvintage.com/enicar-mk-iv-sherpa-graph-unpolished
-    license: "Used with permission"
-    permission: granted
-    permission_ref: eric-wind
-    caption: null
-    identified_by: tells
-    identified_note: "Baton hands, an orange triangle chronograph hand and an orange minute-counter hand. The listing calls it a Mk IV."
   - file: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-7.webp
     thumb: /images/sherpa-graph/ew-enicar-mk-iv-sherpa-graph-unpolished-7-sm.webp
     width: 1600
@@ -1397,22 +1397,6 @@ images:
     caption: null
     identified_by: tells
     identified_note: "Ring marked Tachymetre, large early logo, arrow-shaped register hand, straight red chronograph hand. Enicar 101 labels it MK Ic."
-  - file: /images/sherpa-graph/e-sherpa-graph-ic-3.webp
-    thumb: /images/sherpa-graph/e-sherpa-graph-ic-3-sm.webp
-    width: 1600
-    height: 1066
-    alt: "Close-up of the white Sherpa Graph dial at 3 o'clock showing the tachymetre scale starting at 300"
-    view: dial
-    variant: "MkIc"
-    source_url: https://enicar101.com/sherpa-graph-ic/
-    credit: "Enicar 101"
-    credit_url: https://enicar101.com/sherpa-graph-ic/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: enicar101
-    caption: null
-    identified_by: tells
-    identified_note: "Tachymetre scale from 300, long-tipped paddle hands. Enicar 101 labels it MK Ic."
   - file: /images/sherpa-graph/e-sherpa-graph-ic-4.webp
     thumb: /images/sherpa-graph/e-sherpa-graph-ic-4-sm.webp
     width: 1500

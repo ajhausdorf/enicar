@@ -8,6 +8,22 @@ movement:
   calibres: []
   winding: null
 images:
+  - file: /images/sherpa-date/v-cie1740l0dy-1.webp
+    thumb: /images/sherpa-date/v-cie1740l0dy-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "40 mm Sherpa Date with a silver dial on a steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/Cie1740L0dY/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Caption: the 40 mm Sherpa Date in the EPSA case, from 1966."
   - file: /images/sherpa-date/zz-chi7wpylwv4-1.webp
     thumb: /images/sherpa-date/zz-chi7wpylwv4-1-sm.webp
     width: 1080
@@ -104,22 +120,6 @@ images:
     caption: null
     identified_by: dial
     identified_note: "Dial reads Sherpa Date; caption: late 1950s."
-  - file: /images/sherpa-date/v-cie1740l0dy-1.webp
-    thumb: /images/sherpa-date/v-cie1740l0dy-1-sm.webp
-    width: 1440
-    height: 1440
-    alt: "40 mm Sherpa Date with a silver dial on a steel bracelet, on the wrist"
-    view: dial
-    variant: null
-    source_url: https://www.instagram.com/p/Cie1740L0dY/
-    credit: "@vandervenus"
-    credit_url: https://www.instagram.com/vandervenus/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: vandervenus
-    caption: null
-    identified_by: caption
-    identified_note: "Caption: the 40 mm Sherpa Date in the EPSA case, from 1966."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7

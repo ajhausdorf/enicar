@@ -33,22 +33,6 @@ read_more:
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
 images:
-  - file: /images/sherpa-divette/tcp-cv-qh0av4y-1.webp
-    thumb: /images/sherpa-divette/tcp-cv-qh0av4y-1-sm.webp
-    width: 1440
-    height: 1480
-    alt: "Sherpa Divette with a black dial, orange seconds hand and black outer bezel on a black strap"
-    view: dial
-    variant: null
-    source_url: https://www.instagram.com/p/CV_qH0av4y-/
-    credit: "@two_crowned_prints"
-    credit_url: https://www.instagram.com/two_crowned_prints/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: two-crowned-prints
-    caption: "Missing its red pointer ring."
-    identified_by: caption
-    identified_note: "Photographer calls it the Divette and says it needs a replacement red pointer ring."
   - file: /images/sherpa-divette/tcp-csqnrvxfciq-1.webp
     thumb: /images/sherpa-divette/tcp-csqnrvxfciq-1-sm.webp
     width: 1281
@@ -65,6 +49,22 @@ images:
     caption: null
     identified_by: dial
     identified_note: null
+  - file: /images/sherpa-divette/tcp-cv-qh0av4y-1.webp
+    thumb: /images/sherpa-divette/tcp-cv-qh0av4y-1-sm.webp
+    width: 1440
+    height: 1480
+    alt: "Sherpa Divette with a black dial, orange seconds hand and black outer bezel on a black strap"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/CV_qH0av4y-/
+    credit: "@two_crowned_prints"
+    credit_url: https://www.instagram.com/two_crowned_prints/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: two-crowned-prints
+    caption: "Missing its red pointer ring."
+    identified_by: caption
+    identified_note: "Photographer calls it the Divette and says it needs a replacement red pointer ring."
   - file: /images/sherpa-divette/tcp-cq1jplwlufb-1.webp
     thumb: /images/sherpa-divette/tcp-cq1jplwlufb-1-sm.webp
     width: 1304

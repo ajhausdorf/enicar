@@ -13,6 +13,36 @@ years: { from: null, to: null, approximate: true }
 movement:
   calibres: [AR1125, AR161]
   winding: null
+variants:
+  - name: Automatic
+    years: { from: null, to: null }
+    tell: "Automatic, ref. 145/001, on the AR1125; 1960s per its owner."
+    calibres: [AR1125]
+    refs: [145/001]
+    cites: [zz-cpff]
+  - name: Sherpa 300
+    years: { from: null, to: null }
+    tell: "10 ATM diver its owner calls the Sherpa 300, ref. 160-56-02, on the AR161."
+    calibres: [AR161]
+    refs: [160-56-02]
+    cites: [zz-cgeu]
+  - name: Square case
+    years: { from: null, to: null }
+    tell: "Square case; Martijn van der Ven dates one to 1966 and another to the late 1960s."
+    case: Square
+    cites: [vv-sj-1966, vv-sj-square, vv-sj-late60s]
+  - name: AR160
+    years: { from: null, to: null }
+    tell: "Hand-wound on the AR160; Martijn van der Ven dates his to the early 1970s."
+    cites: [vv-sj-ar160]
+  - name: MRO
+    years: { from: null, to: null }
+    tell: "Dial signed MRO as well as Enicar; Martijn van der Ven dates his to the mid 1970s."
+    cites: [vv-sj-mro]
+  - name: Ladies
+    years: { from: null, to: null }
+    tell: "Small ladies watch."
+    cites: [vv-sj-ladies]
 images:
   - file: /images/star-jewels/zz-cpff2wgtipk-1.webp
     thumb: /images/star-jewels/zz-cpff2wgtipk-1-sm.webp
@@ -20,7 +50,7 @@ images:
     height: 1424
     alt: "Enicar Star Jewels automatic with a silver dial, date and gold-coloured case on a dark brown leather strap"
     view: dial
-    variant: null
+    variant: "Automatic"
     source_url: https://www.instagram.com/p/CpFF2wGtIpk/
     credit: "@zizi_zap"
     credit_url: https://www.instagram.com/zizi_zap/
@@ -36,7 +66,7 @@ images:
     height: 1440
     alt: "Enicar Star Jewels 10 ATM diver with a black dial, orange seconds hand and black outer bezel on a black rally strap"
     view: dial
-    variant: null
+    variant: "Sherpa 300"
     source_url: https://www.instagram.com/p/CgeUGZVrHtq/
     credit: "@zizi_zap"
     credit_url: https://www.instagram.com/zizi_zap/
@@ -52,7 +82,7 @@ images:
     height: 1440
     alt: "Enicar MRO Star Jewels with a green sunburst dial and date on a green leather strap"
     view: dial
-    variant: null
+    variant: "MRO"
     source_url: https://www.instagram.com/p/DTSQaqEDQSM/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -68,7 +98,7 @@ images:
     height: 1440
     alt: "Gold-coloured Star Jewels with a square case on a black strap, on an Enicar display stand"
     view: dial
-    variant: null
+    variant: "Square case"
     source_url: https://www.instagram.com/p/Cy-_45GLg3c/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -84,7 +114,7 @@ images:
     height: 1440
     alt: "Gold-coloured square-case Star Jewels with a silver dial and date, with its box and papers"
     view: dial
-    variant: null
+    variant: "Square case"
     source_url: https://www.instagram.com/p/CKWE3dMLDPX/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -100,7 +130,7 @@ images:
     height: 1440
     alt: "Square-case Star Jewels with a black dial and Arabic numerals on a brown strap, on the wrist"
     view: dial
-    variant: null
+    variant: "Square case"
     source_url: https://www.instagram.com/p/CHaPtGjLrtN/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -116,7 +146,7 @@ images:
     height: 1440
     alt: "Star Jewels with a grey-brown dial and date in a gold-coloured case"
     view: dial
-    variant: null
+    variant: "AR160"
     source_url: https://www.instagram.com/p/B7QTAstnqhK/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -132,7 +162,7 @@ images:
     height: 1440
     alt: "Small ladies Star Jewels with a silver dial on its original mesh bracelet"
     view: dial
-    variant: null
+    variant: "Ladies"
     source_url: https://www.instagram.com/p/CM3_W4FLAjP/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
@@ -146,7 +176,7 @@ status: draft
 gaps:
   - Production years
   - Case
-  - Whether these references belong to one model or several
+  - Whether Star Jewels was a model line or only a dial signature
 citations:
   - id: zz-cpff
     source: zizi-zap
@@ -160,4 +190,40 @@ citations:
     title: "@zizi_zap: Enicar Star Jewels 10ATM Sherpa 300, ref. 160-56-02, cal. AR161"
     retrieved: 2026-10-25
     supports: [movement.calibres]
-last_reviewed: 2026-10-25
+  - id: vv-sj-1966
+    source: vandervenus
+    url: https://www.instagram.com/p/Cy-_45GLg3c/
+    title: "@vandervenus post: Star Jewels from 1966 with a remarkable case shape"
+    retrieved: 2026-10-29
+    supports: []
+  - id: vv-sj-square
+    source: vandervenus
+    url: https://www.instagram.com/p/CKWE3dMLDPX/
+    title: "@vandervenus post: Star Jewels with box and papers, another square case"
+    retrieved: 2026-10-29
+    supports: []
+  - id: vv-sj-late60s
+    source: vandervenus
+    url: https://www.instagram.com/p/CHaPtGjLrtN/
+    title: "@vandervenus post: square case Star Jewels, probably late sixties"
+    retrieved: 2026-10-29
+    supports: []
+  - id: vv-sj-ar160
+    source: vandervenus
+    url: https://www.instagram.com/p/B7QTAstnqhK/
+    title: "@vandervenus post: early seventies Star Jewels with the AR160"
+    retrieved: 2026-10-29
+    supports: []
+  - id: vv-sj-mro
+    source: vandervenus
+    url: https://www.instagram.com/p/DTSQaqEDQSM/
+    title: "@vandervenus post: MRO Star Jewels from the mid 1970s"
+    retrieved: 2026-10-29
+    supports: []
+  - id: vv-sj-ladies
+    source: vandervenus
+    url: https://www.instagram.com/p/CM3_W4FLAjP/
+    title: "@vandervenus post: Star Jewels ladies watch with original mesh bracelet"
+    retrieved: 2026-10-29
+    supports: []
+last_reviewed: 2026-10-29

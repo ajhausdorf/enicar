@@ -1,7 +1,7 @@
 # Sales and listings. One entry per sale or listing, each linking to its public
 # page. See CLAUDE.md, "Prices", for the rules.
 - id: ao-386-465
-  ref: ocean-pearl
+  ref: ocean-pearl-chronograph
   variant: null
   kind: sold
   date: 2026-05-10
@@ -61,7 +61,7 @@
   title: "Sherpa Graph, ref. 2342 / 072-02-01, 1968, with box"
   note: null
 - id: ao-372-544
-  ref: ocean-pearl
+  ref: ocean-pearl-chronograph
   variant: null
   kind: sold
   date: 2024-11-10

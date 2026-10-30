@@ -22,22 +22,6 @@ history:
 variants: []
 read_more: []
 images:
-  - file: /images/super-quartz-alarm/v-b-enog4kd56-1.webp
-    thumb: /images/super-quartz-alarm/v-b-enog4kd56-1-sm.webp
-    width: 1440
-    height: 1440
-    alt: "Super Quartz Alarm with a black dial and an LCD window below the hands, in front of its box"
-    view: dial
-    variant: null
-    source_url: https://www.instagram.com/p/B-eNOg4Kd56/
-    credit: "@vandervenus"
-    credit_url: https://www.instagram.com/vandervenus/
-    license: "Used with permission"
-    permission: granted
-    permission_ref: vandervenus
-    caption: null
-    identified_by: dial
-    identified_note: "Dial signed Alarm and Super Quartz."
   - file: /images/super-quartz-alarm/v-cplviuxljfe-1.webp
     thumb: /images/super-quartz-alarm/v-cplviuxljfe-1-sm.webp
     width: 1440
@@ -46,6 +30,22 @@ images:
     view: dial
     variant: null
     source_url: https://www.instagram.com/p/CPLviUxLjFe/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: dial
+    identified_note: "Dial signed Alarm and Super Quartz."
+  - file: /images/super-quartz-alarm/v-b-enog4kd56-1.webp
+    thumb: /images/super-quartz-alarm/v-b-enog4kd56-1-sm.webp
+    width: 1440
+    height: 1440
+    alt: "Super Quartz Alarm with a black dial and an LCD window below the hands, in front of its box"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/B-eNOg4Kd56/
     credit: "@vandervenus"
     credit_url: https://www.instagram.com/vandervenus/
     license: "Used with permission"
