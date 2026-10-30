@@ -1,11 +1,11 @@
 name: Pilote
 family: sherpa
 kind: chronograph
-summary: A 40 mm GMT chronograph on the Valjoux 724, with an outer bezel and red pointer ring.
+summary: A 40 mm GMT chronograph on the Valjoux 724, with an outer bezel and red pointer ring, introduced at the 1965 Basel fair.
 references: []
 nicknames: []
 years:
-  from: null
+  from: 1965
   to: null
   approximate: true
 movement:
@@ -28,12 +28,44 @@ read_more:
     url: https://enicar.org/2020/07/19/sherpa-tool-watch-matrix/
     source: enicar-org
     note: The full matrix of Sherpa tool watches from the Enicar book, free to download.
-images: []
+images:
+  - file: /images/sherpa-pilote/v-cpmfg9cldnl-1.webp
+    thumb: /images/sherpa-pilote/v-cpmfg9cldnl-1-sm.webp
+    width: 1307
+    height: 1426
+    alt: "Magazine page headed Foire de Bale 1965, with a hand giving a thumbs-up and a Sherpa Pilote chronograph with a 24-hour bezel on the wrist, beside French text on the fair"
+    view: advert
+    variant: null
+    source_url: https://www.instagram.com/p/CpmfG9CLdnL/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Posted by Martijn as the Sherpa Pilote, introduced at the 1965 Basel watch fair; a page from a report on the fair."
+  - file: /images/sherpa-pilote/v-cpmfg9cldnl-2.webp
+    thumb: /images/sherpa-pilote/v-cpmfg9cldnl-2-sm.webp
+    width: 592
+    height: 645
+    alt: "Close-up from the same 1965 page: the Sherpa Pilote's chronograph dial inside a 1 to 24 hour bezel"
+    view: advert
+    variant: null
+    source_url: https://www.instagram.com/p/CpmfG9CLdnL/
+    credit: "@vandervenus"
+    credit_url: https://www.instagram.com/vandervenus/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: vandervenus
+    caption: null
+    identified_by: caption
+    identified_note: "Crop of the watch from the same 1965 Basel fair page."
 barometer: null
 status: draft
 gaps:
   - Case material and lug width
-  - Photographs
+  - Photographs of a real example (only the 1965 fair report so far)
   - Price
 citations:
   - id: eo-matrix
@@ -45,4 +77,11 @@ citations:
       - case.diameter_mm
       - features
       - movement.calibres
-last_reviewed: 2026-10-25
+  - id: vv-pilote
+    source: vandervenus
+    url: https://www.instagram.com/p/CpmfG9CLdnL/
+    title: "@vandervenus: the Enicar Sherpa Pilote, introduced at the 1965 Basel watch fair"
+    retrieved: 2026-10-29
+    supports:
+      - years.from
+last_reviewed: 2026-10-29

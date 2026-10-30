@@ -1658,5 +1658,25 @@
   "by": "dial",
   "note": "Memostar printed on the dial; owner decided 2026-10-27 that the Barometer's Sherpa Memostar is this watch.",
   "view": "dial"
+ },
+ {
+  "rec": "sherpa-pilote",
+  "src": "CpmfG9CLdnL_01",
+  "variant": null,
+  "alt": "Magazine page headed Foire de Bale 1965, with a hand giving a thumbs-up and a Sherpa Pilote chronograph with a 24-hour bezel on the wrist, beside French text on the fair",
+  "caption": null,
+  "by": "caption",
+  "note": "Posted by Martijn as the Sherpa Pilote, introduced at the 1965 Basel watch fair; a page from a report on the fair.",
+  "view": "advert"
+ },
+ {
+  "rec": "sherpa-pilote",
+  "src": "CpmfG9CLdnL_02",
+  "variant": null,
+  "alt": "Close-up from the same 1965 page: the Sherpa Pilote's chronograph dial inside a 1 to 24 hour bezel",
+  "caption": null,
+  "by": "caption",
+  "note": "Crop of the watch from the same 1965 Basel fair page.",
+  "view": "advert"
  }
 ]
