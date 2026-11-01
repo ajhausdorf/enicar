@@ -160,6 +160,18 @@ and add a note saying which says what. Movement photos go in the calibre's
 `images` (`node scripts/images/add-image.mjs calibres/<id> ...`); the page also
 shows `view: movement` photos from watches that use only that calibre.
 
+## Glossary
+
+Each hand shape has a file in `data/glossary/<id>.yaml` and a page at
+`/glossary/<id>/`. Watches are not tagged with terms: a term's `match` words
+are found in each generation's `hands` text, and the page lists those
+generations; the Hands line on watch pages links the words the same way. So
+writing "lollipop" in a generation's `hands` is enough to link it. QA fails a
+match word that appears in no `hands` text. Definitions are our own words,
+cited (`supports: [definition, also]`); a term with no source stays `draft`.
+The `drawing` is a hand pointing up from a pivot at (30, 92) on a 60 x 120
+grid. Look at the built page after changing one.
+
 ## The checks
 
 `npm run check` runs all of these and must pass before you open a PR:
