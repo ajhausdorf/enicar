@@ -7,6 +7,7 @@ import { termUsage } from '../../lib/site';
 const refs = await getCollection('references');
 const terms = (await getCollection('glossary')).sort((a, b) => a.data.name.localeCompare(b.data.name, 'en'));
 const count = (t: any) => termUsage(t, refs).length;
+const onEnicar = terms.filter((t) => count(t) > 0).length;
 ---
 <Base title="Glossary" description="Hand shapes named in watch listings, drawn side by side, with the Enicars that have them." section="glossary">
   <div class="wrap gloss">
@@ -15,17 +16,22 @@ const count = (t: any) => termUsage(t, refs).length;
       <p class="lede">The names used for hand shapes in listings and in our records, each drawn at the same scale. A term's page lists the watches in the catalog that have it.</p>
     </section>
 
+    <div class="bar">
+      <button type="button" class="chip" id="f-enicar" aria-pressed="false" hidden>On Enicars only</button>
+      <span class="muted small" id="f-note" hidden>{onEnicar} of {terms.length} shapes. A shape counts when a generation's Hands spec names it.</span>
+    </div>
+
     <section aria-labelledby="hands-h">
       <h2 id="hands-h">Hands</h2>
       <ul class="terms">
         {terms.filter((t) => t.data.category === 'hands').map((t) => {
           const n = count(t);
           return (
-            <li>
+            <li data-enicar={n ? 'yes' : 'no'}>
               <a href={`/glossary/${t.id}/`}>
                 <span class="plate"><HandFigure drawing={t.data.drawing} name={t.data.name} size={150} /></span>
                 <strong>{t.data.name}</strong>
-                <span class="muted small">{n ? `${n} ${n === 1 ? 'watch' : 'watches'}` : 'None in the catalog'}</span>
+                <span class="muted small">{n ? `${n} ${n === 1 ? 'watch' : 'watches'}` : 'Not on an Enicar in the catalog'}</span>
               </a>
             </li>
           );
@@ -34,6 +40,21 @@ const count = (t: any) => termUsage(t, refs).length;
     </section>
   </div>
 </Base>
+
+<script>
+  // "On Enicars only" hides the shapes no generation in the catalog has. It is
+  // on by default; without JavaScript every shape shows.
+  const btn = document.getElementById('f-enicar')!;
+  const note = document.getElementById('f-note')!;
+  const apply = (on: boolean) => {
+    btn.setAttribute('aria-pressed', String(on));
+    note.hidden = !on;
+    for (const li of document.querySelectorAll<HTMLElement>('.terms li')) li.hidden = on && li.dataset.enicar !== 'yes';
+  };
+  btn.hidden = false;
+  apply(true);
+  btn.addEventListener('click', () => apply(btn.getAttribute('aria-pressed') !== 'true'));
+</script>
 
 <style>
   .gloss { display: flex; flex-direction: column; gap: 32px; padding-top: 24px; padding-bottom: 64px; }
@@ -44,4 +65,7 @@ const count = (t: any) => termUsage(t, refs).length;
   .terms a:hover { border-color: var(--ink); }
   .plate { display: flex; justify-content: center; width: 100%; padding: 8px 0; margin-bottom: 6px; background: var(--plate); border-radius: 8px; }
   .small { font-size: 12px; }
+  .bar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+  .bar .small { font-size: 13px; }
+  .terms li[hidden] { display: none; }
 </style>
