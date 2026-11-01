@@ -5,7 +5,7 @@ import { SITE_NAME, CONTRIBUTE_URL, USD_RATES } from '../lib/site';
 interface Props {
   title?: string;
   description?: string;
-  section?: 'catalog' | 'calibres' | 'serial' | 'sources' | 'search';
+  section?: 'catalog' | 'calibres' | 'glossary' | 'serial' | 'sources' | 'search';
   // Only watch pages go into the search index.
   searchable?: boolean;
   // A photo for link previews, as a site path.
@@ -29,6 +29,7 @@ const bezel = Array.from({ length: 24 }, (_, h) => ({ label: h % 2 ? '·' : Stri
 const nav = [
   { key: 'catalog', label: 'Catalog', href: '/' },
   { key: 'calibres', label: 'Calibres', href: '/calibres/' },
+  { key: 'glossary', label: 'Glossary', href: '/glossary/' },
   { key: 'serial', label: 'Serials', href: '/serial/' },
   { key: 'sources', label: 'Sources', href: '/sources/' }
 ];

@@ -1,0 +1,26 @@
+name: Spear
+category: hands
+also:
+  - Assegai
+definition: A thin stem with a rounded, pointed head.
+cites:
+  - tt
+match:
+  - spear
+drawing:
+  - d: M29.3 96V34H30.7V96Z
+    fill: ink
+  - d: M30 10C33 18 33.5 28 30 36C26.5 28 27 18 30 10Z
+    fill: ink
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+last_reviewed: 2026-10-31

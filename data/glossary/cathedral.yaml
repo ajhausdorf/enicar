@@ -1,0 +1,33 @@
+name: Cathedral
+category: hands
+also: []
+definition: An ornate hour hand whose lume sits in several windows, like stained glass. It is usually paired with a thinner minute hand.
+cites:
+  - tt
+  - bk
+match: []
+drawing:
+  - d: M30 26L36 40V70L33 78V96H27V78L24 70V40Z
+    fill: ink
+  - d: M30 33L33.5 42V54H26.5V42Z
+    fill: lume
+  - d: M26.5 58H33.5V68L30 72L26.5 68Z
+    fill: lume
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

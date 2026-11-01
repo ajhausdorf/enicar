@@ -154,6 +154,40 @@ const calibres = defineCollection({
   })
 });
 
+// Glossary of the words used for watch parts, starting with hand shapes. One
+// file per term in data/glossary/. Watches aren't tagged with terms: a term's
+// page lists the generations whose Hands spec contains one of its `match`
+// words, so the links come from text that is already cited on each record.
+const glossary = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: 'data/glossary' }),
+  schema: z.object({
+    name: z.string(),
+    category: z.enum(['hands']),
+    // Other names the shape goes by in listings.
+    also: z.array(z.string()).default([]),
+    definition: z.string(),
+    cites,
+    // Lower-case words that mean this shape in a variant's `hands` text.
+    // Each matches at the start of a word, so "arrow" also finds "arrow-shaped".
+    match: z.array(z.string().regex(/^[a-z][a-z -]*$/)).default([]),
+    // The drawing: one hand pointing up, pivot at (30, 92) on a 60 x 120
+    // grid, built from filled paths and circles. `rotate` turns a part about
+    // the pivot, for sets that draw a second hand.
+    drawing: z.array(z.object({
+      d: z.string().optional(),
+      circle: z.tuple([z.number(), z.number(), z.number()]).optional(),
+      fill: z.enum(['ink', 'steel', 'lume', 'orange', 'red', 'blue', 'paper', 'none']).default('ink'),
+      stroke: z.enum(['ink', 'steel', 'blue', 'none']).default('none'),
+      width: z.number().positive().default(1),
+      rotate: z.number().default(0)
+    }).refine((p) => !!p.d !== !!p.circle, 'each part needs a path (d) or a circle, not both')).min(1),
+    status: z.enum(['draft', 'verified']),
+    gaps: z.array(z.string()).default([]),
+    citations: z.array(citation).default([]),
+    last_reviewed: isoDate
+  })
+});
+
 const references = defineCollection({
   loader: glob({ pattern: '*.yaml', base: 'data/references' }),
   schema: z.object({
@@ -267,4 +301,4 @@ const sales = defineCollection({
   })
 });
 
-export const collections = { families, sources, permissions, calibres, references, sales };
+export const collections = { families, sources, permissions, calibres, glossary, references, sales };

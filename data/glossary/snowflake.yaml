@@ -1,0 +1,35 @@
+name: Snowflake
+category: hands
+also: []
+definition: An hour hand with a large squared-off diamond near the tip. It is Tudor's, first used on its Submariner in the late 1960s.
+cites:
+  - tt
+  - bk
+match: []
+drawing:
+  - d: M28.5 96V54H31.5V96Z
+    fill: ink
+  - d: M29 28L30 20L31 28Z
+    fill: ink
+  - d: M30 26L39 41L30 56L21 41Z
+    fill: ink
+  - d: M30 30.5L36.3 41L30 51.5L23.7 41Z
+    fill: lume
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

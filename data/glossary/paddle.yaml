@@ -1,0 +1,26 @@
+name: Paddle
+category: hands
+also: []
+definition: A broad lumed hand that ends in a short point. Time+Tide treats it as a syringe hand with a shorter tip.
+cites:
+  - tt
+match:
+  - paddle
+drawing:
+  - d: M26 96V34H34V96Z
+    fill: ink
+  - d: M27.5 90V36H32.5V90Z
+    fill: lume
+  - d: M27 34L30 18L33 34Z
+    fill: orange
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

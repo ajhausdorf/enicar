@@ -1,0 +1,23 @@
+name: Skeleton
+category: hands
+also: []
+definition: Any hand shape with the middle cut away, leaving the outline.
+cites:
+  - bk
+match: []
+drawing:
+  - d: M30 8L34 22V80L31.5 96H28.5L26 80V22Z
+    fill: ink
+  - d: M30 16L31.8 23V78H28.2V23Z
+    fill: paper
+status: verified
+gaps: []
+citations:
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

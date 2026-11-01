@@ -3,7 +3,7 @@
 // and the search index was built. Run after `npm run build`.
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
-import { loadReferences, loadCalibres, leavesOf, Report, ROOT } from './lib.mjs';
+import { loadReferences, loadCalibres, loadGlossary, leavesOf, Report, ROOT } from './lib.mjs';
 
 const DIST = join(ROOT, 'dist');
 
@@ -46,11 +46,17 @@ export function checkSite() {
     if (!decode(readFileSync(page, 'utf8')).includes(data.name)) r.error(`/calibres/${id}/`, `page does not show "${data.name}"`);
   }
 
+  for (const { id, data } of loadGlossary()) {
+    const page = join(DIST, 'glossary', id, 'index.html');
+    if (!existsSync(page)) { r.error(`/glossary/${id}/`, 'page missing'); continue; }
+    if (!decode(readFileSync(page, 'utf8')).includes(data.name)) r.error(`/glossary/${id}/`, `page does not show "${data.name}"`);
+  }
+
   const index = existsSync(join(DIST, 'index.html')) ? readFileSync(join(DIST, 'index.html'), 'utf8') : '';
   const cards = (index.match(/class="watch-card"/g) ?? []).length;
   if (cards !== leaves.length) r.error('/', `catalog shows ${cards} cards but there are ${leaves.length} watch pages`);
 
-  for (const page of ['sources', 'serial', 'calibres', 'search']) {
+  for (const page of ['sources', 'serial', 'calibres', 'glossary', 'search']) {
     if (!existsSync(join(DIST, page, 'index.html'))) r.error(`/${page}/`, 'page missing');
   }
   if (!existsSync(join(DIST, 'pagefind', 'pagefind-ui.js'))) r.error('search', 'Pagefind index missing; the build must run pagefind');

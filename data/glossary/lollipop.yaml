@@ -1,0 +1,42 @@
+name: Lollipop
+category: hands
+also: []
+definition: A thin hand with a round disc toward the tip. Nearly always a seconds hand.
+cites:
+  - tt
+  - bk
+match:
+  - lollipop
+drawing:
+  - d: M28.5 92H31.5V108H28.5Z
+    fill: red
+  - d: M29.4 92H30.6V8H29.4Z
+    fill: red
+  - circle:
+      - 30
+      - 26
+      - 5
+    fill: red
+  - circle:
+      - 30
+      - 26
+      - 2.6
+    fill: lume
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

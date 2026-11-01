@@ -36,6 +36,12 @@ export function leavesOf({ id, data }) {
   return variants.map((v) => ({ id, path: `/ref/${id}/${calibreId(v.name)}/`, name: `${data.name} ${v.name}`, status: data.status }));
 }
 
+export const GLOSSARY_DIR = join(ROOT, 'data/glossary');
+
+export function loadGlossary() {
+  return loadReferences(GLOSSARY_DIR).map((t) => ({ ...t, file: t.file.replace('data/references', 'data/glossary') }));
+}
+
 export function loadSources() {
   return loadYaml(join(ROOT, 'data/sources.yaml')) ?? [];
 }

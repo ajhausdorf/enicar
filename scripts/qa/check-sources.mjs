@@ -10,7 +10,7 @@
 //   - every populated fact field is listed in some citation's `supports`
 //   - every reference number, history paragraph and variant cites something
 //   - no open gaps
-import { loadReferences, loadCalibres, calibreId, loadSources, loadPermissions, get, isPopulated, Report, existsSync, join, ROOT } from './lib.mjs';
+import { loadReferences, loadCalibres, loadGlossary, calibreId, loadSources, loadPermissions, get, isPopulated, Report, existsSync, join, ROOT } from './lib.mjs';
 
 // Fact fields that must be backed by a citation once a record is verified.
 // List items (references, variants, history) carry their own `cites` instead.
@@ -63,11 +63,36 @@ function checkCalibres(r, sourceIds, permissionIds) {
   return ids;
 }
 
+export const GLOSSARY_FACT_FIELDS = ['definition', 'also'];
+
+// Glossary terms: citation integrity, and a cited definition once verified.
+// Every match word should find at least one watch, or it is probably misspelt.
+function checkGlossary(r, sourceIds, refs) {
+  const hands = refs.flatMap((x) => (x.data.variants ?? []).map((v) => v.hands ?? '')).join('\n').toLowerCase();
+  for (const { file: where, data: d } of loadGlossary()) {
+    const citeIds = new Set((d.citations ?? []).map((c) => c.id));
+    for (const c of d.citations ?? []) {
+      if (!sourceIds.has(c.source)) r.error(where, `citation "${c.id}" points at unknown source "${c.source}"`);
+      for (const f of c.supports ?? []) if (!GLOSSARY_FACT_FIELDS.includes(f)) r.error(where, `citation "${c.id}" supports unknown field "${f}" (allowed: ${GLOSSARY_FACT_FIELDS.join(', ')})`);
+    }
+    for (const cid of d.cites ?? []) if (!citeIds.has(cid)) r.error(where, `cites "${cid}", which is not a citation on this term`);
+    for (const w of d.match ?? []) if (!new RegExp(`\\b${w}`).test(hands)) r.error(where, `match word "${w}" is not in any generation's hands`);
+    walkStrings(d, '', (path, s) => { if (PLACEHOLDER.test(s)) r.error(where, `placeholder text in ${path}: "${s}"`); });
+    if (d.status === 'verified') {
+      const supported = new Set((d.citations ?? []).flatMap((c) => c.supports ?? []));
+      for (const f of GLOSSARY_FACT_FIELDS) if (isPopulated(d[f]) && !supported.has(f)) r.error(where, `verified term has "${f}" set but no citation supports it`);
+      if (!d.cites?.length) r.error(where, 'verified term: definition has no citation');
+      if (d.gaps?.length) r.error(where, 'verified term still lists gaps');
+    }
+  }
+}
+
 export function checkSources() {
   const r = new Report('sources and citations');
   const sourceIds = new Set(loadSources().map((s) => s.id));
   const permissionIds = new Set(loadPermissions().map((p) => p.id));
   const calibreIds = checkCalibres(r, sourceIds, permissionIds);
+  checkGlossary(r, sourceIds, loadReferences());
 
   for (const { id, file, data: d } of loadReferences()) {
     const where = file;

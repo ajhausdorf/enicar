@@ -1,0 +1,45 @@
+name: Mercedes
+category: hands
+also: []
+definition: An hour hand with a circle near the tip divided in three, like the Mercedes-Benz star.
+cites:
+  - tt
+  - bk
+match: []
+drawing:
+  - d: M28 96V55H32V96Z
+    fill: ink
+  - d: M28 37L30 26L32 37Z
+    fill: ink
+  - circle:
+      - 30
+      - 46
+      - 10
+    fill: ink
+  - circle:
+      - 30
+      - 46
+      - 7.5
+    fill: lume
+  - d: M30 46V38.5M30 46L23.5 49.8M30 46L36.5 49.8
+    fill: none
+    stroke: ink
+    width: 1.6
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

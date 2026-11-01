@@ -1,0 +1,35 @@
+name: Baton
+category: hands
+also:
+  - Stick
+definition: A plain straight bar of even width. Thin ones are often called sticks.
+cites:
+  - tt
+  - bk
+match:
+  - baton
+drawing:
+  - d: M27 14H33V96H27Z
+    fill: ink
+  - d: M28.5 20H31.5V84H28.5Z
+    fill: lume
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+last_reviewed: 2026-10-31

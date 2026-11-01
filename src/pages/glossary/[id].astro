@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import HandFigure from '../../components/HandFigure.astro';
+import Dial from '../../components/Dial.astro';
+import { termUsage, CONTRIBUTE_URL } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const terms = await getCollection('glossary');
+  return terms.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const used = termUsage(entry, await getCollection('references'));
+const sources = Object.fromEntries((await getCollection('sources')).map((s) => [s.id, s]));
+const cites = Object.fromEntries(d.citations.map((c) => [c.id, c]));
+const srcName = (c: any) => sources[c.source.id]?.data.name;
+const CATEGORY: Record<string, string> = { hands: 'Hands' };
+---
+<Base title={`${d.name} hands`} description={`${d.name} hands: what the shape looks like, and the Enicars that have it.`} section="glossary" searchable>
+  <div class="wrap term">
+    <nav aria-label="Breadcrumb" class="crumbs">
+      <a href="/glossary/">Glossary</a><span aria-hidden="true">/</span><span aria-current="page">{d.name}</span>
+    </nav>
+
+    {d.status === 'draft' && (
+      <p class="notice" data-pagefind-ignore><strong>Draft entry.</strong> We haven't found a published source for this definition yet.</p>
+    )}
+
+    <section class="head">
+      <div class="plate"><HandFigure drawing={d.drawing} name={d.name} size={220} /></div>
+      <div class="text">
+        <p class="eyebrow">{CATEGORY[d.category]}</p>
+        <h1>{d.name}</h1>
+        <p class="lede">{d.definition} {d.cites.map((id) => cites[id] && <a class="cite" href={cites[id].url}>{srcName(cites[id])}</a>)}</p>
+        {d.also.length > 0 && <p>Also called {d.also.join(', ')}.</p>}
+        <p class="muted small">The drawing shows the general shape. Makers vary it, and listings don't always use the names the same way.</p>
+      </div>
+    </section>
+
+    <section class="used">
+      <h2>In the catalog</h2>
+      {used.length === 0 ? <p class="muted">No watch in the catalog is recorded with {d.name.toLowerCase()} hands.</p> : (
+        <ul>
+          {used.map(({ leaf, context }) => {
+            const photo = leaf.images.find((i: any) => i.view === 'dial') ?? leaf.images[0];
+            return (
+              <li class="card">
+                <a href={leaf.path}>
+                  <span class="ph">{photo ? <img src={photo.thumb} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy"> : <Dial kind={leaf.ref.data.kind} />}</span>
+                  <strong>{leaf.name}</strong>
+                </a>
+                <span class="muted small">Hands: {context}</span>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </section>
+
+    <section class="bottom" data-pagefind-ignore>
+      <div>
+        <h2>Sources</h2>
+        {d.citations.length === 0 ? <p class="muted small">No sources cited yet.</p> : (
+          <ul>{d.citations.map((c) => <li><a href={c.url}>{c.title}</a> <span class="muted small">{srcName(c)} · read {c.retrieved.toISOString().slice(0, 10)}</span></li>)}</ul>
+        )}
+      </div>
+      {d.gaps.length > 0 && (
+        <div>
+          <h2>Still missing</h2>
+          <ul>{d.gaps.map((g) => <li>{g}</li>)}</ul>
+          <a href={CONTRIBUTE_URL}>Know a source? Send a correction</a>
+        </div>
+      )}
+    </section>
+  </div>
+</Base>
+
+<style>
+  .term { display: flex; flex-direction: column; gap: 32px; padding-top: 24px; padding-bottom: 64px; }
+  .crumbs { font-size: 13px; color: var(--muted); display: flex; gap: 8px; }
+  .crumbs a { color: var(--muted); text-decoration: none; }
+  .notice { margin: 0; }
+  .head { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+  .head .plate { flex: 0 0 auto; padding: 16px 40px; background: var(--plate); border: 1px solid var(--line); border-radius: 12px; }
+  .head .text { flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px; max-width: 640px; }
+  .head p { margin: 0; }
+  .cite { font-size: 13px; margin-left: 4px; }
+  .small { font-size: 13px; }
+  .used { display: flex; flex-direction: column; gap: 12px; }
+  .used ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .used li { padding: 12px; display: flex; flex-direction: column; gap: 6px; }
+  .used a { display: flex; flex-direction: column; gap: 8px; text-decoration: none; }
+  .ph { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 8px; background: var(--photo-ground); }
+  .ph img { width: 100%; height: 100%; object-fit: cover; }
+  .bottom { display: flex; flex-wrap: wrap; gap: 40px; }
+  .bottom > div { flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px; }
+  .bottom ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+</style>

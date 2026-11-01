@@ -1,0 +1,35 @@
+name: Alpha
+category: hands
+also:
+  - Lance
+definition: A long, narrow triangle that pinches in to a thin neck just before the centre.
+cites:
+  - tt
+  - bk
+match: []
+drawing:
+  - d: M30 8V84L25 72Z
+    fill: ink
+  - d: M30 8L35 72L30 84Z
+    fill: steel
+  - d: M29 82H31V96H29Z
+    fill: ink
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31
