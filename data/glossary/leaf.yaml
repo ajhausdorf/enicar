@@ -1,0 +1,35 @@
+name: Leaf
+category: hands
+also:
+  - Feuille
+definition: "Shaped like a leaf: narrow at the centre and at the tip, fullest halfway along."
+cites:
+  - tt
+  - bk
+match:
+  - leaf
+drawing:
+  - d: M30 8C23 30 23 70 30 96Z
+    fill: ink
+  - d: M30 8C37 30 37 70 30 96Z
+    fill: steel
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+last_reviewed: 2026-10-31

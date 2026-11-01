@@ -1,0 +1,41 @@
+name: Breguet
+category: hands
+also:
+  - Pomme
+definition: A slim hand with a hollow ring near the tip and a fine point beyond it.
+cites:
+  - tt
+  - bk
+match: []
+drawing:
+  - d: M29.2 96V35H30.8V96Z
+    fill: blue
+  - circle:
+      - 30
+      - 30
+      - 5
+    fill: none
+    stroke: blue
+    width: 1.8
+  - d: M29.4 25L30 8L30.6 25Z
+    fill: blue
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+last_reviewed: 2026-10-31

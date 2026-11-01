@@ -1,0 +1,25 @@
+name: Pencil
+category: hands
+also:
+  - Index
+definition: A narrow bar that ends in a short point, like a sharpened pencil.
+cites:
+  - tt
+match: []
+drawing:
+  - d: M27.5 96V22L30 12L32.5 22V96Z
+    fill: ink
+  - d: M28.8 90V24H31.2V90Z
+    fill: lume
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+last_reviewed: 2026-10-31

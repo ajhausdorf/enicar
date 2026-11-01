@@ -1,0 +1,21 @@
+---
+// A glossary term's drawing: one hand pointing up from its pivot, on a
+// 60 x 120 grid, from the parts in data/glossary/<id>.yaml.
+interface Props { drawing: any[]; name: string; size?: number; }
+const { drawing, name, size = 120 } = Astro.props;
+const COLOR: Record<string, string> = {
+  ink: 'var(--ink)', steel: '#8A909C', lume: 'var(--cream)', orange: '#E8762B', red: 'var(--bezel-night)',
+  blue: 'var(--accent)', paper: 'var(--plate)', none: 'none'
+};
+const attrs = (p: any) => ({
+  fill: COLOR[p.fill], stroke: COLOR[p.stroke], 'stroke-width': p.stroke === 'none' ? undefined : p.width,
+  'stroke-linecap': 'round', transform: p.rotate ? `rotate(${p.rotate} 30 92)` : undefined
+});
+---
+<svg class="hand-fig" width={size / 2} height={size} viewBox="0 0 60 120" role="img" aria-label={`Drawing of ${name.toLowerCase()} hands`}>
+  {drawing.map((p) => p.circle
+    ? <circle cx={p.circle[0]} cy={p.circle[1]} r={p.circle[2]} {...attrs(p)}></circle>
+    : <path d={p.d} {...attrs(p)}></path>)}
+  <circle cx="30" cy="92" r="3.6" fill="var(--ink)"></circle>
+  <circle cx="30" cy="92" r="1.2" fill="var(--plate)"></circle>
+</svg>

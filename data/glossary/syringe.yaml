@@ -1,0 +1,35 @@
+name: Syringe
+category: hands
+also: []
+definition: A lumed bar that narrows into a long needle at the tip.
+cites:
+  - tt
+  - bk
+match: []
+drawing:
+  - d: M27 96V48H33V96Z
+    fill: ink
+  - d: M28.3 90V50H31.7V90Z
+    fill: lume
+  - d: M27 48L30 42L33 48Z
+    fill: ink
+  - d: M29.4 44H30.6V10H29.4Z
+    fill: ink
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

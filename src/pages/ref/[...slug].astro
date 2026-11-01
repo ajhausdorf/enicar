@@ -7,7 +7,7 @@ import Base from '../../layouts/Base.astro';
 import Dial from '../../components/Dial.astro';
 import Money from '../../components/Money.astro';
 import PriceHistory from '../../components/PriceHistory.astro';
-import { formatYears, barometerOf, USD_RATES, LISTING_FRESH_DAYS, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf, fullYears } from '../../lib/site';
+import { formatYears, barometerOf, USD_RATES, LISTING_FRESH_DAYS, href, KIND_LABEL, CONTRIBUTE_URL, leavesOf, fullYears, linkTerms } from '../../lib/site';
 
 export async function getStaticPaths() {
   const refs = await getCollection('references');
@@ -24,6 +24,7 @@ const cites = Object.fromEntries(d.citations.map((c) => [c.id, c]));
 const otherModels = (await getCollection('references', (r) => r.data.family.id === d.family.id && r.id !== entry.id))
   .sort((a, b) => a.data.name.replace(/^Sherpa /, '').localeCompare(b.data.name.replace(/^Sherpa /, '')));
 const generations = leavesOf(entry);
+const terms = await getCollection('glossary');
 
 // Prices: the price guide for this generation (or model), then sales and
 // listings for it. A sale with no generation shows on every generation page.
@@ -198,6 +199,8 @@ const jsonld = [
             <div><dt>{k}</dt><dd class={val ? '' : 'unknown'}>{
               k === 'Movement' && val
                 ? <>{calibres.map((c, i) => <>{i > 0 && ', '}<a href={href.calibre(c)}>{c}</a></>)}{d.movement.winding && `${calibres.length ? ' · ' : ''}${d.movement.winding}`}</>
+                : k === 'Hands' && val
+                ? linkTerms(val, terms).map((s) => s.term ? <a href={`/glossary/${s.term.id}/`}>{s.text}</a> : s.text)
                 : val ?? 'Unknown'
             }</dd></div>
           ))}

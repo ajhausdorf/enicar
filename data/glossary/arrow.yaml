@@ -1,0 +1,36 @@
+name: Arrow
+category: hands
+also:
+  - Broad arrow
+definition: A hand that ends in an arrowhead. Sometimes only one hand of the set has it.
+cites:
+  - tt
+  - bk
+match:
+  - arrow
+drawing:
+  - d: M28 96V30H32V96Z
+    fill: ink
+  - d: M30 10L37 32H23Z
+    fill: ink
+  - d: M30 17L33.5 28H26.5Z
+    fill: lume
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+      - also
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

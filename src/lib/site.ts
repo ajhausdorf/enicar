@@ -151,3 +151,37 @@ export const WINDING: Record<string, string> = { manual: 'Hand-wound', automatic
 // Ranfft's archive has photos of most calibres; link there when we have none.
 export const ranfftUrl = (calibre: { data: { citations: { source: { id: string }; url: string }[] } }) =>
   calibre.data.citations.find((c) => c.source.id === 'ranfft')?.url ?? null;
+
+// Glossary terms are found in a generation's Hands spec by their `match`
+// words, each matched at the start of a word ("arrow" finds "arrow-shaped").
+type TermLike = { id: string; data: { match: string[] } };
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const termPattern = (words: string[]) => new RegExp(`\\b(${words.map(escapeRe).join('|')})[a-z-]*`, 'gi');
+
+// Splits hands text into plain runs and runs that name a term, for linking.
+export function linkTerms<T extends TermLike>(text: string, terms: T[]) {
+  const byWord = new Map(terms.flatMap((t) => t.data.match.map((w) => [w, t] as const)));
+  if (!byWord.size) return [{ text, term: null }];
+  const out: { text: string; term: T | null }[] = [];
+  let at = 0;
+  for (const m of text.matchAll(termPattern([...byWord.keys()]))) {
+    if (m.index > at) out.push({ text: text.slice(at, m.index), term: null });
+    out.push({ text: m[0], term: byWord.get(m[1].toLowerCase()) ?? null });
+    at = m.index + m[0].length;
+  }
+  if (at < text.length) out.push({ text: text.slice(at), term: null });
+  return out;
+}
+
+// The generations whose Hands spec names a term, each with the part of the
+// spec that names it ("lollipop or orange triangle seconds").
+export function termUsage<R extends RecordLike & { data: { variants: (VariantLike & { hands: string | null })[] } }>(term: TermLike, refs: R[]) {
+  if (!term.data.match.length) return [];
+  const re = termPattern(term.data.match);
+  return refs.flatMap((r) => leavesOf(r).flatMap((leaf) => {
+    const hands = (leaf.variant as any)?.hands as string | null | undefined;
+    if (!hands) return [];
+    const parts = hands.split(/;\s*/).flatMap((s) => s.split(/,\s*/)).filter((s) => { re.lastIndex = 0; return re.test(s); });
+    return parts.length ? [{ leaf, context: parts.join('; ') }] : [];
+  }));
+}

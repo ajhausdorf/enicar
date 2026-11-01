@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import HandFigure from '../../components/HandFigure.astro';
+import { termUsage } from '../../lib/site';
+
+const refs = await getCollection('references');
+const terms = (await getCollection('glossary')).sort((a, b) => a.data.name.localeCompare(b.data.name, 'en'));
+const count = (t: any) => termUsage(t, refs).length;
+---
+<Base title="Glossary" description="Hand shapes named in watch listings, drawn side by side, with the Enicars that have them." section="glossary">
+  <div class="wrap gloss">
+    <section class="intro">
+      <h1>Glossary</h1>
+      <p class="lede">The names used for hand shapes in listings and in our records, each drawn at the same scale. A term's page lists the watches in the catalog that have it.</p>
+    </section>
+
+    <section aria-labelledby="hands-h">
+      <h2 id="hands-h">Hands</h2>
+      <ul class="terms">
+        {terms.filter((t) => t.data.category === 'hands').map((t) => {
+          const n = count(t);
+          return (
+            <li>
+              <a href={`/glossary/${t.id}/`}>
+                <span class="plate"><HandFigure drawing={t.data.drawing} name={t.data.name} size={150} /></span>
+                <strong>{t.data.name}</strong>
+                <span class="muted small">{n ? `${n} ${n === 1 ? 'watch' : 'watches'}` : 'None in the catalog'}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .gloss { display: flex; flex-direction: column; gap: 32px; padding-top: 24px; padding-bottom: 64px; }
+  .intro { display: flex; flex-direction: column; gap: 12px; }
+  section { display: flex; flex-direction: column; gap: 16px; }
+  .terms { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 12px; }
+  .terms a { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 12px 8px 14px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: inherit; text-align: center; }
+  .terms a:hover { border-color: var(--ink); }
+  .plate { display: flex; justify-content: center; width: 100%; padding: 8px 0; margin-bottom: 6px; background: var(--plate); border-radius: 8px; }
+  .small { font-size: 12px; }
+</style>

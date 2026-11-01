@@ -1,0 +1,38 @@
+name: Plongeur
+category: hands
+also: []
+definition: A diver's set where the minute hand is the big one, often in a bright colour, and the hour hand is short.
+cites:
+  - tt
+  - bk
+match: []
+drawing:
+  - d: M30 6L38 26V88L33 96H27L22 88V26Z
+    fill: ink
+  - d: M30 12L35.5 27V86H24.5V27Z
+    fill: orange
+  - d: M27 96V64L30 56L33 64V96Z
+    fill: ink
+    stroke: ink
+    rotate: -40
+  - d: M28.4 90V65L30 60.5L31.6 65V90Z
+    fill: lume
+    rotate: -40
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

@@ -1,0 +1,32 @@
+name: Sword
+category: hands
+also: []
+definition: A broad, blade-like hand with a pointed tip, wide enough to hold plenty of lume.
+cites:
+  - tt
+  - bk
+match:
+  - sword
+drawing:
+  - d: M30 8L34 22V80L31.5 96H28.5L26 80V22Z
+    fill: ink
+  - d: M30 14L32.2 23V78H27.8V23Z
+    fill: lume
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

@@ -1,0 +1,32 @@
+name: Dauphine
+category: hands
+also: []
+definition: A long triangle that tapers to a point, often faceted along a centre ridge.
+cites:
+  - tt
+  - bk
+match:
+  - dauphine
+drawing:
+  - d: M30 10V96L24.5 84Z
+    fill: ink
+  - d: M30 10L35.5 84L30 96Z
+    fill: steel
+status: verified
+gaps: []
+citations:
+  - id: tt
+    source: time-and-tide
+    url: https://timeandtidewatches.com/watch-hand-style-guide-watch-education/
+    title: The ultimate watch hand style guide
+    retrieved: 2026-10-31
+    supports:
+      - definition
+  - id: bk
+    source: beckertime
+    url: https://beckertime.com/blog/a-guide-to-watch-hand-types/
+    title: A Guide to Watch Hand Types
+    retrieved: 2026-10-31
+    supports:
+      - definition
+last_reviewed: 2026-10-31

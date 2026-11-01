@@ -1,0 +1,19 @@
+name: Triangle
+category: hands
+also: []
+definition: A thin hand with a small solid triangle at the tip. On Enicars it is a seconds or chronograph hand, usually orange or red.
+cites: []
+match:
+  - triangle
+drawing:
+  - d: M28.5 92H31.5V108H28.5Z
+    fill: orange
+  - d: M29.4 92H30.6V24H29.4Z
+    fill: orange
+  - d: M30 10L34.5 26H25.5Z
+    fill: orange
+status: draft
+gaps:
+  - No published guide to hand styles we have found names this shape. The definition comes from the Hands specs in our own records.
+citations: []
+last_reviewed: 2026-10-31

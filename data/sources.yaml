@@ -242,3 +242,25 @@
   use: Case sizes and references, checked against other sources where possible.
   leads_to: []
   permission: not-needed
+- id: time-and-tide
+  name: Time+Tide
+  kind: blog
+  tier: secondary
+  url: https://timeandtidewatches.com/
+  author: null
+  status: to-confirm
+  what: Watch magazine with a style guide to watch hands, naming each shape and giving examples.
+  use: Definitions in the hands glossary, in our own words.
+  leads_to: []
+  permission: not-needed
+- id: beckertime
+  name: BeckerTime
+  kind: dealer
+  tier: secondary
+  url: https://beckertime.com/
+  author: null
+  status: to-confirm
+  what: Watch dealer whose blog has a guide to watch hand types.
+  use: Definitions in the hands glossary, in our own words.
+  leads_to: []
+  permission: not-needed
