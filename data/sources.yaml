@@ -264,3 +264,25 @@
   use: Definitions in the hands glossary, in our own words.
   leads_to: []
   permission: not-needed
+- id: rescapement
+  name: Rescapement
+  kind: blog
+  tier: secondary
+  url: https://www.rescapement.com/
+  author: null
+  status: to-confirm
+  what: Vintage watch newsletter and blog with articles on individual models, including the Enicar Garnix reference 2303.
+  use: We link to its articles for the story.
+  leads_to: []
+  permission: not-needed
+- id: chrono24-48107201
+  name: Chrono24 listing 48107201 (private seller)
+  kind: dealer
+  tier: listing
+  url: https://www.chrono24.com/enicar/sherpa--id48107201.htm
+  author: null
+  status: to-confirm
+  what: A private seller's Chrono24 listing of an Enicar Garnix, reference 2303, case back 072/003, gold-plated case.
+  use: Photos, with the seller's permission.
+  leads_to: []
+  permission: granted

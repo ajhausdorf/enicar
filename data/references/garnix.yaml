@@ -27,7 +27,28 @@ read_more:
     url: https://enicar101.com/2019/11/03/the-pre-sherpa-mystery/
     source: enicar101
     note: "Why the Garnix is not a pre-Sherpa, compared side by side with a Sherpa Graph."
+  - variant: null
+    title: "Enicar Garnix reference 2303: the enigmatic Enicar"
+    url: https://www.rescapement.com/blog/enicar-garnix-reference-2303-the-enigmatic-enicar
+    source: rescapement
+    note: "Rescapement on the 2303: the case, the dial details and how it sits beside the Sherpa Graph."
 images:
+  - file: /images/garnix/c24-48107201-dial.webp
+    thumb: /images/garnix/c24-48107201-dial-sm.webp
+    width: 960
+    height: 960
+    alt: "Garnix chronograph in a gold-plated case with a grey dial, no model name, paddle hands and a red-tipped seconds hand, on a black leather strap"
+    view: dial
+    variant: null
+    source_url: https://www.chrono24.com/enicar/sherpa--id48107201.htm
+    credit: "Private seller (Chrono24)"
+    credit_url: https://www.chrono24.com/enicar/sherpa--id48107201.htm
+    license: "Used with permission"
+    permission: granted
+    permission_ref: chrono24-48107201
+    caption: null
+    identified_by: caption
+    identified_note: "Listing title: Enicar Garnix Chronograph 2303 072/003 Valjoux 72. The dial has no model name and the case back is engraved 072/003."
   - file: /images/garnix/of-thebosston-1.webp
     thumb: /images/garnix/of-thebosston-1-sm.webp
     width: 1200
@@ -92,6 +113,38 @@ images:
     caption: null
     identified_by: caption
     identified_note: "Caption: Enicar ref 2303 aka Garnix, on the Valjoux 72. No model name on the dial."
+  - file: /images/garnix/c24-48107201-movement.webp
+    thumb: /images/garnix/c24-48107201-movement-sm.webp
+    width: 960
+    height: 960
+    alt: "Chronograph movement of the Garnix with the case back off"
+    view: movement
+    variant: null
+    source_url: https://www.chrono24.com/enicar/sherpa--id48107201.htm
+    credit: "Private seller (Chrono24)"
+    credit_url: https://www.chrono24.com/enicar/sherpa--id48107201.htm
+    license: "Used with permission"
+    permission: granted
+    permission_ref: chrono24-48107201
+    caption: null
+    identified_by: caption
+    identified_note: "Same watch as the listing's dial photo. The listing gives the movement as a Valjoux 72."
+  - file: /images/garnix/c24-48107201-caseback.webp
+    thumb: /images/garnix/c24-48107201-caseback-sm.webp
+    width: 960
+    height: 960
+    alt: "Garnix stainless steel case back engraved Enicar, 072/003, Incabloc, Waterproof Ultrasonic"
+    view: caseback
+    variant: null
+    source_url: https://www.chrono24.com/enicar/sherpa--id48107201.htm
+    credit: "Private seller (Chrono24)"
+    credit_url: https://www.chrono24.com/enicar/sherpa--id48107201.htm
+    license: "Used with permission"
+    permission: granted
+    permission_ref: chrono24-48107201
+    caption: null
+    identified_by: caption
+    identified_note: "Listing title: Enicar Garnix Chronograph 2303 072/003 Valjoux 72. The dial has no model name and the case back is engraved 072/003."
 barometer:
   edition: "#7, December 2025"
   cite: eo-barometer-7
@@ -121,4 +174,4 @@ citations:
     title: "Watch Value Barometer #7, December 2025"
     retrieved: 2026-10-27
     supports: []
-last_reviewed: 2026-10-27
+last_reviewed: 2026-11-08
