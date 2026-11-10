@@ -176,6 +176,17 @@
   use: Photos, with permission, and his description of his own watches. Cited per post.
   leads_to: [enicar.org]
   permission: granted
+- id: nhorology
+  name: "@nhorology"
+  kind: other
+  tier: secondary
+  url: https://www.instagram.com/nhorology/
+  author: null
+  status: confirmed
+  what: Instagram account of a private collector, including an Enicar world-time prototype from their own collection.
+  use: Photos, with permission, and the owner's own account of their watch. Cited per post.
+  leads_to: []
+  permission: granted
 - id: ranfft
   name: Ranfft watch movement archive
   kind: archive
