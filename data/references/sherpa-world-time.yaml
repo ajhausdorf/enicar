@@ -3,7 +3,7 @@ family: sherpa
 kind: other
 summary: "A 1967 world-time prototype on the AR 1145 automatic, with six small dials for six time zones and an inner ring of 64 cities. It was shown at the 1967 Swiss watch fair but never went into production."
 references: []
-nicknames: ["Kaleidoscope"]
+nicknames: ["Kaleidoscope", "Revolver"]
 years: { from: 1967, to: null, approximate: true }
 movement:
   calibres: [AR1145]
@@ -17,8 +17,8 @@ case:
 features: [inner-bezel]
 dial: "Six small dials, one per time zone, each with its own hand and arrow disc, around the main hands; 64 city names on the inner ring."
 history:
-  - text: "Enicar presented it at the 1967 Swiss watch fair. The Musée international d'horlogerie in La Chaux-de-Fonds has one in its collection and, according to the museum, it was one of a series of three prototypes. The seller of Martijn van der Ven's example said ten were made."
-    cites: [eo-ws-discovery, vv-ws-mih, vv-ws-mih-show]
+  - text: "Enicar presented it at the 1967 Swiss watch fair. The Musée international d'horlogerie in La Chaux-de-Fonds has one in its collection and, according to the museum, it was one of a series of three prototypes. The seller of Martijn van der Ven's example said ten were made. The owner of another example puts the number known at about five, and says a watchmaker in Lengnau was working on it for Enicar in the 1970s. That owner places the museum's example in Le Locle; the Musée international d'horlogerie is in La Chaux-de-Fonds."
+    cites: [eo-ws-discovery, vv-ws-mih, vv-ws-mih-show, nh-ws-revolver]
 variants: []
 read_more:
   - title: "The discovery of the Enicar Sherpa World Time 'Kaleidoscope' from 1967"
@@ -29,6 +29,10 @@ read_more:
     url: https://enicar.org/2017/11/27/exploring-the-enicar-sherpa-world-time-kaleidoscope/
     source: enicar-org
     note: "The watch taken apart by a watchmaker, with the case, dial and movement in detail."
+  - title: "@nhorology: the Enicar Worldtimer, or 'Revolver Watch'"
+    url: https://www.instagram.com/p/DffMulhpqLk/
+    source: nhorology
+    note: "A collector on how their example came from the watchmaker in Lengnau who built the prototypes."
 images:
   - file: /images/sherpa-world-time/v-bmqhev6hnad-1.webp
     thumb: /images/sherpa-world-time/v-bmqhev6hnad-1-sm.webp
@@ -126,10 +130,27 @@ images:
     caption: null
     identified_by: source
     identified_note: "From enicar.org's article on taking this watch apart."
+  - file: /images/sherpa-world-time/n-dffmulhpqlk-1.webp
+    thumb: /images/sherpa-world-time/n-dffmulhpqlk-1-sm.webp
+    width: 1200
+    height: 1600
+    alt: "Enicar world-time prototype with a slate-blue dial, six small time-zone dials and a ring of city names and a date window, on a textured steel bracelet, on the wrist"
+    view: dial
+    variant: null
+    source_url: https://www.instagram.com/p/DffMulhpqLk/
+    credit: "@nhorology"
+    credit_url: https://www.instagram.com/nhorology/
+    license: "Used with permission"
+    permission: granted
+    permission_ref: nhorology
+    caption: null
+    identified_by: tells
+    identified_note: "Caption calls it the Enicar Worldtimer. Six small dials, each with its own hand and arrow disc, around the main hands, and a ring of city names, as enicar.org describes this watch."
 status: draft
 gaps:
   - "Reference number: the caseback carries none"
-  - "How many were made: the museum says three, the seller of one said ten"
+  - "How many were made: the museum says three, the seller of one said ten, the owner of another says about five exist"
+  - "Date: enicar.org dates it to the 1967 fair; the owner of another example says the prototype work was done in the 1970s"
 citations:
   - id: eo-ws-explore
     source: enicar-org
@@ -155,4 +176,10 @@ citations:
     title: "@vandervenus post: the 1967 Sherpa World Time on show at the MIH"
     retrieved: 2026-10-27
     supports: [nicknames]
-last_reviewed: 2026-10-27
+  - id: nh-ws-revolver
+    source: nhorology
+    url: https://www.instagram.com/p/DffMulhpqLk/
+    title: "@nhorology post: the Enicar Worldtimer, also called the 'Revolver Watch', a prototype with six time displays"
+    retrieved: 2026-11-10
+    supports: [nicknames]
+last_reviewed: 2026-11-10
